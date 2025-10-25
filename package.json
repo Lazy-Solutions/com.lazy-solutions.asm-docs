@@ -1,0 +1,14 @@
+{
+  "name": "com.lazy-solutions.asm-docs",
+  "version": "3.0.0",
+  "displayName": "Advanced Scene Manager - Documentation",
+  "description": "",
+  "author": {
+    "name": "Lazy Solutions",
+    "email": "nuwn@hotmail.com",
+    "url": "https://github.com/Lazy-Solutions/AdvancedSceneManager/tree/main"
+  },
+  "dependencies": {
+    
+  }
+}
