@@ -1,0 +1,1 @@
+# Welcome to Advanced Scene Manager documentation!
