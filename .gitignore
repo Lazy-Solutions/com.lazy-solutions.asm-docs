@@ -74,8 +74,12 @@ crashlytics-build.properties
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
 
-# Ignore all .meta files recursively
+# Ignore all .meta files everywhere
 **/*.meta
 
-# But keep .meta files in the root folder
-!/*.meta
+# Keep .meta files for readme.asset and its folder
+!readme.asset.meta
+
+# Keep all .meta files inside /UI/
+!/UI/**/*.meta
+!/UI/*.meta
