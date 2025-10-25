@@ -81,5 +81,7 @@ crashlytics-build.properties
 !readme.asset.meta
 
 # Keep all .meta files inside /UI/
-!/UI/**/*.meta
-!/UI/*.meta
+!/Editor/**/*.meta
+!/Editor/*.meta
+
+.obsidian
