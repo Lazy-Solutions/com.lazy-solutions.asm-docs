@@ -10,7 +10,7 @@ The default implementation of `ILoadProgressData`, used by ASM in most cases.
 | `SceneOperation operation` | The operation that started this operation. |
 | `SceneOperationKind operationKind` | The kind of operation this is. |
 | `Scene scene` | The scene that is being loaded or unloaded. Can be null. |
-| `single value` | _No documentation available._ |
+| `single value` | The reported progress value. |
 
 ### Methods
 

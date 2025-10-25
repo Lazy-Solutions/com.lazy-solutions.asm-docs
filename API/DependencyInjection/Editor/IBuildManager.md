@@ -23,4 +23,4 @@ Only available in editor.
 | `abstract virtual boolean IsEnabled(string path, Reason& reason)` | _No documentation available._ |
 | `abstract virtual boolean IsIncluded(Scene scene, Reason& reason)` | _No documentation available._ |
 | `abstract virtual void UpdateSceneList()` | Updates the scene build settings. |
-| `abstract virtual void UpdateSceneList(boolean ignorePlaymodeCheck)` | Updates the scene build settings. |
+| `abstract virtual void UpdateSceneList(boolean ignorePlaymodeCheck)` | _No documentation available._ |

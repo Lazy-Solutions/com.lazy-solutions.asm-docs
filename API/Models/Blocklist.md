@@ -1,6 +1,7 @@
 ## Blocklist
 
 `class` in `AdvancedSceneManager.Models`### Description
+Represents a blocklist.
 
 ### Properties
 
@@ -20,4 +21,4 @@
 | `boolean Get(int32 index, String& path)` | _No documentation available._ |
 | `boolean MatchesFilter(string path)` | Gets if `path` matches this blocklist. |
 | `void Remove(string path)` | Removes `path` from this blocklist. |
-| `void RemoveAt(int32 index)` | Removes `path` from this blocklist. |
+| `void RemoveAt(int32 index)` | Removes the entry at `index` from this blocklist. |

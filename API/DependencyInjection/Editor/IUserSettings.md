@@ -4,6 +4,8 @@
 The user specific ASM settings, not synced to source control.
 
 <b> Remarks:</b>
+May not be available in `[InitializeOnLoad]` and similar, use [Action)](https://learn.microsoft.com/dotnet/api/m:advancedscenemanager.scenemanager.oninitialized(system.action)) or `OnLoadAttribute` to ensure you're not calling too early.
+
 Only available in editor.
 
 ### Properties
@@ -32,7 +34,7 @@ Only available in editor.
 | Member | Description |
 |--------|-------------|
 | `abstract virtual void PinCollectionToOverlay(SceneCollection collection, Nullable<int32> index)` | _No documentation available._ |
-| `abstract virtual void Save()` | _No documentation available._ |
+| `abstract virtual void Save()` | Saves the singleton to disk after a delay. |
 | `abstract virtual void SaveNow()` | Saves the singleton to disk. |
 | `abstract virtual void ToolbarAction(int32 i, SceneCollection& collection, Boolean& runStartupProcess)` | _No documentation available._ |
 | `abstract virtual void ToolbarAction(int32 i, SceneCollection collection, boolean runStartupProcess)` | _No documentation available._ |

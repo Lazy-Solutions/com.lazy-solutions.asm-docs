@@ -11,7 +11,7 @@ Only one collection can be fully open at a time; additive collections are suppor
 | Member | Description |
 |--------|-------------|
 | `Scene activeScene` | Specifies the scene that should be activated after collection is opened. |
-| `IEnumerable<Scene> allScenes` | Gets both `scenes` and [loadingScreen](https://learn.microsoft.com/dotnet/api/!:loadingscreen). |
+| `IEnumerable<Scene> allScenes` | Gets both `scenes` and `loadingScene`. |
 | `int32 count` | _No documentation available._ |
 | `string description` | _No documentation available._ |
 | `Scene effectiveLoadingScene` | Gets effective loading screen depending on `loadingScreenUsage`. |
@@ -33,7 +33,7 @@ Only one collection can be fully open at a time; additive collections are suppor
 | `LoadPriority loadPriority` | Specifies the `LoadPriority` to use when opening this collection. |
 | `string lockMessage` | Gets or sets the message to be displayed when unlocking this collection. |
 | `boolean openAsPersistent` | Specifies whatever this collection should be opened as persistent. |
-| `Profile profile` | _No documentation available._ |
+| `Profile profile` | The profile that this collection is associated with. |
 | `IEnumerable<string> scenePaths` | _No documentation available._ |
 | `IEnumerable<Scene> scenes` | _No documentation available._ |
 | `List<Scene> scenesThatShouldNotAutomaticallyOpen` | Specifies scenes that should not open automatically. |
@@ -78,7 +78,7 @@ t:AdvancedSceneManager.Models.SceneCollection
 | `IEnumerator<Scene> GetEnumerator()` | _No documentation available._ |
 | `virtual int32 GetHashCode()` | _No documentation available._ |
 | `virtual boolean IsMatch(string q)` | Matches this collection against the query string. |
-| `virtual void OnPropertyChanged(string propertyName)` | _No documentation available._ |
+| `virtual void OnPropertyChanged(string propertyName)` | Invoke `PropertyChanged`. |
 | `virtual void OnValidate()` | _No documentation available._ |
 | `virtual SceneOperation Open()` | Opens this collection. |
 | `SceneOperation Open(boolean openAll)` | Opens this collection. |

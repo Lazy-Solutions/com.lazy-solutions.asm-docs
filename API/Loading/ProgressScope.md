@@ -7,7 +7,7 @@ Represents a listener for progress that can calculate the total progress of a sc
 
 | Member | Description |
 |--------|-------------|
-| `boolean isRegistered { get; }` | _No documentation available._ |
+| `boolean isRegistered { get; }` | Gets if this progress scope is registered. |
 | `int32 operationCount` | Gets the amount of scenes that will be either unloaded or loaded. |
 | `IEnumerable<Scene> scenesExpectedToLoad` | Gets the scenes that are expected to be loaded. |
 | `IEnumerable<Scene> scenesExpectedToUnload` | Gets the scenes that are expected to be unloaded. |

@@ -1,15 +1,15 @@
 ## IOpenableScene
 
 `interface` in `AdvancedSceneManager.Models.Interfaces`### Description
-Defines methods for openable scenes.
+Defines members for openable scenes.
 
 ### Methods
 
 | Member | Description |
 |--------|-------------|
-| `abstract virtual void _Activate()` | _No documentation available._ |
-| `abstract virtual void _OpenAndActivate()` | _No documentation available._ |
-| `abstract virtual void Activate()` | Activates the `IOpenableScene`. |
-| `abstract virtual SceneOperation CloseWithLoadingScreen(Scene loadingScene)` | Closes the `IOpenableScene` with the specified `loadingScene`. |
-| `abstract virtual SceneOperation OpenAndActivate()` | Opens the `IOpenableScene` and activates it. |
-| `abstract virtual SceneOperation OpenWithLoadingScreen(Scene loadingScene)` | Opens the `IOpenableScene` with the specified `loadingScene`. |
+| `abstract virtual void _Activate()` | Activates the scene. |
+| `abstract virtual void _OpenAndActivate()` | Opens and activates the scene. |
+| `abstract virtual void Activate()` | Activates the scene. |
+| `abstract virtual SceneOperation CloseWithLoadingScreen(Scene loadingScene)` | Closes the scene using the specified loading screen. |
+| `abstract virtual SceneOperation OpenAndActivate()` | Opens and activates the scene. |
+| `abstract virtual SceneOperation OpenWithLoadingScreen(Scene loadingScene)` | Opens the scene using the specified loading screen. |

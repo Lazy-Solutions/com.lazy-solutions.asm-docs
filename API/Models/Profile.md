@@ -8,6 +8,7 @@ A profile for ASM, contains settings and collections.
 | Member | Description |
 |--------|-------------|
 | `IEnumerable<ISceneCollection> allCollections` | Gets `collections`, `standaloneScenes`, `defaultASMScenes`, `dynamicCollections`. |
+| `boolean autoUpdateBuildScenes` | Specifies whatever build scene list should be automatically updated. |
 | `IEnumerable<SceneCollection> collections` | Gets the collections contained within this profile. |
 | `DefaultASMScenesCollection defaultASMScenes` | Gets the default asm scenes collection contained within this profile. |
 | `IEnumerable<DynamicCollection> dynamicCollections` | Gets the dynamic collections contained within this profile. |
@@ -15,6 +16,7 @@ A profile for ASM, contains settings and collections.
 | `Scene loadingScene` | The default loading scene. |
 | `boolean notify` | Specifies whatever this profile should trigger a notification when imported. |
 | `string notifyMessage` | Specifies the notification messasge, when `notify` is `true`. |
+| `boolean preventAssignmentIfNullAndUnityHasABuildProfileActive` | Gets or sets whether ASM should prevent writing the build scene list to Unity’s active build profile when `unityBuildProfile` is `null`. |
 | `IEnumerable<ISceneCollection> removedCollections` | Gets all removed collections in this profile. |
 | `IEnumerable<Scene> scenes` | Gets the scenes managed by this profile. |
 | `IEnumerable<Scene> specialScenes` | Gets default loading screen, splash screen and startup loading screen. |
@@ -23,7 +25,7 @@ A profile for ASM, contains settings and collections.
 | `IEnumerable<SceneCollection> startupCollections` | Gets the collections that will be opened on startup. |
 | `Scene startupScene` | The startup scene. |
 | `IEnumerable<Scene> startupScenes` | Gets the scenes flagged to open on startup. |
-| `BuildProfile unityBuildProfile` | Gets or sets the `BuildProfile` that ASM should write scene list to, when profile is active. Set to `null` to write to global list. |
+| `BuildProfile unityBuildProfile` | Gets or sets the `BuildProfile` that ASM should write its scene list to when the profile is active. Set to `null` to write to the global list, or to the active build profile if one is active. |
 | `boolean unloadUnusedAssetsForStandalone` | Enable or disable ASM calling `UnloadUnusedAssets` after standalone scenes has been opened or closed. |
 
 ### Static Fields
@@ -47,9 +49,8 @@ A profile for ASM, contains settings and collections.
 
 | Member | Description |
 |--------|-------------|
-| `void AddDefaultASMScenes()` | Adds the default ASM scenes collection. |
-| `void AddDynamicCollection<T>(DynamicCollectionBase<T> collection)` | _No documentation available._ |
-| `void ClearCollections()` | Clear `collections`, `dynamicCollections`, `removedCollections`. |
+| `void AddCollection(ISceneCollection collection)` | Adds a collection. |
+| `void ClearCollections()` | Clear `collections`, `dynamicCollections`, `removedCollections`. Does not prompt undo. |
 | `void ClearRemovedCollections()` | Clear removed collections. |
 | `boolean Contains(ISceneCollection collection, boolean checkRemoved)` | Gets whatever this profile contains the specified collection. |
 | `void CreateCollection()` | Creates a new collection with title 'New collection'. |
@@ -58,8 +59,7 @@ A profile for ASM, contains settings and collections.
 | `SceneCollection CreateCollection(SceneCollectionTemplate template)` | Create a collection from a template. |
 | `void CreateDynamicCollection()` | Creates a dynamic collection with default values. |
 | `DynamicCollection CreateDynamicCollection(string path, string title)` | Creates a dynamic collection with the specified path and optional title. |
-| `void Delete(ISceneCollection collection)` | Deletes a collection from this profile. This does not add it to undo. |
-| `void DeleteDynamicCollection(DynamicCollection collection)` | Deletes a dynamic collection from this profile (no undo). |
+| `void Delete(ISceneCollection collection)` | Deletes a collection. Does not prompt undo. |
 | `IEnumerable<ISceneCollection> FindCollections(Scene scene)` | Finds all collection that the scene is included in. Includes dynamic collections. |
 | `IEnumerable<ISceneCollection> FindUntrackedCollections()` | Gets all collections saved as sub assets of this profile, that are not referenced in it. |
 | `int32 IndexOf(SceneCollection collection)` | Gets the index of the specified collection. |
@@ -67,8 +67,6 @@ A profile for ASM, contains settings and collections.
 | `boolean IsStartupCollection(SceneCollection collection)` | Gets if the specified collection is a startup collection. |
 | `virtual void OnPropertyChanged(string propertyName)` | Invoke `PropertyChanged`. |
 | `virtual void OnValidate()` | _No documentation available._ |
-| `void Remove(ISceneCollection collection)` | Removes a collection from this profile. This adds it to undo. |
-| `void RemoveDefaultASMScenes()` | Removes the default ASM scenes collection. |
-| `void RemoveDynamicCollection(DynamicCollection collection)` | Removes a dynamic collection from this profile. This adds it to undo. |
+| `void Remove(ISceneCollection collection)` | Removes a collection. Prompts undo. |
 | `void Restore(ISceneCollection collection)` | Restores a collection that has been removed. |
 | `virtual string ToString()` | _No documentation available._ |

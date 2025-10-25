@@ -7,17 +7,17 @@ Represents a notification to be displayed.
 
 | Member | Description |
 |--------|-------------|
-| `boolean allowTextClippingIntoMenuButton` | _No documentation available._ |
-| `boolean canDismiss` | _No documentation available._ |
-| `boolean canMute` | _No documentation available._ |
-| `boolean dismissOnClick` | _No documentation available._ |
-| `string fontAwesomeIcon` | _No documentation available._ |
-| `string iconFont` | _No documentation available._ |
-| `string iconInfo` | _No documentation available._ |
-| `string id` | _No documentation available._ |
-| `NotificationImportance importance` | _No documentation available._ |
-| `Nullable<boolean> isExpanded` | _No documentation available._ |
-| `NotificationKind kind` | _No documentation available._ |
-| `string message` | _No documentation available._ |
-| `Action onClick` | _No documentation available._ |
-| `Action onDismiss` | _No documentation available._ |
+| `boolean allowTextClippingIntoMenuButton` | Whether text may overlap the menu button area. |
+| `boolean canDismiss` | Whether the notification can be dismissed by the user. |
+| `boolean canMute` | Whether the notification can be muted. |
+| `boolean dismissOnClick` | Whether the notification is dismissed when clicked. |
+| `string fontAwesomeIcon` | Specifies an optional Font Awesome icon name. |
+| `string iconFont` | Specifies an optional font name for the icon. |
+| `string iconInfo` | Specifies an optional icon info identifier. |
+| `string id` | Unique identifier for the notification. |
+| `NotificationImportance importance` | Specifies the importance level of the notification. |
+| `Nullable<boolean> isExpanded` | Whether the notification is expanded, if applicable. |
+| `NotificationKind kind` | Specifies the visual kind of the notification. |
+| `string message` | Displayed message text. |
+| `Action onClick` | Action invoked when the notification is clicked. |
+| `Action onDismiss` | Action invoked when the notification is dismissed. |

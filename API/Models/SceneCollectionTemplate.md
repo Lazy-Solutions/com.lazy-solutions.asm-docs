@@ -1,13 +1,13 @@
 ## SceneCollectionTemplate
 
-`class` in `AdvancedSceneManager.Models.Utility`  /  Inherits from: `SceneCollection`### Description
+`class` in `AdvancedSceneManager.Models`  /  Inherits from: `SceneCollection`### Description
 Represents a template for a `SceneCollection`.
 
 ### Properties
 
 | Member | Description |
 |--------|-------------|
-| `string name` | _No documentation available._ |
+| `string name` | The name of the object. |
 
 ### Static Methods
 

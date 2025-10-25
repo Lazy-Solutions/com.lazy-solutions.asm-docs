@@ -1,7 +1,6 @@
 ## IProjectSettings
 
 `interface` in `AdvancedSceneManager.DependencyInjection`### Description
-The project-wide ASM settings.
 
 ### Properties
 
@@ -16,7 +15,7 @@ The project-wide ASM settings.
 | `CustomData customData` | Specifies custom data. |
 | `Profile defaultProfile` | The profile to use when none is set. |
 | `boolean enableCrossSceneReferences` | Gets or sets whatever cross-scene references should be enabled. |
-| `Scene fadeScene` | Specifies the scene to use for certain methods, i.e. [FadeOut(float, Color?, Action<float>)](https://learn.microsoft.com/dotnet/api/!:loadingscreenutility.fadeout(float, color?, action<float>)). |
+| `Scene fadeScene` | Specifies the scene to use for certain methods, i.e. [Color})](https://learn.microsoft.com/dotnet/api/m:advancedscenemanager.utility.loadingscreenutility.fadeout(system.single,system.nullable{unityengine.color})). |
 | `Profile forceProfile` | The profile to force everyone in this project to use. |
 | `boolean preventSpammingEventMethods` | By default, ASM will prevent spam calling event methods (i.e. calling Scene.Open() from a button press), but this will disable that. |
 | `boolean reverseUnloadOrderOnCollectionClose` | Specifies whatever collections should unload scenes in the reverse order. |
@@ -27,6 +26,6 @@ The project-wide ASM settings.
 
 | Member | Description |
 |--------|-------------|
-| `abstract virtual void Save()` | _No documentation available._ |
+| `abstract virtual void Save()` | Saves the singleton to disk after a delay. |
 | `abstract virtual void SaveNow()` | Saves the singleton to disk. |
 | `abstract virtual void SetBuildProfile(Profile profile)` | _No documentation available._ |

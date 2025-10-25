@@ -7,13 +7,13 @@ Manages runtime functionality for Advanced Scene Manager such as open scenes and
 
 | Member | Description |
 |--------|-------------|
-| `Scene activeScene` | Gets the active scene. |
+| `Scene activeScene` | Gets the currently active scene, assuming it has been imported into ASM. |
 | `SceneOperation currentOperation` | Gets the current active operation in the queue. |
 | `Scene dontDestroyOnLoad` | Gets the dontDestroyOnLoad scene. |
 | `boolean isBusy` | Gets whatever ASM is busy with any scene operations. |
 | `IEnumerable<SceneCollection> openAdditiveCollections` | Gets the collections that are opened as additive. |
 | `SceneCollection openCollection` | Gets the collection that is currently open. |
-| `IEnumerable<Scene> openScenes` | Gets the scenes that are open. |
+| `IEnumerable<Scene> openScenes` | Gets the scenes that are currently open. |
 | `IEnumerable<Scene> preloadedScenes` | Gets the scenes that are preloaded. |
 | `IEnumerable<SceneOperation> queuedOperations` | Gets the current scene operation queue. |
 | `IEnumerable<SceneOperation> runningOperations` | The currently running scene operations. |
@@ -35,6 +35,7 @@ Manages runtime functionality for Advanced Scene Manager such as open scenes and
 
 | Member | Description |
 |--------|-------------|
+| `abstract virtual void Activate(Scene scene)` | _No documentation available._ |
 | `abstract virtual void AddSceneLoader<T>()` | _No documentation available._ |
 | `abstract virtual SceneOperation CancelPreload()` | Cancels the preload. All preloaded scenes will be fully loaded (limitation by Unity), then closed. No ASM scene callbacks will be called. |
 | `abstract virtual SceneOperation Close(IEnumerable<Scene> scenes)` | _No documentation available._ |
@@ -59,7 +60,6 @@ Manages runtime functionality for Advanced Scene Manager such as open scenes and
 | `abstract virtual SceneOperation OpenWithLoadingScreen(Scene scene, Scene loadingScreen)` | _No documentation available._ |
 | `abstract virtual SceneOperation Preload(Scene scene, Action onPreloaded)` | _No documentation available._ |
 | `abstract virtual void RemoveSceneLoader<T>()` | _No documentation available._ |
-| `abstract virtual void SetActive(Scene scene)` | _No documentation available._ |
 | `abstract virtual SceneOperation ToggleOpen(Scene scene)` | _No documentation available._ |
 | `abstract virtual SceneOperation ToggleOpen(SceneCollection collection, boolean openAll)` | _No documentation available._ |
 | `abstract virtual void Track(Scene scene)` | _No documentation available._ |

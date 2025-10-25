@@ -1,6 +1,7 @@
 ## SessionStateHelper
 
 `class` in `AdvancedSceneManager.Services`### Description
+A helper wrapper for `SessionState`, uses type name + property name for naming.
 
 ### Methods
 

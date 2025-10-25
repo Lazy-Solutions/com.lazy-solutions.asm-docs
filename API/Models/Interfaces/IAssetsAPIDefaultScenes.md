@@ -1,7 +1,10 @@
-## DefaultScenes
+## IAssetsAPIDefaultScenes
 
-`class` in `AdvancedSceneManager.Models.Helpers`### Description
+`interface` in `AdvancedSceneManager.Models.Interfaces`### Description
 Provides access to the default ASM scenes.
+
+<b> Remarks:</b>
+May not be available in `[InitializeOnLoad]` and similar, use [Action)](https://learn.microsoft.com/dotnet/api/m:advancedscenemanager.scenemanager.oninitialized(system.action)) or `OnLoadAttribute` to ensure you're not calling too early.
 
 ### Properties
 
@@ -22,4 +25,4 @@ Provides access to the default ASM scenes.
 
 | Member | Description |
 |--------|-------------|
-| `IEnumerable<Scene> Enumerate()` | Enumerates all imported default scenes. |
+| `abstract virtual IEnumerable<Scene> Enumerate()` | Enumerates all imported default scenes. |

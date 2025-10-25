@@ -7,11 +7,11 @@ A default loading screen script. Fades screen out, then fades screen in when loa
 
 | Member | Description |
 |--------|-------------|
-| `Color color` | _No documentation available._ |
-| `Image fadeBackground` | _No documentation available._ |
-| `single fadeDuration` | _No documentation available._ |
-| `CanvasGroup fadeGroup` | _No documentation available._ |
-| `Nullable<single> fadeInDurationOverride` | _No documentation available._ |
+| `Color color` | The color of the background. |
+| `Image fadeBackground` | The image of which to set background color. |
+| `single fadeDuration` | The duration to fade in and out for. |
+| `CanvasGroup fadeGroup` | The `CanvasGroup` to fade in and out. |
+| `Nullable<single> fadeInDurationOverride` | Programmatic override for `fadeDuration`, which is saved in scene file. |
 
 ### Methods
 

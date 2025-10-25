@@ -10,19 +10,19 @@ Usage: `app`.
 
 | Member | Description |
 |--------|-------------|
-| `boolean isASMPlay` | _No documentation available._ |
-| `boolean isQuitting` | _No documentation available._ |
-| `boolean isRestart` | _No documentation available._ |
-| `boolean isStartupFinished` | _No documentation available._ |
-| `StartupProps startupProps` | _No documentation available._ |
+| `boolean isASMPlay` | Gets whatever we're currently in ASM play mode. |
+| `boolean isQuitting` | Gets whatever ASM is currently in the process of quitting the game. |
+| `boolean isRestart` | Gets if ASM has been restarted, or is currently restarting. |
+| `boolean isStartupFinished` | Gets if startup process is finished. |
+| `StartupProps startupProps` | Gets the props that should be used for startup process. |
 
 ### Methods
 
 | Member | Description |
 |--------|-------------|
-| `abstract virtual void CancelQuit()` | _No documentation available._ |
-| `abstract virtual void CancelStartup()` | _No documentation available._ |
-| `abstract virtual void Exit()` | _No documentation available._ |
+| `abstract virtual void CancelQuit()` | Cancels the current quit process. |
+| `abstract virtual void CancelStartup()` | Cancels startup process. |
+| `abstract virtual void Exit()` | Exits the application immediately. |
 | `abstract virtual void Quit(boolean fade, Nullable<Color> fadeColor, single fadeDuration)` | _No documentation available._ |
 | `abstract virtual void RegisterQuitCallback(Func<IEnumerator> coroutine)` | _No documentation available._ |
 | `abstract virtual void Restart(StartupProps props)` | _No documentation available._ |

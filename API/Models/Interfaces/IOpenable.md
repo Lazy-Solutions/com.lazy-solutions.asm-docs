@@ -7,18 +7,18 @@ Defines members for openable assets.
 
 | Member | Description |
 |--------|-------------|
-| `boolean isOpen` | Gets if this `IOpenable` is open. |
-| `boolean isQueued` | Gets if this `IOpenable` is queued to be opened. |
+| `boolean isOpen` | Gets whether this asset is currently open. |
+| `boolean isQueued` | Gets whether this asset is queued to be opened or closed. |
 
 ### Methods
 
 | Member | Description |
 |--------|-------------|
-| `abstract virtual void _Close()` | _No documentation available._ |
-| `abstract virtual void _Open()` | _No documentation available._ |
-| `abstract virtual void _Reopen()` | _No documentation available._ |
-| `abstract virtual void _ToggleOpen()` | _No documentation available._ |
-| `abstract virtual SceneOperation Close()` | Closes this `IOpenable`. |
-| `abstract virtual SceneOperation Open()` | Opens this `IOpenable`. |
-| `abstract virtual SceneOperation Reopen()` | Reopens this `IOpenable`. |
-| `abstract virtual SceneOperation ToggleOpen()` | Toggles this `IOpenable` open or closed. |
+| `abstract virtual void _Close()` | Closes this asset. |
+| `abstract virtual void _Open()` | Opens this asset. |
+| `abstract virtual void _Reopen()` | Reopens this asset. |
+| `abstract virtual void _ToggleOpen()` | Toggles this asset open or closed. |
+| `abstract virtual SceneOperation Close()` | Closes this asset. |
+| `abstract virtual SceneOperation Open()` | Opens this asset. |
+| `abstract virtual SceneOperation Reopen()` | Reopens this asset. |
+| `abstract virtual SceneOperation ToggleOpen()` | Toggles this asset open or closed. |

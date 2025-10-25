@@ -13,7 +13,7 @@ Represents a async operation that returns a value.
 
 | Member | Description |
 |--------|-------------|
-| `boolean keepWaiting` | _No documentation available._ |
+| `boolean keepWaiting` | Indicates if coroutine should be kept suspended. |
 | `T value` | Gets the value that was produced by the async operation. |
 
 ### Static Methods

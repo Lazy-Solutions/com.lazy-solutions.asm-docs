@@ -1,16 +1,15 @@
 ## CallbackUtility
 
 `static class` in `AdvancedSceneManager.Callbacks`### Description
-An utility class that invokes callbacks (defined in interfaces based on `ISceneCallbacks`).
+Provides utilities for discovering and invoking scene and collection callbacks.
+            Handles interfaces derived from `ISceneCallbacks` and their coroutine/awaitable counterparts.
 
 ### Static Methods
 
 | Member | Description |
 |--------|-------------|
-| `IEnumerator DoCollectionCloseCallbacks(SceneCollection collection)` | _No documentation available._ |
-| `IEnumerator DoCollectionOpenCallbacks(SceneCollection collection)` | _No documentation available._ |
-| `IEnumerator DoSceneCloseCallbacks(Scene scene)` | _No documentation available._ |
-| `IEnumerator DoSceneOpenCallbacks(Scene scene)` | _No documentation available._ |
-| `IEnumerator Invoke<T>(Scene scene)` | _No documentation available._ |
-| `IEnumerator Invoke<T>(SceneCollection collection)` | _No documentation available._ |
+| `IEnumerator DoCollectionCloseCallbacks(SceneCollection collection)` | Invokes all collection close callbacks on the specified `collection`. |
+| `IEnumerator DoCollectionOpenCallbacks(SceneCollection collection)` | Invokes all collection open callbacks on the specified `collection`. |
+| `IEnumerator DoSceneCloseCallbacks(Scene scene)` | Invokes all scene close callbacks on the specified `scene`. |
+| `IEnumerator DoSceneOpenCallbacks(Scene scene)` | Invokes all scene open callbacks on the specified `scene`. |
 | `FluentInvokeAPI<T> Invoke<T>()` | _No documentation available._ |

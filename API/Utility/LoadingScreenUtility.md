@@ -32,6 +32,6 @@ Manager for loading screens.
 | `Async<T> OpenLoadingScreen<T>(Scene loadingScene, SceneOperation operation, Action<T> callbackBeforeBegin)` | _No documentation available._ |
 | `AsyncOperation Preload(AsyncOperation asyncOperation, Func`1& activateCallback)` | _No documentation available._ |
 | `void RegisterLoadProgressListener(ILoadProgressListener listener)` | Registers a `ILoadProgressListener` that will receive callbacks when progress is reported from ASM. |
-| `void ReportProgress(ILoadProgressData progress)` | _No documentation available._ |
-| `GlobalCoroutine ReportProgress(AsyncOperation asyncOperation, SceneOperationKind kind, SceneOperation operation, Scene scene)` | Returns a coroutine that returns when `isDone` becomes `true`. `onProgress` will be called every frame with `progress`. |
+| `void ReportProgress(ILoadProgressData progress)` | Report progress. |
+| `GlobalCoroutine ReportProgress(AsyncOperation asyncOperation, SceneOperationKind kind, SceneOperation operation, Scene scene)` | Returns a coroutine that returns when `isDone` becomes `true`. |
 | `void UnregisterLoadProgressListener(ILoadProgressListener listener)` | Unregisters a `ILoadProgressListener` that was registered using [ILoadProgressListener)](https://learn.microsoft.com/dotnet/api/m:advancedscenemanager.utility.loadingscreenutility.registerloadprogresslistener(advancedscenemanager.loading.iloadprogresslistener)). |

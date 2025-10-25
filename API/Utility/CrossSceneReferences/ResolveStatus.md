@@ -7,15 +7,15 @@ Specifies the result of a resolve.
 
 | Member | Description |
 |--------|-------------|
-| `ResolveStatus ComponentNotFound` | _No documentation available._ |
-| `ResolveStatus IndexOutOfRange` | _No documentation available._ |
-| `ResolveStatus InvalidField` | _No documentation available._ |
-| `ResolveStatus InvalidObjectPath` | _No documentation available._ |
-| `ResolveStatus SceneIsNotOpen` | _No documentation available._ |
-| `ResolveStatus Succeeded` | _No documentation available._ |
-| `ResolveStatus TypeMismatch` | _No documentation available._ |
-| `ResolveStatus Unknown` | _No documentation available._ |
-| `ResolveStatus Unresolved` | _No documentation available._ |
+| `ResolveStatus ComponentNotFound` | The referenced component could not be found. |
+| `ResolveStatus IndexOutOfRange` | The referenced array or event index was out of range. |
+| `ResolveStatus InvalidField` | The referenced field could not be found. |
+| `ResolveStatus InvalidObjectPath` | The object path was invalid or could not be found. |
+| `ResolveStatus SceneIsNotOpen` | The referenced scene is not currently open. |
+| `ResolveStatus Succeeded` | The reference was successfully resolved. |
+| `ResolveStatus TypeMismatch` | The resolved value type does not match the expected type. |
+| `ResolveStatus Unknown` | An unknown error occurred during resolution. |
+| `ResolveStatus Unresolved` | The reference has not been resolved yet. |
 
 ### Fields
 

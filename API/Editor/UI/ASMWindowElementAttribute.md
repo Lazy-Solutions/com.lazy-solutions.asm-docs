@@ -4,14 +4,15 @@
 Specifies a method or view model class that should be used as a callback to insert a visual element into the ASM window.
 
 <b> Remarks:</b>
-When specified on a class it should implement [IViewModel](https://learn.microsoft.com/dotnet/api/!:iviewmodel).
+When specified on a class it should inherit `ViewModel`.
 
 ### Properties
 
 | Member | Description |
 |--------|-------------|
 | `boolean canToggleVisible` | Gets if this element can be toggled visible or hidden. |
-| `string friendlyDescription` | _No documentation available._ |
+| `int32 defaultOrder` | Specifies default order. |
+| `string friendlyDescription` | Specifies the description to be shown in the diag UI tooltip. |
 | `boolean isVisibleByDefault` | Gets if this element is visible by default. |
 | `ElementLocation location` | Gets the location of this element. |
 | `string name` | A name to distinguish this from other attributes on the same method. |
@@ -28,4 +29,4 @@ When specified on a class it should implement [IViewModel](https://learn.microso
 
 | Member | Description |
 |--------|-------------|
-| `virtual boolean IsValidTarget(MemberInfo member)` | _No documentation available._ |
+| `virtual boolean IsValidTarget(MemberInfo member)` | Gets if `member` is a valid target for this attribute callback. |

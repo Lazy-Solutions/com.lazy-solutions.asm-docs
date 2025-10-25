@@ -1,7 +1,7 @@
 ## IOpenableScene`1
 
 `interface` in `AdvancedSceneManager.Models.Interfaces`### Description
-Defines methods for openable scenes.
+Defines members for openable scenes.
 
 ### Methods
 

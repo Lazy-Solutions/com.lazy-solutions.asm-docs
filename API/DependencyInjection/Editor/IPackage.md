@@ -10,5 +10,5 @@ Only available in editor.
 
 | Member | Description |
 |--------|-------------|
-| `string folder` | _No documentation available._ |
-| `string version` | _No documentation available._ |
+| `string folder` | The folder that ASM is contained within. |
+| `string version` | The version of ASM. |

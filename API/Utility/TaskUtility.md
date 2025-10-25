@@ -7,6 +7,6 @@ Provides utility methods for working with tasks.
 
 | Member | Description |
 |--------|-------------|
-| `CoroutineAwaiter GetAwaiter(IEnumerator coroutine)` | _No documentation available._ |
-| `Awaitable<boolean> StartCoroutineAsAwaitable(IEnumerator coroutine)` | Awaits the coroutine. |
-| `Task StartCoroutineAsTask(IEnumerator coroutine)` | Awaits the coroutine. |
+| `CoroutineAwaiter GetAwaiter(IEnumerator coroutine)` | Gets an awaiter that allows awaiting the coroutine. |
+| `Awaitable<boolean> StartCoroutineAsAwaitable(IEnumerator coroutine)` | Runs a coroutine as an `Awaitable`1`. |
+| `Task StartCoroutineAsTask(IEnumerator coroutine)` | Runs a coroutine as a `Task`. |

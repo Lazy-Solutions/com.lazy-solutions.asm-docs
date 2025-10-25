@@ -8,7 +8,7 @@ An implementation of `ILoadProgressData` that provides a string message.
 | Member | Description |
 |--------|-------------|
 | `string message` | The message of this report. |
-| `single value` | _No documentation available._ |
+| `single value` | The reported progress value. |
 
 ### Methods
 

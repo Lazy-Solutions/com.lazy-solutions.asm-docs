@@ -32,14 +32,14 @@ An utility class to perform actions on scenes.
 | `Scene CreateAndImport(string path)` | Creates and imports a scene. |
 | `IEnumerable<Scene> CreateAndImport(string[] paths)` | _No documentation available._ |
 | `IEnumerable<Scene> CreateAndImport(IEnumerable<string> paths)` | _No documentation available._ |
-| `void CreateAsset(string folder, string baseClass, string namespaceName, string name)` | _No documentation available._ |
+| `void CreateAsset(string folder, string baseClass, string namespaceName, string name)` | Creates a scene asset and script based on the specified base class. |
 | `Scene CreateDynamic(string name, LocalPhysicsMode localPhysicsMode)` | Creates a scene at runtime, that is not saved to disk. |
 | `GameObject CreateHere(MonoBehaviour mono)` | Creates a game object in this scene. |
 | `GameObject CreateHere(MonoBehaviour mono, string name)` | Creates a game object in this scene. |
 | `GameObject CreateHere(MonoBehaviour mono, string name, Type[] components)` | Creates a game object in this scene. |
 | `TComponent CreateHere<TComponent>(MonoBehaviour mono, string gameObjectName)` | Creates a game object in this scene. |
-| `void CreateLoadingScreenAsset(string folder, string name, string namespaceName)` | Creates a loading screen scene, and a script to go along with it. |
-| `void CreateSplashScreenAsset(string folder, string name, string namespaceName)` | Creates a splash screen scene, and a script to go along with it. |
+| `void CreateLoadingScreenAsset(string folder, string name, string namespaceName)` | Creates a loading screen scene and its corresponding script. |
+| `void CreateSplashScreenAsset(string folder, string name, string namespaceName)` | Creates a splash screen scene and its corresponding script. |
 | `void Disable(Scene scene)` | Sets all root objects as disabled. |
 | `void Enable(Scene scene)` | Sets all root objects as enabled. |
 | `IEnumerable<Scene> EvaluateFinalSceneList(Profile profile, StartupProps props)` | _No documentation available._ |
@@ -59,10 +59,10 @@ An utility class to perform actions on scenes.
 | `Scene Import(string scene)` | Imports the scene into ASM and returns it. Returns already imported scene if already imported. |
 | `IEnumerable<Scene> Import(string[] scene)` | Imports the scene into ASM and returns it. Returns already imported scene if already imported. |
 | `boolean IsIncluded(Scene scene)` | Gets if the scene is included in build. |
-| `void MergeScenes(Scene targetScene, Scene[] scenes)` | _No documentation available._ |
-| `void MergeScenes(string targetScenePath, string[] scenePaths)` | _No documentation available._ |
-| `void MergeScenesPreserveOriginal(Scene targetScene, Scene[] scenes)` | _No documentation available._ |
-| `void MergeScenesPreserveOriginal(string targetScenePath, string[] scenePaths)` | _No documentation available._ |
+| `void MergeScenes(Scene targetScene, Scene[] scenes)` | Merges the specified scenes into the target scene. |
+| `void MergeScenes(string targetScenePath, string[] scenePaths)` | Merges the specified scenes into the target scene. |
+| `void MergeScenesPreserveOriginal(Scene targetScene, Scene[] scenes)` | Merges the specified scenes into the target scene, preserving the originals. |
+| `void MergeScenesPreserveOriginal(string targetScenePath, string[] scenePaths)` | Merges the specified scenes into the target scene, preserving the originals. |
 | `void Move(GameObject obj, Scene scene)` | _No documentation available._ |
 | `void Move(GameObject obj, Scene scene)` | _No documentation available._ |
 | `void MoveAfter(Scene sceneToMove, Scene otherScene)` | Moves the scene after another scene. |

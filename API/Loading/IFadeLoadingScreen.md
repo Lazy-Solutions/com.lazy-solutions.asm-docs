@@ -1,7 +1,7 @@
 ## IFadeLoadingScreen
 
 `interface` in `AdvancedSceneManager.Loading`### Description
-Used to pass arguments from [FadeIn(LoadingScreen, float, Color?)](https://learn.microsoft.com/dotnet/api/!:loadingscreenutility.fadein(loadingscreen, float, color?))
+Used to pass arguments from [Color})](https://learn.microsoft.com/dotnet/api/m:advancedscenemanager.utility.loadingscreenutility.fadein(advancedscenemanager.loading.loadingscreenbase,system.single,system.nullable{unityengine.color}))
 
 ### Properties
 

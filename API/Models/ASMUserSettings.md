@@ -22,9 +22,9 @@ Only available in editor.
 | `boolean displayDynamicCollectionMenuButton` | Specifies the dynamic collection menu hover button should be displayed. |
 | `boolean displayHierarchyIndicators` | Specifies whatever the hierarchy indicators should be visible. |
 | `boolean displaySceneTooltips` | Specifies whatever SceneField will display tooltips. |
-| `boolean displaySyncedIndicator` | Specifies that the 'synced' hierarchy indicator should be shown for synced scenes when using netcode. |
 | `boolean editorOnly` | _No documentation available._ |
 | `single hierarchyIndicatorsOffset` | Gets or sets the offset ASM will use for hierarchy indicators. |
+| `boolean keepSceneUIInMemoryWhenCollectionCollapsed` | Whether to keep scene UI elements in memory when a collection is collapsed. |
 | `string lastPatchWhenNotified` | Gets or sets the last patch version when user was notified. |
 | `string lastUpdateCheck` | Gets or sets the timestamp of the last update check. |
 | `boolean logBuildScenes` | Specifies whatever ASM should log when build scene list is updated. |

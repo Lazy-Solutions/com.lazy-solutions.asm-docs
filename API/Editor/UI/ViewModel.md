@@ -12,7 +12,7 @@ Only available in the editor.
 |--------|-------------|
 | `boolean cacheAsSingleton` | Gets whatever we should cache this view model. `true` by default, disable if you're having issues. |
 | `ViewModelContext context { get; }` | Gets or sets the context for this view model. |
-| `VisualElement headerView { get; }` | Gets or sets the header element for this view model, assuming [createHeaderGUI](https://learn.microsoft.com/dotnet/api/!:createheadergui) is overriden. |
+| `VisualElement headerView { get; }` | Gets the header element for this view model, assuming `CreateHeaderGUI` is overriden. |
 | `boolean isAdded { get; }` | Gets whether this view model has been added to the UI. |
 | `boolean remainOpenAsPopupAfterDomainReload` | When hosted as a popup, should this view be re-opened after a domain reload? |
 | `VisualElement rootVisualElement` | Gets the root visual element of the ASM window. |

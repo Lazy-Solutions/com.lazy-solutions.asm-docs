@@ -8,4 +8,4 @@ Defines members for openable collections.
 | Member | Description |
 |--------|-------------|
 | `abstract virtual void _OpenAdditive()` | _No documentation available._ |
-| `abstract virtual SceneOperation OpenAdditive(boolean openAll)` | Opens the `IOpenableCollection` as additive. |
+| `abstract virtual SceneOperation OpenAdditive(boolean openAll)` | Opens the collection as additive. |

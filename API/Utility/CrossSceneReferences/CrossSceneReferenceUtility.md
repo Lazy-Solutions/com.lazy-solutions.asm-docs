@@ -15,7 +15,7 @@ An utility for saving and restoring cross-scene references.
 | `IEnumerable<ResolvedCrossReference> GetResolvedReferences(Scene scene)` | Gets all references for this scene. |
 | `IEnumerable<ResolvedCrossReference> GetResolvedReferences(GameObject obj)` | Gets all references for this game object. |
 | `IEnumerable<ResolvedCrossReference> GetResolvedReferencesValue(GameObject obj)` | Gets all references for this game object. |
-| `SceneStatus GetSceneStatus(Scene scene)` | _No documentation available._ |
+| `SceneStatus GetSceneStatus(Scene scene)` | Gets the resolve status of `scene`. |
 | `void Initialize()` | Initializes cross-scene references, if it is enabled in settings. |
 | `void Initialize(Nullable<boolean> enabled)` | Initializes cross-scene references, if it is enabled in settings. |
 | `void ResetAllScenes()` | Resets all cross-scene references in all scenes. |

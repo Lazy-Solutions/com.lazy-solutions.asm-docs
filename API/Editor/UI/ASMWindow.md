@@ -11,12 +11,12 @@ Only available in the editor.
 | Member | Description |
 |--------|-------------|
 | `void AddNotification(Notification notification)` | Adds a notification to the ASM window, optionally with click and dismiss callbacks, dismiss behavior, visual style, and icon information. |
-| `void ClosePopup()` | Closes `T` if it is open as a popup. |
-| `boolean IsPopupOpen()` | _No documentation available._ |
-| `boolean IsPopupOpen<T>()` | _No documentation available._ |
+| `void ClosePopup()` | Closes the currently open popup, if one is open.. |
+| `boolean IsPopupOpen()` | Determines whether any popup is currently open. |
+| `boolean IsPopupOpen<T>()` | Determines whether any popup is currently open. |
 | `void OpenPopup<T>()` | _No documentation available._ |
 | `void OpenPopup<T>(Nullable<ViewModelContext> context)` | _No documentation available._ |
-| `void OpenPopup(Type type, Nullable<ViewModelContext> context)` | Opens `viewModel` as a popup. |
+| `void OpenPopup(Type type, Nullable<ViewModelContext> context)` | Opens `type` as a popup. |
 | `void OpenSettings()` |  |
 | `void OpenSettings<T>()` |  |
 | `void OpenSettings<T>(ViewModelContext context)` | _No documentation available._ |

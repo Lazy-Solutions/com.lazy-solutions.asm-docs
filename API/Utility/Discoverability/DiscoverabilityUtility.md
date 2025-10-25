@@ -14,8 +14,7 @@ Provides utility methods for dealing and managing discoverables, a centralized a
 | Member | Description |
 |--------|-------------|
 | `boolean As<TAttribute, TMember>(DiscoveredMember discoveredMember, TAttribute& attribute, TMember& member)` | _No documentation available._ |
-| `IEnumerable<DiscoveredMember> GetAll(Assembly assembly)` | Gets all found discoverables. |
-| `Dictionary<string, IEnumerable<DiscoveredMember>> GetAll()` | Gets all found discoverables, grouped by assembly name. |
-| `IEnumerable<DiscoveredMember> GetMembers<TAttribute>()` | _No documentation available._ |
+| `IEnumerable<DiscoveredMember> GetMembers()` | Get members decorated with the specified attribute. |
+| `IEnumerable<DiscoveredMember> GetMembers<T>()` | Get members decorated with the specified attribute. |
 | `void Invoke<T>(object[] parameters)` | _No documentation available._ |
 | `IEnumerable<ValueTuple<TAttribute, TMember>> OfType<TAttribute, TMember>(IEnumerable<DiscoveredMember> discoveredMember)` | _No documentation available._ |

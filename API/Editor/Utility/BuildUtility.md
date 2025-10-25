@@ -17,8 +17,7 @@ Only available in editor.
 
 | Member | Description |
 |--------|-------------|
-| `BuildReport DoBuild(string path, boolean attachProfiler, boolean runGameWhenBuilt, boolean dev, BuildOptions customOptions)` | Performs a build of the active build profile if one exists, otherwise
-            falls back to Unity's legacy build pipeline. |
+| `BuildReport DoBuild(string path, boolean attachProfiler, boolean runGameWhenBuilt, boolean dev, BuildOptions customOptions)` | Performs a build of the active build profile if one exists, otherwise falls back to Unity's legacy build pipeline. |
 | `BuildReport DoBuild(BuildPlayerOptions opts)` | Performs a build using the legacy `BuildPlayerOptions` API. |
 | `BuildReport DoBuild(BuildPlayerWithProfileOptions options)` | _No documentation available._ |
 | `IEnumerable<ValueTuple<EditorBuildSettingsScene, Reason>> GetOrderedList()` | Gets an ordered list of all scenes that ASM would set in the build settings. |

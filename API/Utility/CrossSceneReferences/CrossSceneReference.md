@@ -1,15 +1,15 @@
 ## CrossSceneReference
 
 `class` in `AdvancedSceneManager.Utility.CrossSceneReferences`### Description
-A reference to a variable that references another object in some other scene.
+Represents a reference between two objects in different scenes.
 
 ### Fields
 
 | Member | Description |
 |--------|-------------|
-| `string id` | _No documentation available._ |
-| `ObjectReference value` | _No documentation available._ |
-| `ObjectReference variable` | _No documentation available._ |
+| `string id` | The unique identifier for this reference. |
+| `ObjectReference value` | The value assigned to the referenced variable. |
+| `ObjectReference variable` | The variable being referenced in another scene. |
 
 ### Methods
 
