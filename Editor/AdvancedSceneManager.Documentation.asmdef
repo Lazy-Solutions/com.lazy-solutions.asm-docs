@@ -1,3 +1,26 @@
 {
-	"name": "AdvancedSceneManager.Documentation"
+    "name": "AdvancedSceneManager.Documentation",
+    "rootNamespace": "AdvancedSceneManager.Documentation",
+    "references": [
+        "GUID:2c6f01f5d27984343bd2e98e1116e8fd"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [
+        "UNITY_EDITOR"
+    ],
+    "versionDefines": [
+        {
+            "name": "com.lazy-solutions.advanced-scene-manager",
+            "expression": "3.0.0",
+            "define": "ASM"
+        }
+    ],
+    "noEngineReferences": false
 }
