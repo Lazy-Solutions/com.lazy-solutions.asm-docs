@@ -10,57 +10,6 @@ using UnityEditor;
 namespace AdvancedSceneManager.Documentation
 {
 
-    #region Generation
-
-    class XmlFileGenerator : AssetPostprocessor
-    {
-
-        // Warnings you want to suppress globally for these projects
-        static readonly string[] suppressedWarnings =
-        {
-            "1591" // Missing XML comment for publicly visible member
-        };
-
-        // List of target projects (optional; you can remove if you want all projects)
-        static readonly string[] targetProjects =
-        {
-            "AdvancedSceneManager.csproj",
-        };
-
-        static string OnGeneratedCSProject(string path, string content)
-        {
-            if (!targetProjects.Any(path.EndsWith))
-                return content;
-
-            const string marker = "<PropertyGroup>";
-            var index = content.IndexOf(marker);
-            if (index < 0)
-                return content;
-
-            var insertIndex = index + marker.Length;
-            var injection = "";
-
-            // Add XML documentation output if missing
-            if (!content.Contains("<DocumentationFile>"))
-                injection += "\n    <DocumentationFile>Library/ScriptAssemblies/$(MSBuildProjectName).xml</DocumentationFile>";
-
-            // Build the warning list dynamically
-            var suppressions = string.Join(";", suppressedWarnings);
-
-            // Inject <NoWarn> if missing or incomplete
-            if (!content.Contains("<NoWarn>") || suppressedWarnings.Any(w => !content.Contains(w)))
-                injection += $"\n    <NoWarn>$(NoWarn);{suppressions}</NoWarn>";
-
-            if (!string.IsNullOrEmpty(injection))
-                content = content.Insert(insertIndex, injection);
-
-            return content;
-        }
-
-    }
-
-    #endregion
-
     public static partial class DocumentationUtility
     {
 
