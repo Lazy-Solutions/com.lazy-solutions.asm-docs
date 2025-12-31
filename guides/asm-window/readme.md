@@ -1,4 +1,5 @@
-# [←](../) ASM Window _(Scene Manager Window)_
+# [← ASM docs](../)
+## ASM Window _(Scene Manager Window)_
 
 The **ASM Window** is the primary editor UI for managing scenes and collections in ASM.\
 It is used to define how scenes are grouped, opened, loaded, and included in builds, and acts as the central control point for your project’s scene setup.
