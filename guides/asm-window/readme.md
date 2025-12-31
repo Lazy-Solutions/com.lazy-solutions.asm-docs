@@ -5,16 +5,16 @@ It is used to define how scenes are grouped, opened, loaded, and included in bui
 
 ## Sections
 
-[Main View](asm-window/main.md)\
+[Main View](main.md)\
   The core view where the ASM scene and collection setup is managed.
 
-[Settings popup](asm-window/settings.md)\
+[Settings popup](settings.md)\
   Categorized settings pages for profiles, ASM project configuration, and user preferences.
   
-[Popups](asm-window/popups.md)\
+[Popups](popups.md)\
   Contextual dialogs for editing collections, scenes, events, and other options.
 
-[ASM utility functions](asm-window/utility-functions.md)\
+[ASM utility functions](utility-functions.md)\
   Contextual dialogs for editing collections, scenes, events, and other options.
 
 <!-- Image: ASM Window main view -->
