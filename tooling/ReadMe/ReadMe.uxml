@@ -1,0 +1,12 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Packages/com.lazy-solutions.asm-docs/tooling/ReadMe.uss?fileID=7433441132597879392&amp;guid=65b58b5125a3048478b9fbf230f16d05&amp;type=3#ReadMe"/>
+    <ui:Label text="Welcome to Advanced Scene Manager documentation" name="title"/>
+    <ui:Label text="The &lt;b&gt;Guides&lt;/b&gt; folder contains hand-written articles, while the &lt;b&gt;API&lt;/b&gt; folder contains generated C# documentation." name="paragraph"/>
+    <ui:Label text="Documentation is written in Markdown. To view it inside Unity, you’ll want a Markdown viewer, such as:" name="paragraph" class="paragraph"/>
+    <ui:Label text="↪ View on GitHub" name="link-github" class="link"/>
+    <ui:VisualElement name="separator" style="flex-grow: 1; display: none;"/>
+    <ui:Button text="Install" name="button-install" style="margin-top: 12px;"/>
+    <ui:VisualElement name="separator" style="flex-grow: 1;"/>
+    <ui:Label text="📁 View guides" name="link-guides" class="link"/>
+    <ui:Label text="📁 View API documentation" name="link-api-docs" class="link"/>
+</ui:UXML>

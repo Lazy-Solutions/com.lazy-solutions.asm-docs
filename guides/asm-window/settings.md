@@ -1,4 +1,4 @@
-#### [← ASM Window _(Scene Manager Window)_](.)
+#### [← ASM Window _(Scene Manager Window)_](readme.md)
 ## Settings popup
 ### Overview
 
