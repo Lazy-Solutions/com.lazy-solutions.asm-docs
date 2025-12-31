@@ -95,4 +95,4 @@ The bottom of the ASM window contains:
 
 > Read more about [startup behavior]().
 
-> For lesser-used views like popups and context menus, see the [ASM Popups Guide]().
+> For lesser-used views like popups and context menus, see the [ASM Popups Guide](popups.md).
