@@ -1,5 +1,5 @@
 # [ASM Window _(Scene Manager Window)_](../asm-window.md)
-## Settings
+## Settings popup
 ### Overview
 
 - [Scene loading page](#scene-loading-page)
