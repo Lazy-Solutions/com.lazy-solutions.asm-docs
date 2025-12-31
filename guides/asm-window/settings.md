@@ -1,4 +1,4 @@
-# [ASM Window _(Scene Manager Window)_](../asm-window.md)
+# [ASM Window _(Scene Manager Window)_](.)
 ## Settings popup
 ### Overview
 
