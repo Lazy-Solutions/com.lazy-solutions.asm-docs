@@ -1,4 +1,5 @@
-#### [← ASM Window _(Scene Manager Window)_](readme.md)
+| ← [Back](readme.md) | 🏠 [Home](../readme.md) |
+|:-------|-------:|
 ## Utility functions window
 
 The Utility Functions window provides a list of scriptable editor utilities related to ASM workflows.

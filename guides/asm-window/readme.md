@@ -1,4 +1,5 @@
-#### [← ASM docs](../readme.md)
+| ← [Back](../readme.md) | 🏠 [Home](../readme.md) |
+|:-------|-------:|
 ## ASM Window _(Scene Manager Window)_
 
 The **ASM Window** is the primary editor UI for managing scenes and collections in ASM.\

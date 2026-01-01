@@ -1,4 +1,5 @@
-#### [← ASM Window _(Scene Manager Window)_](readme.md)
+| ← [Back](readme.md) | 🏠 [Home](../readme.md) |
+|:-------|-------:|
 ## Main view
 ### Overview
 
@@ -11,7 +12,7 @@ The main view is divided into several distinct areas:
 4. **Special Collections**
 5. **Footer**
 
-## 1. Header Toolbar
+## 1. Header
 
 ![](../image/main-header.png)
 
@@ -31,6 +32,8 @@ Each **collection** can contain one or more **scene fields**.
 
 ### Collection Header
 
+![](../image/main-collection.png)
+
 Each collection includes:
 
 - Drag handle
@@ -49,13 +52,14 @@ Each collection includes:
 
 ### Scene Field
 
+![](../image/main-scene.png)
+
 Each scene field includes:
 
 - Drag handle
-- **Open** (single scene)
-- **Additive open**
+- **Open / Additive Open** buttons
 - Scene selector (ObjectField)
-- Optional indicators (e.g. persistent star, scene loader)
+- Scene loader indicator (not depicted in image)
 - Scene menu (per-scene options)
 - Remove button
 
@@ -65,35 +69,38 @@ Each scene field includes:
 
 > See the Scenes Guide for scene-specific settings like persistence, loaders, etc.
 
-> Some controls may be hidden depending on your Editor Settings.
-
 ## 3. Dynamic Collections
+
+![](../image/main-dynamic-collections.png)\
+_Special collections (covered below) faded out for clarity_
 
 Dynamic collections are collections that take a string path. ASM will automatically locate all `SceneAsset` files at the path, either directly if it points to a single scene, or recursively within a folder and its subfolders. These collections are typically used for workflows involving assets like world streamers, which generate many scenes that should be included in the build but don't need to be imported into ASM.
 
-It doesn't matter whether the scenes found by the dynamic collection are already imported into ASM or not, they will still be considered.
+It doesn't matter whether the scenes found by the dynamic collection are already imported into ASM or not, they will still be included in builds.
 
 > Dynamic collections do not support extendable buttons.
 
 ## 4. Special collections
 
-- **Standalone Scenes**: Manual list of scenes that should be included in build even if not in other collections.
+![](../image/main-special-collections.png)
+
+- **Standalone Scenes**: Manual list of scenes that should be included in build that should be included in build even if its not contained within any collections. Supports input bindings (Escape is depicted in image, as scene bound to escape).
 - **ASM Defaults**: Scenes provided as a UPM sample (loading screens, splash screens, etc.). Use the "Import Scenes" button to pull them into the project.
 
-## 5. Footer Controls
+## 5. Footer
+
+![](../image/main-footer.png)
 
 The bottom of the ASM window contains:
 
 - **Profile Picker**: Active profile shown on the left. Click to select or create profiles.
-    - See Profiles Guide
+- **Child profiles button**: Opens the [child profiles popup](#child-profiles-popup).
 - **Scene Helper Button**: Drag this into [UnityEvent](https://docs.unity3d.com/Manual/UnityEvents.html) or similar to easily call ASM methods.
-    - See Scene Helper Guide
 - **New Collection Button**: Creates new collections. Split button allows creating collections from templates.
 
 ## Tips
 
-- Drag & drop scene and collection headers to get a reference to them (e.g., assign to [UnityEvent](https://docs.unity3d.com/Manual/UnityEvents.html) and similar)
-- You can create and assign scenes directly from the scene field using the `+` button.
+- Start a drag scene and collection headers to get a drag & drop reference to them (e.g., assign to [UnityEvent](https://docs.unity3d.com/Manual/UnityEvents.html) and similar)
 - Use the collection play button to preview specific scene setups without overriding startup behavior.
 
 > Read more about [startup behavior]().

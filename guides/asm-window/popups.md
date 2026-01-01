@@ -1,4 +1,5 @@
-#### [← ASM Window _(Scene Manager Window)_](readme.md)
+| ← [Back](readme.md) | 🏠 [Home](../readme.md) |
+|:-------|-------:|
 ## Popups
 ### Overview
 
@@ -15,6 +16,7 @@
 - [Dynamic collection popup](#dynamic-collection-popup)
 - [Menu popup](#menu-popup)
 - [Scene Overview popup](#scene-overview-popup)
+- [Child profiles popup](#child-profiles-popup)
 
 </br>
 
@@ -34,3 +36,4 @@
 # Dynamic collection popup
 # Menu popup
 # Scene overview popup
+# Child profiles popup
