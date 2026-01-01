@@ -1,5 +1,4 @@
-| ← [Back](readme.md) | 🏠 [Home](../readme.md) |
-|:-------|-------:|
+← [Back](readme.md) | 🏠 [Home](../readme.md)
 ## Main view
 ### Overview
 
