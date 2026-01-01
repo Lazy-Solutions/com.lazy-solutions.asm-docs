@@ -19,9 +19,9 @@ The header includes:
 
 - **ASM Play Button**: Enters play mode, and runs ASM startup process. This means collections and scenes flagged to open during startup, will open like in builds.
 - **Extendable buttons _(Highlighted in image)_**: A container for holding extendable buttons. Unlike the other hardcoded header buttons, this container is powered by the `ASMWindowElement` attribute and is part of the Discoverables API, allowing it to be extended by users. Many extendable buttons are provided out of the box. Can be configured by right clicking and choosing "Customize".
-- **Bell Icon**: Shows the count of overflowed notifications. Clicking it opens a dropdown listing those notifications.
-- **Settings**: Opens the Settings Popup.
-- **Menu**: Opens the Menu Popup.
+- **Bell Icon**: Shows the count of overflowed notifications. Clicking it opens a dropdown listing those notifications. Muted notifications also appear here.
+- **Settings**: Opens the [Settings Popup](settings.md).
+- **Menu**: Opens the [Menu Popup](popups.md#menu-popup).
 
 ## 2. Scene Collections View
 
