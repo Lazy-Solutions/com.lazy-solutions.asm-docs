@@ -6,4 +6,4 @@ generated C# documentation.
 [↪ View on documentation on GitHub](https://github.com/Lazy-Solutions/com.lazy-solutions.asm-docs/blob/main/readme.md)
 
 [📁 View guides](guides/readme.md)\
-[📁 View API documentation](API/SceneManager.md)
+[📁 View API documentation](api/SceneManager.md)
