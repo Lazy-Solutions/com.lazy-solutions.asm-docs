@@ -5,6 +5,7 @@
 The main view is divided into several distinct areas:
 
 1. **Header**
+  
 2. **Scene Collections View**
 3. **Dynamic Collections**
 4. **Special Collections**
@@ -12,10 +13,12 @@ The main view is divided into several distinct areas:
 
 ## 1. Header Toolbar
 
+![](../image/main-header.png)
+
 The header includes:
 
 - **ASM Play Button**: Enters play mode, and runs ASM startup process. This means collections and scenes flagged to open during startup, will open like in builds.
-- **Extendable buttons**: A container for holding extendable buttons. Unlike the other hardcoded header buttons, this container is powered by the `ASMWindowElement` attribute and is part of the Discoverables API, allowing it to be extended by users. Many extendable buttons are provided out of the box. Can be configured by right clicking and choosing "Customize".
+- **Extendable buttons _(Highlighted in image)_**: A container for holding extendable buttons. Unlike the other hardcoded header buttons, this container is powered by the `ASMWindowElement` attribute and is part of the Discoverables API, allowing it to be extended by users. Many extendable buttons are provided out of the box. Can be configured by right clicking and choosing "Customize".
 - **Bell Icon**: Shows the count of overflowed notifications. Clicking it opens a dropdown listing those notifications.
 - **Settings**: Opens the Settings Popup.
 - **Menu**: Opens the Menu Popup.
