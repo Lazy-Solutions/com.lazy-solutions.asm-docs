@@ -36,3 +36,12 @@
 # Menu popup
 # Scene overview popup
 # Child profiles popup
+
+</br>
+
+### Related pages
+[📁 Main guide](main.md)\
+[📁 Settings Guide](settings.md)\
+[📁 Utility functions](utility-functions.md)
+
+[← Back](asm-window.md) | [🏠 Home](../readme.md)

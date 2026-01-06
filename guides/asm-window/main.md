@@ -83,7 +83,7 @@ It doesn't matter whether the scenes found by the dynamic collection are already
 
 ![](../image/main-special-collections.png)
 
-- **Standalone Scenes**: Manual list of scenes that should be included in build that should be included in build even if its not contained within any collections. Supports input bindings (Escape is depicted in image, as scene bound to escape).
+- **Standalone Scenes**: Manual list of scenes that should be included in build even if its not contained within any collections. Supports input bindings (Escape is depicted in image, as scene bound to escape).
 - **ASM Defaults**: Scenes provided as a UPM sample (loading screens, splash screens, etc.). Use the "Import Scenes" button to pull them into the project.
 
 ## 5. Footer
@@ -99,9 +99,14 @@ The bottom of the ASM window contains:
 
 ## Tips
 
-- Start a drag scene and collection headers to get a drag & drop reference to them (e.g., assign to [UnityEvent](https://docs.unity3d.com/Manual/UnityEvents.html) and similar)
+- Start a drag on scene and collection headers to get a drag & drop reference to them (e.g., assign to [UnityEvent](https://docs.unity3d.com/Manual/UnityEvents.html) and similar)
 - Use the collection play button to preview specific scene setups without overriding startup behavior.
 
-> Read more about [startup behavior]().
+</br>
 
-> For lesser-used views like popups and context menus, see the [ASM Popups Guide](popups.md).
+### Related pages
+[📁 Popups Guide](popups.md)\
+[📁 Settings Guide](settings.md)\
+[📁 Utility functions](utility-functions.md)
+
+[← Back](asm-window.md) | [🏠 Home](../readme.md)

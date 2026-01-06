@@ -1,5 +1,6 @@
 ﻿#if ASM
 using AdvancedSceneManager.Documentation;
+using AdvancedSceneManager.Utility.AssemblyAttributes;
 
 [assembly: Include("Packages/" + Package.packageName + "/**/*.md")]
 

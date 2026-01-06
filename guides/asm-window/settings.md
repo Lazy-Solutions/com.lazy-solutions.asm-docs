@@ -19,6 +19,8 @@
 
 The **Scene loading** page controls how ASM handles scene loading, unloading, tracking, and transitions, both at runtime and in the editor.
 
+![](../image/popup-settings-sceneLoading.png)
+
 ### Startup
 
 - **Splash screen**  
@@ -85,7 +87,7 @@ The **Scene loading** page controls how ASM handles scene loading, unloading, tr
 
 The **Assets** page controls how ASM manages its generated and imported assets.
 
-### Scene import
+![](../image/popup-settings-assets.png)
 
 - **Import mode**  
   Determines when scenes are imported into ASM:
@@ -96,8 +98,6 @@ The **Assets** page controls how ASM manages its generated and imported assets.
 
   > Scenes can also be imported manually via code using  
   > `SceneAsset.Import()` or `SceneImportUtility.Import("Assets/scene.unity")`.
-
-### Storage
 
 - **Generate profiles and scenes to**  
   Specifies where ASM-generated assets are stored, including profiles, collections, and imported scenes.
@@ -111,9 +111,11 @@ Controls which scenes are *allowed* to appear in the import popup.
 - Paths are case-insensitive and must start with `Assets/`.
 - Entries may reference folders or individual `.unity` files.
 
+![](../image/popup-settings-assets-whitelist.png)
+
 ### Blacklist
 
-Controls which scenes are *excluded* from ASM.
+Controls which scenes are *excluded* from appearing in the import popup.
 
 - Blacklisted scenes are never imported automatically.
 - They will not appear in the import popup.
@@ -122,9 +124,13 @@ Controls which scenes are *excluded* from ASM.
 
 > Scenes can be blacklisted or whitelisted directly from the scene import item context menu.
 
+![](../image/popup-settings-assets-blacklist.png)
+
 ## Editor page
 
 The **Editor** page controls how ASM behaves inside the Unity Editor.
+
+![](../image/popup-settings-editor.png)
 
 ### Profiles
 
@@ -143,12 +149,19 @@ The **Editor** page controls how ASM behaves inside the Unity Editor.
   Keeps Unity’s Build Settings scene list synchronized with ASM collections.
 
 - **Prevent assignment if null and Unity has an active Build Profile**  
-  If the ASM profile has no associated Unity build profile, but Unity has one active, this prevents ASM from writing to the build scene list and instead logs a warning.  
-  This helps avoid accidental writes to unintended build configurations.
+  When this is enabled, ASM will **not write to the global Build Settings** if:
+  
+  - the current ASM profile has **no Unity build profile assigned**, and  
+  - Unity currently has a **build profile active**
+  
+  Instead, ASM logs a warning and skips updating the build scene list.  
+  This helps prevent accidentally modifying the wrong build configuration when working with multiple Unity build profiles.
 
 - **Unity build profile**  
-  Associates a Unity build profile with an ASM profile.  
-  When set, ASM writes the build scene list to that profile instead of the global build settings.
+  Assigns a **Unity build profile** to the current **ASM profile**.
+  
+  When set, ASM writes the build scene list to this build profile.  
+  When not set, ASM writes to Unity’s global Build Settings, unless blocked by the option above.
 
 ### Enter play mode
 
@@ -174,6 +187,8 @@ These logs are intended for debugging and diagnosing issues in ASM and should ty
 
 The **Appearance** page controls UI behavior and visual preferences for the ASM window.
 
+![](../image/popup-settings-appearance.png)
+
 ### Window behavior
 
 - **Display search always**  
@@ -196,10 +211,15 @@ The **Appearance** page controls UI behavior and visual preferences for the ASM 
 This page allows configuring which extendable UI elements are visible in the ASM window, and in what order.  
 Elements can be enabled, disabled, and reordered per section.
 
+![](../image/popup-settings-appearance-extendableUI.png)
+
 ### Hierarchy
 
-This page controls hierarchy indicators displayed in Unity’s Hierarchy window.  
-Options include toggling specific indicators, adjusting offsets, and enabling or disabling support depending on Unity version.
+This page controls ASM hierarchy indicators displayed in Unity’s Hierarchy window.
+
+> Does not work in new UI toolkit version in unity 6.3+
+
+![](../image/popup-settings-appearance-hierarchy.png)
 
 ## Updates page
 
@@ -210,12 +230,16 @@ The **Updates** page controls how ASM checks for new versions.
 
   When update checks are set to automatic, the dropdown acts as a local override.  
   This allows, for example, a single person on a project to receive update notifications while others opt in manually.
+  
+![](../image/popup-settings-updates.png)
 
 ## Advanced page
 
 The **Advanced** page contains experimental or advanced configuration options.
 
-> Settings on this page may change behavior significantly or have known limitations.
+![](../image/popup-settings-advanced.png)
+
+> Settings on this page may change behavior significantly or have known limitations. Use these options with care, especially in production projects.
 
 - **Allow loading scenes in parallel**  
   Enables parallel scene loading for faster operations.  
@@ -230,4 +254,13 @@ The **Advanced** page contains experimental or advanced configuration options.
 
   Best practice is to avoid using the startup scene anywhere else in ASM-managed workflows.
 
-Use these options with care, especially in production projects.
+  > Separation of the startup and fallback scenes is planned and will be worked on in a future patch.
+
+</br>
+
+### Related pages
+[📁 Main guide](main.md)\
+[📁 Popups Guide](popups.md)\
+[📁 Utility functions](utility-functions.md)
+
+[← Back](asm-window.md) | [🏠 Home](../readme.md)
