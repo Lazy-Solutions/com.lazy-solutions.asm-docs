@@ -4,14 +4,13 @@
 
 The main view is divided into several distinct areas:
 
-1. **Header**
-  
-2. **Scene Collections View**
-3. **Dynamic Collections**
-4. **Special Collections**
-5. **Footer**
+- [Header](#header)
+- [Scene collections](#scene-collections)
+- [Dynamic collections](#dynamic-collections)
+- [Special collections](#special-collections)
+- [Footer](#footer)
 
-## 1. Header
+## Header
 
 ![](../image/main-header.png)
 
@@ -23,7 +22,7 @@ The header includes:
 - **Settings**: Opens the [Settings Popup](settings.md).
 - **Menu**: Opens the [Menu Popup](popups.md#menu-popup).
 
-## 2. Scene Collections View
+## Scene collections
 
 This is where most of your scene logic is configured.
 
@@ -68,7 +67,7 @@ Each scene field includes:
 
 > See the Scenes Guide for scene-specific settings like persistence, loaders, etc.
 
-## 3. Dynamic Collections
+## Dynamic collections
 
 ![](../image/main-dynamic-collections.png)\
 _Special collections (covered below) faded out for clarity_
@@ -79,14 +78,14 @@ It doesn't matter whether the scenes found by the dynamic collection are already
 
 > Dynamic collections do not support extendable buttons.
 
-## 4. Special collections
+## Special collections
 
 ![](../image/main-special-collections.png)
 
 - **Standalone Scenes**: Manual list of scenes that should be included in build even if its not contained within any collections. Supports input bindings (Escape is depicted in image, as scene bound to escape).
 - **ASM Defaults**: Scenes provided as a UPM sample (loading screens, splash screens, etc.). Use the "Import Scenes" button to pull them into the project.
 
-## 5. Footer
+## Footer
 
 ![](../image/main-footer.png)
 
