@@ -9,6 +9,13 @@ Represents the base attribute for discoverable attributes.
 |--------|-------------|
 | `string friendlyDescription` | Specifies the description to be shown in the diag UI tooltip. |
 
+### Static Methods
+
+| Member | Description |
+|--------|-------------|
+| `IEnumerable<DiscoveredMember> Enumerate<T>()` | _No documentation available._ |
+| `IEnumerable<ValueTuple<T, T2>> Enumerate<T, T2>()` | _No documentation available._ |
+
 ### Methods
 
 | Member | Description |

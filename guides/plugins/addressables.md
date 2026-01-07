@@ -1,4 +1,7 @@
-# Addressables
+<!---models/addressables.md-->
+[← Back](readme.md) | [🏠 Home](../readme.md)
+## Plugins
+### Addressables
 
 When the [Addressables](https://docs.unity3d.com/Manual/com.unity.addressables.html) package is installed, **ASM provides optional support for loading scenes using the Addressables system**.
 
@@ -10,3 +13,8 @@ The collection popup also includes a bulk toggle to mark all scenes in the colle
 
 ![](../image/popup-scene-scene-loader.png)
 
+### Related pages
+[📄 Addressables](addressables.md)\
+[📄 Netcode](netcode.md)
+
+[← Back](readme.md) | [🏠 Home](../readme.md)

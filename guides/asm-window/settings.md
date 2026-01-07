@@ -1,4 +1,4 @@
-[← Back](asm-window.md) | [🏠 Home](../readme.md)
+[← Back](readme.md) | [🏠 Home](../readme.md)
 ## Settings popup
 ### Overview
 
@@ -259,8 +259,9 @@ The **Advanced** page contains experimental or advanced configuration options.
 </br>
 
 ### Related pages
-[📁 Main guide](main.md)\
-[📁 Popups Guide](popups.md)\
-[📁 Utility functions](utility-functions.md)
+[📄 Main view](main.md)\
+[📄 Settings popup](settings.md)\
+[📄 Popups](popups.md)\
+[📄 ASM utility functions](utility-functions.md)
 
-[← Back](asm-window.md) | [🏠 Home](../readme.md)
+[← Back](readme.md) | [🏠 Home](../readme.md)

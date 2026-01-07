@@ -1,4 +1,7 @@
-## Profiles
+<!---models/profiles.md-->
+[← Back](readme.md) | [🏠 Home](../readme.md)
+## Models
+### Profiles
 
 Profiles in ASM are used to define and switch between distinct scene configurations. Each profile includes:
 
@@ -14,21 +17,15 @@ Profiles are activated in the bottom-left corner of the Scene Manager window, vi
 
 ![](../image/popup-profiles.png)
 
----
-
 ### Default Profile
 
 The **default profile** is activated automatically as a fallback when user does not have an active profile saved when ASM is initializing. This setting is configured in the Editor settings.
-
----
 
 ### Forced Profile
 
 The **forced profile** option (also set in Editor settings) overrides the per-user setting and enforces a shared profile across the team.
 
 This is ideal for teams where one person manages ASM.
-
----
 
 ### Unity Build Profile
 
@@ -50,3 +47,12 @@ To avoid this unintended behavior, ASM disables automatic build scene list writi
 - The current ASM profile has **no associated Unity Build Profile**.
 
 A warning will be logged in console when this happens. This behavior can be changed in the Editor settings.
+
+### Related pages
+[📄 Profiles](profiles.md)\
+[📄 Scene helper](event-callbacks.md)\
+[📄 Scene collections](scene-collections.md)\
+[📄 Scenes](scenes.md)\
+[📄 Standalone scenes](standalone-scenes.md)
+
+[← Back](readme.md) | [🏠 Home](../readme.md)

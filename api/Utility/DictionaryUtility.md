@@ -14,4 +14,4 @@ Contains utility functions for working with dictionaries.
 | `TValue GetValue<TKey, TValue>(IDictionary<TKey, TValue> d, TKey key, TValue defaultValue)` | _No documentation available._ |
 | `void Remove<TKey, TList, TItem>(IDictionary<TKey, TList> d, TKey key, TItem value)` | _No documentation available._ |
 | `TValue Set<TKey, TValue>(IDictionary<TKey, TValue> d, TKey key, TValue value)` | _No documentation available._ |
-| `void Set(Hashtable d, object key, object value)` | _No documentation available._ |
+| `void Set(Hashtable d, object key, object value)` | Adds or replaces a value in the specified `Hashtable`. |

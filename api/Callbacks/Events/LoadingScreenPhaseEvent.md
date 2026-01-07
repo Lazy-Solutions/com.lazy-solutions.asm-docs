@@ -10,15 +10,14 @@ See `LoadingScreenOpenPhaseEvent`, `LoadingScreenClosePhaseEvent`.
 
 | Member | Description |
 |--------|-------------|
-| `Scene loadingScene` | _No documentation available._ |
-| `LoadingScreen openedLoadingScreen` | _No documentation available._ |
+| `LoadingScreenReference loadingScreen` | _No documentation available._ |
 
 ### Methods
 
 | Member | Description |
 |--------|-------------|
 | `abstract virtual EventCallbackBase <Clone>$()` | _No documentation available._ |
-| `void Deconstruct(Scene& loadingScene, LoadingScreen& openedLoadingScreen)` | _No documentation available._ |
+| `void Deconstruct(LoadingScreenReference& loadingScreen)` | _No documentation available._ |
 | `virtual boolean Equals(object obj)` | _No documentation available._ |
 | `boolean Equals(SceneOperationEventBase other)` | _No documentation available._ |
 | `virtual boolean Equals(LoadingScreenPhaseEvent other)` | _No documentation available._ |

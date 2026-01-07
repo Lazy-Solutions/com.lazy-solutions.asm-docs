@@ -7,4 +7,4 @@ Applies a filter to the types displayed in `ASMEventCallbackPropertyDrawer`, use
 
 | Member | Description |
 |--------|-------------|
-| `Type[] HiddenTypes` | _No documentation available._ |
+| `Type[] HiddenTypes` | Specifies the types to hide in the list. |

@@ -23,7 +23,7 @@ Usage: `app`.
 | `abstract virtual void CancelQuit()` | Cancels the current quit process. |
 | `abstract virtual void CancelStartup()` | Cancels startup process. |
 | `abstract virtual void Exit()` | Exits the application immediately. |
-| `abstract virtual void Quit(boolean fade, Nullable<Color> fadeColor, single fadeDuration)` | _No documentation available._ |
+| `abstract virtual Awaitable Quit(boolean fade, Nullable<Color> fadeColor, single fadeDuration)` | _No documentation available._ |
 | `abstract virtual void RegisterQuitCallback(Func<IEnumerator> coroutine)` | _No documentation available._ |
 | `abstract virtual void Restart(StartupProps props)` | _No documentation available._ |
 | `abstract virtual Async<boolean> RestartAsync(StartupProps props)` | _No documentation available._ |

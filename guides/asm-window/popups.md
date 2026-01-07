@@ -1,4 +1,5 @@
-[← Back](asm-window.md) | [🏠 Home](../readme.md)
+<!---asm-window/popups.md-->
+[← Back](readme.md) | [🏠 Home](../readme.md)
 ## Popups
 ### Overview
 
@@ -185,8 +186,9 @@ Profiles can be checked to assign them as child profiles of the currently active
 </br>
 
 ### Related pages
-[📁 Main guide](main.md)\
-[📁 Settings Guide](settings.md)\
-[📁 Utility functions](utility-functions.md)
+[📄 Main view](main.md)\
+[📄 Settings popup](settings.md)\
+[📄 Popups](popups.md)\
+[📄 ASM utility functions](utility-functions.md)
 
-[← Back](asm-window.md) | [🏠 Home](../readme.md)
+[← Back](readme.md) | [🏠 Home](../readme.md)

@@ -1,6 +1,6 @@
 ## DefaultASMScenesCollection
 
-`class` in `AdvancedSceneManager.Models`  /  Inherits from: `DynamicCollectionBase<Scene>`### Description
+`sealed class` in `AdvancedSceneManager.Models`  /  Inherits from: `DynamicCollectionBase<Scene>`### Description
 Collection containing default ASM scenes, if they have been imported.
 
 ### Properties

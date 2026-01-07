@@ -1,7 +1,7 @@
 ## SceneOperation
 
 `class` in `AdvancedSceneManager.Core`  /  Inherits from: `CustomYieldInstruction`### Description
-A scene operation is a queueable operation that can open or close scenes. See also: [SceneAction](https://learn.microsoft.com/dotnet/api/!:sceneaction).
+A scene operation is a queueable operation that can open or close scenes..
 
 ### Static Properties
 
@@ -27,12 +27,12 @@ A scene operation is a queueable operation that can open or close scenes. See al
 | `boolean isDefaultASMScene { get; }` | Gets if this scene was opened from the default ASM scene collection. |
 | `boolean isFrozen { get; }` | Gets if this operation is frozen, as in, can its properties be changed? |
 | `boolean isStandaloneScene { get; }` | Gets if this scene was opened from the standalone collection. |
-| `boolean keepWaiting` | Inherited from [CustomYieldInstruction](https://learn.microsoft.com/dotnet/api/!:customyieldinstruction). Tells unity whatever the operation is done or not. |
-| `Scene loadingScene { get; }` | Gets the specified loading screen. |
-| `Action<LoadingScreen> loadingScreenCallback { get; }` | Gets the specified loading screen callback. |
+| `boolean keepWaiting` | Inherited from `CustomYieldInstruction`. Tells unity whatever the operation is done or not. |
+| `LoadingScreenReference loadingScreen { get; }` | Gets the specified loading screen. |
+| `Action<LoadingScreenReference> loadingScreenCallback { get; }` | Gets the specified loading screen callback. |
 | `LoadPriority loadPriority { get; }` | Gets the `LoadPriority` this operation will use. |
 | `IEnumerable<Scene> open { get; }` | Gets the scenes specified to open. |
-| `LoadingScreen openedLoadingScreen { get; }` | Gets the loading screen that was opened by this operation. |
+| `LoadingScreenReference openedLoadingScreen { get; }` | Gets the loading screen that was opened by this operation. |
 | `IEnumerable<Scene> openedScenes` | Gets the scenes that was opened during this operation. |
 | `IEnumerable<Scene> preload { get; }` | Gets the scenes specified to preload. |
 | `single progress` | Gets the total progress of this operation. |
@@ -40,7 +40,7 @@ A scene operation is a queueable operation that can open or close scenes. See al
 | `boolean reportsProgress { get; }` | Gets if this scene operation reports progress. |
 | `boolean runSceneCallbacksOutsideOfPlayMode { get; }` | Gets whatever scene callbacks should run outside of play mode. |
 | `boolean setActiveCollectionScene { get; }` | Specifies whatever active scene should be set when possible. |
-| `Nullable<boolean> unloadUnusedAssets { get; }` | Gets whatever [UnloadUnusedAssets](https://learn.microsoft.com/dotnet/api/!:resources.unloadunusedassets) should be called at the end (before loading screen). |
+| `Nullable<boolean> unloadUnusedAssets { get; }` | Gets whatever `UnloadUnusedAssets` should be called at the end (before loading screen). |
 | `boolean useLoadingScene { get; }` | Gets whatever a loading screen should be used. |
 | `boolean wasCancelled { get; }` | Gets if this scene operation is cancelled. |
 
@@ -58,37 +58,40 @@ A scene operation is a queueable operation that can open or close scenes. See al
 | `SceneOperation Activate(Scene scene)` | Sets focus to the specified scene. Overrides selected scene in collections. If `null`, then the first scene opened will be set as active. |
 | `void Cancel()` | Cancel this operation. |
 | `SceneOperation Close(SceneCollection collection)` | _No documentation available._ |
+| `SceneOperation Close(Scene scene, boolean removeFromOpen)` | Specifies the scenes to close. |
 | `SceneOperation Close(Scene[] scenes)` | Specifies the scenes to close. |
-| `SceneOperation Close(IEnumerable<Scene> scenes)` | _No documentation available._ |
-| `SceneOperation CloseAll(Scene[] except)` | Closes all scenes prior to opening any scenes. |
-| `SceneOperation CloseAll(boolean loadingScene, boolean splashScreen, boolean persistent, IEnumerable<Scene> except)` | Closes all scenes prior to opening any scenes. |
-| `SceneOperation CloseAllNonPersistent(Scene[] except)` | Closes all non-persistent scenes prior to opening any scenes. |
+| `SceneOperation Close(IEnumerable<Scene> scenes, boolean removeFromOpen)` | _No documentation available._ |
+| `SceneOperation CloseAll(Scene[] except)` | _No documentation available._ |
+| `SceneOperation CloseAll(IEnumerable<Scene> except, boolean removeFromOpen)` | Closes all scenes, regardless if they are persistent or splash/loading screens. |
+| `SceneOperation CloseOtherScenes(Scene[] except)` | Closes all non-persistent scenes prior to opening any scenes. |
+| `SceneOperation CloseOtherScenes(boolean persistent, IEnumerable<Scene> except, boolean loadingScreen, boolean splashScreen, boolean removeFromOpen)` | Closes all open scenes prior to opening any scenes, with options. |
 | `SceneOperation DisableProgressReporting()` | Disables progress reporting for this operation. |
 | `SceneOperation Focus(Scene scene)` | Sets focus to the specified scene. Overrides selected scene in collections. |
 | `SceneOperation IgnoreForActivation(IEnumerable<Scene> scenes)` | Specifies scenes that should not be activated. |
 | `SceneOperation OnProgressChanged(Action<single> callback)` | Adds a callback when progress changed. |
 | `SceneOperation Open(SceneCollection collection, boolean openAll)` | _No documentation available._ |
 | `SceneOperation Open(Scene[] scenes)` | Specifies the scenes to open. |
-| `SceneOperation Open(IEnumerable<Scene> scenes)` | _No documentation available._ |
+| `SceneOperation Open(Scene scene, boolean removeFromClose)` | Specifies the scenes to open. |
+| `SceneOperation Open(IEnumerable<Scene> scenes, boolean removeFromClose)` | _No documentation available._ |
 | `SceneOperation OpenAndActivate(Scene scene)` | Opens the scene, and makes sure it is activated afterwards. |
 | `SceneOperation Preload(Scene[] scenes)` | Specifies scenes to preload. |
 | `SceneOperation Preload(IEnumerable<Scene> scenes)` | Specifies scenes to preload. |
-| `SceneOperation PrependOpen(Scene[] scenes)` | _No documentation available._ |
+| `SceneOperation PrependOpen(Scene[] scenes)` | Specifies the scenes to prepend to the current open operation. |
 | `SceneOperation PrependOpen(IEnumerable<Scene> scenes, boolean ignoreForActivation)` | _No documentation available._ |
 | `SceneOperation RegisterCallback<TEventType>(EventCallback<TEventType> callback, When when, string key)` | _No documentation available._ |
 | `SceneOperation RemoveOnProgressChangedCallback(Action<single> callback)` | Removes a callback when progress changed. |
 | `SceneOperation RunSceneCallbacksOutsidePlayMode(boolean value)` | Specifies whatever scene callbacks should run outside of play mode. |
-| `SceneOperation UnloadUsedAssets()` | Specifies whatever [UnloadUnusedAssets](https://learn.microsoft.com/dotnet/api/!:resources.unloadunusedassets) should be called at the end (before loading screen). |
+| `SceneOperation UnloadUsedAssets()` | Specifies whatever `UnloadUnusedAssets` should be called at the end (before loading screen). |
 | `SceneOperation UnregisterCallback<TEventType>(EventCallback<TEventType> callback, When when, string key)` | _No documentation available._ |
 | `void UnregisterCallback<TEventType>(string key)` | _No documentation available._ |
 | `void WaitFor(SceneOperation operation)` | Waits for the specified scene operation to complete before continuing. |
 | `SceneOperation With(SceneCollection collection, boolean setActiveScene, boolean isCloseOperation)` | Specifies an associated collection. |
-| `SceneOperation With(Scene loadingScene, boolean useLoadingScene)` | Specifies loading screen to use. |
+| `SceneOperation With(LoadingScreenReference loadingScreen, boolean useLoadingScene)` | Specifies loading screen to use. |
 | `SceneOperation With(boolean useLoadingScene)` | Specifies loading screen to use. |
-| `SceneOperation With(Action<LoadingScreen> loadingScreenCallback)` | Specifies a callback when loading screen is opened, before `OnOpen` is called. |
+| `SceneOperation With(Action<LoadingScreenReference> loadingScreenCallback)` | Specifies a callback when loading screen is opened, before `OnOpen` is called. |
 | `SceneOperation With(LoadPriority loadPriority)` | Sets the `LoadPriority` this operation will use. |
 | `SceneOperation With(SceneOperationFlags flags)` | Sets the operation flags this operation will use. |
 | `SceneOperation WithFriendlyText(string text)` | Specifies description for operation coroutine. |
-| `SceneOperation WithLoadingScreen(Scene loadingScene, boolean useLoadingScene)` | Specifies loading screen to use. |
+| `SceneOperation WithLoadingScreen(LoadingScreenReference loadingScreen, boolean useLoadingScene)` | Specifies loading screen to use. |
 | `SceneOperation WithLoadingScreen(boolean useLoadingScene)` | Specifies whatever loading screen should be used. |
 | `SceneOperation WithoutLoadingScreen(boolean useLoadingScene)` | Specifies whatever loading screen should be used. |

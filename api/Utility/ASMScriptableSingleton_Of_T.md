@@ -22,5 +22,5 @@ A `ScriptableSingleton`1` that supports build.
 |--------|-------------|
 | `void OnPropertyChanged(string propertyName)` | _No documentation available._ |
 | `virtual void OnValidate()` | _No documentation available._ |
-| `virtual void Save()` | Saves the singleton to disk after a delay. |
+| `virtual void Save()` | Saves the singleton to disk, with a debounce. See also `SaveNow`. |
 | `virtual void SaveNow()` | Saves the singleton to disk. |

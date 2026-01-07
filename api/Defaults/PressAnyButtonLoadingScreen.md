@@ -7,5 +7,5 @@ A default loading screen script. Requires the user to press any key before loadi
 
 | Member | Description |
 |--------|-------------|
-| `virtual IEnumerator OnClose()` | _No documentation available._ |
-| `virtual IEnumerator OnOpen()` | _No documentation available._ |
+| `virtual IEnumerator OnClose()` | Called when the loading screen is about to close. |
+| `virtual IEnumerator OnOpen()` | Called when the loading screen is opened. |

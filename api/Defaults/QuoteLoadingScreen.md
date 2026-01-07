@@ -1,23 +1,23 @@
 ## QuoteLoadingScreen
 
 `class` in `AdvancedSceneManager.Defaults`  /  Inherits from: `ProgressBarLoadingScreen`### Description
-A default loading screen script. Displays quotes.
+A default loading screen that displays random quotes while loading.
 
 ### Fields
 
 | Member | Description |
 |--------|-------------|
-| `RectTransform Content` | _No documentation available._ |
-| `Text pressAnyKeyToContinueText` | _No documentation available._ |
-| `Text QuoteCountText` | _No documentation available._ |
-| `Quotes quotes` | _No documentation available._ |
-| `Text QuoteText` | _No documentation available._ |
-| `single slideshowDelay` | _No documentation available._ |
-| `RectTransform Text` | _No documentation available._ |
+| `RectTransform Content` | Transform containing the entire quote content area. |
+| `Text pressAnyKeyToContinueText` | UI text element for the "Press any key to continue" message. |
+| `Text QuoteCountText` | UI text element showing the current quote index and total count. |
+| `Quotes quotes` | Quotes to display during the loading screen. |
+| `Text QuoteText` | UI text element used to display the current quote. |
+| `single slideshowDelay` | Time to wait before showing the next quote in seconds. |
+| `RectTransform Text` | Transform containing the text elements for fading transitions. |
 
 ### Methods
 
 | Member | Description |
 |--------|-------------|
-| `virtual IEnumerator OnClose()` | _No documentation available._ |
-| `virtual IEnumerator OnOpen()` | _No documentation available._ |
+| `virtual IEnumerator OnClose()` | Called when the loading screen is about to close. |
+| `virtual IEnumerator OnOpen()` | Called when the loading screen is opened. |

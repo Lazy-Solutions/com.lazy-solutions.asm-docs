@@ -18,7 +18,7 @@ Only available in editor.
 | `boolean displayHierarchyIndicators` | Specifies whatever the hierarchy indicators should be visible. |
 | `boolean editorOnly` | _No documentation available._ |
 | `boolean logBuildScenes` | Specifies whatever ASM should log when build scene list is updated. |
-| `boolean logImport` | Specifies whatever ASM should log when a [ASMModelBase](https://learn.microsoft.com/dotnet/api/!:asmmodelbase) is imported. |
+| `boolean logImport` | Specifies whatever ASM should log when a `ASMModelBase` is imported. |
 | `boolean logLoading` | Specifies whatever ASM should log when a scene is loaded. |
 | `boolean logOperation` | Specifies whatever ASM should log during scene operations. |
 | `boolean logStartup` | Specifies whatever ASM should log during startup. |
@@ -34,7 +34,7 @@ Only available in editor.
 | Member | Description |
 |--------|-------------|
 | `abstract virtual void PinCollectionToOverlay(SceneCollection collection, Nullable<int32> index)` | _No documentation available._ |
-| `abstract virtual void Save()` | Saves the singleton to disk after a delay. |
+| `abstract virtual void Save()` | Saves the singleton to disk, with a debounce. See also `SaveNow`. |
 | `abstract virtual void SaveNow()` | Saves the singleton to disk. |
 | `abstract virtual void ToolbarAction(int32 i, SceneCollection& collection, Boolean& runStartupProcess)` | _No documentation available._ |
 | `abstract virtual void ToolbarAction(int32 i, SceneCollection collection, boolean runStartupProcess)` | _No documentation available._ |

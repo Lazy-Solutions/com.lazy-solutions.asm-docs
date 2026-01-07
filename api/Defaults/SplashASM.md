@@ -7,15 +7,15 @@ A default splash screen script. Fades splash screen in and out.
 
 | Member | Description |
 |--------|-------------|
-| `Camera _camera` | _No documentation available._ |
-| `Image background` | _No documentation available._ |
-| `CanvasGroup groupBackground` | _No documentation available._ |
-| `CanvasGroup groupLogo` | _No documentation available._ |
-| `Image logo` | _No documentation available._ |
+| `Camera _camera` | Camera used for rendering the splash screen. |
+| `Image background` | Background image shown during the splash sequence. |
+| `CanvasGroup groupBackground` | Canvas group controlling the background fade. |
+| `CanvasGroup groupLogo` | Canvas group controlling the logo fade. |
+| `Image logo` | Logo image displayed in the splash screen. |
 
 ### Methods
 
 | Member | Description |
 |--------|-------------|
-| `virtual IEnumerator OnClose()` | _No documentation available._ |
-| `virtual IEnumerator OnOpen()` | _No documentation available._ |
+| `virtual IEnumerator OnClose()` | Called when the loading screen is about to close. |
+| `virtual IEnumerator OnOpen()` | Called when the loading screen is opened. |

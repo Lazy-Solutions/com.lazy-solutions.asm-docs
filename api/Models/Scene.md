@@ -88,11 +88,19 @@ t:AdvancedSceneManager.Models.Scene
 | `void ClearSceneLoader()` | Clears custom scene loader for this scene. This means normal ASM functionality will be used. |
 | `virtual SceneOperation Close()` | Closes this scene. |
 | `SceneOperation CloseWithLoadingScreen(Scene loadingScene)` | Closes this scene with the specified `loadingScene`. |
+| `IEnumerable<AutoSceneEntry> EnumerateAutoScenes()` | Enumerates all auto scenes on this scene. |
 | `virtual boolean Equals(object obj)` | _No documentation available._ |
 | `boolean Equals(Scene other)` | _No documentation available._ |
 | `boolean Equals(Nullable<Scene> other)` | _No documentation available._ |
 | `boolean Equals(SceneAsset other)` | _No documentation available._ |
 | `boolean EvalOpenAsPersistent(SceneCollection parentCollection, SceneCollection collectionToOpen)` | Evaluates whether this scene should remain open as persistent. |
+| `AutoSceneEntry FindAutoScene(Scene scene, AutoSceneOption option)` | _No documentation available._ |
+| `AutoSceneEntry FindAutoScene(Scene scene, string customOption)` | _No documentation available._ |
+| `AutoSceneEntry FindAutoScene(string scenePath, AutoSceneOption option)` | _No documentation available._ |
+| `AutoSceneEntry FindAutoScene(string scenePath, string customOption)` | _No documentation available._ |
+| `AutoSceneEntry FindAutoScene(SceneAsset scene, AutoSceneOption option)` | _No documentation available._ |
+| `AutoSceneEntry FindAutoScene(SceneAsset scene, string customOption)` | _No documentation available._ |
+| `boolean FindAutoSceneForOption(string customOption, AutoSceneEntry& entry)` | _No documentation available._ |
 | `T FindObject<T>()` | _No documentation available._ |
 | `boolean FindObject<T>(T& component)` | _No documentation available._ |
 | `IEnumerable<T> FindObjects<T>()` | _No documentation available._ |
@@ -107,11 +115,19 @@ t:AdvancedSceneManager.Models.Scene
 | `SceneOperation OpenWithLoadingScreen(Scene loadingScene)` | Opens this scene with the specified `loadingScene`. |
 | `virtual SceneOperation Preload()` | Preloads this scene. |
 | `SceneOperation Preload(Action onPreloaded)` | Preloads this scene. |
+| `void RegisterCallback<T>(EventCallback<T> callback, When when, string key)` | _No documentation available._ |
 | `void RemoveCrossSceneReference(CrossSceneReference reference)` | Removes a cross-scene reference for this scene. |
 | `virtual SceneOperation Reopen()` | Reopens this scene. |
 | `void SetAutoOpenIn(SceneCollection collection, boolean openSceneWhenCollectionOpen)` | Toggles whatever this scene should be automatically opened when a collection is opened. No effect if scene is not already contained within collection. |
+| `void SetAutoScene(Scene scene, AutoSceneOption option)` | _No documentation available._ |
+| `void SetAutoScene(Scene scene, string customOption)` | _No documentation available._ |
+| `void SetAutoScene(string scenePath, AutoSceneOption option)` | _No documentation available._ |
+| `void SetAutoScene(string scenePath, string customOption)` | _No documentation available._ |
+| `void SetAutoScene(SceneAsset scene, AutoSceneOption option)` | _No documentation available._ |
+| `void SetAutoScene(SceneAsset scene, string customOption)` | _No documentation available._ |
 | `void SetSceneLoader<T>()` | _No documentation available._ |
 | `boolean ShouldAutoOpenIn(SceneCollection collection)` | Gets whatever the scene should automatically open, when this collection is opened. |
 | `virtual SceneOperation ToggleOpen()` | Toggles this scene open or closed. |
 | `virtual string ToString()` | _No documentation available._ |
+| `void UnregisterCallback<T>(EventCallback<T> callback, When when, string key)` | _No documentation available._ |
 | `boolean UsesSceneLoader<T>()` | _No documentation available._ |

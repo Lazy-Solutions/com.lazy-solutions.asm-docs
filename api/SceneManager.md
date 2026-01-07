@@ -17,6 +17,7 @@ The central Advanced Scene Manager API. Provides access to the most important th
 | `IEnumerable<Scene> preloadedScenes` | Gets the scenes that are preloaded. |
 | `Profile profile` | Gets the currently active profile. |
 | `Runtime runtime` | Manages runtime functionality for Advanced Scene Manager such as open scenes and collection. |
+| `IServiceContainer services` | Provides access to the ASM service container. |
 | `ISettingsAPI settings` | Provides access to ASM settings. |
 
 ### Static Methods

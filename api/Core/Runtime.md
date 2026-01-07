@@ -79,7 +79,7 @@ Manages runtime functionality for Advanced Scene Manager such as open scenes and
 | `SceneOperation Open(Scene[] scenes)` | _No documentation available._ |
 | `SceneOperation Open(IEnumerable<Scene> scenes)` | Opens this scene. |
 | `SceneOperation OpenAdditive(SceneCollection collection, boolean openAll)` | Opens the collection without closing existing scenes. |
-| `SceneOperation OpenAdditive(IEnumerable<SceneCollection> collections, SceneCollection activeCollection, Scene loadingScene)` | Opens the collection without closing existing scenes. |
+| `SceneOperation OpenAdditive(IEnumerable<SceneCollection> collections, SceneCollection activeCollection, LoadingScreenReference loadingScreen)` | Opens the collection without closing existing scenes. |
 | `SceneOperation OpenAndActivate(Scene scene)` | Opens this scene and activates it. |
 | `SceneOperation OpenWithLoadingScreen(Scene scene, Scene loadingScreen)` | _No documentation available._ |
 | `SceneOperation OpenWithLoadingScreen(IEnumerable<Scene> scene, Scene loadingScreen)` | _No documentation available._ |

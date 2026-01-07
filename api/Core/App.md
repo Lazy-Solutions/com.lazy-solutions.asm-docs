@@ -26,7 +26,7 @@ Usage: `app`.
 | `void CancelStartup()` | Cancels startup process. |
 | `void Exit()` | Exits the application immediately. |
 | `void Play(StartupProps props)` | _No documentation available._ |
-| `void Quit(boolean fade, Nullable<Color> fadeColor, single fadeDuration)` | Quits the application with optional fade effect. |
+| `Awaitable Quit(boolean fade, Nullable<Color> fadeColor, single fadeDuration)` | Quits the application with optional fade effect. |
 | `void RegisterQuitCallback(Func<IEnumerator> coroutine)` | Register a callback to be called before quit. |
 | `void Restart(StartupProps props)` | _No documentation available._ |
 | `Async<boolean> RestartAsync(StartupProps props)` | _No documentation available._ |

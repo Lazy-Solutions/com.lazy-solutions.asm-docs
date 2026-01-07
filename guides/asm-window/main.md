@@ -1,4 +1,5 @@
-[← Back](asm-window.md) | [🏠 Home](../readme.md)
+<!---asm-window/main.md-->
+[← Back](readme.md) | [🏠 Home](../readme.md)
 ## Main view
 ### Overview
 
@@ -104,8 +105,9 @@ The bottom of the ASM window contains:
 </br>
 
 ### Related pages
-[📁 Popups Guide](popups.md)\
-[📁 Settings Guide](settings.md)\
-[📁 Utility functions](utility-functions.md)
+[📄 Main view](main.md)\
+[📄 Settings popup](settings.md)\
+[📄 Popups](popups.md)\
+[📄 ASM utility functions](utility-functions.md)
 
-[← Back](asm-window.md) | [🏠 Home](../readme.md)
+[← Back](readme.md) | [🏠 Home](../readme.md)

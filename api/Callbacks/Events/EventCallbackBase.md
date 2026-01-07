@@ -7,7 +7,7 @@ The base class for all event callbacks.
 
 | Member | Description |
 |--------|-------------|
-| `List<Func<IEnumerator>> waitFor { get; }` | A list of coroutines that [operation](https://learn.microsoft.com/dotnet/api/!:operation) should wait for. It will not proceed until all coroutines are done. |
+| `List<Func<IEnumerator>> waitFor { get; }` | A list of coroutines that `SceneOperation` should wait for. It will not proceed until all coroutines are done. |
 | `When when` | Specifies when this event callback was invoked, before or after the action it represents. If applicable. |
 
 ### Methods

@@ -1,4 +1,5 @@
-[← Back](asm-window.md) | [🏠 Home](../readme.md)
+<!---asm-window/utility-functions.md-->
+[← Back](readme.md) | [🏠 Home](../readme.md)
 ## Utility functions window
 
 ASM utility functions provides quick, easily accessible utility functions within the Advanced Scene Manager (ASM). These functions are designed to be flexible and extendable, allowing users to create custom utilities that integrates with ASM.
@@ -37,8 +38,9 @@ public class CustomUtilityFunction : ASMUtilityFunction
 ```
 
 ### Related pages
-[📁 Main guide](main.md)\
-[📁 Popups Guide](popups.md)\
-[📁 Settings Guide](settings.md)
+[📄 Main view](main.md)\
+[📄 Settings popup](settings.md)\
+[📄 Popups](popups.md)\
+[📄 ASM utility functions](utility-functions.md)
 
-[← Back](asm-window.md) | [🏠 Home](../readme.md)
+[← Back](readme.md) | [🏠 Home](../readme.md)

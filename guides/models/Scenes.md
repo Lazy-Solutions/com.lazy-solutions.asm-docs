@@ -1,4 +1,7 @@
-# Scenes
+<!---models/scene.md-->
+[← Back](readme.md) | [🏠 Home](../readme.md)
+## Models
+### Scenes
 
 Scenes in ASM are represented as [ScriptableObjects](https://docs.unity3d.com/Manual/class-ScriptableObject.html), providing a convenient drag-and-drop interface for scene references.
 ## Accessing ASM Scene References
@@ -109,3 +112,12 @@ Or via code:
 SceneUtility.MergeScenes(targetScene, scenesToMerge); // Editor only
 SceneUtility.MoveToNewScene(gameObject);              // Editor only
 ```
+
+### Related pages
+[📄 Profiles](profiles.md)\
+[📄 Scene helper](event-callbacks.md)\
+[📄 Scene collections](scene-collections.md)\
+[📄 Scenes](scenes.md)\
+[📄 Standalone scenes](standalone-scenes.md)
+
+[← Back](readme.md) | [🏠 Home](../readme.md)

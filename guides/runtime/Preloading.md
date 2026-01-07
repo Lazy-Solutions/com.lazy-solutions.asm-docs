@@ -1,4 +1,7 @@
-# Preloading
+﻿<!---runtime/Preloading.md-->
+[← Back](readme.md) | [🏠 Home](../readme.md)
+## Runtime
+### Preloading
 
 Preloading allows scenes to be loaded in the background without activating them immediately. A preloaded scene remains inactive until explicitly finished, allowing near-instant activation when needed.
 
@@ -73,3 +76,12 @@ or set it on the collection.
 > In Unity, BackgroundPriority.Low tells the engine to load a scene or assets very slowly in the background, only using spare CPU time so that gameplay, rendering, and input always take priority. This minimizes frame drops but makes loading progress slower.
 
 - Use `SceneManager.preloadedScenes` to retrieve currently preloaded scenes.
+
+### Related pages
+[📄 Cross-scene references](cross-scene-references.md)\
+[📄 Loading screens](loading-screens.md)\
+[📄 Splash screens](splash-screens.md)\
+[📄 Preloading](preloading.md)\
+[📄 Scene loaders](scene-loaders.md)
+
+[← Back](readme.md) | [🏠 Home](../readme.md)

@@ -1,6 +1,6 @@
 ## StandaloneCollection
 
-`class` in `AdvancedSceneManager.Models`  /  Inherits from: `DynamicCollectionBase<Scene>`### Description
+`sealed class` in `AdvancedSceneManager.Models`  /  Inherits from: `DynamicCollectionBase<Scene>`### Description
 Represents a collection of standalone scenes. These scenes are guaranteed to be included in build (if the associated `Profile` is active).
 
 <b> Remarks:</b>

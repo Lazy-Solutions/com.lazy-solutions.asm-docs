@@ -7,4 +7,4 @@ Represents a persistent reference to the `GameObject` that this is attached to, 
 
 | Member | Description |
 |--------|-------------|
-| `string guid` | _No documentation available._ |
+| `string guid` | The guid of this reference. |

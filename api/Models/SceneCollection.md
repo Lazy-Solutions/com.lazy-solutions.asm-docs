@@ -11,10 +11,9 @@ Only one collection can be fully open at a time; additive collections are suppor
 | Member | Description |
 |--------|-------------|
 | `Scene activeScene` | Specifies the scene that should be activated after collection is opened. |
-| `IEnumerable<Scene> allScenes` | Gets both `scenes` and `loadingScene`. |
+| `IEnumerable<Scene> allScenes` | Gets both `scenes` and loading scenes. |
 | `int32 count` | _No documentation available._ |
 | `string description` | _No documentation available._ |
-| `Scene effectiveLoadingScene` | Gets effective loading screen depending on `loadingScreenUsage`. |
 | `Events events` | Gets the unity events for this scene. |
 | `boolean hasScenes` | Gets if this collection has any scenes. |
 | `Scene[] ignoreInputBindingsForScenes` | Specifies scenes where input bindings should be ignored while open (for this collection). |
@@ -28,7 +27,7 @@ Only one collection can be fully open at a time; additive collections are suppor
 | `boolean isQueued` | _No documentation available._ |
 | `boolean isStartupCollection` | Gets if this is a startup collection. |
 | `Scene Item` | _No documentation available._ |
-| `Scene loadingScene` | The loading screen that is associated with this collection. |
+| `LoadingScreenReference loadingScreen` | The loading screen that is associated with this collection. |
 | `LoadingScreenUsage loadingScreenUsage` | Specifies what loading screen to use. |
 | `LoadPriority loadPriority` | Specifies the `LoadPriority` to use when opening this collection. |
 | `string lockMessage` | Gets or sets the message to be displayed when unlocking this collection. |
@@ -86,6 +85,7 @@ t:AdvancedSceneManager.Models.SceneCollection
 | `virtual SceneOperation Preload()` | Preloads this collection. |
 | `SceneOperation Preload(boolean openAll)` | Preloads this collection. |
 | `SceneOperation PreloadAdditive(boolean openAll)` | Preloads this collection as additive. |
+| `void RegisterCallback<T>(EventCallback<T> callback, When when, string key)` | _No documentation available._ |
 | `virtual SceneOperation Reopen()` | Reopens this collection. |
 | `SceneOperation Reopen(boolean openAll)` | Reopens this collection. |
 | `void SetAutoOpen(Scene scene, boolean openSceneWhenCollectionOpen)` | Sets whatever the scene should automatically open, when this collection is opened. |
@@ -93,4 +93,5 @@ t:AdvancedSceneManager.Models.SceneCollection
 | `virtual SceneOperation ToggleOpen()` | Toggles this collection open or closed. |
 | `SceneOperation ToggleOpen(boolean openAll)` | Toggles this collection open and closed. |
 | `virtual string ToString()` | _No documentation available._ |
+| `void UnregisterCallback<T>(EventCallback<T> callback, When when, string key)` | _No documentation available._ |
 | `T UserData<T>()` | _No documentation available._ |

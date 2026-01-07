@@ -8,19 +8,24 @@ A profile for ASM, contains settings and collections.
 | Member | Description |
 |--------|-------------|
 | `IEnumerable<ISceneCollection> allCollections` | Gets `collections`, `standaloneScenes`, `defaultASMScenes`, `dynamicCollections`. |
+| `IEnumerable<Scene> allScenes` | Gets all scenes, including child profile scenes. |
 | `boolean autoUpdateBuildScenes` | Specifies whatever build scene list should be automatically updated. |
+| `IEnumerable<Profile> childProfiles` | Gets the child profiles for this profile. |
+| `IEnumerable<Scene> childProfileScenes` | Gets all scenes from child profiles. |
+| `IEnumerable<SceneCollection> childProfileStartupCollections` | Gets all startup collections from child profiles. |
+| `IEnumerable<Scene> childProfileStartupScenes` | Gets all startup scenes from child profiles. |
 | `IEnumerable<SceneCollection> collections` | Gets the collections contained within this profile. |
 | `DefaultASMScenesCollection defaultASMScenes` | Gets the default asm scenes collection contained within this profile. |
 | `IEnumerable<DynamicCollection> dynamicCollections` | Gets the dynamic collections contained within this profile. |
 | `boolean isActive` | Gets if this profile is set as active. |
-| `Scene loadingScene` | The default loading scene. |
+| `LoadingScreenReference loadingScreen` | The default loading scene. |
 | `boolean notify` | Specifies whatever this profile should trigger a notification when imported. |
 | `string notifyMessage` | Specifies the notification messasge, when `notify` is `true`. |
 | `boolean preventAssignmentIfNullAndUnityHasABuildProfileActive` | Gets or sets whether ASM should prevent writing the build scene list to Unity’s active build profile when `unityBuildProfile` is `null`. |
 | `IEnumerable<ISceneCollection> removedCollections` | Gets all removed collections in this profile. |
 | `IEnumerable<Scene> scenes` | Gets the scenes managed by this profile. |
 | `IEnumerable<Scene> specialScenes` | Gets default loading screen, splash screen and startup loading screen. |
-| `Scene splashScene` | The splash scene. |
+| `LoadingScreenReference splashScreen` | The splash scene. |
 | `StandaloneCollection standaloneScenes` | Gets the standalone scenes contained within this profile. |
 | `IEnumerable<SceneCollection> startupCollections` | Gets the collections that will be opened on startup. |
 | `Scene startupScene` | The startup scene. |
@@ -49,6 +54,7 @@ A profile for ASM, contains settings and collections.
 
 | Member | Description |
 |--------|-------------|
+| `void AddChildProfile(Profile profile)` | Add a child profile. |
 | `void AddCollection(ISceneCollection collection)` | Adds a collection. |
 | `void ClearCollections()` | Clear `collections`, `dynamicCollections`, `removedCollections`. Does not prompt undo. |
 | `void ClearRemovedCollections()` | Clear removed collections. |
@@ -68,5 +74,6 @@ A profile for ASM, contains settings and collections.
 | `virtual void OnPropertyChanged(string propertyName)` | Invoke `PropertyChanged`. |
 | `virtual void OnValidate()` | _No documentation available._ |
 | `void Remove(ISceneCollection collection)` | Removes a collection. Prompts undo. |
+| `void RemoveChildProfile(Profile profile)` | Remove a child profile. |
 | `void Restore(ISceneCollection collection)` | Restores a collection that has been removed. |
 | `virtual string ToString()` | _No documentation available._ |

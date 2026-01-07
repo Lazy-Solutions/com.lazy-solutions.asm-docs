@@ -17,5 +17,5 @@ Only available in the editor.
 | `IEnumerable<T> FindAssets<T>()` | _No documentation available._ |
 | `IEnumerable<T> FindAssets<T>(string[] searchInFolders)` | _No documentation available._ |
 | `string MakeRelative(string path, boolean includeAssetsFolder, boolean prefixWithAssetsIfNecessary)` | Makes the path absolute. Converts path to unix style. |
-| `void ShowFolder(string path)` | Shows the folder and selects the asset. |
+| `void ShowFolder(string folderPath)` | Shows the folder and selects the asset. |
 | `void ShowFolder(object obj)` | Shows the folder and selects the asset. |

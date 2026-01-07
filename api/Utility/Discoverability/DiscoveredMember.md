@@ -1,14 +1,21 @@
 ## DiscoveredMember
 
 `struct` in `AdvancedSceneManager.Utility.Discoverability`  /  Inherits from: `ValueType`### Description
-A member that was found using `DiscoverabilityUtility`.
+A member that was found using `IDiscoverablesService`.
 
 ### Properties
 
 | Member | Description |
 |--------|-------------|
-| `DiscoverableAttribute attribute` | Gets the attribute of this discoverable. |
-| `MemberInfo member` | Gets the member of this discoverable. |
+| `DiscoverableAttribute attribute { get; }` | Gets the attribute of this discoverable. |
+| `boolean isValid` | Gets if this discovered member is valid. |
+| `MemberInfo member { get; }` | Gets the member of this discoverable. |
+
+### Static Methods
+
+| Member | Description |
+|--------|-------------|
+| `string GetIdentifier(MemberInfo member)` | Gets an identifier that points to the found member. |
 
 ### Methods
 

@@ -23,6 +23,6 @@ Represents a collection that can take a path and then gather all scenes within, 
 | Member | Description |
 |--------|-------------|
 | `void ImportScenes()` | Imports all scenes that are currently tracked by the collection. |
-| `virtual boolean IsMatch(string q)` | _No documentation available._ |
+| `virtual boolean IsMatch(string q)` | Determines whether the specified query matches this model. |
 | `void ReloadPaths()` | Queries all `SceneAsset` in the project that is in the defined path, and is not blacklisted. |
 | `virtual string ToString()` | _No documentation available._ |

@@ -8,6 +8,7 @@ A base class for `Profile`, `SceneCollection` and `Scene`.
 | Member | Description |
 |--------|-------------|
 | `string id` | Gets the id of this `ASMModelBase`. |
+| `boolean isHidden` | Specifies if this ASM asset is hidden. If it is, it won't show up in UI, and won't be enumerated when using `assets`. |
 | `string name` | Gets the name of this model. |
 
 ### Events

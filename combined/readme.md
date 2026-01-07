@@ -1,0 +1,1 @@
+This folder contains a combined version of the ASM docs into as few files as possible. Meant for AI, but doesn't work too well yet. Feel free to use if you want to try it.

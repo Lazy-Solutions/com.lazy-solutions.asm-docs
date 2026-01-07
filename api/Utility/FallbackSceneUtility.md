@@ -10,13 +10,13 @@ The default scene allows us to more easily close all scenes when we need to, sin
 
 | Member | Description |
 |--------|-------------|
-| `boolean isActive` | _No documentation available._ |
+| `boolean isActive` | Gets if the fallback scene is active in the heirarchy. |
 
 ### Static Fields
 
 | Member | Description |
 |--------|-------------|
-| `string Name` | _No documentation available._ |
+| `string Name` | Gets the name of the fallback scene. |
 
 ### Static Methods
 

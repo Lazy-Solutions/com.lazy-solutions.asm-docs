@@ -1,13 +1,14 @@
 ## TypeUtility
 
 `static class` in `AdvancedSceneManager.Editor.UI`### Description
+Contains utility functions for working with types.
 
 ### Static Methods
 
 | Member | Description |
 |--------|-------------|
 | `string GetFriendlyTypeName(Type type)` | Gets the friendly name of this type. |
-| `string GetSignature(MemberInfo member, boolean includeAccessModifiers)` | _No documentation available._ |
+| `string GetSignature(MemberInfo member, boolean includeAccessModifiers)` | Gets the signature of this member. |
 | `boolean HasNoParameters(MemberInfo member)` | Gets if `member` is a `MethodInfo`, and has no parameters. |
 | `boolean HasParameters<T1>(MemberInfo member)` | _No documentation available._ |
 | `boolean HasParameters<T1, T2>(MemberInfo member)` | _No documentation available._ |

@@ -7,15 +7,15 @@ A default loading screen script. Displays progress with a bouncing icon.
 
 | Member | Description |
 |--------|-------------|
-| `RectTransform BackgroundTransform` | _No documentation available._ |
-| `single duration` | _No documentation available._ |
-| `single IconStartRotationZ` | _No documentation available._ |
-| `Vector2 IconStartSize` | _No documentation available._ |
-| `RectTransform IconTransform` | _No documentation available._ |
+| `RectTransform BackgroundTransform` | Specifies the transform for the background. |
+| `single duration` | Specifies the icon rotate duration. |
+| `single IconStartRotationZ` | Specifies the icon start rotation. |
+| `Vector2 IconStartSize` | Specifies the icon start size. |
+| `RectTransform IconTransform` | Specifies the transform for the icon. |
 
 ### Methods
 
 | Member | Description |
 |--------|-------------|
-| `virtual IEnumerator OnClose()` | _No documentation available._ |
-| `virtual IEnumerator OnOpen()` | _No documentation available._ |
+| `virtual IEnumerator OnClose()` | Called when the loading screen is about to close. |
+| `virtual IEnumerator OnOpen()` | Called when the loading screen is opened. |
