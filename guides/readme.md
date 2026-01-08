@@ -10,8 +10,8 @@
 [📁 Plugins](asm-window/asm-window.md)\
 [📁 API](asm-window/asm-window.md)
 
-[📄 Quick start](quick-start.md)\
-[📄 Common questions](common-questions.md)\
-[📄 In-game toolbar](in-game-toolbar.md)\
-[📄 Updating](updating.md)\
-[📄 Videos](videos.md)
+[📄 Quick start](Quick-start.md)\
+[📄 Common questions](Common-questions.md)\
+[📄 In-game toolbar](In-game-toolbar.md)\
+[📄 Updating](Updating.md)\
+[📄 Videos](Videos.md)
