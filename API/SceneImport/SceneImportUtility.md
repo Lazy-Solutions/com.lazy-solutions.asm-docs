@@ -29,7 +29,7 @@ Only available in editor.
 | `IEnumerable<Scene> Import(IEnumerable<string> sceneAssetPaths, boolean notify)` | Imports the specified scenes. |
 | `IEnumerable<Scene> Import(IEnumerable<string> sceneAssetPaths, string importFolder, boolean notify)` | Imports the specified scenes into the given folder. |
 | `Scene Import(string sceneAssetPath, boolean notify, boolean track)` | Imports a single scene asset. |
-| `Scene Import(string sceneAssetPath, string importFolder, boolean notify, boolean track, boolean skipImportedCheck)` | Imports a single scene asset into the given folder. |
+| `Scene Import(string sceneAssetPath, string importFolder, boolean notify, boolean track, boolean skipImportedCheck, boolean skipValidCheck)` | Imports a single scene asset into the given folder. |
 | `void Unimport(IEnumerable<string> scenes, boolean notify)` | Unimports the specified scenes. |
 | `void Unimport(IEnumerable<Scene> scenes, boolean notify)` | Unimports the specified scenes. |
 | `void Unimport(Scene scene, boolean notify)` | Unimports the specified scene. |

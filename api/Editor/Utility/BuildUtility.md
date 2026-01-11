@@ -24,4 +24,4 @@ Only available in editor.
 | `boolean IsEnabled(string path, Reason& reason)` | _No documentation available._ |
 | `boolean IsIncluded(Scene scene, Reason& reason)` | _No documentation available._ |
 | `void UpdateSceneList()` | Updates the scene build settings. |
-| `void UpdateSceneList(boolean ignorePlaymodeCheck, boolean force)` | Updates the scene build settings from the ASM profile. |
+| `void UpdateSceneList(boolean ignorePlayModeCheck, boolean force)` | Updates the scene build settings from the ASM profile. |

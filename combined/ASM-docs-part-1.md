@@ -2037,6 +2037,38 @@ Callback for when the scene that a `MonoBehaviour` is contained within is opened
 - `ISceneOpenAwaitable` |
 
 ---
+# OnCollectionCloseAttribute
+<!--
+source: API\Callbacks\OnCollectionCloseAttribute.md
+-->
+
+## OnCollectionCloseAttribute
+
+`class` in `AdvancedSceneManager.Callbacks`  /  Inherits from: `SceneCallbackAttribute`### Description
+
+### Properties
+
+| Member | Description |
+|--------|-------------|
+| `TargetInfo target` | _No documentation available._ |
+
+---
+# OnCollectionOpenAttribute
+<!--
+source: API\Callbacks\OnCollectionOpenAttribute.md
+-->
+
+## OnCollectionOpenAttribute
+
+`class` in `AdvancedSceneManager.Callbacks`  /  Inherits from: `SceneCallbackAttribute`### Description
+
+### Properties
+
+| Member | Description |
+|--------|-------------|
+| `TargetInfo target` | _No documentation available._ |
+
+---
 # OnLoadAttribute
 <!--
 source: API\Callbacks\OnLoadAttribute.md
@@ -2073,6 +2105,48 @@ Combines them, and is safely usable both in and outside the editor.
 | Member | Description |
 |--------|-------------|
 | `virtual boolean IsValidTarget(MemberInfo member)` | Gets if `member` is a valid target for this attribute callback. |
+
+---
+# OnSceneCloseAttribute
+<!--
+source: API\Callbacks\OnSceneCloseAttribute.md
+-->
+
+## OnSceneCloseAttribute
+
+`class` in `AdvancedSceneManager.Callbacks`  /  Inherits from: `SceneCallbackAttribute`### Description
+
+### Properties
+
+| Member | Description |
+|--------|-------------|
+| `TargetInfo target` | _No documentation available._ |
+
+---
+# OnSceneOpenAttribute
+<!--
+source: API\Callbacks\OnSceneOpenAttribute.md
+-->
+
+## OnSceneOpenAttribute
+
+`class` in `AdvancedSceneManager.Callbacks`  /  Inherits from: `SceneCallbackAttribute`### Description
+
+### Properties
+
+| Member | Description |
+|--------|-------------|
+| `TargetInfo target` | _No documentation available._ |
+
+---
+# SceneCallbackAttribute
+<!--
+source: API\Callbacks\SceneCallbackAttribute.md
+-->
+
+## SceneCallbackAttribute
+
+`abstract class` in `AdvancedSceneManager.Callbacks`  /  Inherits from: `DiscoverableAttribute`### Description
 
 ---
 # App
@@ -3456,6 +3530,8 @@ Contains utility functions for working with types.
 
 | Member | Description |
 |--------|-------------|
+| `Type Deserialize(string value)` | _No documentation available._ |
+| `boolean Deserialize(string value, Type& type)` | _No documentation available._ |
 | `string GetFriendlyTypeName(Type type)` | Gets the friendly name of this type. |
 | `string GetSignature(MemberInfo member, boolean includeAccessModifiers)` | Gets the signature of this member. |
 | `boolean HasNoParameters(MemberInfo member)` | Gets if `member` is a `MethodInfo`, and has no parameters. |
@@ -3463,6 +3539,7 @@ Contains utility functions for working with types.
 | `boolean HasParameters<T1, T2>(MemberInfo member)` | _No documentation available._ |
 | `boolean HasParameters<T1, T2, T3>(MemberInfo member)` | _No documentation available._ |
 | `boolean HasParameters<T1, T2, T3, T4>(MemberInfo member)` | _No documentation available._ |
+| `boolean HasParameters(MemberInfo member, Type[] types)` | _No documentation available._ |
 | `boolean IsConstructor(MemberInfo member)` | Determines whether the specified `MemberInfo` represents a constructor. |
 | `boolean IsField(MemberInfo member)` | Determines whether the specified `MemberInfo` represents a field. |
 | `boolean IsMethod(MemberInfo member)` | Determines whether the specified `MemberInfo` represents a method. |
@@ -3470,12 +3547,14 @@ Contains utility functions for working with types.
 | `boolean IsProperty(MemberInfo member)` | Determines whether the specified `MemberInfo` represents a property. |
 | `boolean IsStatic(MemberInfo member)` | Determines whether the specified `MemberInfo` represents a static member. |
 | `boolean IsType(MemberInfo member)` | Determines whether the specified `MemberInfo` represents a type. |
+| `boolean IsType(MemberInfo member, Type type)` | Determines whether the specified `MemberInfo` represents a type. |
 | `boolean IsType<T>(MemberInfo member)` | Determines whether the specified `MemberInfo` represents a type. |
 | `boolean Returns<T>(MemberInfo member)` | _No documentation available._ |
 | `boolean Returns(MemberInfo member, Type type)` | Gets if `member` returns `type`. |
 | `boolean ReturnsCoroutine(MemberInfo member)` | Gets if `member` returns `IEnumerator`. |
 | `boolean ReturnsVoid(MemberInfo member)` | Gets if `member` returns `Void`. |
 | `Type ReturnType(MemberInfo member)` | Gets the return or value type of the specified `MemberInfo`. |
+| `string Serialize(Type type)` | _No documentation available._ |
 
 ---
 # UIElementUtility
@@ -3554,7 +3633,7 @@ Only available in editor.
 | `boolean IsEnabled(string path, Reason& reason)` | _No documentation available._ |
 | `boolean IsIncluded(Scene scene, Reason& reason)` | _No documentation available._ |
 | `void UpdateSceneList()` | Updates the scene build settings. |
-| `void UpdateSceneList(boolean ignorePlaymodeCheck, boolean force)` | Updates the scene build settings from the ASM profile. |
+| `void UpdateSceneList(boolean ignorePlayModeCheck, boolean force)` | Updates the scene build settings from the ASM profile. |
 
 ---
 # CodeEditorUtility
@@ -5072,7 +5151,6 @@ May not be available in `[InitializeOnLoad]` and similar, use [Action)](https://
 |--------|-------------|
 | `IEnumerable<SceneCollectionTemplate> collectionTemplates` | Enumerates all collection templates tracked by ASM. |
 | `IAssetsAPIDefaultScenes defaults` | Provides access to the default ASM scenes. |
-| `string fallbackScenePath` | Gets the path to the fallback scene. |
 | `IEnumerable<Profile> profiles` | Enumerates all profiles tracked by ASM. |
 | `ASMSceneHelper sceneHelper` | Provides access to the scene helper. |
 | `IEnumerable<Scene> scenes` | Enumerates all imported scenes tracked by ASM. |
@@ -5546,6 +5624,7 @@ A profile for ASM, contains settings and collections.
 |--------|-------------|
 | `IEnumerable<ISceneCollection> allCollections` | Gets `collections`, `standaloneScenes`, `defaultASMScenes`, `dynamicCollections`. |
 | `IEnumerable<Scene> allScenes` | Gets all scenes, including child profile scenes. |
+| `boolean autoSwitchBuildProfileOnBuild` | Specifies whether ASM may write the build scene list to Unity’s active build profile when no build profile is explicitly associated. |
 | `boolean autoUpdateBuildScenes` | Specifies whatever build scene list should be automatically updated. |
 | `IEnumerable<Profile> childProfiles` | Gets the child profiles for this profile. |
 | `IEnumerable<Scene> childProfileScenes` | Gets all scenes from child profiles. |
@@ -5558,7 +5637,6 @@ A profile for ASM, contains settings and collections.
 | `LoadingScreenReference loadingScreen` | The default loading scene. |
 | `boolean notify` | Specifies whatever this profile should trigger a notification when imported. |
 | `string notifyMessage` | Specifies the notification messasge, when `notify` is `true`. |
-| `boolean preventAssignmentIfNullAndUnityHasABuildProfileActive` | Gets or sets whether ASM should prevent writing the build scene list to Unity’s active build profile when `unityBuildProfile` is `null`. |
 | `IEnumerable<ISceneCollection> removedCollections` | Gets all removed collections in this profile. |
 | `IEnumerable<Scene> scenes` | Gets the scenes managed by this profile. |
 | `IEnumerable<Scene> specialScenes` | Gets default loading screen, splash screen and startup loading screen. |
@@ -5567,7 +5645,7 @@ A profile for ASM, contains settings and collections.
 | `IEnumerable<SceneCollection> startupCollections` | Gets the collections that will be opened on startup. |
 | `Scene startupScene` | The startup scene. |
 | `IEnumerable<Scene> startupScenes` | Gets the scenes flagged to open on startup. |
-| `BuildProfile unityBuildProfile` | Gets or sets the `BuildProfile` that ASM should write its scene list to when the profile is active. Set to `null` to write to the global list, or to the active build profile if one is active. |
+| `BuildProfile unityBuildProfile` | Specifies the `BuildProfile` that ASM writes its build scene list to. |
 | `boolean unloadUnusedAssetsForStandalone` | Enable or disable ASM calling `UnloadUnusedAssets` after standalone scenes has been opened or closed. |
 
 ### Static Fields
@@ -5649,6 +5727,7 @@ A scene can be imported in the ASM window (via notification / popup), or by usin
 | `boolean isDefaultASMScene` | Gets if this is a default ASM scene. |
 | `boolean isDontDestroyOnLoad` | Gets if this scene is the dontDestroyOnLoad scene. |
 | `boolean isDynamic` | Gets if this scene is dynamic, it is not persisted to disk. |
+| `boolean isFallbackScene` | _No documentation available._ |
 | `boolean isImported` | Gets whatever the scene is tracked by ASM. |
 | `boolean isIncludedInBuilds` | Gets whatever this scene is included in build. |
 | `boolean isLoadingScreen { get; }` | Gets if this scene is a loading screen. |
@@ -5668,6 +5747,8 @@ A scene can be imported in the ASM window (via notification / popup), or by usin
 | `boolean openOnPlayMode` | Specifies whatever this scene should be opened when entering playmode. |
 | `boolean openOnStartup` | Specifies whatever this scene should be opened on startup. |
 | `string path { get; }` | Gets the path of the associated `SceneAsset`. |
+| `IGeneralSceneObjectCache runtimeCache` | _No documentation available._ |
+| `IDiscoverablesSceneObjectCache runtimeDiscoverablesCache` | _No documentation available._ |
 | `SceneAsset sceneAsset { get; }` | Gets the associated `SceneAsset`. |
 | `string sceneAssetGUID` | Gets the asset id of `sceneAsset`. |
 | `string sceneLoader` | Specifies what `SceneLoader` to use. |
@@ -6217,7 +6298,7 @@ Only available in editor.
 | `IEnumerable<Scene> Import(IEnumerable<string> sceneAssetPaths, boolean notify)` | Imports the specified scenes. |
 | `IEnumerable<Scene> Import(IEnumerable<string> sceneAssetPaths, string importFolder, boolean notify)` | Imports the specified scenes into the given folder. |
 | `Scene Import(string sceneAssetPath, boolean notify, boolean track)` | Imports a single scene asset. |
-| `Scene Import(string sceneAssetPath, string importFolder, boolean notify, boolean track, boolean skipImportedCheck)` | Imports a single scene asset into the given folder. |
+| `Scene Import(string sceneAssetPath, string importFolder, boolean notify, boolean track, boolean skipImportedCheck, boolean skipValidCheck)` | Imports a single scene asset into the given folder. |
 | `void Unimport(IEnumerable<string> scenes, boolean notify)` | Unimports the specified scenes. |
 | `void Unimport(IEnumerable<Scene> scenes, boolean notify)` | Unimports the specified scenes. |
 | `void Unimport(Scene scene, boolean notify)` | Unimports the specified scene. |
@@ -6240,7 +6321,6 @@ source: API\SceneImport\StringExtensions.md
 | `boolean IsASMScene(string path)` | _No documentation available._ |
 | `boolean IsBlacklisted(string path)` | _No documentation available._ |
 | `boolean IsDynamicScene(string path)` | _No documentation available._ |
-| `boolean IsFallbackScene(string path)` | _No documentation available._ |
 | `boolean IsImported(string path)` | _No documentation available._ |
 | `boolean IsPackageScene(string path)` | _No documentation available._ |
 | `boolean IsScene(string path)` | _No documentation available._ |
@@ -6281,7 +6361,9 @@ The central Advanced Scene Manager API. Provides access to the most important th
 |--------|-------------|
 | `App app` | Manages startup and quit processes. |
 | `IAssetsAPI assets` | Provides access to the scenes, collections and profiles managed by ASM. |
+| `Scene dontDestroyOnLoadScene` | Gets the dontDestroyOnLoad scene. |
 | `EventCallbackManager<EventCallbackBase> events` | Provides access to global ASM event callbacks. |
+| `Scene fallbackScene` | Gets the fallback scene. |
 | `boolean isInitialized` | Gets whatever ASM is initialized. Calling ASM methods may fail if `false`, this is due to `ASMSettings` singleton not being loaded yet. |
 | `SceneCollection openCollection` | Gets the collection that is currently open. |
 | `IEnumerable<Scene> openScenes` | Gets the scenes that are currently open. |
@@ -6291,6 +6373,7 @@ The central Advanced Scene Manager API. Provides access to the most important th
 | `Runtime runtime` | Manages runtime functionality for Advanced Scene Manager such as open scenes and collection. |
 | `IServiceContainer services` | Provides access to the ASM service container. |
 | `ISettingsAPI settings` | Provides access to ASM settings. |
+| `Scene startupScene` | Gets the startup scene. |
 
 ### Static Methods
 
@@ -6359,6 +6442,24 @@ Accessible via:
 | `abstract virtual void Unregister<T>()` | _No documentation available._ |
 | `abstract virtual void Unregister(Type type)` | Unregisters a service by type. |
 | `abstract virtual void Unregister<T>(T service)` | _No documentation available._ |
+
+---
+# RegisterServiceAttribute
+<!--
+source: API\Services\RegisterServiceAttribute.md
+-->
+
+## RegisterServiceAttribute
+
+`class` in `AdvancedSceneManager.Services`  /  Inherits from: `DiscoverableAttribute`### Description
+Registers a service with the service container.
+
+### Properties
+
+| Member | Description |
+|--------|-------------|
+| `Type associatedType` | Gets the associated type for this service registration. |
+| `string friendlyDescription` | Gets a friendly description of this service registration. |
 
 ---
 # Service_ViewModelBase
@@ -6579,162 +6680,6 @@ A `ScriptableSingleton`1` that supports build.
 | `virtual void OnValidate()` | _No documentation available._ |
 | `virtual void Save()` | Saves the singleton to disk, with a debounce. See also `SaveNow`. |
 | `virtual void SaveNow()` | Saves the singleton to disk. |
-
----
-# CsProjAttribute
-<!--
-source: API\Utility\AssemblyAttributes\CsProjAttribute.md
--->
-
-## CsProjAttribute
-
-`abstract class` in `AdvancedSceneManager.Utility.AssemblyAttributes`  /  Inherits from: `Attribute`### Description
-The base attribute for:
-
-### Properties
-
-| Member | Description |
-|--------|-------------|
-| `string parentTag` | _No documentation available._ |
-
-### Methods
-
-| Member | Description |
-|--------|-------------|
-| `string GetCsProjFragment(GenerateCsProjFragmentEventArgs e)` | _No documentation available._ |
-| `void Insert(string tag, ValueTuple<string, string>[] attributes)` | _No documentation available._ |
-| `void Insert(string tag, string value, ValueTuple<string, string>[] attributes)` | _No documentation available._ |
-
----
-# CsProjItemAttribute
-<!--
-source: API\Utility\AssemblyAttributes\CsProjItemAttribute.md
--->
-
-## CsProjItemAttribute
-
-`abstract class` in `AdvancedSceneManager.Utility.AssemblyAttributes`  /  Inherits from: `CsProjAttribute`### Description
-Base class for `CsProjAttribute` that generate `<itemgroup>` tags.
-
-### Properties
-
-| Member | Description |
-|--------|-------------|
-| `string parentTag` | _No documentation available._ |
-
----
-# CsProjPropertyAttribute
-<!--
-source: API\Utility\AssemblyAttributes\CsProjPropertyAttribute.md
--->
-
-## CsProjPropertyAttribute
-
-`abstract class` in `AdvancedSceneManager.Utility.AssemblyAttributes`  /  Inherits from: `CsProjAttribute`### Description
-Base class for `CsProjAttribute` that generate `<propertygroup>` tags.
-
-### Properties
-
-| Member | Description |
-|--------|-------------|
-| `string parentTag` | _No documentation available._ |
-
----
-# DocumentationFileAttribute
-<!--
-source: API\Utility\AssemblyAttributes\DocumentationFileAttribute.md
--->
-
-## DocumentationFileAttribute
-
-`sealed class` in `AdvancedSceneManager.Utility.AssemblyAttributes`  /  Inherits from: `CsProjPropertyAttribute`### Description
-Provides support for specifying `<documentationfile>` in the generated csproj for a project.
-
-### Properties
-
-| Member | Description |
-|--------|-------------|
-| `string path` | _No documentation available._ |
-
----
-# GenerateCsProjFragmentEventArgs
-<!--
-source: API\Utility\AssemblyAttributes\GenerateCsProjFragmentEventArgs.md
--->
-
-## GenerateCsProjFragmentEventArgs
-
-`class` in `AdvancedSceneManager.Utility.AssemblyAttributes`### Description
-
-### Properties
-
-| Member | Description |
-|--------|-------------|
-| `CsProjAttribute[] attributes` | _No documentation available._ |
-
-### Methods
-
-| Member | Description |
-|--------|-------------|
-| `virtual GenerateCsProjFragmentEventArgs <Clone>$()` | _No documentation available._ |
-| `void Deconstruct(CsProjAttribute[]& attributes)` | _No documentation available._ |
-| `virtual boolean Equals(object obj)` | _No documentation available._ |
-| `virtual boolean Equals(GenerateCsProjFragmentEventArgs other)` | _No documentation available._ |
-| `virtual int32 GetHashCode()` | _No documentation available._ |
-| `virtual string ToString()` | _No documentation available._ |
-
----
-# IncludeAttribute
-<!--
-source: API\Utility\AssemblyAttributes\IncludeAttribute.md
--->
-
-## IncludeAttribute
-
-`sealed class` in `AdvancedSceneManager.Utility.AssemblyAttributes`  /  Inherits from: `CsProjItemAttribute`### Description
-Provides support for specifying `<include>` in the generated csproj for a project.
-
-### Properties
-
-| Member | Description |
-|--------|-------------|
-| `string pattern` | _No documentation available._ |
-
----
-# NestFilesAttribute
-<!--
-source: API\Utility\AssemblyAttributes\NestFilesAttribute.md
--->
-
-## NestFilesAttribute
-
-`sealed class` in `AdvancedSceneManager.Utility.AssemblyAttributes`  /  Inherits from: `CsProjItemAttribute`### Description
-Provides support for specifying `<compile update="*" dependsupon="*" />` in the generated csproj for a project.
-
-### Properties
-
-| Member | Description |
-|--------|-------------|
-| `string[] files` | _No documentation available._ |
-| `string parent` | _No documentation available._ |
-| `string pattern` | _No documentation available._ |
-
----
-# SuppressWarningAttribute
-<!--
-source: API\Utility\AssemblyAttributes\SuppressWarningAttribute.md
--->
-
-## SuppressWarningAttribute
-
-`sealed class` in `AdvancedSceneManager.Utility.AssemblyAttributes`  /  Inherits from: `CsProjPropertyAttribute`### Description
-Provides support for specifying `<suppresswarning>` in the generated csproj for a project.
-
-### Properties
-
-| Member | Description |
-|--------|-------------|
-| `string warningCode` | _No documentation available._ |
 
 ---
 # AssetSearchUtility
@@ -7265,33 +7210,6 @@ This is also called after discoverables has just been initialized for the first 
 | `virtual boolean IsValidTarget(MemberInfo member)` | Specifies if the member is a valid target for this attribute callback. |
 
 ---
-# DiscoverabilityUtility
-<!--
-source: API\Utility\Discoverability\DiscoverabilityUtility.md
--->
-
-## DiscoverabilityUtility
-
-`static class` in `AdvancedSceneManager.Utility.Discoverability`### Description
-Provides utility methods for dealing and managing discoverables, a centralized attribute callback system.
-
-### Static Methods
-
-| Member | Description |
-|--------|-------------|
-| `boolean As<TAttribute, TMember>(DiscoveredMember discoveredMember, TAttribute& attribute, TMember& member)` | _No documentation available._ |
-| `boolean Find(string identifier, Nullable`1& discoverable)` | _No documentation available._ |
-| `boolean GetDiscoverable<T>(Nullable`1& discoverable)` | _No documentation available._ |
-| `boolean GetDiscoverable<T, TAttribute>(Nullable`1& discoverable)` | _No documentation available._ |
-| `boolean GetDiscoverable(Expression<Func<object>> expression, Nullable`1& discoverable)` | _No documentation available._ |
-| `boolean GetDiscoverable<TAttribute>(Expression<Func<object>> expression, Nullable`1& discoverable)` | _No documentation available._ |
-| `IEnumerable<DiscoveredMember> GetMembers()` | Get members decorated with the specified attribute. |
-| `IEnumerable<DiscoveredMember> GetMembers<T>()` | Get members decorated with the specified attribute. |
-| `void InvalidateCache()` | Invalidates the discoverable cache. |
-| `void Invoke<T>(object[] parameters)` | _No documentation available._ |
-| `IEnumerable<ValueTuple<TAttribute, TMember>> OfType<TAttribute, TMember>(IEnumerable<DiscoveredMember> discoveredMember)` | _No documentation available._ |
-
----
 # DiscoverableAttribute
 <!--
 source: API\Utility\Discoverability\DiscoverableAttribute.md
@@ -7307,6 +7225,7 @@ Represents the base attribute for discoverable attributes.
 | Member | Description |
 |--------|-------------|
 | `string friendlyDescription` | Specifies the description to be shown in the diag UI tooltip. |
+| `TargetInfo target` | Specifies what the target should look like. |
 
 ### Static Methods
 
@@ -7358,6 +7277,55 @@ A member that was found using `IDiscoverablesService`.
 | `virtual string ToString()` | Gets a formatted string of this discoverable. |
 
 ---
+# DiscoveredMemberExtensions
+<!--
+source: API\Utility\Discoverability\DiscoveredMemberExtensions.md
+-->
+
+## DiscoveredMemberExtensions
+
+`static class` in `AdvancedSceneManager.Utility.Discoverability`### Description
+Provides extension methods for DiscoveredMember.
+
+### Static Methods
+
+| Member | Description |
+|--------|-------------|
+| `boolean As<TAttribute, TMember>(DiscoveredMember discoveredMember, TAttribute& attribute, TMember& member)` | _No documentation available._ |
+| `IEnumerable<ValueTuple<TAttribute, TMember>> OfType<TAttribute, TMember>(IEnumerable<DiscoveredMember> discoveredMember)` | _No documentation available._ |
+
+---
+# TargetInfo
+<!--
+source: API\Utility\Discoverability\TargetInfo.md
+-->
+
+## TargetInfo
+
+`class` in `AdvancedSceneManager.Utility.Discoverability`### Description
+
+### Properties
+
+| Member | Description |
+|--------|-------------|
+| `boolean allowOmittingParam` | _No documentation available._ |
+| `Type memberType` | _No documentation available._ |
+| `Type parameterType` | _No documentation available._ |
+| `boolean requireStatic` | _No documentation available._ |
+| `Type returnType` | _No documentation available._ |
+
+### Methods
+
+| Member | Description |
+|--------|-------------|
+| `virtual TargetInfo <Clone>$()` | _No documentation available._ |
+| `void Deconstruct(Type& memberType, Type& parameterType, Type& returnType, Boolean& allowOmittingParam, Boolean& requireStatic)` | _No documentation available._ |
+| `virtual boolean Equals(object obj)` | _No documentation available._ |
+| `virtual boolean Equals(TargetInfo other)` | _No documentation available._ |
+| `virtual int32 GetHashCode()` | _No documentation available._ |
+| `virtual string ToString()` | _No documentation available._ |
+
+---
 # Editor
 <!--
 source: API\Utility\Editor.md
@@ -7387,26 +7355,6 @@ An utility class that manages the default scene, called 'AdvancedSceneManager'.
 
 <b> Remarks:</b>
 The default scene allows us to more easily close all scenes when we need to, since unity requires at least one scene to be open at any time.
-
-### Static Properties
-
-| Member | Description |
-|--------|-------------|
-| `boolean isActive` | Gets if the fallback scene is active in the heirarchy. |
-
-### Static Fields
-
-| Member | Description |
-|--------|-------------|
-| `string Name` | Gets the name of the fallback scene. |
-
-### Static Methods
-
-| Member | Description |
-|--------|-------------|
-| `string GetPath()` | Gets the fallback scene. |
-| `Scene GetScene()` | Gets the fallback scene. |
-| `boolean IsFallbackScene(Scene scene)` | Gets whatever the specified scene is the default scene. |
 
 ---
 # GlobalCoroutine
@@ -7482,6 +7430,43 @@ An utility for referencing objects globally.
 | `boolean IsRegistered(GuidReference reference)` | Gets if reference exists. |
 | `void Remove(GameObject obj, boolean saveScene)` | Removes a persistent reference to this `GameObject`. |
 | `boolean TryFind(string id, GuidReference& obj)` | _No documentation available._ |
+
+---
+# IDiscoverablesSceneObjectCache
+<!--
+source: API\Utility\IDiscoverablesSceneObjectCache.md
+-->
+
+## IDiscoverablesSceneObjectCache
+
+`interface` in `AdvancedSceneManager.Utility`### Description
+
+### Methods
+
+| Member | Description |
+|--------|-------------|
+| `abstract virtual IEnumerable<MonoBehaviour> GetAll<T>()` | _No documentation available._ |
+| `abstract virtual void Set<T>(IEnumerable<MonoBehaviour> list)` | _No documentation available._ |
+
+---
+# IGeneralSceneObjectCache
+<!--
+source: API\Utility\IGeneralSceneObjectCache.md
+-->
+
+## IGeneralSceneObjectCache
+
+`interface` in `AdvancedSceneManager.Utility`### Description
+
+### Methods
+
+| Member | Description |
+|--------|-------------|
+| `abstract virtual T Get<T>(string key)` | _No documentation available._ |
+| `abstract virtual boolean Get<T>(string key, T& obj)` | _No documentation available._ |
+| `abstract virtual IEnumerable<ValueTuple<string, T>> GetAll<T>()` | _No documentation available._ |
+| `abstract virtual void Remove(string key)` | _No documentation available._ |
+| `abstract virtual void Set<T>(string key, T obj)` | _No documentation available._ |
 
 ---
 # IQueueable
@@ -7701,26 +7686,6 @@ Only available if input system is installed.
 | `boolean IsDuplicate(InputButton binding)` | Gets if the binding is assigned to multiple scenes / collections. |
 | `boolean WasOpenedByBinding(SceneCollection collection)` | Gets if `collection` was opened by a binding. |
 | `boolean WasOpenedByBinding(Scene scene)` | Gets if the scene was opened by a binding. |
-
----
-# SceneObjectReferenceCache
-<!--
-source: API\Utility\SceneObjectReferenceCache.md
--->
-
-## SceneObjectReferenceCache
-
-`class` in `AdvancedSceneManager.Utility`  /  Inherits from: `MonoBehaviour`### Description
-Represents a in-scene cache for game objects. Enables fast lookup, instead of scanning heirarchy.
-
-### Static Methods
-
-| Member | Description |
-|--------|-------------|
-| `IEnumerable<ValueTuple<string, object>> Enumerate(Scene scene)` | Enumerates all cached references. |
-| `boolean Get(Scene scene, string key, Object& obj)` | _No documentation available._ |
-| `void Remove(Scene scene, string key)` | Removes a cached reference. |
-| `void Set(Scene scene, string key, object obj)` | Set the object to cache. |
 
 ---
 # SceneUtility
@@ -8009,7 +7974,9 @@ Provides methods for escaping and unescaping XML strings.
 | Member | Description |
 |--------|-------------|
 | `string Escape(string value)` | Escapes special XML characters in the given string. |
+| `string Escape(Type type)` | _No documentation available._ |
 | `string Unescape(string value)` | Unescapes XML entities in the given string. |
+| `boolean Unescape(string value, Type& type)` | _No documentation available._ |
 
 ---
 # API-structure
@@ -10216,11 +10183,11 @@ source: guides\readme.md
 [📁 Plugins](asm-window/asm-window.md)\
 [📁 API](asm-window/asm-window.md)
 
-[📄 Quick start](quick-start.md)\
-[📄 Common questions](common-questions.md)\
-[📄 In-game toolbar](in-game-toolbar.md)\
-[📄 Updating](updating.md)\
-[📄 Videos](videos.md)
+[📄 Quick start](Quick-start.md)\
+[📄 Common questions](Common-questions.md)\
+[📄 In-game toolbar](In-game-toolbar.md)\
+[📄 Updating](Updating.md)\
+[📄 Videos](Videos.md)
 
 
 ---

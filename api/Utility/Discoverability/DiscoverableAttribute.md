@@ -8,6 +8,7 @@ Represents the base attribute for discoverable attributes.
 | Member | Description |
 |--------|-------------|
 | `string friendlyDescription` | Specifies the description to be shown in the diag UI tooltip. |
+| `TargetInfo target` | Specifies what the target should look like. |
 
 ### Static Methods
 

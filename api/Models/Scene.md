@@ -26,6 +26,7 @@ A scene can be imported in the ASM window (via notification / popup), or by usin
 | `boolean isDefaultASMScene` | Gets if this is a default ASM scene. |
 | `boolean isDontDestroyOnLoad` | Gets if this scene is the dontDestroyOnLoad scene. |
 | `boolean isDynamic` | Gets if this scene is dynamic, it is not persisted to disk. |
+| `boolean isFallbackScene` | _No documentation available._ |
 | `boolean isImported` | Gets whatever the scene is tracked by ASM. |
 | `boolean isIncludedInBuilds` | Gets whatever this scene is included in build. |
 | `boolean isLoadingScreen { get; }` | Gets if this scene is a loading screen. |
@@ -45,6 +46,8 @@ A scene can be imported in the ASM window (via notification / popup), or by usin
 | `boolean openOnPlayMode` | Specifies whatever this scene should be opened when entering playmode. |
 | `boolean openOnStartup` | Specifies whatever this scene should be opened on startup. |
 | `string path { get; }` | Gets the path of the associated `SceneAsset`. |
+| `IGeneralSceneObjectCache runtimeCache` | _No documentation available._ |
+| `IDiscoverablesSceneObjectCache runtimeDiscoverablesCache` | _No documentation available._ |
 | `SceneAsset sceneAsset { get; }` | Gets the associated `SceneAsset`. |
 | `string sceneAssetGUID` | Gets the asset id of `sceneAsset`. |
 | `string sceneLoader` | Specifies what `SceneLoader` to use. |

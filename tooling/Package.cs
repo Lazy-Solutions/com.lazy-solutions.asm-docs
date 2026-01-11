@@ -1,12 +1,11 @@
-﻿#if ASM
+﻿#if CSPROJ_ATTRIBUTES
+using AdvancedSceneManager.CsProjAttributes;
 using AdvancedSceneManager.Documentation;
-using AdvancedSceneManager.Utility.AssemblyAttributes;
-
 [assembly: Include("Packages/" + Package.packageName + "/**/*.md")]
+#endif
 
 namespace AdvancedSceneManager.Documentation
 {
-
     public static class Package
     {
         public const string packageName = "com.lazy-solutions.asm-docs";
@@ -16,4 +15,3 @@ namespace AdvancedSceneManager.Documentation
     }
 
 }
-#endif

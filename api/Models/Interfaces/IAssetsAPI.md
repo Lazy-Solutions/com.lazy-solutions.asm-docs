@@ -12,7 +12,6 @@ May not be available in `[InitializeOnLoad]` and similar, use [Action)](https://
 |--------|-------------|
 | `IEnumerable<SceneCollectionTemplate> collectionTemplates` | Enumerates all collection templates tracked by ASM. |
 | `IAssetsAPIDefaultScenes defaults` | Provides access to the default ASM scenes. |
-| `string fallbackScenePath` | Gets the path to the fallback scene. |
 | `IEnumerable<Profile> profiles` | Enumerates all profiles tracked by ASM. |
 | `ASMSceneHelper sceneHelper` | Provides access to the scene helper. |
 | `IEnumerable<Scene> scenes` | Enumerates all imported scenes tracked by ASM. |

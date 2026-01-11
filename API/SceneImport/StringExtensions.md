@@ -10,7 +10,6 @@
 | `boolean IsASMScene(string path)` | _No documentation available._ |
 | `boolean IsBlacklisted(string path)` | _No documentation available._ |
 | `boolean IsDynamicScene(string path)` | _No documentation available._ |
-| `boolean IsFallbackScene(string path)` | _No documentation available._ |
 | `boolean IsImported(string path)` | _No documentation available._ |
 | `boolean IsPackageScene(string path)` | _No documentation available._ |
 | `boolean IsScene(string path)` | _No documentation available._ |

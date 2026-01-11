@@ -9,6 +9,7 @@ A profile for ASM, contains settings and collections.
 |--------|-------------|
 | `IEnumerable<ISceneCollection> allCollections` | Gets `collections`, `standaloneScenes`, `defaultASMScenes`, `dynamicCollections`. |
 | `IEnumerable<Scene> allScenes` | Gets all scenes, including child profile scenes. |
+| `boolean autoSwitchBuildProfileOnBuild` | Specifies whether ASM may write the build scene list to Unity’s active build profile when no build profile is explicitly associated. |
 | `boolean autoUpdateBuildScenes` | Specifies whatever build scene list should be automatically updated. |
 | `IEnumerable<Profile> childProfiles` | Gets the child profiles for this profile. |
 | `IEnumerable<Scene> childProfileScenes` | Gets all scenes from child profiles. |
@@ -21,7 +22,6 @@ A profile for ASM, contains settings and collections.
 | `LoadingScreenReference loadingScreen` | The default loading scene. |
 | `boolean notify` | Specifies whatever this profile should trigger a notification when imported. |
 | `string notifyMessage` | Specifies the notification messasge, when `notify` is `true`. |
-| `boolean preventAssignmentIfNullAndUnityHasABuildProfileActive` | Gets or sets whether ASM should prevent writing the build scene list to Unity’s active build profile when `unityBuildProfile` is `null`. |
 | `IEnumerable<ISceneCollection> removedCollections` | Gets all removed collections in this profile. |
 | `IEnumerable<Scene> scenes` | Gets the scenes managed by this profile. |
 | `IEnumerable<Scene> specialScenes` | Gets default loading screen, splash screen and startup loading screen. |
@@ -30,7 +30,7 @@ A profile for ASM, contains settings and collections.
 | `IEnumerable<SceneCollection> startupCollections` | Gets the collections that will be opened on startup. |
 | `Scene startupScene` | The startup scene. |
 | `IEnumerable<Scene> startupScenes` | Gets the scenes flagged to open on startup. |
-| `BuildProfile unityBuildProfile` | Gets or sets the `BuildProfile` that ASM should write its scene list to when the profile is active. Set to `null` to write to the global list, or to the active build profile if one is active. |
+| `BuildProfile unityBuildProfile` | Specifies the `BuildProfile` that ASM writes its build scene list to. |
 | `boolean unloadUnusedAssetsForStandalone` | Enable or disable ASM calling `UnloadUnusedAssets` after standalone scenes has been opened or closed. |
 
 ### Static Fields
