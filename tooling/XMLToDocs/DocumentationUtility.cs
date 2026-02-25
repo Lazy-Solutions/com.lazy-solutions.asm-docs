@@ -49,12 +49,13 @@ namespace AdvancedSceneManager.Documentation
             var i = 0;
             foreach (var type in types)
             {
+
                 var relativeNamespace = GetRelativeNamespace(type.Namespace, namespaceToTrim);
                 var subfolder = Path.Combine(outputFolder, relativeNamespace.Replace('.', Path.DirectorySeparatorChar));
 
                 var safeName = ToSafeFileName(type);
 
-                var file = $"{subfolder}/{safeName}.md";
+                var file = $"{subfolder}/{safeName}.md".Replace("\\", "/");
 
                 i += 1;
                 progress?.Invoke((file, i, types.Count));
@@ -63,6 +64,7 @@ namespace AdvancedSceneManager.Documentation
 
                 var md = Markdown.GenerateMarkdown(type);
                 File.WriteAllText(file, md);
+
             }
 
             AssetDatabase.Refresh();
