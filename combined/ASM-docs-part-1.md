@@ -818,7 +818,7 @@ source: API\Callbacks\Events\EndPhaseEvent.md
 ## EndPhaseEvent
 
 `class` in `AdvancedSceneManager.Callbacks.Events`  /  Inherits from: `SceneOperationEventBase`### Description
-Occurs before operation has stopped working, but after its practially done.
+Occurs before operation has stopped working, but after its practically done.
 
 <b> Remarks:</b>
 Called when: `Unspecified` (it will be ignored).
@@ -910,8 +910,8 @@ Provides utility functions for working with event callbacks.
 | Member | Description |
 |--------|-------------|
 | `IEnumerable<Type> GetCallbackTypes()` | Enumerates all callback types. |
-| `int32 GetInvokationOrder<TEventType>()` | _No documentation available._ |
-| `int32 GetInvokationOrder(Type type)` | Gets the invokation order of the event callback type. |
+| `int32 GetInvocationOrder<TEventType>()` | _No documentation available._ |
+| `int32 GetInvocationOrder(Type type)` | Gets the invocation order of the event callback type. |
 | `boolean IsWhenApplicable<TEventType>()` | _No documentation available._ |
 | `boolean IsWhenApplicable(Type type)` | Gets if the specified callback event uses `When` enum. |
 | `SceneOperation RegisterAllCallbacks(string key, SceneOperation operation, EventCallback<EventCallbackBase> callback, When when)` | Registers callback for all events. |
@@ -989,12 +989,12 @@ Occurs when `CoroutineUtility` starts or ends a coroutine.
 | `virtual string ToString()` | _No documentation available._ |
 
 ---
-# InvokationOrderAttribute
+# InvocationOrderAttribute
 <!--
-source: API\Callbacks\Events\InvokationOrderAttribute.md
+source: API\Callbacks\Events\InvocationOrderAttribute.md
 -->
 
-## InvokationOrderAttribute
+## InvocationOrderAttribute
 
 `class` in `AdvancedSceneManager.Callbacks.Events`  /  Inherits from: `Attribute`### Description
 
@@ -2100,12 +2100,6 @@ Combines them, and is safely usable both in and outside the editor.
 |--------|-------------|
 | `string friendlyDescription` | Specifies the description to be shown in the diag UI tooltip. |
 
-### Methods
-
-| Member | Description |
-|--------|-------------|
-| `virtual boolean IsValidTarget(MemberInfo member)` | Gets if `member` is a valid target for this attribute callback. |
-
 ---
 # OnSceneCloseAttribute
 <!--
@@ -2525,6 +2519,7 @@ A scene operation is a queueable operation that can open or close scenes..
 | `SceneOperationFlags flags { get; }` | Gets the operation flags this operation will use. |
 | `Scene focus { get; }` | Sets focus to the specified scene. Overrides selected scene in collections. |
 | `boolean focusSingleScene { get; }` | Sets the first opened scene as active. |
+| `boolean hasStarted { get; }` | Gets whether this operation has started. |
 | `IEnumerable<Scene> ignoreForActivation { get; }` | Gets the scenes that should not be activated. |
 | `boolean isCollectionCloseOperation { get; }` | Gets whatever this operation is about to close `collection`. |
 | `boolean isDefaultASMScene { get; }` | Gets if this scene was opened from the default ASM scene collection. |
@@ -2551,8 +2546,10 @@ A scene operation is a queueable operation that can open or close scenes..
 
 | Member | Description |
 |--------|-------------|
-| `SceneOperation Queue()` | Queues a new scene operation. |
-| `SceneOperation Start()` | Starts a new scene operation, ignoring queue. |
+| `SceneOperation Queue()` | _No documentation available._ |
+| `SceneOperation Queue(SceneOperation operation)` | Queues a new scene operation. |
+| `SceneOperation Start()` | _No documentation available._ |
+| `SceneOperation Start(SceneOperation operation)` | Starts a new scene operation, ignoring queue. |
 
 ### Methods
 
@@ -2570,6 +2567,7 @@ A scene operation is a queueable operation that can open or close scenes..
 | `SceneOperation CloseOtherScenes(boolean persistent, IEnumerable<Scene> except, boolean loadingScreen, boolean splashScreen, boolean removeFromOpen)` | Closes all open scenes prior to opening any scenes, with options. |
 | `SceneOperation DisableProgressReporting()` | Disables progress reporting for this operation. |
 | `SceneOperation Focus(Scene scene)` | Sets focus to the specified scene. Overrides selected scene in collections. |
+| `CoroutineAwaiter GetAwaiter()` | Allows this operation to be awaited. |
 | `SceneOperation IgnoreForActivation(IEnumerable<Scene> scenes)` | Specifies scenes that should not be activated. |
 | `SceneOperation OnProgressChanged(Action<single> callback)` | Adds a callback when progress changed. |
 | `SceneOperation Open(SceneCollection collection, boolean openAll)` | _No documentation available._ |
@@ -2694,224 +2692,6 @@ source: API\Core\StartupProps.md
 | `boolean forceOpenAllScenesOnCollection` | _No documentation available._ |
 | `SceneCollection openCollection` | _No documentation available._ |
 | `boolean softSkipSplashScreen` | _No documentation available._ |
-
----
-# FadeLoadingScreen
-<!--
-source: API\Defaults\FadeLoadingScreen.md
--->
-
-## FadeLoadingScreen
-
-`class` in `AdvancedSceneManager.Defaults`  /  Inherits from: `LoadingScreen`### Description
-A default loading screen script. Fades screen out, then fades screen in when loading is done. Does not display progress.
-
-### Fields
-
-| Member | Description |
-|--------|-------------|
-| `Color color` | The color of the background. |
-| `Image fadeBackground` | The image of which to set background color. |
-| `single fadeDuration` | The duration to fade in and out for. |
-| `CanvasGroup fadeGroup` | The `CanvasGroup` to fade in and out. |
-| `Nullable<single> fadeInDurationOverride` | Programmatic override for `fadeDuration`, which is saved in scene file. |
-
-### Methods
-
-| Member | Description |
-|--------|-------------|
-| `virtual IEnumerator OnClose()` | Called when the loading screen is about to close. |
-| `virtual IEnumerator OnOpen()` | Called when the loading screen is opened. |
-
----
-# IconBounceLoadingScreen
-<!--
-source: API\Defaults\IconBounceLoadingScreen.md
--->
-
-## IconBounceLoadingScreen
-
-`class` in `AdvancedSceneManager.Defaults`  /  Inherits from: `FadeLoadingScreen`### Description
-A default loading screen script. Displays progress with a bouncing icon.
-
-### Fields
-
-| Member | Description |
-|--------|-------------|
-| `RectTransform BackgroundTransform` | Specifies the transform for the background. |
-| `single duration` | Specifies the icon rotate duration. |
-| `single IconStartRotationZ` | Specifies the icon start rotation. |
-| `Vector2 IconStartSize` | Specifies the icon start size. |
-| `RectTransform IconTransform` | Specifies the transform for the icon. |
-
-### Methods
-
-| Member | Description |
-|--------|-------------|
-| `virtual IEnumerator OnClose()` | Called when the loading screen is about to close. |
-| `virtual IEnumerator OnOpen()` | Called when the loading screen is opened. |
-
----
-# PressAnyButtonLoadingScreen
-<!--
-source: API\Defaults\PressAnyButtonLoadingScreen.md
--->
-
-## PressAnyButtonLoadingScreen
-
-`class` in `AdvancedSceneManager.Defaults`  /  Inherits from: `FadeLoadingScreen`### Description
-A default loading screen script. Requires the user to press any key before loading screen closes.
-
-### Methods
-
-| Member | Description |
-|--------|-------------|
-| `virtual IEnumerator OnClose()` | Called when the loading screen is about to close. |
-| `virtual IEnumerator OnOpen()` | Called when the loading screen is opened. |
-
----
-# ProgressBarLoadingScreen
-<!--
-source: API\Defaults\ProgressBarLoadingScreen.md
--->
-
-## ProgressBarLoadingScreen
-
-`class` in `AdvancedSceneManager.Defaults`  /  Inherits from: `FadeLoadingScreen`### Description
-A default loading screen script. Displays progress with a progress bar.
-
-### Fields
-
-| Member | Description |
-|--------|-------------|
-| `Slider slider` | Specifies the slider to use as progress bar. |
-
-### Methods
-
-| Member | Description |
-|--------|-------------|
-| `virtual IEnumerator OnClose()` | Called when the loading screen is about to close. |
-| `virtual IEnumerator OnOpen()` | Called when the loading screen is opened. |
-| `virtual void OnProgressChanged(ILoadProgressData progress)` | Called when progress changes for the associated scene operation. |
-
----
-# QuoteLoadingScreen
-<!--
-source: API\Defaults\QuoteLoadingScreen.md
--->
-
-## QuoteLoadingScreen
-
-`class` in `AdvancedSceneManager.Defaults`  /  Inherits from: `ProgressBarLoadingScreen`### Description
-A default loading screen that displays random quotes while loading.
-
-### Fields
-
-| Member | Description |
-|--------|-------------|
-| `RectTransform Content` | Transform containing the entire quote content area. |
-| `Text pressAnyKeyToContinueText` | UI text element for the "Press any key to continue" message. |
-| `Text QuoteCountText` | UI text element showing the current quote index and total count. |
-| `Quotes quotes` | Quotes to display during the loading screen. |
-| `Text QuoteText` | UI text element used to display the current quote. |
-| `single slideshowDelay` | Time to wait before showing the next quote in seconds. |
-| `RectTransform Text` | Transform containing the text elements for fading transitions. |
-
-### Methods
-
-| Member | Description |
-|--------|-------------|
-| `virtual IEnumerator OnClose()` | Called when the loading screen is about to close. |
-| `virtual IEnumerator OnOpen()` | Called when the loading screen is opened. |
-
----
-# Quotes
-<!--
-source: API\Defaults\Quotes.md
--->
-
-## Quotes
-
-`class` in `AdvancedSceneManager.Defaults`  /  Inherits from: `MonoBehaviour`### Description
-A list of quotes for `QuoteLoadingScreen`.
-
-### Fields
-
-| Member | Description |
-|--------|-------------|
-| `List<string> quoteList` | The list of quotes. |
-
----
-# SplashASM
-<!--
-source: API\Defaults\SplashASM.md
--->
-
-## SplashASM
-
-`class` in `AdvancedSceneManager.Defaults`  /  Inherits from: `SplashScreen`### Description
-A default splash screen script. Fades splash screen in and out.
-
-### Fields
-
-| Member | Description |
-|--------|-------------|
-| `Camera _camera` | Camera used for rendering the splash screen. |
-| `Image background` | Background image shown during the splash sequence. |
-| `CanvasGroup groupBackground` | Canvas group controlling the background fade. |
-| `CanvasGroup groupLogo` | Canvas group controlling the logo fade. |
-| `Image logo` | Logo image displayed in the splash screen. |
-
-### Methods
-
-| Member | Description |
-|--------|-------------|
-| `virtual IEnumerator OnClose()` | Called when the loading screen is about to close. |
-| `virtual IEnumerator OnOpen()` | Called when the loading screen is opened. |
-
----
-# SplashFade
-<!--
-source: API\Defaults\SplashFade.md
--->
-
-## SplashFade
-
-`class` in `AdvancedSceneManager.Defaults`  /  Inherits from: `SplashScreen`### Description
-A default splash screen that fades the background in and out during startup.
-
-### Fields
-
-| Member | Description |
-|--------|-------------|
-| `Image background` | Background image displayed during the splash sequence. |
-| `CanvasGroup groupBackground` | Canvas group used to control the fade effect of the background. |
-
-### Methods
-
-| Member | Description |
-|--------|-------------|
-| `virtual IEnumerator OnClose()` | Called when the loading screen is about to close. |
-| `virtual IEnumerator OnOpen()` | Called when the loading screen is opened. |
-
----
-# TotalProgressBarLoadingScreen
-<!--
-source: API\Defaults\TotalProgressBarLoadingScreen.md
--->
-
-## TotalProgressBarLoadingScreen
-
-`class` in `AdvancedSceneManager.Defaults`  /  Inherits from: `LoadingScreen`### Description
-A default loading screen that displays a total progress bar during scene loading.
-
-### Methods
-
-| Member | Description |
-|--------|-------------|
-| `virtual IEnumerator OnClose()` | Called when the loading screen is about to close. |
-| `virtual IEnumerator OnOpen()` | Called when the loading screen is opened. |
-| `virtual void OnProgressChanged(ILoadProgressData progress)` | Called when progress changes for the associated scene operation. |
 
 ---
 # DependencyInjectionUtility
@@ -3192,7 +2972,6 @@ May not be available in `[InitializeOnLoad]` and similar, use [Action)](https://
 | `CustomData customData` | Specifies custom data. |
 | `Profile defaultProfile` | The profile to use when none is set. |
 | `boolean enableCrossSceneReferences` | Gets or sets whatever cross-scene references should be enabled. |
-| `LoadingScreenReference fadeScreen` | Specifies the scene to use for certain methods, i.e. [Color})](https://learn.microsoft.com/dotnet/api/m:advancedscenemanager.utility.loadingscreenutility.fadeout(system.single,system.nullable{unityengine.color})). |
 | `Profile forceProfile` | The profile to force everyone in this project to use. |
 | `boolean preventSpammingEventMethods` | By default, ASM will prevent spam calling event methods (i.e. calling Scene.Open() from a button press), but this will disable that. |
 | `boolean reverseUnloadOrderOnCollectionClose` | Specifies whatever collections should unload scenes in the reverse order. |
@@ -3350,11 +3129,11 @@ Only available in the editor.
 | `void OpenPopup<T>()` | _No documentation available._ |
 | `void OpenPopup<T>(Nullable<ViewModelContext> context)` | _No documentation available._ |
 | `void OpenPopup(Type type, Nullable<ViewModelContext> context)` | Opens `type` as a popup. |
-| `void OpenSettings()` |  |
-| `void OpenSettings<T>()` |  |
+| `void OpenSettings()` | Opens the settings popup on the main page. |
+| `void OpenSettings<T>()` | Opens the settings popup on the main page. |
 | `void OpenSettings<T>(ViewModelContext context)` | _No documentation available._ |
-| `void OpenSettings(Type type)` |  |
-| `void OpenSettings(Type type, ViewModelContext context)` |  |
+| `void OpenSettings(Type type)` | Opens the settings popup on the page that matches the view model specified by `type`. |
+| `void OpenSettings(Type type, ViewModelContext context)` | Opens the settings popup on the page that matches the view model specified by `type`. |
 | `void ReloadCollections()` | Reloads collection ui. |
 | `void RemoveNotification(Notification notification)` | Removes the notification with the specified id. |
 
@@ -3396,6 +3175,20 @@ When specified on a class it should inherit `ViewModel`.
 | Member | Description |
 |--------|-------------|
 | `virtual boolean IsValidTarget(MemberInfo member)` | Gets if `member` is a valid target for this attribute callback. |
+
+---
+# DragReferenceManipulator
+<!--
+source: API\Editor\UI\DragReferenceManipulator.md
+-->
+
+## DragReferenceManipulator
+
+`class` in `AdvancedSceneManager.Editor.UI`  /  Inherits from: `PointerManipulator`### Description
+Gives user a `ScriptableObject` reference on drag.
+
+<b> Remarks:</b>
+Only available in editor.
 
 ---
 # ElementLocation
@@ -3516,47 +3309,6 @@ Only available in the editor.
 | `int32 value__` | _No documentation available._ |
 
 ---
-# TypeUtility
-<!--
-source: API\Editor\UI\TypeUtility.md
--->
-
-## TypeUtility
-
-`static class` in `AdvancedSceneManager.Editor.UI`### Description
-Contains utility functions for working with types.
-
-### Static Methods
-
-| Member | Description |
-|--------|-------------|
-| `Type Deserialize(string value)` | _No documentation available._ |
-| `boolean Deserialize(string value, Type& type)` | _No documentation available._ |
-| `string GetFriendlyTypeName(Type type)` | Gets the friendly name of this type. |
-| `string GetSignature(MemberInfo member, boolean includeAccessModifiers)` | Gets the signature of this member. |
-| `boolean HasNoParameters(MemberInfo member)` | Gets if `member` is a `MethodInfo`, and has no parameters. |
-| `boolean HasParameters<T1>(MemberInfo member)` | _No documentation available._ |
-| `boolean HasParameters<T1, T2>(MemberInfo member)` | _No documentation available._ |
-| `boolean HasParameters<T1, T2, T3>(MemberInfo member)` | _No documentation available._ |
-| `boolean HasParameters<T1, T2, T3, T4>(MemberInfo member)` | _No documentation available._ |
-| `boolean HasParameters(MemberInfo member, Type[] types)` | _No documentation available._ |
-| `boolean IsConstructor(MemberInfo member)` | Determines whether the specified `MemberInfo` represents a constructor. |
-| `boolean IsField(MemberInfo member)` | Determines whether the specified `MemberInfo` represents a field. |
-| `boolean IsMethod(MemberInfo member)` | Determines whether the specified `MemberInfo` represents a method. |
-| `boolean IsMethodAndReturns<T>(MemberInfo member)` | _No documentation available._ |
-| `boolean IsProperty(MemberInfo member)` | Determines whether the specified `MemberInfo` represents a property. |
-| `boolean IsStatic(MemberInfo member)` | Determines whether the specified `MemberInfo` represents a static member. |
-| `boolean IsType(MemberInfo member)` | Determines whether the specified `MemberInfo` represents a type. |
-| `boolean IsType(MemberInfo member, Type type)` | Determines whether the specified `MemberInfo` represents a type. |
-| `boolean IsType<T>(MemberInfo member)` | Determines whether the specified `MemberInfo` represents a type. |
-| `boolean Returns<T>(MemberInfo member)` | _No documentation available._ |
-| `boolean Returns(MemberInfo member, Type type)` | Gets if `member` returns `type`. |
-| `boolean ReturnsCoroutine(MemberInfo member)` | Gets if `member` returns `IEnumerator`. |
-| `boolean ReturnsVoid(MemberInfo member)` | Gets if `member` returns `Void`. |
-| `Type ReturnType(MemberInfo member)` | Gets the return or value type of the specified `MemberInfo`. |
-| `string Serialize(Type type)` | _No documentation available._ |
-
----
 # UIElementUtility
 <!--
 source: API\Editor\UI\UIElementUtility.md
@@ -3571,7 +3323,7 @@ Provides utility methods for working with `VisualElement`.
 
 | Member | Description |
 |--------|-------------|
-| `void UseFontAwesome(VisualElement button, Nullable<boolean> solid, Nullable<boolean> regular, Nullable<boolean> brands)` | Applies font awesome free to the `VisualElement`. |
+| `T UseFontAwesome<T>(T element, Nullable<boolean> solid, Nullable<boolean> regular, Nullable<boolean> brands)` | _No documentation available._ |
 
 ---
 # AssetDatabaseUtility
@@ -3626,12 +3378,14 @@ Only available in editor.
 
 | Member | Description |
 |--------|-------------|
+| `void CleanupASMBuildAssets()` | _No documentation available._ |
 | `BuildReport DoBuild(string path, boolean attachProfiler, boolean runGameWhenBuilt, boolean dev, BuildOptions customOptions)` | Performs a build of the active build profile if one exists, otherwise falls back to Unity's legacy build pipeline. |
 | `BuildReport DoBuild(BuildPlayerOptions opts)` | Performs a build using the legacy `BuildPlayerOptions` API. |
 | `BuildReport DoBuild(BuildPlayerWithProfileOptions options)` | _No documentation available._ |
 | `IEnumerable<ValueTuple<EditorBuildSettingsScene, Reason>> GetOrderedList()` | Gets an ordered list of all scenes that ASM would set in the build settings. |
 | `boolean IsEnabled(string path, Reason& reason)` | _No documentation available._ |
 | `boolean IsIncluded(Scene scene, Reason& reason)` | _No documentation available._ |
+| `void PrepareASMForBuild()` | _No documentation available._ |
 | `void UpdateSceneList()` | Updates the scene build settings. |
 | `void UpdateSceneList(boolean ignorePlayModeCheck, boolean force)` | Updates the scene build settings from the ASM profile. |
 
@@ -3826,6 +3580,134 @@ source: API\Editor\Utility\Reason.md
 | `int32 value__` | _No documentation available._ |
 
 ---
+# CollectionOpen
+<!--
+source: API\ExampleScripts\CollectionOpen.md
+-->
+
+## CollectionOpen
+
+`class` in `AdvancedSceneManager.ExampleScripts`  /  Inherits from: `MonoBehaviour`### Description
+Contains examples for opening collections.
+
+### Fields
+
+| Member | Description |
+|--------|-------------|
+| `SceneCollection collectionToOpen` | _No documentation available._ |
+
+### Methods
+
+| Member | Description |
+|--------|-------------|
+| `void ChainingExample()` | _No documentation available._ |
+| `void Open()` | _No documentation available._ |
+| `void OpenWithLoadingScreen(LoadingScreenReference loadingScreen)` | _No documentation available._ |
+| `void OpenWithUserData(ScriptableObject scriptableObject)` | _No documentation available._ |
+| `void ToggleOpen()` | _No documentation available._ |
+
+---
+# DoActionsWithLoadingScreen
+<!--
+source: API\ExampleScripts\DoActionsWithLoadingScreen.md
+-->
+
+## DoActionsWithLoadingScreen
+
+`class` in `AdvancedSceneManager.ExampleScripts`### Description
+Contains examples for doing `Action` with loading screen.
+
+### Fields
+
+| Member | Description |
+|--------|-------------|
+| `LoadingScreenReference loadingScreen` | _No documentation available._ |
+
+### Methods
+
+| Member | Description |
+|--------|-------------|
+| `void DoActionWithLoadingScreen()` | _No documentation available._ |
+| `void DoCoroutineWithLoadingScreen()` | _No documentation available._ |
+
+---
+# SceneLoader
+<!--
+source: API\ExampleScripts\SceneLoader.md
+-->
+
+## SceneLoader
+
+`static class` in `AdvancedSceneManager.ExampleScripts`### Description
+Contains examples of how to override scene loading.
+
+---
+# SceneOpen
+<!--
+source: API\ExampleScripts\SceneOpen.md
+-->
+
+## SceneOpen
+
+`class` in `AdvancedSceneManager.ExampleScripts`  /  Inherits from: `MonoBehaviour`### Description
+Contains examples for opening scenes.
+
+### Fields
+
+| Member | Description |
+|--------|-------------|
+| `Scene sceneToOpen` | _No documentation available._ |
+
+### Methods
+
+| Member | Description |
+|--------|-------------|
+| `void ChainingExample()` | _No documentation available._ |
+| `void OpenSingle()` | _No documentation available._ |
+| `void OpenStandalone()` | _No documentation available._ |
+| `void OpenWithLoadingScreen(LoadingScreenReference loadingScreen)` | _No documentation available._ |
+| `void Toggle()` | _No documentation available._ |
+
+---
+# ScenePreload
+<!--
+source: API\ExampleScripts\ScenePreload.md
+-->
+
+## ScenePreload
+
+`class` in `AdvancedSceneManager.ExampleScripts`  /  Inherits from: `MonoBehaviour`### Description
+Contains examples for preloading scenes.
+
+### Static Properties
+
+| Member | Description |
+|--------|-------------|
+| `boolean hasPreloadedScene` | _No documentation available._ |
+
+### Fields
+
+| Member | Description |
+|--------|-------------|
+| `Scene SceneToPreload` | _No documentation available._ |
+
+### Static Methods
+
+| Member | Description |
+|--------|-------------|
+| `void CancelPreloadStatically(Scene scene)` | _No documentation available._ |
+| `void FinishPreloadStatically(Scene scene)` | _No documentation available._ |
+| `void StartPreloadStatically(Scene scene)` | _No documentation available._ |
+
+### Methods
+
+| Member | Description |
+|--------|-------------|
+| `void CancelPreloadCoroutine()` | _No documentation available._ |
+| `void FinishPreloadCoroutine()` | _No documentation available._ |
+| `void StartPreloadCoroutine()` | _No documentation available._ |
+
+---
 # IFadeLoadingScreen
 <!--
 source: API\Loading\IFadeLoadingScreen.md
@@ -3931,11 +3813,11 @@ Defines the base for a loading screen discoverable.
 
 | Member | Description |
 |--------|-------------|
-| `string displayName` | The name to display in scene pickers. |
-| `string displayType` | The type of loading screen. |
-| `string effectiveDisplayName` | _No documentation available._ |
-| `boolean isLoadingScreen` | Gets if this is a loading screen. |
-| `boolean isSplashScreen` | Gets if this is a splash screen. |
+| `string displayName` | The name to display when picking a loading screen and for the host scene when open. |
+| `string displayType` | Gets a human-readable type name for this screen (for example, "Splash Screen" or "Loading Screen"). |
+| `string effectiveDisplayName` | The effective display name, falls back to type name if `displayName` is empty. |
+| `boolean isLoadingScreen` | Gets whether this attribute defines a loading screen. |
+| `boolean isSplashScreen` | Gets whether this attribute defines a splash screen. |
 
 ---
 # LoadingScreenBase
@@ -3986,12 +3868,13 @@ source: API\Loading\LoadingScreenConfigBag.md
 ## LoadingScreenConfigBag
 
 `abstract class` in `AdvancedSceneManager.Loading`### Description
+Base class for loading screen config bags.
 
 ### Fields
 
 | Member | Description |
 |--------|-------------|
-| `boolean displayInEditor` |  |
+| `boolean displayInEditor` | _No documentation available._ |
 | `PanelSettings panelSettings` | _No documentation available._ |
 | `int32 sortOrder` | _No documentation available._ |
 
@@ -4036,19 +3919,20 @@ source: API\Loading\LoadingScreenViewModel.md
 ## LoadingScreenViewModel
 
 `abstract class` in `AdvancedSceneManager.Loading`  /  Inherits from: `ViewModel`### Description
+The base class for loading screen view models.
 
 ### Properties
 
 | Member | Description |
 |--------|-------------|
-| `boolean handleDisplayInEditorAutomatically` |  |
-| `UIDocument uiDocument { get; }` | _No documentation available._ |
+| `boolean handleDisplayInEditorAutomatically` | Determines whether ASM should automatically handle editor-only display logic based on `displayInEditor`. |
+| `UIDocument uiDocument { get; }` | Gets the `UIDocument` that is rendering the view. |
 
 ### Methods
 
 | Member | Description |
 |--------|-------------|
-| `void EnsureCameraExists()` | _No documentation available._ |
+| `void EnsureCameraExists()` | Ensures that a camera exists for rendering this loading screen. |
 
 ---
 # LoadingScreenViewModel_Of_T
@@ -4059,12 +3943,13 @@ source: API\Loading\LoadingScreenViewModel_Of_T.md
 ## LoadingScreenViewModel`1
 
 `abstract class` in `AdvancedSceneManager.Loading`  /  Inherits from: `LoadingScreenViewModel`### Description
+The base class for loading screen view models.
 
 ### Properties
 
 | Member | Description |
 |--------|-------------|
-| `T configBag` |  |
+| `T configBag` | Gets the configuration bag for this loading screen. If no configuration has been provided, a default instance is created. |
 
 ---
 # MessageLoadProgressData
@@ -4153,6 +4038,24 @@ The default implementation of `ILoadProgressData`, used by ASM in most cases.
 | `virtual string ToString()` | _No documentation available._ |
 
 ---
+# SerializableLoadingScreenReference
+<!--
+source: API\Loading\SerializableLoadingScreenReference.md
+-->
+
+## SerializableLoadingScreenReference
+
+`class` in `AdvancedSceneManager.Loading`### Description
+
+### Fields
+
+| Member | Description |
+|--------|-------------|
+| `LoadingScreenConfigBag config` | _No documentation available._ |
+| `DiscoveredMember discoverable` | _No documentation available._ |
+| `Scene scene` | _No documentation available._ |
+
+---
 # SplashScreen
 <!--
 source: API\Loading\SplashScreen.md
@@ -4194,6 +4097,10 @@ source: API\Loading\UI\ASMSplashScreen.md
 ## ASMSplashScreen
 
 `class` in `AdvancedSceneManager.Loading.UI`  /  Inherits from: `LoadingScreenViewModel<ConfigBag>`### Description
+A splash screen that displays the ASM logo.
+
+<b> Remarks:</b>
+A default splash screen.
 
 ### Properties
 
@@ -4228,6 +4135,10 @@ source: API\Loading\UI\FadeLoadingScreen.md
 ## FadeLoadingScreen
 
 `class` in `AdvancedSceneManager.Loading.UI`  /  Inherits from: `LoadingScreenViewModel<ConfigBag>`### Description
+A loading screen that fades the screen in and out.
+
+<b> Remarks:</b>
+A default loading screen.
 
 ### Properties
 
@@ -4244,7 +4155,10 @@ source: API\Loading\UI\FadeSplashScreen.md
 ## FadeSplashScreen
 
 `class` in `AdvancedSceneManager.Loading.UI`  /  Inherits from: `LoadingScreenViewModel<ConfigBag>`### Description
-A splash screen that fades an overlay in and out.
+A splash screen that fades the screen in and out.
+
+<b> Remarks:</b>
+A default splash screen.
 
 ### Properties
 
@@ -4476,7 +4390,6 @@ Manages initialization, as this `ScriptableObject` is core to ASM, and nothing w
 | `Profile defaultProfile` | The profile to use when none is set. |
 | `boolean enableCrossSceneReferences` | Gets or sets whatever cross-scene references should be enabled. |
 | `boolean enableGUIDReferences` | Gets or sets whatever GUID references should be enabled. |
-| `LoadingScreenReference fadeScreen` | Specifies the scene to use for certain methods, i.e. [Color})](https://learn.microsoft.com/dotnet/api/m:advancedscenemanager.utility.loadingscreenutility.fadeout(system.single,system.nullable{unityengine.color})). |
 | `Profile forceProfile` | The profile to force everyone in this project to use. |
 | `boolean preventSpammingEventMethods` | By default, ASM will prevent spam calling event methods (i.e. calling Scene.Open() from a button press), but this will disable that. |
 | `boolean reverseUnloadOrderOnCollectionClose` | Specifies whatever collections should unload scenes in the reverse order. |
@@ -4684,37 +4597,6 @@ source: API\Models\CustomDataDictionary_Of_TKey_TValue.md
 | `TValue Get(TKey key)` | _No documentation available._ |
 | `IEnumerator<KeyValuePair<TKey, TValue>> GetEnumerator()` | _No documentation available._ |
 | `void Set(TKey key, TValue value)` | _No documentation available._ |
-
----
-# DefaultASMScenesCollection
-<!--
-source: API\Models\DefaultASMScenesCollection.md
--->
-
-## DefaultASMScenesCollection
-
-`sealed class` in `AdvancedSceneManager.Models`  /  Inherits from: `DynamicCollectionBase<Scene>`### Description
-Collection containing default ASM scenes, if they have been imported.
-
-### Properties
-
-| Member | Description |
-|--------|-------------|
-| `IEnumerable<string> scenePaths` | Gets the scene paths of the default scenes. |
-| `IEnumerable<Scene> scenes` | Gets the default scenes from the ASM package samples. |
-
-### Fields
-
-| Member | Description |
-|--------|-------------|
-| `boolean isImported` | Gets whether the default scenes have been imported. |
-
-### Static Methods
-
-| Member | Description |
-|--------|-------------|
-| `void ImportScenes()` | Imports the default ASM scenes from the package samples. |
-| `void Unimport()` | Removes the imported default ASM scenes. |
 
 ---
 # DynamicCollection
@@ -5180,10 +5062,10 @@ May not be available in `[InitializeOnLoad]` and similar, use [Action)](https://
 
 | Member | Description |
 |--------|-------------|
-| `DiscoveredMember asmSplashScreen` | Gets the default discoverable ASM splash screen. |
-| `DiscoveredMember fadeLoadingScreen` | Gets the default discoverable fade loading screen. |
+| `LoadingScreenReference asmSplashScreen` | Gets the default discoverable ASM splash screen. |
+| `LoadingScreenReference fadeLoadingScreen` | Gets the default discoverable fade loading screen. |
 | `Scene fadeScene` | Gets the default fade loading scene. |
-| `DiscoveredMember fadeSplashScreen` | Gets the default discoverable fade splash screen. |
+| `LoadingScreenReference fadeSplashScreen` | Gets the default discoverable fade splash screen. |
 | `Scene iconBounceScene` | Gets the default icon bounce loading scene. |
 | `Scene inGameToolbarScene` | Gets the default in-game-toolbar scene. |
 | `Scene pauseScene` | Gets the default pause scene. |
@@ -5622,7 +5504,7 @@ A profile for ASM, contains settings and collections.
 
 | Member | Description |
 |--------|-------------|
-| `IEnumerable<ISceneCollection> allCollections` | Gets `collections`, `standaloneScenes`, `defaultASMScenes`, `dynamicCollections`. |
+| `IEnumerable<ISceneCollection> allCollections` | Gets `collections`, `standaloneScenes`, `dynamicCollections`. |
 | `IEnumerable<Scene> allScenes` | Gets all scenes, including child profile scenes. |
 | `boolean autoSwitchBuildProfileOnBuild` | Specifies whether ASM may write the build scene list to Unity’s active build profile when no build profile is explicitly associated. |
 | `boolean autoUpdateBuildScenes` | Specifies whatever build scene list should be automatically updated. |
@@ -5631,7 +5513,6 @@ A profile for ASM, contains settings and collections.
 | `IEnumerable<SceneCollection> childProfileStartupCollections` | Gets all startup collections from child profiles. |
 | `IEnumerable<Scene> childProfileStartupScenes` | Gets all startup scenes from child profiles. |
 | `IEnumerable<SceneCollection> collections` | Gets the collections contained within this profile. |
-| `DefaultASMScenesCollection defaultASMScenes` | Gets the default asm scenes collection contained within this profile. |
 | `IEnumerable<DynamicCollection> dynamicCollections` | Gets the dynamic collections contained within this profile. |
 | `boolean isActive` | Gets if this profile is set as active. |
 | `LoadingScreenReference loadingScreen` | The default loading scene. |
@@ -5744,6 +5625,7 @@ A scene can be imported in the ASM window (via notification / popup), or by usin
 | `boolean keepOpenWhenNewCollectionWouldReopen` | Specifies whatever this will remain open when a newly opened collection would have reopened it. |
 | `LoadPriority loadPriority` | Specifies the `LoadPriority` to use when opening this scene. |
 | `string lockMessage` | Gets or sets the message to be displayed when unlocking this scene. |
+| `ISceneCollection openedBy { get; }` | Gets the collection this scene was opened by, if it is currently open and actually was opened by a collection. |
 | `boolean openOnPlayMode` | Specifies whatever this scene should be opened when entering playmode. |
 | `boolean openOnStartup` | Specifies whatever this scene should be opened on startup. |
 | `string path { get; }` | Gets the path of the associated `SceneAsset`. |
@@ -5903,7 +5785,7 @@ t:AdvancedSceneManager.Models.SceneCollection
 | Member | Description |
 |--------|-------------|
 | `SceneCollection Find(string q, boolean activeProfile)` | Finds a collection based on its title or id. |
-| `ISceneCollection FindCollectionAll(string q, boolean activeProfile)` | Finds a `SceneCollection`, `StandaloneCollection`, `DefaultASMScenesCollection`, or `DynamicCollection` based on its title or id. Supports removed collections. |
+| `ISceneCollection FindCollectionAll(string q, boolean activeProfile)` | Finds a `SceneCollection`, `StandaloneCollection`, [DefaultASMScenesCollection](https://learn.microsoft.com/dotnet/api/!:defaultasmscenescollection), or `DynamicCollection` based on its title or id. Supports removed collections. |
 | `boolean TryFind(string q, SceneCollection& collection, boolean activeProfile)` | _No documentation available._ |
 
 ### Methods
@@ -6361,6 +6243,7 @@ The central Advanced Scene Manager API. Provides access to the most important th
 |--------|-------------|
 | `App app` | Manages startup and quit processes. |
 | `IAssetsAPI assets` | Provides access to the scenes, collections and profiles managed by ASM. |
+| `IDiscoverablesService discoverables` | Provides access to the ASM discoverables service. |
 | `Scene dontDestroyOnLoadScene` | Gets the dontDestroyOnLoad scene. |
 | `EventCallbackManager<EventCallbackBase> events` | Provides access to global ASM event callbacks. |
 | `Scene fallbackScene` | Gets the fallback scene. |
@@ -6404,10 +6287,11 @@ Allows for centralized management, optimized discovery, and caching.
 | `abstract virtual boolean GetDiscoverable<T, TAttribute>(Nullable`1& discoverable)` | _No documentation available._ |
 | `abstract virtual boolean GetDiscoverable(Expression<Func<object>> expression, Nullable`1& discoverable)` | _No documentation available._ |
 | `abstract virtual boolean GetDiscoverable<TAttribute>(Expression<Func<object>> expression, Nullable`1& discoverable)` | _No documentation available._ |
+| `abstract virtual IEnumerable<DiscoveredMember> GetInstanceMembersOn<TDiscoverable>(Type type)` | _No documentation available._ |
 | `abstract virtual IEnumerable<DiscoveredMember> GetMembers()` | Get members decorated with the specified attribute. |
 | `abstract virtual IEnumerable<DiscoveredMember> GetMembers<T>()` | Get members decorated with the specified attribute. |
+| `abstract virtual IEnumerable<DiscoveredMember> GetStaticMembersOn<TDiscoverable>(Type type)` | _No documentation available._ |
 | `abstract virtual void InvalidateCache()` | Invalidates the discoverable cache. |
-| `abstract virtual void Invoke<T>(object[] parameters)` | _No documentation available._ |
 
 ---
 # IServiceContainer
@@ -6430,18 +6314,13 @@ Accessible via:
 | `abstract virtual IEnumerable<TService> Find<TService>()` | _No documentation available._ |
 | `abstract virtual TService Get<TService>()` | _No documentation available._ |
 | `abstract virtual IReadOnlyDictionary<Type, object> GetAll()` | Gets all registered services. |
-| `abstract virtual boolean IsResolvable(MemberInfo member, boolean static)` | Determines whether the DI system can invoke the specified method or constructor, automatically injecting parameters as necessary. |
 | `abstract virtual void Register<TService>(TService service)` | _No documentation available._ |
 | `abstract virtual void Register<TService>()` | _No documentation available._ |
 | `abstract virtual void Register<TService, TImplementation>()` | _No documentation available._ |
 | `abstract virtual void Register<TService, TImplementation>(TImplementation service)` | _No documentation available._ |
-| `abstract virtual void Resolve<T>(T obj)` | _No documentation available._ |
-| `abstract virtual boolean TryInvoke(MemberInfo member, Exception& exception, object[] parameters)` | _No documentation available._ |
-| `abstract virtual boolean TryInvoke<T>(MemberInfo member, T& returnValue, Exception& exception, object[] parameters)` | _No documentation available._ |
-| `abstract virtual boolean TryInvoke(MemberInfo member)` | Attempts to invoke the specified member without parameters. |
+| `abstract virtual void Resolve(object obj)` | Resolves dependencies for the specified object. |
 | `abstract virtual void Unregister<T>()` | _No documentation available._ |
 | `abstract virtual void Unregister(Type type)` | Unregisters a service by type. |
-| `abstract virtual void Unregister<T>(T service)` | _No documentation available._ |
 
 ---
 # RegisterServiceAttribute
@@ -6460,6 +6339,23 @@ Registers a service with the service container.
 |--------|-------------|
 | `Type associatedType` | Gets the associated type for this service registration. |
 | `string friendlyDescription` | Gets a friendly description of this service registration. |
+
+---
+# Service_Of_T
+<!--
+source: API\Services\Service_Of_T.md
+-->
+
+## Service`1
+
+`sealed class` in `AdvancedSceneManager.Services`### Description
+Resolves a service lazily.
+
+### Properties
+
+| Member | Description |
+|--------|-------------|
+| `T instance` | _No documentation available._ |
 
 ---
 # Service_ViewModelBase
@@ -6618,7 +6514,6 @@ Provides info about where a view model is hosted at in the ASM window.
 | `ISceneCollection baseCollection` | Gets the associated collection as `ISceneCollection`, if hosted by a collection element. |
 | `SceneCollection collection` | Gets the associated collection as `SceneCollection`, if hosted by a collection element. |
 | `object customParam` | Gets the custom parameter that as passed from host. |
-| `DefaultASMScenesCollection defaultASMCollection` | Gets the associated collection as `DefaultASMScenesCollection`, if hosted by a collection element. |
 | `DynamicCollection dynamicCollection` | Gets the associated collection as `DynamicCollection`, if hosted by a collection element. |
 | `Scene scene` | Gets the associated scene, if hosted by a scene element. |
 | `Nullable<int32> sceneIndex` | Gets the associated scene index, if hosted by a scene element, inside a collection element. |
@@ -7541,7 +7436,6 @@ Manager for loading screens.
 
 | Member | Description |
 |--------|-------------|
-| `Scene defaultFadeScreen` | Finds the default fade loading screen. Can be set through project settings, or in scene loading section of the settings popup. |
 | `boolean isAnyLoadingScreenOpen` | Gets if any loading screens are open. |
 | `IEnumerable<ILoadProgressListener> loadProgressListeners` | The currently open loading screens. |
 | `IEnumerable<LoadingScreenReference> openLoadingScreens` | The currently open loading screens. |
@@ -7882,6 +7776,47 @@ Provides utility methods for working with tasks.
 | `Awaitable WhenAll(Awaitable[] items)` | Waits for all awaitable to finish. |
 
 ---
+# TypeUtility
+<!--
+source: API\Utility\TypeUtility.md
+-->
+
+## TypeUtility
+
+`static class` in `AdvancedSceneManager.Utility`### Description
+Contains utility functions for working with types.
+
+### Static Methods
+
+| Member | Description |
+|--------|-------------|
+| `Type Deserialize(string value)` | _No documentation available._ |
+| `boolean Deserialize(string value, Type& type)` | _No documentation available._ |
+| `string GetFriendlyTypeName(Type type)` | Gets the friendly name of this type. |
+| `string GetSignature(MemberInfo member, boolean includeAccessModifiers)` | Gets the signature of this member. |
+| `boolean HasNoParameters(MemberInfo member)` | Gets if `member` is a `MethodInfo`, and has no parameters. |
+| `boolean HasParameters<T1>(MemberInfo member)` | _No documentation available._ |
+| `boolean HasParameters<T1, T2>(MemberInfo member)` | _No documentation available._ |
+| `boolean HasParameters<T1, T2, T3>(MemberInfo member)` | _No documentation available._ |
+| `boolean HasParameters<T1, T2, T3, T4>(MemberInfo member)` | _No documentation available._ |
+| `boolean HasParameters(MemberInfo member, Type[] types)` | _No documentation available._ |
+| `boolean IsConstructor(MemberInfo member)` | Determines whether the specified `MemberInfo` represents a constructor. |
+| `boolean IsField(MemberInfo member)` | Determines whether the specified `MemberInfo` represents a field. |
+| `boolean IsMethod(MemberInfo member)` | Determines whether the specified `MemberInfo` represents a method. |
+| `boolean IsMethodAndReturns<T>(MemberInfo member)` | _No documentation available._ |
+| `boolean IsProperty(MemberInfo member)` | Determines whether the specified `MemberInfo` represents a property. |
+| `boolean IsStatic(MemberInfo member)` | Determines whether the specified `MemberInfo` represents a static member. |
+| `boolean IsType(MemberInfo member)` | Determines whether the specified `MemberInfo` represents a type. |
+| `boolean IsType(MemberInfo member, Type type)` | Determines whether the specified `MemberInfo` represents a type. |
+| `boolean IsType<T>(MemberInfo member)` | Determines whether the specified `MemberInfo` represents a type. |
+| `boolean Returns<T>(MemberInfo member)` | _No documentation available._ |
+| `boolean Returns(MemberInfo member, Type type)` | Gets if `member` returns `type`. |
+| `boolean ReturnsCoroutine(MemberInfo member)` | Gets if `member` returns `IEnumerator`. |
+| `boolean ReturnsVoid(MemberInfo member)` | Gets if `member` returns `Void`. |
+| `Type ReturnType(MemberInfo member)` | Gets the return or value type of the specified `MemberInfo`. |
+| `string Serialize(Type type)` | _No documentation available._ |
+
+---
 # UIFadeExtensions
 <!--
 source: API\Utility\UIFadeExtensions.md
@@ -7917,7 +7852,7 @@ Provides utility methods for working with `VisualElement`.
 | Member | Description |
 |--------|-------------|
 | `Awaitable AsTask(IVisualElementScheduledItem scheduledItem)` | _No documentation available._ |
-| `IVisualElementScheduledItem Fade(VisualElement view, single to, single duration, Action onComplete)` | Fades the element. |
+| `IVisualElementScheduledItem Fade(VisualElement view, single to, single duration, Action onComplete, Nullable<CancellationToken> cancellationToken)` | Fades the element. |
 | `VisualElementScheduledItemAwaiter GetAwaiter(IVisualElementScheduledItem scheduledItem)` | _No documentation available._ |
 | `void Hide(VisualElement element, boolean fade)` | Hides the element using `None`. |
 | `boolean IsVisible(VisualElement element)` | Gets `DisplayStyle` is `Flex`. |

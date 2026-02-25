@@ -43,6 +43,7 @@ A scene can be imported in the ASM window (via notification / popup), or by usin
 | `boolean keepOpenWhenNewCollectionWouldReopen` | Specifies whatever this will remain open when a newly opened collection would have reopened it. |
 | `LoadPriority loadPriority` | Specifies the `LoadPriority` to use when opening this scene. |
 | `string lockMessage` | Gets or sets the message to be displayed when unlocking this scene. |
+| `ISceneCollection openedBy { get; }` | Gets the collection this scene was opened by, if it is currently open and actually was opened by a collection. |
 | `boolean openOnPlayMode` | Specifies whatever this scene should be opened when entering playmode. |
 | `boolean openOnStartup` | Specifies whatever this scene should be opened on startup. |
 | `string path { get; }` | Gets the path of the associated `SceneAsset`. |

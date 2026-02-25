@@ -8,7 +8,7 @@ Provides utility methods for working with `VisualElement`.
 | Member | Description |
 |--------|-------------|
 | `Awaitable AsTask(IVisualElementScheduledItem scheduledItem)` | _No documentation available._ |
-| `IVisualElementScheduledItem Fade(VisualElement view, single to, single duration, Action onComplete)` | Fades the element. |
+| `IVisualElementScheduledItem Fade(VisualElement view, single to, single duration, Action onComplete, Nullable<CancellationToken> cancellationToken)` | Fades the element. |
 | `VisualElementScheduledItemAwaiter GetAwaiter(IVisualElementScheduledItem scheduledItem)` | _No documentation available._ |
 | `void Hide(VisualElement element, boolean fade)` | Hides the element using `None`. |
 | `boolean IsVisible(VisualElement element)` | Gets `DisplayStyle` is `Flex`. |

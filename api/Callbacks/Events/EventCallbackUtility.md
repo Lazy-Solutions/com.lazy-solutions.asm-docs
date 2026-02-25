@@ -8,8 +8,8 @@ Provides utility functions for working with event callbacks.
 | Member | Description |
 |--------|-------------|
 | `IEnumerable<Type> GetCallbackTypes()` | Enumerates all callback types. |
-| `int32 GetInvokationOrder<TEventType>()` | _No documentation available._ |
-| `int32 GetInvokationOrder(Type type)` | Gets the invokation order of the event callback type. |
+| `int32 GetInvocationOrder<TEventType>()` | _No documentation available._ |
+| `int32 GetInvocationOrder(Type type)` | Gets the invocation order of the event callback type. |
 | `boolean IsWhenApplicable<TEventType>()` | _No documentation available._ |
 | `boolean IsWhenApplicable(Type type)` | Gets if the specified callback event uses `When` enum. |
 | `SceneOperation RegisterAllCallbacks(string key, SceneOperation operation, EventCallback<EventCallbackBase> callback, When when)` | Registers callback for all events. |

@@ -10,7 +10,6 @@ Provides info about where a view model is hosted at in the ASM window.
 | `ISceneCollection baseCollection` | Gets the associated collection as `ISceneCollection`, if hosted by a collection element. |
 | `SceneCollection collection` | Gets the associated collection as `SceneCollection`, if hosted by a collection element. |
 | `object customParam` | Gets the custom parameter that as passed from host. |
-| `DefaultASMScenesCollection defaultASMCollection` | Gets the associated collection as `DefaultASMScenesCollection`, if hosted by a collection element. |
 | `DynamicCollection dynamicCollection` | Gets the associated collection as `DynamicCollection`, if hosted by a collection element. |
 | `Scene scene` | Gets the associated scene, if hosted by a scene element. |
 | `Nullable<int32> sceneIndex` | Gets the associated scene index, if hosted by a scene element, inside a collection element. |

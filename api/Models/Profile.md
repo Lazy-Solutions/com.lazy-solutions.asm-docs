@@ -7,7 +7,7 @@ A profile for ASM, contains settings and collections.
 
 | Member | Description |
 |--------|-------------|
-| `IEnumerable<ISceneCollection> allCollections` | Gets `collections`, `standaloneScenes`, `defaultASMScenes`, `dynamicCollections`. |
+| `IEnumerable<ISceneCollection> allCollections` | Gets `collections`, `standaloneScenes`, `dynamicCollections`. |
 | `IEnumerable<Scene> allScenes` | Gets all scenes, including child profile scenes. |
 | `boolean autoSwitchBuildProfileOnBuild` | Specifies whether ASM may write the build scene list to Unity’s active build profile when no build profile is explicitly associated. |
 | `boolean autoUpdateBuildScenes` | Specifies whatever build scene list should be automatically updated. |
@@ -16,7 +16,6 @@ A profile for ASM, contains settings and collections.
 | `IEnumerable<SceneCollection> childProfileStartupCollections` | Gets all startup collections from child profiles. |
 | `IEnumerable<Scene> childProfileStartupScenes` | Gets all startup scenes from child profiles. |
 | `IEnumerable<SceneCollection> collections` | Gets the collections contained within this profile. |
-| `DefaultASMScenesCollection defaultASMScenes` | Gets the default asm scenes collection contained within this profile. |
 | `IEnumerable<DynamicCollection> dynamicCollections` | Gets the dynamic collections contained within this profile. |
 | `boolean isActive` | Gets if this profile is set as active. |
 | `LoadingScreenReference loadingScreen` | The default loading scene. |

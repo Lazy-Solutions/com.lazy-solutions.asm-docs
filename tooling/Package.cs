@@ -6,8 +6,10 @@ using AdvancedSceneManager.Documentation;
 
 namespace AdvancedSceneManager.Documentation
 {
+
     public static class Package
     {
+        public const string repoUrl = "https://github.com/Lazy-Solutions/com.lazy-solutions.asm-docs";
         public const string packageName = "com.lazy-solutions.asm-docs";
         public static string folder { get; } = $"Packages/{packageName}";
         public static string apiFolder { get; } = $"Packages/{packageName}/API";

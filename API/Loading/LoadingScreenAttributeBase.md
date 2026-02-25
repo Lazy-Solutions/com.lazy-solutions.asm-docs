@@ -7,8 +7,8 @@ Defines the base for a loading screen discoverable.
 
 | Member | Description |
 |--------|-------------|
-| `string displayName` | The name to display in scene pickers. |
-| `string displayType` | The type of loading screen. |
-| `string effectiveDisplayName` | _No documentation available._ |
-| `boolean isLoadingScreen` | Gets if this is a loading screen. |
-| `boolean isSplashScreen` | Gets if this is a splash screen. |
+| `string displayName` | The name to display when picking a loading screen and for the host scene when open. |
+| `string displayType` | Gets a human-readable type name for this screen (for example, "Splash Screen" or "Loading Screen"). |
+| `string effectiveDisplayName` | The effective display name, falls back to type name if `displayName` is empty. |
+| `boolean isLoadingScreen` | Gets whether this attribute defines a loading screen. |
+| `boolean isSplashScreen` | Gets whether this attribute defines a splash screen. |

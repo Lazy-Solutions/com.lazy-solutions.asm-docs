@@ -10,10 +10,10 @@ May not be available in `[InitializeOnLoad]` and similar, use [Action)](https://
 
 | Member | Description |
 |--------|-------------|
-| `DiscoveredMember asmSplashScreen` | Gets the default discoverable ASM splash screen. |
-| `DiscoveredMember fadeLoadingScreen` | Gets the default discoverable fade loading screen. |
+| `LoadingScreenReference asmSplashScreen` | Gets the default discoverable ASM splash screen. |
+| `LoadingScreenReference fadeLoadingScreen` | Gets the default discoverable fade loading screen. |
 | `Scene fadeScene` | Gets the default fade loading scene. |
-| `DiscoveredMember fadeSplashScreen` | Gets the default discoverable fade splash screen. |
+| `LoadingScreenReference fadeSplashScreen` | Gets the default discoverable fade splash screen. |
 | `Scene iconBounceScene` | Gets the default icon bounce loading scene. |
 | `Scene inGameToolbarScene` | Gets the default in-game-toolbar scene. |
 | `Scene pauseScene` | Gets the default pause scene. |

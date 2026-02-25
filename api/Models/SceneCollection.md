@@ -59,7 +59,7 @@ t:AdvancedSceneManager.Models.SceneCollection
 | Member | Description |
 |--------|-------------|
 | `SceneCollection Find(string q, boolean activeProfile)` | Finds a collection based on its title or id. |
-| `ISceneCollection FindCollectionAll(string q, boolean activeProfile)` | Finds a `SceneCollection`, `StandaloneCollection`, `DefaultASMScenesCollection`, or `DynamicCollection` based on its title or id. Supports removed collections. |
+| `ISceneCollection FindCollectionAll(string q, boolean activeProfile)` | Finds a `SceneCollection`, `StandaloneCollection`, [DefaultASMScenesCollection](https://learn.microsoft.com/dotnet/api/!:defaultasmscenescollection), or `DynamicCollection` based on its title or id. Supports removed collections. |
 | `boolean TryFind(string q, SceneCollection& collection, boolean activeProfile)` | _No documentation available._ |
 
 ### Methods

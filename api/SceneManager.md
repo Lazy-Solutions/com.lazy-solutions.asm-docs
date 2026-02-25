@@ -9,6 +9,7 @@ The central Advanced Scene Manager API. Provides access to the most important th
 |--------|-------------|
 | `App app` | Manages startup and quit processes. |
 | `IAssetsAPI assets` | Provides access to the scenes, collections and profiles managed by ASM. |
+| `IDiscoverablesService discoverables` | Provides access to the ASM discoverables service. |
 | `Scene dontDestroyOnLoadScene` | Gets the dontDestroyOnLoad scene. |
 | `EventCallbackManager<EventCallbackBase> events` | Provides access to global ASM event callbacks. |
 | `Scene fallbackScene` | Gets the fallback scene. |

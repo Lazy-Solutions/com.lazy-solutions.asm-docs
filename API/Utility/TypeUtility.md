@@ -1,6 +1,6 @@
 ## TypeUtility
 
-`static class` in `AdvancedSceneManager.Editor.UI`### Description
+`static class` in `AdvancedSceneManager.Utility`### Description
 Contains utility functions for working with types.
 
 ### Static Methods

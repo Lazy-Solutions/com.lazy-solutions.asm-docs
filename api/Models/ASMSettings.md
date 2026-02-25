@@ -21,7 +21,6 @@ Manages initialization, as this `ScriptableObject` is core to ASM, and nothing w
 | `Profile defaultProfile` | The profile to use when none is set. |
 | `boolean enableCrossSceneReferences` | Gets or sets whatever cross-scene references should be enabled. |
 | `boolean enableGUIDReferences` | Gets or sets whatever GUID references should be enabled. |
-| `LoadingScreenReference fadeScreen` | Specifies the scene to use for certain methods, i.e. [Color})](https://learn.microsoft.com/dotnet/api/m:advancedscenemanager.utility.loadingscreenutility.fadeout(system.single,system.nullable{unityengine.color})). |
 | `Profile forceProfile` | The profile to force everyone in this project to use. |
 | `boolean preventSpammingEventMethods` | By default, ASM will prevent spam calling event methods (i.e. calling Scene.Open() from a button press), but this will disable that. |
 | `boolean reverseUnloadOrderOnCollectionClose` | Specifies whatever collections should unload scenes in the reverse order. |

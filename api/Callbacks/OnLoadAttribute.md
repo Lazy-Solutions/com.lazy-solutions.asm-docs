@@ -23,9 +23,3 @@ Combines them, and is safely usable both in and outside the editor.
 | Member | Description |
 |--------|-------------|
 | `string friendlyDescription` | Specifies the description to be shown in the diag UI tooltip. |
-
-### Methods
-
-| Member | Description |
-|--------|-------------|
-| `virtual boolean IsValidTarget(MemberInfo member)` | Gets if `member` is a valid target for this attribute callback. |

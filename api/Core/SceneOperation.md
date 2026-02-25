@@ -22,6 +22,7 @@ A scene operation is a queueable operation that can open or close scenes..
 | `SceneOperationFlags flags { get; }` | Gets the operation flags this operation will use. |
 | `Scene focus { get; }` | Sets focus to the specified scene. Overrides selected scene in collections. |
 | `boolean focusSingleScene { get; }` | Sets the first opened scene as active. |
+| `boolean hasStarted { get; }` | Gets whether this operation has started. |
 | `IEnumerable<Scene> ignoreForActivation { get; }` | Gets the scenes that should not be activated. |
 | `boolean isCollectionCloseOperation { get; }` | Gets whatever this operation is about to close `collection`. |
 | `boolean isDefaultASMScene { get; }` | Gets if this scene was opened from the default ASM scene collection. |
@@ -48,8 +49,10 @@ A scene operation is a queueable operation that can open or close scenes..
 
 | Member | Description |
 |--------|-------------|
-| `SceneOperation Queue()` | Queues a new scene operation. |
-| `SceneOperation Start()` | Starts a new scene operation, ignoring queue. |
+| `SceneOperation Queue()` | _No documentation available._ |
+| `SceneOperation Queue(SceneOperation operation)` | Queues a new scene operation. |
+| `SceneOperation Start()` | _No documentation available._ |
+| `SceneOperation Start(SceneOperation operation)` | Starts a new scene operation, ignoring queue. |
 
 ### Methods
 
@@ -67,6 +70,7 @@ A scene operation is a queueable operation that can open or close scenes..
 | `SceneOperation CloseOtherScenes(boolean persistent, IEnumerable<Scene> except, boolean loadingScreen, boolean splashScreen, boolean removeFromOpen)` | Closes all open scenes prior to opening any scenes, with options. |
 | `SceneOperation DisableProgressReporting()` | Disables progress reporting for this operation. |
 | `SceneOperation Focus(Scene scene)` | Sets focus to the specified scene. Overrides selected scene in collections. |
+| `CoroutineAwaiter GetAwaiter()` | Allows this operation to be awaited. |
 | `SceneOperation IgnoreForActivation(IEnumerable<Scene> scenes)` | Specifies scenes that should not be activated. |
 | `SceneOperation OnProgressChanged(Action<single> callback)` | Adds a callback when progress changed. |
 | `SceneOperation Open(SceneCollection collection, boolean openAll)` | _No documentation available._ |

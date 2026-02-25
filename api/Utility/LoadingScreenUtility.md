@@ -7,7 +7,6 @@ Manager for loading screens.
 
 | Member | Description |
 |--------|-------------|
-| `Scene defaultFadeScreen` | Finds the default fade loading screen. Can be set through project settings, or in scene loading section of the settings popup. |
 | `boolean isAnyLoadingScreenOpen` | Gets if any loading screens are open. |
 | `IEnumerable<ILoadProgressListener> loadProgressListeners` | The currently open loading screens. |
 | `IEnumerable<LoadingScreenReference> openLoadingScreens` | The currently open loading screens. |

@@ -7,4 +7,4 @@ Provides utility methods for working with `VisualElement`.
 
 | Member | Description |
 |--------|-------------|
-| `void UseFontAwesome(VisualElement button, Nullable<boolean> solid, Nullable<boolean> regular, Nullable<boolean> brands)` | Applies font awesome free to the `VisualElement`. |
+| `T UseFontAwesome<T>(T element, Nullable<boolean> solid, Nullable<boolean> regular, Nullable<boolean> brands)` | _No documentation available._ |
