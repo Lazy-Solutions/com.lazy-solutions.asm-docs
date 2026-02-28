@@ -106,7 +106,7 @@ namespace AdvancedSceneManager.Documentation
                 if (method.IsGenericMethodDefinition)
                     name += "``" + method.GetGenericArguments().Length;
 
-                return $"M:{method.DeclaringType.FullName}.{name}{GetParameters(method.GetParameters())}";
+                return $"M:{method.DeclaringType.FullName}.{name}{GetParameters(method.GetParameters())}".Replace("+", ".");
             }
 
             private static string GetParameters(ParameterInfo[] parameters)
