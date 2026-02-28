@@ -98,8 +98,15 @@ namespace AdvancedSceneManager.Documentation
                 sb.Append(GetAccessModifier(method));
 
             if (method.IsStatic && includeStaticIndicator) sb.Append("static ");
-            if (method.IsAbstract) sb.Append("abstract ");
-            if (method.IsVirtual && !method.IsFinal) sb.Append("virtual ");
+            if (method.DeclaringType.IsInterface)
+            {
+                // skip abstract/virtual keywords
+            }
+            else
+            {
+                if (method.IsAbstract) sb.Append("abstract ");
+                else if (method.IsVirtual && !method.IsFinal) sb.Append("virtual ");
+            }
 
             sb.Append(GetFriendlyTypeName(method.ReturnType)).Append(" ").Append(method.Name);
 
@@ -110,7 +117,21 @@ namespace AdvancedSceneManager.Documentation
             }
 
             var parameters = string.Join(", ",
-                method.GetParameters().Select(p => GetFriendlyTypeName(p.ParameterType) + " " + p.Name));
+                method.GetParameters().Select(p =>
+                {
+                    var modifier =
+                        p.IsOut ? "out " :
+                        p.ParameterType.IsByRef ? "ref " :
+                        p.IsIn ? "in " :
+                        "";
+
+                    var type = p.ParameterType.IsByRef
+                        ? p.ParameterType.GetElementType()
+                        : p.ParameterType;
+
+                    return $"{modifier}{GetFriendlyTypeName(type)} {p.Name}";
+                }));
+
             sb.Append("(").Append(parameters).Append(")");
 
             return sb.ToString();
@@ -165,11 +186,20 @@ namespace AdvancedSceneManager.Documentation
 
         public static string GetFriendlyTypeName(this Type type)
         {
+            if (type.IsByRef)
+            {
+                var elementType = type.GetElementType();
+                return GetFriendlyTypeName(elementType);
+            }
+
             if (type.IsGenericParameter)
                 return type.Name;
 
             if (type.IsGenericType)
             {
+                if (Nullable.GetUnderlyingType(type) is Type underlying)
+                    return GetFriendlyTypeName(underlying) + "?";
+
                 var backtick = type.Name.IndexOf('`');
                 var genericTypeName = backtick >= 0 ? type.Name.Substring(0, backtick) : type.Name;
                 var genericArgs = string.Join(", ", type.GetGenericArguments().Select(GetFriendlyTypeName));
@@ -186,6 +216,11 @@ namespace AdvancedSceneManager.Documentation
                 "String" => "string",
                 "Object" => "object",
                 "Decimal" => "decimal",
+                "Boolean" => "bool",
+                "Int32" => "int",
+                "Int64" => "long",
+                "Single" => "float",
+                "Double" => "double",
                 _ => type.IsPrimitive ? type.Name.ToLower() : type.Name
             };
         }
