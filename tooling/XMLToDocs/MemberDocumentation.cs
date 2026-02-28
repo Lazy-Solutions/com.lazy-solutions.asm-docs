@@ -33,37 +33,40 @@ namespace AdvancedSceneManager.Documentation
         /// <summary>
         /// Returns the effective value for a property, falling back to inherited docs if needed.
         /// </summary>
-        public T GetEffective<T>(Func<MemberDocumentation, T> selector)
+        public T GetEffective<T>(Func<MemberDocumentation, T> selector, HashSet<MemberInfo> visited = null)
         {
+            visited ??= new HashSet<MemberInfo>();
 
-            // Pick this doc’s value
+            // Break circular inheritance
+            if (!visited.Add(Member))
+                return default;
+
             var value = selector(this);
 
-            // Special case: ObsoleteMessage should never inherit
+            // ObsoleteMessage should never inherit
             if (selector == (Func<MemberDocumentation, T>)(d => (T)(object)d.ObsoleteMessage))
                 return value;
 
             if (IsEmpty(value))
             {
-                // Check explicit inheritdoc
+                // Explicit <inheritdoc cref="...">
                 if (InheritsFrom != null)
                 {
                     var inherited = InheritsFrom.GetDocumentation();
                     if (inherited != null)
-                        return inherited.GetEffective(selector);
+                        return inherited.GetEffective(selector, visited);
                 }
 
-                // Check implicit inheritance (base/interface)
+                // Implicit base/interface inheritance
                 if (ImplicitlyInheritsFrom != null)
                 {
                     var implicitDoc = ImplicitlyInheritsFrom.GetDocumentation();
                     if (implicitDoc != null)
-                        return implicitDoc.GetEffective(selector);
+                        return implicitDoc.GetEffective(selector, visited);
                 }
             }
 
             return value;
-
         }
 
         /// <summary>
