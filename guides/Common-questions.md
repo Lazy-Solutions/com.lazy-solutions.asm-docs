@@ -4,13 +4,31 @@
 
 ## What is the fallback scene
 
-> The fallback scene and startup scene is the same thing. We are working to separate the two.
+The fallback scene is a scene ASM uses to simplify scene management. Unity does not allow all scenes to be unloaded at once, which means a check would otherwise be required every time a scene is unloaded. To avoid this complexity, ASM keeps a special fallback scene loaded at all times. This ensures scenes can always be safely unloaded without additional checks.
 
-The fallback scene is a scene ASM uses to simplify the scene management, unity does not allow for all scenes to be unloaded, which means we need to have a check for this every time we unload a scene, we decided it would be simpler to just keep a special scene in memory since this ensures that the scene can be unloaded, and we do not have to worry about forgetting to have a check beforehand, as ASM used to have issues with this.
+> In versions prior to 3.2, the startup scene and the fallback scene were the same.
+> As of 3.2, overriding the startup scene does not affect the fallback scene, they are now completely separate.
 
-The second reason is to prevent potential flickering during startup which would occur with a non-empty scene. For this reason fallback scene was originally designed to act as startup scene too, startup scene is a later concept.
+### Why does Instantiated objects end up in Fallback scene
 
-> Please note that that overriding startup scene is an advanced use-case that should not be used unless actually needed, you probably want to use [startup collections](Scene%20collections.md) or [startup standalone scenes](Standalone%20scenes.md) instead.
+With additive loading in ASM Active scene has likely not yet changed before Awake/OnEnable/Start() is call, especially early in the first frame. Same is true with Unity, afterall we use Unity.
+Normally you would manually call to set active scene before instantiating objects to direct them to the right scene.
+
+In ASM you can still call scene.Activate() to force the active scene, but keep in mind if you setup automatic active scene, it might change around, but you can call Activate and instantiate same frame to achieve the result.
+
+However we recommend to use Callbacks, especially CollectionOpen. [Callbacks](Callbacks.md)
+This is the best way to ensure the active scene has changed.
+
+If you still wish to do start (Example):
+```c#
+IEnumerator Start()
+{
+  while(!this.ASMScene().isActive)
+    yield return null;
+
+  Instantiate...
+}
+```
 
 ## Build settings list
 
@@ -29,7 +47,7 @@ Some methods in ASM are prefixed with “\_” to avoid name conflicts. These du
 
 ASM follows unity conventions. You should always ignore `UserSettings/`, which stores ASM and other unity user preferences. Default [unity .gitignore](https://github.com/github/gitignore/blob/main/Unity.gitignore) already contains this.
 
-ASM does not allow redistribution, so public repos must ignore the ASM folder: `Packages/com.lazy-solutions.advanced-scene-manager/`. 
+ASM does not allow redistribution, so public repos must ignore the ASM folder: `Packages/com.lazy-solutions.advanced-scene-manager/`.
 
 Each collaborator will need to install ASM manually in their local project.  
 We wish this weren’t necessary, but unfortunately, that’s how licensing works.
@@ -55,6 +73,9 @@ ASM will automatically check for updates and give a notification. This can be tu
 The settings page can also be used to check for updates manually. Note that asset store updates cannot be downloaded from here, and must be downloaded via the unity package manager.
 
 ![](image/popup-settings-updates.png)
+
+**Legacy (ASM 2.7) patches**
+Patches for legacy versions can be found in [./2.7 patches/](https://github.com/Lazy-Solutions/AdvancedSceneManager/tree/main/2.7%20patches).
 
 ## I want to reset ASM entirely, how do I do that?
 To reset all ASM configuration, delete the following:
