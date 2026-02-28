@@ -191,7 +191,7 @@ namespace AdvancedSceneManager.Documentation
                 sb.Append($"`{kind}` in `{container}`");
 
                 // Inheritance (only for classes/structs, not interfaces/enums)
-                if (type.BaseType is Type baseType && baseType != typeof(object) && baseType != typeof(ValueType))
+                if (type.BaseType is Type baseType && baseType != typeof(object) && baseType != typeof(ValueType) && baseType != typeof(MulticastDelegate))
                 {
                     sb.Append($"  /  Inherits from: `{Escape(baseType.GetFriendlyTypeName())}`");
                 }
