@@ -167,7 +167,7 @@ namespace AdvancedSceneManager.Documentation
             private static void GenerateHeader(StringBuilder sb, Type type, int nestedLevel)
             {
                 // Main name
-                sb.AppendLine(GetHeader(type.Name, nestedLevel));
+                sb.AppendLine(GetHeader(type.GetFriendlyTypeName(), nestedLevel));
 
                 // Kind
                 var kind = type.IsClass ? "class" :
