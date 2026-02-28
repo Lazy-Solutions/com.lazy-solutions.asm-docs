@@ -154,7 +154,7 @@ namespace AdvancedSceneManager.Documentation
                 return documentation;
             }
 
-            static string ParseDocumentationNode(XmlNode node)
+            static string ParseDocumentationNode(XmlNode node, bool insideCode = false)
             {
 
                 if (node == null)
@@ -197,7 +197,10 @@ namespace AdvancedSceneManager.Documentation
                                             var resolved = ResolveCref(cref);
                                             if (resolved != null)
                                             {
-                                                sb.Append('`').Append(display).Append('`');
+                                                if (insideCode)
+                                                    sb.Append(display);
+                                                else
+                                                    sb.Append('`').Append(display).Append('`');
                                             }
                                             else
                                             {
@@ -218,10 +221,11 @@ namespace AdvancedSceneManager.Documentation
                                     }
 
                                 case "c":
-                                    sb.Append('`')
-                                      .Append(ParseDocumentationNode(child).Trim())
-                                      .Append('`');
-                                    break;
+                                    {
+                                        var content = ParseDocumentationNode(child, insideCode: true).Trim();
+                                        sb.Append('`').Append(content).Append('`');
+                                        break;
+                                    }
 
                                 case "code":
                                     sb.AppendLine().AppendLine("```")
