@@ -125,6 +125,33 @@ namespace AdvancedSceneManager.Documentation
                 if (type.IsByRef)
                     return FormatTypeName(type.GetElementType()) + "@";
 
+                if (type.IsGenericParameter)
+                {
+                    // Method-level generic parameter
+                    if (type.DeclaringMethod != null)
+                    {
+                        var index = type.DeclaringMethod
+                                        .GetGenericArguments()
+                                        .ToList()
+                                        .IndexOf(type);
+
+                        return "``" + index;
+                    }
+
+                    // Type-level generic parameter
+                    if (type.DeclaringType != null)
+                    {
+                        var index = type.DeclaringType
+                                        .GetGenericArguments()
+                                        .ToList()
+                                        .IndexOf(type);
+
+                        return "`" + index;
+                    }
+
+                    return type.Name;
+                }
+
                 // Handle generics
                 if (type.IsGenericType)
                 {
