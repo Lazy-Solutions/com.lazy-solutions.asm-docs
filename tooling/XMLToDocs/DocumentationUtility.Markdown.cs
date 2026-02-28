@@ -167,7 +167,7 @@ namespace AdvancedSceneManager.Documentation
             private static void GenerateHeader(StringBuilder sb, Type type, int nestedLevel)
             {
                 // Main name
-                sb.AppendLine(GetHeader(type.GetFriendlyTypeName(), nestedLevel));
+                sb.AppendLine(GetHeader(Escape(type.GetFriendlyTypeName()), nestedLevel));
 
                 // Kind
                 var kind = type.IsClass ? "class" :
@@ -193,14 +193,26 @@ namespace AdvancedSceneManager.Documentation
                 // Inheritance (only for classes/structs, not interfaces/enums)
                 if (type.BaseType is Type baseType && baseType != typeof(object) && baseType != typeof(ValueType))
                 {
-                    sb.Append($"  /  Inherits from: `{baseType.GetFriendlyTypeName()}`");
+                    sb.Append($"  /  Inherits from: `{Escape(baseType.GetFriendlyTypeName())}`");
                 }
+            }
+
+            private static string Escape(string str)
+            {
+                if (string.IsNullOrEmpty(str))
+                    return str;
+
+                return str
+                    .Replace("&", "&amp;")
+                    .Replace("<", "&lt;")
+                    .Replace(">", "&gt;")
+                    .Replace("|", "\\|");
             }
 
             private static string GetFriendlyContainerName(Type type)
             {
                 if (type.DeclaringType != null)
-                    return GetFriendlyContainerName(type.DeclaringType) + "." + type.Name;
+                    return GetFriendlyContainerName(type.DeclaringType) + "." + Escape(type.GetFriendlyTypeName());
 
                 return type.Namespace + "." + type.Name;
             }
