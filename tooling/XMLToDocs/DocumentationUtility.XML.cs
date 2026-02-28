@@ -234,28 +234,36 @@ namespace AdvancedSceneManager.Documentation
                                         if (!string.IsNullOrEmpty(cref))
                                         {
                                             var display = GetDisplayNameFromCref(cref);
-
                                             var resolved = ResolveCref(cref);
+
                                             if (resolved != null)
                                             {
+                                                if (IsBclType(resolved))
+                                                {
+                                                    var urlSafe = cref.Replace("T:", "")
+                                                                      .Replace("+", ".")
+                                                                      .Replace("`", "")
+                                                                      .ToLowerInvariant();
+
+                                                    sb.Append($"[{display}](https://learn.microsoft.com/dotnet/api/{urlSafe})");
+                                                }
+                                                else
+                                                {
+                                                    // ASM or other types → inline code
+                                                    if (insideCode)
+                                                        sb.Append(display);
+                                                    else
+                                                        sb.Append('`').Append(display).Append('`');
+                                                }
+                                            }
+                                            else
+                                            {
+                                                // Could not resolve — safest fallback:
                                                 if (insideCode)
                                                     sb.Append(display);
                                                 else
                                                     sb.Append('`').Append(display).Append('`');
                                             }
-                                            else
-                                            {
-                                                var urlSafe = cref.Replace("T:", "")
-                                                                    .Replace("+", ".")
-                                                                    .Replace("`", "")
-                                                                    .ToLowerInvariant();
-
-                                                sb.Append($"[{display}](https://learn.microsoft.com/dotnet/api/{urlSafe})");
-                                            }
-                                        }
-                                        else
-                                        {
-                                            sb.Append(child.InnerText);
                                         }
 
                                         break;
@@ -299,6 +307,29 @@ namespace AdvancedSceneManager.Documentation
 
                 return sb.ToString().Trim();
 
+            }
+
+            static bool IsBclType(MemberInfo member)
+            {
+                var ns = (member as Type)?.Namespace
+                         ?? member.DeclaringType?.Namespace;
+
+                if (string.IsNullOrEmpty(ns))
+                    return false;
+
+                return ns.StartsWith("System")
+                    || ns.StartsWith("Microsoft");
+            }
+
+            static bool IsAsmType(MemberInfo member)
+            {
+                var ns = (member as Type)?.Namespace
+                         ?? member.DeclaringType?.Namespace;
+
+                if (string.IsNullOrEmpty(ns))
+                    return false;
+
+                return ns.StartsWith("AdvancedSceneManager");
             }
 
             static string GetDisplayNameFromCref(string cref)
@@ -412,6 +443,9 @@ namespace AdvancedSceneManager.Documentation
             static MemberInfo ResolveCref(string cref)
             {
                 // Strip prefix like "T:", "M:", "P:" etc.
+                if (cref.Length < 3 || cref[1] != ':')
+                    return null;
+
                 var kind = cref[0];
                 var name = cref.Substring(2);
 
