@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Xml;
 using UnityEditor;
 
@@ -305,7 +306,7 @@ namespace AdvancedSceneManager.Documentation
                     }
                 }
 
-                return sb.ToString().Trim();
+                return Regex.Replace(sb.ToString(), @"^[ \t]+", "", RegexOptions.Multiline).Trim();
 
             }
 
