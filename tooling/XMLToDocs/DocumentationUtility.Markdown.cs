@@ -39,7 +39,7 @@ namespace AdvancedSceneManager.Documentation
                 GenerateHeader(sb, type, nestedLevel);
 
                 // Description
-                sb.AppendLine("### Description");
+                sb.AppendLine("\n### Description");
                 var doc = type.GetDocumentation();
                 if (doc != null)
                 {
