@@ -187,14 +187,13 @@ namespace AdvancedSceneManager.Documentation
                                         if (!string.IsNullOrEmpty(langword))
                                         {
                                             sb.Append('`').Append(langword.ToLowerInvariant()).Append('`');
+                                            break;
                                         }
-                                        else if (!string.IsNullOrEmpty(cref))
-                                        {
-                                            var display = cref.Split('.').Last();
-                                            if (display.Contains(":"))
-                                                display = display[(display.IndexOf(':') + 1)..];
 
-                                            // Try resolve
+                                        if (!string.IsNullOrEmpty(cref))
+                                        {
+                                            var display = GetDisplayNameFromCref(cref);
+
                                             var resolved = ResolveCref(cref);
                                             if (resolved != null)
                                             {
@@ -202,20 +201,26 @@ namespace AdvancedSceneManager.Documentation
                                             }
                                             else
                                             {
-                                                // External placeholder
-                                                var urlSafe = cref.Replace("T:", "").Replace("+", ".");
-                                                sb.Append($"[{display}](https://learn.microsoft.com/dotnet/api/{urlSafe.ToLowerInvariant()})");
+                                                var urlSafe = cref.Replace("T:", "")
+                                                                    .Replace("+", ".")
+                                                                    .Replace("`", "")
+                                                                    .ToLowerInvariant();
+
+                                                sb.Append($"[{display}](https://learn.microsoft.com/dotnet/api/{urlSafe})");
                                             }
                                         }
                                         else
                                         {
                                             sb.Append(child.InnerText);
                                         }
+
                                         break;
                                     }
 
                                 case "c":
-                                    sb.Append('`').Append(child.InnerText.Trim()).Append('`');
+                                    sb.Append('`')
+                                      .Append(ParseDocumentationNode(child).Trim())
+                                      .Append('`');
                                     break;
 
                                 case "code":
@@ -249,6 +254,33 @@ namespace AdvancedSceneManager.Documentation
 
                 return sb.ToString().Trim();
 
+            }
+
+            static string GetDisplayNameFromCref(string cref)
+            {
+                if (string.IsNullOrWhiteSpace(cref))
+                    return "";
+
+                // Remove prefix (T:, M:, etc.)
+                if (cref.Length > 2 && cref[1] == ':')
+                    cref = cref.Substring(2);
+
+                // Remove parameter list for methods
+                var paramIndex = cref.IndexOf('(');
+                if (paramIndex >= 0)
+                    cref = cref.Substring(0, paramIndex);
+
+                // Remove namespace
+                var lastDot = cref.LastIndexOf('.');
+                if (lastDot >= 0)
+                    cref = cref.Substring(lastDot + 1);
+
+                // Remove generic arity suffix (`1)
+                var backtick = cref.IndexOf('`');
+                if (backtick >= 0)
+                    cref = cref.Substring(0, backtick);
+
+                return cref;
             }
 
             static MemberInfo FindBaseMember(MemberInfo member)
