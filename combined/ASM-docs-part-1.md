@@ -9998,107 +9998,205 @@ source: guides\Quick-start.md
 
 <!---./Quick-start.md-->
 [← Back](readme.md) | [🏠 Home](../readme.md)
-## Quick start
 
-<br/>
+## Quick Start
 
-**Install ASM from Package Manager:**
+## Install ASM
 
-To begin, open Unity and navigate to the Window menu. From there, open the package manager and search for Advanced Scene Manager", install it. Wait for unity to compile.
+1. Open **Unity**.
+2. Go to **Window → Package Manager**.
+3. Search for **Advanced Scene Manager**.
+4. Click **Install** and wait for Unity to compile.
 
-![package-manager](../image/old/package-manager.png)
+![package-manager](image/upm-asm.png)
 
-**Open Scene Manager Window:** 
+## Open the Scene Manager
 
-Access the Scene Manager window through the File menu and choose "Scene Manager..."
+Go to:
 
-![file-menu](../image/old/file-menu.png)
+**File → Scene Manager…**
 
-**Create Profile:** 
+![file-menu](image/menu-asm-window.png)
 
-Within the Scene Manager window, press the profile selector, in the lower left corner. Create a new profile by clicking on the current profile name or "create", if none exists, or "none", if profiles do exist, but none are selected.
+## Create a Profile
 
-![profile-picker](../image/old/profile-picker.png)
+In the lower-left corner of the Scene Manager window:
 
-**Default profile:** 
+1. Click the profile selector.
+2. Create a new profile:
+   - If none exist, click **Create**
+   - If profiles exist but none are selected, choose **None**
+   - Otherwise, click the current profile name to create a new one.
 
-The default profile has two collections "Startup (persistent)" and "Main Menu". Press the menu button on the collection headers, and observe that both collections are set to open at startup. On Startup collection, also observe the "Open persistent" toggle in the "Open options" further down.
+![profile-picker](image/main-footer.png)
 
-![collection-menu-button](../image/old/collection-menu-button.png)
+## Default Profile Overview
 
-![startup-option](../image/old/startup-option.png)
+The default profile includes two collections:
 
-![collection-open-option](../image/old/collection-open-option.png)
+- **Startup (persistent)**
+- **Main Menu**
 
-**Create Scenes:** 
+Open the collection menu (⋮) on each header and observe:
 
-Create two scenes like you normally would in unity, name them "Startup" and "Main Menu".
+- Both collections are set to open at startup.
+- The **Startup** collection has **Open Persistent** enabled under *Open Options*.
 
-**Import Scenes into ASM:** 
+![collection-menu-button](	image/main-collection-menu.png)
 
-Following scene creation, a notification will appear in the Scene Manager window. Click on the notification to open the import popup. Confirm that both scenes are toggled and press "Import".
+![startup-option](image/startup-option.png)
 
-![import-popup](../image/old/import-popup.png)
+![collection-open-option](image/popup-collection-open.png)
 
-**Assign Scenes to Collections:** 
+## Create Scenes
 
-Within the Scene Manager, drag the scenes into their respective collections and drop them on the "drop area" to add them.
+Create two scenes as usual:
 
-![scene-drop-area](../image/old/scene-drop-area.png)
+- `Startup`
+- `Main Menu`
 
-**Press Play in Scene Manager:** 
+## Import Scenes into ASM
 
-Located at the top left of the Scene Manager window, press the Play button. Watch as ASM enters play mode and plays the default ASM splash screen, then fades out, opens scenes, fades in, the main menu scene should be active in hierarchy.
+After creating the scenes, a notification will appear in the Scene Manager window.
 
-![play-button](../image/old/play-button.png)
+1. Click the notification to open the import popup.
+2. Ensure both scenes are toggled.
+3. Press **Import**.
 
-![asm-splash-screen](../image/old/asm-splash-screen.png)
+![import-popup](image/popup-sceneImport.png)
 
-**Levels**
+## Assign Scenes to Collections
 
-Now, lets create some levels, create two collections, "Level 1" and "Level 2". This time, instead of creating scenes in project window, lets add a scene field in each collection, by pressing the "+" in the collection header. Then press the create scene button to the right of the object field. Name the scenes the same as their collections. Lets also create a UI scene, and assign it to both level collections.
+Drag each scene into its corresponding collection and drop it onto the **Drop Area**.
 
-![create-scene-button](../image/old/create-scene-button.png)
+![scene-drop-area](image/main-collection-sceneDropArea.png)
 
-**Main menu**
+## Press Play (ASM Play Button)
 
-Now, lets open the main menu scene by pressing the open scene button or the open collection button. Style your main menu as you want, but add two buttons, "Level 1" and "Level 2". Select the button for level 1 and add a On Click () handler to the Button script, then hold and drag from the collection header for "Level 1", this will start a drag drop for that collection, drop it on the button click handler. Then select SceneCollection > _Open (bool). Then do the same for the second level collection. Then add a "Quit" button, for this On Click () handler, drag and drop the scene helper button instead, which is to the left of the new collection button. Then select ASMSceneHelper > Quit ().
+In the top-left of the Scene Manager window, press the **Play** button.
 
-> The collection open toggle is not important right now, but it specifies whatever all scenes on a collection should open, since some scenes may be flagged to not open automatically, only explicitly.
+ASM will:
 
-![button-click-collection-open](../image/old/button-click-collection-open.png)
+1. Enter Play Mode  
+2. Fade out  
+3. Show the ASM splash screen  
+4. Open the collection scenes  
+5. Fade in
 
+The **Main Menu** scene should now be active in the Hierarchy.
 
-![scene-helper-button](../image/old/scene-helper-button.png)
+This button runs the ASM startup process, simulating a build.
 
+> If the splash screen is not set to default, it'll look slightly different, but collections will still be opened.
 
-![button-click-quit](../image/old/button-click-quit.png)
+![play-button](image/main-play.png)
 
-**Play**
+# Creating Levels
 
-Now when you press the play button, you'll be taken to the main menu in the same manner as before, but you can now press a level button to be taken to that level. To go back to main menu, press the ASM play button once more, and ASM will restart (but skip splash screen). Now press the quit button, and ASM will fade out, then exit play mode.
+## Create Level Collections
 
-> Note that you do not have to use quit function to quit your game, it is merely an convenience feature.
+Create two new collections:
 
+- `Level 1`
+- `Level 2`
 
-**Using Start() and Awake()**
+Instead of creating scenes in the Project window:
 
-Start and awake are still Unity callbacks, so they still function as normal. But it's important to be aware that these callbacks are called before ASM has finished its scene open process. This means that if you need all scenes in a collection to be loaded before you initialize code or run logic, you should use our scene callbacks instead. 
+1. Press **+** in the collection header.
+2. Click **Create Scene** next to the object field.
+3. Name each scene the same as its collection.
 
-> A common misuse is to instantiate gameobjects in Start(), resulting in the object being added to the wrong scene, as ASM has not yet updated the active scene, it is recommended to use [ISceneOpen](Callbacks.md) or [ICollectionOpen](Callbacks.md) callbacks to instantiate gameobjects.
+Also:
 
-**Done**
+- Create a `UI` scene.
+- Assign it to both level collections.
 
-And with that, we're done! Enjoy working on your game instead of getting bogged down in scene management!
+![create-scene-button](image/main-scene-create.png)
 
-### Related pages
-[📄 Quick start](quick-start.md)\
-[📄 Common questions](common-questions.md)\
-[📄 In-game toolbar](in-game-toolbar.md)\
-[📄 Updating](updating.md)\
+# Main Menu Setup
+
+Open the **Main Menu** scene.
+
+Add three buttons:
+
+- **Level 1**
+- **Level 2**
+- **Quit**
+
+### Connect Level Buttons
+
+For each level button:
+
+1. Add an **On Click()** handler.
+2. Drag the collection header (Level 1 or Level 2).
+3. Drop it into the On Click field.
+4. Select:  
+   `SceneCollection → Open(bool)`
+
+![button-click-collection-open](image/event-click-collectionOpen.png)
+
+Repeat for the second level.
+
+### Connect Quit Button
+
+1. Add an **On Click()** handler.
+2. Drag the **Scene Helper button** (left of the New Collection button).
+3. Select:  
+   `ASMSceneHelper → Quit()`
+   
+![scene-helper-button](image/main-button-sceneHelper.png)
+![button-click-quit](image/event-click-quit.png)
+
+> The collection open toggle defines whether all scenes in a collection should open automatically. Individual scenes can be configured to require explicit opening.
+
+# Test It
+
+Press the ASM Play button.
+
+You will:
+
+- Start in the Main Menu
+- Be able to load Level 1 or Level 2
+- Restart ASM by pressing the ASM Play button again (splash is skipped)
+- Quit Play Mode using the Quit button
+
+> You do not need to use `Quit()` to exit your game. It is provided as a convenience feature.
+
+# About `Start()` and `Awake()`
+
+Unity callbacks still work as normal. However:
+
+`Start()` and `Awake()` run **before ASM finishes opening its collection scenes**.
+
+If your logic depends on all scenes being loaded, use ASM callbacks instead:
+
+- [`ISceneOpen`](callbacks/Interface-callbacks.md)
+- [`ICollectionOpen`](callbacks/Interface-callbacks.md)
+
+> Note that `Start()` and `Awake()` also run before ASM activates the correct scene, which can lead to object instantiation in an unexpected scene. Using the above callbacks prevents this issue.
+
+# Done
+
+You now have:
+
+- Startup scene
+- Main Menu
+- Two levels
+- Collection-based scene flow
+- Proper loading transitions
+
+You are ready to build your game without manual scene management.
+
+## Related Pages
+
+[📄 Quick start](quick-start.md)  
+[📄 Common questions](common-questions.md)  
+[📄 In-game toolbar](in-game-toolbar.md)  
+[📄 Updating](updating.md)  
 [📄 Videos](videos.md)
 
 [← Back](readme.md) | [🏠 Home](../readme.md)
+
 
 ---
 # readme
