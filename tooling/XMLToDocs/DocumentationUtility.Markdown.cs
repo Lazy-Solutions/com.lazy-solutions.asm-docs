@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
+using System.Runtime.CompilerServices;
 using System.Text;
 
 namespace AdvancedSceneManager.Documentation
@@ -53,9 +54,61 @@ namespace AdvancedSceneManager.Documentation
 
                 sb.AppendLine();
 
-                var members = type.GetMembers(
-                    BindingFlags.Public | BindingFlags.Instance | BindingFlags.Static | BindingFlags.DeclaredOnly
-                );
+                if (type.IsEnum)
+                    GenerateEnumSection(sb, type, nestedLevel);
+                else if (type.IsDelegate())
+                    GenerateDelegateSection(sb, type, nestedLevel);
+                else
+                    GenerateTypeMembersSection(sb, type, nestedLevel);
+
+                return sb.ToString().TrimEnd();
+            }
+
+            private static void GenerateEnumSection(StringBuilder sb, Type type, int nestedLevel)
+            {
+                sb.AppendLine("### Values\n");
+
+                sb.AppendLine("| Name | Description |");
+                sb.AppendLine("|------|-------------|");
+
+                var fields = type.GetFields(BindingFlags.Public | BindingFlags.Static);
+
+                foreach (var field in fields)
+                {
+                    var doc = field.GetDocumentation();
+                    var summary = doc?.GetEffective(d => d.Summary) ?? "_No documentation available._";
+
+                    sb.AppendLine($"| `{field.Name}` | {summary} |");
+                }
+
+                sb.AppendLine();
+            }
+
+            private static void GenerateDelegateSection(StringBuilder sb, Type type, int nestedLevel)
+            {
+                sb.AppendLine("### Signature\n");
+
+                var invoke = type.GetMethod("Invoke");
+                if (invoke == null)
+                {
+                    sb.AppendLine("_Invalid delegate definition._");
+                    return;
+                }
+
+                var returnType = invoke.ReturnType.GetFriendlyTypeName();
+                var parameters = string.Join(", ",
+                    invoke.GetParameters()
+                          .Select(p => $"{p.ParameterType.GetFriendlyTypeName()} {p.Name}"));
+
+                sb.AppendLine($"`{returnType} {type.Name}({parameters})`");
+                sb.AppendLine();
+            }
+
+            private static void GenerateTypeMembersSection(StringBuilder sb, Type type, int nestedLevel)
+            {
+                var members = type
+                    .GetMembers(BindingFlags.Public | BindingFlags.Instance | BindingFlags.Static | BindingFlags.DeclaredOnly)
+                    .Where(IsRealMember);
 
                 // Sections
                 GenerateSection(sb, "Static Properties", members.OfType<PropertyInfo>().Where(p => p.IsStatic()), nestedLevel);
@@ -69,8 +122,44 @@ namespace AdvancedSceneManager.Documentation
 
                 GenerateSection(sb, "Static Methods", members.OfType<MethodInfo>().Where(m => m.IsStatic && !m.IsSpecialName), nestedLevel);
                 GenerateSection(sb, "Methods", members.OfType<MethodInfo>().Where(m => !m.IsStatic && !m.IsSpecialName), nestedLevel);
+            }
 
-                return sb.ToString().TrimEnd();
+            private static bool IsRealMember(MemberInfo member)
+            {
+                switch (member)
+                {
+                    case MethodBase m when m.IsSpecialName:
+                        return false;
+
+                    case PropertyInfo p when p.IsSpecialName:
+                        return false;
+
+                    case EventInfo e when e.IsSpecialName:
+                        return false;
+
+                    case FieldInfo f when f.IsSpecialName:
+                        return false;
+
+                    case ConstructorInfo:
+                        return false; //In ASM, we don't want constructor docs (it always results in obvious, generic descriptions)
+                }
+
+                if (member.Name.Contains("$"))
+                    return false;
+
+                if (member.Name == "value__")
+                    return false;
+
+                if (member.Name.StartsWith("<"))
+                    return false;
+
+                if (member.GetCustomAttribute<CompilerGeneratedAttribute>() != null)
+                    return false;
+
+                if (member.DeclaringType != null && typeof(MulticastDelegate).IsAssignableFrom(member.DeclaringType))
+                    return false;
+
+                return true;
             }
 
             // --- New Helpers ---
