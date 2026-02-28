@@ -239,7 +239,7 @@ namespace AdvancedSceneManager.Documentation
                 foreach (var member in list)
                 {
                     var doc = member.GetDocumentation();
-                    var signature = "`" + Escape(member.GetSignature(includeAccessModifiers: false, includeStaticIndicator: false)) + "`"; // no `static` here
+                    var signature = "`" + member.GetSignature(includeAccessModifiers: false, includeStaticIndicator: false) + "`"; // no `static` here
 
                     var summary = Escape(doc?.GetEffective(d => d.Summary) ?? "_No documentation available._");
                     summary = summary?.Replace("|", "\\|");
