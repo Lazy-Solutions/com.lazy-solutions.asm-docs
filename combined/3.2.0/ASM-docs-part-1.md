@@ -1,7 +1,7 @@
 ---
 # ActionUtility
 <!--
-source: API\3.2.0\Callbacks\ActionUtility.md
+source: api\latest\Callbacks\ActionUtility.md
 -->
 
 ## ActionUtility
@@ -20,7 +20,7 @@ Contains utility functions for `Action`.
 ---
 # CallbackUtility
 <!--
-source: API\3.2.0\Callbacks\CallbackUtility.md
+source: api\latest\Callbacks\CallbackUtility.md
 -->
 
 ## CallbackUtility
@@ -42,7 +42,7 @@ Provides utilities for discovering and invoking scene and collection callbacks.
 ---
 # Callback_Of_T
 <!--
-source: API\3.2.0\Callbacks\Callback_Of_T.md
+source: api\latest\Callbacks\Callback_Of_T.md
 -->
 
 ## Callback
@@ -60,7 +60,7 @@ source: API\3.2.0\Callbacks\Callback_Of_T.md
 ---
 # AllScenesClosedEvent
 <!--
-source: API\3.2.0\Callbacks\Events\AllScenesClosedEvent.md
+source: api\latest\Callbacks\Events\AllScenesClosedEvent.md
 -->
 
 ## AllScenesClosedEvent
@@ -85,7 +85,7 @@ Use this to gracefully handle the situation — for example, by returning to the
 ---
 # CalledForAttribute
 <!--
-source: API\3.2.0\Callbacks\Events\CalledForAttribute.md
+source: api\latest\Callbacks\Events\CalledForAttribute.md
 -->
 
 ## CalledForAttribute
@@ -101,7 +101,7 @@ source: API\3.2.0\Callbacks\Events\CalledForAttribute.md
 ---
 # CollectionCloseEvent
 <!--
-source: API\3.2.0\Callbacks\Events\CollectionCloseEvent.md
+source: api\latest\Callbacks\Events\CollectionCloseEvent.md
 -->
 
 ## CollectionCloseEvent
@@ -127,7 +127,7 @@ Called when: `Unspecified` (it will be ignored).
 ---
 # CollectionEvent
 <!--
-source: API\3.2.0\Callbacks\Events\CollectionEvent.md
+source: api\latest\Callbacks\Events\CollectionEvent.md
 -->
 
 ## CollectionEvent
@@ -159,7 +159,7 @@ See `CollectionOpenEvent`, `CollectionCloseEvent`.
 ---
 # CollectionOpenEvent
 <!--
-source: API\3.2.0\Callbacks\Events\CollectionOpenEvent.md
+source: api\latest\Callbacks\Events\CollectionOpenEvent.md
 -->
 
 ## CollectionOpenEvent
@@ -185,7 +185,7 @@ Called when: `Unspecified` (it will be ignored).
 ---
 # ASMModelRenamedEvent
 <!--
-source: API\3.2.0\Callbacks\Events\Editor\ASMModelRenamedEvent.md
+source: api\latest\Callbacks\Events\Editor\ASMModelRenamedEvent.md
 -->
 
 ## ASMModelRenamedEvent
@@ -216,7 +216,7 @@ Occurs when an ASM model is renamed.
 ---
 # ASMSettingsChangedEvent
 <!--
-source: API\3.2.0\Callbacks\Events\Editor\ASMSettingsChangedEvent.md
+source: api\latest\Callbacks\Events\Editor\ASMSettingsChangedEvent.md
 -->
 
 ## ASMSettingsChangedEvent
@@ -238,7 +238,7 @@ Occurs when a setting in ASM changes.
 ---
 # ASMWindowCloseEvent
 <!--
-source: API\3.2.0\Callbacks\Events\Editor\ASMWindowCloseEvent.md
+source: api\latest\Callbacks\Events\Editor\ASMWindowCloseEvent.md
 -->
 
 ## ASMWindowCloseEvent
@@ -260,7 +260,7 @@ Occurs when the ASM editor window is closed.
 ---
 # ASMWindowOpenEvent
 <!--
-source: API\3.2.0\Callbacks\Events\Editor\ASMWindowOpenEvent.md
+source: api\latest\Callbacks\Events\Editor\ASMWindowOpenEvent.md
 -->
 
 ## ASMWindowOpenEvent
@@ -282,7 +282,7 @@ Occurs when the ASM editor window is opened.
 ---
 # BeforeASMPlayModeEvent
 <!--
-source: API\3.2.0\Callbacks\Events\Editor\BeforeASMPlayModeEvent.md
+source: api\latest\Callbacks\Events\Editor\BeforeASMPlayModeEvent.md
 -->
 
 ## BeforeASMPlayModeEvent
@@ -311,7 +311,7 @@ Occurs before ASM enters play mode when ASM play button is used.
 ---
 # CollectionAddedEvent
 <!--
-source: API\3.2.0\Callbacks\Events\Editor\CollectionAddedEvent.md
+source: api\latest\Callbacks\Events\Editor\CollectionAddedEvent.md
 -->
 
 ## CollectionAddedEvent
@@ -340,7 +340,7 @@ Occurs when a collection is added to a profile.
 ---
 # CollectionDeletedEvent
 <!--
-source: API\3.2.0\Callbacks\Events\Editor\CollectionDeletedEvent.md
+source: api\latest\Callbacks\Events\Editor\CollectionDeletedEvent.md
 -->
 
 ## CollectionDeletedEvent
@@ -372,7 +372,7 @@ Hard delete, not recoverable. Happens after undo period.
 ---
 # CollectionRemovedEvent
 <!--
-source: API\3.2.0\Callbacks\Events\Editor\CollectionRemovedEvent.md
+source: api\latest\Callbacks\Events\Editor\CollectionRemovedEvent.md
 -->
 
 ## CollectionRemovedEvent
@@ -404,7 +404,7 @@ Soft delete, still recoverable. Triggers undo period.
 ---
 # CollectionRestoredEvent
 <!--
-source: API\3.2.0\Callbacks\Events\Editor\CollectionRestoredEvent.md
+source: api\latest\Callbacks\Events\Editor\CollectionRestoredEvent.md
 -->
 
 ## CollectionRestoredEvent
@@ -433,7 +433,7 @@ Occurs when a collection is restored after remove, before hard delete.
 ---
 # ModelPropertyChangedEvent
 <!--
-source: API\3.2.0\Callbacks\Events\Editor\ModelPropertyChangedEvent.md
+source: api\latest\Callbacks\Events\Editor\ModelPropertyChangedEvent.md
 -->
 
 ## ModelPropertyChangedEvent
@@ -466,7 +466,7 @@ Occurs when an ASM model property changes. This is the same as `INotifyPropertyC
 ---
 # OnWindowDisableEvent
 <!--
-source: API\3.2.0\Callbacks\Events\Editor\OnWindowDisableEvent.md
+source: api\latest\Callbacks\Events\Editor\OnWindowDisableEvent.md
 -->
 
 ## OnWindowDisableEvent
@@ -488,7 +488,7 @@ Occurs when the ASM editor window is disabled.
 ---
 # OnWindowEnableEvent
 <!--
-source: API\3.2.0\Callbacks\Events\Editor\OnWindowEnableEvent.md
+source: api\latest\Callbacks\Events\Editor\OnWindowEnableEvent.md
 -->
 
 ## OnWindowEnableEvent
@@ -510,7 +510,7 @@ Occurs when the ASM editor window is enabled.
 ---
 # OnWindowFocusEvent
 <!--
-source: API\3.2.0\Callbacks\Events\Editor\OnWindowFocusEvent.md
+source: api\latest\Callbacks\Events\Editor\OnWindowFocusEvent.md
 -->
 
 ## OnWindowFocusEvent
@@ -532,7 +532,7 @@ Occurs when the ASM editor window gains focus.
 ---
 # OnWindowLostFocusEvent
 <!--
-source: API\3.2.0\Callbacks\Events\Editor\OnWindowLostFocusEvent.md
+source: api\latest\Callbacks\Events\Editor\OnWindowLostFocusEvent.md
 -->
 
 ## OnWindowLostFocusEvent
@@ -554,7 +554,7 @@ Occurs when the ASM editor window loses focus.
 ---
 # PlayModeChangedEvent
 <!--
-source: API\3.2.0\Callbacks\Events\Editor\PlayModeChangedEvent.md
+source: api\latest\Callbacks\Events\Editor\PlayModeChangedEvent.md
 -->
 
 ## PlayModeChangedEvent
@@ -586,7 +586,7 @@ Wrapper for `playModeStateChanged`.
 ---
 # ProfileAddedEvent
 <!--
-source: API\3.2.0\Callbacks\Events\Editor\ProfileAddedEvent.md
+source: api\latest\Callbacks\Events\Editor\ProfileAddedEvent.md
 -->
 
 ## ProfileAddedEvent
@@ -618,7 +618,7 @@ Does not support [IEnumerator)](https://learn.microsoft.com/dotnet/api/m:advance
 ---
 # ProfileChangedEvent
 <!--
-source: API\3.2.0\Callbacks\Events\Editor\ProfileChangedEvent.md
+source: api\latest\Callbacks\Events\Editor\ProfileChangedEvent.md
 -->
 
 ## ProfileChangedEvent
@@ -647,7 +647,7 @@ Occurs when the active profile is changed.
 ---
 # ProfileRemovedEvent
 <!--
-source: API\3.2.0\Callbacks\Events\Editor\ProfileRemovedEvent.md
+source: api\latest\Callbacks\Events\Editor\ProfileRemovedEvent.md
 -->
 
 ## ProfileRemovedEvent
@@ -679,7 +679,7 @@ Does not support [IEnumerator)](https://learn.microsoft.com/dotnet/api/m:advance
 ---
 # SceneImportedEvent
 <!--
-source: API\3.2.0\Callbacks\Events\Editor\SceneImportedEvent.md
+source: api\latest\Callbacks\Events\Editor\SceneImportedEvent.md
 -->
 
 ## SceneImportedEvent
@@ -708,7 +708,7 @@ Occurs when a scene is imported into ASM.
 ---
 # SceneLoaderToggledEvent
 <!--
-source: API\3.2.0\Callbacks\Events\Editor\SceneLoaderToggledEvent.md
+source: api\latest\Callbacks\Events\Editor\SceneLoaderToggledEvent.md
 -->
 
 ## SceneLoaderToggledEvent
@@ -739,7 +739,7 @@ Occurs when the scene loader for a given scene is changed.
 ---
 # ScenesAvailableForImportChangedEvent
 <!--
-source: API\3.2.0\Callbacks\Events\Editor\ScenesAvailableForImportChangedEvent.md
+source: api\latest\Callbacks\Events\Editor\ScenesAvailableForImportChangedEvent.md
 -->
 
 ## ScenesAvailableForImportChangedEvent
@@ -761,7 +761,7 @@ Occurs when either `unimportedScenes`, `importedScenes`, or `invalidScenes` has 
 ---
 # SceneUnimportedEvent
 <!--
-source: API\3.2.0\Callbacks\Events\Editor\SceneUnimportedEvent.md
+source: api\latest\Callbacks\Events\Editor\SceneUnimportedEvent.md
 -->
 
 ## SceneUnimportedEvent
@@ -790,7 +790,7 @@ Occurs when a scene is unimported from ASM.
 ---
 # UpdateCheckedEvent
 <!--
-source: API\3.2.0\Callbacks\Events\Editor\UpdateCheckedEvent.md
+source: api\latest\Callbacks\Events\Editor\UpdateCheckedEvent.md
 -->
 
 ## UpdateCheckedEvent
@@ -812,7 +812,7 @@ Occurs after ASM has checked for updates.
 ---
 # EndPhaseEvent
 <!--
-source: API\3.2.0\Callbacks\Events\EndPhaseEvent.md
+source: api\latest\Callbacks\Events\EndPhaseEvent.md
 -->
 
 ## EndPhaseEvent
@@ -837,7 +837,7 @@ Called when: `Unspecified` (it will be ignored).
 ---
 # EventCallbackBase
 <!--
-source: API\3.2.0\Callbacks\Events\EventCallbackBase.md
+source: api\latest\Callbacks\Events\EventCallbackBase.md
 -->
 
 ## EventCallbackBase
@@ -871,7 +871,7 @@ The base class for all event callbacks.
 ---
 # EventCallbackManager_Of_TEventBase
 <!--
-source: API\3.2.0\Callbacks\Events\EventCallbackManager_Of_TEventBase.md
+source: api\latest\Callbacks\Events\EventCallbackManager_Of_TEventBase.md
 -->
 
 ## EventCallbackManager`1
@@ -897,7 +897,7 @@ You probably want to use either `events` or `events`.
 ---
 # EventCallbackUtility
 <!--
-source: API\3.2.0\Callbacks\Events\EventCallbackUtility.md
+source: api\latest\Callbacks\Events\EventCallbackUtility.md
 -->
 
 ## EventCallbackUtility
@@ -922,7 +922,7 @@ Provides utility functions for working with event callbacks.
 ---
 # EventCallback_Of_TEventType
 <!--
-source: API\3.2.0\Callbacks\Events\EventCallback_Of_TEventType.md
+source: api\latest\Callbacks\Events\EventCallback_Of_TEventType.md
 -->
 
 ## EventCallback`1
@@ -941,7 +941,7 @@ Callback for scene operations.
 ---
 # FilteredEventProxy_Of_TEventBase
 <!--
-source: API\3.2.0\Callbacks\Events\FilteredEventProxy_Of_TEventBase.md
+source: api\latest\Callbacks\Events\FilteredEventProxy_Of_TEventBase.md
 -->
 
 ## FilteredEventProxy`1
@@ -962,7 +962,7 @@ You probably want to use either [String)](https://learn.microsoft.com/dotnet/api
 ---
 # GlobalCoroutinesChanged
 <!--
-source: API\3.2.0\Callbacks\Events\GlobalCoroutinesChanged.md
+source: api\latest\Callbacks\Events\GlobalCoroutinesChanged.md
 -->
 
 ## GlobalCoroutinesChanged
@@ -991,7 +991,7 @@ Occurs when `CoroutineUtility` starts or ends a coroutine.
 ---
 # InvocationOrderAttribute
 <!--
-source: API\3.2.0\Callbacks\Events\InvocationOrderAttribute.md
+source: api\latest\Callbacks\Events\InvocationOrderAttribute.md
 -->
 
 ## InvocationOrderAttribute
@@ -1007,7 +1007,7 @@ source: API\3.2.0\Callbacks\Events\InvocationOrderAttribute.md
 ---
 # LoadingScreenClosePhaseEvent
 <!--
-source: API\3.2.0\Callbacks\Events\LoadingScreenClosePhaseEvent.md
+source: api\latest\Callbacks\Events\LoadingScreenClosePhaseEvent.md
 -->
 
 ## LoadingScreenClosePhaseEvent
@@ -1035,7 +1035,7 @@ Called regardless if operation actually opens one or not.
 ---
 # LoadingScreenOpenPhaseEvent
 <!--
-source: API\3.2.0\Callbacks\Events\LoadingScreenOpenPhaseEvent.md
+source: api\latest\Callbacks\Events\LoadingScreenOpenPhaseEvent.md
 -->
 
 ## LoadingScreenOpenPhaseEvent
@@ -1063,7 +1063,7 @@ Called regardless if operation actually opens one or not.
 ---
 # LoadingScreenPhaseEvent
 <!--
-source: API\3.2.0\Callbacks\Events\LoadingScreenPhaseEvent.md
+source: api\latest\Callbacks\Events\LoadingScreenPhaseEvent.md
 -->
 
 ## LoadingScreenPhaseEvent
@@ -1095,7 +1095,7 @@ See `LoadingScreenOpenPhaseEvent`, `LoadingScreenClosePhaseEvent`.
 ---
 # QuitEvent
 <!--
-source: API\3.2.0\Callbacks\Events\QuitEvent.md
+source: api\latest\Callbacks\Events\QuitEvent.md
 -->
 
 ## QuitEvent
@@ -1119,7 +1119,7 @@ This event will not be raised if the default Unity quit flow is used.
 ---
 # SceneCloseEvent
 <!--
-source: API\3.2.0\Callbacks\Events\SceneCloseEvent.md
+source: api\latest\Callbacks\Events\SceneCloseEvent.md
 -->
 
 ## SceneCloseEvent
@@ -1145,7 +1145,7 @@ Called when: `Before`, `After`.
 ---
 # SceneClosePhaseEvent
 <!--
-source: API\3.2.0\Callbacks\Events\SceneClosePhaseEvent.md
+source: api\latest\Callbacks\Events\SceneClosePhaseEvent.md
 -->
 
 ## SceneClosePhaseEvent
@@ -1171,7 +1171,7 @@ Called when: `Before`, `After`.
 ---
 # SceneEvent
 <!--
-source: API\3.2.0\Callbacks\Events\SceneEvent.md
+source: api\latest\Callbacks\Events\SceneEvent.md
 -->
 
 ## SceneEvent
@@ -1203,7 +1203,7 @@ See `SceneOpenEvent`, `SceneCloseEvent`, `ScenePreloadEvent`.
 ---
 # SceneManagerBecameBusyEvent
 <!--
-source: API\3.2.0\Callbacks\Events\SceneManagerBecameBusyEvent.md
+source: api\latest\Callbacks\Events\SceneManagerBecameBusyEvent.md
 -->
 
 ## SceneManagerBecameBusyEvent
@@ -1225,7 +1225,7 @@ Occurs when ASM becomes busy, as in: a scene operation is queued, or started wit
 ---
 # SceneManagerBecameIdleEvent
 <!--
-source: API\3.2.0\Callbacks\Events\SceneManagerBecameIdleEvent.md
+source: api\latest\Callbacks\Events\SceneManagerBecameIdleEvent.md
 -->
 
 ## SceneManagerBecameIdleEvent
@@ -1247,7 +1247,7 @@ Occurs when ASM becomes idle, as in: scene operation queue is empty and no non-q
 ---
 # SceneOpenEvent
 <!--
-source: API\3.2.0\Callbacks\Events\SceneOpenEvent.md
+source: api\latest\Callbacks\Events\SceneOpenEvent.md
 -->
 
 ## SceneOpenEvent
@@ -1273,7 +1273,7 @@ Called when: `Before`, `After`.
 ---
 # SceneOpenPhaseEvent
 <!--
-source: API\3.2.0\Callbacks\Events\SceneOpenPhaseEvent.md
+source: api\latest\Callbacks\Events\SceneOpenPhaseEvent.md
 -->
 
 ## SceneOpenPhaseEvent
@@ -1299,7 +1299,7 @@ Called when: `Before`, `After`.
 ---
 # SceneOperationEventBase
 <!--
-source: API\3.2.0\Callbacks\Events\SceneOperationEventBase.md
+source: api\latest\Callbacks\Events\SceneOperationEventBase.md
 -->
 
 ## SceneOperationEventBase
@@ -1327,7 +1327,7 @@ The base class for all scene operation event callbacks.
 ---
 # ScenePhaseEvent
 <!--
-source: API\3.2.0\Callbacks\Events\ScenePhaseEvent.md
+source: api\latest\Callbacks\Events\ScenePhaseEvent.md
 -->
 
 ## ScenePhaseEvent
@@ -1359,7 +1359,7 @@ See `SceneClosePhaseEvent`, `SceneOpenPhaseEvent`, `ScenePreloadPhaseEvent`.
 ---
 # ScenePreloadEvent
 <!--
-source: API\3.2.0\Callbacks\Events\ScenePreloadEvent.md
+source: api\latest\Callbacks\Events\ScenePreloadEvent.md
 -->
 
 ## ScenePreloadEvent
@@ -1385,7 +1385,7 @@ Called when: `Before`, `After`.
 ---
 # ScenePreloadPhaseEvent
 <!--
-source: API\3.2.0\Callbacks\Events\ScenePreloadPhaseEvent.md
+source: api\latest\Callbacks\Events\ScenePreloadPhaseEvent.md
 -->
 
 ## ScenePreloadPhaseEvent
@@ -1411,7 +1411,7 @@ Called when: `Before`, `After`.
 ---
 # StartPhaseEvent
 <!--
-source: API\3.2.0\Callbacks\Events\StartPhaseEvent.md
+source: api\latest\Callbacks\Events\StartPhaseEvent.md
 -->
 
 ## StartPhaseEvent
@@ -1438,7 +1438,7 @@ Properties has not been frozen at this point, and can be changed.
 ---
 # StartupCancelledEvent
 <!--
-source: API\3.2.0\Callbacks\Events\StartupCancelledEvent.md
+source: api\latest\Callbacks\Events\StartupCancelledEvent.md
 -->
 
 ## StartupCancelledEvent
@@ -1460,7 +1460,7 @@ Occurs when ASM startup is cancelled before completion.
 ---
 # StartupFinishedEvent
 <!--
-source: API\3.2.0\Callbacks\Events\StartupFinishedEvent.md
+source: api\latest\Callbacks\Events\StartupFinishedEvent.md
 -->
 
 ## StartupFinishedEvent
@@ -1489,7 +1489,7 @@ Occurs when ASM startup has completed successfully.
 ---
 # StartupStartedEvent
 <!--
-source: API\3.2.0\Callbacks\Events\StartupStartedEvent.md
+source: api\latest\Callbacks\Events\StartupStartedEvent.md
 -->
 
 ## StartupStartedEvent
@@ -1518,7 +1518,7 @@ Occurs when ASM startup begins, opening any collections or scenes flagged to loa
 ---
 # ASMCallbackEventPropertyDrawerFilterAttribute
 <!--
-source: API\3.2.0\Callbacks\Events\Utility\ASMCallbackEventPropertyDrawerFilterAttribute.md
+source: api\latest\Callbacks\Events\Utility\ASMCallbackEventPropertyDrawerFilterAttribute.md
 -->
 
 ## ASMCallbackEventPropertyDrawerFilterAttribute
@@ -1535,7 +1535,7 @@ Applies a filter to the types displayed in `ASMEventCallbackPropertyDrawer`, use
 ---
 # SerializableASMEventCallbackType
 <!--
-source: API\3.2.0\Callbacks\Events\Utility\SerializableASMEventCallbackType.md
+source: api\latest\Callbacks\Events\Utility\SerializableASMEventCallbackType.md
 -->
 
 ## SerializableASMEventCallbackType
@@ -1569,7 +1569,7 @@ Also provides a property drawer.
 ---
 # When
 <!--
-source: API\3.2.0\Callbacks\Events\When.md
+source: api\latest\Callbacks\Events\When.md
 -->
 
 ## When
@@ -1594,7 +1594,7 @@ Specifies when the event callback is invoked for the action it represents.
 ---
 # FluentInvokeAPI_Of_T
 <!--
-source: API\3.2.0\Callbacks\FluentInvokeAPI_Of_T.md
+source: api\latest\Callbacks\FluentInvokeAPI_Of_T.md
 -->
 
 ## FluentInvokeAPI`1
@@ -1621,7 +1621,7 @@ source: API\3.2.0\Callbacks\FluentInvokeAPI_Of_T.md
 ---
 # ICollectionClose
 <!--
-source: API\3.2.0\Callbacks\ICollectionClose.md
+source: api\latest\Callbacks\ICollectionClose.md
 -->
 
 ## ICollectionClose
@@ -1654,7 +1654,7 @@ Called after loading screen has opened, if one is defined, or else just before c
 ---
 # ICollectionCloseAwaitable
 <!--
-source: API\3.2.0\Callbacks\ICollectionCloseAwaitable.md
+source: api\latest\Callbacks\ICollectionCloseAwaitable.md
 -->
 
 ## ICollectionCloseAwaitable
@@ -1687,7 +1687,7 @@ Called after loading screen has opened, if one is defined, or else just before c
 ---
 # ICollectionCloseCoroutine
 <!--
-source: API\3.2.0\Callbacks\ICollectionCloseCoroutine.md
+source: api\latest\Callbacks\ICollectionCloseCoroutine.md
 -->
 
 ## ICollectionCloseCoroutine
@@ -1720,7 +1720,7 @@ Called after loading screen has opened, if one is defined, or else just before c
 ---
 # ICollectionExtraDataCallbacks
 <!--
-source: API\3.2.0\Callbacks\ICollectionExtraDataCallbacks.md
+source: api\latest\Callbacks\ICollectionExtraDataCallbacks.md
 -->
 
 ## ICollectionExtraDataCallbacks
@@ -1737,7 +1737,7 @@ Callbacks for a `ScriptableObject` that has been set as extra data for a collect
 ---
 # ICollectionExtraDataCallbacksAwaitable
 <!--
-source: API\3.2.0\Callbacks\ICollectionExtraDataCallbacksAwaitable.md
+source: api\latest\Callbacks\ICollectionExtraDataCallbacksAwaitable.md
 -->
 
 ## ICollectionExtraDataCallbacksAwaitable
@@ -1754,7 +1754,7 @@ Callbacks for a `ScriptableObject` that has been set as extra data for a collect
 ---
 # ICollectionExtraDataCallbacksCoroutine
 <!--
-source: API\3.2.0\Callbacks\ICollectionExtraDataCallbacksCoroutine.md
+source: api\latest\Callbacks\ICollectionExtraDataCallbacksCoroutine.md
 -->
 
 ## ICollectionExtraDataCallbacksCoroutine
@@ -1771,7 +1771,7 @@ Callbacks for a `ScriptableObject` that has been set as extra data for a collect
 ---
 # ICollectionOpen
 <!--
-source: API\3.2.0\Callbacks\ICollectionOpen.md
+source: api\latest\Callbacks\ICollectionOpen.md
 -->
 
 ## ICollectionOpen
@@ -1804,7 +1804,7 @@ Called before loading screen is hidden, if one is defined, or else just when col
 ---
 # ICollectionOpenAwaitable
 <!--
-source: API\3.2.0\Callbacks\ICollectionOpenAwaitable.md
+source: api\latest\Callbacks\ICollectionOpenAwaitable.md
 -->
 
 ## ICollectionOpenAwaitable
@@ -1837,7 +1837,7 @@ Called before loading screen is hidden, if one is defined, or else just when col
 ---
 # ICollectionOpenCoroutine
 <!--
-source: API\3.2.0\Callbacks\ICollectionOpenCoroutine.md
+source: api\latest\Callbacks\ICollectionOpenCoroutine.md
 -->
 
 ## ICollectionOpenCoroutine
@@ -1870,7 +1870,7 @@ Called before loading screen is hidden, if one is defined, or else just when col
 ---
 # ISceneCallbacks
 <!--
-source: API\3.2.0\Callbacks\ISceneCallbacks.md
+source: api\latest\Callbacks\ISceneCallbacks.md
 -->
 
 ## ISceneCallbacks
@@ -1886,7 +1886,7 @@ Base interface for `MonoBehaviour` callbacks. Just implement any of the followin
 ---
 # ISceneClose
 <!--
-source: API\3.2.0\Callbacks\ISceneClose.md
+source: api\latest\Callbacks\ISceneClose.md
 -->
 
 ## ISceneClose
@@ -1910,7 +1910,7 @@ See also:
 ---
 # ISceneCloseAwaitable
 <!--
-source: API\3.2.0\Callbacks\ISceneCloseAwaitable.md
+source: api\latest\Callbacks\ISceneCloseAwaitable.md
 -->
 
 ## ISceneCloseAwaitable
@@ -1934,7 +1934,7 @@ See also:
 ---
 # ISceneCloseCoroutine
 <!--
-source: API\3.2.0\Callbacks\ISceneCloseCoroutine.md
+source: api\latest\Callbacks\ISceneCloseCoroutine.md
 -->
 
 ## ISceneCloseCoroutine
@@ -1958,7 +1958,7 @@ See also:
 ---
 # ISceneOpen
 <!--
-source: API\3.2.0\Callbacks\ISceneOpen.md
+source: api\latest\Callbacks\ISceneOpen.md
 -->
 
 ## ISceneOpen
@@ -1985,7 +1985,7 @@ Callback for when the scene that a `MonoBehaviour` is contained within is opened
 ---
 # ISceneOpenAwaitable
 <!--
-source: API\3.2.0\Callbacks\ISceneOpenAwaitable.md
+source: api\latest\Callbacks\ISceneOpenAwaitable.md
 -->
 
 ## ISceneOpenAwaitable
@@ -2012,7 +2012,7 @@ Callback for when the scene that a `MonoBehaviour` is contained within is opened
 ---
 # ISceneOpenCoroutine
 <!--
-source: API\3.2.0\Callbacks\ISceneOpenCoroutine.md
+source: api\latest\Callbacks\ISceneOpenCoroutine.md
 -->
 
 ## ISceneOpenCoroutine
@@ -2039,7 +2039,7 @@ Callback for when the scene that a `MonoBehaviour` is contained within is opened
 ---
 # OnCollectionCloseAttribute
 <!--
-source: API\3.2.0\Callbacks\OnCollectionCloseAttribute.md
+source: api\latest\Callbacks\OnCollectionCloseAttribute.md
 -->
 
 ## OnCollectionCloseAttribute
@@ -2055,7 +2055,7 @@ source: API\3.2.0\Callbacks\OnCollectionCloseAttribute.md
 ---
 # OnCollectionOpenAttribute
 <!--
-source: API\3.2.0\Callbacks\OnCollectionOpenAttribute.md
+source: api\latest\Callbacks\OnCollectionOpenAttribute.md
 -->
 
 ## OnCollectionOpenAttribute
@@ -2071,7 +2071,7 @@ source: API\3.2.0\Callbacks\OnCollectionOpenAttribute.md
 ---
 # OnLoadAttribute
 <!--
-source: API\3.2.0\Callbacks\OnLoadAttribute.md
+source: api\latest\Callbacks\OnLoadAttribute.md
 -->
 
 ## OnLoadAttribute
@@ -2103,7 +2103,7 @@ Combines them, and is safely usable both in and outside the editor.
 ---
 # OnSceneCloseAttribute
 <!--
-source: API\3.2.0\Callbacks\OnSceneCloseAttribute.md
+source: api\latest\Callbacks\OnSceneCloseAttribute.md
 -->
 
 ## OnSceneCloseAttribute
@@ -2119,7 +2119,7 @@ source: API\3.2.0\Callbacks\OnSceneCloseAttribute.md
 ---
 # OnSceneOpenAttribute
 <!--
-source: API\3.2.0\Callbacks\OnSceneOpenAttribute.md
+source: api\latest\Callbacks\OnSceneOpenAttribute.md
 -->
 
 ## OnSceneOpenAttribute
@@ -2135,7 +2135,7 @@ source: API\3.2.0\Callbacks\OnSceneOpenAttribute.md
 ---
 # SceneCallbackAttribute
 <!--
-source: API\3.2.0\Callbacks\SceneCallbackAttribute.md
+source: api\latest\Callbacks\SceneCallbackAttribute.md
 -->
 
 ## SceneCallbackAttribute
@@ -2145,7 +2145,7 @@ source: API\3.2.0\Callbacks\SceneCallbackAttribute.md
 ---
 # App
 <!--
-source: API\3.2.0\Core\App.md
+source: api\latest\Core\App.md
 -->
 
 ## App
@@ -2185,7 +2185,7 @@ Usage: `app`.
 ---
 # Indicator
 <!--
-source: API\3.2.0\Core\Indicator.md
+source: api\latest\Core\Indicator.md
 -->
 
 ## Indicator
@@ -2207,7 +2207,7 @@ source: API\3.2.0\Core\Indicator.md
 ---
 # Package
 <!--
-source: API\3.2.0\Core\Package.md
+source: api\latest\Core\Package.md
 -->
 
 ## Package
@@ -2229,7 +2229,7 @@ Only available in editor.
 ---
 # Runtime
 <!--
-source: API\3.2.0\Core\Runtime.md
+source: api\latest\Core\Runtime.md
 -->
 
 ## Runtime
@@ -2341,7 +2341,7 @@ Manages runtime functionality for Advanced Scene Manager such as open scenes and
 ---
 # RuntimeSceneLoader
 <!--
-source: API\3.2.0\Core\RuntimeSceneLoader.md
+source: api\latest\Core\RuntimeSceneLoader.md
 -->
 
 ## RuntimeSceneLoader
@@ -2370,7 +2370,7 @@ See [Scene)](https://learn.microsoft.com/dotnet/api/m:unityengine.scenemanagemen
 ---
 # SceneLoadArgs
 <!--
-source: API\3.2.0\Core\SceneLoadArgs.md
+source: api\latest\Core\SceneLoadArgs.md
 -->
 
 ## SceneLoadArgs
@@ -2397,7 +2397,7 @@ Specifies arguments for [SceneLoadArgs)](https://learn.microsoft.com/dotnet/api/
 ---
 # SceneLoader
 <!--
-source: API\3.2.0\Core\SceneLoader.md
+source: api\latest\Core\SceneLoader.md
 -->
 
 ## SceneLoader
@@ -2439,7 +2439,7 @@ Specifies a scene loader.
 ---
 # SceneLoaderArgsBase
 <!--
-source: API\3.2.0\Core\SceneLoaderArgsBase.md
+source: api\latest\Core\SceneLoaderArgsBase.md
 -->
 
 ## SceneLoaderArgsBase
@@ -2469,7 +2469,7 @@ Base class for `SceneLoadArgs` and `SceneUnloadArgs`.
 ---
 # SceneLoaderExtensions
 <!--
-source: API\3.2.0\Core\SceneLoaderExtensions.md
+source: api\latest\Core\SceneLoaderExtensions.md
 -->
 
 ## SceneLoaderExtensions
@@ -2492,7 +2492,7 @@ This provides access to direct scene loading / unloading, which bypasses many ch
 ---
 # SceneOperation
 <!--
-source: API\3.2.0\Core\SceneOperation.md
+source: api\latest\Core\SceneOperation.md
 -->
 
 ## SceneOperation
@@ -2600,7 +2600,7 @@ A scene operation is a queueable operation that can open or close scenes..
 ---
 # SceneOperationFlags
 <!--
-source: API\3.2.0\Core\SceneOperationFlags.md
+source: api\latest\Core\SceneOperationFlags.md
 -->
 
 ## SceneOperationFlags
@@ -2628,7 +2628,7 @@ Defines flags that control the behavior of a `SceneOperation`.
 ---
 # SceneOperationKind
 <!--
-source: API\3.2.0\Core\SceneOperationKind.md
+source: api\latest\Core\SceneOperationKind.md
 -->
 
 ## SceneOperationKind
@@ -2652,7 +2652,7 @@ Gets the kind of operation that a `SceneLoadProgressData` represents.
 ---
 # SceneUnloadArgs
 <!--
-source: API\3.2.0\Core\SceneUnloadArgs.md
+source: api\latest\Core\SceneUnloadArgs.md
 -->
 
 ## SceneUnloadArgs
@@ -2669,7 +2669,7 @@ Specifies arguments for [SceneUnloadArgs)](https://learn.microsoft.com/dotnet/ap
 ---
 # StartupProps
 <!--
-source: API\3.2.0\Core\StartupProps.md
+source: api\latest\Core\StartupProps.md
 -->
 
 ## StartupProps
@@ -2696,7 +2696,7 @@ source: API\3.2.0\Core\StartupProps.md
 ---
 # DependencyInjectionUtility
 <!--
-source: API\3.2.0\DependencyInjection\DependencyInjectionUtility.md
+source: api\latest\DependencyInjection\DependencyInjectionUtility.md
 -->
 
 ## DependencyInjectionUtility
@@ -2717,7 +2717,7 @@ Provides utility methods and accessors for dependency injection within ASM.
 ---
 # IBuildManager
 <!--
-source: API\3.2.0\DependencyInjection\Editor\IBuildManager.md
+source: api\latest\DependencyInjection\Editor\IBuildManager.md
 -->
 
 ## IBuildManager
@@ -2750,7 +2750,7 @@ Only available in editor.
 ---
 # IHierarchyGUI
 <!--
-source: API\3.2.0\DependencyInjection\Editor\IHierarchyGUI.md
+source: api\latest\DependencyInjection\Editor\IHierarchyGUI.md
 -->
 
 ## IHierarchyGUI
@@ -2780,7 +2780,7 @@ Only available in editor.
 ---
 # IPackage
 <!--
-source: API\3.2.0\DependencyInjection\Editor\IPackage.md
+source: api\latest\DependencyInjection\Editor\IPackage.md
 -->
 
 ## IPackage
@@ -2801,7 +2801,7 @@ Only available in editor.
 ---
 # ISceneManagerWindow
 <!--
-source: API\3.2.0\DependencyInjection\Editor\ISceneManagerWindow.md
+source: api\latest\DependencyInjection\Editor\ISceneManagerWindow.md
 -->
 
 ## ISceneManagerWindow
@@ -2819,7 +2819,7 @@ Provides methods for working with the scene manager window.
 ---
 # IUserSettings
 <!--
-source: API\3.2.0\DependencyInjection\Editor\IUserSettings.md
+source: api\latest\DependencyInjection\Editor\IUserSettings.md
 -->
 
 ## IUserSettings
@@ -2867,7 +2867,7 @@ Only available in editor.
 ---
 # IApp
 <!--
-source: API\3.2.0\DependencyInjection\IApp.md
+source: api\latest\DependencyInjection\IApp.md
 -->
 
 ## IApp
@@ -2904,7 +2904,7 @@ Usage: `app`.
 ---
 # IInjectable
 <!--
-source: API\3.2.0\DependencyInjection\IInjectable.md
+source: api\latest\DependencyInjection\IInjectable.md
 -->
 
 ## IInjectable
@@ -2914,7 +2914,7 @@ source: API\3.2.0\DependencyInjection\IInjectable.md
 ---
 # IProfileManager
 <!--
-source: API\3.2.0\DependencyInjection\IProfileManager.md
+source: api\latest\DependencyInjection\IProfileManager.md
 -->
 
 ## IProfileManager
@@ -2949,7 +2949,7 @@ Manages the current profile.
 ---
 # IProjectSettings
 <!--
-source: API\3.2.0\DependencyInjection\IProjectSettings.md
+source: api\latest\DependencyInjection\IProjectSettings.md
 -->
 
 ## IProjectSettings
@@ -2989,7 +2989,7 @@ May not be available in `[InitializeOnLoad]` and similar, use [Action)](https://
 ---
 # IRuntime
 <!--
-source: API\3.2.0\DependencyInjection\IRuntime.md
+source: api\latest\DependencyInjection\IRuntime.md
 -->
 
 ## IRuntime
@@ -3000,7 +3000,7 @@ Manages runtime functionality for Advanced Scene Manager such as open scenes and
 ---
 # ISceneManager
 <!--
-source: API\3.2.0\DependencyInjection\ISceneManager.md
+source: api\latest\DependencyInjection\ISceneManager.md
 -->
 
 ## ISceneManager
@@ -3078,7 +3078,7 @@ Manages runtime functionality for Advanced Scene Manager such as open scenes and
 ---
 # ASMUtilityFunction
 <!--
-source: API\3.2.0\Editor\UI\ASMUtilityFunction.md
+source: api\latest\Editor\UI\ASMUtilityFunction.md
 -->
 
 ## ASMUtilityFunction
@@ -3107,7 +3107,7 @@ Base class for ASM utility functions available in the editor UI.
 ---
 # ASMWindow
 <!--
-source: API\3.2.0\Editor\UI\ASMWindow.md
+source: api\latest\Editor\UI\ASMWindow.md
 -->
 
 ## ASMWindow
@@ -3140,7 +3140,7 @@ Only available in the editor.
 ---
 # ASMWindowElementAttribute
 <!--
-source: API\3.2.0\Editor\UI\ASMWindowElementAttribute.md
+source: api\latest\Editor\UI\ASMWindowElementAttribute.md
 -->
 
 ## ASMWindowElementAttribute
@@ -3179,7 +3179,7 @@ When specified on a class it should inherit `ViewModel`.
 ---
 # DragReferenceManipulator
 <!--
-source: API\3.2.0\Editor\UI\DragReferenceManipulator.md
+source: api\latest\Editor\UI\DragReferenceManipulator.md
 -->
 
 ## DragReferenceManipulator
@@ -3193,7 +3193,7 @@ Only available in editor.
 ---
 # ElementLocation
 <!--
-source: API\3.2.0\Editor\UI\ElementLocation.md
+source: api\latest\Editor\UI\ElementLocation.md
 -->
 
 ## ElementLocation
@@ -3224,7 +3224,7 @@ Specifies location for a custom element in the ASM window.
 ---
 # Notification
 <!--
-source: API\3.2.0\Editor\UI\Notification.md
+source: api\latest\Editor\UI\Notification.md
 -->
 
 ## Notification
@@ -3254,7 +3254,7 @@ Represents a notification to be displayed.
 ---
 # NotificationImportance
 <!--
-source: API\3.2.0\Editor\UI\NotificationImportance.md
+source: api\latest\Editor\UI\NotificationImportance.md
 -->
 
 ## NotificationImportance
@@ -3280,7 +3280,7 @@ Specifies the importance of a notification.
 ---
 # NotificationKind
 <!--
-source: API\3.2.0\Editor\UI\NotificationKind.md
+source: api\latest\Editor\UI\NotificationKind.md
 -->
 
 ## NotificationKind
@@ -3311,7 +3311,7 @@ Only available in the editor.
 ---
 # UIElementUtility
 <!--
-source: API\3.2.0\Editor\UI\UIElementUtility.md
+source: api\latest\Editor\UI\UIElementUtility.md
 -->
 
 ## UIElementUtility
@@ -3328,7 +3328,7 @@ Provides utility methods for working with `VisualElement`.
 ---
 # AssetDatabaseUtility
 <!--
-source: API\3.2.0\Editor\Utility\AssetDatabaseUtility.md
+source: api\latest\Editor\Utility\AssetDatabaseUtility.md
 -->
 
 ## AssetDatabaseUtility
@@ -3356,7 +3356,7 @@ Only available in the editor.
 ---
 # BuildUtility
 <!--
-source: API\3.2.0\Editor\Utility\BuildUtility.md
+source: api\latest\Editor\Utility\BuildUtility.md
 -->
 
 ## BuildUtility
@@ -3392,7 +3392,7 @@ Only available in editor.
 ---
 # CodeEditorUtility
 <!--
-source: API\3.2.0\Editor\Utility\CodeEditorUtility.md
+source: api\latest\Editor\Utility\CodeEditorUtility.md
 -->
 
 ## CodeEditorUtility
@@ -3410,7 +3410,7 @@ Provides utility methods for opening the code editor on a method.
 ---
 # HierarchyGameObjectGUI
 <!--
-source: API\3.2.0\Editor\Utility\HierarchyGameObjectGUI.md
+source: api\latest\Editor\Utility\HierarchyGameObjectGUI.md
 -->
 
 ## HierarchyGameObjectGUI
@@ -3428,7 +3428,7 @@ source: API\3.2.0\Editor\Utility\HierarchyGameObjectGUI.md
 ---
 # HierarchyGUIUtility
 <!--
-source: API\3.2.0\Editor\Utility\HierarchyGUIUtility.md
+source: api\latest\Editor\Utility\HierarchyGUIUtility.md
 -->
 
 ## HierarchyGUIUtility
@@ -3459,7 +3459,7 @@ Only available in editor.
 ---
 # HierarchySceneGUI
 <!--
-source: API\3.2.0\Editor\Utility\HierarchySceneGUI.md
+source: api\latest\Editor\Utility\HierarchySceneGUI.md
 -->
 
 ## HierarchySceneGUI
@@ -3477,7 +3477,7 @@ source: API\3.2.0\Editor\Utility\HierarchySceneGUI.md
 ---
 # LockUtility
 <!--
-source: API\3.2.0\Editor\Utility\LockUtility.md
+source: api\latest\Editor\Utility\LockUtility.md
 -->
 
 ## LockUtility
@@ -3499,7 +3499,7 @@ Only modification from within unity is prevented.
 ---
 # LogEntry
 <!--
-source: API\3.2.0\Editor\Utility\LogEntry.md
+source: api\latest\Editor\Utility\LogEntry.md
 -->
 
 ## LogEntry
@@ -3527,7 +3527,7 @@ source: API\3.2.0\Editor\Utility\LogEntry.md
 ---
 # PostBuildEventArgs
 <!--
-source: API\3.2.0\Editor\Utility\PostBuildEventArgs.md
+source: api\latest\Editor\Utility\PostBuildEventArgs.md
 -->
 
 ## PostBuildEventArgs
@@ -3556,7 +3556,7 @@ source: API\3.2.0\Editor\Utility\PostBuildEventArgs.md
 ---
 # Reason
 <!--
-source: API\3.2.0\Editor\Utility\Reason.md
+source: api\latest\Editor\Utility\Reason.md
 -->
 
 ## Reason
@@ -3582,7 +3582,7 @@ source: API\3.2.0\Editor\Utility\Reason.md
 ---
 # CollectionOpen
 <!--
-source: API\3.2.0\ExampleScripts\CollectionOpen.md
+source: api\latest\ExampleScripts\CollectionOpen.md
 -->
 
 ## CollectionOpen
@@ -3609,7 +3609,7 @@ Contains examples for opening collections.
 ---
 # DoActionsWithLoadingScreen
 <!--
-source: API\3.2.0\ExampleScripts\DoActionsWithLoadingScreen.md
+source: api\latest\ExampleScripts\DoActionsWithLoadingScreen.md
 -->
 
 ## DoActionsWithLoadingScreen
@@ -3633,7 +3633,7 @@ Contains examples for doing `Action` with loading screen.
 ---
 # SceneLoader
 <!--
-source: API\3.2.0\ExampleScripts\SceneLoader.md
+source: api\latest\ExampleScripts\SceneLoader.md
 -->
 
 ## SceneLoader
@@ -3644,7 +3644,7 @@ Contains examples of how to override scene loading.
 ---
 # SceneOpen
 <!--
-source: API\3.2.0\ExampleScripts\SceneOpen.md
+source: api\latest\ExampleScripts\SceneOpen.md
 -->
 
 ## SceneOpen
@@ -3671,7 +3671,7 @@ Contains examples for opening scenes.
 ---
 # ScenePreload
 <!--
-source: API\3.2.0\ExampleScripts\ScenePreload.md
+source: api\latest\ExampleScripts\ScenePreload.md
 -->
 
 ## ScenePreload
@@ -3710,7 +3710,7 @@ Contains examples for preloading scenes.
 ---
 # IFadeLoadingScreen
 <!--
-source: API\3.2.0\Loading\IFadeLoadingScreen.md
+source: api\latest\Loading\IFadeLoadingScreen.md
 -->
 
 ## IFadeLoadingScreen
@@ -3728,7 +3728,7 @@ Used to pass arguments from [Color})](https://learn.microsoft.com/dotnet/api/m:a
 ---
 # ILoadProgressData
 <!--
-source: API\3.2.0\Loading\ILoadProgressData.md
+source: api\latest\Loading\ILoadProgressData.md
 -->
 
 ## ILoadProgressData
@@ -3745,7 +3745,7 @@ Represents progress in ASM. Used for `ILoadProgressListener`.
 ---
 # ILoadProgressListener
 <!--
-source: API\3.2.0\Loading\ILoadProgressListener.md
+source: api\latest\Loading\ILoadProgressListener.md
 -->
 
 ## ILoadProgressListener
@@ -3762,7 +3762,7 @@ Represents a listener for when progress changes.
 ---
 # LoadingScreen
 <!--
-source: API\3.2.0\Loading\LoadingScreen.md
+source: api\latest\Loading\LoadingScreen.md
 -->
 
 ## LoadingScreen
@@ -3790,7 +3790,7 @@ A class that contains callbacks for loading screens.
 ---
 # LoadingScreenAttribute
 <!--
-source: API\3.2.0\Loading\LoadingScreenAttribute.md
+source: api\latest\Loading\LoadingScreenAttribute.md
 -->
 
 ## LoadingScreenAttribute
@@ -3801,7 +3801,7 @@ Defines a loading screen.
 ---
 # LoadingScreenAttributeBase
 <!--
-source: API\3.2.0\Loading\LoadingScreenAttributeBase.md
+source: api\latest\Loading\LoadingScreenAttributeBase.md
 -->
 
 ## LoadingScreenAttributeBase
@@ -3822,7 +3822,7 @@ Defines the base for a loading screen discoverable.
 ---
 # LoadingScreenBase
 <!--
-source: API\3.2.0\Loading\LoadingScreenBase.md
+source: api\latest\Loading\LoadingScreenBase.md
 -->
 
 ## LoadingScreenBase
@@ -3862,7 +3862,7 @@ This will automatically register canvas with `CanvasSortOrderUtility`, to automa
 ---
 # LoadingScreenConfigBag
 <!--
-source: API\3.2.0\Loading\LoadingScreenConfigBag.md
+source: api\latest\Loading\LoadingScreenConfigBag.md
 -->
 
 ## LoadingScreenConfigBag
@@ -3881,7 +3881,7 @@ Base class for loading screen config bags.
 ---
 # LoadingScreenReference
 <!--
-source: API\3.2.0\Loading\LoadingScreenReference.md
+source: api\latest\Loading\LoadingScreenReference.md
 -->
 
 ## LoadingScreenReference
@@ -3913,7 +3913,7 @@ Represents a loading screen.
 ---
 # LoadingScreenViewModel
 <!--
-source: API\3.2.0\Loading\LoadingScreenViewModel.md
+source: api\latest\Loading\LoadingScreenViewModel.md
 -->
 
 ## LoadingScreenViewModel
@@ -3937,7 +3937,7 @@ The base class for loading screen view models.
 ---
 # LoadingScreenViewModel_Of_T
 <!--
-source: API\3.2.0\Loading\LoadingScreenViewModel_Of_T.md
+source: api\latest\Loading\LoadingScreenViewModel_Of_T.md
 -->
 
 ## LoadingScreenViewModel`1
@@ -3954,7 +3954,7 @@ The base class for loading screen view models.
 ---
 # MessageLoadProgressData
 <!--
-source: API\3.2.0\Loading\MessageLoadProgressData.md
+source: api\latest\Loading\MessageLoadProgressData.md
 -->
 
 ## MessageLoadProgressData
@@ -3978,7 +3978,7 @@ An implementation of `ILoadProgressData` that provides a string message.
 ---
 # ProgressScope
 <!--
-source: API\3.2.0\Loading\ProgressScope.md
+source: api\latest\Loading\ProgressScope.md
 -->
 
 ## ProgressScope
@@ -4014,7 +4014,7 @@ Represents a listener for progress that can calculate the total progress of a sc
 ---
 # SceneLoadProgressData
 <!--
-source: API\3.2.0\Loading\SceneLoadProgressData.md
+source: api\latest\Loading\SceneLoadProgressData.md
 -->
 
 ## SceneLoadProgressData
@@ -4040,7 +4040,7 @@ The default implementation of `ILoadProgressData`, used by ASM in most cases.
 ---
 # SerializableLoadingScreenReference
 <!--
-source: API\3.2.0\Loading\SerializableLoadingScreenReference.md
+source: api\latest\Loading\SerializableLoadingScreenReference.md
 -->
 
 ## SerializableLoadingScreenReference
@@ -4058,7 +4058,7 @@ source: API\3.2.0\Loading\SerializableLoadingScreenReference.md
 ---
 # SplashScreen
 <!--
-source: API\3.2.0\Loading\SplashScreen.md
+source: api\latest\Loading\SplashScreen.md
 -->
 
 ## SplashScreen
@@ -4080,7 +4080,7 @@ A class that contains callbacks for splash screens.
 ---
 # SplashScreenAttribute
 <!--
-source: API\3.2.0\Loading\SplashScreenAttribute.md
+source: api\latest\Loading\SplashScreenAttribute.md
 -->
 
 ## SplashScreenAttribute
@@ -4091,7 +4091,7 @@ Defines a splash screen.
 ---
 # ASMSplashScreen
 <!--
-source: API\3.2.0\Loading\UI\ASMSplashScreen.md
+source: api\latest\Loading\UI\ASMSplashScreen.md
 -->
 
 ## ASMSplashScreen
@@ -4111,7 +4111,7 @@ A default splash screen.
 ---
 # ConfigBag
 <!--
-source: API\3.2.0\Loading\UI\ConfigBag.md
+source: api\latest\Loading\UI\ConfigBag.md
 -->
 
 ## ConfigBag
@@ -4129,7 +4129,7 @@ source: API\3.2.0\Loading\UI\ConfigBag.md
 ---
 # FadeLoadingScreen
 <!--
-source: API\3.2.0\Loading\UI\FadeLoadingScreen.md
+source: api\latest\Loading\UI\FadeLoadingScreen.md
 -->
 
 ## FadeLoadingScreen
@@ -4149,7 +4149,7 @@ A default loading screen.
 ---
 # FadeSplashScreen
 <!--
-source: API\3.2.0\Loading\UI\FadeSplashScreen.md
+source: api\latest\Loading\UI\FadeSplashScreen.md
 -->
 
 ## FadeSplashScreen
@@ -4169,7 +4169,7 @@ A default splash screen.
 ---
 # Log
 <!--
-source: API\3.2.0\Log.md
+source: api\latest\Log.md
 -->
 
 ## Log
@@ -4201,7 +4201,7 @@ Only available in #ASM_DEV.
 ---
 # LogTimer
 <!--
-source: API\3.2.0\LogTimer.md
+source: api\latest\LogTimer.md
 -->
 
 ## LogTimer
@@ -4223,7 +4223,7 @@ source: API\3.2.0\LogTimer.md
 ---
 # ASMModel
 <!--
-source: API\3.2.0\Models\ASMModel.md
+source: api\latest\Models\ASMModel.md
 -->
 
 ## ASMModel
@@ -4261,7 +4261,7 @@ Serves as the abstract base class for models that can be opened, closed, and pre
 ---
 # ASMModelExtensions
 <!--
-source: API\3.2.0\Models\ASMModelExtensions.md
+source: api\latest\Models\ASMModelExtensions.md
 -->
 
 ## ASMModelExtensions
@@ -4293,7 +4293,7 @@ Provides utility methods for working with `SceneCollection`.
 ---
 # ASMSceneHelper
 <!--
-source: API\3.2.0\Models\ASMSceneHelper.md
+source: api\latest\Models\ASMSceneHelper.md
 -->
 
 ## ASMSceneHelper
@@ -4364,7 +4364,7 @@ Provides helper methods for opening, closing, and managing scenes and collection
 ---
 # ASMSettings
 <!--
-source: API\3.2.0\Models\ASMSettings.md
+source: api\latest\Models\ASMSettings.md
 -->
 
 ## ASMSettings
@@ -4416,7 +4416,7 @@ Manages initialization, as this `ScriptableObject` is core to ASM, and nothing w
 ---
 # ASMUserSettings
 <!--
-source: API\3.2.0\Models\ASMUserSettings.md
+source: api\latest\Models\ASMUserSettings.md
 -->
 
 ## ASMUserSettings
@@ -4471,7 +4471,7 @@ Only available in editor.
 ---
 # AutoSceneEntry
 <!--
-source: API\3.2.0\Models\AutoSceneEntry.md
+source: api\latest\Models\AutoSceneEntry.md
 -->
 
 ## AutoSceneEntry
@@ -4507,7 +4507,7 @@ using AdvancedSceneManager.Utility;
 ---
 # Blocklist
 <!--
-source: API\3.2.0\Models\Blocklist.md
+source: api\latest\Models\Blocklist.md
 -->
 
 ## Blocklist
@@ -4539,7 +4539,7 @@ Represents a blocklist.
 ---
 # ButtonData
 <!--
-source: API\3.2.0\Models\ButtonData.md
+source: api\latest\Models\ButtonData.md
 -->
 
 ## ButtonData
@@ -4564,7 +4564,7 @@ source: API\3.2.0\Models\ButtonData.md
 ---
 # CustomData
 <!--
-source: API\3.2.0\Models\CustomData.md
+source: api\latest\Models\CustomData.md
 -->
 
 ## CustomData
@@ -4574,7 +4574,7 @@ source: API\3.2.0\Models\CustomData.md
 ---
 # CustomDataDictionary_Of_TKey_TValue
 <!--
-source: API\3.2.0\Models\CustomDataDictionary_Of_TKey_TValue.md
+source: api\latest\Models\CustomDataDictionary_Of_TKey_TValue.md
 -->
 
 ## CustomDataDictionary`2
@@ -4601,7 +4601,7 @@ source: API\3.2.0\Models\CustomDataDictionary_Of_TKey_TValue.md
 ---
 # DynamicCollection
 <!--
-source: API\3.2.0\Models\DynamicCollection.md
+source: api\latest\Models\DynamicCollection.md
 -->
 
 ## DynamicCollection
@@ -4636,7 +4636,7 @@ Represents a collection that can take a path and then gather all scenes within, 
 ---
 # DynamicCollectionBase_Of_T
 <!--
-source: API\3.2.0\Models\DynamicCollectionBase_Of_T.md
+source: api\latest\Models\DynamicCollectionBase_Of_T.md
 -->
 
 ## DynamicCollectionBase`1
@@ -4674,7 +4674,7 @@ Base class for dynamic collections.
 ---
 # AutoSceneOption
 <!--
-source: API\3.2.0\Models\Enums\AutoSceneOption.md
+source: api\latest\Models\Enums\AutoSceneOption.md
 -->
 
 ## AutoSceneOption
@@ -4703,7 +4703,7 @@ See also: ``
 ---
 # CollectionStartupOption
 <!--
-source: API\3.2.0\Models\Enums\CollectionStartupOption.md
+source: api\latest\Models\Enums\CollectionStartupOption.md
 -->
 
 ## CollectionStartupOption
@@ -4728,7 +4728,7 @@ Specifies what to do with a `SceneCollection` during startup.
 ---
 # EditorPersistentOption
 <!--
-source: API\3.2.0\Models\Enums\EditorPersistentOption.md
+source: api\latest\Models\Enums\EditorPersistentOption.md
 -->
 
 ## EditorPersistentOption
@@ -4753,7 +4753,7 @@ Specifies whatever a scene should be automatically opened outside of play-mode.
 ---
 # LoadingScreenUsage
 <!--
-source: API\3.2.0\Models\Enums\LoadingScreenUsage.md
+source: api\latest\Models\Enums\LoadingScreenUsage.md
 -->
 
 ## LoadingScreenUsage
@@ -4778,7 +4778,7 @@ Specifies what loading screen to use, if any.
 ---
 # LoadPriority
 <!--
-source: API\3.2.0\Models\Enums\LoadPriority.md
+source: api\latest\Models\Enums\LoadPriority.md
 -->
 
 ## LoadPriority
@@ -4805,7 +4805,7 @@ Priority of a thread.
 ---
 # SceneAutoTrackOutsideASMOption
 <!--
-source: API\3.2.0\Models\Enums\SceneAutoTrackOutsideASMOption.md
+source: api\latest\Models\Enums\SceneAutoTrackOutsideASMOption.md
 -->
 
 ## SceneAutoTrackOutsideASMOption
@@ -4831,7 +4831,7 @@ Specifies if ASM should auto track scenes that were loaded outside of ASM.
 ---
 # SceneImportOption
 <!--
-source: API\3.2.0\Models\Enums\SceneImportOption.md
+source: api\latest\Models\Enums\SceneImportOption.md
 -->
 
 ## SceneImportOption
@@ -4855,7 +4855,7 @@ Specifies how to scenes are imported.
 ---
 # SceneState
 <!--
-source: API\3.2.0\Models\Enums\SceneState.md
+source: api\latest\Models\Enums\SceneState.md
 -->
 
 ## SceneState
@@ -4884,7 +4884,7 @@ Specifies that state of a scene.
 ---
 # Events
 <!--
-source: API\3.2.0\Models\Events.md
+source: api\latest\Models\Events.md
 -->
 
 ## Events
@@ -4906,7 +4906,7 @@ source: API\3.2.0\Models\Events.md
 ---
 # IEquality
 <!--
-source: API\3.2.0\Models\IEquality.md
+source: api\latest\Models\IEquality.md
 -->
 
 ## IEquality
@@ -4916,7 +4916,7 @@ source: API\3.2.0\Models\IEquality.md
 ---
 # InputBinding
 <!--
-source: API\3.2.0\Models\InputBinding.md
+source: api\latest\Models\InputBinding.md
 -->
 
 ## InputBinding
@@ -4943,7 +4943,7 @@ Represents a input binding for InputSystem. Available even when InputSystem is u
 ---
 # InputBindingInteractionType
 <!--
-source: API\3.2.0\Models\InputBindingInteractionType.md
+source: api\latest\Models\InputBindingInteractionType.md
 -->
 
 ## InputBindingInteractionType
@@ -4969,7 +4969,7 @@ Specifies the interaction type to use for scene bindings.
 ---
 # InputButton
 <!--
-source: API\3.2.0\Models\InputButton.md
+source: api\latest\Models\InputButton.md
 -->
 
 ## InputButton
@@ -4993,7 +4993,7 @@ Specifies a input binding for use with InputSystem.
 ---
 # IASMModel
 <!--
-source: API\3.2.0\Models\Interfaces\IASMModel.md
+source: api\latest\Models\Interfaces\IASMModel.md
 -->
 
 ## IASMModel
@@ -5016,7 +5016,7 @@ Defines core members for ASM models.
 ---
 # IAssetsAPI
 <!--
-source: API\3.2.0\Models\Interfaces\IAssetsAPI.md
+source: api\latest\Models\Interfaces\IAssetsAPI.md
 -->
 
 ## IAssetsAPI
@@ -5047,7 +5047,7 @@ May not be available in `[InitializeOnLoad]` and similar, use [Action)](https://
 ---
 # IAssetsAPIDefaultScenes
 <!--
-source: API\3.2.0\Models\Interfaces\IAssetsAPIDefaultScenes.md
+source: api\latest\Models\Interfaces\IAssetsAPIDefaultScenes.md
 -->
 
 ## IAssetsAPIDefaultScenes
@@ -5085,7 +5085,7 @@ May not be available in `[InitializeOnLoad]` and similar, use [Action)](https://
 ---
 # IAutoScenes
 <!--
-source: API\3.2.0\Models\Interfaces\IAutoScenes.md
+source: api\latest\Models\Interfaces\IAutoScenes.md
 -->
 
 ## IAutoScenes
@@ -5111,7 +5111,7 @@ See also `AutoSceneUtility`.
 ---
 # IAutoScenes_Of_TKey_TOption
 <!--
-source: API\3.2.0\Models\Interfaces\IAutoScenes_Of_TKey_TOption.md
+source: api\latest\Models\Interfaces\IAutoScenes_Of_TKey_TOption.md
 -->
 
 ## IAutoScenes`2
@@ -5125,7 +5125,7 @@ See also `AutoSceneUtility`.
 ---
 # IEditableCollection
 <!--
-source: API\3.2.0\Models\Interfaces\IEditableCollection.md
+source: api\latest\Models\Interfaces\IEditableCollection.md
 -->
 
 ## IEditableCollection
@@ -5145,7 +5145,7 @@ Provides extension methods, see [Scene[])](https://learn.microsoft.com/dotnet/ap
 ---
 # IFindable
 <!--
-source: API\3.2.0\Models\Interfaces\IFindable.md
+source: api\latest\Models\Interfaces\IFindable.md
 -->
 
 ## IFindable
@@ -5165,7 +5165,7 @@ See also: `AssetSearchUtility`.
 ---
 # ILockable
 <!--
-source: API\3.2.0\Models\Interfaces\ILockable.md
+source: api\latest\Models\Interfaces\ILockable.md
 -->
 
 ## ILockable
@@ -5192,7 +5192,7 @@ Available, but no effect in build.
 ---
 # IOpenable
 <!--
-source: API\3.2.0\Models\Interfaces\IOpenable.md
+source: api\latest\Models\Interfaces\IOpenable.md
 -->
 
 ## IOpenable
@@ -5223,7 +5223,7 @@ Defines members for openable assets.
 ---
 # IOpenableCollection
 <!--
-source: API\3.2.0\Models\Interfaces\IOpenableCollection.md
+source: api\latest\Models\Interfaces\IOpenableCollection.md
 -->
 
 ## IOpenableCollection
@@ -5241,7 +5241,7 @@ Defines members for openable collections.
 ---
 # IOpenableCollection_Of_T
 <!--
-source: API\3.2.0\Models\Interfaces\IOpenableCollection_Of_T.md
+source: api\latest\Models\Interfaces\IOpenableCollection_Of_T.md
 -->
 
 ## IOpenableCollection`1
@@ -5259,7 +5259,7 @@ Defines members for openable collections.
 ---
 # IOpenableScene
 <!--
-source: API\3.2.0\Models\Interfaces\IOpenableScene.md
+source: api\latest\Models\Interfaces\IOpenableScene.md
 -->
 
 ## IOpenableScene
@@ -5281,7 +5281,7 @@ Defines members for openable scenes.
 ---
 # IOpenableScene_Of_T
 <!--
-source: API\3.2.0\Models\Interfaces\IOpenableScene_Of_T.md
+source: api\latest\Models\Interfaces\IOpenableScene_Of_T.md
 -->
 
 ## IOpenableScene`1
@@ -5303,7 +5303,7 @@ Defines members for openable scenes.
 ---
 # IOpenable_Of_T
 <!--
-source: API\3.2.0\Models\Interfaces\IOpenable_Of_T.md
+source: api\latest\Models\Interfaces\IOpenable_Of_T.md
 -->
 
 ## IOpenable`1
@@ -5327,7 +5327,7 @@ Defines members for openable assets.
 ---
 # IPreloadable
 <!--
-source: API\3.2.0\Models\Interfaces\IPreloadable.md
+source: api\latest\Models\Interfaces\IPreloadable.md
 -->
 
 ## IPreloadable
@@ -5355,7 +5355,7 @@ Defines members for assets that support preloading.
 ---
 # IScene
 <!--
-source: API\3.2.0\Models\Interfaces\IScene.md
+source: api\latest\Models\Interfaces\IScene.md
 -->
 
 ## IScene
@@ -5375,7 +5375,7 @@ Defines some core properties for scenes.
 ---
 # ISceneCollection
 <!--
-source: API\3.2.0\Models\Interfaces\ISceneCollection.md
+source: api\latest\Models\Interfaces\ISceneCollection.md
 -->
 
 ## ISceneCollection
@@ -5402,7 +5402,7 @@ Defines some core properties for scene collections.
 ---
 # ISceneCollection_Of_T
 <!--
-source: API\3.2.0\Models\Interfaces\ISceneCollection_Of_T.md
+source: api\latest\Models\Interfaces\ISceneCollection_Of_T.md
 -->
 
 ## ISceneCollection`1
@@ -5426,7 +5426,7 @@ Defines some core properties for scene collections.
 ---
 # ISettingsAPI
 <!--
-source: API\3.2.0\Models\Interfaces\ISettingsAPI.md
+source: api\latest\Models\Interfaces\ISettingsAPI.md
 -->
 
 ## ISettingsAPI
@@ -5448,7 +5448,7 @@ May not be available in `[InitializeOnLoad]` and similar, use [Action)](https://
 ---
 # ASMModelBase
 <!--
-source: API\3.2.0\Models\Internal\ASMModelBase.md
+source: api\latest\Models\Internal\ASMModelBase.md
 -->
 
 ## ASMModelBase
@@ -5492,7 +5492,7 @@ A base class for `Profile`, `SceneCollection` and `Scene`.
 ---
 # Profile
 <!--
-source: API\3.2.0\Models\Profile.md
+source: api\latest\Models\Profile.md
 -->
 
 ## Profile
@@ -5577,7 +5577,7 @@ A profile for ASM, contains settings and collections.
 ---
 # Scene
 <!--
-source: API\3.2.0\Models\Scene.md
+source: api\latest\Models\Scene.md
 -->
 
 ## Scene
@@ -5721,7 +5721,7 @@ t:AdvancedSceneManager.Models.Scene
 ---
 # SceneCollection
 <!--
-source: API\3.2.0\Models\SceneCollection.md
+source: api\latest\Models\SceneCollection.md
 -->
 
 ## SceneCollection
@@ -5825,7 +5825,7 @@ t:AdvancedSceneManager.Models.SceneCollection
 ---
 # SceneCollectionTemplate
 <!--
-source: API\3.2.0\Models\SceneCollectionTemplate.md
+source: api\latest\Models\SceneCollectionTemplate.md
 -->
 
 ## SceneCollectionTemplate
@@ -5856,7 +5856,7 @@ Represents a template for a `SceneCollection`.
 ---
 # SceneData
 <!--
-source: API\3.2.0\Models\SceneData.md
+source: api\latest\Models\SceneData.md
 -->
 
 ## SceneData
@@ -5866,7 +5866,7 @@ source: API\3.2.0\Models\SceneData.md
 ---
 # StandaloneCollection
 <!--
-source: API\3.2.0\Models\StandaloneCollection.md
+source: api\latest\Models\StandaloneCollection.md
 -->
 
 ## StandaloneCollection
@@ -5888,7 +5888,7 @@ Usage: `standaloneScenes`.
 ---
 # UpdateInterval
 <!--
-source: API\3.2.0\Models\UpdateInterval.md
+source: api\latest\Models\UpdateInterval.md
 -->
 
 ## UpdateInterval
@@ -5919,7 +5919,7 @@ Specifies an interval for how often to check for ASM updates.
 ---
 # BuildOption
 <!--
-source: API\3.2.0\Models\Utility\BuildOption.md
+source: api\latest\Models\Utility\BuildOption.md
 -->
 
 ## BuildOption
@@ -5950,7 +5950,7 @@ Represents an enabled state depending on build context (editor, dev build, non-d
 ---
 # Dict_Of_T
 <!--
-source: API\3.2.0\Models\Utility\Dict_Of_T.md
+source: api\latest\Models\Utility\Dict_Of_T.md
 -->
 
 ## Dict
@@ -5960,7 +5960,7 @@ source: API\3.2.0\Models\Utility\Dict_Of_T.md
 ---
 # ProfileDependentCollection
 <!--
-source: API\3.2.0\Models\Utility\ProfileDependentCollection.md
+source: api\latest\Models\Utility\ProfileDependentCollection.md
 -->
 
 ## ProfileDependentCollection
@@ -6004,7 +6004,7 @@ Represents a `SceneCollection` that changes depending on the active `Profile`.
 ---
 # ProfileDependentScene
 <!--
-source: API\3.2.0\Models\Utility\ProfileDependentScene.md
+source: api\latest\Models\Utility\ProfileDependentScene.md
 -->
 
 ## ProfileDependentScene
@@ -6051,7 +6051,7 @@ Represents a `Scene` that changes depending on the active `Profile`.
 ---
 # ProfileDependent_Of_T
 <!--
-source: API\3.2.0\Models\Utility\ProfileDependent_Of_T.md
+source: api\latest\Models\Utility\ProfileDependent_Of_T.md
 -->
 
 ## ProfileDependent`1
@@ -6083,7 +6083,7 @@ Specifies a `T` that changes depending on active `Profile`.
 ---
 # BlacklistAttribute
 <!--
-source: API\3.2.0\SceneImport\BlacklistAttribute.md
+source: api\latest\SceneImport\BlacklistAttribute.md
 -->
 
 ## BlacklistAttribute
@@ -6100,7 +6100,7 @@ Specifies a path that should be blacklisted in ASM. Scenes matching path will no
 ---
 # BlocklistAttribute
 <!--
-source: API\3.2.0\SceneImport\BlocklistAttribute.md
+source: api\latest\SceneImport\BlocklistAttribute.md
 -->
 
 ## BlocklistAttribute
@@ -6118,7 +6118,7 @@ Specifies a path that should be blocklisted in ASM.
 ---
 # BlocklistUtility
 <!--
-source: API\3.2.0\SceneImport\BlocklistUtility.md
+source: api\latest\SceneImport\BlocklistUtility.md
 -->
 
 ## BlocklistUtility
@@ -6146,7 +6146,7 @@ Provides utility functions for managing blocklists.
 ---
 # SceneImportUtility
 <!--
-source: API\3.2.0\SceneImport\SceneImportUtility.md
+source: api\latest\SceneImport\SceneImportUtility.md
 -->
 
 ## SceneImportUtility
@@ -6188,7 +6188,7 @@ Only available in editor.
 ---
 # StringExtensions
 <!--
-source: API\3.2.0\SceneImport\StringExtensions.md
+source: api\latest\SceneImport\StringExtensions.md
 -->
 
 ## StringExtensions
@@ -6212,7 +6212,7 @@ source: API\3.2.0\SceneImport\StringExtensions.md
 ---
 # WhitelistAttribute
 <!--
-source: API\3.2.0\SceneImport\WhitelistAttribute.md
+source: api\latest\SceneImport\WhitelistAttribute.md
 -->
 
 ## WhitelistAttribute
@@ -6229,7 +6229,7 @@ Specifies a path that should be whitelisted in ASM. Only scenes matching path (o
 ---
 # SceneManager
 <!--
-source: API\3.2.0\SceneManager.md
+source: api\latest\SceneManager.md
 -->
 
 ## SceneManager
@@ -6267,7 +6267,7 @@ The central Advanced Scene Manager API. Provides access to the most important th
 ---
 # IDiscoverablesService
 <!--
-source: API\3.2.0\Services\IDiscoverablesService.md
+source: api\latest\Services\IDiscoverablesService.md
 -->
 
 ## IDiscoverablesService
@@ -6296,7 +6296,7 @@ Allows for centralized management, optimized discovery, and caching.
 ---
 # IServiceContainer
 <!--
-source: API\3.2.0\Services\IServiceContainer.md
+source: api\latest\Services\IServiceContainer.md
 -->
 
 ## IServiceContainer
@@ -6325,7 +6325,7 @@ Accessible via:
 ---
 # RegisterServiceAttribute
 <!--
-source: API\3.2.0\Services\RegisterServiceAttribute.md
+source: api\latest\Services\RegisterServiceAttribute.md
 -->
 
 ## RegisterServiceAttribute
@@ -6343,7 +6343,7 @@ Registers a service with the service container.
 ---
 # Service_Of_T
 <!--
-source: API\3.2.0\Services\Service_Of_T.md
+source: api\latest\Services\Service_Of_T.md
 -->
 
 ## Service`1
@@ -6360,7 +6360,7 @@ Resolves a service lazily.
 ---
 # Service_ViewModelBase
 <!--
-source: API\3.2.0\Services\Service_ViewModelBase.md
+source: api\latest\Services\Service_ViewModelBase.md
 -->
 
 ## Service_ViewModelBase
@@ -6378,7 +6378,7 @@ Shared base class for services and view models.
 ---
 # SessionStateHelper
 <!--
-source: API\3.2.0\Services\SessionStateHelper.md
+source: api\latest\Services\SessionStateHelper.md
 -->
 
 ## SessionStateHelper
@@ -6398,7 +6398,7 @@ A helper wrapper for `SessionState`, uses type name + property name for naming.
 ---
 # IPopup
 <!--
-source: API\3.2.0\UI\IPopup.md
+source: api\latest\UI\IPopup.md
 -->
 
 ## IPopup
@@ -6409,7 +6409,7 @@ Identifies a view model as a popup in the ASM window.
 ---
 # ISettingsPage
 <!--
-source: API\3.2.0\UI\ISettingsPage.md
+source: api\latest\UI\ISettingsPage.md
 -->
 
 ## ISettingsPage
@@ -6420,7 +6420,7 @@ Identifies a view model as a settings page in the ASM window.
 ---
 # SerializableViewModelData
 <!--
-source: API\3.2.0\UI\SerializableViewModelData.md
+source: api\latest\UI\SerializableViewModelData.md
 -->
 
 ## SerializableViewModelData
@@ -6441,7 +6441,7 @@ Serializable data for view model state persistence.
 ---
 # ViewModel
 <!--
-source: API\3.2.0\UI\ViewModel.md
+source: api\latest\UI\ViewModel.md
 -->
 
 ## ViewModel
@@ -6499,7 +6499,7 @@ Only available in the editor.
 ---
 # ViewModelContext
 <!--
-source: API\3.2.0\UI\ViewModelContext.md
+source: api\latest\UI\ViewModelContext.md
 -->
 
 ## ViewModelContext
@@ -6529,7 +6529,7 @@ Provides info about where a view model is hosted at in the ASM window.
 ---
 # ASMFilePathAttribute
 <!--
-source: API\3.2.0\Utility\ASMFilePathAttribute.md
+source: api\latest\Utility\ASMFilePathAttribute.md
 -->
 
 ## ASMFilePathAttribute
@@ -6546,7 +6546,7 @@ A `FilePathAttribute` that supports build.
 ---
 # ASMScriptableSingleton_Of_T
 <!--
-source: API\3.2.0\Utility\ASMScriptableSingleton_Of_T.md
+source: api\latest\Utility\ASMScriptableSingleton_Of_T.md
 -->
 
 ## ASMScriptableSingleton`1
@@ -6579,7 +6579,7 @@ A `ScriptableSingleton`1` that supports build.
 ---
 # AssetSearchUtility
 <!--
-source: API\3.2.0\Utility\AssetSearchUtility.md
+source: api\latest\Utility\AssetSearchUtility.md
 -->
 
 ## AssetSearchUtility
@@ -6601,7 +6601,7 @@ Provides utility functions for searching ASM assets.
 ---
 # Async_Of_T
 <!--
-source: API\3.2.0\Utility\Async_Of_T.md
+source: api\latest\Utility\Async_Of_T.md
 -->
 
 ## Async`1
@@ -6637,7 +6637,7 @@ Represents a async operation that returns a value.
 ---
 # AutoSceneEventArgs
 <!--
-source: API\3.2.0\Utility\AutoSceneEventArgs.md
+source: api\latest\Utility\AutoSceneEventArgs.md
 -->
 
 ## AutoSceneEventArgs
@@ -6667,7 +6667,7 @@ Usage:
 ---
 # AutoSceneHandlerAttribute
 <!--
-source: API\3.2.0\Utility\AutoSceneHandlerAttribute.md
+source: api\latest\Utility\AutoSceneHandlerAttribute.md
 -->
 
 ## AutoSceneHandlerAttribute
@@ -6700,7 +6700,7 @@ Usage:
 ---
 # AutoSceneUtility
 <!--
-source: API\3.2.0\Utility\AutoSceneUtility.md
+source: api\latest\Utility\AutoSceneUtility.md
 -->
 
 ## AutoSceneUtility
@@ -6719,7 +6719,7 @@ Contains utility methods related to auto scenes.
 ---
 # CanvasSortOrderUtility
 <!--
-source: API\3.2.0\Utility\CanvasSortOrderUtility.md
+source: api\latest\Utility\CanvasSortOrderUtility.md
 -->
 
 ## CanvasSortOrderUtility
@@ -6747,7 +6747,7 @@ An utility class to manage sort order on canvases.
 ---
 # CoroutineAwaiter
 <!--
-source: API\3.2.0\Utility\CoroutineAwaiter.md
+source: api\latest\Utility\CoroutineAwaiter.md
 -->
 
 ## CoroutineAwaiter
@@ -6774,7 +6774,7 @@ See also [IEnumerator)](https://learn.microsoft.com/dotnet/api/m:advancedscenema
 ---
 # CoroutineUtility
 <!--
-source: API\3.2.0\Utility\CoroutineUtility.md
+source: api\latest\Utility\CoroutineUtility.md
 -->
 
 ## CoroutineUtility
@@ -6812,7 +6812,7 @@ An utility class that helps with running coroutines detached from `MonoBehaviour
 ---
 # CrossSceneDebugger
 <!--
-source: API\3.2.0\Utility\CrossSceneReferences\CrossSceneDebugger.md
+source: api\latest\Utility\CrossSceneReferences\CrossSceneDebugger.md
 -->
 
 ## CrossSceneDebugger
@@ -6829,7 +6829,7 @@ A window for debugging cross-scene references.
 ---
 # CrossSceneReference
 <!--
-source: API\3.2.0\Utility\CrossSceneReferences\CrossSceneReference.md
+source: api\latest\Utility\CrossSceneReferences\CrossSceneReference.md
 -->
 
 ## CrossSceneReference
@@ -6855,7 +6855,7 @@ Represents a reference between two objects in different scenes.
 ---
 # CrossSceneReferenceUtility
 <!--
-source: API\3.2.0\Utility\CrossSceneReferences\CrossSceneReferenceUtility.md
+source: api\latest\Utility\CrossSceneReferences\CrossSceneReferenceUtility.md
 -->
 
 ## CrossSceneReferenceUtility
@@ -6886,7 +6886,7 @@ An utility for saving and restoring cross-scene references.
 ---
 # ObjectReference
 <!--
-source: API\3.2.0\Utility\CrossSceneReferences\ObjectReference.md
+source: api\latest\Utility\CrossSceneReferences\ObjectReference.md
 -->
 
 ## ObjectReference
@@ -6942,7 +6942,7 @@ Represents a reference to an object within a scene.
 ---
 # ResolvedCrossReference
 <!--
-source: API\3.2.0\Utility\CrossSceneReferences\ResolvedCrossReference.md
+source: api\latest\Utility\CrossSceneReferences\ResolvedCrossReference.md
 -->
 
 ## ResolvedCrossReference
@@ -6968,7 +6968,7 @@ Represents a resolved reference.
 ---
 # ResolvedReference
 <!--
-source: API\3.2.0\Utility\CrossSceneReferences\ResolvedReference.md
+source: api\latest\Utility\CrossSceneReferences\ResolvedReference.md
 -->
 
 ## ResolvedReference
@@ -7001,7 +7001,7 @@ Represents a resolved `ObjectReference`.
 ---
 # ResolveStatus
 <!--
-source: API\3.2.0\Utility\CrossSceneReferences\ResolveStatus.md
+source: api\latest\Utility\CrossSceneReferences\ResolveStatus.md
 -->
 
 ## ResolveStatus
@@ -7032,7 +7032,7 @@ Specifies the result of a resolve.
 ---
 # SceneStatus
 <!--
-source: API\3.2.0\Utility\CrossSceneReferences\SceneStatus.md
+source: api\latest\Utility\CrossSceneReferences\SceneStatus.md
 -->
 
 ## SceneStatus
@@ -7057,7 +7057,7 @@ Specifies the state of a scene.
 ---
 # DictionaryUtility
 <!--
-source: API\3.2.0\Utility\DictionaryUtility.md
+source: api\latest\Utility\DictionaryUtility.md
 -->
 
 ## DictionaryUtility
@@ -7081,7 +7081,7 @@ Contains utility functions for working with dictionaries.
 ---
 # DiscoverabilityCacheInvalidatedAttribute
 <!--
-source: API\3.2.0\Utility\Discoverability\DiscoverabilityCacheInvalidatedAttribute.md
+source: api\latest\Utility\Discoverability\DiscoverabilityCacheInvalidatedAttribute.md
 -->
 
 ## DiscoverabilityCacheInvalidatedAttribute
@@ -7107,7 +7107,7 @@ This is also called after discoverables has just been initialized for the first 
 ---
 # DiscoverableAttribute
 <!--
-source: API\3.2.0\Utility\Discoverability\DiscoverableAttribute.md
+source: api\latest\Utility\Discoverability\DiscoverableAttribute.md
 -->
 
 ## DiscoverableAttribute
@@ -7139,7 +7139,7 @@ Represents the base attribute for discoverable attributes.
 ---
 # DiscoveredMember
 <!--
-source: API\3.2.0\Utility\Discoverability\DiscoveredMember.md
+source: api\latest\Utility\Discoverability\DiscoveredMember.md
 -->
 
 ## DiscoveredMember
@@ -7174,7 +7174,7 @@ A member that was found using `IDiscoverablesService`.
 ---
 # DiscoveredMemberExtensions
 <!--
-source: API\3.2.0\Utility\Discoverability\DiscoveredMemberExtensions.md
+source: api\latest\Utility\Discoverability\DiscoveredMemberExtensions.md
 -->
 
 ## DiscoveredMemberExtensions
@@ -7192,7 +7192,7 @@ Provides extension methods for DiscoveredMember.
 ---
 # TargetInfo
 <!--
-source: API\3.2.0\Utility\Discoverability\TargetInfo.md
+source: api\latest\Utility\Discoverability\TargetInfo.md
 -->
 
 ## TargetInfo
@@ -7223,7 +7223,7 @@ source: API\3.2.0\Utility\Discoverability\TargetInfo.md
 ---
 # Editor
 <!--
-source: API\3.2.0\Utility\Editor.md
+source: api\latest\Utility\Editor.md
 -->
 
 ## Editor
@@ -7240,7 +7240,7 @@ source: API\3.2.0\Utility\Editor.md
 ---
 # FallbackSceneUtility
 <!--
-source: API\3.2.0\Utility\FallbackSceneUtility.md
+source: api\latest\Utility\FallbackSceneUtility.md
 -->
 
 ## FallbackSceneUtility
@@ -7254,7 +7254,7 @@ The default scene allows us to more easily close all scenes when we need to, sin
 ---
 # GlobalCoroutine
 <!--
-source: API\3.2.0\Utility\GlobalCoroutine.md
+source: api\latest\Utility\GlobalCoroutine.md
 -->
 
 ## GlobalCoroutine
@@ -7288,7 +7288,7 @@ Represents a `IEnumerator` coroutine started using `CoroutineUtility`.
 ---
 # GuidReference
 <!--
-source: API\3.2.0\Utility\GuidReference.md
+source: api\latest\Utility\GuidReference.md
 -->
 
 ## GuidReference
@@ -7305,7 +7305,7 @@ Represents a persistent reference to the `GameObject` that this is attached to, 
 ---
 # GuidReferenceUtility
 <!--
-source: API\3.2.0\Utility\GuidReferenceUtility.md
+source: api\latest\Utility\GuidReferenceUtility.md
 -->
 
 ## GuidReferenceUtility
@@ -7329,7 +7329,7 @@ An utility for referencing objects globally.
 ---
 # IDiscoverablesSceneObjectCache
 <!--
-source: API\3.2.0\Utility\IDiscoverablesSceneObjectCache.md
+source: api\latest\Utility\IDiscoverablesSceneObjectCache.md
 -->
 
 ## IDiscoverablesSceneObjectCache
@@ -7346,7 +7346,7 @@ source: API\3.2.0\Utility\IDiscoverablesSceneObjectCache.md
 ---
 # IGeneralSceneObjectCache
 <!--
-source: API\3.2.0\Utility\IGeneralSceneObjectCache.md
+source: api\latest\Utility\IGeneralSceneObjectCache.md
 -->
 
 ## IGeneralSceneObjectCache
@@ -7366,7 +7366,7 @@ source: API\3.2.0\Utility\IGeneralSceneObjectCache.md
 ---
 # IQueueable
 <!--
-source: API\3.2.0\Utility\IQueueable.md
+source: api\latest\Utility\IQueueable.md
 -->
 
 ## IQueueable
@@ -7388,7 +7388,7 @@ See also `QueueUtility`1`.
 ---
 # IReorderableDictionary
 <!--
-source: API\3.2.0\Utility\IReorderableDictionary.md
+source: api\latest\Utility\IReorderableDictionary.md
 -->
 
 ## IReorderableDictionary
@@ -7405,7 +7405,7 @@ Adds support for reorder in `SerializableDictionary`2`. Used by property drawer.
 ---
 # LerpUtility
 <!--
-source: API\3.2.0\Utility\LerpUtility.md
+source: api\latest\Utility\LerpUtility.md
 -->
 
 ## LerpUtility
@@ -7424,7 +7424,7 @@ Provides some convinience functions for lerping.
 ---
 # LoadingScreenUtility
 <!--
-source: API\3.2.0\Utility\LoadingScreenUtility.md
+source: api\latest\Utility\LoadingScreenUtility.md
 -->
 
 ## LoadingScreenUtility
@@ -7462,7 +7462,7 @@ Manager for loading screens.
 ---
 # MainThreadUtility
 <!--
-source: API\3.2.0\Utility\MainThreadUtility.md
+source: api\latest\Utility\MainThreadUtility.md
 -->
 
 ## MainThreadUtility
@@ -7494,7 +7494,7 @@ Only usable in play mode.
 ---
 # ProfileUtility
 <!--
-source: API\3.2.0\Utility\ProfileUtility.md
+source: api\latest\Utility\ProfileUtility.md
 -->
 
 ## ProfileUtility
@@ -7526,7 +7526,7 @@ Provides utility methods for working with profiles.
 ---
 # QueueUtility_Of_T
 <!--
-source: API\3.2.0\Utility\QueueUtility_Of_T.md
+source: api\latest\Utility\QueueUtility_Of_T.md
 -->
 
 ## QueueUtility`1
@@ -7561,7 +7561,7 @@ A utility that provides queuing.
 ---
 # SceneBindingUtility
 <!--
-source: API\3.2.0\Utility\SceneBindingUtility.md
+source: api\latest\Utility\SceneBindingUtility.md
 -->
 
 ## SceneBindingUtility
@@ -7584,7 +7584,7 @@ Only available if input system is installed.
 ---
 # SceneUtility
 <!--
-source: API\3.2.0\Utility\SceneUtility.md
+source: api\latest\Utility\SceneUtility.md
 -->
 
 ## SceneUtility
@@ -7672,7 +7672,7 @@ An utility class to perform actions on scenes.
 ---
 # ScriptableObjectUtility
 <!--
-source: API\3.2.0\Utility\ScriptableObjectUtility.md
+source: api\latest\Utility\ScriptableObjectUtility.md
 -->
 
 ## ScriptableObjectUtility
@@ -7689,7 +7689,7 @@ Contains utility methods for `ScriptableObject`.
 ---
 # SerializableDictionary_Of_TKey_TValue
 <!--
-source: API\3.2.0\Utility\SerializableDictionary_Of_TKey_TValue.md
+source: api\latest\Utility\SerializableDictionary_Of_TKey_TValue.md
 -->
 
 ## SerializableDictionary`2
@@ -7707,7 +7707,7 @@ A serializable dictionary that supports Unity serialization and implements `IDic
 ---
 # SpamCheck
 <!--
-source: API\3.2.0\Utility\SpamCheck.md
+source: api\latest\Utility\SpamCheck.md
 -->
 
 ## SpamCheck
@@ -7741,7 +7741,7 @@ Provides an easy way to check for spamming.
 ---
 # StopwatchUtility
 <!--
-source: API\3.2.0\Utility\StopwatchUtility.md
+source: api\latest\Utility\StopwatchUtility.md
 -->
 
 ## StopwatchUtility
@@ -7758,7 +7758,7 @@ Provides utility functions for working with stopwatches.
 ---
 # TaskUtility
 <!--
-source: API\3.2.0\Utility\TaskUtility.md
+source: api\latest\Utility\TaskUtility.md
 -->
 
 ## TaskUtility
@@ -7778,7 +7778,7 @@ Provides utility methods for working with tasks.
 ---
 # TypeUtility
 <!--
-source: API\3.2.0\Utility\TypeUtility.md
+source: api\latest\Utility\TypeUtility.md
 -->
 
 ## TypeUtility
@@ -7819,7 +7819,7 @@ Contains utility functions for working with types.
 ---
 # UIFadeExtensions
 <!--
-source: API\3.2.0\Utility\UIFadeExtensions.md
+source: api\latest\Utility\UIFadeExtensions.md
 -->
 
 ## UIFadeExtensions
@@ -7839,7 +7839,7 @@ Provides extension methods for `CanvasGroup`.
 ---
 # UIUtility
 <!--
-source: API\3.2.0\Utility\UIUtility.md
+source: api\latest\Utility\UIUtility.md
 -->
 
 ## UIUtility
@@ -7862,7 +7862,7 @@ Provides utility methods for working with `VisualElement`.
 ---
 # UnityCompatibiltyHelper
 <!--
-source: API\3.2.0\Utility\UnityCompatibiltyHelper.md
+source: api\latest\Utility\UnityCompatibiltyHelper.md
 -->
 
 ## UnityCompatibiltyHelper
@@ -7873,7 +7873,7 @@ Contains helpers for dealing with multiple versions of unity.
 ---
 # VisualElementScheduledItemAwaiter
 <!--
-source: API\3.2.0\Utility\VisualElementScheduledItemAwaiter.md
+source: api\latest\Utility\VisualElementScheduledItemAwaiter.md
 -->
 
 ## VisualElementScheduledItemAwaiter
@@ -7896,7 +7896,7 @@ source: API\3.2.0\Utility\VisualElementScheduledItemAwaiter.md
 ---
 # XmlEscapeUtility
 <!--
-source: API\3.2.0\Utility\XmlEscapeUtility.md
+source: api\latest\Utility\XmlEscapeUtility.md
 -->
 
 ## XmlEscapeUtility
@@ -7914,4832 +7914,3173 @@ Provides methods for escaping and unescaping XML strings.
 | `boolean Unescape(string value, Type& type)` | _No documentation available._ |
 
 ---
-# ActionUtility
+# API-structure
 <!--
-source: API\Callbacks\ActionUtility.md
+source: guides\api\API-structure.md
 -->
 
-## ActionUtility
+<!---api/API-structure.md-->
+[← Back](readme.md) | [🏠 Home](../readme.md)
+## API
+### ASM API Structure Overview
 
-`static class` in `AdvancedSceneManager.Callbacks`### Description
-Contains utility functions for `Action`.
+Advanced Scene Manager (ASM) is structured into three main levels of abstraction, each with a distinct role and target use case:
 
-### Static Methods
+1. **High-level API**
+2. **Mid-level API**
+3. **Low-level API**
 
-| Member | Description |
-|--------|-------------|
-| `void LogInvoke(Action action)` | Tries to invoke the action, then logs error to the console if an error occurred. |
-| `void TryInvoke(Action action)` | Tries to invoke the action, eats the exception. |
-| `boolean TryInvoke(Action action, Exception& exception)` | _No documentation available._ |
+### High-level API
 
----
-# CallbackUtility
-<!--
-source: API\Callbacks\CallbackUtility.md
--->
-
-## CallbackUtility
-
-`static class` in `AdvancedSceneManager.Callbacks`### Description
-Provides utilities for discovering and invoking scene and collection callbacks.
-            Handles interfaces derived from `ISceneCallbacks` and their coroutine/awaitable counterparts.
-
-### Static Methods
-
-| Member | Description |
-|--------|-------------|
-| `IEnumerator DoCollectionCloseCallbacks(SceneCollection collection)` | Invokes all collection close callbacks on the specified `collection`. |
-| `IEnumerator DoCollectionOpenCallbacks(SceneCollection collection)` | Invokes all collection open callbacks on the specified `collection`. |
-| `IEnumerator DoSceneCloseCallbacks(Scene scene)` | Invokes all scene close callbacks on the specified `scene`. |
-| `IEnumerator DoSceneOpenCallbacks(Scene scene)` | Invokes all scene open callbacks on the specified `scene`. |
-| `FluentInvokeAPI<T> Invoke<T>()` | _No documentation available._ |
-
----
-# Callback_Of_T
-<!--
-source: API\Callbacks\Callback_Of_T.md
--->
-
-## Callback
-
-`sealed class` in `AdvancedSceneManager.Callbacks`  /  Inherits from: `MulticastDelegate`### Description
-
-### Methods
-
-| Member | Description |
-|--------|-------------|
-| `virtual IAsyncResult BeginInvoke(T obj, boolean isEnabled, AsyncCallback callback, object object)` | _No documentation available._ |
-| `virtual IEnumerator EndInvoke(IAsyncResult result)` | _No documentation available._ |
-| `virtual IEnumerator Invoke(T obj, boolean isEnabled)` | _No documentation available._ |
-
----
-# AllScenesClosedEvent
-<!--
-source: API\Callbacks\Events\AllScenesClosedEvent.md
--->
-
-## AllScenesClosedEvent
-
-`class` in `AdvancedSceneManager.Callbacks.Events`  /  Inherits from: `EventCallbackBase`### Description
-Occurs when all user scenes have been closed and only ASM fallback scene remains open.
-
-<b> Remarks:</b>
-Use this to gracefully handle the situation — for example, by returning to the main menu or similar.
-
-### Methods
-
-| Member | Description |
-|--------|-------------|
-| `virtual EventCallbackBase <Clone>$()` | _No documentation available._ |
-| `virtual boolean Equals(object obj)` | _No documentation available._ |
-| `boolean Equals(EventCallbackBase other)` | _No documentation available._ |
-| `virtual boolean Equals(AllScenesClosedEvent other)` | _No documentation available._ |
-| `virtual int32 GetHashCode()` | _No documentation available._ |
-| `virtual string ToString()` | _No documentation available._ |
-
----
-# CalledForAttribute
-<!--
-source: API\Callbacks\Events\CalledForAttribute.md
--->
-
-## CalledForAttribute
-
-`class` in `AdvancedSceneManager.Callbacks.Events`  /  Inherits from: `Attribute`### Description
-
-### Properties
-
-| Member | Description |
-|--------|-------------|
-| `When[] when` | _No documentation available._ |
-
----
-# CollectionCloseEvent
-<!--
-source: API\Callbacks\Events\CollectionCloseEvent.md
--->
-
-## CollectionCloseEvent
-
-`class` in `AdvancedSceneManager.Callbacks.Events`  /  Inherits from: `CollectionEvent`### Description
-Occurs when a collection is closed.
-
-<b> Remarks:</b>
-Called when: `Unspecified` (it will be ignored).
-
-### Methods
-
-| Member | Description |
-|--------|-------------|
-| `virtual EventCallbackBase <Clone>$()` | _No documentation available._ |
-| `void Deconstruct(SceneCollection& collection)` | _No documentation available._ |
-| `virtual boolean Equals(object obj)` | _No documentation available._ |
-| `boolean Equals(CollectionEvent other)` | _No documentation available._ |
-| `virtual boolean Equals(CollectionCloseEvent other)` | _No documentation available._ |
-| `virtual int32 GetHashCode()` | _No documentation available._ |
-| `virtual string ToString()` | _No documentation available._ |
-
----
-# CollectionEvent
-<!--
-source: API\Callbacks\Events\CollectionEvent.md
--->
-
-## CollectionEvent
-
-`abstract class` in `AdvancedSceneManager.Callbacks.Events`  /  Inherits from: `SceneOperationEventBase`### Description
-The base class for collection event callbacks.
-
-<b> Remarks:</b>
-See `CollectionOpenEvent`, `CollectionCloseEvent`.
-
-### Properties
-
-| Member | Description |
-|--------|-------------|
-| `SceneCollection collection` | _No documentation available._ |
-
-### Methods
-
-| Member | Description |
-|--------|-------------|
-| `abstract virtual EventCallbackBase <Clone>$()` | _No documentation available._ |
-| `void Deconstruct(SceneCollection& collection)` | _No documentation available._ |
-| `virtual boolean Equals(object obj)` | _No documentation available._ |
-| `boolean Equals(SceneOperationEventBase other)` | _No documentation available._ |
-| `virtual boolean Equals(CollectionEvent other)` | _No documentation available._ |
-| `virtual int32 GetHashCode()` | _No documentation available._ |
-| `virtual string ToString()` | _No documentation available._ |
-
----
-# CollectionOpenEvent
-<!--
-source: API\Callbacks\Events\CollectionOpenEvent.md
--->
-
-## CollectionOpenEvent
-
-`class` in `AdvancedSceneManager.Callbacks.Events`  /  Inherits from: `CollectionEvent`### Description
-Occurs when a collection is opened.
-
-<b> Remarks:</b>
-Called when: `Unspecified` (it will be ignored).
-
-### Methods
-
-| Member | Description |
-|--------|-------------|
-| `virtual EventCallbackBase <Clone>$()` | _No documentation available._ |
-| `void Deconstruct(SceneCollection& collection)` | _No documentation available._ |
-| `virtual boolean Equals(object obj)` | _No documentation available._ |
-| `boolean Equals(CollectionEvent other)` | _No documentation available._ |
-| `virtual boolean Equals(CollectionOpenEvent other)` | _No documentation available._ |
-| `virtual int32 GetHashCode()` | _No documentation available._ |
-| `virtual string ToString()` | _No documentation available._ |
-
----
-# ASMModelRenamedEvent
-<!--
-source: API\Callbacks\Events\Editor\ASMModelRenamedEvent.md
--->
-
-## ASMModelRenamedEvent
-
-`class` in `AdvancedSceneManager.Callbacks.Events.Editor`  /  Inherits from: `EventCallbackBase`### Description
-Occurs when an ASM model is renamed.
-
-### Properties
-
-| Member | Description |
-|--------|-------------|
-| `ASMModelBase model` | The model that was renamed. |
-| `string newName` | The new name of the model. |
-| `string oldName` | The previous name of the model. |
-
-### Methods
-
-| Member | Description |
-|--------|-------------|
-| `virtual EventCallbackBase <Clone>$()` | _No documentation available._ |
-| `void Deconstruct(ASMModelBase& model, String& oldName, String& newName)` | _No documentation available._ |
-| `virtual boolean Equals(object obj)` | _No documentation available._ |
-| `boolean Equals(EventCallbackBase other)` | _No documentation available._ |
-| `virtual boolean Equals(ASMModelRenamedEvent other)` | _No documentation available._ |
-| `virtual int32 GetHashCode()` | _No documentation available._ |
-| `virtual string ToString()` | _No documentation available._ |
-
----
-# ASMSettingsChangedEvent
-<!--
-source: API\Callbacks\Events\Editor\ASMSettingsChangedEvent.md
--->
-
-## ASMSettingsChangedEvent
-
-`class` in `AdvancedSceneManager.Callbacks.Events.Editor`  /  Inherits from: `EventCallbackBase`### Description
-Occurs when a setting in ASM changes.
-
-### Methods
-
-| Member | Description |
-|--------|-------------|
-| `virtual EventCallbackBase <Clone>$()` | _No documentation available._ |
-| `virtual boolean Equals(object obj)` | _No documentation available._ |
-| `boolean Equals(EventCallbackBase other)` | _No documentation available._ |
-| `virtual boolean Equals(ASMSettingsChangedEvent other)` | _No documentation available._ |
-| `virtual int32 GetHashCode()` | _No documentation available._ |
-| `virtual string ToString()` | _No documentation available._ |
-
----
-# ASMWindowCloseEvent
-<!--
-source: API\Callbacks\Events\Editor\ASMWindowCloseEvent.md
--->
-
-## ASMWindowCloseEvent
-
-`class` in `AdvancedSceneManager.Callbacks.Events.Editor`  /  Inherits from: `EventCallbackBase`### Description
-Occurs when the ASM editor window is closed.
-
-### Methods
-
-| Member | Description |
-|--------|-------------|
-| `virtual EventCallbackBase <Clone>$()` | _No documentation available._ |
-| `virtual boolean Equals(object obj)` | _No documentation available._ |
-| `boolean Equals(EventCallbackBase other)` | _No documentation available._ |
-| `virtual boolean Equals(ASMWindowCloseEvent other)` | _No documentation available._ |
-| `virtual int32 GetHashCode()` | _No documentation available._ |
-| `virtual string ToString()` | _No documentation available._ |
-
----
-# ASMWindowOpenEvent
-<!--
-source: API\Callbacks\Events\Editor\ASMWindowOpenEvent.md
--->
-
-## ASMWindowOpenEvent
-
-`class` in `AdvancedSceneManager.Callbacks.Events.Editor`  /  Inherits from: `EventCallbackBase`### Description
-Occurs when the ASM editor window is opened.
-
-### Methods
-
-| Member | Description |
-|--------|-------------|
-| `virtual EventCallbackBase <Clone>$()` | _No documentation available._ |
-| `virtual boolean Equals(object obj)` | _No documentation available._ |
-| `boolean Equals(EventCallbackBase other)` | _No documentation available._ |
-| `virtual boolean Equals(ASMWindowOpenEvent other)` | _No documentation available._ |
-| `virtual int32 GetHashCode()` | _No documentation available._ |
-| `virtual string ToString()` | _No documentation available._ |
-
----
-# BeforeASMPlayModeEvent
-<!--
-source: API\Callbacks\Events\Editor\BeforeASMPlayModeEvent.md
--->
-
-## BeforeASMPlayModeEvent
-
-`class` in `AdvancedSceneManager.Callbacks.Events.Editor`  /  Inherits from: `EventCallbackBase`### Description
-Occurs before ASM enters play mode when ASM play button is used.
-
-### Properties
-
-| Member | Description |
-|--------|-------------|
-| `StartupProps props` | _No documentation available._ |
-
-### Methods
-
-| Member | Description |
-|--------|-------------|
-| `virtual EventCallbackBase <Clone>$()` | _No documentation available._ |
-| `void Deconstruct(StartupProps& props)` | _No documentation available._ |
-| `virtual boolean Equals(object obj)` | _No documentation available._ |
-| `boolean Equals(EventCallbackBase other)` | _No documentation available._ |
-| `virtual boolean Equals(BeforeASMPlayModeEvent other)` | _No documentation available._ |
-| `virtual int32 GetHashCode()` | _No documentation available._ |
-| `virtual string ToString()` | _No documentation available._ |
-
----
-# CollectionAddedEvent
-<!--
-source: API\Callbacks\Events\Editor\CollectionAddedEvent.md
--->
-
-## CollectionAddedEvent
-
-`class` in `AdvancedSceneManager.Callbacks.Events.Editor`  /  Inherits from: `EventCallbackBase`### Description
-Occurs when a collection is added to a profile.
-
-### Properties
-
-| Member | Description |
-|--------|-------------|
-| `ISceneCollection collection` | _No documentation available._ |
-
-### Methods
-
-| Member | Description |
-|--------|-------------|
-| `virtual EventCallbackBase <Clone>$()` | _No documentation available._ |
-| `void Deconstruct(ISceneCollection& collection)` | _No documentation available._ |
-| `virtual boolean Equals(object obj)` | _No documentation available._ |
-| `boolean Equals(EventCallbackBase other)` | _No documentation available._ |
-| `virtual boolean Equals(CollectionAddedEvent other)` | _No documentation available._ |
-| `virtual int32 GetHashCode()` | _No documentation available._ |
-| `virtual string ToString()` | _No documentation available._ |
-
----
-# CollectionDeletedEvent
-<!--
-source: API\Callbacks\Events\Editor\CollectionDeletedEvent.md
--->
-
-## CollectionDeletedEvent
-
-`class` in `AdvancedSceneManager.Callbacks.Events.Editor`  /  Inherits from: `EventCallbackBase`### Description
-Occurs when a collection is deleted from a profile.
-
-<b> Remarks:</b>
-Hard delete, not recoverable. Happens after undo period.
-
-### Properties
-
-| Member | Description |
-|--------|-------------|
-| `ISceneCollection collection` | _No documentation available._ |
-
-### Methods
-
-| Member | Description |
-|--------|-------------|
-| `virtual EventCallbackBase <Clone>$()` | _No documentation available._ |
-| `void Deconstruct(ISceneCollection& collection)` | _No documentation available._ |
-| `virtual boolean Equals(object obj)` | _No documentation available._ |
-| `boolean Equals(EventCallbackBase other)` | _No documentation available._ |
-| `virtual boolean Equals(CollectionDeletedEvent other)` | _No documentation available._ |
-| `virtual int32 GetHashCode()` | _No documentation available._ |
-| `virtual string ToString()` | _No documentation available._ |
-
----
-# CollectionRemovedEvent
-<!--
-source: API\Callbacks\Events\Editor\CollectionRemovedEvent.md
--->
-
-## CollectionRemovedEvent
-
-`class` in `AdvancedSceneManager.Callbacks.Events.Editor`  /  Inherits from: `EventCallbackBase`### Description
-Occurs when a collection is removed from a profile.
-
-<b> Remarks:</b>
-Soft delete, still recoverable. Triggers undo period.
-
-### Properties
-
-| Member | Description |
-|--------|-------------|
-| `ISceneCollection collection` | _No documentation available._ |
-
-### Methods
-
-| Member | Description |
-|--------|-------------|
-| `virtual EventCallbackBase <Clone>$()` | _No documentation available._ |
-| `void Deconstruct(ISceneCollection& collection)` | _No documentation available._ |
-| `virtual boolean Equals(object obj)` | _No documentation available._ |
-| `boolean Equals(EventCallbackBase other)` | _No documentation available._ |
-| `virtual boolean Equals(CollectionRemovedEvent other)` | _No documentation available._ |
-| `virtual int32 GetHashCode()` | _No documentation available._ |
-| `virtual string ToString()` | _No documentation available._ |
-
----
-# CollectionRestoredEvent
-<!--
-source: API\Callbacks\Events\Editor\CollectionRestoredEvent.md
--->
-
-## CollectionRestoredEvent
-
-`class` in `AdvancedSceneManager.Callbacks.Events.Editor`  /  Inherits from: `EventCallbackBase`### Description
-Occurs when a collection is restored after remove, before hard delete.
-
-### Properties
-
-| Member | Description |
-|--------|-------------|
-| `ISceneCollection collection` | _No documentation available._ |
-
-### Methods
-
-| Member | Description |
-|--------|-------------|
-| `virtual EventCallbackBase <Clone>$()` | _No documentation available._ |
-| `void Deconstruct(ISceneCollection& collection)` | _No documentation available._ |
-| `virtual boolean Equals(object obj)` | _No documentation available._ |
-| `boolean Equals(EventCallbackBase other)` | _No documentation available._ |
-| `virtual boolean Equals(CollectionRestoredEvent other)` | _No documentation available._ |
-| `virtual int32 GetHashCode()` | _No documentation available._ |
-| `virtual string ToString()` | _No documentation available._ |
-
----
-# ModelPropertyChangedEvent
-<!--
-source: API\Callbacks\Events\Editor\ModelPropertyChangedEvent.md
--->
-
-## ModelPropertyChangedEvent
-
-`class` in `AdvancedSceneManager.Callbacks.Events.Editor`  /  Inherits from: `EventCallbackBase`### Description
-Occurs when an ASM model property changes. This is the same as `INotifyPropertyChanged`.
-
-<b> Remarks:</b>
-`Empty` will be used when `INotifyPropertyChanged` is called from `onvalidate`.
-
-### Properties
-
-| Member | Description |
-|--------|-------------|
-| `ASMModelBase model` | The model had a property changed. |
-| `string propertyName` | The name of the property that changed. |
-
-### Methods
-
-| Member | Description |
-|--------|-------------|
-| `virtual EventCallbackBase <Clone>$()` | _No documentation available._ |
-| `void Deconstruct(ASMModelBase& model, String& propertyName)` | _No documentation available._ |
-| `virtual boolean Equals(object obj)` | _No documentation available._ |
-| `boolean Equals(EventCallbackBase other)` | _No documentation available._ |
-| `virtual boolean Equals(ModelPropertyChangedEvent other)` | _No documentation available._ |
-| `virtual int32 GetHashCode()` | _No documentation available._ |
-| `virtual string ToString()` | _No documentation available._ |
-
----
-# OnWindowDisableEvent
-<!--
-source: API\Callbacks\Events\Editor\OnWindowDisableEvent.md
--->
-
-## OnWindowDisableEvent
-
-`class` in `AdvancedSceneManager.Callbacks.Events.Editor`  /  Inherits from: `EventCallbackBase`### Description
-Occurs when the ASM editor window is disabled.
-
-### Methods
-
-| Member | Description |
-|--------|-------------|
-| `virtual EventCallbackBase <Clone>$()` | _No documentation available._ |
-| `virtual boolean Equals(object obj)` | _No documentation available._ |
-| `boolean Equals(EventCallbackBase other)` | _No documentation available._ |
-| `virtual boolean Equals(OnWindowDisableEvent other)` | _No documentation available._ |
-| `virtual int32 GetHashCode()` | _No documentation available._ |
-| `virtual string ToString()` | _No documentation available._ |
-
----
-# OnWindowEnableEvent
-<!--
-source: API\Callbacks\Events\Editor\OnWindowEnableEvent.md
--->
-
-## OnWindowEnableEvent
-
-`class` in `AdvancedSceneManager.Callbacks.Events.Editor`  /  Inherits from: `EventCallbackBase`### Description
-Occurs when the ASM editor window is enabled.
-
-### Methods
-
-| Member | Description |
-|--------|-------------|
-| `virtual EventCallbackBase <Clone>$()` | _No documentation available._ |
-| `virtual boolean Equals(object obj)` | _No documentation available._ |
-| `boolean Equals(EventCallbackBase other)` | _No documentation available._ |
-| `virtual boolean Equals(OnWindowEnableEvent other)` | _No documentation available._ |
-| `virtual int32 GetHashCode()` | _No documentation available._ |
-| `virtual string ToString()` | _No documentation available._ |
-
----
-# OnWindowFocusEvent
-<!--
-source: API\Callbacks\Events\Editor\OnWindowFocusEvent.md
--->
-
-## OnWindowFocusEvent
-
-`class` in `AdvancedSceneManager.Callbacks.Events.Editor`  /  Inherits from: `EventCallbackBase`### Description
-Occurs when the ASM editor window gains focus.
-
-### Methods
-
-| Member | Description |
-|--------|-------------|
-| `virtual EventCallbackBase <Clone>$()` | _No documentation available._ |
-| `virtual boolean Equals(object obj)` | _No documentation available._ |
-| `boolean Equals(EventCallbackBase other)` | _No documentation available._ |
-| `virtual boolean Equals(OnWindowFocusEvent other)` | _No documentation available._ |
-| `virtual int32 GetHashCode()` | _No documentation available._ |
-| `virtual string ToString()` | _No documentation available._ |
-
----
-# OnWindowLostFocusEvent
-<!--
-source: API\Callbacks\Events\Editor\OnWindowLostFocusEvent.md
--->
-
-## OnWindowLostFocusEvent
-
-`class` in `AdvancedSceneManager.Callbacks.Events.Editor`  /  Inherits from: `EventCallbackBase`### Description
-Occurs when the ASM editor window loses focus.
-
-### Methods
-
-| Member | Description |
-|--------|-------------|
-| `virtual EventCallbackBase <Clone>$()` | _No documentation available._ |
-| `virtual boolean Equals(object obj)` | _No documentation available._ |
-| `boolean Equals(EventCallbackBase other)` | _No documentation available._ |
-| `virtual boolean Equals(OnWindowLostFocusEvent other)` | _No documentation available._ |
-| `virtual int32 GetHashCode()` | _No documentation available._ |
-| `virtual string ToString()` | _No documentation available._ |
-
----
-# PlayModeChangedEvent
-<!--
-source: API\Callbacks\Events\Editor\PlayModeChangedEvent.md
--->
-
-## PlayModeChangedEvent
-
-`class` in `AdvancedSceneManager.Callbacks.Events.Editor`  /  Inherits from: `EventCallbackBase`### Description
-Occurs when the unity play mode state changes.
-
-<b> Remarks:</b>
-Wrapper for `playModeStateChanged`.
-
-### Properties
-
-| Member | Description |
-|--------|-------------|
-| `PlayModeStateChange state` | _No documentation available._ |
-
-### Methods
-
-| Member | Description |
-|--------|-------------|
-| `virtual EventCallbackBase <Clone>$()` | _No documentation available._ |
-| `void Deconstruct(PlayModeStateChange& state)` | _No documentation available._ |
-| `virtual boolean Equals(object obj)` | _No documentation available._ |
-| `boolean Equals(EventCallbackBase other)` | _No documentation available._ |
-| `virtual boolean Equals(PlayModeChangedEvent other)` | _No documentation available._ |
-| `virtual int32 GetHashCode()` | _No documentation available._ |
-| `virtual string ToString()` | _No documentation available._ |
-
----
-# ProfileAddedEvent
-<!--
-source: API\Callbacks\Events\Editor\ProfileAddedEvent.md
--->
-
-## ProfileAddedEvent
-
-`class` in `AdvancedSceneManager.Callbacks.Events.Editor`  /  Inherits from: `EventCallbackBase`### Description
-Occurs when a profile is added to ASM.
-
-<b> Remarks:</b>
-Does not support [IEnumerator)](https://learn.microsoft.com/dotnet/api/m:advancedscenemanager.callbacks.events.eventcallbackbase.waitfor(system.collections.ienumerator)) or any of its overloads.
-
-### Properties
-
-| Member | Description |
-|--------|-------------|
-| `Profile profile` | _No documentation available._ |
-
-### Methods
-
-| Member | Description |
-|--------|-------------|
-| `virtual EventCallbackBase <Clone>$()` | _No documentation available._ |
-| `void Deconstruct(Profile& profile)` | _No documentation available._ |
-| `virtual boolean Equals(object obj)` | _No documentation available._ |
-| `boolean Equals(EventCallbackBase other)` | _No documentation available._ |
-| `virtual boolean Equals(ProfileAddedEvent other)` | _No documentation available._ |
-| `virtual int32 GetHashCode()` | _No documentation available._ |
-| `virtual string ToString()` | _No documentation available._ |
-
----
-# ProfileChangedEvent
-<!--
-source: API\Callbacks\Events\Editor\ProfileChangedEvent.md
--->
-
-## ProfileChangedEvent
-
-`class` in `AdvancedSceneManager.Callbacks.Events.Editor`  /  Inherits from: `EventCallbackBase`### Description
-Occurs when the active profile is changed.
-
-### Properties
-
-| Member | Description |
-|--------|-------------|
-| `Profile profile` | _No documentation available._ |
-
-### Methods
-
-| Member | Description |
-|--------|-------------|
-| `virtual EventCallbackBase <Clone>$()` | _No documentation available._ |
-| `void Deconstruct(Profile& profile)` | _No documentation available._ |
-| `virtual boolean Equals(object obj)` | _No documentation available._ |
-| `boolean Equals(EventCallbackBase other)` | _No documentation available._ |
-| `virtual boolean Equals(ProfileChangedEvent other)` | _No documentation available._ |
-| `virtual int32 GetHashCode()` | _No documentation available._ |
-| `virtual string ToString()` | _No documentation available._ |
-
----
-# ProfileRemovedEvent
-<!--
-source: API\Callbacks\Events\Editor\ProfileRemovedEvent.md
--->
-
-## ProfileRemovedEvent
-
-`class` in `AdvancedSceneManager.Callbacks.Events.Editor`  /  Inherits from: `EventCallbackBase`### Description
-Occurs when a profile is removed from ASM.
-
-<b> Remarks:</b>
-Does not support [IEnumerator)](https://learn.microsoft.com/dotnet/api/m:advancedscenemanager.callbacks.events.eventcallbackbase.waitfor(system.collections.ienumerator)) or any of its overloads.
-
-### Properties
-
-| Member | Description |
-|--------|-------------|
-| `Profile profile` | _No documentation available._ |
-
-### Methods
-
-| Member | Description |
-|--------|-------------|
-| `virtual EventCallbackBase <Clone>$()` | _No documentation available._ |
-| `void Deconstruct(Profile& profile)` | _No documentation available._ |
-| `virtual boolean Equals(object obj)` | _No documentation available._ |
-| `boolean Equals(EventCallbackBase other)` | _No documentation available._ |
-| `virtual boolean Equals(ProfileRemovedEvent other)` | _No documentation available._ |
-| `virtual int32 GetHashCode()` | _No documentation available._ |
-| `virtual string ToString()` | _No documentation available._ |
-
----
-# SceneImportedEvent
-<!--
-source: API\Callbacks\Events\Editor\SceneImportedEvent.md
--->
-
-## SceneImportedEvent
-
-`class` in `AdvancedSceneManager.Callbacks.Events.Editor`  /  Inherits from: `EventCallbackBase`### Description
-Occurs when a scene is imported into ASM.
-
-### Properties
-
-| Member | Description |
-|--------|-------------|
-| `Scene scene` | _No documentation available._ |
-
-### Methods
-
-| Member | Description |
-|--------|-------------|
-| `virtual EventCallbackBase <Clone>$()` | _No documentation available._ |
-| `void Deconstruct(Scene& scene)` | _No documentation available._ |
-| `virtual boolean Equals(object obj)` | _No documentation available._ |
-| `boolean Equals(EventCallbackBase other)` | _No documentation available._ |
-| `virtual boolean Equals(SceneImportedEvent other)` | _No documentation available._ |
-| `virtual int32 GetHashCode()` | _No documentation available._ |
-| `virtual string ToString()` | _No documentation available._ |
-
----
-# SceneLoaderToggledEvent
-<!--
-source: API\Callbacks\Events\Editor\SceneLoaderToggledEvent.md
--->
-
-## SceneLoaderToggledEvent
-
-`class` in `AdvancedSceneManager.Callbacks.Events.Editor`  /  Inherits from: `EventCallbackBase`### Description
-Occurs when the scene loader for a given scene is changed.
-
-### Properties
-
-| Member | Description |
-|--------|-------------|
-| `Type newSceneLoader` | _No documentation available._ |
-| `Type oldSceneLoader` | _No documentation available._ |
-| `Scene scene` | _No documentation available._ |
-
-### Methods
-
-| Member | Description |
-|--------|-------------|
-| `virtual EventCallbackBase <Clone>$()` | _No documentation available._ |
-| `void Deconstruct(Scene& scene, Type& oldSceneLoader, Type& newSceneLoader)` | _No documentation available._ |
-| `virtual boolean Equals(object obj)` | _No documentation available._ |
-| `boolean Equals(EventCallbackBase other)` | _No documentation available._ |
-| `virtual boolean Equals(SceneLoaderToggledEvent other)` | _No documentation available._ |
-| `virtual int32 GetHashCode()` | _No documentation available._ |
-| `virtual string ToString()` | _No documentation available._ |
-
----
-# ScenesAvailableForImportChangedEvent
-<!--
-source: API\Callbacks\Events\Editor\ScenesAvailableForImportChangedEvent.md
--->
-
-## ScenesAvailableForImportChangedEvent
-
-`class` in `AdvancedSceneManager.Callbacks.Events.Editor`  /  Inherits from: `EventCallbackBase`### Description
-Occurs when either `unimportedScenes`, `importedScenes`, or `invalidScenes` has changed.
-
-### Methods
-
-| Member | Description |
-|--------|-------------|
-| `virtual EventCallbackBase <Clone>$()` | _No documentation available._ |
-| `virtual boolean Equals(object obj)` | _No documentation available._ |
-| `boolean Equals(EventCallbackBase other)` | _No documentation available._ |
-| `virtual boolean Equals(ScenesAvailableForImportChangedEvent other)` | _No documentation available._ |
-| `virtual int32 GetHashCode()` | _No documentation available._ |
-| `virtual string ToString()` | _No documentation available._ |
-
----
-# SceneUnimportedEvent
-<!--
-source: API\Callbacks\Events\Editor\SceneUnimportedEvent.md
--->
-
-## SceneUnimportedEvent
-
-`class` in `AdvancedSceneManager.Callbacks.Events.Editor`  /  Inherits from: `EventCallbackBase`### Description
-Occurs when a scene is unimported from ASM.
-
-### Properties
-
-| Member | Description |
-|--------|-------------|
-| `Scene scene` | _No documentation available._ |
-
-### Methods
-
-| Member | Description |
-|--------|-------------|
-| `virtual EventCallbackBase <Clone>$()` | _No documentation available._ |
-| `void Deconstruct(Scene& scene)` | _No documentation available._ |
-| `virtual boolean Equals(object obj)` | _No documentation available._ |
-| `boolean Equals(EventCallbackBase other)` | _No documentation available._ |
-| `virtual boolean Equals(SceneUnimportedEvent other)` | _No documentation available._ |
-| `virtual int32 GetHashCode()` | _No documentation available._ |
-| `virtual string ToString()` | _No documentation available._ |
-
----
-# UpdateCheckedEvent
-<!--
-source: API\Callbacks\Events\Editor\UpdateCheckedEvent.md
--->
-
-## UpdateCheckedEvent
-
-`class` in `AdvancedSceneManager.Callbacks.Events.Editor`  /  Inherits from: `EventCallbackBase`### Description
-Occurs after ASM has checked for updates.
-
-### Methods
-
-| Member | Description |
-|--------|-------------|
-| `virtual EventCallbackBase <Clone>$()` | _No documentation available._ |
-| `virtual boolean Equals(object obj)` | _No documentation available._ |
-| `boolean Equals(EventCallbackBase other)` | _No documentation available._ |
-| `virtual boolean Equals(UpdateCheckedEvent other)` | _No documentation available._ |
-| `virtual int32 GetHashCode()` | _No documentation available._ |
-| `virtual string ToString()` | _No documentation available._ |
-
----
-# EndPhaseEvent
-<!--
-source: API\Callbacks\Events\EndPhaseEvent.md
--->
-
-## EndPhaseEvent
-
-`class` in `AdvancedSceneManager.Callbacks.Events`  /  Inherits from: `SceneOperationEventBase`### Description
-Occurs before operation has stopped working, but after its practically done.
-
-<b> Remarks:</b>
-Called when: `Unspecified` (it will be ignored).
-
-### Methods
-
-| Member | Description |
-|--------|-------------|
-| `virtual EventCallbackBase <Clone>$()` | _No documentation available._ |
-| `virtual boolean Equals(object obj)` | _No documentation available._ |
-| `boolean Equals(SceneOperationEventBase other)` | _No documentation available._ |
-| `virtual boolean Equals(EndPhaseEvent other)` | _No documentation available._ |
-| `virtual int32 GetHashCode()` | _No documentation available._ |
-| `virtual string ToString()` | _No documentation available._ |
-
----
-# EventCallbackBase
-<!--
-source: API\Callbacks\Events\EventCallbackBase.md
--->
-
-## EventCallbackBase
-
-`abstract class` in `AdvancedSceneManager.Callbacks.Events`### Description
-The base class for all event callbacks.
-
-### Properties
-
-| Member | Description |
-|--------|-------------|
-| `List<Func<IEnumerator>> waitFor { get; }` | A list of coroutines that `SceneOperation` should wait for. It will not proceed until all coroutines are done. |
-| `When when` | Specifies when this event callback was invoked, before or after the action it represents. If applicable. |
-
-### Methods
-
-| Member | Description |
-|--------|-------------|
-| `abstract virtual EventCallbackBase <Clone>$()` | _No documentation available._ |
-| `virtual boolean Equals(object obj)` | _No documentation available._ |
-| `virtual boolean Equals(EventCallbackBase other)` | _No documentation available._ |
-| `virtual int32 GetHashCode()` | _No documentation available._ |
-| `virtual string ToString()` | _No documentation available._ |
-| `void WaitFor(IEnumerator coroutine)` | Specifies a coroutine that the operation should wait for. |
-| `void WaitFor(Func<IEnumerator> coroutine)` | Specifies a coroutine that the operation should wait for. |
-| `void WaitFor(GlobalCoroutine coroutine)` | Specifies a coroutine that the operation should wait for. |
-| `void WaitFor(Func<GlobalCoroutine> coroutine)` | Specifies a coroutine that the operation should wait for. |
-| `void WaitFor(Awaitable awaitable)` | Specifies a coroutine that the operation should wait for. |
-| `void WaitFor(Func<Awaitable> awaitable)` | Specifies a coroutine that the operation should wait for. |
-
----
-# EventCallbackManager_Of_TEventBase
-<!--
-source: API\Callbacks\Events\EventCallbackManager_Of_TEventBase.md
--->
-
-## EventCallbackManager`1
-
-`class` in `AdvancedSceneManager.Callbacks.Events`### Description
-Manages event callbacks.
-
-<b> Remarks:</b>
-You probably want to use either `events` or `events`.
-
-### Methods
-
-| Member | Description |
-|--------|-------------|
-| `IEnumerator InvokeCallback<TEventType>(When when, string callerFile, int32 callerLine)` | _No documentation available._ |
-| `IEnumerator InvokeCallback<TEventType>(TEventType e, When when, string callerFile, int32 callerLine)` | _No documentation available._ |
-| `void InvokeCallbackSync<TEventType>(When when)` | _No documentation available._ |
-| `void InvokeCallbackSync<TEventType>(TEventType e, When when)` | _No documentation available._ |
-| `void RegisterCallback<TEventType>(EventCallback<TEventType> callback, When when, string key)` | _No documentation available._ |
-| `void UnregisterCallback(string key)` | Unregisters a previously registered event callback. |
-| `void UnregisterCallback<TEventType>(EventCallback<TEventType> callback, When when, string key)` | _No documentation available._ |
-
----
-# EventCallbackUtility
-<!--
-source: API\Callbacks\Events\EventCallbackUtility.md
--->
-
-## EventCallbackUtility
-
-`static class` in `AdvancedSceneManager.Callbacks.Events`### Description
-Provides utility functions for working with event callbacks.
-
-### Static Methods
-
-| Member | Description |
-|--------|-------------|
-| `IEnumerable<Type> GetCallbackTypes()` | Enumerates all callback types. |
-| `int32 GetInvocationOrder<TEventType>()` | _No documentation available._ |
-| `int32 GetInvocationOrder(Type type)` | Gets the invocation order of the event callback type. |
-| `boolean IsWhenApplicable<TEventType>()` | _No documentation available._ |
-| `boolean IsWhenApplicable(Type type)` | Gets if the specified callback event uses `When` enum. |
-| `SceneOperation RegisterAllCallbacks(string key, SceneOperation operation, EventCallback<EventCallbackBase> callback, When when)` | Registers callback for all events. |
-| `void RegisterAllCallbacksGlobal(string key, EventCallback<EventCallbackBase> callback, When when)` | Registers callback for all events. |
-| `SceneOperation UnregisterCallback(string key, SceneOperation operation)` | Unregisters callback using `key`. |
-| `void UnregisterCallbackGlobal(string key)` | Unregisters callback using `key`. |
-
----
-# EventCallback_Of_TEventType
-<!--
-source: API\Callbacks\Events\EventCallback_Of_TEventType.md
--->
-
-## EventCallback`1
-
-`sealed class` in `AdvancedSceneManager.Callbacks.Events`  /  Inherits from: `MulticastDelegate`### Description
-Callback for scene operations.
-
-### Methods
-
-| Member | Description |
-|--------|-------------|
-| `virtual IAsyncResult BeginInvoke(TEventType evt, AsyncCallback callback, object object)` | _No documentation available._ |
-| `virtual void EndInvoke(IAsyncResult result)` | _No documentation available._ |
-| `virtual void Invoke(TEventType evt)` | _No documentation available._ |
-
----
-# FilteredEventProxy_Of_TEventBase
-<!--
-source: API\Callbacks\Events\FilteredEventProxy_Of_TEventBase.md
--->
-
-## FilteredEventProxy`1
-
-`sealed class` in `AdvancedSceneManager.Callbacks.Events`### Description
-Manages event callbacks, filtered for `TEventBase`.
-
-<b> Remarks:</b>
-You probably want to use either [String)](https://learn.microsoft.com/dotnet/api/m:advancedscenemanager.models.scene.registercallback``1(advancedscenemanager.callbacks.events.eventcallback{``0},advancedscenemanager.callbacks.events.when,system.string)) or [String)](https://learn.microsoft.com/dotnet/api/m:advancedscenemanager.models.scenecollection.registercallback``1(advancedscenemanager.callbacks.events.eventcallback{``0},advancedscenemanager.callbacks.events.when,system.string)).
-
-### Methods
-
-| Member | Description |
-|--------|-------------|
-| `void RegisterCallback<T>(EventCallback<T> callback, When when, string key)` | _No documentation available._ |
-| `void UnregisterCallback<T>(EventCallback<T> callback, When when, string key)` | _No documentation available._ |
-
----
-# GlobalCoroutinesChanged
-<!--
-source: API\Callbacks\Events\GlobalCoroutinesChanged.md
--->
-
-## GlobalCoroutinesChanged
-
-`class` in `AdvancedSceneManager.Callbacks.Events`  /  Inherits from: `EventCallbackBase`### Description
-Occurs when `CoroutineUtility` starts or ends a coroutine.
-
-### Properties
-
-| Member | Description |
-|--------|-------------|
-| `IEnumerable<GlobalCoroutine> coroutines` | _No documentation available._ |
-
-### Methods
-
-| Member | Description |
-|--------|-------------|
-| `virtual EventCallbackBase <Clone>$()` | _No documentation available._ |
-| `void Deconstruct(IEnumerable`1& coroutines)` | _No documentation available._ |
-| `virtual boolean Equals(object obj)` | _No documentation available._ |
-| `boolean Equals(EventCallbackBase other)` | _No documentation available._ |
-| `virtual boolean Equals(GlobalCoroutinesChanged other)` | _No documentation available._ |
-| `virtual int32 GetHashCode()` | _No documentation available._ |
-| `virtual string ToString()` | _No documentation available._ |
-
----
-# InvocationOrderAttribute
-<!--
-source: API\Callbacks\Events\InvocationOrderAttribute.md
--->
-
-## InvocationOrderAttribute
-
-`class` in `AdvancedSceneManager.Callbacks.Events`  /  Inherits from: `Attribute`### Description
-
-### Properties
-
-| Member | Description |
-|--------|-------------|
-| `int32 order` | _No documentation available._ |
-
----
-# LoadingScreenClosePhaseEvent
-<!--
-source: API\Callbacks\Events\LoadingScreenClosePhaseEvent.md
--->
-
-## LoadingScreenClosePhaseEvent
-
-`class` in `AdvancedSceneManager.Callbacks.Events`  /  Inherits from: `LoadingScreenPhaseEvent`### Description
-Occurs when a loading screen is closed.
-
-<b> Remarks:</b>
-Called regardless if operation actually opens one or not.
-            
-            Called when: `Before`, `After`.
-
-### Methods
-
-| Member | Description |
-|--------|-------------|
-| `virtual EventCallbackBase <Clone>$()` | _No documentation available._ |
-| `void Deconstruct(LoadingScreenReference& loadingScreen)` | _No documentation available._ |
-| `virtual boolean Equals(object obj)` | _No documentation available._ |
-| `boolean Equals(LoadingScreenPhaseEvent other)` | _No documentation available._ |
-| `virtual boolean Equals(LoadingScreenClosePhaseEvent other)` | _No documentation available._ |
-| `virtual int32 GetHashCode()` | _No documentation available._ |
-| `virtual string ToString()` | _No documentation available._ |
-
----
-# LoadingScreenOpenPhaseEvent
-<!--
-source: API\Callbacks\Events\LoadingScreenOpenPhaseEvent.md
--->
-
-## LoadingScreenOpenPhaseEvent
-
-`class` in `AdvancedSceneManager.Callbacks.Events`  /  Inherits from: `LoadingScreenPhaseEvent`### Description
-Occurs when a loading screen is opened.
-
-<b> Remarks:</b>
-Called regardless if operation actually opens one or not.
-            
-            Called when: `Before`, `After`.
-
-### Methods
-
-| Member | Description |
-|--------|-------------|
-| `virtual EventCallbackBase <Clone>$()` | _No documentation available._ |
-| `void Deconstruct(LoadingScreenReference& loadingScreen)` | _No documentation available._ |
-| `virtual boolean Equals(object obj)` | _No documentation available._ |
-| `boolean Equals(LoadingScreenPhaseEvent other)` | _No documentation available._ |
-| `virtual boolean Equals(LoadingScreenOpenPhaseEvent other)` | _No documentation available._ |
-| `virtual int32 GetHashCode()` | _No documentation available._ |
-| `virtual string ToString()` | _No documentation available._ |
-
----
-# LoadingScreenPhaseEvent
-<!--
-source: API\Callbacks\Events\LoadingScreenPhaseEvent.md
--->
-
-## LoadingScreenPhaseEvent
-
-`abstract class` in `AdvancedSceneManager.Callbacks.Events`  /  Inherits from: `SceneOperationEventBase`### Description
-The base class for loading screen phase event callbacks.
-
-<b> Remarks:</b>
-See `LoadingScreenOpenPhaseEvent`, `LoadingScreenClosePhaseEvent`.
-
-### Properties
-
-| Member | Description |
-|--------|-------------|
-| `LoadingScreenReference loadingScreen` | _No documentation available._ |
-
-### Methods
-
-| Member | Description |
-|--------|-------------|
-| `abstract virtual EventCallbackBase <Clone>$()` | _No documentation available._ |
-| `void Deconstruct(LoadingScreenReference& loadingScreen)` | _No documentation available._ |
-| `virtual boolean Equals(object obj)` | _No documentation available._ |
-| `boolean Equals(SceneOperationEventBase other)` | _No documentation available._ |
-| `virtual boolean Equals(LoadingScreenPhaseEvent other)` | _No documentation available._ |
-| `virtual int32 GetHashCode()` | _No documentation available._ |
-| `virtual string ToString()` | _No documentation available._ |
-
----
-# QuitEvent
-<!--
-source: API\Callbacks\Events\QuitEvent.md
--->
-
-## QuitEvent
-
-`class` in `AdvancedSceneManager.Callbacks.Events`  /  Inherits from: `EventCallbackBase`### Description
-Occurs when the application is quitting through `SceneManager.app.Quit()`.
-
-This event will not be raised if the default Unity quit flow is used.
-
-### Methods
-
-| Member | Description |
-|--------|-------------|
-| `virtual EventCallbackBase <Clone>$()` | _No documentation available._ |
-| `virtual boolean Equals(object obj)` | _No documentation available._ |
-| `boolean Equals(EventCallbackBase other)` | _No documentation available._ |
-| `virtual boolean Equals(QuitEvent other)` | _No documentation available._ |
-| `virtual int32 GetHashCode()` | _No documentation available._ |
-| `virtual string ToString()` | _No documentation available._ |
-
----
-# SceneCloseEvent
-<!--
-source: API\Callbacks\Events\SceneCloseEvent.md
--->
-
-## SceneCloseEvent
-
-`class` in `AdvancedSceneManager.Callbacks.Events`  /  Inherits from: `SceneEvent`### Description
-Occurs when a scene is closed.
-
-<b> Remarks:</b>
-Called when: `Before`, `After`.
-
-### Methods
-
-| Member | Description |
-|--------|-------------|
-| `virtual EventCallbackBase <Clone>$()` | _No documentation available._ |
-| `void Deconstruct(Scene& scene)` | _No documentation available._ |
-| `virtual boolean Equals(object obj)` | _No documentation available._ |
-| `boolean Equals(SceneEvent other)` | _No documentation available._ |
-| `virtual boolean Equals(SceneCloseEvent other)` | _No documentation available._ |
-| `virtual int32 GetHashCode()` | _No documentation available._ |
-| `virtual string ToString()` | _No documentation available._ |
-
----
-# SceneClosePhaseEvent
-<!--
-source: API\Callbacks\Events\SceneClosePhaseEvent.md
--->
-
-## SceneClosePhaseEvent
-
-`class` in `AdvancedSceneManager.Callbacks.Events`  /  Inherits from: `ScenePhaseEvent`### Description
-Occurs when operation starts and finishes closing scenes.
-
-<b> Remarks:</b>
-Called when: `Before`, `After`.
-
-### Methods
-
-| Member | Description |
-|--------|-------------|
-| `virtual EventCallbackBase <Clone>$()` | _No documentation available._ |
-| `void Deconstruct(IEnumerable`1& scenes)` | _No documentation available._ |
-| `virtual boolean Equals(object obj)` | _No documentation available._ |
-| `boolean Equals(ScenePhaseEvent other)` | _No documentation available._ |
-| `virtual boolean Equals(SceneClosePhaseEvent other)` | _No documentation available._ |
-| `virtual int32 GetHashCode()` | _No documentation available._ |
-| `virtual string ToString()` | _No documentation available._ |
-
----
-# SceneEvent
-<!--
-source: API\Callbacks\Events\SceneEvent.md
--->
-
-## SceneEvent
-
-`abstract class` in `AdvancedSceneManager.Callbacks.Events`  /  Inherits from: `SceneOperationEventBase`### Description
-The base class for scene event callbacks.
-
-<b> Remarks:</b>
-See `SceneOpenEvent`, `SceneCloseEvent`, `ScenePreloadEvent`.
-
-### Properties
-
-| Member | Description |
-|--------|-------------|
-| `Scene scene` | _No documentation available._ |
-
-### Methods
-
-| Member | Description |
-|--------|-------------|
-| `abstract virtual EventCallbackBase <Clone>$()` | _No documentation available._ |
-| `void Deconstruct(Scene& scene)` | _No documentation available._ |
-| `virtual boolean Equals(object obj)` | _No documentation available._ |
-| `boolean Equals(SceneOperationEventBase other)` | _No documentation available._ |
-| `virtual boolean Equals(SceneEvent other)` | _No documentation available._ |
-| `virtual int32 GetHashCode()` | _No documentation available._ |
-| `virtual string ToString()` | _No documentation available._ |
-
----
-# SceneManagerBecameBusyEvent
-<!--
-source: API\Callbacks\Events\SceneManagerBecameBusyEvent.md
--->
-
-## SceneManagerBecameBusyEvent
-
-`class` in `AdvancedSceneManager.Callbacks.Events`  /  Inherits from: `EventCallbackBase`### Description
-Occurs when ASM becomes busy, as in: a scene operation is queued, or started without queue, assuming it was idle beforehand.
-
-### Methods
-
-| Member | Description |
-|--------|-------------|
-| `virtual EventCallbackBase <Clone>$()` | _No documentation available._ |
-| `virtual boolean Equals(object obj)` | _No documentation available._ |
-| `boolean Equals(EventCallbackBase other)` | _No documentation available._ |
-| `virtual boolean Equals(SceneManagerBecameBusyEvent other)` | _No documentation available._ |
-| `virtual int32 GetHashCode()` | _No documentation available._ |
-| `virtual string ToString()` | _No documentation available._ |
-
----
-# SceneManagerBecameIdleEvent
-<!--
-source: API\Callbacks\Events\SceneManagerBecameIdleEvent.md
--->
-
-## SceneManagerBecameIdleEvent
-
-`class` in `AdvancedSceneManager.Callbacks.Events`  /  Inherits from: `EventCallbackBase`### Description
-Occurs when ASM becomes idle, as in: scene operation queue is empty and no non-queued operations are running.
-
-### Methods
-
-| Member | Description |
-|--------|-------------|
-| `virtual EventCallbackBase <Clone>$()` | _No documentation available._ |
-| `virtual boolean Equals(object obj)` | _No documentation available._ |
-| `boolean Equals(EventCallbackBase other)` | _No documentation available._ |
-| `virtual boolean Equals(SceneManagerBecameIdleEvent other)` | _No documentation available._ |
-| `virtual int32 GetHashCode()` | _No documentation available._ |
-| `virtual string ToString()` | _No documentation available._ |
-
----
-# SceneOpenEvent
-<!--
-source: API\Callbacks\Events\SceneOpenEvent.md
--->
-
-## SceneOpenEvent
-
-`class` in `AdvancedSceneManager.Callbacks.Events`  /  Inherits from: `SceneEvent`### Description
-Occurs when a scene is opened.
-
-<b> Remarks:</b>
-Called when: `Before`, `After`.
-
-### Methods
-
-| Member | Description |
-|--------|-------------|
-| `virtual EventCallbackBase <Clone>$()` | _No documentation available._ |
-| `void Deconstruct(Scene& scene)` | _No documentation available._ |
-| `virtual boolean Equals(object obj)` | _No documentation available._ |
-| `boolean Equals(SceneEvent other)` | _No documentation available._ |
-| `virtual boolean Equals(SceneOpenEvent other)` | _No documentation available._ |
-| `virtual int32 GetHashCode()` | _No documentation available._ |
-| `virtual string ToString()` | _No documentation available._ |
-
----
-# SceneOpenPhaseEvent
-<!--
-source: API\Callbacks\Events\SceneOpenPhaseEvent.md
--->
-
-## SceneOpenPhaseEvent
-
-`class` in `AdvancedSceneManager.Callbacks.Events`  /  Inherits from: `ScenePhaseEvent`### Description
-Occurs when operation starts and finishes opening scenes.
-
-<b> Remarks:</b>
-Called when: `Before`, `After`.
-
-### Methods
-
-| Member | Description |
-|--------|-------------|
-| `virtual EventCallbackBase <Clone>$()` | _No documentation available._ |
-| `void Deconstruct(IEnumerable`1& scenes)` | _No documentation available._ |
-| `virtual boolean Equals(object obj)` | _No documentation available._ |
-| `boolean Equals(ScenePhaseEvent other)` | _No documentation available._ |
-| `virtual boolean Equals(SceneOpenPhaseEvent other)` | _No documentation available._ |
-| `virtual int32 GetHashCode()` | _No documentation available._ |
-| `virtual string ToString()` | _No documentation available._ |
-
----
-# SceneOperationEventBase
-<!--
-source: API\Callbacks\Events\SceneOperationEventBase.md
--->
-
-## SceneOperationEventBase
-
-`abstract class` in `AdvancedSceneManager.Callbacks.Events`  /  Inherits from: `EventCallbackBase`### Description
-The base class for all scene operation event callbacks.
-
-### Properties
-
-| Member | Description |
-|--------|-------------|
-| `SceneOperation operation` | The operation that invoked this event callback. |
-
-### Methods
-
-| Member | Description |
-|--------|-------------|
-| `abstract virtual EventCallbackBase <Clone>$()` | _No documentation available._ |
-| `virtual boolean Equals(object obj)` | _No documentation available._ |
-| `boolean Equals(EventCallbackBase other)` | _No documentation available._ |
-| `virtual boolean Equals(SceneOperationEventBase other)` | _No documentation available._ |
-| `virtual int32 GetHashCode()` | _No documentation available._ |
-| `virtual string ToString()` | _No documentation available._ |
-
----
-# ScenePhaseEvent
-<!--
-source: API\Callbacks\Events\ScenePhaseEvent.md
--->
-
-## ScenePhaseEvent
-
-`abstract class` in `AdvancedSceneManager.Callbacks.Events`  /  Inherits from: `SceneOperationEventBase`### Description
-The base class for scene phase event callbacks.
-
-<b> Remarks:</b>
-See `SceneClosePhaseEvent`, `SceneOpenPhaseEvent`, `ScenePreloadPhaseEvent`.
-
-### Properties
-
-| Member | Description |
-|--------|-------------|
-| `IEnumerable<Scene> scenes` | _No documentation available._ |
-
-### Methods
-
-| Member | Description |
-|--------|-------------|
-| `abstract virtual EventCallbackBase <Clone>$()` | _No documentation available._ |
-| `void Deconstruct(IEnumerable`1& scenes)` | _No documentation available._ |
-| `virtual boolean Equals(object obj)` | _No documentation available._ |
-| `boolean Equals(SceneOperationEventBase other)` | _No documentation available._ |
-| `virtual boolean Equals(ScenePhaseEvent other)` | _No documentation available._ |
-| `virtual int32 GetHashCode()` | _No documentation available._ |
-| `virtual string ToString()` | _No documentation available._ |
-
----
-# ScenePreloadEvent
-<!--
-source: API\Callbacks\Events\ScenePreloadEvent.md
--->
-
-## ScenePreloadEvent
-
-`class` in `AdvancedSceneManager.Callbacks.Events`  /  Inherits from: `SceneEvent`### Description
-Occurs when a scene is preloaded.
-
-<b> Remarks:</b>
-Called when: `Before`, `After`.
-
-### Methods
-
-| Member | Description |
-|--------|-------------|
-| `virtual EventCallbackBase <Clone>$()` | _No documentation available._ |
-| `void Deconstruct(Scene& scene)` | _No documentation available._ |
-| `virtual boolean Equals(object obj)` | _No documentation available._ |
-| `boolean Equals(SceneEvent other)` | _No documentation available._ |
-| `virtual boolean Equals(ScenePreloadEvent other)` | _No documentation available._ |
-| `virtual int32 GetHashCode()` | _No documentation available._ |
-| `virtual string ToString()` | _No documentation available._ |
-
----
-# ScenePreloadPhaseEvent
-<!--
-source: API\Callbacks\Events\ScenePreloadPhaseEvent.md
--->
-
-## ScenePreloadPhaseEvent
-
-`class` in `AdvancedSceneManager.Callbacks.Events`  /  Inherits from: `ScenePhaseEvent`### Description
-Occurs when operation starts and finishes preloading scenes.
-
-<b> Remarks:</b>
-Called when: `Before`, `After`.
-
-### Methods
-
-| Member | Description |
-|--------|-------------|
-| `virtual EventCallbackBase <Clone>$()` | _No documentation available._ |
-| `void Deconstruct(IEnumerable`1& scenes)` | _No documentation available._ |
-| `virtual boolean Equals(object obj)` | _No documentation available._ |
-| `boolean Equals(ScenePhaseEvent other)` | _No documentation available._ |
-| `virtual boolean Equals(ScenePreloadPhaseEvent other)` | _No documentation available._ |
-| `virtual int32 GetHashCode()` | _No documentation available._ |
-| `virtual string ToString()` | _No documentation available._ |
-
----
-# StartPhaseEvent
-<!--
-source: API\Callbacks\Events\StartPhaseEvent.md
--->
-
-## StartPhaseEvent
-
-`class` in `AdvancedSceneManager.Callbacks.Events`  /  Inherits from: `SceneOperationEventBase`### Description
-Occurs before operation has begun working, but after it has started.
-
-<b> Remarks:</b>
-Properties has not been frozen at this point, and can be changed.
-            
-            Called when: `Unspecified` (it will be ignored).
-
-### Methods
-
-| Member | Description |
-|--------|-------------|
-| `virtual EventCallbackBase <Clone>$()` | _No documentation available._ |
-| `virtual boolean Equals(object obj)` | _No documentation available._ |
-| `boolean Equals(SceneOperationEventBase other)` | _No documentation available._ |
-| `virtual boolean Equals(StartPhaseEvent other)` | _No documentation available._ |
-| `virtual int32 GetHashCode()` | _No documentation available._ |
-| `virtual string ToString()` | _No documentation available._ |
-
----
-# StartupCancelledEvent
-<!--
-source: API\Callbacks\Events\StartupCancelledEvent.md
--->
-
-## StartupCancelledEvent
-
-`class` in `AdvancedSceneManager.Callbacks.Events`  /  Inherits from: `EventCallbackBase`### Description
-Occurs when ASM startup is cancelled before completion.
-
-### Methods
-
-| Member | Description |
-|--------|-------------|
-| `virtual EventCallbackBase <Clone>$()` | _No documentation available._ |
-| `virtual boolean Equals(object obj)` | _No documentation available._ |
-| `boolean Equals(EventCallbackBase other)` | _No documentation available._ |
-| `virtual boolean Equals(StartupCancelledEvent other)` | _No documentation available._ |
-| `virtual int32 GetHashCode()` | _No documentation available._ |
-| `virtual string ToString()` | _No documentation available._ |
-
----
-# StartupFinishedEvent
-<!--
-source: API\Callbacks\Events\StartupFinishedEvent.md
--->
-
-## StartupFinishedEvent
-
-`class` in `AdvancedSceneManager.Callbacks.Events`  /  Inherits from: `EventCallbackBase`### Description
-Occurs when ASM startup has completed successfully.
-
-### Properties
-
-| Member | Description |
-|--------|-------------|
-| `StartupProps props` | _No documentation available._ |
-
-### Methods
-
-| Member | Description |
-|--------|-------------|
-| `virtual EventCallbackBase <Clone>$()` | _No documentation available._ |
-| `void Deconstruct(StartupProps& props)` | _No documentation available._ |
-| `virtual boolean Equals(object obj)` | _No documentation available._ |
-| `boolean Equals(EventCallbackBase other)` | _No documentation available._ |
-| `virtual boolean Equals(StartupFinishedEvent other)` | _No documentation available._ |
-| `virtual int32 GetHashCode()` | _No documentation available._ |
-| `virtual string ToString()` | _No documentation available._ |
-
----
-# StartupStartedEvent
-<!--
-source: API\Callbacks\Events\StartupStartedEvent.md
--->
-
-## StartupStartedEvent
-
-`class` in `AdvancedSceneManager.Callbacks.Events`  /  Inherits from: `EventCallbackBase`### Description
-Occurs when ASM startup begins, opening any collections or scenes flagged to load during startup.
-
-### Properties
-
-| Member | Description |
-|--------|-------------|
-| `StartupProps props` | _No documentation available._ |
-
-### Methods
-
-| Member | Description |
-|--------|-------------|
-| `virtual EventCallbackBase <Clone>$()` | _No documentation available._ |
-| `void Deconstruct(StartupProps& props)` | _No documentation available._ |
-| `virtual boolean Equals(object obj)` | _No documentation available._ |
-| `boolean Equals(EventCallbackBase other)` | _No documentation available._ |
-| `virtual boolean Equals(StartupStartedEvent other)` | _No documentation available._ |
-| `virtual int32 GetHashCode()` | _No documentation available._ |
-| `virtual string ToString()` | _No documentation available._ |
-
----
-# ASMCallbackEventPropertyDrawerFilterAttribute
-<!--
-source: API\Callbacks\Events\Utility\ASMCallbackEventPropertyDrawerFilterAttribute.md
--->
-
-## ASMCallbackEventPropertyDrawerFilterAttribute
-
-`class` in `AdvancedSceneManager.Callbacks.Events.Utility`  /  Inherits from: `Attribute`### Description
-Applies a filter to the types displayed in `ASMEventCallbackPropertyDrawer`, used for `SerializableASMEventCallbackType` fields.
-
-### Properties
-
-| Member | Description |
-|--------|-------------|
-| `Type[] HiddenTypes` | Specifies the types to hide in the list. |
-
----
-# SerializableASMEventCallbackType
-<!--
-source: API\Callbacks\Events\Utility\SerializableASMEventCallbackType.md
--->
-
-## SerializableASMEventCallbackType
-
-`class` in `AdvancedSceneManager.Callbacks.Events.Utility`### Description
-Represents a serializable event callback type.
-
-<b> Remarks:</b>
-Provides [SceneOperationEventBase})](https://learn.microsoft.com/dotnet/api/m:advancedscenemanager.callbacks.events.utility.serializableasmeventcallbacktype.registercallback(system.string,advancedscenemanager.core.sceneoperation,advancedscenemanager.callbacks.events.eventcallback{advancedscenemanager.callbacks.events.sceneoperationeventbase})) for easily registering the callback.
-            
-Also provides a property drawer.
-
-### Fields
-
-| Member | Description |
-|--------|-------------|
-| `string typeName` | The `AssemblyQualifiedName`. |
-| `When when` | Represents when this event is to be called. |
-
-### Methods
-
-| Member | Description |
-|--------|-------------|
-| `boolean IsValid()` | Gets if this event callback type is valid. |
-| `void RegisterCallback(string key, SceneOperation operation, EventCallback<SceneOperationEventBase> callback)` | Register callback on `operation`. |
-| `void RegisterGlobalCallback(string key, EventCallback<EventCallbackBase> callback)` | Register callback globally. |
-| `virtual string ToString()` | _No documentation available._ |
-| `SceneOperation UnregisterCallback(string key, SceneOperation operation)` | Unregisters the callback on `operation`. |
-| `void UnregisterGlobalCallback(string key)` | Unregisters the callback globally. |
-
----
-# When
-<!--
-source: API\Callbacks\Events\When.md
--->
-
-## When
-
-`enum` in `AdvancedSceneManager.Callbacks.Events`  /  Inherits from: `Enum`### Description
-Specifies when the event callback is invoked for the action it represents.
-
-### Static Fields
-
-| Member | Description |
-|--------|-------------|
-| `When After` | Specifies that the event callback was invoked after the action it represents. |
-| `When Before` | Specifies that the event callback should be invoked before the action it represents. |
-| `When Unspecified` | Specifies that the event callback runs both `Before` and `After`, if applicable. |
+This is the most common interface for interacting with ASM.
 
-### Fields
+Typical usage examples include:
 
-| Member | Description |
-|--------|-------------|
-| `int32 value__` | _No documentation available._ |
+- `SceneCollection.Open()`
+- `Scene.Open()`
+- `SceneHelper.Open()`
 
----
-# FluentInvokeAPI_Of_T
-<!--
-source: API\Callbacks\FluentInvokeAPI_Of_T.md
--->
-
-## FluentInvokeAPI`1
-
-`sealed class` in `AdvancedSceneManager.Callbacks`### Description
-
-### Properties
-
-| Member | Description |
-|--------|-------------|
-| `boolean hasDefaultCallback` | _No documentation available._ |
-
-### Methods
-
-| Member | Description |
-|--------|-------------|
-| `IEnumerator On(SceneCollection collection, Scene[] additionalScenes)` | _No documentation available._ |
-| `IEnumerator On(Scene[] scenes)` | _No documentation available._ |
-| `IEnumerator On(ScriptableObject[] scriptableObjects)` | _No documentation available._ |
-| `IEnumerator OnAllOpenScenes()` | _No documentation available._ |
-| `FluentInvokeAPI<T> WithCallback(Callback<T> callback)` | _No documentation available._ |
-| `FluentInvokeAPI<T> WithParam(object param)` | _No documentation available._ |
-
----
-# ICollectionClose
-<!--
-source: API\Callbacks\ICollectionClose.md
--->
-
-## ICollectionClose
-
-`interface` in `AdvancedSceneManager.Callbacks`### Description
-Callback for when a scene, in a collection, that a `MonoBehaviour` is contained within is closed.
-
-Called after loading screen has opened, if one is defined, or else just before collection is closed.
-
-            See also:
-            
-- `ICollectionClose`
-- `ICollectionCloseCoroutine`
-- `ICollectionCloseAwaitable`
-
-### Methods
-
-| Member | Description |
-|--------|-------------|
-| `abstract virtual void OnCollectionClose(SceneCollection collection)` | Callback for when a scene, in a collection, that a `MonoBehaviour` is contained within is closed.
-
-Called after loading screen has opened, if one is defined, or else just before collection is closed.
-
-            See also:
-            
-- `ICollectionClose`
-- `ICollectionCloseCoroutine`
-- `ICollectionCloseAwaitable` |
-
----
-# ICollectionCloseAwaitable
-<!--
-source: API\Callbacks\ICollectionCloseAwaitable.md
--->
-
-## ICollectionCloseAwaitable
-
-`interface` in `AdvancedSceneManager.Callbacks`### Description
-Callback for when a scene, in a collection, that a `MonoBehaviour` is contained within is closed.
-
-Called after loading screen has opened, if one is defined, or else just before collection is closed.
-
-            See also:
-            
-- `ICollectionClose`
-- `ICollectionCloseCoroutine`
-- `ICollectionCloseAwaitable`
-
-### Methods
-
-| Member | Description |
-|--------|-------------|
-| `abstract virtual Awaitable OnCollectionClose(SceneCollection collection)` | Callback for when a scene, in a collection, that a `MonoBehaviour` is contained within is closed.
-
-Called after loading screen has opened, if one is defined, or else just before collection is closed.
-
-            See also:
-            
-- `ICollectionClose`
-- `ICollectionCloseCoroutine`
-- `ICollectionCloseAwaitable` |
-
----
-# ICollectionCloseCoroutine
-<!--
-source: API\Callbacks\ICollectionCloseCoroutine.md
--->
-
-## ICollectionCloseCoroutine
-
-`interface` in `AdvancedSceneManager.Callbacks`### Description
-Callback for when a scene, in a collection, that a `MonoBehaviour` is contained within is closed.
-
-Called after loading screen has opened, if one is defined, or else just before collection is closed.
-
-            See also:
-            
-- `ICollectionClose`
-- `ICollectionCloseCoroutine`
-- `ICollectionCloseAwaitable`
-
-### Methods
-
-| Member | Description |
-|--------|-------------|
-| `abstract virtual IEnumerator OnCollectionClose(SceneCollection collection)` | Callback for when a scene, in a collection, that a `MonoBehaviour` is contained within is closed.
-
-Called after loading screen has opened, if one is defined, or else just before collection is closed.
-
-            See also:
-            
-- `ICollectionClose`
-- `ICollectionCloseCoroutine`
-- `ICollectionCloseAwaitable` |
-
----
-# ICollectionExtraDataCallbacks
-<!--
-source: API\Callbacks\ICollectionExtraDataCallbacks.md
--->
-
-## ICollectionExtraDataCallbacks
-
-`interface` in `AdvancedSceneManager.Callbacks`### Description
-Callbacks for a `ScriptableObject` that has been set as extra data for a collection.
-            
-            See also:
-            
-- `ICollectionExtraDataCallbacks`
-- `ICollectionExtraDataCallbacksCoroutine`
-- `ICollectionExtraDataCallbacksAwaitable`
-
----
-# ICollectionExtraDataCallbacksAwaitable
-<!--
-source: API\Callbacks\ICollectionExtraDataCallbacksAwaitable.md
--->
-
-## ICollectionExtraDataCallbacksAwaitable
-
-`interface` in `AdvancedSceneManager.Callbacks`### Description
-Callbacks for a `ScriptableObject` that has been set as extra data for a collection.
-            
-            See also:
-            
-- `ICollectionExtraDataCallbacks`
-- `ICollectionExtraDataCallbacksCoroutine`
-- `ICollectionExtraDataCallbacksAwaitable`
-
----
-# ICollectionExtraDataCallbacksCoroutine
-<!--
-source: API\Callbacks\ICollectionExtraDataCallbacksCoroutine.md
--->
-
-## ICollectionExtraDataCallbacksCoroutine
-
-`interface` in `AdvancedSceneManager.Callbacks`### Description
-Callbacks for a `ScriptableObject` that has been set as extra data for a collection.
-            
-            See also:
-            
-- `ICollectionExtraDataCallbacks`
-- `ICollectionExtraDataCallbacksCoroutine`
-- `ICollectionExtraDataCallbacksAwaitable`
-
----
-# ICollectionOpen
-<!--
-source: API\Callbacks\ICollectionOpen.md
--->
-
-## ICollectionOpen
-
-`interface` in `AdvancedSceneManager.Callbacks`### Description
-Callback for when a scene, in a collection, that a `MonoBehaviour` is contained within is opened.
-
-Called before loading screen is hidden, if one is defined, or else just when collection has opened.
-
-            See also:
-            
-- `ICollectionOpen`
-- `ICollectionOpen`
-- `ICollectionOpenAwaitable`
-
-### Methods
-
-| Member | Description |
-|--------|-------------|
-| `abstract virtual void OnCollectionOpen(SceneCollection collection)` | Callback for when a scene, in a collection, that a `MonoBehaviour` is contained within is opened.
-
-Called before loading screen is hidden, if one is defined, or else just when collection has opened.
-
-            See also:
-            
-- `ICollectionOpen`
-- `ICollectionOpen`
-- `ICollectionOpenAwaitable` |
-
----
-# ICollectionOpenAwaitable
-<!--
-source: API\Callbacks\ICollectionOpenAwaitable.md
--->
-
-## ICollectionOpenAwaitable
-
-`interface` in `AdvancedSceneManager.Callbacks`### Description
-Callback for when a scene, in a collection, that a `MonoBehaviour` is contained within is opened.
-
-Called before loading screen is hidden, if one is defined, or else just when collection has opened.
-
-            See also:
-            
-- `ICollectionOpen`
-- `ICollectionOpen`
-- `ICollectionOpenAwaitable`
-
-### Methods
-
-| Member | Description |
-|--------|-------------|
-| `abstract virtual Awaitable OnCollectionOpen(SceneCollection collection)` | Callback for when a scene, in a collection, that a `MonoBehaviour` is contained within is opened.
-
-Called before loading screen is hidden, if one is defined, or else just when collection has opened.
-
-            See also:
-            
-- `ICollectionOpen`
-- `ICollectionOpen`
-- `ICollectionOpenAwaitable` |
-
----
-# ICollectionOpenCoroutine
-<!--
-source: API\Callbacks\ICollectionOpenCoroutine.md
--->
-
-## ICollectionOpenCoroutine
-
-`interface` in `AdvancedSceneManager.Callbacks`### Description
-Callback for when a scene, in a collection, that a `MonoBehaviour` is contained within is opened.
-
-Called before loading screen is hidden, if one is defined, or else just when collection has opened.
-
-            See also:
-            
-- `ICollectionOpen`
-- `ICollectionOpen`
-- `ICollectionOpenAwaitable`
-
-### Methods
+These methods offer a simplified and intuitive experience, suitable for UnityEvents such as UI button click handlers, and typical game logic scripts. They are primarily convenience wrappers around the Mid-level API.
 
-| Member | Description |
-|--------|-------------|
-| `abstract virtual IEnumerator OnCollectionOpen(SceneCollection collection)` | Callback for when a scene, in a collection, that a `MonoBehaviour` is contained within is opened.
+Example:
 
-Called before loading screen is hidden, if one is defined, or else just when collection has opened.
+```csharp
+public Example : MonoBehaviour
+{
+	public Scene level1;
+	
+	public void OnTriggerEnter(Collider other) => 
+		level1.Open();
+		
+}
+```
 
-            See also:
-            
-- `ICollectionOpen`
-- `ICollectionOpen`
-- `ICollectionOpenAwaitable` |
+### Mid-level API
 
----
-# ISceneCallbacks
-<!--
-source: API\Callbacks\ISceneCallbacks.md
--->
-
-## ISceneCallbacks
-
-`interface` in `AdvancedSceneManager.Callbacks`### Description
-Base interface for `MonoBehaviour` callbacks. Just implement any of the following to have ASM call them during scene operations.
-            
-- `ISceneOpen`, `ISceneClose`, `ICollectionOpen`, `ICollectionClose`
-- `ISceneOpenCoroutine`, `ISceneCloseCoroutine`, `ICollectionOpen`, `ICollectionCloseCoroutine`
-- `ISceneOpenAwaitable`, `ISceneCloseAwaitable`, `ICollectionOpenAwaitable`, `ICollectionCloseAwaitable`
-- `ICollectionExtraDataCallbacks`, `ICollectionExtraDataCallbacksCoroutine`, `ICollectionExtraDataCallbacksAwaitable`
-
----
-# ISceneClose
-<!--
-source: API\Callbacks\ISceneClose.md
--->
-
-## ISceneClose
+This layer is responsible for managing the open state of scenes and collections, as well as handling validations like preventing duplicate scene instances.
 
-`interface` in `AdvancedSceneManager.Callbacks`### Description
-Callback for when the scene that a `MonoBehaviour` is contained within is closed.
+Accessed via:
 
-<b> Remarks:</b>
-See also:
-            
-- `ISceneClose`
-- `ISceneCloseCoroutine`
-- `ISceneCloseAwaitable`
+```csharp
+SceneManager.runtime
+```
 
-### Methods
+This level provides more direct control and is used by the High-level API internally.
 
-| Member | Description |
-|--------|-------------|
-| `abstract virtual void OnSceneClose()` | Callback for when the scene that a `MonoBehaviour` is contained within is closed. |
-
----
-# ISceneCloseAwaitable
-<!--
-source: API\Callbacks\ISceneCloseAwaitable.md
--->
+### Low-level API
 
-## ISceneCloseAwaitable
+The Low-level API performs the actual work of loading and unloading scenes.
 
-`interface` in `AdvancedSceneManager.Callbacks`### Description
-Callback for when the scene that a `MonoBehaviour` is contained within is closed.
+Key type:
 
-<b> Remarks:</b>
-See also:
-            
-- `ISceneClose`
-- `ISceneCloseCoroutine`
-- `ISceneCloseAwaitable`
+- `SceneOperation`
 
-### Methods
+This component processes scene transitions and loading screens, manages operation queues, and coordinates scene lifecycle events. It takes lists of scenes to open and close, executes them in the correct order, and supports complex features like loading screens and callbacks.
 
-| Member | Description |
-|--------|-------------|
-| `abstract virtual Awaitable OnSceneClose()` | Callback for when the scene that a `MonoBehaviour` is contained within is closed. |
+Operations are started via:
 
----
-# ISceneCloseCoroutine
-<!--
-source: API\Callbacks\ISceneCloseCoroutine.md
--->
+```csharp
+SceneOperation.Queue();
+SceneOperation.Start(); // Ignores queue
+```
 
-## ISceneCloseCoroutine
+Example:
 
-`interface` in `AdvancedSceneManager.Callbacks`### Description
-Callback for when the scene that a `MonoBehaviour` is contained within is closed.
+```csharp
+public Scene[] scenesToOpen;
+public Scene loadingScene;
 
-<b> Remarks:</b>
-See also:
-            
-- `ISceneClose`
-- `ISceneCloseCoroutine`
-- `ISceneCloseAwaitable`
+public void OnButtonClick() =>
+	SceneOperation.Queue()
+		.Open(sceneToOpen)
+		.Close(SceneManager.openScenes)
+		.With(loadingScene);
+```
 
-### Methods
+#### Fluent API Support
 
-| Member | Description |
-|--------|-------------|
-| `abstract virtual IEnumerator OnSceneClose()` | Callback for when the scene that a `MonoBehaviour` is contained within is closed. |
+```csharp
+sceneToOpen.Open().Close(closeAlreadyOpenScene).With(loadingScreenScene);
+```
 
----
-# ISceneOpen
-<!--
-source: API\Callbacks\ISceneOpen.md
--->
+> See `.With(..)` in IntelliSense or API docs for overloads.
 
-## ISceneOpen
+### Parallel Scene Loading
 
-`interface` in `AdvancedSceneManager.Callbacks`### Description
-Callback for when the scene that a `MonoBehaviour` is contained within is opened.
-            See also:
-            
-- `ISceneOpen`
-- `ISceneOpenCoroutine`
-- `ISceneOpenAwaitable`
+Unity typically restricts loading multiple scenes in parallel. However, ASM includes experimental support for attempting parallel scene loading where feasible.
 
-### Methods
+To enable this feature in ASM:
 
-| Member | Description |
-|--------|-------------|
-| `abstract virtual void OnSceneOpen()` | Callback for when the scene that a `MonoBehaviour` is contained within is opened.
-            See also:
-            
-- `ISceneOpen`
-- `ISceneOpenCoroutine`
-- `ISceneOpenAwaitable` |
+- Open the **Settings popup**
+- Go to the **Experimental category**
+- Enable the toggle: **"Parallel Scene Loading"**
 
----
-# ISceneOpenAwaitable
-<!--
-source: API\Callbacks\ISceneOpenAwaitable.md
--->
+When enabled, ASM will attempt to load scenes concurrently where supported, subject to Unity's internal limitations *(unknown exactly what, could have been added in an unknown unity version - if you know, please let us know over on [discord!](https://discord.gg/upfgXPxFnw))*.
 
-## ISceneOpenAwaitable
+### Further Reading
 
-`interface` in `AdvancedSceneManager.Callbacks`### Description
-Callback for when the scene that a `MonoBehaviour` is contained within is opened.
-            See also:
-            
-- `ISceneOpen`
-- `ISceneOpenCoroutine`
-- `ISceneOpenAwaitable`
+- Learn about [scene operation callbacks and lifecycle events](Callbacks.md) to trigger logic during transitions.
+- For more on advanced usage, see the dedicated [Scene Operations](Scene%20Operations.md) guide.
 
-### Methods
+### Related pages
+[📄 View SceneManager _(API Entry point)_](guides/Scene-manager.md)\
+[📄 View API structure](guides/API-structure.md)\
+[📄 View CoroutineUtility](api/SceneManager.md)\
+[📄 View Finding ASM assets](guides/Finding-ASM-assets.md)\
+[📄 View Scene operations](guides/SceneOperation.md)
 
-| Member | Description |
-|--------|-------------|
-| `abstract virtual Awaitable OnSceneOpen()` | Callback for when the scene that a `MonoBehaviour` is contained within is opened.
-            See also:
-            
-- `ISceneOpen`
-- `ISceneOpenCoroutine`
-- `ISceneOpenAwaitable` |
+[← Back](readme.md) | [🏠 Home](../readme.md)
 
 ---
-# ISceneOpenCoroutine
+# CoroutineUtility
 <!--
-source: API\Callbacks\ISceneOpenCoroutine.md
+source: guides\api\CoroutineUtility.md
 -->
-
-## ISceneOpenCoroutine
 
-`interface` in `AdvancedSceneManager.Callbacks`### Description
-Callback for when the scene that a `MonoBehaviour` is contained within is opened.
-            See also:
-            
-- `ISceneOpen`
-- `ISceneOpenCoroutine`
-- `ISceneOpenAwaitable`
+<!---api/CoroutineUtility.md-->
+[← Back](readme.md) | [🏠 Home](../readme.md)
+## API
+### CoroutineUtility
 
-### Methods
+Run coroutines detached from MonoBehaviours and scenes which makes working with coroutines in certain circumstances a lot easier.\
+Supports [Editor Coroutines](https://docs.unity3d.com/Manual/com.unity.editorcoroutines.html).
 
-| Member | Description |
-|--------|-------------|
-| `abstract virtual IEnumerator OnSceneOpen()` | Callback for when the scene that a `MonoBehaviour` is contained within is opened.
-            See also:
-            
-- `ISceneOpen`
-- `ISceneOpenCoroutine`
-- `ISceneOpenAwaitable` |
+```csharp
+void Start()
+{
 
----
-# OnCollectionCloseAttribute
-<!--
-source: API\Callbacks\OnCollectionCloseAttribute.md
--->
+    //Unity, attached with script and will stop when
+    //scene or object is unloaded.
+    StartCoroutine(Coroutine());
 
-## OnCollectionCloseAttribute
+    //Coroutine Utility, runs detached from script and
+    //won't stop when scene or object is unloaded
+    var coroutine = Coroutine().StartCoroutine();
 
-`class` in `AdvancedSceneManager.Callbacks`  /  Inherits from: `SceneCallbackAttribute`### Description
+    //Pauses coroutine (automatically yields null until coroutine.Resume() is called)
+    coroutine.Pause();
+    coroutine.Resume();
 
-### Properties
+    //Stop coroutine
+    coroutine.Stop();
 
-| Member | Description |
-|--------|-------------|
-| `TargetInfo target` | _No documentation available._ |
+}
 
----
-# OnCollectionOpenAttribute
-<!--
-source: API\Callbacks\OnCollectionOpenAttribute.md
--->
+async void Start() {
+    // Unity's Awaitable class
+    Awaitable<bool> coroutine = Coroutine().StartCoroutineAsAwaitable();
+    await coroutine;
 
-## OnCollectionOpenAttribute
+    // Does not work with Unity Web (WebGL)
+    Task coroutine = Coroutine().StartCoroutineAsTask();
+    await coroutine;
 
-`class` in `AdvancedSceneManager.Callbacks`  /  Inherits from: `SceneCallbackAttribute`### Description
+    GlobalCoroutine coroutine = Coroutine().StartCoroutine();
+    await coroutine; //custom awaiter for coroutines is included in ASM.
+}
 
-### Properties
+IEnumerator Coroutine()
+{
+    ...
+}
+```
+</br>
 
-| Member | Description |
-|--------|-------------|
-| `TargetInfo target` | _No documentation available._ |
+## MainThreadUtility
 
----
-# OnLoadAttribute
-<!--
-source: API\Callbacks\OnLoadAttribute.md
--->
+Provides functionality to invoke code on main thread. Useful when using tasks or threading, and you need to perform action on main thread.
 
-## OnLoadAttribute
+```csharp
+async Task Background_Task()
+{
+    // Simulate work done in a background thread
+    await Task.Run(() =>
+    {
+        Thread.Sleep(500); // pretend to do heavy work
+    });
 
-`class` in `AdvancedSceneManager.Callbacks`  /  Inherits from: `DiscoverableAttribute`### Description
-Occurs when ASM has finished initializing, after domain reload, editor startup, or before startup process in a build.
+    // This must be done on the main thread
+    var cube = await MainThreadUtility.InvokeAsync(() =>
+    {
+        var go = GameObject.CreatePrimitive(PrimitiveType.Cube);
+        go.transform.position = new Vector3(0, 1, 0);
+        return go;
+    });
 
-<b> Remarks:</b>
-Aims to replace:
+    Debug.Log($"Spawned {cube.name} on main thread at time {Time.realtimeSinceStartup}");
+}
 
 ```
 
+### Related pages
+[📄 View SceneManager _(API Entry point)_](guides/Scene-manager.md)\
+[📄 View API structure](guides/API-structure.md)\
+[📄 View CoroutineUtility](api/SceneManager.md)\
+[📄 View Finding ASM assets](guides/Finding-ASM-assets.md)\
+[📄 View Scene operations](guides/SceneOperation.md)
+
+[← Back](readme.md) | [🏠 Home](../readme.md)
+
+---
+# Finding-ASM-assets
+<!--
+source: guides\api\Finding-ASM-assets.md
+-->
+
+<!---api/Finding-ASM-assets.md-->
+[← Back](readme.md) | [🏠 Home](../readme.md)
+## API
+### Finding ASM assets
+
+Finding assets in ASM is very easy. All assets have static `.Find()` methods, that take a string query parameter. 
+
+This query string can be any of the following:
+- Scene path
+- Asset name (as in unitys [Object.name](https://docs.unity3d.com/ScriptReference/Object-name.html))
+- [SceneAsset](https://docs.unity3d.com/ScriptReference/SceneAsset.html) guid
+- Collection title
+- ASM model id. Every ASM asset has an id property.
+
+Predicates are also often supported. 
+
+```csharp
+var profile = Profile.Find("example profile").FirstOrDefault();
+
+var scene1 = Scene.Find("Assets/Scenes/example scene.unity").FirstOrDefault();
+var scene2 = Scene.Find("example scene").FirstOrDefault();
+
+var collection1 = SceneCollection.Find("example collection").FirstOrDefault();
+var collection2 = SceneCollection.Find("example collection", activeProfile: false).FirstOrDefault(); //Checks all profiles, not just active.
+
+var addressableScenes = Scene.Find(s => s.isAddressable); //Finds all scenes flagged to use the addressables scene loader. isAddressable property only available if addressables package is installed.
 ```
 
+### Related pages
+[📄 View SceneManager _(API Entry point)_](guides/Scene-manager.md)\
+[📄 View API structure](guides/API-structure.md)\
+[📄 View CoroutineUtility](api/SceneManager.md)\
+[📄 View Finding ASM assets](guides/Finding-ASM-assets.md)\
+[📄 View Scene operations](guides/SceneOperation.md)
 
+[← Back](readme.md) | [🏠 Home](../readme.md)
+
+---
+# readme
+<!--
+source: guides\api\readme.md
+-->
+
+<!---api/readme.md-->
+[← Back](readme.md) | [🏠 Home](../readme.md)
+## API
+### Overview
+
+[📄 View SceneManager _(API Entry point)_](guides/Scene-manager.md)\
+[📄 View API structure](guides/API-structure.md)\
+[📄 View CoroutineUtility](api/SceneManager.md)\
+[📄 View Finding ASM assets](guides/Finding-ASM-assets.md)\
+[📄 View Scene operations](guides/SceneOperation.md)
+
+
+---
+# SceneManager
+<!--
+source: guides\api\SceneManager.md
+-->
+
+<!---api/SceneManager.md-->
+[← Back](readme.md) | [🏠 Home](../readme.md)
+## Main view
+### SceneManager
+
+The scene manager class is meant to act as the core API of ASM, and provides access to the most important systems within.
+
+> There are also a lot miscellaneous static utility classes in AdvancedSceneManager.Utility that are not accessible from SceneManager, and are accessible as static classes.
+
+## SceneManager.assets
+Provides access to ASMs asset lists, which would be:
+* Profiles
+* Scenes
+* Collection templates
+* Default scenes *(e.g., fade scene, splash screen, via in ASM package samples)*
+
+```csharp
+//Gets all level scenes
+SceneManager.assets.scenes.Where(s => s.name.StartsWith("Level")).ToArray();
+//Gets the default fade scene, assuming has been imported (from ASM package samples)
+SceneManager.assets.defaults.fadeScene;
 ```
 
+## SceneManager.openScenes
+Provides access to the list of open scenes.\
+Proxy for: `SceneManager.runtime.openScenes`.
+
+## SceneManager.openCollection
+Provides access to the currently open collection, null if none.\
+Proxy for: `SceneManager.runtime.openCollection`.
+
+## SceneManager.preloadedScenes
+Provides access to the currently preloaded scene, null if none.\
+Proxy for: `SceneManager.runtime.preloadedScene`.
+
+## SceneManager.runtime
+Provides access to runtime scene management.
+```csharp
+public SceneCollection collection;
+
+void OpenCollection() =>
+	SceneManager.runtime.Open(collection); //Equivalent to: collection.Open();
 ```
 
-
-Combines them, and is safely usable both in and outside the editor.
-
-### Properties
-
-| Member | Description |
-|--------|-------------|
-| `string friendlyDescription` | Specifies the description to be shown in the diag UI tooltip. |
-
----
-# OnSceneCloseAttribute
-<!--
-source: API\Callbacks\OnSceneCloseAttribute.md
--->
-
-## OnSceneCloseAttribute
-
-`class` in `AdvancedSceneManager.Callbacks`  /  Inherits from: `SceneCallbackAttribute`### Description
-
-### Properties
-
-| Member | Description |
-|--------|-------------|
-| `TargetInfo target` | _No documentation available._ |
-
----
-# OnSceneOpenAttribute
-<!--
-source: API\Callbacks\OnSceneOpenAttribute.md
--->
-
-## OnSceneOpenAttribute
-
-`class` in `AdvancedSceneManager.Callbacks`  /  Inherits from: `SceneCallbackAttribute`### Description
-
-### Properties
-
-| Member | Description |
-|--------|-------------|
-| `TargetInfo target` | _No documentation available._ |
-
----
-# SceneCallbackAttribute
-<!--
-source: API\Callbacks\SceneCallbackAttribute.md
--->
-
-## SceneCallbackAttribute
-
-`abstract class` in `AdvancedSceneManager.Callbacks`  /  Inherits from: `DiscoverableAttribute`### Description
-
----
-# App
-<!--
-source: API\Core\App.md
--->
-
-## App
-
-`class` in `AdvancedSceneManager.Core`### Description
-Manages startup and quit processes.
-
-<b> Remarks:</b>
-Usage: `app`.
-
-### Properties
-
-| Member | Description |
-|--------|-------------|
-| `boolean isASMPlay { get; }` | Gets whatever we're currently in ASM play mode. |
-| `boolean isQuitting { get; }` | Gets whatever ASM is currently in the process of quitting the game. |
-| `boolean isRestart { get; }` | Gets if ASM has been restarted, or is currently restarting. |
-| `boolean isRunningStartupProcess { get; }` | Gets if ASM startup process is running. |
-| `boolean isStartupFinished { get; }` | Gets if startup process is finished. |
-| `ProgressScope startupProgressScope { get; }` | Gets the progress scope used during startup. |
-| `StartupProps startupProps` | Gets the props that should be used for startup process. |
-
-### Methods
-
-| Member | Description |
-|--------|-------------|
-| `void CancelQuit()` | Cancels the current quit process. |
-| `void CancelStartup()` | Cancels startup process. |
-| `void Exit()` | Exits the application immediately. |
-| `void Play(StartupProps props)` | _No documentation available._ |
-| `Awaitable Quit(boolean fade, Nullable<Color> fadeColor, single fadeDuration)` | Quits the application with optional fade effect. |
-| `void RegisterQuitCallback(Func<IEnumerator> coroutine)` | Register a callback to be called before quit. |
-| `void Restart(StartupProps props)` | _No documentation available._ |
-| `Async<boolean> RestartAsync(StartupProps props)` | _No documentation available._ |
-| `void UnregisterQuitCallback(Func<IEnumerator> coroutine)` | Unregister a callback that was to be called before quit. |
-
----
-# Indicator
-<!--
-source: API\Core\Indicator.md
--->
-
-## Indicator
-
-`struct` in `AdvancedSceneManager.Core`  /  Inherits from: `ValueType`### Description
-
-### Properties
-
-| Member | Description |
-|--------|-------------|
-| `Nullable<Color> color` | _No documentation available._ |
-| `Func<Texture2D> icon` | _No documentation available._ |
-| `Action<Scene> onClick` | _No documentation available._ |
-| `string text` | _No documentation available._ |
-| `string tooltip` | _No documentation available._ |
-| `boolean useFontAwesome` | _No documentation available._ |
-| `boolean useFontAwesomeBrands` | _No documentation available._ |
-
----
-# Package
-<!--
-source: API\Core\Package.md
--->
-
-## Package
-
-`class` in `AdvancedSceneManager.Core`### Description
-Contains info about the ASM package.
-
-<b> Remarks:</b>
-Only available in editor.
-
-### Properties
-
-| Member | Description |
-|--------|-------------|
-| `string folder` | The folder that ASM is contained within. |
-| `string id` | The id of this package. |
-| `string version { get; }` | The version of ASM. |
-
----
-# Runtime
-<!--
-source: API\Core\Runtime.md
--->
-
-## Runtime
-
-`class` in `AdvancedSceneManager.Core`### Description
-Manages runtime functionality for Advanced Scene Manager such as open scenes and collection.
-
-### Properties
-
-| Member | Description |
-|--------|-------------|
-| `Scene activeScene` | Gets the currently active scene, assuming it has been imported into ASM. |
-| `SceneOperation currentOperation` | Gets the current active operation in the queue. |
-| `Scene dontDestroyOnLoad` | Gets the dontDestroyOnLoad scene. |
-| `boolean isBusy` | Gets whatever ASM is busy with any scene operations. |
-| `boolean isPreloadedCollectionAdditive { get; }` | Gets if `preloadedCollection` is additive. |
-| `IEnumerable<SceneCollection> openAdditiveCollections` | Gets the collections that are opened as additive. |
-| `SceneCollection openCollection` | Gets the collection that is currently open. |
-| `IEnumerable<Scene> openScenes` | Gets the scenes that are currently open. |
-| `SceneCollection preloadedCollection { get; }` | Gets the currently preloaded collection. |
-| `IEnumerable<Scene> preloadedScenes` | Gets the scenes that are preloaded. |
-| `IEnumerable<SceneOperation> queuedOperations` | Gets the current scene operation queue. |
-| `IEnumerable<SceneOperation> runningOperations` | The currently running scene operations. |
-| `IEnumerable<Scene> unimportedScenes` | Gets all open Unity scenes that are not imported into ASM. |
-
-### Fields
-
-| Member | Description |
-|--------|-------------|
-| `Action onAllScenesClosed` | Occurs when the last user scene closes. |
-
-### Events
-
-| Member | Description |
-|--------|-------------|
-| `event Action<SceneCollection> collectionClosed` | Occurs when a collection is closed. |
-| `event Action<SceneCollection> collectionOpened` | Occurs when a collection is opened. |
-| `event Action<Scene> sceneClosed` | Occurs when a scene is closed. |
-| `event Action sceneLoaderAdded` | Occurs when a `SceneLoader` is added. |
-| `event Action sceneLoaderRemoved` | Occurs when a `SceneLoader` is removed. |
-| `event Action<ValueTuple<Scene, Type, Type>> sceneLoaderToggled` | Occurs when a `SceneLoader` is toggled for a scene. |
-| `event Action<Scene> sceneOpened` | Occurs when a scene is opened. |
-| `event Action<Scene> scenePreloaded` | Occurs when a scene is preloaded. |
-| `event Action<Scene> scenePreloadFinished` | Occurs when a previously preloaded scene is opened. |
-| `event Action startedWorking` | Occurs when ASM has started working and is running scene operations. |
-| `event Action stoppedWorking` | Occurs when ASM has finished working and no scene operations are running. |
-
-### Methods
-
-| Member | Description |
-|--------|-------------|
-| `void Activate(Scene scene)` | Activates this scene. |
-| `void AddProgressListener(ILoadProgressListener listener)` | _No documentation available._ |
-| `void AddSceneLoader<T>()` | _No documentation available._ |
-| `SceneOperation CancelPreload()` | Cancels the preload. All preloaded scenes will be fully loaded (limitation by Unity), then closed. No ASM scene callbacks will be called. |
-| `SceneOperation Close(SceneCollection collection)` | Closes `collection`. |
-| `SceneOperation Close(SceneOperation operation, SceneCollection collection)` | _No documentation available._ |
-| `SceneOperation Close(Scene scene)` | Closes this scene. |
-| `SceneOperation Close(Scene[] scenes)` | _No documentation available._ |
-| `SceneOperation Close(IEnumerable<Scene> scenes)` | Closes this scene. |
-| `SceneOperation Close(IEnumerable<Scene> scenes, boolean skipEmptySceneCheck)` | _No documentation available._ |
-| `SceneOperation CloseAll(boolean exceptLoadingScreens, boolean exceptUnimported, Scene[] except)` | Closes all scenes and collections. |
-| `IEnumerator CloseUnimportedScenes()` | Closes all open Unity scenes that are not imported into ASM. |
-| `SceneOperation CloseWithLoadingScreen(Scene scene, Scene loadingScreen)` | _No documentation available._ |
-| `SceneOperation CloseWithLoadingScreen(IEnumerable<Scene> scene, Scene loadingScreen)` | _No documentation available._ |
-| `IEnumerable<Scene> EvalScenesToClose(SceneCollection closeCollection, SceneCollection nextCollection, SceneCollection additiveCloseCollection)` | Evaluate the scenes that would close. |
-| `IEnumerable<Scene> EvalScenesToOpen(SceneCollection collection, boolean openAll)` | Evaluate the scenes that would open. |
-| `SceneOperation FinishPreload()` | Finish loading preloaded scenes. |
-| `void ForceTrack(Scene scene)` | Tracks a scene that doesn't have a associated unity scene. |
-| `SceneLoader GetLoaderForScene(Scene scene, boolean useOnlyGlobal)` | Gets the loader for `scene`. |
-| `SceneLoader GetSceneLoader(string sceneLoader)` | Returns the scene loader with the specified key. |
-| `Type GetSceneLoaderType(string sceneLoader)` | Returns the scene loader type with the specified key. |
-| `SceneState GetState(Scene scene)` | _No documentation available._ |
-| `IEnumerable<SceneLoader> GetToggleableSceneLoaders()` | Gets a list of all added scene loaders that can be toggled scene by scene. |
-| `boolean IsQueued(SceneCollection collection)` | Gets if this collection is currently queued to be opened. |
-| `boolean IsQueued(Scene scene)` | Gets if this scene is queued to be opened. |
-| `boolean IsTracked(Scene scene)` | Gets whatever this scene is tracked as open. |
-| `boolean IsTracked(SceneCollection collection)` | Gets whatever this collection is tracked as open. |
-| `SceneOperation Open(SceneCollection collection, boolean openAll)` | Opens the collection. |
-| `SceneOperation Open(Scene scene)` | Opens this scene. |
-| `SceneOperation Open(Scene[] scenes)` | _No documentation available._ |
-| `SceneOperation Open(IEnumerable<Scene> scenes)` | Opens this scene. |
-| `SceneOperation OpenAdditive(SceneCollection collection, boolean openAll)` | Opens the collection without closing existing scenes. |
-| `SceneOperation OpenAdditive(IEnumerable<SceneCollection> collections, SceneCollection activeCollection, LoadingScreenReference loadingScreen)` | Opens the collection without closing existing scenes. |
-| `SceneOperation OpenAndActivate(Scene scene)` | Opens this scene and activates it. |
-| `SceneOperation OpenWithLoadingScreen(Scene scene, Scene loadingScreen)` | _No documentation available._ |
-| `SceneOperation OpenWithLoadingScreen(IEnumerable<Scene> scene, Scene loadingScreen)` | _No documentation available._ |
-| `SceneOperation Preload(IEnumerable<Scene> scenes, Action<Scene> onPreloaded)` | Preloads the scenes. |
-| `SceneOperation Preload(SceneCollection collection, boolean openAll)` | Preloads the collection. |
-| `SceneOperation Preload(Scene scene, Action onPreloaded)` | _No documentation available._ |
-| `SceneOperation Preload(Action<Scene> onPreloaded, Scene[] scenes)` | Preloads the specified scenes. |
-| `SceneOperation Preload(Scene[] scenes)` | Preloads the specified scenes. |
-| `SceneOperation PreloadAdditive(SceneCollection collection, boolean openAll)` | Preloads the collection as additive. |
-| `void RemoveProgressListener(ILoadProgressListener listener)` | _No documentation available._ |
-| `void RemoveSceneLoader<T>()` | _No documentation available._ |
-| `SceneOperation Reopen(SceneCollection collection, boolean openAll)` | Reopens the collection. |
-| `SceneOperation Reopen(Scene scene)` | Reopens this scene. |
-| `SceneOperation Reopen(IEnumerable<Scene> scene)` | _No documentation available._ |
-| `SceneOperation ToggleOpen(SceneCollection collection, boolean openAll)` | Toggles the collection open or closed. |
-| `SceneOperation ToggleOpen(Scene scene)` | Toggles this scene open or closed. |
-| `void Track(Scene scene, Scene unityScene)` | Tracks the specified scene as open. |
-| `void Track(Scene scene)` | _No documentation available._ |
-| `void Track(SceneCollection collection, boolean isAdditive)` | Tracks the collection as open. |
-| `boolean Untrack(Scene scene)` | Untracks the specified scene as open. |
-| `void Untrack(SceneCollection collection, boolean isAdditive)` | Untracks the collection. |
-| `void UntrackCollections()` | Untracks all collections. |
-| `void UntrackScenes()` | Untracks all open scenes. |
-
----
-# RuntimeSceneLoader
-<!--
-source: API\Core\RuntimeSceneLoader.md
--->
-
-## RuntimeSceneLoader
-
-`class` in `AdvancedSceneManager.Core`  /  Inherits from: `SceneLoader`### Description
-A scene loader that uses the normal play mode API. 
-            
-See [LoadSceneMode)](https://learn.microsoft.com/dotnet/api/m:unityengine.scenemanagement.scenemanager.loadsceneasync(system.string,unityengine.scenemanagement.loadscenemode)).
-
-See [Scene)](https://learn.microsoft.com/dotnet/api/m:unityengine.scenemanagement.scenemanager.unloadsceneasync(unityengine.scenemanagement.scene)).
-
-### Properties
-
-| Member | Description |
-|--------|-------------|
-| `boolean activeOutsideOfPlayMode` | Specifies whatever this loader will run outside of play mode or not. |
-
-### Methods
-
-| Member | Description |
-|--------|-------------|
-| `virtual boolean CanHandleScene(Scene scene)` | Gets whatever this scene loader can handle the scene. |
-| `virtual IEnumerator LoadScene(Scene scene, SceneLoadArgs e)` | Loads the scene specified in e.scene. |
-| `virtual IEnumerator UnloadScene(Scene scene, SceneUnloadArgs e)` | Unloads the scene specified in e.scene. |
-
----
-# SceneLoadArgs
-<!--
-source: API\Core\SceneLoadArgs.md
--->
-
-## SceneLoadArgs
-
-`class` in `AdvancedSceneManager.Core`  /  Inherits from: `SceneLoaderArgsBase`### Description
-Specifies arguments for [SceneLoadArgs)](https://learn.microsoft.com/dotnet/api/m:advancedscenemanager.core.sceneloader.loadscene(advancedscenemanager.models.scene,advancedscenemanager.core.sceneloadargs)).
-
-### Properties
-
-| Member | Description |
-|--------|-------------|
-| `boolean isPreload { get; }` | Specifies if the scene should be preloaded. |
-
-### Methods
-
-| Member | Description |
-|--------|-------------|
-| `boolean CheckIsIncluded(boolean logError)` | Checks if the scene is actually included in build. |
-| `Scene GetOpenedScene()` | Gets the `Scene` that was opened by this override. |
-| `void SetCompleted(Scene scene)` | Notifies ASM that the load is done. |
-| `void SetCompleted(Scene scene, Func<IEnumerator> preloadCallback)` | _No documentation available._ |
-| `void SetCompletedWithoutScene()` | Sets this loader as complete even though no scene was loaded. |
-
----
-# SceneLoader
-<!--
-source: API\Core\SceneLoader.md
--->
-
-## SceneLoader
-
-`abstract class` in `AdvancedSceneManager.Core`### Description
-Specifies a scene loader.
-
-### Properties
-
-| Member | Description |
-|--------|-------------|
-| `boolean activeInPlayMode` | Specifies whatever this loader will run in play mode or not. |
-| `boolean activeOutsideOfPlayMode` | Specifies whatever this loader will run outside of play mode or not. |
-| `boolean addScenesToBuildSettings` | Specifies whatever scenes using this loader should be added to build settings scene list. |
-| `boolean canBeActivated` | Gets whatever this loader may be activated in the current context. |
-| `Indicator indicator` | Specifies the indicator on scene fields for this scene loader. |
-| `boolean isGlobal` | Specifies if this scene loader will can be applied to all scenes. Otherwise scenes will have to be explicitly flagged to open with this loader. |
-| `string Key` | Gets the key for this scene loader. |
-| `string sceneToggleText` | Specifies the text to display on the toggle in scene popup. Only has an effect if `isGlobal` is `false`. |
-| `string sceneToggleTooltip` | Specifies the tooltip to display on the toggle in scene popup. Only has an effect if `isGlobal` is `false`. |
-
-### Static Methods
-
-| Member | Description |
-|--------|-------------|
-| `string GetKey<T>()` | _No documentation available._ |
-| `string GetKey<T>(T obj)` | _No documentation available._ |
-
-### Methods
-
-| Member | Description |
-|--------|-------------|
-| `virtual boolean CanHandleScene(Scene scene)` | Gets whatever this scene loader can handle the scene. |
-| `IEnumerator LoadDefault(SceneLoadArgs e)` | Loads scene using default ASM loaders. |
-| `abstract virtual IEnumerator LoadScene(Scene scene, SceneLoadArgs e)` | Loads the scene specified in e.scene. |
-| `IEnumerator UnloadDefault(SceneUnloadArgs e)` | Unloads scene using default ASM loaders. |
-| `abstract virtual IEnumerator UnloadScene(Scene scene, SceneUnloadArgs e)` | Unloads the scene specified in e.scene. |
-
----
-# SceneLoaderArgsBase
-<!--
-source: API\Core\SceneLoaderArgsBase.md
--->
-
-## SceneLoaderArgsBase
-
-`abstract class` in `AdvancedSceneManager.Core`### Description
-Base class for `SceneLoadArgs` and `SceneUnloadArgs`.
-
-### Properties
-
-| Member | Description |
-|--------|-------------|
-| `SceneCollection collection { get; }` | The collection that the scene belongs to, if any. |
-| `string errorMessage { get; }` | The error message if `isError` is `true`. |
-| `boolean isError { get; }` | Indicates whether this operation resulted in an error. |
-| `boolean isLoadingScreen` | Gets whether the associated scene is a loading screen. |
-| `boolean isSplashScreen` | Gets whether the associated scene is a splash screen. |
-| `SceneOperation operation { get; }` | The `SceneOperation` representing the current load or unload operation. |
-| `boolean reportProgress { get; }` | Determines whether progress should be reported during this operation. |
-| `Scene scene { get; }` | The scene associated with this loading or unloading operation. |
-
-### Methods
-
-| Member | Description |
-|--------|-------------|
-| `void SetError(string message)` | Marks this operation as failed with the specified error message. |
-
----
-# SceneLoaderExtensions
-<!--
-source: API\Core\SceneLoaderExtensions.md
--->
-
-## SceneLoaderExtensions
-
-`static class` in `AdvancedSceneManager.Core`### Description
-Provides extensions for scene loading.
-
-<b> Remarks:</b>
-This provides access to direct scene loading / unloading, which bypasses many checks that .Open() / .Close() has. Make sure to test thoroughly.
-
-### Static Methods
-
-| Member | Description |
-|--------|-------------|
-| `IEnumerator Load(Scene scene, SceneLoadArgs e)` | _No documentation available._ |
-| `IEnumerator Load(Scene scene, boolean isPreload, SceneOperation operation, SceneCollection collection, boolean reportsProgress, Nullable<ThreadPriority> loadPriority, Action onLoaded, Action<string> onError, boolean useOnlyGlobal)` | Loads the scene using a scene loader. |
-| `IEnumerator Unload(Scene scene, SceneUnloadArgs e)` | _No documentation available._ |
-| `IEnumerator Unload(Scene scene, SceneOperation operation, SceneCollection collection, boolean reportsProgress, Nullable<ThreadPriority> loadPriority, Action onUnloaded, Action<string> onError, boolean useOnlyGlobal)` | Unloads the scene using a scene loader. |
+## SceneManager.app
+Provides access to application wide ASM stuff. Handles startup and quit.
+```csharp
+void OpenCollection()
+{
+	//Register callback that should run before quit
+	SceneManager.app.RegisterQuitCallback(SaveBeforeQuit);
+	//Fades the screen out, calls SaveBeforeQuit(), then quits game
+	SceneManager.app.Quit(); 
+}
+
+IEnumerator SaveBeforeQuit()
+{
+	yield return SaveGameManager.SaveGame(); //Example save code
+}
+```
+
+## SceneManager.settings
+Provides access to ASM settings. 
+```csharp
+void ToggleWhateverCollectionShouldOpenWhenAContainedSceneIsOpened()
+{
+	//When a scene is opened, you can optionally have ASM open the entire collection that it is contained within. This is a user scoped / machine setting, it won't be synced to source control. Let's toggle it for fun, why not.
+	var currentValue = SceneManager.settings.user.openCollectionOnSceneAssetOpen;
+	SceneManager.settings.user.openCollectionOnSceneAssetOpen = !currentValue;
+	SceneManager.settings.user.Save();
+}
+```
+
+## SceneManager.profile
+Provides access to the currently active [profile](Profiles.md), null if none active.
+
+## SceneManager.events
+Provides access to register global ASM [event callbacks](Event%20callbacks.md).
+
+## SceneManager.package
+Provides access to some info about the ASM package.
+*Only available in editor*
+
+## SceneManager.isInitialized
+Gets whatever ASM is initialized after a domain reload. Some APIs may fail if this is false, most notably .assets and .settings.
+
+## SceneManager.OnInitialized(Action)
+Registers a callback for when ASM is initialized after a domain reload. Callback is invoked immediately if ASM is already initialized.
+
+An alternative to this is \[OnLoad] attribute.
+```csharp
+[OnLoad]
+static void OnLoad() {}
+```
+
+### Related pages
+[📄 View SceneManager _(API Entry point)_](guides/Scene-manager.md)\
+[📄 View API structure](guides/API-structure.md)\
+[📄 View CoroutineUtility](api/SceneManager.md)\
+[📄 View Finding ASM assets](guides/Finding-ASM-assets.md)\
+[📄 View Scene operations](guides/SceneOperation.md)
+
+[← Back](readme.md) | [🏠 Home](../readme.md)
 
 ---
 # SceneOperation
 <!--
-source: API\Core\SceneOperation.md
+source: guides\api\SceneOperation.md
 -->
 
-## SceneOperation
+<!---api/SceneOperation.md-->
+[← Back](readme.md) | [🏠 Home](../readme.md)
+## API
+### Scene operations
 
-`class` in `AdvancedSceneManager.Core`  /  Inherits from: `CustomYieldInstruction`### Description
-A scene operation is a queueable operation that can open or close scenes..
+A scene operation in ASM is basically a queued batch operation for opening and closing scenes. 
 
-### Static Properties
+At its most basic form, it takes a list of scenes to close, and a list of scenes to open. Scenes are then evaluated (*scene must be open to be closed, and must be closed to be opened*), and then closes and opens them.
 
-| Member | Description |
-|--------|-------------|
-| `SceneOperation done` | Gets a `SceneOperation` that has already completed. |
+On top of that you got some bells and whistles, like [loading screens](Loading%20screens.md), [coroutine callbacks](Callbacks.md), [temporary thread priority switching](Scene%20manager%20window.md#collection-popup), and [automatically unloading unused assets](Scene%20manager%20window.md#collection-popup). Scene operation will also report overall progress.
 
-### Properties
+Scene operation also supports spam checking, and duplicate checking, preventing button spam for example, though it should be noted that the most fool-proof way is still to disable buttons or similar.
 
-| Member | Description |
-|--------|-------------|
-| `boolean acceptsSubOperations { get; }` | Gets if this operation is currently executing open callbacks. If so, sub operations is temporarily accepted. |
-| `IEnumerable<Scene> close { get; }` | Gets the scenes specified to close. |
-| `IEnumerable<Scene> closedScenes` | Gets the scenes that was closed during this operation. |
-| `SceneCollection collection { get; }` | Specifies the collection that is being opened or closed. |
-| `string description { get; }` | Specifies description for coroutine. |
-| `EventCallbackManager<SceneOperationEventBase> events { get; }` | Gets the event manager for this operation. |
-| `SceneOperationFlags flags { get; }` | Gets the operation flags this operation will use. |
-| `Scene focus { get; }` | Sets focus to the specified scene. Overrides selected scene in collections. |
-| `boolean focusSingleScene { get; }` | Sets the first opened scene as active. |
-| `boolean hasStarted { get; }` | Gets whether this operation has started. |
-| `IEnumerable<Scene> ignoreForActivation { get; }` | Gets the scenes that should not be activated. |
-| `boolean isCollectionCloseOperation { get; }` | Gets whatever this operation is about to close `collection`. |
-| `boolean isDefaultASMScene { get; }` | Gets if this scene was opened from the default ASM scene collection. |
-| `boolean isFrozen { get; }` | Gets if this operation is frozen, as in, can its properties be changed? |
-| `boolean isStandaloneScene { get; }` | Gets if this scene was opened from the standalone collection. |
-| `boolean keepWaiting` | Inherited from `CustomYieldInstruction`. Tells unity whatever the operation is done or not. |
-| `LoadingScreenReference loadingScreen { get; }` | Gets the specified loading screen. |
-| `Action<LoadingScreenReference> loadingScreenCallback { get; }` | Gets the specified loading screen callback. |
-| `LoadPriority loadPriority { get; }` | Gets the `LoadPriority` this operation will use. |
-| `IEnumerable<Scene> open { get; }` | Gets the scenes specified to open. |
-| `LoadingScreenReference openedLoadingScreen { get; }` | Gets the loading screen that was opened by this operation. |
-| `IEnumerable<Scene> openedScenes` | Gets the scenes that was opened during this operation. |
-| `IEnumerable<Scene> preload { get; }` | Gets the scenes specified to preload. |
-| `single progress` | Gets the total progress of this operation. |
-| `ProgressScope progressScope { get; }` | Gets the progress scope associated with this operation. |
-| `boolean reportsProgress { get; }` | Gets if this scene operation reports progress. |
-| `boolean runSceneCallbacksOutsideOfPlayMode { get; }` | Gets whatever scene callbacks should run outside of play mode. |
-| `boolean setActiveCollectionScene { get; }` | Specifies whatever active scene should be set when possible. |
-| `Nullable<boolean> unloadUnusedAssets { get; }` | Gets whatever `UnloadUnusedAssets` should be called at the end (before loading screen). |
-| `boolean useLoadingScene { get; }` | Gets whatever a loading screen should be used. |
-| `boolean wasCancelled { get; }` | Gets if this scene operation is cancelled. |
+## API
 
-### Static Methods
+Scene operations is the low level API in ASM, all other functions use it, more information about the different layers of APIs here:\
+[An overview of ASM API structure](An%20overview%20of%20ASM%20API%20structure.md)
 
-| Member | Description |
-|--------|-------------|
-| `SceneOperation Queue()` | _No documentation available._ |
-| `SceneOperation Queue(SceneOperation operation)` | Queues a new scene operation. |
-| `SceneOperation Start()` | _No documentation available._ |
-| `SceneOperation Start(SceneOperation operation)` | Starts a new scene operation, ignoring queue. |
+An operation can be started in code by using either of these two:\
+`SceneOperation.Queue()`\
+`SceneOperation.Start() //Ignores queue`
 
-### Methods
+```csharp
+public Scene[] scenesToOpen;
+public Scene loadingScene;
 
-| Member | Description |
-|--------|-------------|
-| `SceneOperation Activate(Scene scene)` | Sets focus to the specified scene. Overrides selected scene in collections. If `null`, then the first scene opened will be set as active. |
-| `void Cancel()` | Cancel this operation. |
-| `SceneOperation Close(SceneCollection collection)` | _No documentation available._ |
-| `SceneOperation Close(Scene scene, boolean removeFromOpen)` | Specifies the scenes to close. |
-| `SceneOperation Close(Scene[] scenes)` | Specifies the scenes to close. |
-| `SceneOperation Close(IEnumerable<Scene> scenes, boolean removeFromOpen)` | _No documentation available._ |
-| `SceneOperation CloseAll(Scene[] except)` | _No documentation available._ |
-| `SceneOperation CloseAll(IEnumerable<Scene> except, boolean removeFromOpen)` | Closes all scenes, regardless if they are persistent or splash/loading screens. |
-| `SceneOperation CloseOtherScenes(Scene[] except)` | Closes all non-persistent scenes prior to opening any scenes. |
-| `SceneOperation CloseOtherScenes(boolean persistent, IEnumerable<Scene> except, boolean loadingScreen, boolean splashScreen, boolean removeFromOpen)` | Closes all open scenes prior to opening any scenes, with options. |
-| `SceneOperation DisableProgressReporting()` | Disables progress reporting for this operation. |
-| `SceneOperation Focus(Scene scene)` | Sets focus to the specified scene. Overrides selected scene in collections. |
-| `CoroutineAwaiter GetAwaiter()` | Allows this operation to be awaited. |
-| `SceneOperation IgnoreForActivation(IEnumerable<Scene> scenes)` | Specifies scenes that should not be activated. |
-| `SceneOperation OnProgressChanged(Action<single> callback)` | Adds a callback when progress changed. |
-| `SceneOperation Open(SceneCollection collection, boolean openAll)` | _No documentation available._ |
-| `SceneOperation Open(Scene[] scenes)` | Specifies the scenes to open. |
-| `SceneOperation Open(Scene scene, boolean removeFromClose)` | Specifies the scenes to open. |
-| `SceneOperation Open(IEnumerable<Scene> scenes, boolean removeFromClose)` | _No documentation available._ |
-| `SceneOperation OpenAndActivate(Scene scene)` | Opens the scene, and makes sure it is activated afterwards. |
-| `SceneOperation Preload(Scene[] scenes)` | Specifies scenes to preload. |
-| `SceneOperation Preload(IEnumerable<Scene> scenes)` | Specifies scenes to preload. |
-| `SceneOperation PrependOpen(Scene[] scenes)` | Specifies the scenes to prepend to the current open operation. |
-| `SceneOperation PrependOpen(IEnumerable<Scene> scenes, boolean ignoreForActivation)` | _No documentation available._ |
-| `SceneOperation RegisterCallback<TEventType>(EventCallback<TEventType> callback, When when, string key)` | _No documentation available._ |
-| `SceneOperation RemoveOnProgressChangedCallback(Action<single> callback)` | Removes a callback when progress changed. |
-| `SceneOperation RunSceneCallbacksOutsidePlayMode(boolean value)` | Specifies whatever scene callbacks should run outside of play mode. |
-| `SceneOperation UnloadUsedAssets()` | Specifies whatever `UnloadUnusedAssets` should be called at the end (before loading screen). |
-| `SceneOperation UnregisterCallback<TEventType>(EventCallback<TEventType> callback, When when, string key)` | _No documentation available._ |
-| `void UnregisterCallback<TEventType>(string key)` | _No documentation available._ |
-| `void WaitFor(SceneOperation operation)` | Waits for the specified scene operation to complete before continuing. |
-| `SceneOperation With(SceneCollection collection, boolean setActiveScene, boolean isCloseOperation)` | Specifies an associated collection. |
-| `SceneOperation With(LoadingScreenReference loadingScreen, boolean useLoadingScene)` | Specifies loading screen to use. |
-| `SceneOperation With(boolean useLoadingScene)` | Specifies loading screen to use. |
-| `SceneOperation With(Action<LoadingScreenReference> loadingScreenCallback)` | Specifies a callback when loading screen is opened, before `OnOpen` is called. |
-| `SceneOperation With(LoadPriority loadPriority)` | Sets the `LoadPriority` this operation will use. |
-| `SceneOperation With(SceneOperationFlags flags)` | Sets the operation flags this operation will use. |
-| `SceneOperation WithFriendlyText(string text)` | Specifies description for operation coroutine. |
-| `SceneOperation WithLoadingScreen(LoadingScreenReference loadingScreen, boolean useLoadingScene)` | Specifies loading screen to use. |
-| `SceneOperation WithLoadingScreen(boolean useLoadingScene)` | Specifies whatever loading screen should be used. |
-| `SceneOperation WithoutLoadingScreen(boolean useLoadingScene)` | Specifies whatever loading screen should be used. |
-
----
-# SceneOperationFlags
-<!--
-source: API\Core\SceneOperationFlags.md
--->
-
-## SceneOperationFlags
-
-`enum` in `AdvancedSceneManager.Core`  /  Inherits from: `Enum`### Description
-Defines flags that control the behavior of a `SceneOperation`.
-
-### Static Fields
-
-| Member | Description |
-|--------|-------------|
-| `SceneOperationFlags All` | Enables all available operation flags. |
-| `SceneOperationFlags CollectionCallbacks` | Invokes callbacks defined on the associated `SceneCollection`. |
-| `SceneOperationFlags EventCallbacks` | Triggers global event callbacks related to the operation. |
-| `SceneOperationFlags LoadingScreen` | Includes loading screen scenes in the operation. |
-| `SceneOperationFlags None` | No flags are set. |
-| `SceneOperationFlags SceneCallbacks` | Invokes callbacks defined on the involved `Scene` objects. |
-
-### Fields
-
-| Member | Description |
-|--------|-------------|
-| `int32 value__` | _No documentation available._ |
-
----
-# SceneOperationKind
-<!--
-source: API\Core\SceneOperationKind.md
--->
-
-## SceneOperationKind
-
-`enum` in `AdvancedSceneManager.Core`  /  Inherits from: `Enum`### Description
-Gets the kind of operation that a `SceneLoadProgressData` represents.
-
-### Static Fields
-
-| Member | Description |
-|--------|-------------|
-| `SceneOperationKind Load` | A scene is currently being loaded. |
-| `SceneOperationKind Unload` | A scene is currently being unloaded |
-
-### Fields
-
-| Member | Description |
-|--------|-------------|
-| `int32 value__` | _No documentation available._ |
-
----
-# SceneUnloadArgs
-<!--
-source: API\Core\SceneUnloadArgs.md
--->
-
-## SceneUnloadArgs
-
-`class` in `AdvancedSceneManager.Core`  /  Inherits from: `SceneLoaderArgsBase`### Description
-Specifies arguments for [SceneUnloadArgs)](https://learn.microsoft.com/dotnet/api/m:advancedscenemanager.core.sceneloader.unloadscene(advancedscenemanager.models.scene,advancedscenemanager.core.sceneunloadargs)).
-
-### Methods
-
-| Member | Description |
-|--------|-------------|
-| `void SetCompleted()` | Notifies ASM that the unload is done. |
-
----
-# StartupProps
-<!--
-source: API\Core\StartupProps.md
--->
-
-## StartupProps
-
-`class` in `AdvancedSceneManager.Core`### Description
-
-### Properties
-
-| Member | Description |
-|--------|-------------|
-| `Color effectiveFadeColor` | _No documentation available._ |
-| `boolean runStartupProcess` | _No documentation available._ |
-| `boolean runStartupProcessWhenPlayingCollection` | _No documentation available._ |
-
-### Fields
-
-| Member | Description |
-|--------|-------------|
-| `Nullable<Color> fadeColor` | _No documentation available._ |
-| `boolean forceOpenAllScenesOnCollection` | _No documentation available._ |
-| `SceneCollection openCollection` | _No documentation available._ |
-| `boolean softSkipSplashScreen` | _No documentation available._ |
-
----
-# DependencyInjectionUtility
-<!--
-source: API\DependencyInjection\DependencyInjectionUtility.md
--->
-
-## DependencyInjectionUtility
-
-`static class` in `AdvancedSceneManager.DependencyInjection`### Description
-Provides utility methods and accessors for dependency injection within ASM.
-
-### Static Methods
-
-| Member | Description |
-|--------|-------------|
-| `IEnumerable<ValueTuple<Type, IInjectable>> EnumerateServices()` | Enumerates all currently registered injectable services. |
-| `T GetService<T>()` | _No documentation available._ |
-| `IInjectable GetService(Type type)` | Gets a service matching the specified type. |
-| `IEnumerable<T> GetServices<T>()` | _No documentation available._ |
-| `void Remove<T>(Type type, T service)` | _No documentation available._ |
-
----
-# IBuildManager
-<!--
-source: API\DependencyInjection\Editor\IBuildManager.md
--->
-
-## IBuildManager
-
-`interface` in `AdvancedSceneManager.DependencyInjection.Editor`### Description
-Provides functions for building, and build events.
-
-<b> Remarks:</b>
-Only available in editor.
-
-### Events
-
-| Member | Description |
-|--------|-------------|
-| `event Action<PostBuildEventArgs> postBuild` | Occurs after build. |
-| `event Action<BuildReport> preBuild` | Occurs before build. |
-
-### Methods
-
-| Member | Description |
-|--------|-------------|
-| `abstract virtual BuildReport DoBuild(string path, boolean attachProfiler, boolean runGameWhenBuilt, boolean dev, BuildOptions customOptions)` | _No documentation available._ |
-| `abstract virtual BuildReport DoBuild(BuildPlayerOptions options)` | _No documentation available._ |
-| `abstract virtual IEnumerable<ValueTuple<EditorBuildSettingsScene, Reason>> GetOrderedList()` | Gets an ordered list of all scenes that ASM would set in the build settings. |
-| `abstract virtual boolean IsEnabled(string path, Reason& reason)` | _No documentation available._ |
-| `abstract virtual boolean IsIncluded(Scene scene, Reason& reason)` | _No documentation available._ |
-| `abstract virtual void UpdateSceneList()` | Updates the scene build settings. |
-| `abstract virtual void UpdateSceneList(boolean ignorePlaymodeCheck)` | _No documentation available._ |
-
----
-# IHierarchyGUI
-<!--
-source: API\DependencyInjection\Editor\IHierarchyGUI.md
--->
-
-## IHierarchyGUI
-
-`interface` in `AdvancedSceneManager.DependencyInjection.Editor`### Description
-An utility for adding extra icons to scene fields in the hierarchy window.
-
-<b> Remarks:</b>
-Only available in editor.
-
-### Properties
-
-| Member | Description |
-|--------|-------------|
-| `GUIStyle defaultStyle` | The default style for text in hierarchy. |
-
-### Methods
-
-| Member | Description |
-|--------|-------------|
-| `abstract virtual void AddGameObjectGUI(HierarchyGameObjectGUI onGUI, int32 index)` | _No documentation available._ |
-| `abstract virtual void AddSceneGUI(HierarchySceneGUI onGUI, int32 index)` | _No documentation available._ |
-| `abstract virtual void RemoveGameObjectGUI(HierarchyGameObjectGUI onGUI)` | _No documentation available._ |
-| `abstract virtual void RemoveSceneGUI(HierarchySceneGUI onGUI)` | _No documentation available._ |
-| `abstract virtual void Repaint()` | Can be used to ensure repaint of the HierarchyWindow. |
-
----
-# IPackage
-<!--
-source: API\DependencyInjection\Editor\IPackage.md
--->
-
-## IPackage
-
-`interface` in `AdvancedSceneManager.DependencyInjection.Editor`### Description
-Contains info about the ASM package.
-
-<b> Remarks:</b>
-Only available in editor.
-
-### Properties
-
-| Member | Description |
-|--------|-------------|
-| `string folder` | The folder that ASM is contained within. |
-| `string version` | The version of ASM. |
-
----
-# ISceneManagerWindow
-<!--
-source: API\DependencyInjection\Editor\ISceneManagerWindow.md
--->
-
-## ISceneManagerWindow
-
-`interface` in `AdvancedSceneManager.DependencyInjection.Editor`### Description
-Provides methods for working with the scene manager window.
-
-### Methods
-
-| Member | Description |
-|--------|-------------|
-| `abstract virtual void CloseWindow()` | Close the window. |
-| `abstract virtual void OpenWindow()` | Open the window. |
-
----
-# IUserSettings
-<!--
-source: API\DependencyInjection\Editor\IUserSettings.md
--->
-
-## IUserSettings
-
-`interface` in `AdvancedSceneManager.DependencyInjection.Editor`### Description
-The user specific ASM settings, not synced to source control.
-
-<b> Remarks:</b>
-May not be available in `[InitializeOnLoad]` and similar, use [Action)](https://learn.microsoft.com/dotnet/api/m:advancedscenemanager.scenemanager.oninitialized(system.action)) or `OnLoadAttribute` to ensure you're not calling too early.
-
-Only available in editor.
-
-### Properties
-
-| Member | Description |
-|--------|-------------|
-| `Profile activeProfile` | Specifies the active profile in editor. |
-| `boolean alwaysDisplaySearch` | Determines whatever search should always be displayed, and not just when actively searching. |
-| `boolean alwaysSaveScenesWhenEnteringPlayMode` | Specifies whatever scenes should always auto save when entering play mode using ASM play button. |
-| `boolean displayHierarchyIndicators` | Specifies whatever the hierarchy indicators should be visible. |
-| `boolean editorOnly` | _No documentation available._ |
-| `boolean logBuildScenes` | Specifies whatever ASM should log when build scene list is updated. |
-| `boolean logImport` | Specifies whatever ASM should log when a `ASMModelBase` is imported. |
-| `boolean logLoading` | Specifies whatever ASM should log when a scene is loaded. |
-| `boolean logOperation` | Specifies whatever ASM should log during scene operations. |
-| `boolean logStartup` | Specifies whatever ASM should log during startup. |
-| `boolean logTracking` | Specifies whatever ASM should log when a scene is tracked after loaded. |
-| `boolean openCollectionOnSceneAssetOpen` | When `true`: opens the first found collection that a scene is contained in when opening an SceneAsset in editor. |
-| `IEnumerable<SceneCollection> pinnedOverlayCollections` | Enumerates the pinned collections in the collection overlay. |
-| `boolean startupProcessOnCollectionPlay` | Specifies whatever startup process should run when pressing collection play button. |
-| `int32 toolbarButtonCount` | Specifies how many buttons should be placed in toolbar. |
-| `single toolbarPlayButtonOffset` | Specifies offset for toolbar play buttons. |
-
-### Methods
-
-| Member | Description |
-|--------|-------------|
-| `abstract virtual void PinCollectionToOverlay(SceneCollection collection, Nullable<int32> index)` | _No documentation available._ |
-| `abstract virtual void Save()` | Saves the singleton to disk, with a debounce. See also `SaveNow`. |
-| `abstract virtual void SaveNow()` | Saves the singleton to disk. |
-| `abstract virtual void ToolbarAction(int32 i, SceneCollection& collection, Boolean& runStartupProcess)` | _No documentation available._ |
-| `abstract virtual void ToolbarAction(int32 i, SceneCollection collection, boolean runStartupProcess)` | _No documentation available._ |
-| `abstract virtual void UnpinCollectionFromOverlay(SceneCollection collection)` | _No documentation available._ |
-
----
-# IApp
-<!--
-source: API\DependencyInjection\IApp.md
--->
-
-## IApp
-
-`interface` in `AdvancedSceneManager.DependencyInjection`### Description
-Manages startup and quit processes.
-
-<b> Remarks:</b>
-Usage: `app`.
-
-### Properties
-
-| Member | Description |
-|--------|-------------|
-| `boolean isASMPlay` | Gets whatever we're currently in ASM play mode. |
-| `boolean isQuitting` | Gets whatever ASM is currently in the process of quitting the game. |
-| `boolean isRestart` | Gets if ASM has been restarted, or is currently restarting. |
-| `boolean isStartupFinished` | Gets if startup process is finished. |
-| `StartupProps startupProps` | Gets the props that should be used for startup process. |
-
-### Methods
-
-| Member | Description |
-|--------|-------------|
-| `abstract virtual void CancelQuit()` | Cancels the current quit process. |
-| `abstract virtual void CancelStartup()` | Cancels startup process. |
-| `abstract virtual void Exit()` | Exits the application immediately. |
-| `abstract virtual Awaitable Quit(boolean fade, Nullable<Color> fadeColor, single fadeDuration)` | _No documentation available._ |
-| `abstract virtual void RegisterQuitCallback(Func<IEnumerator> coroutine)` | _No documentation available._ |
-| `abstract virtual void Restart(StartupProps props)` | _No documentation available._ |
-| `abstract virtual Async<boolean> RestartAsync(StartupProps props)` | _No documentation available._ |
-| `abstract virtual void UnregisterQuitCallback(Func<IEnumerator> coroutine)` | _No documentation available._ |
-
----
-# IInjectable
-<!--
-source: API\DependencyInjection\IInjectable.md
--->
-
-## IInjectable
-
-`interface` in `AdvancedSceneManager.DependencyInjection`### Description
-
----
-# IProfileManager
-<!--
-source: API\DependencyInjection\IProfileManager.md
--->
-
-## IProfileManager
-
-`interface` in `AdvancedSceneManager.DependencyInjection`### Description
-Manages the current profile.
-
-### Properties
-
-| Member | Description |
-|--------|-------------|
-| `Profile current` | Gets the currently active profile. |
-| `Profile defaultProfile` | The profile to force everyone in this project to use. |
-| `Profile forceProfile` | The profile to force everyone in this project to use. |
-
-### Events
-
-| Member | Description |
-|--------|-------------|
-| `event Action onProfileChanged` | Occurs when `profile` changes. |
-
-### Methods
-
-| Member | Description |
-|--------|-------------|
-| `abstract virtual Profile Create(string name)` | _No documentation available._ |
-| `abstract virtual Profile CreateEmpty(string name, boolean useDefaultSpecialScenes)` | _No documentation available._ |
-| `abstract virtual void Delete(Profile profile)` | _No documentation available._ |
-| `abstract virtual void Duplicate(Profile profile)` | _No documentation available._ |
-| `abstract virtual void SetProfile(Profile profile, boolean updateBuildSettings)` | _No documentation available._ |
-
----
-# IProjectSettings
-<!--
-source: API\DependencyInjection\IProjectSettings.md
--->
-
-## IProjectSettings
-
-`interface` in `AdvancedSceneManager.DependencyInjection`### Description
-Provides access to ASM settings.
-
-<b> Remarks:</b>
-May not be available in `[InitializeOnLoad]` and similar, use [Action)](https://learn.microsoft.com/dotnet/api/m:advancedscenemanager.scenemanager.oninitialized(system.action)) or `OnLoadAttribute` to ensure you're not calling too early.
-
-### Properties
-
-| Member | Description |
-|--------|-------------|
-| `boolean allowCollectionLocking` | Specifies whatever asm will allow locking collections. |
-| `boolean allowSceneLocking` | Specifies whatever asm will allow locking scenes. |
-| `string assetPath` | Specifies the path where profiles and imported scenes should be generated to. |
-| `Profile buildProfile` | The profile to use during build. |
-| `boolean checkForDuplicateSceneOperations` | By default, ASM checks for duplicate scene operations, since this is usually caused by mistake, but this will disable that. |
-| `CustomData customData` | Specifies custom data. |
-| `Profile defaultProfile` | The profile to use when none is set. |
-| `boolean enableCrossSceneReferences` | Gets or sets whatever cross-scene references should be enabled. |
-| `Profile forceProfile` | The profile to force everyone in this project to use. |
-| `boolean preventSpammingEventMethods` | By default, ASM will prevent spam calling event methods (i.e. calling Scene.Open() from a button press), but this will disable that. |
-| `boolean reverseUnloadOrderOnCollectionClose` | Specifies whatever collections should unload scenes in the reverse order. |
-| `SceneImportOption sceneImportOption` | Gets or sets when to automatically import scenes. |
-| `single spamCheckCooldown` | Sets the default cooldown for `SpamCheck`. |
-
-### Methods
-
-| Member | Description |
-|--------|-------------|
-| `abstract virtual void Save()` | Saves the singleton to disk, with a debounce. See also `SaveNow`. |
-| `abstract virtual void SaveNow()` | Saves the singleton to disk. |
-| `abstract virtual void SetBuildProfile(Profile profile)` | _No documentation available._ |
-
----
-# IRuntime
-<!--
-source: API\DependencyInjection\IRuntime.md
--->
-
-## IRuntime
-
-`interface` in `AdvancedSceneManager.DependencyInjection`### Description
-Manages runtime functionality for Advanced Scene Manager such as open scenes and collection.
-
----
-# ISceneManager
-<!--
-source: API\DependencyInjection\ISceneManager.md
--->
-
-## ISceneManager
-
-`interface` in `AdvancedSceneManager.DependencyInjection`### Description
-Manages runtime functionality for Advanced Scene Manager such as open scenes and collection.
-
-### Properties
-
-| Member | Description |
-|--------|-------------|
-| `Scene activeScene` | Gets the currently active scene, assuming it has been imported into ASM. |
-| `SceneOperation currentOperation` | Gets the current active operation in the queue. |
-| `Scene dontDestroyOnLoad` | Gets the dontDestroyOnLoad scene. |
-| `boolean isBusy` | Gets whatever ASM is busy with any scene operations. |
-| `IEnumerable<SceneCollection> openAdditiveCollections` | Gets the collections that are opened as additive. |
-| `SceneCollection openCollection` | Gets the collection that is currently open. |
-| `IEnumerable<Scene> openScenes` | Gets the scenes that are currently open. |
-| `IEnumerable<Scene> preloadedScenes` | Gets the scenes that are preloaded. |
-| `IEnumerable<SceneOperation> queuedOperations` | Gets the current scene operation queue. |
-| `IEnumerable<SceneOperation> runningOperations` | The currently running scene operations. |
-
-### Events
-
-| Member | Description |
-|--------|-------------|
-| `event Action<SceneCollection> collectionClosed` | Occurs when a collection is closed. |
-| `event Action<SceneCollection> collectionOpened` | Occurs when a collection is opened. |
-| `event Action<Scene> sceneClosed` | Occurs when a scene is closed. |
-| `event Action<Scene> sceneOpened` | Occurs when a scene is opened. |
-| `event Action<Scene> scenePreloaded` | Occurs when a scene is preloaded. |
-| `event Action<Scene> scenePreloadFinished` | Occurs when a previously preloaded scene is opened. |
-| `event Action startedWorking` | Occurs when ASM has started working and is running scene operations. |
-| `event Action stoppedWorking` | Occurs when ASM has finished working and no scene operations are running. |
-
-### Methods
-
-| Member | Description |
-|--------|-------------|
-| `abstract virtual void Activate(Scene scene)` | _No documentation available._ |
-| `abstract virtual void AddSceneLoader<T>()` | _No documentation available._ |
-| `abstract virtual SceneOperation CancelPreload()` | Cancels the preload. All preloaded scenes will be fully loaded (limitation by Unity), then closed. No ASM scene callbacks will be called. |
-| `abstract virtual SceneOperation Close(IEnumerable<Scene> scenes)` | _No documentation available._ |
-| `abstract virtual SceneOperation Close(Scene[] scenes)` | _No documentation available._ |
-| `abstract virtual SceneOperation Close(Scene scene)` | _No documentation available._ |
-| `abstract virtual SceneOperation Close(SceneCollection collection)` | _No documentation available._ |
-| `abstract virtual SceneOperation CloseAll(boolean exceptLoadingScreens, boolean exceptUnimported, Scene[] except)` | _No documentation available._ |
-| `abstract virtual SceneOperation FinishPreload()` | _No documentation available._ |
-| `abstract virtual SceneLoader GetLoaderForScene(Scene scene, boolean useOnlyGlobal)` | _No documentation available._ |
-| `abstract virtual SceneState GetState(Scene scene)` | _No documentation available._ |
-| `abstract virtual IEnumerable<SceneLoader> GetToggleableSceneLoaders()` | Gets a list of all added scene loaders that can be toggled scene by scene. |
-| `abstract virtual boolean IsTracked(Scene scene)` | _No documentation available._ |
-| `abstract virtual boolean IsTracked(SceneCollection collection)` | _No documentation available._ |
-| `abstract virtual SceneOperation Open(IEnumerable<Scene> scenes)` | _No documentation available._ |
-| `abstract virtual SceneOperation Open(Scene[] scenes)` | _No documentation available._ |
-| `abstract virtual SceneOperation Open(Scene scene)` | _No documentation available._ |
-| `abstract virtual SceneOperation Open(SceneCollection collection, boolean openAll)` | _No documentation available._ |
-| `abstract virtual SceneOperation OpenAdditive(IEnumerable<SceneCollection> collections, SceneCollection activeCollection, LoadingScreenReference loadingScreen)` | _No documentation available._ |
-| `abstract virtual SceneOperation OpenAdditive(SceneCollection collection, boolean openAll)` | _No documentation available._ |
-| `abstract virtual SceneOperation OpenAndActivate(Scene scene)` | _No documentation available._ |
-| `abstract virtual SceneOperation OpenWithLoadingScreen(IEnumerable<Scene> scene, Scene loadingScreen)` | _No documentation available._ |
-| `abstract virtual SceneOperation OpenWithLoadingScreen(Scene scene, Scene loadingScreen)` | _No documentation available._ |
-| `abstract virtual SceneOperation Preload(Scene scene, Action onPreloaded)` | _No documentation available._ |
-| `abstract virtual void RemoveSceneLoader<T>()` | _No documentation available._ |
-| `abstract virtual SceneOperation ToggleOpen(Scene scene)` | _No documentation available._ |
-| `abstract virtual SceneOperation ToggleOpen(SceneCollection collection, boolean openAll)` | _No documentation available._ |
-| `abstract virtual void Track(Scene scene)` | _No documentation available._ |
-| `abstract virtual void Track(Scene scene, Scene unityScene)` | _No documentation available._ |
-| `abstract virtual void Track(SceneCollection collection, boolean isAdditive)` | _No documentation available._ |
-| `abstract virtual boolean Untrack(Scene scene)` | _No documentation available._ |
-| `abstract virtual void Untrack(SceneCollection collection, boolean isAdditive)` | _No documentation available._ |
-| `abstract virtual void UntrackCollections()` | Untracks all collections. |
-| `abstract virtual void UntrackScenes()` | Untracks all open scenes. |
-
----
-# ASMUtilityFunction
-<!--
-source: API\Editor\UI\ASMUtilityFunction.md
--->
-
-## ASMUtilityFunction
-
-`abstract class` in `AdvancedSceneManager.Editor.UI`### Description
-Base class for ASM utility functions available in the editor UI.
-
-### Properties
-
-| Member | Description |
-|--------|-------------|
-| `string Description` | Gets the description of the function. |
-| `string Group` | Gets the group this function belongs to. |
-| `string Name` | Gets the display name of the function. |
-| `int32 Order` | Gets the order used for sorting within its group. |
-
-### Methods
-
-| Member | Description |
-|--------|-------------|
-| `void ClosePopup()` | Closes the popup if options were provided in [VisualElement@)](https://learn.microsoft.com/dotnet/api/m:advancedscenemanager.editor.ui.asmutilityfunction.oninvoke(unityengine.uielements.visualelement@)). |
-| `virtual void OnDisable()` | Called when the function is disabled. |
-| `virtual void OnEnable()` | Called when the function is enabled. |
-| `virtual void OnInvoke(VisualElement& optionsGUI)` | _No documentation available._ |
-
----
-# ASMWindow
-<!--
-source: API\Editor\UI\ASMWindow.md
--->
-
-## ASMWindow
-
-`static class` in `AdvancedSceneManager.Editor.UI`### Description
-Contains APIs relating to the ASM window.
-
-<b> Remarks:</b>
-Only available in the editor.
-
-### Static Methods
-
-| Member | Description |
-|--------|-------------|
-| `void AddNotification(Notification notification)` | Adds a notification to the ASM window, optionally with click and dismiss callbacks, dismiss behavior, visual style, and icon information. |
-| `void ClosePopup()` | Closes the currently open popup, if one is open.. |
-| `boolean IsPopupOpen()` | Determines whether any popup is currently open. |
-| `boolean IsPopupOpen<T>()` | Determines whether any popup is currently open. |
-| `void OpenPopup<T>()` | _No documentation available._ |
-| `void OpenPopup<T>(Nullable<ViewModelContext> context)` | _No documentation available._ |
-| `void OpenPopup(Type type, Nullable<ViewModelContext> context)` | Opens `type` as a popup. |
-| `void OpenSettings()` | Opens the settings popup on the main page. |
-| `void OpenSettings<T>()` | Opens the settings popup on the main page. |
-| `void OpenSettings<T>(ViewModelContext context)` | _No documentation available._ |
-| `void OpenSettings(Type type)` | Opens the settings popup on the page that matches the view model specified by `type`. |
-| `void OpenSettings(Type type, ViewModelContext context)` | Opens the settings popup on the page that matches the view model specified by `type`. |
-| `void ReloadCollections()` | Reloads collection ui. |
-| `void RemoveNotification(Notification notification)` | Removes the notification with the specified id. |
-
----
-# ASMWindowElementAttribute
-<!--
-source: API\Editor\UI\ASMWindowElementAttribute.md
--->
-
-## ASMWindowElementAttribute
-
-`class` in `AdvancedSceneManager.Editor.UI`  /  Inherits from: `DiscoverableAttribute`### Description
-Specifies a method or view model class that should be used as a callback to insert a visual element into the ASM window.
-
-<b> Remarks:</b>
-When specified on a class it should inherit `ViewModel`.
-
-### Properties
-
-| Member | Description |
-|--------|-------------|
-| `boolean canToggleVisible` | Gets if this element can be toggled visible or hidden. |
-| `int32 defaultOrder` | Specifies default order. |
-| `string friendlyDescription` | Specifies the description to be shown in the diag UI tooltip. |
-| `boolean isVisibleByDefault` | Gets if this element is visible by default. |
-| `ElementLocation location` | Gets the location of this element. |
-| `string name` | A name to distinguish this from other attributes on the same method. |
-
-### Static Methods
-
-| Member | Description |
-|--------|-------------|
-| `boolean IsDefaultASMScene(VisualElement element)` | Gets if this element is hosted within the default ASM scenes collection. |
-| `boolean IsHostedWithinSettingsPage(VisualElement element)` | Gets if this element is hosted within the settings page. |
-| `boolean IsStandalone(VisualElement element)` | Gets if this element is hosted within the standalone collection. |
-
-### Methods
-
-| Member | Description |
-|--------|-------------|
-| `virtual boolean IsValidTarget(MemberInfo member)` | Gets if `member` is a valid target for this attribute callback. |
-
----
-# DragReferenceManipulator
-<!--
-source: API\Editor\UI\DragReferenceManipulator.md
--->
-
-## DragReferenceManipulator
-
-`class` in `AdvancedSceneManager.Editor.UI`  /  Inherits from: `PointerManipulator`### Description
-Gives user a `ScriptableObject` reference on drag.
-
-<b> Remarks:</b>
-Only available in editor.
-
----
-# ElementLocation
-<!--
-source: API\Editor\UI\ElementLocation.md
--->
-
-## ElementLocation
-
-`enum` in `AdvancedSceneManager.Editor.UI`  /  Inherits from: `Enum`### Description
-Specifies location for a custom element in the ASM window.
-
-### Static Fields
-
-| Member | Description |
-|--------|-------------|
-| `ElementLocation Collection` | Specifies that the custom element should be located in the collection headers the ASM window, on the right side. |
-| `ElementLocation CollectionLeft` | Specifies that the custom element should be located in the collection fields of the ASM window, on the left side. |
-| `ElementLocation CollectionRight` | Specifies that the custom element should be located in the collection headers the ASM window, on the right side. |
-| `ElementLocation Footer` | Specifies that the custom element should be located in the footer of the ASM window. |
-| `ElementLocation Header` | Specifies that the custom element should be located in the header of the ASM window. |
-| `ElementLocation Scene` | Specifies that the custom element should be located in the scene fields of the ASM window, on the right side. |
-| `ElementLocation SceneLeft` | Specifies that the custom element should be located in the scene fields of the ASM window, on the left side. |
-| `ElementLocation SceneRight` | Specifies that the custom element should be located in the scene fields of the ASM window, on the right side. |
-| `ElementLocation Settings` | Specifies that the custom element should be considered a settings page. It will be accessible as a category in the main settings page. |
-
-### Fields
-
-| Member | Description |
-|--------|-------------|
-| `int32 value__` | _No documentation available._ |
-
----
-# Notification
-<!--
-source: API\Editor\UI\Notification.md
--->
-
-## Notification
-
-`class` in `AdvancedSceneManager.Editor.UI`### Description
-Represents a notification to be displayed.
-
-### Fields
-
-| Member | Description |
-|--------|-------------|
-| `boolean allowTextClippingIntoMenuButton` | Whether text may overlap the menu button area. |
-| `boolean canDismiss` | Whether the notification can be dismissed by the user. |
-| `boolean canMute` | Whether the notification can be muted. |
-| `boolean dismissOnClick` | Whether the notification is dismissed when clicked. |
-| `string fontAwesomeIcon` | Specifies an optional Font Awesome icon name. |
-| `string iconFont` | Specifies an optional font name for the icon. |
-| `string iconInfo` | Specifies an optional icon info identifier. |
-| `string id` | Unique identifier for the notification. |
-| `NotificationImportance importance` | Specifies the importance level of the notification. |
-| `Nullable<boolean> isExpanded` | Whether the notification is expanded, if applicable. |
-| `NotificationKind kind` | Specifies the visual kind of the notification. |
-| `string message` | Displayed message text. |
-| `Action onClick` | Action invoked when the notification is clicked. |
-| `Action onDismiss` | Action invoked when the notification is dismissed. |
-
----
-# NotificationImportance
-<!--
-source: API\Editor\UI\NotificationImportance.md
--->
-
-## NotificationImportance
-
-`enum` in `AdvancedSceneManager.Editor.UI`  /  Inherits from: `Enum`### Description
-Specifies the importance of a notification.
-
-### Static Fields
-
-| Member | Description |
-|--------|-------------|
-| `NotificationImportance Default` | Determines that the notification will be displayed in non-overflow view when space allows, otherwise overflow menu. |
-| `NotificationImportance High` | Determines that the notification will never overflow. |
-| `NotificationImportance Low` | Determines that the notification will never be displayed in non-overflow view. |
-| `NotificationImportance Priority` | Determines that the notification is to be prioritized. Prioritized notifications hide all others until dismissed or removed. |
-
-### Fields
-
-| Member | Description |
-|--------|-------------|
-| `int32 value__` | _No documentation available._ |
-
----
-# NotificationKind
-<!--
-source: API\Editor\UI\NotificationKind.md
--->
-
-## NotificationKind
-
-`enum` in `AdvancedSceneManager.Editor.UI`  /  Inherits from: `Enum`### Description
-Specifies the kind of notification.
-
-<b> Remarks:</b>
-Only available in the editor.
-
-### Static Fields
-
-| Member | Description |
-|--------|-------------|
-| `NotificationKind Default` | Does not indicate anything in particular. Displays no icon. |
-| `NotificationKind FixUp` | Indicates a warning or fixable issue. Displays a warning icon. |
-| `NotificationKind Info` | Indicates informational content. Displays an info icon. |
-| `NotificationKind Link` | Indicates a link to something. Displays a link icon. |
-| `NotificationKind Profile` | Indicates something related to profiles. Displays a profile icon. |
-| `NotificationKind Scene` | Indicates something related to scenes. Displays a scene icon. |
-
-### Fields
-
-| Member | Description |
-|--------|-------------|
-| `int32 value__` | _No documentation available._ |
-
----
-# UIElementUtility
-<!--
-source: API\Editor\UI\UIElementUtility.md
--->
-
-## UIElementUtility
-
-`static class` in `AdvancedSceneManager.Editor.UI`### Description
-Provides utility methods for working with `VisualElement`.
-
-### Static Methods
-
-| Member | Description |
-|--------|-------------|
-| `T UseFontAwesome<T>(T element, Nullable<boolean> solid, Nullable<boolean> regular, Nullable<boolean> brands)` | _No documentation available._ |
-
----
-# AssetDatabaseUtility
-<!--
-source: API\Editor\Utility\AssetDatabaseUtility.md
--->
-
-## AssetDatabaseUtility
-
-`static class` in `AdvancedSceneManager.Editor.Utility`### Description
-Contains utility functions for working with the asset database.
-
-<b> Remarks:</b>
-Only available in the editor.
-
-### Static Methods
-
-| Member | Description |
-|--------|-------------|
-| `string ConvertToUnixPath(string path)` | Converts the path separators to use forward slash. |
-| `boolean CreateFolder(string folder)` | _No documentation available._ |
-| `boolean CreateFolder(string path, String& createdFolder)` | _No documentation available._ |
-| `IEnumerable<string> FindAssetPaths<T>(string[] searchInFolders)` | _No documentation available._ |
-| `IEnumerable<T> FindAssets<T>()` | _No documentation available._ |
-| `IEnumerable<T> FindAssets<T>(string[] searchInFolders)` | _No documentation available._ |
-| `string MakeRelative(string path, boolean includeAssetsFolder, boolean prefixWithAssetsIfNecessary)` | Makes the path absolute. Converts path to unix style. |
-| `void ShowFolder(string folderPath)` | Shows the folder and selects the asset. |
-| `void ShowFolder(object obj)` | Shows the folder and selects the asset. |
-
----
-# BuildUtility
-<!--
-source: API\Editor\Utility\BuildUtility.md
--->
-
-## BuildUtility
-
-`static class` in `AdvancedSceneManager.Editor.Utility`### Description
-Provides functions for building, and build events.
-
-<b> Remarks:</b>
-Only available in editor.
-
-### Static Events
-
-| Member | Description |
-|--------|-------------|
-| `event Action<PostBuildEventArgs> postBuild` | Occurs after build. |
-| `event Action<BuildReport> preBuild` | Occurs before build. |
-
-### Static Methods
-
-| Member | Description |
-|--------|-------------|
-| `void CleanupASMBuildAssets()` | _No documentation available._ |
-| `BuildReport DoBuild(string path, boolean attachProfiler, boolean runGameWhenBuilt, boolean dev, BuildOptions customOptions)` | Performs a build of the active build profile if one exists, otherwise falls back to Unity's legacy build pipeline. |
-| `BuildReport DoBuild(BuildPlayerOptions opts)` | Performs a build using the legacy `BuildPlayerOptions` API. |
-| `BuildReport DoBuild(BuildPlayerWithProfileOptions options)` | _No documentation available._ |
-| `IEnumerable<ValueTuple<EditorBuildSettingsScene, Reason>> GetOrderedList()` | Gets an ordered list of all scenes that ASM would set in the build settings. |
-| `boolean IsEnabled(string path, Reason& reason)` | _No documentation available._ |
-| `boolean IsIncluded(Scene scene, Reason& reason)` | _No documentation available._ |
-| `void PrepareASMForBuild()` | _No documentation available._ |
-| `void UpdateSceneList()` | Updates the scene build settings. |
-| `void UpdateSceneList(boolean ignorePlayModeCheck, boolean force)` | Updates the scene build settings from the ASM profile. |
-
----
-# CodeEditorUtility
-<!--
-source: API\Editor\Utility\CodeEditorUtility.md
--->
-
-## CodeEditorUtility
-
-`static class` in `AdvancedSceneManager.Editor.Utility`### Description
-Provides utility methods for opening the code editor on a method.
-
-### Static Methods
-
-| Member | Description |
-|--------|-------------|
-| `void OpenInCodeEditor(Exception exception)` | Opens the code editor to the top frame of a given exception. |
-| `void OpenInCodeEditor(MemberInfo member)` | Opens the code editor to a specific member (e.g., method, property, or type). |
-
----
-# HierarchyGameObjectGUI
-<!--
-source: API\Editor\Utility\HierarchyGameObjectGUI.md
--->
-
-## HierarchyGameObjectGUI
-
-`sealed class` in `AdvancedSceneManager.Editor.Utility`  /  Inherits from: `MulticastDelegate`### Description
-
-### Methods
-
-| Member | Description |
-|--------|-------------|
-| `virtual IAsyncResult BeginInvoke(GameObject gameObject, AsyncCallback callback, object object)` | _No documentation available._ |
-| `virtual void EndInvoke(IAsyncResult result)` | _No documentation available._ |
-| `virtual void Invoke(GameObject gameObject)` | _No documentation available._ |
-
----
-# HierarchyGUIUtility
-<!--
-source: API\Editor\Utility\HierarchyGUIUtility.md
--->
-
-## HierarchyGUIUtility
-
-`static class` in `AdvancedSceneManager.Editor.Utility`### Description
-An utility for adding extra icons to scene fields in the hierarchy window.
-
-<b> Remarks:</b>
-Only available in editor.
-
-### Static Properties
-
-| Member | Description |
-|--------|-------------|
-| `GUIStyle defaultStyle { get; }` | The default style for text in hierarchy. |
-
-### Static Methods
-
-| Member | Description |
-|--------|-------------|
-| `void AddGameObjectGUI(HierarchyGameObjectGUI onGUI, int32 index)` | _No documentation available._ |
-| `void AddSceneGUI(HierarchySceneGUI onGUI, int32 index)` | _No documentation available._ |
-| `boolean GetObj(int32 instanceID, Object& obj, String& name, String& scenePath)` | _No documentation available._ |
-| `void RemoveGameObjectGUI(HierarchyGameObjectGUI onGUI)` | _No documentation available._ |
-| `void RemoveSceneGUI(HierarchySceneGUI onGUI)` | _No documentation available._ |
-| `void Repaint()` | Can be used to ensure repaint of the HierarchyWindow. |
-
----
-# HierarchySceneGUI
-<!--
-source: API\Editor\Utility\HierarchySceneGUI.md
--->
-
-## HierarchySceneGUI
-
-`sealed class` in `AdvancedSceneManager.Editor.Utility`  /  Inherits from: `MulticastDelegate`### Description
-
-### Methods
-
-| Member | Description |
-|--------|-------------|
-| `virtual IAsyncResult BeginInvoke(Scene scene, AsyncCallback callback, object object)` | _No documentation available._ |
-| `virtual void EndInvoke(IAsyncResult result)` | _No documentation available._ |
-| `virtual void Invoke(Scene scene)` | _No documentation available._ |
-
----
-# LockUtility
-<!--
-source: API\Editor\Utility\LockUtility.md
--->
-
-## LockUtility
-
-`static class` in `AdvancedSceneManager.Editor.Utility`### Description
-A utility for locking scenes and collections from modification.
-
-<b> Remarks:</b>
-Only modification from within unity is prevented.
-
-### Static Methods
-
-| Member | Description |
-|--------|-------------|
-| `void Lock(ILockable obj, string message, boolean prompt)` | Locks the object. |
-| `void Toggle(ILockable obj, boolean prompt)` | Toggles lock status of the object. |
-| `void Unlock(ILockable obj, boolean prompt)` | Unlocks the object. |
-
----
-# LogEntry
-<!--
-source: API\Editor\Utility\LogEntry.md
--->
-
-## LogEntry
-
-`class` in `AdvancedSceneManager.Editor.Utility`### Description
-
-### Properties
-
-| Member | Description |
-|--------|-------------|
-| `string condition` | _No documentation available._ |
-| `string stacktrace` | _No documentation available._ |
-
-### Methods
-
-| Member | Description |
-|--------|-------------|
-| `virtual LogEntry <Clone>$()` | _No documentation available._ |
-| `void Deconstruct(String& condition, String& stacktrace)` | _No documentation available._ |
-| `virtual boolean Equals(object obj)` | _No documentation available._ |
-| `virtual boolean Equals(LogEntry other)` | _No documentation available._ |
-| `virtual int32 GetHashCode()` | _No documentation available._ |
-| `virtual string ToString()` | _No documentation available._ |
-
----
-# PostBuildEventArgs
-<!--
-source: API\Editor\Utility\PostBuildEventArgs.md
--->
-
-## PostBuildEventArgs
-
-`class` in `AdvancedSceneManager.Editor.Utility`### Description
-
-### Properties
-
-| Member | Description |
-|--------|-------------|
-| `LogEntry[] error` | _No documentation available._ |
-| `BuildReport report` | _No documentation available._ |
-| `LogEntry[] warning` | _No documentation available._ |
-
-### Methods
-
-| Member | Description |
-|--------|-------------|
-| `virtual PostBuildEventArgs <Clone>$()` | _No documentation available._ |
-| `void Deconstruct(BuildReport& report, LogEntry[]& warning, LogEntry[]& error)` | _No documentation available._ |
-| `virtual boolean Equals(object obj)` | _No documentation available._ |
-| `virtual boolean Equals(PostBuildEventArgs other)` | _No documentation available._ |
-| `virtual int32 GetHashCode()` | _No documentation available._ |
-| `virtual string ToString()` | _No documentation available._ |
-
----
-# Reason
-<!--
-source: API\Editor\Utility\Reason.md
--->
-
-## Reason
-
-`enum` in `AdvancedSceneManager.Editor.Utility`  /  Inherits from: `Enum`### Description
-
-### Static Fields
-
-| Member | Description |
-|--------|-------------|
-| `Reason Default` | _No documentation available._ |
-| `Reason IncludedInProfile` | _No documentation available._ |
-| `Reason InvalidScene` | _No documentation available._ |
-| `Reason NotIncludedInProfile` | _No documentation available._ |
-| `Reason SceneLoaderOverride` | _No documentation available._ |
-
-### Fields
-
-| Member | Description |
-|--------|-------------|
-| `int32 value__` | _No documentation available._ |
-
----
-# CollectionOpen
-<!--
-source: API\ExampleScripts\CollectionOpen.md
--->
-
-## CollectionOpen
-
-`class` in `AdvancedSceneManager.ExampleScripts`  /  Inherits from: `MonoBehaviour`### Description
-Contains examples for opening collections.
-
-### Fields
-
-| Member | Description |
-|--------|-------------|
-| `SceneCollection collectionToOpen` | _No documentation available._ |
-
-### Methods
-
-| Member | Description |
-|--------|-------------|
-| `void ChainingExample()` | _No documentation available._ |
-| `void Open()` | _No documentation available._ |
-| `void OpenWithLoadingScreen(LoadingScreenReference loadingScreen)` | _No documentation available._ |
-| `void OpenWithUserData(ScriptableObject scriptableObject)` | _No documentation available._ |
-| `void ToggleOpen()` | _No documentation available._ |
-
----
-# DoActionsWithLoadingScreen
-<!--
-source: API\ExampleScripts\DoActionsWithLoadingScreen.md
--->
-
-## DoActionsWithLoadingScreen
-
-`class` in `AdvancedSceneManager.ExampleScripts`### Description
-Contains examples for doing `Action` with loading screen.
-
-### Fields
-
-| Member | Description |
-|--------|-------------|
-| `LoadingScreenReference loadingScreen` | _No documentation available._ |
-
-### Methods
-
-| Member | Description |
-|--------|-------------|
-| `void DoActionWithLoadingScreen()` | _No documentation available._ |
-| `void DoCoroutineWithLoadingScreen()` | _No documentation available._ |
-
----
-# SceneLoader
-<!--
-source: API\ExampleScripts\SceneLoader.md
--->
-
-## SceneLoader
-
-`static class` in `AdvancedSceneManager.ExampleScripts`### Description
-Contains examples of how to override scene loading.
-
----
-# SceneOpen
-<!--
-source: API\ExampleScripts\SceneOpen.md
--->
-
-## SceneOpen
-
-`class` in `AdvancedSceneManager.ExampleScripts`  /  Inherits from: `MonoBehaviour`### Description
-Contains examples for opening scenes.
-
-### Fields
-
-| Member | Description |
-|--------|-------------|
-| `Scene sceneToOpen` | _No documentation available._ |
-
-### Methods
-
-| Member | Description |
-|--------|-------------|
-| `void ChainingExample()` | _No documentation available._ |
-| `void OpenSingle()` | _No documentation available._ |
-| `void OpenStandalone()` | _No documentation available._ |
-| `void OpenWithLoadingScreen(LoadingScreenReference loadingScreen)` | _No documentation available._ |
-| `void Toggle()` | _No documentation available._ |
-
----
-# ScenePreload
-<!--
-source: API\ExampleScripts\ScenePreload.md
--->
-
-## ScenePreload
-
-`class` in `AdvancedSceneManager.ExampleScripts`  /  Inherits from: `MonoBehaviour`### Description
-Contains examples for preloading scenes.
-
-### Static Properties
-
-| Member | Description |
-|--------|-------------|
-| `boolean hasPreloadedScene` | _No documentation available._ |
-
-### Fields
-
-| Member | Description |
-|--------|-------------|
-| `Scene SceneToPreload` | _No documentation available._ |
-
-### Static Methods
-
-| Member | Description |
-|--------|-------------|
-| `void CancelPreloadStatically(Scene scene)` | _No documentation available._ |
-| `void FinishPreloadStatically(Scene scene)` | _No documentation available._ |
-| `void StartPreloadStatically(Scene scene)` | _No documentation available._ |
-
-### Methods
-
-| Member | Description |
-|--------|-------------|
-| `void CancelPreloadCoroutine()` | _No documentation available._ |
-| `void FinishPreloadCoroutine()` | _No documentation available._ |
-| `void StartPreloadCoroutine()` | _No documentation available._ |
-
----
-# IFadeLoadingScreen
-<!--
-source: API\Loading\IFadeLoadingScreen.md
--->
-
-## IFadeLoadingScreen
-
-`interface` in `AdvancedSceneManager.Loading`### Description
-Used to pass arguments from [Color})](https://learn.microsoft.com/dotnet/api/m:advancedscenemanager.utility.loadingscreenutility.fadein(advancedscenemanager.loading.loadingscreenreference,system.single,system.nullable{unityengine.color}))
-
-### Properties
-
-| Member | Description |
-|--------|-------------|
-| `Color color` | Specifies the color of the fade. |
-| `single fadeDuration` | Specifies the fade duration. |
-
----
-# ILoadProgressData
-<!--
-source: API\Loading\ILoadProgressData.md
--->
-
-## ILoadProgressData
-
-`interface` in `AdvancedSceneManager.Loading`### Description
-Represents progress in ASM. Used for `ILoadProgressListener`.
-
-### Properties
-
-| Member | Description |
-|--------|-------------|
-| `single value` | The current load percent. |
-
----
-# ILoadProgressListener
-<!--
-source: API\Loading\ILoadProgressListener.md
--->
-
-## ILoadProgressListener
-
-`interface` in `AdvancedSceneManager.Loading`### Description
-Represents a listener for when progress changes.
-
-### Methods
-
-| Member | Description |
-|--------|-------------|
-| `abstract virtual void OnProgressChanged(ILoadProgressData progress)` | Called when progress has changed. |
-
----
-# LoadingScreen
-<!--
-source: API\Loading\LoadingScreen.md
--->
-
-## LoadingScreen
-
-`abstract class` in `AdvancedSceneManager.Loading`  /  Inherits from: `LoadingScreenBase`### Description
-A class that contains callbacks for loading screens.
-
-<b> Remarks:</b>
-`SplashScreen` and `LoadingScreen` cannot co-exist within the same scene.
-
-### Properties
-
-| Member | Description |
-|--------|-------------|
-| `SceneOperation operation { get; }` | The current scene operation that this loading screen is associated with. May be null for the first few frames, before loading has actually begun. |
-
-### Methods
-
-| Member | Description |
-|--------|-------------|
-| `abstract virtual IEnumerator OnClose()` | Called when loading scene is closed. |
-| `abstract virtual IEnumerator OnOpen()` | Called when loading scene is opened. |
-| `virtual void OnValidate()` | _No documentation available._ |
-
----
-# LoadingScreenAttribute
-<!--
-source: API\Loading\LoadingScreenAttribute.md
--->
-
-## LoadingScreenAttribute
-
-`sealed class` in `AdvancedSceneManager.Loading`  /  Inherits from: `LoadingScreenAttributeBase`### Description
-Defines a loading screen.
-
----
-# LoadingScreenAttributeBase
-<!--
-source: API\Loading\LoadingScreenAttributeBase.md
--->
-
-## LoadingScreenAttributeBase
-
-`abstract class` in `AdvancedSceneManager.Loading`  /  Inherits from: `DiscoverableAttribute`### Description
-Defines the base for a loading screen discoverable.
-
-### Properties
-
-| Member | Description |
-|--------|-------------|
-| `string displayName` | The name to display when picking a loading screen and for the host scene when open. |
-| `string displayType` | Gets a human-readable type name for this screen (for example, "Splash Screen" or "Loading Screen"). |
-| `string effectiveDisplayName` | The effective display name, falls back to type name if `displayName` is empty. |
-| `boolean isLoadingScreen` | Gets whether this attribute defines a loading screen. |
-| `boolean isSplashScreen` | Gets whether this attribute defines a splash screen. |
-
----
-# LoadingScreenBase
-<!--
-source: API\Loading\LoadingScreenBase.md
--->
-
-## LoadingScreenBase
-
-`abstract class` in `AdvancedSceneManager.Loading`  /  Inherits from: `MonoBehaviour`### Description
-A generic base class for loading screens. You probably want to inherit from `LoadingScreen` though.
-
-<b> Remarks:</b>
-When multiple loading screens exist within the same scene, only the first found one will be used.
-
-### Properties
-
-| Member | Description |
-|--------|-------------|
-| `boolean isClosing { get; }` | Gets whatever we're currently closing. |
-| `boolean isOpen { get; }` | Gets whatever we're currently open. |
-| `boolean isOpening { get; }` | Gets whatever we're currently opening. |
-
-### Fields
-
-| Member | Description |
-|--------|-------------|
-| `Canvas canvas` | The canvas that this loading screen uses.
-
-This will automatically register canvas with `CanvasSortOrderUtility`, to automatically manage canvas sort order. |
-
-### Methods
-
-| Member | Description |
-|--------|-------------|
-| `boolean HasPressedAnyKey()` | Gets if any key has been pressed this frame. |
-| `abstract virtual IEnumerator OnClose()` | Called when the loading screen is about to close. |
-| `abstract virtual IEnumerator OnOpen()` | Called when the loading screen is opened. |
-| `virtual void OnProgressChanged(ILoadProgressData progress)` | Called when progress changes for the associated scene operation. |
-| `WaitUntil WaitForAnyKey()` | Returns `WaitUntil` that waits for user to press any key. |
-
----
-# LoadingScreenConfigBag
-<!--
-source: API\Loading\LoadingScreenConfigBag.md
--->
-
-## LoadingScreenConfigBag
-
-`abstract class` in `AdvancedSceneManager.Loading`### Description
-Base class for loading screen config bags.
-
-### Fields
-
-| Member | Description |
-|--------|-------------|
-| `boolean displayInEditor` | _No documentation available._ |
-| `PanelSettings panelSettings` | _No documentation available._ |
-| `int32 sortOrder` | _No documentation available._ |
-
----
-# LoadingScreenReference
-<!--
-source: API\Loading\LoadingScreenReference.md
--->
-
-## LoadingScreenReference
-
-`struct` in `AdvancedSceneManager.Loading`  /  Inherits from: `ValueType`### Description
-Represents a loading screen.
-
-### Properties
-
-| Member | Description |
-|--------|-------------|
-| `LoadingScreenConfigBag config` | _No documentation available._ |
-| `DiscoveredMember discoverable` | _No documentation available._ |
-| `LoadingScreenBase instance` | _No documentation available._ |
-| `boolean isDiscoverable` | _No documentation available._ |
-| `boolean isScene` | _No documentation available._ |
-| `boolean isValid` | _No documentation available._ |
-| `string name` | _No documentation available._ |
-| `Scene scene` | _No documentation available._ |
-
-### Methods
-
-| Member | Description |
-|--------|-------------|
-| `boolean Equals(LoadingScreenReference other)` | _No documentation available._ |
-| `virtual boolean Equals(object obj)` | _No documentation available._ |
-| `virtual int32 GetHashCode()` | _No documentation available._ |
-
----
-# LoadingScreenViewModel
-<!--
-source: API\Loading\LoadingScreenViewModel.md
--->
-
-## LoadingScreenViewModel
-
-`abstract class` in `AdvancedSceneManager.Loading`  /  Inherits from: `ViewModel`### Description
-The base class for loading screen view models.
-
-### Properties
-
-| Member | Description |
-|--------|-------------|
-| `boolean handleDisplayInEditorAutomatically` | Determines whether ASM should automatically handle editor-only display logic based on `displayInEditor`. |
-| `UIDocument uiDocument { get; }` | Gets the `UIDocument` that is rendering the view. |
-
-### Methods
-
-| Member | Description |
-|--------|-------------|
-| `void EnsureCameraExists()` | Ensures that a camera exists for rendering this loading screen. |
-
----
-# LoadingScreenViewModel_Of_T
-<!--
-source: API\Loading\LoadingScreenViewModel_Of_T.md
--->
-
-## LoadingScreenViewModel`1
-
-`abstract class` in `AdvancedSceneManager.Loading`  /  Inherits from: `LoadingScreenViewModel`### Description
-The base class for loading screen view models.
-
-### Properties
-
-| Member | Description |
-|--------|-------------|
-| `T configBag` | Gets the configuration bag for this loading screen. If no configuration has been provided, a default instance is created. |
-
----
-# MessageLoadProgressData
-<!--
-source: API\Loading\MessageLoadProgressData.md
--->
-
-## MessageLoadProgressData
-
-`struct` in `AdvancedSceneManager.Loading`  /  Inherits from: `ValueType`### Description
-An implementation of `ILoadProgressData` that provides a string message.
-
-### Properties
-
-| Member | Description |
-|--------|-------------|
-| `string message` | The message of this report. |
-| `single value` | The reported progress value. |
-
-### Methods
-
-| Member | Description |
-|--------|-------------|
-| `virtual string ToString()` | _No documentation available._ |
-
----
-# ProgressScope
-<!--
-source: API\Loading\ProgressScope.md
--->
-
-## ProgressScope
-
-`class` in `AdvancedSceneManager.Loading`### Description
-Represents a listener for progress that can calculate the total progress of a scene operation.
-
-### Properties
-
-| Member | Description |
-|--------|-------------|
-| `boolean isRegistered { get; }` | Gets if this progress scope is registered. |
-| `int32 operationCount` | Gets the amount of scenes that will be either unloaded or loaded. |
-| `IEnumerable<Scene> scenesExpectedToLoad` | Gets the scenes that are expected to be loaded. |
-| `IEnumerable<Scene> scenesExpectedToUnload` | Gets the scenes that are expected to be unloaded. |
-| `boolean stopListenerWhenDisposed` | Gets or sets whatever the listener should be unregistered in `Dispose`. Default `true` |
-| `single totalProgress { get; }` | Gets the calculated total progress of this progress scope. |
-
-### Methods
-
-| Member | Description |
-|--------|-------------|
-| `void Dispose()` | Stops listening to progress reports. |
-| `ProgressScope Expect(SceneOperationKind kind, SceneCollection collection, boolean openAll, boolean isAdditive)` | Expect scenes in `collection`. |
-| `ProgressScope Expect(SceneOperationKind kind, Scene[] scene)` | Expect `scene`. |
-| `ProgressScope Expect(SceneOperationKind kind, IEnumerable<Scene> scenes)` | Expect `scenes`. |
-| `single GetSubProgress(SceneOperationKind kind, Scene scene)` | Gets the progress of a specific scene. |
-| `void OnProgressChanged(Action<single> callback)` | Adds a callback when progress changed. |
-| `void RemoveOnProgressChangedCallback(Action<single> callback)` | Removes a callback when progress changed. |
-| `ProgressScope StartListener()` | Starts listening to progress reports. |
-| `ProgressScope StopListener()` | Stops listening to progress reports. |
-
----
-# SceneLoadProgressData
-<!--
-source: API\Loading\SceneLoadProgressData.md
--->
-
-## SceneLoadProgressData
-
-`struct` in `AdvancedSceneManager.Loading`  /  Inherits from: `ValueType`### Description
-The default implementation of `ILoadProgressData`, used by ASM in most cases.
-
-### Properties
-
-| Member | Description |
-|--------|-------------|
-| `SceneOperation operation` | The operation that started this operation. |
-| `SceneOperationKind operationKind` | The kind of operation this is. |
-| `Scene scene` | The scene that is being loaded or unloaded. Can be null. |
-| `single value` | The reported progress value. |
-
-### Methods
-
-| Member | Description |
-|--------|-------------|
-| `virtual string ToString()` | _No documentation available._ |
-
----
-# SerializableLoadingScreenReference
-<!--
-source: API\Loading\SerializableLoadingScreenReference.md
--->
-
-## SerializableLoadingScreenReference
-
-`class` in `AdvancedSceneManager.Loading`### Description
-
-### Fields
-
-| Member | Description |
-|--------|-------------|
-| `LoadingScreenConfigBag config` | _No documentation available._ |
-| `DiscoveredMember discoverable` | _No documentation available._ |
-| `Scene scene` | _No documentation available._ |
-
----
-# SplashScreen
-<!--
-source: API\Loading\SplashScreen.md
--->
-
-## SplashScreen
-
-`abstract class` in `AdvancedSceneManager.Loading`  /  Inherits from: `LoadingScreenBase`### Description
-A class that contains callbacks for splash screens.
-
-<b> Remarks:</b>
-`SplashScreen` and `LoadingScreen` cannot coexist within the same scene.
-
-### Methods
-
-| Member | Description |
-|--------|-------------|
-| `abstract virtual IEnumerator OnClose()` | Called when splash scene is about to close. |
-| `abstract virtual IEnumerator OnOpen()` | Called when splash scene is opened. |
-| `virtual void OnValidate()` | _No documentation available._ |
-
----
-# SplashScreenAttribute
-<!--
-source: API\Loading\SplashScreenAttribute.md
--->
-
-## SplashScreenAttribute
-
-`sealed class` in `AdvancedSceneManager.Loading`  /  Inherits from: `LoadingScreenAttributeBase`### Description
-Defines a splash screen.
-
----
-# ASMSplashScreen
-<!--
-source: API\Loading\UI\ASMSplashScreen.md
--->
-
-## ASMSplashScreen
-
-`class` in `AdvancedSceneManager.Loading.UI`  /  Inherits from: `LoadingScreenViewModel<ConfigBag>`### Description
-A splash screen that displays the ASM logo.
-
-<b> Remarks:</b>
-A default splash screen.
-
-### Properties
-
-| Member | Description |
-|--------|-------------|
-| `VisualTreeAsset template` | Gets the UXML template asset for this view model. |
-
----
-# ConfigBag
-<!--
-source: API\Loading\UI\ConfigBag.md
--->
-
-## ConfigBag
-
-`class` in `AdvancedSceneManager.Loading.UI`  /  Inherits from: `LoadingScreenConfigBag`### Description
-
-### Fields
-
-| Member | Description |
-|--------|-------------|
-| `Color color` | _No documentation available._ |
-| `single fadeInDuration` | _No documentation available._ |
-| `single fadeOutDuration` | _No documentation available._ |
-
----
-# FadeLoadingScreen
-<!--
-source: API\Loading\UI\FadeLoadingScreen.md
--->
-
-## FadeLoadingScreen
-
-`class` in `AdvancedSceneManager.Loading.UI`  /  Inherits from: `LoadingScreenViewModel<ConfigBag>`### Description
-A loading screen that fades the screen in and out.
-
-<b> Remarks:</b>
-A default loading screen.
-
-### Properties
-
-| Member | Description |
-|--------|-------------|
-| `VisualTreeAsset template` | Gets the UXML template asset for this view model. |
-
----
-# FadeSplashScreen
-<!--
-source: API\Loading\UI\FadeSplashScreen.md
--->
-
-## FadeSplashScreen
-
-`class` in `AdvancedSceneManager.Loading.UI`  /  Inherits from: `LoadingScreenViewModel<ConfigBag>`### Description
-A splash screen that fades the screen in and out.
-
-<b> Remarks:</b>
-A default splash screen.
-
-### Properties
-
-| Member | Description |
-|--------|-------------|
-| `VisualTreeAsset template` | Gets the UXML template asset for this view model. |
-
----
-# Log
-<!--
-source: API\Log.md
--->
-
-## Log
-
-`static class` in `AdvancedSceneManager`### Description
-Provides simple logging methods with support for development-only logs.
-
-<b> Remarks:</b>
-Only available in #ASM_DEV.
-
-### Static Methods
-
-| Member | Description |
-|--------|-------------|
-| `void Assert(boolean assertion, string message)` | _No documentation available._ |
-| `LogTimer Duration(string logMessage, boolean onlyLogInDev, Func<TimeSpan, string> toStringOverride, boolean logStackTrace)` | _No documentation available._ |
-| `LogTimer Duration()` | _No documentation available._ |
-| `void Error(string message, boolean onlyLogInDev, boolean logStackTrace)` | _No documentation available._ |
-| `void Exception(Exception ex, boolean onlyLogInDev)` | _No documentation available._ |
-| `void Exception(Exception ex, string message, boolean onlyLogInDev)` | _No documentation available._ |
-| `void Info(string callerName)` | Logs the calling method name to console. |
-| `void Info(object obj, boolean onlyLogInDev, boolean logStackTrace)` | _No documentation available._ |
-| `boolean IsDev()` | _No documentation available._ |
-| `void List(IEnumerable list, string header, string separator, boolean logStackTrace, boolean onlyLogInDev)` | _No documentation available._ |
-| `void List(IList list, string header, string separator, boolean logStackTrace, boolean onlyLogInDev)` | _No documentation available._ |
-| `void List<T>(T[] list, string header, string separator, boolean logStackTrace, boolean onlyLogInDev)` | _No documentation available._ |
-| `void Warning(string message, boolean onlyLogInDev, boolean logStackTrace)` | _No documentation available._ |
-
----
-# LogTimer
-<!--
-source: API\LogTimer.md
--->
-
-## LogTimer
-
-`sealed class` in `AdvancedSceneManager`### Description
-
-### Properties
-
-| Member | Description |
-|--------|-------------|
-| `TimeSpan Elapsed` | _No documentation available._ |
-
-### Methods
-
-| Member | Description |
-|--------|-------------|
-| `void Stop()` | _No documentation available._ |
-
----
-# ASMModel
-<!--
-source: API\Models\ASMModel.md
--->
-
-## ASMModel
-
-`abstract class` in `AdvancedSceneManager.Models`  /  Inherits from: `ASMModelBase`### Description
-Serves as the abstract base class for models that can be opened, closed, and preloaded.
-
-### Properties
-
-| Member | Description |
-|--------|-------------|
-| `boolean isOpen` | _No documentation available._ |
-| `boolean isPreloaded` | _No documentation available._ |
-| `boolean isQueued` | _No documentation available._ |
-
-### Methods
-
-| Member | Description |
-|--------|-------------|
-| `virtual void _CancelPreload()` | Cancels all active preloads. |
-| `virtual void _Close()` | Closes this asset. |
-| `virtual void _FinishPreload()` | Finishes all active preloads. |
-| `virtual void _Open()` | Opens this asset. |
-| `virtual void _Preload()` | Preloads this asset. |
-| `virtual void _Reopen()` | Reopens this asset. |
-| `virtual void _ToggleOpen()` | Toggles this asset open or closed. |
-| `virtual SceneOperation CancelPreload()` | Cancels all active preloads. |
-| `abstract virtual SceneOperation Close()` | Closes this asset. |
-| `virtual SceneOperation FinishPreload()` | Finishes all active preloads. |
-| `abstract virtual SceneOperation Open()` | Opens this asset. |
-| `abstract virtual SceneOperation Preload()` | Preloads this asset. |
-| `abstract virtual SceneOperation Reopen()` | Reopens this asset. |
-| `abstract virtual SceneOperation ToggleOpen()` | Toggles this asset open or closed. |
-
----
-# ASMModelExtensions
-<!--
-source: API\Models\ASMModelExtensions.md
--->
-
-## ASMModelExtensions
-
-`static class` in `AdvancedSceneManager.Models`### Description
-Provides utility methods for working with `SceneCollection`.
-
-### Static Methods
-
-| Member | Description |
-|--------|-------------|
-| `void Add<T>(T collection, Scene[] scenes)` | _No documentation available._ |
-| `void AddEmptyScene<T>(T collection)` | _No documentation available._ |
-| `SceneOperation CloseAll(IEnumerable<Scene> scenes)` | Closes the `scenes`. |
-| `SceneOperation CloseAll(IEnumerable<Scene> scenes, LoadingScreenReference loadingScreen)` | Closes the `scenes`. |
-| `int32 IndexOf<T>(T collection, Scene scene)` | _No documentation available._ |
-| `void Insert<T>(T collection, int32 index, Scene scene)` | _No documentation available._ |
-| `void Move<T>(T collection, int32 oldIndex, int32 newIndex)` | _No documentation available._ |
-| `SceneOperation OpenAdditive(IEnumerable<SceneCollection> collections)` | Opens the `collections` as additive. |
-| `SceneOperation OpenAdditive(IEnumerable<SceneCollection> collections, SceneCollection activeCollection)` | Opens the `collections` as additive. |
-| `SceneOperation OpenAdditive(IEnumerable<SceneCollection> collections, SceneCollection activeCollection, Scene loadingScene)` | Opens the `collections` as additive. |
-| `SceneOperation OpenAll(IEnumerable<Scene> scenes)` | Opens the `scenes`. |
-| `SceneOperation OpenAll(IEnumerable<Scene> scenes, LoadingScreenReference loadingScreen)` | Opens the `scenes`. |
-| `SceneOperation OpenWithAdditive(SceneCollection collection, SceneCollection[] extraAdditiveCollections)` | Opens this `collection` and then opens `extraAdditiveCollections` as additive. |
-| `void Remove<T>(T collection, Scene scene)` | _No documentation available._ |
-| `void RemoveAt<T>(T collection, int32 index)` | _No documentation available._ |
-| `boolean Replace<T>(T collection, int32 index, Scene scene)` | _No documentation available._ |
-
----
-# ASMSceneHelper
-<!--
-source: API\Models\ASMSceneHelper.md
--->
-
-## ASMSceneHelper
-
-`class` in `AdvancedSceneManager.Models`  /  Inherits from: `ScriptableObject`### Description
-Provides helper methods for opening, closing, and managing scenes and collections.
-            Intended for use from `UnityEvent`.
-
-### Static Properties
-
-| Member | Description |
-|--------|-------------|
-| `ASMSceneHelper instance` | Gets the global instance of `ASMSceneHelper`. |
-
-### Properties
-
-| Member | Description |
-|--------|-------------|
-| `string name` | The name of the object. |
-
-### Methods
-
-| Member | Description |
-|--------|-------------|
-| `void _Activate(Scene scene)` | _No documentation available._ |
-| `void _CancelPreload()` | Cancels the preload. All preloaded scenes will be fully loaded (limitation by Unity), then closed. No ASM scene callbacks will be called. |
-| `void _Close(SceneCollection collection)` | _No documentation available._ |
-| `void _Close(Scene scene)` | _No documentation available._ |
-| `void _FinishPreload()` | _No documentation available._ |
-| `void _Open(SceneCollection collection)` | _No documentation available._ |
-| `void _Open(Scene scene)` | _No documentation available._ |
-| `void _OpenAdditive(SceneCollection collection)` | _No documentation available._ |
-| `void _OpenAndActivate(Scene scene)` | _No documentation available._ |
-| `void _Preload(SceneCollection collection)` | _No documentation available._ |
-| `void _Preload(Scene scene)` | _No documentation available._ |
-| `void _PreloadAdditive(SceneCollection collection)` | _No documentation available._ |
-| `void _Reopen(SceneCollection collection)` | _No documentation available._ |
-| `void _Reopen(Scene scene)` | _No documentation available._ |
-| `void _ToggleOpen(SceneCollection collection)` | _No documentation available._ |
-| `void _ToggleOpen(Scene scene)` | _No documentation available._ |
-| `void Activate(Scene scene)` | _No documentation available._ |
-| `SceneOperation CancelPreload()` | Cancels the preload. All preloaded scenes will be fully loaded (limitation by Unity), then closed. No ASM scene callbacks will be called. |
-| `SceneOperation Close(SceneCollection collection)` | _No documentation available._ |
-| `SceneOperation Close(Scene scene)` | _No documentation available._ |
-| `SceneOperation CloseWithLoadingScreen(Scene scene, Scene loadingScene)` | _No documentation available._ |
-| `SceneOperation FinishPreload()` | _No documentation available._ |
-| `void Open(SceneCollection collection)` | _No documentation available._ |
-| `SceneOperation Open(SceneCollection collection, boolean openAll)` | Opens the specified collection. |
-| `SceneOperation Open(Scene scene)` | _No documentation available._ |
-| `SceneOperation OpenAdditive(SceneCollection collection, boolean openAll)` | Opens the collection as additive. |
-| `void OpenAdditive(SceneCollection collection)` | _No documentation available._ |
-| `SceneOperation OpenAndActivate(Scene scene)` | _No documentation available._ |
-| `void OpenWhereNameStartsWith(string name)` | Opens all scenes whose names start with the specified string. |
-| `SceneOperation OpenWithLoadingScreen(Scene scene, Scene loadingScene)` | _No documentation available._ |
-| `SceneOperation Preload(SceneCollection collection, boolean openAll)` | Preloads the specified collection. |
-| `SceneOperation Preload(Scene scene, Action onPreloaded)` | Preloads the scene. |
-| `SceneOperation PreloadAdditive(SceneCollection collection, boolean openAll)` | Preloads the collection as additive. |
-| `void Quit()` | _No documentation available._ |
-| `void Reopen(SceneCollection collection)` | _No documentation available._ |
-| `SceneOperation Reopen(Scene scene)` | _No documentation available._ |
-| `void Restart()` | _No documentation available._ |
-| `void RestartCollection()` | Reopens the currently active `openCollection`. |
-| `SceneOperation ToggleOpen(SceneCollection collection, boolean openAll)` | Toggles the collection open or closed. |
-| `SceneOperation ToggleOpen(SceneCollection collection)` | _No documentation available._ |
-| `SceneOperation ToggleOpen(Scene scene)` | _No documentation available._ |
-| `SceneOperation ToggleOpenState(Scene scene)` | _No documentation available._ |
-
----
-# ASMSettings
-<!--
-source: API\Models\ASMSettings.md
--->
-
-## ASMSettings
-
-`class` in `AdvancedSceneManager.Models`  /  Inherits from: `ASMScriptableSingleton<ASMSettings>`### Description
-Contains the project wide ASM settings.
-
-<b> Remarks:</b>
-Manages initialization, as this `ScriptableObject` is core to ASM, and nothing works without it.
-
-### Properties
-
-| Member | Description |
-|--------|-------------|
-| `boolean allowCollectionLocking` | Specifies whatever asm will allow locking collections. |
-| `boolean allowLoadingScenesInParallel` | Specifies if scenes should be loaded in parallel, rather than sequentially. |
-| `boolean allowSceneLocking` | Specifies whatever asm will allow locking scenes. |
-| `boolean allowUpdateCheck` | Gets or sets whether ASM is allowed to check for updates. |
-| `string assetPath` | Specifies the path where profiles and imported scenes should be generated to. |
-| `Profile buildProfile` | The profile to use during build. |
-| `boolean checkForDuplicateSceneOperations` | By default, ASM checks for duplicate scene operations, since this is usually caused by mistake, but this will disable that. |
-| `CustomData customData` | Specifies custom data. |
-| `Profile defaultProfile` | The profile to use when none is set. |
-| `boolean enableCrossSceneReferences` | Gets or sets whatever cross-scene references should be enabled. |
-| `boolean enableGUIDReferences` | Gets or sets whatever GUID references should be enabled. |
-| `Profile forceProfile` | The profile to force everyone in this project to use. |
-| `boolean preventSpammingEventMethods` | By default, ASM will prevent spam calling event methods (i.e. calling Scene.Open() from a button press), but this will disable that. |
-| `boolean reverseUnloadOrderOnCollectionClose` | Specifies whatever collections should unload scenes in the reverse order. |
-| `SceneAutoTrackOutsideASMOption sceneAutoTrackOutsideASMOption` | Specifies if ASM should auto track scenes that were loaded outside of ASM. |
-| `SceneImportOption sceneImportOption` | Gets or sets when to automatically import scenes. |
-| `single spamCheckCooldown` | Sets the default cooldown for `SpamCheck`. |
-| `InputBinding[] toolbarBindings` | Specifies the bindings to open the ASM toolbar, if enabled. |
-| `boolean toolbarButtonVisible` | Specifies whatever the ASM toolbar button should be visible. |
-| `boolean toolbarEnabled` | Specifies whatever the ASM toolbar should be enabled. |
-
-### Static Methods
-
-| Member | Description |
-|--------|-------------|
-| `void OnInitialized(Action action)` | Runs the callback when ASMSettings has initialized. |
-
-### Methods
-
-| Member | Description |
-|--------|-------------|
-| `virtual void SaveNow()` | _No documentation available._ |
-| `void SetBuildProfile(Profile profile)` | Sets the build profile. |
-
----
-# ASMUserSettings
-<!--
-source: API\Models\ASMUserSettings.md
--->
-
-## ASMUserSettings
-
-`class` in `AdvancedSceneManager.Models`  /  Inherits from: `ASMScriptableSingleton<ASMUserSettings>`### Description
-Contains settings that are stored locally, that aren't synced to source control.
-
-<b> Remarks:</b>
-Only available in editor.
-
-### Properties
-
-| Member | Description |
-|--------|-------------|
-| `Profile activeProfile` | Specifies the active profile in editor. |
-| `boolean alwaysDisplaySearch` | Determines whatever search should always be displayed, and not just when actively searching. |
-| `boolean alwaysSaveScenesWhenEnteringPlayMode` | Specifies whatever scenes should always auto save when entering play mode using ASM play button. |
-| `string cachedLatestVersion` | Gets or sets the cached latest version information. |
-| `string cachedPatchNotes` | Gets or sets the cached patch notes. |
-| `boolean clearCollectionWhenEnteringPlayMode` | Specifies whatever ASM should clear open collection when entering play mode. |
-| `boolean displayChildProfilesButton` | Specifies the child profiles button should be displayed. |
-| `boolean displayHierarchyIndicators` | Specifies whatever the hierarchy indicators should be visible. |
-| `boolean displayNewCollectionButton` | Specifies the new collection button should be displayed. |
-| `boolean displaySceneTooltips` | Specifies whatever SceneField will display tooltips. |
-| `boolean editorOnly` | _No documentation available._ |
-| `single hierarchyIndicatorsOffset` | Gets or sets the offset ASM will use for hierarchy indicators. |
-| `boolean keepSceneUIInMemoryWhenCollectionCollapsed` | Whether to keep scene UI elements in memory when a collection is collapsed. |
-| `string lastPatchWhenNotified` | Gets or sets the last patch version when user was notified. |
-| `string lastUpdateCheck` | Gets or sets the timestamp of the last update check. |
-| `boolean logBuildScenes` | Specifies whatever ASM should log when build scene list is updated. |
-| `boolean logImport` | Specifies whatever ASM should log when a `ASMModelBase` is imported. |
-| `boolean logLoading` | Specifies whatever ASM should log when a scene is loaded. |
-| `boolean logOperation` | Specifies whatever ASM should log during scene operations. |
-| `boolean logStartup` | Specifies whatever ASM should log during startup. |
-| `boolean logTracking` | Specifies whatever ASM should log when a scene is tracked after loaded. |
-| `boolean openCollectionOnSceneAssetOpen` | When `true`: opens the first found collection that a scene is contained in when opening an SceneAsset in editor. |
-| `IEnumerable<SceneCollection> pinnedOverlayCollections` | Enumerates the pinned collections in the collection overlay. |
-| `boolean startupProcessOnCollectionPlay` | Specifies whatever startup process should run when pressing collection play button. |
-| `int32 toolbarButtonCount` | Specifies how many buttons should be placed in toolbar. |
-| `single toolbarPlayButtonOffset` | Specifies offset for toolbar play buttons. |
-| `UpdateInterval updateInterval` | Gets or sets the interval for checking ASM updates. |
-
-### Methods
-
-| Member | Description |
-|--------|-------------|
-| `void PinCollectionToOverlay(SceneCollection collection, Nullable<int32> index)` | Pins a collection to the collection overlay. |
-| `void ToolbarAction(int32 i, SceneCollection& collection, Boolean& runStartupProcess)` | _No documentation available._ |
-| `void ToolbarAction(int32 i, SceneCollection collection, boolean runStartupProcess)` | Sets the scene collection to open for the specified toolbar button, if any. |
-| `void UnpinCollectionFromOverlay(SceneCollection collection)` | Unpins a collection from the collection overlay. |
-
----
-# AutoSceneEntry
-<!--
-source: API\Models\AutoSceneEntry.md
--->
-
-## AutoSceneEntry
-
-`class` in `AdvancedSceneManager.Models`### Description
-Represents an auto scene entry, which is a scene that will be automatically opened or closed (depending on option), when the parent scene is.
-
-<b> Remarks:</b>
-Not meant for direct use, use the following instead:
-            
-```
-using AdvancedSceneManager.Utility;
-            
-            Scene.SetAutoScene(Scene, AutoSceneOption)
+public void OnButtonClick() =>
+	SceneOperation.Queue().
+		Open(sceneToOpen).
+		Close(SceneManager.openScenes).
+		With(loadingScene);
 ```
 
-### Fields
+### Fluent API
 
-| Member | Description |
-|--------|-------------|
-| `string customOption` | The custom option for this entry. |
-| `Nullable<AutoSceneOption> option` | The pre-defined option specifying how ASM will handle the scene. |
-| `Scene scene` | The scene this entry refers to. |
-| `string scenePath` | The path to the Unity scene asset. |
+As you can also see above, SceneOperation supports a fluent API, allowing for things like this:
 
-### Methods
+```csharp
+SceneManager.runtime.Open(sceneToOpen).Close(closeAlreadyOpenScene).With(loadingScreenScene);
 
-| Member | Description |
-|--------|-------------|
-| `boolean IsValid()` | Gets if this entry is valid. |
-| `virtual string ToString()` | _No documentation available._ |
+//This is functionally equivalent to above
+sceneToOpen.Open().Close(closeAlreadyOpenScene).With(loadingScreenScene);
+```
 
----
-# Blocklist
-<!--
-source: API\Models\Blocklist.md
--->
+> You should have a look at `.With(..)` using intellisense, or in the [api documentation](../api/Core.SceneOperation.md), it has many overloads for various different things.
 
-## Blocklist
+### Callbacks
 
-`class` in `AdvancedSceneManager.Models`### Description
-Represents a blocklist.
+Scene operations supports callbacks, not only [scene callbacks](Callbacks.md), but also direct callbacks.\
+The are called Event Callbacks, and can be registered either on specific scene operations, or globally. 
 
-### Properties
+Read more [here](Callbacks.md#event-callback-api)
 
-| Member | Description |
-|--------|-------------|
-| `int32 count` | Gets how many paths are added to this blocklist. |
-| `string Item` | _No documentation available._ |
+```csharp
+public class ExampleScript : MonoBehaviour
+{
+	public Scene exampleScene;
+	
+	public void Example()
+	{
+		var operation = exampleScene.Open();
+		operation.RegisterCallback<SceneOpenEvent>(e => Debug.Log("Scene opened: " + e.scene), when: When.After);
+	}
+}
+```
+## Flags
 
-### Methods
+Using flags helps reduce overhead caused by coroutines in ASM, such as yield return null, which skips a frame. 
 
-| Member | Description |
-|--------|-------------|
-| `void Add(string path)` | Adds `path` to blocklist. |
-| `void Change(int32 i, string newPath)` | Changes the path at the specified index in this blocklist. |
-| `boolean Contains(string path)` | Gets if this blocklist contains `path`. |
-| `IEnumerable<string> Enumerate()` | Enumerates the paths are added to this blocklist. |
-| `boolean Get(int32 index, String& path)` | _No documentation available._ |
-| `boolean MatchesFilter(string path)` | Gets if `path` matches this blocklist. |
-| `boolean MatchesFilter(string path, IEnumerable<string> list)` | Gets if `path` matches this blocklist. |
-| `void Remove(string path)` | Removes `path` from this blocklist. |
-| `void RemoveAt(int32 index)` | Removes the entry at `index` from this blocklist. |
+Flags allow you to disable certain overhead functions, resulting in faster scene loading. For instance, with an empty scene, using Flags.None could reduce load time from 11 frames to 4 frames. Typically, this performance improvement won't affect your gameplay experience.
 
----
-# ButtonData
-<!--
-source: API\Models\ButtonData.md
--->
+> Note: Cross scene references do not work if callbacks are disabled.
 
-## ButtonData
+```csharp
+public class SceneLoader : MonoBehaviour
+{
+    [SerializeField] private Scene sceneToLoad;
+    [SerializeField] private SceneCollection collectionToLoad;
 
-`class` in `AdvancedSceneManager.Models`### Description
+    SceneOperationFlags NoFlags = SceneOperationFlags.None;
 
-### Fields
+    SceneOperationFlags AllFlags = SceneOperationFlags.All;
 
-| Member | Description |
-|--------|-------------|
-| `int32 index` | _No documentation available._ |
-| `boolean isVisible` | _No documentation available._ |
-| `ElementLocation location` | _No documentation available._ |
-| `string name` | _No documentation available._ |
+    // Combined flags
+    SceneOperationFlags SomeFlags = SceneOperationFlags.CollectionCallbacks | SceneOperationFlags.SceneCallbacks;
 
-### Methods
+    // All but not SceneCallbacks
+    SceneOperationFlags AllButFlags = SceneOperationFlags.All & ~SceneOperationFlags.SceneCallbacks;
 
-| Member | Description |
-|--------|-------------|
-| `virtual string ToString()` | _No documentation available._ |
+    public void LoadSceneWithFlags()
+    {
+        sceneToLoad.Open().With(NoFlags);
+        collectionToLoad.Open().With(NoFlags);
+    }
+}
+```
 
----
-# CustomData
-<!--
-source: API\Models\CustomData.md
--->
 
-## CustomData
+## Order of operations
 
-`class` in `AdvancedSceneManager.Models`  /  Inherits from: `CustomDataDictionary<string, string>`### Description
+* Loading screen open
+* `ICollectionClose` (_if collection specified_)
+* `ISceneClose`
+* Unload scenes
+* Load scenes
+* Preload scene (_if one defined_)
+* `ISceneOpen`
+* `ICollection` open (_if collection specified_)
+* Hide loading screen
 
----
-# CustomDataDictionary_Of_TKey_TValue
-<!--
-source: API\Models\CustomDataDictionary_Of_TKey_TValue.md
--->
+### Related pages
+[📄 View SceneManager _(API Entry point)_](guides/Scene-manager.md)\
+[📄 View API structure](guides/API-structure.md)\
+[📄 View CoroutineUtility](api/SceneManager.md)\
+[📄 View Finding ASM assets](guides/Finding-ASM-assets.md)\
+[📄 View Scene operations](guides/SceneOperation.md)
 
-## CustomDataDictionary`2
-
-`class` in `AdvancedSceneManager.Models`### Description
-
-### Properties
-
-| Member | Description |
-|--------|-------------|
-| `TValue Item` | _No documentation available._ |
-
-### Methods
-
-| Member | Description |
-|--------|-------------|
-| `void Clear(TKey key)` | _No documentation available._ |
-| `boolean ContainsKey(TKey key)` | _No documentation available._ |
-| `boolean Get(TKey key, TValue& value)` | _No documentation available._ |
-| `TValue Get(TKey key)` | _No documentation available._ |
-| `IEnumerator<KeyValuePair<TKey, TValue>> GetEnumerator()` | _No documentation available._ |
-| `void Set(TKey key, TValue value)` | _No documentation available._ |
+[← Back](readme.md) | [🏠 Home](../readme.md)
 
 ---
-# DynamicCollection
+# main
 <!--
-source: API\Models\DynamicCollection.md
+source: guides\asm-window\main.md
 -->
 
-## DynamicCollection
+<!---asm-window/main.md-->
+[← Back](readme.md) | [🏠 Home](../readme.md)
+## Main view
+### Overview
 
-`class` in `AdvancedSceneManager.Models`  /  Inherits from: `DynamicCollectionBase<string>`### Description
-Represents a collection that can take a path and then gather all scenes within, guaranteeing that they are all added to build, including non-imported and blacklisted scenes.
+The main view is divided into several distinct areas:
 
-### Properties
+- [Header](#header)
+- [Scene collections](#scene-collections)
+- [Dynamic collections](#dynamic-collections)
+- [Special collections](#special-collections)
+- [Footer](#footer)
 
-| Member | Description |
-|--------|-------------|
-| `int32 count` | _No documentation available._ |
-| `string path` | Specifies the path that this dynamic collection will gather scenes from. |
-| `IEnumerable<string> scenePaths` | Gets the paths of the scenes tracked by this dynamic collection. |
-| `IEnumerable<string> scenes` | _No documentation available._ |
+## Header
 
-### Static Methods
+![](../image/main-header.png)
 
-| Member | Description |
-|--------|-------------|
-| `DynamicCollection Find(string id)` | Finds the dynamic collction with the specified id. |
+The header includes:
 
-### Methods
+- **ASM Play Button**: Enters play mode, and runs ASM startup process. This means collections and scenes flagged to open during startup, will open like in builds.
+- **Extendable buttons _(Highlighted in image)_**: A container for holding extendable buttons. Unlike the other hardcoded header buttons, this container is powered by the `ASMWindowElement` attribute and is part of the Discoverables API, allowing it to be extended by users. Many extendable buttons are provided out of the box. Can be configured by right clicking and choosing "Customize".
+- **Bell Icon**: Shows the count of overflowed notifications. Clicking it opens a dropdown listing those notifications. Muted notifications also appear here.
+- **Settings**: Opens the [Settings Popup](settings.md).
+- **Menu**: Opens the [Menu Popup](popups.md#menu-popup).
 
-| Member | Description |
-|--------|-------------|
-| `void ImportScenes()` | Imports all scenes that are currently tracked by the collection. |
-| `virtual boolean IsMatch(string q)` | Determines whether the specified query matches this model. |
-| `void ReloadPaths()` | Queries all `SceneAsset` in the project that is in the defined path, and is not blacklisted. |
-| `virtual string ToString()` | _No documentation available._ |
+## Scene collections
+
+This is where most of your scene logic is configured.
+
+Each **collection** can contain one or more **scene fields**.
+
+### Collection Header
+
+![](../image/main-collection.png)
+
+Each collection includes:
+
+- Drag handle
+- **Play** (run this collection from editor)
+- **Open / Additive Open** buttons
+- Collection title
+- Collection menu (opens collection settings)
+- Delete button
+- Add scene button (adds new scene field)
+
+> Collection headers support extendable buttons via the `CollectionLeft` and `CollectionRight` ElementLocation. These allow you to inject custom UI next to the collection open buttons. Examples include status toggles, developer shortcuts, or context-aware tools.
+> 
+> These extension points are part of the Discoverables API, enabling flexible extension of the ASM UI through custom code.
+
+> See the Scene Collections Guide for collection-specific options.
+
+### Scene Field
+
+![](../image/main-scene.png)
+
+Each scene field includes:
+
+- Drag handle
+- **Open / Additive Open** buttons
+- Scene selector (ObjectField)
+- Scene loader indicator (not depicted in image)
+- Scene menu (per-scene options)
+- Remove button
+
+> Scene fields support extendable buttons via the `SceneLeft` and `SceneRight` ElementLocation. For example, the scene open buttons are implemented using this system.
+> 
+> These extension points are part of the Discoverables API, allowing you to insert custom UI elements into the ASM Window.
+
+> See the Scenes Guide for scene-specific settings like persistence, loaders, etc.
+
+## Dynamic collections
+
+![](../image/main-dynamic-collections.png)\
+_Special collections (covered below) faded out for clarity_
+
+Dynamic collections are collections that take a string path. ASM will automatically locate all `SceneAsset` files at the path, either directly if it points to a single scene, or recursively within a folder and its subfolders. These collections are typically used for workflows involving assets like world streamers, which generate many scenes that should be included in the build but don't need to be imported into ASM.
+
+It doesn't matter whether the scenes found by the dynamic collection are already imported into ASM or not, they will still be included in builds.
+
+> Dynamic collections do not support extendable buttons.
+
+## Special collections
+
+![](../image/main-special-collections.png)
+
+- **Standalone Scenes**: Manual list of scenes that should be included in build even if its not contained within any collections. Supports input bindings (Escape is depicted in image, as scene bound to escape).
+- **ASM Defaults**: Scenes provided as a UPM sample (loading screens, splash screens, etc.). Use the "Import Scenes" button to pull them into the project.
+
+## Footer
+
+![](../image/main-footer.png)
+
+The bottom of the ASM window contains:
+
+- **Profile Picker**: Active profile shown on the left. Click to select or create profiles.
+- **Child profiles button**: Opens the [child profiles popup](#child-profiles-popup).
+- **Scene Helper Button**: Drag this into [UnityEvent](https://docs.unity3d.com/Manual/UnityEvents.html) or similar to easily call ASM methods.
+- **New Collection Button**: Creates new collections. Split button allows creating collections from templates.
+
+## Tips
+
+- Start a drag on scene and collection headers to get a drag & drop reference to them (e.g., assign to [UnityEvent](https://docs.unity3d.com/Manual/UnityEvents.html) and similar)
+- Use the collection play button to preview specific scene setups without overriding startup behavior.
+
+</br>
+
+### Related pages
+[📄 Main view](main.md)\
+[📄 Settings popup](settings.md)\
+[📄 Popups](popups.md)\
+[📄 ASM utility functions](utility-functions.md)
+
+[← Back](readme.md) | [🏠 Home](../readme.md)
 
 ---
-# DynamicCollectionBase_Of_T
+# popups
 <!--
-source: API\Models\DynamicCollectionBase_Of_T.md
+source: guides\asm-window\popups.md
 -->
 
-## DynamicCollectionBase`1
+<!---asm-window/popups.md-->
+[← Back](readme.md) | [🏠 Home](../readme.md)
+## Popups
+### Overview
 
-`abstract class` in `AdvancedSceneManager.Models`  /  Inherits from: `ASMModelBase`### Description
-Base class for dynamic collections.
+- [Collection popup](#collection-popup)
+	- [Events subpage](#collection-events)
+	- [InputBindings subpage](#collection-input-bindings)
+- [Scene popup](#scene-popup)
+	- [Events subpage](#scene-events)
+	- [Standalone scene subpage](#standalone-scene)
+- [Diagnostics popup](#diagnostics-popup)
+	- [Coroutines subpage](#coroutine-diagnostics)
+	- [Discoverables subpage](#discoverable-diagnostics)
+	- [Services subpage](#service-diagnostics)
+- [Dynamic collection popup](#dynamic-collection-popup)
+- [Menu popup](#menu-popup)
+- [Scene Overview popup](#scene-overview-popup)
+- [Child profiles popup](#child-profiles-popup)
 
-### Properties
+</br>
 
-| Member | Description |
-|--------|-------------|
-| `int32 count` | Gets the count of scenes or scene paths contained in this collection. |
-| `string description` | Gets the description of this collection. |
-| `boolean hasScenes` | Gets if this collection has any scenes. |
-| `T Item` | _No documentation available._ |
-| `Profile profile` | Gets the profile that contains this collection. Cached. |
-| `IEnumerable<string> scenePaths` | Gets the scene paths contained in this collection. |
-| `IEnumerable<T> scenes` | Gets the scenes or scene paths contained in this collection. |
-| `string title` | Gets the title of this collection. |
+# Collection popup
+The **Collection popup** is used to configure collection-specific behavior such as startup rules, persistence, loading options, events, and input bindings.
 
-### Methods
+This popup represents the primary configuration surface for a scene collection.
 
-| Member | Description |
-|--------|-------------|
-| `boolean Contains(T scene)` | _No documentation available._ |
-| `virtual boolean Equals(object obj)` | _No documentation available._ |
-| `boolean Equals(DynamicCollectionBase<T> other)` | _No documentation available._ |
-| `boolean FindProfile(Profile& profile)` | _No documentation available._ |
-| `Profile FindProfile()` | Finds the profile that contains this collection. |
-| `IEnumerator<T> GetEnumerator()` | Gets an enumerator for the scenes or scene paths contained in this collection. |
-| `virtual int32 GetHashCode()` | _No documentation available._ |
-| `virtual boolean IsMatch(string q)` | Matches this collection against the query string. |
-| `virtual string ToString()` | Returns the title of this collection. |
+From here, you can navigate to subpages for events and input bindings, as well as configure core collection options directly.
+
+![](../image/popup-collection.png)
+
+## Collection events
+The **Events** subpage allows you to bind callbacks to collection lifecycle events.
+
+These events are invoked when the collection is opened, closed, or when its open state changes.  
+Bindings support runtime, editor, and test execution contexts depending on the selected target.
+
+Typical use cases include:
+- Triggering logic when a collection opens or closes
+- Coordinating loading screens or transitions
+- Running editor or debug utilities tied to collection state
+
+![](../image/popup-collection-events.png)
+
+## Collection input bindings
+The **Input bindings** subpage allows input actions to be mapped to collection operations.
+
+Bindings can be used to open, close, or toggle collections using input events such as keyboard keys or input actions.
+
+> Input bindings are hidden if the Input System package is not installed and enabled.
+
+Scenes can also be excluded from triggering bindings using the *Scenes to ignore* list.
+
+![](../image/popup-collection-inputBindings.png)
+
+# Scene popup
+The **Scene popup** configures behavior for an individual scene within ASM.
+
+This includes scene persistence rules, loading behavior, editor behavior, events, and standalone-specific settings.
+
+![](../image/popup-scene.png)
+
+## Scene events
+The **Scene events** subpage allows callbacks to be registered for scene-level lifecycle events.
+
+Available events include:
+- Scene open and close
+- Preload and preload completion
+- Collection-related open and close events
+- Open state changes
+
+These events are commonly used for scene initialization, teardown, or coordination with external systems.
+
+![](../image/popup-scene-events.png)
+
+## Standalone scene
+The **Standalone scene** subpage is available for scenes that are added to the [standalone collection](main.md#special-collections).
+
+It allows standalone scenes to:
+- Be opened at startup
+- Be opened when entering play mode
+- Respond to input bindings
+- Define loading behavior independently
+
+This is typically used for utility scenes, overlays, or scenes that should exist outside collection workflows.
+
+![](../image/popup-scene-standalone.png)
+
+# Diagnostics popup
+The **Diagnostics popup** provides insight into ASM’s internal state and initialization process.
+
+It includes runtime statistics such as initialization timing, discovered elements, and active systems, and serves as an entry point to more detailed diagnostic views.
+
+![](../image/main-button-diag.png)\
+_The button is hidden unless hovered._
+
+![](../image/popup-diag.png)
+
+## Coroutine diagnostics
+The **Coroutines** diagnostics view lists active and completed coroutines using ASM’s coroutine utility.
+
+> CoroutineUtility can be used like so:
+> ```csharp
+> void StartCoroutine()
+> {
+>    CoroutineUtility.Run(() => Debug.Log("test"), after: TimeSpan.FromSeconds(2));
+>    ExampleCoroutine().StartCoroutine();
+> }
+> IEnumerable ExampleCoroutine() 
+> {
+>    yield return new WaitForSeconds(1f);
+> }
+> ```
+
+This is useful for:
+- Debugging scene operations
+- Tracking loading and transition phases
+- Verifying event execution order
+
+Each entry reflects the coroutine state and the event or operation it represents.
+
+![](../image/popup-diag-coroutines.png)
+
+## Discoverable diagnostics
+The **Discoverables** diagnostics view lists all discovered attribute callbacks such as `[ASMWindowElement]` and `[OnLoad]`.
+
+![](../image/popup-diag-discoverables.png)
+
+## Service diagnostics
+
+The **Services** diagnostics view lists registered services and their implementations.
+
+This allows you to inspect:
+- Which services are currently registered
+- Their concrete implementations
+
+This view is useful for debugging the ASM DI container.
+
+![](../image/popup-diag-services.png)
+
+# Dynamic collection popup
+The **Dynamic collection popup** is used to create and configure dynamic collections.
+
+Dynamic collections reference a path instead of manually listed scenes.  
+All scenes found at the specified path (and subfolders) are automatically included in builds, unless explicitly blacklisted.
+
+Scenes do not need to be imported into ASM to be included through a dynamic collection.
+
+This popup is typically used for workflows where scenes are generated, streamed, or otherwise managed externally. A common example is world streaming assets.
+
+![](../image/popup-dynamic-collection.png)
+
+# Menu popup
+The **Menu popup** provides general information about ASM and access to reference links.
+
+Dev Build provides a quick way to build the project directly from the ASM window.
+
+![](../image/popup-menu.png)
+
+# Scene overview popup
+The **Scene overview popup** displays a searchable list of all scenes known to ASM.  
+This includes both imported and unimported scenes.
+
+This popup is primarily intended for quick navigation and inspection in larger projects.
+
+![](../image/popup-overview.png)
+
+# Child profiles popup
+
+The **Child profiles popup** is used to manage child profiles for the currently active ASM profile.
+
+Child profiles are primarily an organizational feature for collections.  
+They ensure that all scenes from all child profiles are included in the build.
+
+The only additional behavior is support for startup collections:
+- Collections marked as **Startup: Open** in child profiles will be opened
+- **Startup: Auto** is ignored for child profiles
+
+Pressing the edit button enters edit mode.
+
+In edit mode, all profiles in the project are listed.  
+Profiles can be checked to assign them as child profiles of the currently active profile.
+
+![](../image/popup-child-profiles.png)
+
+</br>
+
+### Related pages
+[📄 Main view](main.md)\
+[📄 Settings popup](settings.md)\
+[📄 Popups](popups.md)\
+[📄 ASM utility functions](utility-functions.md)
+
+[← Back](readme.md) | [🏠 Home](../readme.md)
 
 ---
-# AutoSceneOption
+# readme
 <!--
-source: API\Models\Enums\AutoSceneOption.md
+source: guides\asm-window\readme.md
 -->
 
-## AutoSceneOption
+<!---asm-window/readme.md-->
+[← Back](../readme.md) | [🏠 Home](../readme.md)
+## ASM Window _(Scene Manager Window)_
 
-`enum` in `AdvancedSceneManager.Models.Enums`  /  Inherits from: `Enum`### Description
-Specifies when ASM should open or close an auto scene.
+The **ASM Window** is the primary editor UI for managing scenes and collections in ASM.\
+It is used to define how scenes are grouped, opened, loaded, and included in builds, and acts as the central control point for your project’s scene setup.
 
-<b> Remarks:</b>
-See also: ``
+[📄 Main view](main.md)\
+[📄 Settings popup](settings.md)\
+[📄 Popups](popups.md)\
+[📄 ASM utility functions](utility-functions.md)
 
-### Static Fields
-
-| Member | Description |
-|--------|-------------|
-| `AutoSceneOption Always` | Always open the auto scene automatically in either outside or in play mode. |
-| `AutoSceneOption EditModeOnly` | Only open the auto scene automatically outside of play mode. |
-| `AutoSceneOption Never` | Never open the auto scene automatically. |
-| `AutoSceneOption PlayModeOnly` | Only open the auto scene automatically in play mode. |
-
-### Fields
-
-| Member | Description |
-|--------|-------------|
-| `int32 value__` | _No documentation available._ |
+![](../image/menu-asm-window.png)
+![](../image/main.png)
 
 ---
-# CollectionStartupOption
+# settings
 <!--
-source: API\Models\Enums\CollectionStartupOption.md
+source: guides\asm-window\settings.md
 -->
 
-## CollectionStartupOption
+[← Back](readme.md) | [🏠 Home](../readme.md)
+## Settings popup
+### Overview
 
-`enum` in `AdvancedSceneManager.Models.Enums`  /  Inherits from: `Enum`### Description
-Specifies what to do with a `SceneCollection` during startup.
+- [Scene loading page](#scene-loading-page)
+- [Assets page](#assets-page)
+	- [Whitelist subpage](#whitelist)
+	- [Blacklist subpage](#blacklist)
+- [Editor page](#editor-page)
+	- [Logging subpage](#logging)
+- [Appearance page](#appearance-page)
+	- [Extendable UI subpage](#extendable-ui)
+	- [Hierarchy subpage](#hierarchy)
+- [Updates page](#updates-page)
+- [Network page](#network-page)
+- [Advanced page](#advanced-page)
+	
+## Scene loading page
 
-### Static Fields
+The **Scene loading** page controls how ASM handles scene loading, unloading, tracking, and transitions, both at runtime and in the editor.
 
-| Member | Description |
-|--------|-------------|
-| `CollectionStartupOption Auto` | Specifies that ASM should automatically decide if a `SceneCollection` should be opened during startup. |
-| `CollectionStartupOption DoNotOpen` | Specifies that a `SceneCollection` will not open during startup. |
-| `CollectionStartupOption Open` | Specifies that a `SceneCollection` will open during startup. |
+![](../image/popup-settings-sceneLoading.png)
 
-### Fields
+### Startup
 
-| Member | Description |
-|--------|-------------|
-| `int32 value__` | _No documentation available._ |
+- **Splash screen**  
+  Specifies which splash screen setup should be used when ASM runs its startup process.  
+  This includes opening collections and standalone scenes that are flagged to open during startup.
+
+- **Default collection loading screen**  
+  Defines the loading screen used when opening scene collections, unless a collection overrides it explicitly.
+
+- **Default fade screen**  
+  Defines the default fade-based loading screen used by certain APIs that rely on implicit transitions rather than explicit loading screens.
+
+  This fade screen is used as a fallback by APIs such as:
+  - Programmatic fade in and fade out calls
+  - Scene operations that perform short, blocking actions
+  - Utility methods that require a temporary visual transition but do not specify a loading screen
+
+### Scene operation behavior
+
+- **Reverse unload order when closing collections**  
+  Ensures scenes are unloaded in the opposite order they were opened.  
+  This helps reduce issues caused by implicit dependencies between scenes.
+
+- **Prevent duplicate scene operations**  
+  Attempts to prevent duplicate scene operations by validating planned open and close lists before execution.  
+  This is not 100% reliable and should be considered a baseline safeguard only.  
+  Users are still expected to avoid duplicate operations manually, which is the most reliable approach.
+
+- **Auto track scenes loaded outside ASM**  
+  For ASM to consider a scene open, it must be tracked.
+
+  When opening a scene through ASM, it is tracked automatically.  
+  When loading a scene outside of ASM (for example via `UnityEngine.SceneManagement.SceneManager.LoadScene`), the scene will remain untracked unless handled manually.
+
+  Scenes can be tracked manually using `SceneManager.runtime.Track(scene)` if needed.
+
+  This option allows ASM to attempt automatic tracking of externally loaded scenes. While helpful, this behavior is not foolproof and may fail in complex or non-standard loading scenarios.
+
+### References
+
+- **Enable cross-scene references**  
+  Allows object references between scenes.
+
+  > Unity does not officially support cross-scene references.  
+  > As a result, warnings may appear and references may break unexpectedly.  
+  > This is a workaround rather than a guaranteed solution.  
+  > Make sure to thoroughly test any setup relying on cross-scene references.
+
+- **Enable GUID references**  
+  Enables GUID-based references, improving resilience when assets are moved or renamed.
+
+  This enables the use of the `GUIDReference` script and `GUIDReferenceUtility`, and is required for cross-scene references to function.
+
+### Event methods
+
+- **Enable spam protection**  
+  Adds automatic cooldown protection for event methods invoked through UnityEvents.  
+  This applies specifically to ASM event methods prefixed with `_`, such as `_Open`.
+
+- **Cooldown duration**  
+  Specifies the minimum time, in seconds, between repeated event method invocations.
+
+## Assets page
+
+The **Assets** page controls how ASM manages its generated and imported assets.
+
+![](../image/popup-settings-assets.png)
+
+- **Import mode**  
+  Determines when scenes are imported into ASM:
+  - **Manual**: Scenes are only imported via the import popup.
+  - **SceneCreated**: Newly created scenes are automatically imported.
+
+  </br>
+
+  > Scenes can also be imported manually via code using  
+  > `SceneAsset.Import()` or `SceneImportUtility.Import("Assets/scene.unity")`.
+
+- **Generate profiles and scenes to**  
+  Specifies where ASM-generated assets are stored, including profiles, collections, and imported scenes.
+
+### Whitelist
+
+Controls which scenes are *allowed* to appear in the import popup.
+
+- Only scenes matching the listed paths will be shown.
+- The whitelist is disabled when empty.
+- Paths are case-insensitive and must start with `Assets/`.
+- Entries may reference folders or individual `.unity` files.
+
+![](../image/popup-settings-assets-whitelist.png)
+
+### Blacklist
+
+Controls which scenes are *excluded* from appearing in the import popup.
+
+- Blacklisted scenes are never imported automatically.
+- They will not appear in the import popup.
+- Useful for test scenes, samples, or generated content.
+- Paths are case-insensitive and must start with `Assets/`.
+
+> Scenes can be blacklisted or whitelisted directly from the scene import item context menu.
+
+![](../image/popup-settings-assets-blacklist.png)
+
+## Editor page
+
+The **Editor** page controls how ASM behaves inside the Unity Editor.
+
+![](../image/popup-settings-editor.png)
+
+### Profiles
+
+- **Force profile**  
+  Forces ASM to always use a specific profile while in the editor.
+
+- **Default profile**  
+  Profile selected on startup when no previously saved profile is available.
+
+- **Try open collection instead of scene**  
+  When opening a scene asset, ASM will attempt to open the first collection that contains the scene instead.
+
+### Build settings
+
+- **Automatically manage build scene list**  
+  Keeps Unity’s Build Settings scene list synchronized with ASM collections.
+
+- **Prevent assignment if null and Unity has an active Build Profile**  
+  When this is enabled, ASM will **not write to the global Build Settings** if:
+  
+  - the current ASM profile has **no Unity build profile assigned**, and  
+  - Unity currently has a **build profile active**
+  
+  Instead, ASM logs a warning and skips updating the build scene list.  
+  This helps prevent accidentally modifying the wrong build configuration when working with multiple Unity build profiles.
+
+- **Unity build profile**  
+  Assigns a **Unity build profile** to the current **ASM profile**.
+  
+  When set, ASM writes the build scene list to this build profile.  
+  When not set, ASM writes to Unity’s global Build Settings, unless blocked by the option above.
+
+### Enter play mode
+
+- **Run ASM startup process when using collection play button**  
+  Controls whether the normal ASM startup process runs before entering play mode when using a collection play button.
+
+- **Auto save scenes when using ASM play button**  
+  Saves all open scenes before entering play mode.
+
+- **Clear open collection when entering play mode**  
+  Prevents collections opened in edit mode from remaining tracked as open in play mode.
+
+- **Configurable enter play mode**  
+  Controls Unity’s domain reload and scene reload behavior when entering play mode.  
+  This setting directly modifies Unity’s own configuration and is exposed here for convenience and visibility.
+
+## Logging subpage
+
+The **Logging** page enables or disables specific logging categories.  
+These logs are intended for debugging and diagnosing issues in ASM and should typically remain disabled during normal use.
+
+## Appearance page
+
+The **Appearance** page controls UI behavior and visual preferences for the ASM window.
+
+![](../image/popup-settings-appearance.png)
+
+### Window behavior
+
+- **Display search always**  
+  Keeps the search field permanently visible.
+
+- **Display child profiles button in footer**  
+  Shows the child profile button in the footer area.
+
+- **Display new collection button**  
+  Controls visibility of the “New Collection” button.
+
+- **Display tooltips on SceneFields**  
+  Enables hover tooltips for scene fields.
+
+- **Keep scene list items in memory when collection collapsed**  
+  Improves expand and collapse performance at the cost of increased memory usage.
+
+### Extendable UI
+
+This page allows configuring which extendable UI elements are visible in the ASM window, and in what order.  
+Elements can be enabled, disabled, and reordered per section.
+
+![](../image/popup-settings-appearance-extendableUI.png)
+
+### Hierarchy
+
+This page controls ASM hierarchy indicators displayed in Unity’s Hierarchy window.
+
+> Does not work in new UI toolkit version in unity 6.3+
+
+![](../image/popup-settings-appearance-hierarchy.png)
+
+## Updates page
+
+The **Updates** page controls how ASM checks for new versions.
+
+- **Check for updates**  
+  Allows manual update checks and navigation to release information.
+
+  When update checks are set to automatic, the dropdown acts as a local override.  
+  This allows, for example, a single person on a project to receive update notifications while others opt in manually.
+  
+![](../image/popup-settings-updates.png)
+
+## Advanced page
+
+The **Advanced** page contains experimental or advanced configuration options.
+
+![](../image/popup-settings-advanced.png)
+
+> Settings on this page may change behavior significantly or have known limitations. Use these options with care, especially in production projects.
+
+- **Allow loading scenes in parallel**  
+  Enables parallel scene loading for faster operations.  
+  Note that this disables the ability to cancel scene loads once started.
+
+- **Startup scene**  
+  Specifies the scene at build index 0.  
+  Currently, this also functions as the fallback scene, overriding ASM’s internal fallback mechanism.
+
+  This can cause issues if the same scene is also managed normally by ASM, as fallback scenes are loaded directly and bypass ASM tracking.  
+  Opening the same scene manually through ASM can therefore lead to conflicts.
+
+  Best practice is to avoid using the startup scene anywhere else in ASM-managed workflows.
+
+  > Separation of the startup and fallback scenes is planned and will be worked on in a future patch.
+
+</br>
+
+### Related pages
+[📄 Main view](main.md)\
+[📄 Settings popup](settings.md)\
+[📄 Popups](popups.md)\
+[📄 ASM utility functions](utility-functions.md)
+
+[← Back](readme.md) | [🏠 Home](../readme.md)
 
 ---
-# EditorPersistentOption
+# utility-functions
 <!--
-source: API\Models\Enums\EditorPersistentOption.md
+source: guides\asm-window\utility-functions.md
 -->
 
-## EditorPersistentOption
+<!---asm-window/utility-functions.md-->
+[← Back](readme.md) | [🏠 Home](../readme.md)
+## Utility functions window
 
-`enum` in `AdvancedSceneManager.Models.Enums`  /  Inherits from: `Enum`### Description
-Specifies whatever a scene should be automatically opened outside of play-mode.
+ASM utility functions provides quick, easily accessible utility functions within the Advanced Scene Manager (ASM). These functions are designed to be flexible and extendable, allowing users to create custom utilities that integrates with ASM.
 
-### Static Fields
+![](../image/main-button-utility-functions.png)
 
-| Member | Description |
-|--------|-------------|
-| `EditorPersistentOption AnySceneOpened` | Automatically open scene when any scene opens. |
-| `EditorPersistentOption Never` | Never automatically open scene. |
-| `EditorPersistentOption WhenAnyOfTheFollowingScenesAreOpened` | Automatically open scene when any specified scene is opened. |
+![](../image/window-utility-functions.png)
 
-### Fields
+> Note that the ASM utility functions button can be hidden, and if it isn't visible, then it may be enabled in Settings > Appearance > Extendable UI.
+### Creating a utility function
 
-| Member | Description |
-|--------|-------------|
-| `int32 value__` | _No documentation available._ |
+To add a custom utility function, create a new class that inherits from `ASMUtilityFunction`. Override the necessary properties and methods to define the utility’s name, description, grouping, and functionality. ASM will automatically find and display them in the list. 
+
+Here’s a basic example:
+
+```csharp
+public class CustomUtilityFunction : ASMUtilityFunction
+{
+    public override string Name => "My Custom Utility";
+    public override string Description => "A description of what this utility does.";
+    public override string Group => "Custom Group";
+
+    public override void OnInvoke(ref VisualElement optionsGUI)
+    {
+        VisualElement visualElement = new();
+
+        Button button = new Button(() => { 
+            // Define the button's functionality here
+        });
+
+        visualElement.Add(button); 
+
+        optionsGUI = visualElement;
+    }
+}
+```
+
+### Related pages
+[📄 Main view](main.md)\
+[📄 Settings popup](settings.md)\
+[📄 Popups](popups.md)\
+[📄 ASM utility functions](utility-functions.md)
+
+[← Back](readme.md) | [🏠 Home](../readme.md)
 
 ---
-# LoadingScreenUsage
+# clr-events
 <!--
-source: API\Models\Enums\LoadingScreenUsage.md
+source: guides\callbacks\clr-events.md
 -->
 
-## LoadingScreenUsage
+<!---callbacks/clr-events.md-->
+[← Back](readme.md) | [🏠 Home](../readme.md)
+## Callbacks
+### Events
 
-`enum` in `AdvancedSceneManager.Models.Enums`  /  Inherits from: `Enum`### Description
-Specifies what loading screen to use, if any.
+There are also several C# events, which are fire and forget, scene operation will not wait for them, you can register listeners for them anywhere.
 
-### Static Fields
+```csharp
+//Invoked by unity when editor starts / script recompile
+[InitializeOnLoad]
+static void OnLoad
+{
+	SceneManager.runtime.collectionOpened += (c) => Log(c, "opened");
+	SceneManager.runtime.collectionClosed += (c) => Log(c, "closed");
 
-| Member | Description |
-|--------|-------------|
-| `LoadingScreenUsage DoNotUse` | Specifies no loading screen. |
-| `LoadingScreenUsage Override` | Specifies overriden loading screen, defined in `SceneCollection`. |
-| `LoadingScreenUsage UseDefault` | Specifies default loading screen, defined in profile settings. |
+	SceneManager.runtime.sceneOpened += (s) => Log(s, "opened");
+	SceneManager.runtime.sceneClosed += (s) => Log(s, "closed");
+	SceneManager.runtime.scenePreloaded += (s) => Log(s, "preloaded");
+}
 
-### Fields
+void Log(Scene scene, string action)
+{
+	Debug.Log($"{scene.name} {action}.");
+}
 
-| Member | Description |
-|--------|-------------|
-| `int32 value__` | _No documentation available._ |
+void Log(SceneCollection collection, string action)
+{
+	Debug.Log($"{collection.title} {action}.");
+}
+```
+
+### Related pages
+[📄 C# events](clr-events.md)\
+[📄 Event callbacks](event-callbacks.md)\
+[📄 Interface callbacks](interface-callbacks.md)
+
+[← Back](readme.md) | [🏠 Home](../readme.md)
 
 ---
-# LoadPriority
+# Event-callbacks
 <!--
-source: API\Models\Enums\LoadPriority.md
+source: guides\callbacks\Event-callbacks.md
 -->
 
-## LoadPriority
+<!---callbacks/Event-callbacks.md-->
+[← Back](readme.md) | [🏠 Home](../readme.md)
+## Callbacks
+### Event Callbacks
 
-`enum` in `AdvancedSceneManager.Models.Enums`  /  Inherits from: `Enum`### Description
-Priority of a thread.
+The event callbacks system in ASM is inspired by the UI Toolkit event callback system. The global event manager, accessible via `SceneManager.events`, allows you to register callbacks for various scene, collection, startup, and editor events.
 
-### Static Fields
+Each event is represented by an event class derived from `EventCallbackBase`, for example:
 
-| Member | Description |
-|--------|-------------|
-| `LoadPriority Auto` | Let ASM automatically decide `ThreadPriority`. |
-| `LoadPriority BelowNormal` | Below normal thread priority. |
-| `LoadPriority High` | Highest thread priority. |
-| `LoadPriority Low` | Lowest thread priority. |
-| `LoadPriority Normal` | Normal thread priority. |
+```csharp
+public class SceneOpenEvent : SceneEvent
+{
+    public SceneOpenEvent(Scene scene) : base(scene) {}
+}
+```
 
-### Fields
+You can listen to these events globally through:
 
-| Member | Description |
-|--------|-------------|
-| `int32 value__` | _No documentation available._ |
+```csharp
+SceneManager.events.RegisterCallback<SceneOpenEvent>(e =>
+{
+    Debug.Log($"Scene opened: {e.scene.name}");
+    //ASM supports waiting for a coroutine before continuing operation:
+    e.WaitFor(Awaitable.WaitForSecondsAsync(10)); 
+});
+```
+
+Scene operation also supports operation specific events:
+
+```
+Scene.Find("Level1").Open().RegisterCallback<SceneOpenEvent>(e =>
+{
+    Debug.Log($"Scene opened: {e.scene.name}");
+});
+```
+
+Callbacks can be registered for specific timing contexts using the `When` parameter — `Before`, `After`, or `Unspecified` (for both):
+
+```csharp
+SceneManager.events.RegisterCallback<SceneCloseEvent>(e =>
+{
+    Debug.Log($"Scene closed: {e.scene.name}");
+}, When.Before);
+```
+
+> Only events originating from scene operation use `When`. If a event does not support `When`, then parameter is silently ignored.
+
+To unregister:
+
+```csharp
+SceneManager.events.UnregisterCallback<SceneOpenEvent>(MyCallback);
+```
+
+Each callback receives an instance of its event type, providing context such as the affected scene, collection, or operation.
+
+> Both ViewModel and ServiceModelBase provide convenience RegisterService methods that automatically unregister events when the ViewModel is removed or the service is disposed.
+
 
 ---
-# SceneAutoTrackOutsideASMOption
+
+### Supported Events
+
+Below is a complete list of all available ASM events.
+
+#### General Events
+
+| Event Type                       | Description                                                                               |
+| -------------------------------- | ----------------------------------------------------------------------------------------- |
+| **SceneOpenEvent**               | Occurs when a scene is opened. Called _Before_ and _After_ the operation.                 |
+| **SceneCloseEvent**              | Occurs when a scene is closed. Called _Before_ and _After_ the operation.                 |
+| **ScenePreloadEvent**            | Occurs when a scene is preloaded. Called _Before_ and _After_ the operation.              |
+| **CollectionOpenEvent**          | Occurs when a collection is opened. Timing ignored.                                       |
+| **CollectionCloseEvent**         | Occurs when a collection is closed. Timing ignored.                                       |
+| **StartPhaseEvent**              | Occurs when an operation begins. Properties on operation are still mutable at this stage. |
+| **EndPhaseEvent**                | Occurs after an operation finishes, before cleanup.                                       |
+| **SceneOpenPhaseEvent**          | Occurs when opening phase of a scene operation begins or ends.                            |
+| **SceneClosePhaseEvent**         | Occurs when closing phase of a scene operation begins or ends.                            |
+| **ScenePreloadPhaseEvent**       | Occurs when preloading phase of a scene operation begins or ends.                         |
+| **LoadingScreenOpenPhaseEvent**  | Occurs when a loading screen opens.                                                       |
+| **LoadingScreenClosePhaseEvent** | Occurs when a loading screen closes.                                                      |
+| **StartupStartedEvent**          | Occurs when ASM startup begins.                                                           |
+| **StartupFinishedEvent**         | Occurs when ASM startup completes successfully.                                           |
+| **StartupCancelledEvent**        | Occurs when ASM startup is cancelled before completion.                                   |
+| **QuitEvent**                    | Occurs when the application quits via `SceneManager.app.Quit()`.                          |
+| **SceneManagerBecameBusyEvent**  | Occurs when ASM becomes busy (e.g., a scene operation starts).                            |
+| **SceneManagerBecameIdleEvent**  | Occurs when ASM becomes idle after all operations complete.                               |
+| **AllScenesClosedEvent**         | Occurs when all user scenes are closed and only the fallback scene remains.               |
+| **GlobalCoroutinesChanged**      | Occurs when a coroutine starts or ends within ASM’s coroutine system.                     |
+
+#### Editor-Only Events
+
+|**Event Type**|**Description**|
+|---|---|
+|**ProfileAddedEvent**|Occurs when a profile is added.|
+|**ProfileRemovedEvent**|Occurs when a profile is removed.|
+|**ProfileActivatedEvent**|Occurs when a profile is activated.|
+|**CollectionAddedEvent**|Occurs when a collection is added to a profile.|
+|**CollectionRemovedEvent**|Occurs when a collection is removed from a profile (soft delete).|
+|**CollectionDeletedEvent**|Occurs when a collection is permanently deleted (hard delete).|
+|**CollectionRestoredEvent**|Occurs when a collection is restored before deletion.|
+|**SceneImportedEvent**|Occurs when a scene is imported into ASM.|
+|**SceneUnimportedEvent**|Occurs when a scene is unimported from ASM.|
+|**CollectionViewSelectionChangedEvent**|Occurs when selection changes in the ASM window’s collection view.|
+|**ProfileChangedEvent**|Occurs when the active profile changes.|
+|**ScenesAvailableForImportChangedEvent**|Occurs when scenes available for import are updated.|
+|**ModelPropertyChangedEvent**|Occurs when a property in an ASM model changes.|
+|**PlayModeChangedEvent**|Wrapper for Unity’s `EditorApplication.playModeStateChanged`.|
+|**BeforeASMPlayModeEvent**|Occurs before ASM enters play mode when using the ASM play button.|
+|**ASMSettingsChangedEvent**|Occurs when ASM settings change.|
+|**NotificationsChangedEvent**|Occurs when notifications are added or removed.|
+|**UndoItemsChangedEvent**|Occurs when undo items are added or removed.|
+|**UpdateCheckedEvent**|Occurs after ASM has checked for updates.|
+|**ASMWindowOpenEvent**|Occurs when the ASM window opens.|
+|**ASMWindowCloseEvent**|Occurs when the ASM window closes.|
+|**OnWindowEnableEvent**|Occurs when the ASM window is enabled.|
+|**OnWindowDisableEvent**|Occurs when the ASM window is disabled.|
+|**OnWindowFocusEvent**|Occurs when the ASM window gains focus.|
+|**OnWindowLostFocusEvent**|Occurs when the ASM window loses focus.|
+|**ASMModelRenamedEvent**|Occurs when an ASM model is renamed.|
+
+### Related pages
+[📄 C# events](clr-events.md)\
+[📄 Event callbacks](event-callbacks.md)\
+[📄 Interface callbacks](interface-callbacks.md)
+
+[← Back](readme.md) | [🏠 Home](../readme.md)
+
+---
+# Interface-callbacks
 <!--
-source: API\Models\Enums\SceneAutoTrackOutsideASMOption.md
+source: guides\callbacks\Interface-callbacks.md
 -->
 
-## SceneAutoTrackOutsideASMOption
+<!---callbacks/Interface-callbacks.md-->
+[← Back](readme.md) | [🏠 Home](../readme.md)
+## Callbacks
+### Interfaces
 
-`enum` in `AdvancedSceneManager.Models.Enums`  /  Inherits from: `Enum`### Description
-Specifies if ASM should auto track scenes that were loaded outside of ASM.
+Sometimes you may want to run some initialization code when a scene opens, before loading screen is closed. Scene callbacks helps you do that. Scene callbacks must be implemented by a MonoBehaviour, and that script must then be attached to a scene, ASM will then invoke the script when that scene is opened. Callbacks for scene close also exist.
 
-### Static Fields
+Collection callbacks are called for all scenes that are contained within the collection that is opened, or closed.
 
-| Member | Description |
-|--------|-------------|
-| `SceneAutoTrackOutsideASMOption Collections` | Specifies ASM should auto track collection scenes when loaded outside ASM. |
-| `SceneAutoTrackOutsideASMOption DynamicCollections` | Specifies ASM should auto track dynamic collection scenes when loaded outside ASM. |
-| `SceneAutoTrackOutsideASMOption NoTracking` | Specifies ASM shouldn't auto track any scenes when loaded outside ASM. |
-| `SceneAutoTrackOutsideASMOption Standalone` | Specifies ASM should auto track standalone collection scenes when loaded outside ASM. |
+Open callbacks:
 
-### Fields
+* `ISceneOpen` (void)
+* `ISceneOpenCoroutine` (coroutine)
+* `ISceneOpenAwaitable` (awaitable)
+* `ICollectionOpen` (void)
+* `ICollectionOpenCoroutine` (coroutine)
+* `ICollectionOpenAwaitable` (awaitable)
 
-| Member | Description |
-|--------|-------------|
-| `int32 value__` | _No documentation available._ |
+Close callbacks:
+
+* `ISceneClose` (void)
+* `ISceneCloseCoroutine` (coroutine)
+* `ISceneCloseAwaitable` (awaitable)
+* `ICollectionClose` (void)
+* `ICollectionCloseCoroutine` (coroutine)
+* `ICollectionCloseAwaitable` (awaitable)
+
+ISceneOpen is called after all scenes in the current loading queue have finished opening. It behaves much like ICollectionOpen, blocking the loading screen until the callback has completed. This makes it ideal for handling setup tasks when loading scenes individually, outside of a collection.
+
+ISceneClose is called before the queued scenes begin closing. Like ICollectionClose, it can block the loading screen, allowing you to perform cleanup or other logic before the scenes are unloaded.
+
+> Note that these callbacks may sometimes not be called when loading scenes outside of ASM. This is because they are invoked by ASM SceneOperation directly, and if SceneOperation is not opening the scenes, then no callbacks. Some exceptions exist.
+
+## Order
+
+* Loading screen open (_if one specified_)
+* `ICollectionClose` (_if collection specified_)
+* `ISceneClose`
+* Unload scenes
+* Load scenes
+* Preload scene (_if one defined_)
+* `ISceneOpen`
+* `ICollection` open (_if collection specified_)
+* Hide loading screen (_if one specified_)
+
+## Example
+
+```csharp
+public class LogOnSceneCallback : MonoBehaviour, ISceneOpen, ISceneClose
+{
+    public void OnSceneOpen()
+    {
+        Debug.Log(this.ASMScene().name + " opened");
+    }
+    public void OnSceneClose()
+    {
+        Debug.Log(this.ASMScene().name + " closed");
+    }
+}
+
+public class Promotion : MonoBehaviour, ICollectionOpenAsync, ICollectionCloseAsync
+{
+    //TODO: Remove when you want a promotion
+    public IEnumerator OnCollectionOpen(SceneCollection collection)
+    {
+        yield return new WaitForSecondsRealtime(60);
+    }
+    public IEnumerator OnCollectionClose(SceneCollection collection)
+    {
+        yield return new WaitForSecondsRealtime(60);
+    }
+}
+```
+### Related pages
+[📄 C# events](clr-events.md)\
+[📄 Event callbacks](event-callbacks.md)\
+[📄 Interface callbacks](interface-callbacks.md)
+
+[← Back](readme.md) | [🏠 Home](../readme.md)
+
+---
+# readme
+<!--
+source: guides\callbacks\readme.md
+-->
+
+<!---callbacks/readme.md-->
+[← Back](readme.md) | [🏠 Home](../readme.md)
+## Callbacks
+
+[📄 C# events](clr-events.md)\
+[📄 Event callbacks](event-callbacks.md)\
+[📄 Interface callbacks](interface-callbacks.md)
+
+[← Back](readme.md) | [🏠 Home](../readme.md)
+
+---
+# Common-questions
+<!--
+source: guides\Common-questions.md
+-->
+
+<!---./readme.md-->
+[← Back](readme.md) | [🏠 Home](../readme.md)
+## Common questions
+
+## What is the fallback scene
+
+> The fallback scene and startup scene is the same thing. We are working to separate the two.
+
+The fallback scene is a scene ASM uses to simplify the scene management, unity does not allow for all scenes to be unloaded, which means we need to have a check for this every time we unload a scene, we decided it would be simpler to just keep a special scene in memory since this ensures that the scene can be unloaded, and we do not have to worry about forgetting to have a check beforehand, as ASM used to have issues with this.
+
+The second reason is to prevent potential flickering during startup which would occur with a non-empty scene. For this reason fallback scene was originally designed to act as startup scene too, startup scene is a later concept.
+
+> Please note that that overriding startup scene is an advanced use-case that should not be used unless actually needed, you probably want to use [startup collections](Scene%20collections.md) or [startup standalone scenes](Standalone%20scenes.md) instead.
+
+## Build settings list
+
+ASM will automatically manage the build list for you.
+
+**Manually modifying the build scenes list is still supported though.**\
+When adding a scene manually to the build scenes list, ASM will add it to [standalone](Standalone%20scenes.md). Only standalone scenes can be removed from the build scene list.
+
+Scenes cannot be reordered manually.
+
+## Event methods
+
+Some methods in ASM are prefixed with “\_” to avoid name conflicts. These duplicates exist to support [UnityEvent](https://docs.unity3d.com/Manual/UnityEvents.html), which does not allow methods with return values or multiple parameters. However, even some single-parameter methods remain unsupported due to the unclear nature of parameters in the UnityEvent UI.
+
+## Do I need to add anything to .gitignore?
+
+ASM follows unity conventions. You should always ignore `UserSettings/`, which stores ASM and other unity user preferences. Default [unity .gitignore](https://github.com/github/gitignore/blob/main/Unity.gitignore) already contains this.
+
+ASM does not allow redistribution, so public repos must ignore the ASM folder: `Packages/com.lazy-solutions.advanced-scene-manager/`. 
+
+Each collaborator will need to install ASM manually in their local project.  
+We wish this weren’t necessary, but unfortunately, that’s how licensing works.
+
+> For public repos, one possible workaround is to use [**ASM trial**](https://github.com/Lazy-Solutions/AdvancedSceneManager/tree/main/trial). It is free but limited. Build has been intentionally disabled for example. Can be used for showcase purposes and similar.
+
+## What is the difference between patches and asset store updates?
+
+Asset store updates happens irreguarly, and has been properly tested to be stable, both by us and Unity. Validation process can take upwards of a few days.
+
+Patches on the other hand have quicker turn around, we can push instantly, but they might be less stable. We always test what we changed in a patch, and do our best to test ASM in general, but we do not guarantee that ASM is 100% stable in a patch. 
+
+**If you do get a bug though, just let us know, and we'll push a new patch fixing it as soon as we are able.**
+
+### Patches can be downloaded from:
+
+**Github:**
+[Github releases](https://github.com/Lazy-Solutions/AdvancedSceneManager/releases/latest) hosts .unitypackages for download. A notification will be sent on discord to the [#suggestions](https://discord.com/channels/519089118467325952/806112082873024562) channel on discord when a new github release is made.
+
+**Inside of the ASM window:**
+ASM will automatically check for updates and give a notification. This can be turned off in settings.
+
+The settings page can also be used to check for updates manually. Note that asset store updates cannot be downloaded from here, and must be downloaded via the unity package manager.
+
+![](image/popup-settings-updates.png)
+
+## I want to reset ASM entirely, how do I do that?
+To reset all ASM configuration, delete the following:
+* `Assets/Settings/AdvancedSceneManager` - Contains profiles, collections, and scenes
+* `ProjectSettings/AdvancedSceneManager.asset` - Contains project wide settings
+* `UserSettings/AdvancedSceneManager.asset` - Contains local settings to the cloned repo (assuming you have UserSettings in [.gitignore](https://github.com/github/gitignore/blob/main/Unity.gitignore))
+* `UserSettings/AdvancedSceneManager.AssetsCache.asset` - Tracks ASM assets to make sure they are always available, and ensures fast lookup.
+* `UserSettings/AdvancedSceneManager.DiscoverablesCache.asset` - The persistent cache for discoverables, to prevent slow scanning for attribute callbacks.
+
+> Note that unity might keep settings in memory if open, then re-save to disk.\
+> If this happens, try again with unity closed.
+
+### Related pages
+[📄 Quick start](quick-start.md)\
+[📄 Common questions](common-questions.md)\
+[📄 In-game toolbar](in-game-toolbar.md)\
+[📄 Updating](updating.md)\
+[📄 Videos](videos.md)
+
+[← Back](readme.md) | [🏠 Home](../readme.md)
+
+---
+# In-game-toolbar
+<!--
+source: guides\In-game-toolbar.md
+-->
+
+<!---./In-game-toolbar.md-->
+[← Back](readme.md) | [🏠 Home](../readme.md)
+## In-game toolbar
+
+The in-game toolbar provides some debugging tools, especially useful in builds, relating to scene management. It can be imported via the package manager, from ASM package samples.
+
+#### How do I use it?
+The easiest way is to add it to [standalone](Standalone%20scenes.md), then add a [scene binding](Scene%20bindings.md) to it. This is done by default when creating a new profile, assuming [Input system](https://docs.unity3d.com/Packages/com.unity.inputsystem@1.0/manual/index.html) is installed *(Scene bindings only support [InputSystem](https://docs.unity3d.com/Packages/com.unity.inputsystem@1.0/manual/index.html))*. It is bound to tab, by default.
+
+#### What can I do with it?
+
+![](../image/in-game-toolbar.png)
+
+The in-game toolbar allows you to:
+* Restart the game.
+* Re-open currently open [collection](Scene%20collections.md).
+* Quit game.
+* See if ASM is currently working (see [ASM scene operations](Scene%20operations.md)).
+* List open [scenes](Scenes.md).
+
+### Related pages
+[📄 Quick start](quick-start.md)\
+[📄 Common questions](common-questions.md)\
+[📄 In-game toolbar](in-game-toolbar.md)\
+[📄 Updating](updating.md)\
+[📄 Videos](videos.md)
+
+[← Back](readme.md) | [🏠 Home](../readme.md)
+
+---
+# Profiles
+<!--
+source: guides\models\Profiles.md
+-->
+
+<!---models/profiles.md-->
+[← Back](readme.md) | [🏠 Home](../readme.md)
+## Models
+### Profiles
+
+Profiles in ASM are used to define and switch between distinct scene configurations. Each profile includes:
+
+- Scene Collections
+- Dynamic Collections
+- Standalone Scenes
+- Default Loading Screen
+- Splash Screen
+- Configuration settings from the settings popup
+- Unity build profile. *More info below*.
+
+Profiles are activated in the bottom-left corner of the Scene Manager window, via the profile picker.
+
+![](../image/popup-profiles.png)
+
+### Default Profile
+
+The **default profile** is activated automatically as a fallback when user does not have an active profile saved when ASM is initializing. This setting is configured in the Editor settings.
+
+### Forced Profile
+
+The **forced profile** option (also set in Editor settings) overrides the per-user setting and enforces a shared profile across the team.
+
+This is ideal for teams where one person manages ASM.
+
+### Unity Build Profile
+
+ASM optionally supports associating a ASM profile with a Unity [Build Profile](https://docs.unity3d.com/Manual/BuildSettings.html). When assigned ASM will write build scene list to it, assuming ASM hasn't been configured not to. This is configurable in the Editor settings.
+
+**There are a few quirks to be aware of though:**
+
+By default, ASM writes to Unity’s **global build scene list** (`EditorBuildSettings.scenes`).
+
+However, if a **Unity Build Profile** is active, Unity redirects all build scene writes to that profile instead.
+
+This means:
+- If the active ASM profile has **no Unity build profile assigned**, and
+- Unity has a **Build Profile active**,
+Then **ASM would write to that active Unity build profile**, not the global scene list.
+
+To avoid this unintended behavior, ASM disables automatic build scene list writing when:
+- A Unity Build Profile is active, **and**
+- The current ASM profile has **no associated Unity Build Profile**.
+
+A warning will be logged in console when this happens. This behavior can be changed in the Editor settings.
+
+### Related pages
+[📄 Profiles](profiles.md)\
+[📄 Scene helper](event-callbacks.md)\
+[📄 Scene collections](scene-collections.md)\
+[📄 Scenes](scenes.md)\
+[📄 Standalone scenes](standalone-scenes.md)
+
+[← Back](readme.md) | [🏠 Home](../readme.md)
+
+---
+# readme
+<!--
+source: guides\models\readme.md
+-->
+
+<!---models/readme.md-->
+[← Back](readme.md) | [🏠 Home](../readme.md)
+## Callbacks
+
+[📄 Profiles](profiles.md)\
+[📄 Scene helper](event-callbacks.md)\
+[📄 Scene collections](scene-collections.md)\
+[📄 Scenes](scenes.md)\
+[📄 Standalone scenes](standalone-scenes.md)
+
+
+---
+# Scene-collections
+<!--
+source: guides\models\Scene-collections.md
+-->
+
+<!---models/scene-collections.md-->
+[← Back](readme.md) | [🏠 Home](../readme.md)
+## Models
+### Scene collections
+
+A scene collection, *more commonly referred to as just collection*, is a collection of scenes that will all be opened at the same time.
+
+![](../image/main-collections.png)
+
+When a collection closes, all open scenes not marked as persistent will be closed, unless the closing collection was opened as additive. When opened additively, a collection will only close its own scenes, assuming the current normally opened collection does not manage it.
+
+Collections support opening [loading screens](Loading%20screens.md) before opening or closing, and will, by default, use the default loading screen, which is defined in the [settings](Scene%20manager%20window.md#scene-loading-page).
+
+Each scene collection can be configured with startup options that determine whether it should be opened when the game starts. 
+
+These options include:  
+**Open**: The collection will always open on startup.  
+**Auto**: The collection will open if no other collections are set to Open, and it is the first Auto collection in the list.  
+**Do Not Open**: The collection will not open automatically.
+
+Note that unless a scene or collection is marked as persistent, it will be closed if multiple collections are set to open at startup. Only the last collection will remain *open*.
+
+## Dynamic collections
+
+Dynamic collections automatically gather all scenes located within a specified folder and its subfolders. These scenes are automatically included in builds, even if they aren't explicitly imported into ASM. Dynamic collections are useful for bulk-managing a group of related scenes that should always be available.
+
+The folder path used by a dynamic collection can be configured in the collection settings popup. The contents of a dynamic collection are updated automatically based on the current contents of the specified folder.
+
+## Standalone collection
+
+The standalone collection contains all standalone scenes, scenes that are not part of any other collection but should still be available in the build. Scenes can be added or removed manually, and you can define their persistence or load behavior individually.
+
+Standalone scenes are often used for UI overlays, pause menus, debug tools, or other utility content that doesn't fit neatly into a specific collection. They also support input bindings, allowing scenes to be opened or closed in response to user input, such as Escape or Tab, making them ideal for toggleable UI like pause screens or scoreboards.
+
+Standalone scenes can also be configured to open automatically during startup.
+
+## ASM defaults collection
+
+The ASM Defaults collection includes all default scenes provided by ASM, such as splash screens and loading screens. The scenes are provided via a UPM samples package and can be imported either from the Package Manager window or using the "Import" button in the UI of the collection itself.
+
+## Creating collections
+
+### In the UI
+
+To create a new collection in the UI, open the Scene Manager window and use the **New collection** split button in the footer. Clicking the main part of the button will create a regular scene collection. Clicking the menu button opens a popup where you can create a collection based on a template.
+
+### In code
+
+Collections can also be created through code using the `Profile` API. The currently active profile is available via `SceneManager.profile`.
+
+You can create collections using:
+```csharp
+SceneManager.profile.CreateCollection(); // Creates a new collection with the title 'New collection'
+SceneManager.profile.CreateCollection("My Collection"); // Creates one with a specific title
+SceneManager.profile.CreateCollection(myTemplate); // Creates a collection from a template
+SceneManager.profile.CreateDynamicCollection("Assets/MyFolder", "My Dynamic Collection"); // Creates a dynamic collection
+```
+
+## Finding collections
+
+To access existing collections:
+```csharp
+var collections = SceneManager.profile.collections;
+var dynamicCollections = SceneManager.profile.dynamicCollections;
+var standalone = SceneManager.profile.standaloneScenes;
+var defaults = SceneManager.profile.defaultASMScenes;
+var allCollectionsInProject = SceneManager.assets.collections;
+```
+
+Collections can also be found or accessed using the find API:
+```csharp
+var found = SceneCollection.Find("Main Menu"); // Match by title or ASM model ID (active profile by default)
+
+if (SceneCollection.TryFind("Main Menu", out var menuCollection))
+{
+    Debug.Log("Found collection: " + menuCollection);
+}
+```
+
+## Other
+
+A clarification of the confusing part of Title vs Name
+
+SceneCollection.title is the title that you set in the UI.
+
+SceneCollection.name is the ScriptableObject name, which would be \<profile name\>-title
+
+### Related pages
+[📄 Profiles](profiles.md)\
+[📄 Scene helper](event-callbacks.md)\
+[📄 Scene collections](scene-collections.md)\
+[📄 Scenes](scenes.md)\
+[📄 Standalone scenes](standalone-scenes.md)
+
+[← Back](readme.md) | [🏠 Home](../readme.md)
+
+---
+# Scene-helper
+<!--
+source: guides\models\Scene-helper.md
+-->
+
+<!---models/Scene-helper.md-->
+[← Back](readme.md) | [🏠 Home](../readme.md)
+## Models
+### Scene helper
+
+The scene helper is a [ScriptableObejct](https://docs.unity3d.com/Manual/class-ScriptableObject.html) that is provided to make it easier to open collections or scenes in [UnityEvent](https://docs.unity3d.com/Manual/UnityEvents.html). Most methods found on scene helper can also be found on scene and collections, but it might be easier to find the methods you want on scene helper, since there is less methods unintentionally listed when selecting one.
+
+![](../image/event-click-quit.png)
+
+Scene helper can be found on the scene manager window, next to the new collection button. Just drag the scene helper button into an object field (such as a UnityEvent slot) to create a reference to it.
+
+![](../image/main-button-sceneHelper.png)
+
+It can also be accessed in code:\
+`AdvancedSceneManager.Models.ASMSceneHelper.instance`
+
+### Related pages
+[📄 Profiles](profiles.md)\
+[📄 Scene helper](event-callbacks.md)\
+[📄 Scene collections](scene-collections.md)\
+[📄 Scenes](scenes.md)\
+[📄 Standalone scenes](standalone-scenes.md)
+
+[← Back](readme.md) | [🏠 Home](../readme.md)
+
+---
+# Scenes
+<!--
+source: guides\models\Scenes.md
+-->
+
+<!---models/scene.md-->
+[← Back](readme.md) | [🏠 Home](../readme.md)
+## Models
+### Scenes
+
+Scenes in ASM are represented as [ScriptableObjects](https://docs.unity3d.com/Manual/class-ScriptableObject.html), providing a convenient drag-and-drop interface for scene references.
+## Accessing ASM Scene References
+
+If you only have a Unity `Scene` struct and need to retrieve the ASM `Scene` object, use any of the following:
+
+```csharp
+public class Test : MonoBehaviour
+{
+    void Start()
+    {
+        var scene1 = this.ASMScene();
+        var scene2 = this.gameObject.ASMScene();
+        var scene3 = this.gameObject.scene.ASMScene();
+
+        if (this.ASMScene(out var scene4))
+        { }
+        
+        //Side note, this can be used to retrieve active scene.
+        var activeScene = SceneManager.runtime.activeScene;
+    }
+}
+```
+
+## Drag-and-Drop Use Cases
+
+- Add or replace scenes in a collection\
+ ![](../image/main-collection-sceneDropArea.png)
+    
+- Assign to UnityEvents (e.g., Button → OnClick)\
+  ![](../image/event-click-sceneOpen.png)
+    
+- Reference in scripts:
+```csharp
+using AdvancedSceneManager.Models;
+
+public class OpenScene
+{
+    public Scene scene;
+
+    public void Open()
+    {
+        scene.Open();
+    }
+}
+```
+
+> ❗ **Methods prefixed with ****`_`** are intended for use in UnityEvents. This is because UnityEvents do not support methods with return values or multiple parameters.
+
+## Importing Scenes
+
+Scenes must be imported before they can be used in ASM. This is done via the **import prompt** in the Scene Manager window:
+![](../image/notification-sceneImport.png)
+![](../image/popup-sceneImport.png)
+
+Auto import: SceneCreated can be optionally set. This means that ASM will automatically import scenes when they are created through normal means.
+
+You can exclude scenes via the blocklists feature (configurable later in settings):
+![](../blacklist.png)
+## Persistent Scenes
+
+A **persistent scene** remains open when switching collections. Enable this in the scene popup. This is useful for UI overlays, managers, and persistent objects.
+
+
+## Scene Load Priority
+
+Each scene can be assigned a **load priority**, which maps to `Application.backgroundLoadingPriority`. This setting affects the background loading behavior and system thread priority used when loading the scene. It is useful for optimizing loading times in large projects for large scenes, or loading scenes in the background.
+
+## Scene Loaders
+
+ASM supports different loaders depending on what API should be used to load scene. A few exist out of the box, assuming the corresponding upm package are installed. Custom loaders are also supported. 
+
+Read more in [Scene Loaders](scene%20loaders.md).
+
+The loader assigned to a scene can be toggled via the **Scene Popup** in the ASM window.
+![](../image/popup-scene-scene-loader.png)
+
+## Input Bindings
+
+Standalone scenes can be opened via input using scene bindings, just like collections. Bind a key such as `Escape` or `Tab` to toggle UI scenes like pause menus.
+
+## Startup Scenes
+
+Standalone scenes can be marked to open during **startup**, independently of collections. These are opened **after** collections are opened, making them ideal for persistent UI, background managers, or debug overlays.
+
+## Scene Tracking
+
+ASM automatically tracks scenes when opened through its API. In rare integration cases (e.g., with a network scene manager), you may need to track scenes manually:
+
+```csharp
+SceneManager.runtime.Track(scene, unityScene);
+SceneManager.runtime.Untrack(scene);
+```
+
+When a scene is open, but untracked, an indicator will be shown in the hierarchy, when in the editor. This may happen temporarily, and then resolve itself a moment later. This is, in most cases, by design. It is during prolonged cases when it may be a bug, or conflict with another scene manager.
+![](../untracked-scenes.png)
+
+## Scene Merging and Splitting
+
+Merge scenes via right-click in the scene manager window:\
+![](../image/scene-context-menu.png)
+
+Split GameObjects into new scenes via the hierarchy context menu:\
+![](../image/scene-split-menu.png)
+
+Or via code:
+```csharp
+SceneUtility.MergeScenes(targetScene, scenesToMerge); // Editor only
+SceneUtility.MoveToNewScene(gameObject);              // Editor only
+```
+
+### Related pages
+[📄 Profiles](profiles.md)\
+[📄 Scene helper](event-callbacks.md)\
+[📄 Scene collections](scene-collections.md)\
+[📄 Scenes](scenes.md)\
+[📄 Standalone scenes](standalone-scenes.md)
+
+[← Back](readme.md) | [🏠 Home](../readme.md)
+
+---
+# Standalone-scenes
+<!--
+source: guides\models\Standalone-scenes.md
+-->
+
+<!---models/Standalone-scenes.md-->
+[← Back](readme.md) | [🏠 Home](../readme.md)
+## Models
+### Standalone Scenes
+
+Standalone scenes are scenes that aren't part of any scene collection but should still be included in the build. These scenes are managed via a special dynamic collection in ASM called the **Standalone** collection.
+
+This collection ensures that such scenes are tracked and included in builds, even though they are not tied to a specific group.
+
+![](../image/main-standaloneCollections.png)
+## Startup Behavior
+
+Standalone scenes can be configured to open during game startup or when entering play mode in the editor. These settings are controlled through the **Scene popup**, accessible via the menu button on the scene field.
+
+![](../image/popup-scene-standaloneOptions.png)
+
+> These startup settings are especially useful for utility scenes such as overlays, persistent UI, or manager systems.
+## Input Bindings
+
+Standalone scenes support [scene bindings](Scene%20bindings.md), allowing them to be opened and closed in response to user input.
+
+This makes them ideal for UI elements like pause menus, scoreboards, or debug windows—any content that you may want to toggle using keys like Escape or Tab.
+
+![](../image/scene-bindings.png)
+
+To bind a key to a standalone scene:
+1. Open the scene menu.
+2. Scroll to the **Input Binding** section.
+3. Select your key and interaction mode:
+   - **Open**: Opens scene, doesn't close it.
+   - **Hold**: Opens while the key is held, closes on release.
+   - **Toggle**: Opens or closes on each press.
+## Usage Notes
+
+- The standalone collection cannot be deleted and is always available in every profile.
+- Scenes in this collection can be set as **persistent**, meaning they won't close automatically when switching collections.
+
+### Related pages
+[📄 Profiles](profiles.md)\
+[📄 Scene helper](event-callbacks.md)\
+[📄 Scene collections](scene-collections.md)\
+[📄 Scenes](scenes.md)\
+[📄 Standalone scenes](standalone-scenes.md)
+
+[← Back](readme.md) | [🏠 Home](../readme.md)
+
+---
+# Addressables
+<!--
+source: guides\plugins\Addressables.md
+-->
+
+<!---models/addressables.md-->
+[← Back](readme.md) | [🏠 Home](../readme.md)
+## Plugins
+### Addressables
+
+When the [Addressables](https://docs.unity3d.com/Manual/com.unity.addressables.html) package is installed, **ASM provides optional support for loading scenes using the Addressables system**.
+
+To enable this, toggle the **“addressable”** option for a scene in the scene popup. This applies to both collection scenes and standalone scenes.
+
+The collection popup also includes a bulk toggle to mark all scenes in the collection as addressable.
+
+> When ASM adds a scene to Addressables, it places it in a default group. **ASM does not assign a schema** to this group, you should either assign one manually or move the scene to another group.
+
+![](../image/popup-scene-scene-loader.png)
+
+### Related pages
+[📄 Addressables](addressables.md)\
+[📄 Netcode](netcode.md)
+
+[← Back](readme.md) | [🏠 Home](../readme.md)
+
+---
+# Netcode
+<!--
+source: guides\plugins\Netcode.md
+-->
+
+<!---models/Netcode.md-->
+[← Back](readme.md) | [🏠 Home](../readme.md)
+## Plugins
+### Netcode
+
+> This example was built using **NGO (Netcode for GameObjects)** version **1.2.0**. Behavior may differ in later versions.
+
+## Introduction
+
+There are two ways to use ASM with NGO:
+
+1. **Use the built-in Netcode scene manager**  
+    This provides you with `NetworkManager`, events, scene and object synchronization, and the rest of the built-in NGO workflow.
+    
+2. **Disable the built-in scene manager**  
+    This gives you complete control and flexibility, but you'll need to implement everything yourself:
+    
+    - Custom `NetworkManager`
+    - Your own `NetworkSceneManager`
+    - Manual network synchronization
+    - All necessary `NetworkObject` behavior
+
+Unity allows disabling scene management globally, but not specific subsystems. That means if you disable it, you must implement your own scene manager using Unity’s lower-level functions. In that case, it's no longer “just using ASM” — you’ll be building everything from scratch. While this provides full control and lets you leverage ASM more effectively, it is significantly more time-consuming.
+
+This example assumes you're using **option 1**, the built-in NGO scene manager with **ASM’s Netcode plugin**.
+
+If you're attempting option 2 - best of luck.
+
+## Rules to Follow
+
+1. **Scene loading is client-driven in NGO.**  
+    This means ASM’s workflow **does not** apply to the client. Instead, the client follows the NGO scene loading process.
+    
+    > You will use ASM only on the **server side**.
+    
+2. **ASM still works offline on the client.**  
+    For example, you can load UI scenes (like a pause menu) or return to the main menu using ASM, just not netcode scenes.
+    
+3. **Preload, collection loading screens, and active scenes are not synchronized.**  
+    You must manually coordinate these elements. An example of such a sequence can be found in `ConnectionManager.cs`, which handles both client and host connection logic.
+    
+    > This is necessary because scene sync is controlled by the client, not ASM.
+    
+4. **Only scenes marked for Netcode will sync.**  
+    If you want to customize which scenes are synced, assign a new validator to:
+    
+    ```csharp
+    networkManager.SceneManager.VerifySceneBeforeLoading
+    ```
+    
+    This function determines which scenes are eligible for synchronization.
+    
+5. **Scenes marked for Netcode cannot be loaded offline.**
+    
+This example is just a starting point. Feel free to experiment and modify as needed. It’s not a “one-size-fits-all” guide, adapt it to your project’s needs.
+
+### Related pages
+[📄 Addressables](addressables.md)\
+[📄 Netcode](netcode.md)
+
+[← Back](readme.md) | [🏠 Home](../readme.md)
+
+---
+# readme
+<!--
+source: guides\plugins\readme.md
+-->
+
+<!---models/readme.md-->
+[← Back](../readme.md) | [🏠 Home](../readme.md)
+## Plugins
+
+[📄 Addressables](addressables.md)\
+[📄 Netcode](netcode.md)
+
+
+---
+# Quick-start
+<!--
+source: guides\Quick-start.md
+-->
+
+<!---./Quick-start.md-->
+[← Back](readme.md) | [🏠 Home](../readme.md)
+
+## Quick Start
+
+## Install ASM
+
+1. Open **Unity**.
+2. Go to **Window → Package Manager**.
+3. Search for **Advanced Scene Manager**.
+4. Click **Install** and wait for Unity to compile.
+
+![package-manager](image/upm-asm.png)
+
+## Open the Scene Manager
+
+Go to:
+
+**File → Scene Manager…**
+
+![file-menu](image/menu-asm-window.png)
+
+## Create a Profile
+
+In the lower-left corner of the Scene Manager window:
+
+1. Click the profile selector.
+2. Create a new profile:
+   - If none exist, click **Create**
+   - If profiles exist but none are selected, choose **None**
+   - Otherwise, click the current profile name to create a new one.
+
+![profile-picker](image/main-footer.png)
+
+## Default Profile Overview
+
+The default profile includes two collections:
+
+- **Startup (persistent)**
+- **Main Menu**
+
+Open the collection menu (⋮) on each header and observe:
+
+- Both collections are set to open at startup.
+- The **Startup** collection has **Open Persistent** enabled under *Open Options*.
+
+![collection-menu-button](	image/main-collection-menu.png)
+
+![startup-option](image/startup-option.png)
+
+![collection-open-option](image/popup-collection-open.png)
+
+## Create Scenes
+
+Create two scenes as usual:
+
+- `Startup`
+- `Main Menu`
+
+## Import Scenes into ASM
+
+After creating the scenes, a notification will appear in the Scene Manager window.
+
+1. Click the notification to open the import popup.
+2. Ensure both scenes are toggled.
+3. Press **Import**.
+
+![import-popup](image/popup-sceneImport.png)
+
+## Assign Scenes to Collections
+
+Drag each scene into its corresponding collection and drop it onto the **Drop Area**.
+
+![scene-drop-area](image/main-collection-sceneDropArea.png)
+
+## Press Play (ASM Play Button)
+
+In the top-left of the Scene Manager window, press the **Play** button.
+
+ASM will:
+
+1. Enter Play Mode  
+2. Fade out  
+3. Show the ASM splash screen  
+4. Open the collection scenes  
+5. Fade in
+
+The **Main Menu** scene should now be active in the Hierarchy.
+
+This button runs the ASM startup process, simulating a build.
+
+> If the splash screen is not set to default, it'll look slightly different, but collections will still be opened.
+
+![play-button](image/main-play.png)
+
+# Creating Levels
+
+## Create Level Collections
+
+Create two new collections:
+
+- `Level 1`
+- `Level 2`
+
+Instead of creating scenes in the Project window:
+
+1. Press **+** in the collection header.
+2. Click **Create Scene** next to the object field.
+3. Name each scene the same as its collection.
+
+Also:
+
+- Create a `UI` scene.
+- Assign it to both level collections.
+
+![create-scene-button](image/main-scene-create.png)
+
+# Main Menu Setup
+
+Open the **Main Menu** scene.
+
+Add three buttons:
+
+- **Level 1**
+- **Level 2**
+- **Quit**
+
+### Connect Level Buttons
+
+For each level button:
+
+1. Add an **On Click()** handler.
+2. Drag the collection header (Level 1 or Level 2).
+3. Drop it into the On Click field.
+4. Select:  
+   `SceneCollection → Open(bool)`
+
+![button-click-collection-open](image/event-click-collectionOpen.png)
+
+Repeat for the second level.
+
+### Connect Quit Button
+
+1. Add an **On Click()** handler.
+2. Drag the **Scene Helper button** (left of the New Collection button).
+3. Select:  
+   `ASMSceneHelper → Quit()`
+   
+![scene-helper-button](image/main-button-sceneHelper.png)
+![button-click-quit](image/event-click-quit.png)
+
+> The collection open toggle defines whether all scenes in a collection should open automatically. Individual scenes can be configured to require explicit opening.
+
+# Test It
+
+Press the ASM Play button.
+
+You will:
+
+- Start in the Main Menu
+- Be able to load Level 1 or Level 2
+- Restart ASM by pressing the ASM Play button again (splash is skipped)
+- Quit Play Mode using the Quit button
+
+> You do not need to use `Quit()` to exit your game. It is provided as a convenience feature.
+
+# About `Start()` and `Awake()`
+
+Unity callbacks still work as normal. However:
+
+`Start()` and `Awake()` run **before ASM finishes opening its collection scenes**.
+
+If your logic depends on all scenes being loaded, use ASM callbacks instead:
+
+- [`ISceneOpen`](callbacks/Interface-callbacks.md)
+- [`ICollectionOpen`](callbacks/Interface-callbacks.md)
+
+> Note that `Start()` and `Awake()` also run before ASM activates the correct scene, which can lead to object instantiation in an unexpected scene. Using the above callbacks prevents this issue.
+
+# Done
+
+You now have:
+
+- Startup scene
+- Main Menu
+- Two levels
+- Collection-based scene flow
+- Proper loading transitions
+
+You are ready to build your game without manual scene management.
+
+## Related Pages
+
+[📄 Quick start](quick-start.md)  
+[📄 Common questions](common-questions.md)  
+[📄 In-game toolbar](in-game-toolbar.md)  
+[📄 Updating](updating.md)  
+[📄 Videos](videos.md)
+
+[← Back](readme.md) | [🏠 Home](../readme.md)
+
+
+---
+# readme
+<!--
+source: guides\readme.md
+-->
+
+<!---./readme.md-->
+[← Back](../readme.md) | [🏠 Home](../readme.md)
+## Welcome to ASM docs
+
+[📁 ASM window](asm-window/asm-window.md)\
+[📁 Callbacks](asm-window/asm-window.md)\
+[📁 Models](asm-window/asm-window.md)\
+[📁 Runtime](asm-window/asm-window.md)\
+[📁 Services](asm-window/asm-window.md)\
+[📁 Plugins](asm-window/asm-window.md)\
+[📁 API](asm-window/asm-window.md)
+
+[📄 Quick start](Quick-start.md)\
+[📄 Common questions](Common-questions.md)\
+[📄 In-game toolbar](In-game-toolbar.md)\
+[📄 Updating](Updating.md)\
+[📄 Videos](Videos.md)
+
+
+---
+# Cross-scene-references
+<!--
+source: guides\runtime\Cross-scene-references.md
+-->
+
+<!---runtime/Cross-scene-references.md-->
+[← Back](readme.md) | [🏠 Home](../readme.md)
+## Runtime
+### Cross-scene references
+
+Cross scene references is one of those small things that should be supported by Unity, but just isn't. ASM implements this feature and may be enabled in [settings](Scene%20manager%20window.md#scene-loading-page).
+
+> Note that due to the nature of working around Unity's attempts to prevent cross-scene references, and certain usage non-public APIs (*Unity event support*), it is hacky at best, so please test your games thoroughly if you decide to use them.
+
+![](../image/xref-hierarchy.png)
+![](../image/xref-example.png)
+
+A Guid Reference script will be automatically added to both objects, this is what makes the entire thing work. You may use these on your own if you wish, have a look at [GuidReferenceUtility](../api/Utility.GuidReferenceUtility.md).
+
+When an object has a reference to another scene, a link icon will be displayed next to both objects in the hierarchy, pressing the link icon will select the connected object.
+
+Pressing the link on the scene field will open the cross-scene reference debugger, 
+which will list all references stored in ASM, and will hopefully help in figuring out if and why a reference is broken. You may also delete references from here, doing so will set the Variable field to null.
+
+![](../image/xref-debugger.png)
+
+Note that you may receive warnings from unity, these are safe to ignore. We have tried our best to hide as many these warnings as possible, but Unity will not relent.
+
+![](../image/xref-warning.png)
+
+## Start, Awake, OnEnable
+
+Due to the way scenes are loaded in unity, ASM cannot restore cross-scene references until after the scene is fully loaded, `Start()`, `Awake()`, and `OnEnable()` are called before the first possible time to restore them.
+
+You may however make use of [ASM scene callbacks](Callbacks.md), cross-scene references are guaranteed to have been restored by the time they are called.
+
+### Related pages
+[📄 Cross-scene references](cross-scene-references.md)\
+[📄 Loading screens](loading-screens.md)\
+[📄 Splash screens](splash-screens.md)\
+[📄 Preloading](preloading.md)\
+[📄 Scene loaders](scene-loaders.md)
+
+[← Back](readme.md) | [🏠 Home](../readme.md)
+
+---
+# Loading-screens
+<!--
+source: guides\runtime\Loading-screens.md
+-->
+
+<!---runtime/Loading-screens.md-->
+[← Back](readme.md) | [🏠 Home](../readme.md)
+## Runtime
+### Loading screens
+
+This guide explains how to use and customize loading screens in **Advanced Scene Manager (ASM)**.
+
+> Want to perform actions after a scene has been loaded, but **while** the loading screen is visible?
+> Use ASM's callback interfaces like `ISceneOpen` or `ICollectionOpen`. These let you trigger logic once the scene is loaded, **but before** the loading screen closes.
+> 
+> Perfect for deferred UI setups, data initialization, or network checks. See [Callbacks](Callbacks.md) for full interface details.
+
+## Ways to Open a Loading Screen
+
+1. **Opening a Collection**
+   
+When a scene collection is opened (as defined in the collection menu), ASM will open a loading screen automatically if one is defined, or fall back to the default defined on the profile.
+```csharp
+collection.Open();
+```
+    
+2. **Using SceneOperation.With(Scene loadingScene) (Fluent API)**
+    
+Override the default loading screen for this operation using the fluent API:
+```csharp
+collection.Open().With(loadingScene: loadingScene); // Overrides loading screen for this operation
+```
+    
+3. **Using LoadingScreenUtility**
+   
+Manually open and close a loading screen:
+```csharp
+var operation = LoadingScreenUtility.OpenLoadingScreen(loadingScene);
+yield return operation;
+
+action.Invoke();
+
+yield return LoadingScreenUtility.CloseLoadingScreen(operation.value);
+```
+
+Or use a helper method:
+```csharp
+yield return LoadingScreenUtility.DoAction(loadingScene, action);
+```
+
+## Custom Loading Screens
+
+Create a custom script by inheriting from `AdvancedSceneManager.Loading.LoadingScreen`:
+
+```csharp
+//Fades a CanvasGroup, using FadeUtility.Fade() extension method.
+//Updates a progress bar with load progress.
+public class MyLoadingScreen : LoadingScreen
+{
+    public Slider slider;
+    public CanvasGroup fadeGroup;
+    public float fadeDuration = 0.5f;
+
+    public override IEnumerator OnOpen() => FadeIn();
+    public override IEnumerator OnClose() {
+        if (slider) slider.gameObject.SetActive(false);
+        yield return FadeOut();
+    }
+
+    public override void OnProgressChanged(ILoadProgressData progress) {
+        if (slider) slider.value = progress.value;
+    }
+
+	protected IEnumerator FadeIn()
+	{
+
+		fadeBackground.color = color; //Color can be changed when using FadeUtility methods
+
+		if ((fadeInDurationOverride ?? fadeDuration) > 0)
+			yield return fadeGroup.Fade(1, fadeInDurationOverride ?? fadeDuration);
+		else
+			fadeGroup.alpha = 1;
+
+	}
+
+	protected IEnumerator FadeOut()
+	{
+		yield return fadeGroup.Fade(0, fadeDuration);
+	}
+        
+}
+```
+
+Once ready, place it in a scene and assign it in either:
+
+- A collection’s **loading screen** override
+- **ASM Settings** under **Scene Loading** to make it the default
+
+> **Note:** For a scene to be recognized as a loading screen, ASM relies on a serialized flag inside the scene file. This flag is set by the `LoadingScreen` base class:
+> ```csharp
+> [SerializeField]
+> private bool isLoadingScreen = true;
+> 
+> public virtual void OnValidate()
+> {
+>     if (!isLoadingScreen)
+>         isLoadingScreen = true;
+> }
+> ```
+> This flag (`isLoadingScreen: 1`) must be written into the scene file on disk. That only happens if the scene is marked as dirty and saved afterward. So if your custom loading screen doesn't show up in loading scene pickers, try modifying and saving the scene again.
+> 
+> Additionally, ASM maintains a cached `isLoadingScene` flag on its internal Scene Scriptable Objects. This cache may become outdated. You can manually refresh all scene metadata by pressing the **reload** button next to the loading scene pickers in the UI. This forces ASM to scan scene files on disk and update flags accordingly.
+
+
+## Progress Reporting with `ILoadProgressData`
+
+Prefer implementing:
+
+```csharp
+public override void OnProgressChanged(ILoadProgressData progress) { ... }
+```
+
+### Built-in types:
+
+#### SceneLoadProgressData
+
+Used internally when loading scenes.
+
+```csharp
+Scene.Open().DisableProgressReporting(); // Disable if needed
+```
+
+Properties:
+
+- `value`: Progress (0-1)
+- `scene`: Scene being loaded
+- `operation`: Scene operation data
+
+#### ✅ MessageLoadProgressData
+
+Used for simple message + progress scenarios.
+
+```csharp
+LoadingScreenUtility.ReportProgress(new MessageLoadProgressData("Loading...", 0.5f));
+```
+
+#### ✅ Custom Progress Types
+
+```csharp
+public readonly struct MyCustomProgress : LoadProgressData 
+{
+    public float value { get; }
+}
+
+LoadingScreenUtility.ReportProgress(new MyCustomProgress());
+```
+
+## Default Loading Screens
+
+ASM includes several default loading screen scenes.
+
+### Where to find them:
+
+These are now part of a **UPM sample**. They can be imported either via:
+
+- Unity package manager under ASM package samples
+- **Import** button in the ASM defaults collection
+
+> After importing, they will appear in: `Assets/Samples/Advanced Scene Manager/<version>/Default ASM Screens/`
+
+> ⚠️ **Important:**
+> 
+> If you re-import the default scenes, the asset ID of each scene will change. This breaks any existing references in ASM profiles or collections. Always double-check your assigned loading scenes after re-importing.
+> 
+> The default scenes rarely change, so only re-import if you’re encountering an issue or need to restore them.
+
+You can also access them programmatically:
+```csharp
+SceneManager.assets.defaults.fade //Gets the default fade scene
+```
+
+### Related pages
+[📄 Cross-scene references](cross-scene-references.md)\
+[📄 Loading screens](loading-screens.md)\
+[📄 Splash screens](splash-screens.md)\
+[📄 Preloading](preloading.md)\
+[📄 Scene loaders](scene-loaders.md)
+
+[← Back](readme.md) | [🏠 Home](../readme.md)
+
+---
+# Preloading
+<!--
+source: guides\runtime\Preloading.md
+-->
+
+<!---runtime/Preloading.md-->
+[← Back](readme.md) | [🏠 Home](../readme.md)
+## Runtime
+### Preloading
+
+Preloading allows scenes to be loaded in the background without activating them immediately. A preloaded scene remains inactive until explicitly finished, allowing near-instant activation when needed.
+
+Best used with linear games as "Canceling" a preload is not a real thing, it still activates for a short frame as it needs to activate to close. So Awake() will run in those scenes.
+
+ASM supports **multiple preloaded scenes**, but due to Unity limitations all preloaded scenes will activate when `FinishPreload()` is called. And you cannot open other scenes while preloading is ongoing.
+
+## Overview
+
+Preloading is useful when:
+* A scene will be needed shortly, but should not yet become active.
+* You want to hide loading delays behind gameplay, animations, or Cutscenes, perhaps while "riding" an elevator.
+* You need precise control over when a scene activates.
+
+A preloaded scene:
+* Is loaded additively.
+* Is not set as active.
+* Does not run `Awake` or `Start` until activation.
+* Can be cancelled before activation.
+
+## Preloading a scene
+
+```csharp
+public class PreloadTrigger : MonoBehaviour
+{
+    public Scene sceneToPreload;
+
+    void OnTriggerEnter(Collider other)
+    {
+        if (!sceneToPreload.isOpen && !sceneToPreload.isPreloaded)
+            sceneToPreload.Preload();
+    }
+
+    void OnTriggerExit(Collider other)
+    {
+        if (sceneToPreload.isPreloaded)
+            SceneManager.runtime.CancelPreload();
+    }
+
+    public void FinishPreload()
+    {
+        if (sceneToPreload.isPreloaded)
+            SceneManager.runtime.FinishPreload();
+    }
+}
+```
+
+## Preloading a collection
+
+The idea is basically the same.
+
+>Using PreloadAdditive(), just like collection.OpenAdditive() is not actually opening the collection, but the scenes in it. if set to open. 
+
+```csharp
+
+public SceneCollection collectionToPreload;
+
+collectionToPreload.Preload();
+collectionToPreload.PreloadAdditive();
+
+SceneManager.runtime.CancelPreload();
+
+SceneManager.runtime.FinishPreload();
+
+```
+
+## Tips
+
+- Load the scene(s)/Collection with BackgroundPriority Low
+```sceneToPreload.Preload().With(loadPriority: LoadPriority.Low);```
+or set it on the collection.
+> In Unity, BackgroundPriority.Low tells the engine to load a scene or assets very slowly in the background, only using spare CPU time so that gameplay, rendering, and input always take priority. This minimizes frame drops but makes loading progress slower.
+
+- Use `SceneManager.preloadedScenes` to retrieve currently preloaded scenes.
+
+### Related pages
+[📄 Cross-scene references](cross-scene-references.md)\
+[📄 Loading screens](loading-screens.md)\
+[📄 Splash screens](splash-screens.md)\
+[📄 Preloading](preloading.md)\
+[📄 Scene loaders](scene-loaders.md)
+
+[← Back](readme.md) | [🏠 Home](../readme.md)
+
+---
+# readme
+<!--
+source: guides\runtime\readme.md
+-->
+
+<!---runtime/readme.md-->
+[← Back](readme.md) | [🏠 Home](../readme.md)
+## Runtime
+
+[📄 Cross-scene references](Cross-scene-references.md)\
+[📄 Loading screens](loading-screens.md)\
+[📄 Splash screens](splash-screens.md)\
+[📄 Preloading](preloading.md)\
+[📄 Scene loaders](scene-loaders.md)
+
+
+---
+# Scene-loaders
+<!--
+source: guides\runtime\Scene-loaders.md
+-->
+
+<!---runtime/Scene-loaders.md-->
+[← Back](readme.md) | [🏠 Home](../readme.md)
+## Runtime
+### Scene Loaders
+
+Scene loaders are what Scene operations use to actually load or unload a scene. They modularize scene loading, allowing ASM to support different loading mechanisms — whether runtime, editor, addressables, or even multiplayer (Netcode).
+
+There are four scene loaders included with ASM:
+
+- **RuntimeSceneLoader**, uses [UnityEngine.SceneManagement](https://docs.unity3d.com/ScriptReference/SceneManagement.SceneManager.html). Used by default in play mode.
+- **EditorSceneLoader**, uses [UnityEditor.SceneManagement.EditorSceneManager](https://docs.unity3d.com/ScriptReference/SceneManagement.EditorSceneManager.html). Used by default outside of play mode.
+- **AddressablesSceneLoader**, uses Unity's [Addressables](https://docs.unity3d.com/Manual/com.unity.addressables.html) system for loading scenes marked as addressable. Only available if addressables package is installed.
+- **NetcodeSceneLoader**, used when working with Unity's [Netcode for GameObjects](https://docs-multiplayer.unity3d.com/netcode/current/about/), syncing scenes across clients and servers. Only available when netcode for gameobjects package is installed.
+
+> Runtime and Editor scene loaders are **global** — they match all scenes unless overridden. Addressables and Netcode scene loaders are **non-global** — only apply to scenes flagged to use them.
+
+To flag a scene to use a specific loader, use:
+
+```csharp
+Scene.SetSceneLoader<YourLoader>();
+```
+
+ASM will then display a toggle representing this scene loader in the scene popup, **if** the loader defines `sceneToggleText`. The image below shows the toggle for the addressables scene loader.
+
+![](../image/popup-scene-scene-loader.png)
+
+## Scene Loader API
+
+To create a custom scene loader, inherit from:
+
+```csharp
+AdvancedSceneManager.Core.SceneLoader
+```
+
+Example:
+
+```csharp
+class MyCustomLoader : SceneLoader
+{
+    public override bool activeOutsideOfPlayMode => true;
+    public override string sceneToggleText => "Use custom loader";
+    public override bool isGlobal => false;
+
+    public override IEnumerator LoadScene(Scene scene, SceneLoadArgs e)
+    {
+        Debug.Log("Loading scene: " + scene.name);
+        yield return new WaitForSeconds(1f); // Simulate load
+        e.SetCompleted(e.GetOpenedScene());
+    }
+
+    public override IEnumerator UnloadScene(Scene scene, SceneUnloadArgs e)
+    {
+        Debug.Log("Unloading scene: " + scene.name);
+        yield return new WaitForSeconds(1f); // Simulate unload
+        e.SetCompleted();
+    }
+}
+```
+
+To register your loader:
+
+```csharp
+[RuntimeInitializeOnLoadMethod]
+static void OnLoad()
+{
+    SceneManager.runtime.AddSceneLoader<MyCustomLoader>();
+}
+```
+
+You can also unregister it with:
+
+```csharp
+SceneManager.runtime.RemoveSceneLoader<MyCustomLoader>();
+```
+
+## Indicators and Toggles
+
+Custom scene loaders can define:
+
+```csharp
+public override Indicator indicator => new()
+{
+    text = "",
+	useFontAwesome = true,
+	tooltip = "Addressable"
+};
+```
+
+This will appear as an icon next to scenes using this loader.
+![](../image/main-scene-addressables.png)
+
+## Loader Selection Logic
+
+ASM uses the following logic to choose a scene loader:
+
+1. If a scene is flagged for a loader via `SetSceneLoader<T>()`, that loader is used.
+2. If multiple loaders match, the first one registered takes priority.
+3. If no match is found, the global loaders are used (Runtime or Editor).
+1. 
+### Related pages
+[📄 Cross-scene references](cross-scene-references.md)\
+[📄 Loading screens](loading-screens.md)\
+[📄 Splash screens](splash-screens.md)\
+[📄 Preloading](preloading.md)\
+[📄 Scene loaders](scene-loaders.md)
+
+[← Back](readme.md) | [🏠 Home](../readme.md)
+
+---
+# Splash-screens
+<!--
+source: guides\runtime\Splash-screens.md
+-->
+
+<!---runtime/Splash-screens.md-->
+[← Back](readme.md) | [🏠 Home](../readme.md)
+## Runtime
+### Splash Screens
+
+Splash screens in ASM are loading screens that appear and cover startup. They use the same system as regular loading screens but are shown during startup, while collections or standalone startup scenes load.
+
+Splash scenes can be assigned in the **ASM Startup Settings**.
+
+### Default splash scenes
+
+ASM includes **two default splash screens**:
+- **Splash ASM** – Displays a logo and background
+- **Splash Fade** – An empty scene that simply fades in/out.
+
+These default splash screens are included via ASM package samples. You can import them from the **Package Manager** window or via the **Import** button in the ASM defaults collection UI, just like the default loading screens.
+
+## Creating a Custom Splash Screen
+
+Custom splash screens are created by inheriting from `AdvancedSceneManager.Callbacks.SplashScreen`.
+
+```csharp
+public class MySplashScreen : SplashScreen
+{
+    public CanvasGroup fadeGroup;
+    public float fadeDuration = 1f;
+
+    public override IEnumerator OnOpen() => FadeIn();
+
+    public override IEnumerator OnClose() => FadeOut();
+
+    protected IEnumerator FadeIn()
+    {
+        if (fadeDuration > 0)
+            yield return fadeGroup.Fade(1, fadeDuration);
+        else
+            fadeGroup.alpha = 1;
+    }
+
+    protected IEnumerator FadeOut()
+    {
+        yield return fadeGroup.Fade(0, fadeDuration);
+    }
+
+    // Optional: You can override OnProgressChanged as well, just like loading screens
+}
+```
+
+Once your script is ready:
+
+1. Place it in a dedicated scene.
+2. Assign the scene as the splash screen under **ASM Settings > Startup**.
+    
+> **Note:** Splash screens and loading screens cannot coexist in the same scene.
+
+> **Note:** For a scene to be recognized as a splash screen, ASM relies on a serialized flag inside the scene file. This flag is set by the `SplashScreen` base class:
+> ```csharp
+> [SerializeField]
+> private bool isSplashScreen = true;
+> 
+> public virtual void OnValidate()
+> {
+>     if (!isSplashScreen)
+>         isSplashScreen = true;
+> }
+> ```
+> This flag (`isSplashScreen: 1`) must be written into the scene file on disk. That only happens if the scene is marked as dirty and saved afterward. So if your custom splash screen doesn't show up in splash scene pickers, try modifying and saving the scene again.
+> 
+> Additionally, ASM maintains a cached `isSplashScreen` flag on its internal Scene Scriptable Objects. This cache may become outdated. You can manually refresh all scene metadata by pressing the **reload** button next to the loading scene pickers in the UI. This forces ASM to scan scene files on disk and update flags accordingly.
+
+---
+
+## Progress Feedback (Optional)
+
+Splash screens may optionally display progress using the same `ILoadProgressData` interface as loading screens:
+
+```csharp
+public override void OnProgressChanged(ILoadProgressData progress)
+{
+    // Example: update slider or UI element
+    mySlider.value = progress.value;
+}
+```
+
+ASM will automatically send progress updates if the splash screen remains open during early operations.
+
+## Accessing Default Splash Screens via Code
+
+ASM exposes references to the default splash screens:
+
+```csharp
+SceneManager.assets.defaults.splashASMScene
+SceneManager.assets.defaults.splashFadeScene
+```
+
+### Related pages
+[📄 Cross-scene references](cross-scene-references.md)\
+[📄 Loading screens](loading-screens.md)\
+[📄 Splash screens](splash-screens.md)\
+[📄 Preloading](preloading.md)\
+[📄 Scene loaders](scene-loaders.md)
+
+[← Back](readme.md) | [🏠 Home](../readme.md)
+
+---
+# discoverables
+<!--
+source: guides\services\discoverables.md
+-->
+
+<!---services/discoverables.md-->
+[← Back](readme.md) | [🏠 Home](../readme.md)
+## Services
+### Discoverables
+
+Discoverables is a centralized system for **attribute callbacks**.
+
+An attribute callback is a pattern where a method or class is automatically invoked or registered when a certain attribute is present. You may already be familiar with this concept through Unity’s built-in mechanisms. For example:
+
+```csharp
+[InitializeOnLoad]
+static void OnLoad() {}
+```
+
+The discoverability system builds upon this concept, providing a unified and optimized way to register, locate, and execute such callbacks across the editor and runtime.
+
+This centralized system allows ASM to not only optimize the discovery process, but also cache the found callbacks. The goal is twofold:
+
+**Performance in the Editor and Efficiency in Builds**  
+Instead of repeatedly using reflection to find attributes, ASM performs one comprehensive scan and stores the results for quick access. This approach ensures faster startup and smoother workflows during development. In builds, the same cached data is persisted, meaning no scanning is needed at runtime. The system can simply read from this cache to restore discoverables instantly, providing the same flexibility but with virtually zero overhead in builds.
+
+---
+
+### Example
+
+```csharp
+[OnLoad]
+static void OnLoad() => Debug.Log("ASM has finished initializing");
+```
+
+In the example above, ASM’s discoverability system automatically detects and caches the method. Once ASM completes its initialization, it automatically invokes the method, effectively mirroring the behavior of calling `SceneManager.OnInitialized(Action)` directly, but without requiring any manual setup.
+
+---
+
+You can view all registered discoverables in the **Diagnostics** popup of the ASM window, accessed via the **Diag** button beside the **ASM Play** button. *Note that the button might not be visible, as it is transparent and only shows text when ASM is performing operations like opening or closing scenes.*
+
+![](../image/main-button-diag.png)
+
+>  If ASM doesn't automatically invalidate assemblies for whatever reason, then you can manually invalidate the cache to trigger a re-scan, using the dev menu.
+>   ![](../image/main-devMenu-invalidateDiscoverablesCache.png)
+
+### API Overview
+
+The discoverability API provides a simple way to access, refresh, and trigger discoverable callbacks manually. It is exposed through the `DiscoverabilityUtility` class.
+
+Typically, ASM handles everything automatically, but you can use the API if you need custom behavior — for example, when extending ASM or integrating it with your own systems.
+
+```csharp
+// Get all discoverables of a specific type
+var items = DiscoverabilityUtility.GetMembers<ExampleDiscoverableAttribute>();
+
+// Manually invoke all callbacks for an attribute type
+DiscoverabilityUtility.Invoke<ExampleDiscoverableAttribute>();
+
+// Re-scan and rebuild the cache manually
+DiscoverabilityUtility.InvalidateCache();
+```
+
+Each discoverable is represented by a `DiscoveredMember`, which gives access to both the attribute and its target member. You normally won’t need to interact with these directly, but they’re available for advanced use cases.
+
+---
+
+### Defining Your Own Discoverable
+
+To create your own discoverable attribute, inherit from `DiscoverableAttribute` and optionally override `IsValidTarget()` to define what kinds of members are valid targets for the attribute.
+
+```csharp
+using System;
+using System.Reflection;
+
+[AttributeUsage(AttributeTargets.Method)]
+public class ExampleDiscoverableAttribute : DiscoverableAttribute
+{
+    public override bool IsValidTarget(MemberInfo member)
+    {
+        //Only allow static methods
+        if (!member.IsStatic())
+        {
+            LogError(member, "Method must be static.");
+            return false;
+        }
+
+        //Allow zero or one parameter, of type Scene. 
+        if (member.HasNoParameters() || member.HasParameters<Scene>())
+        {
+            LogError(member, "Method has invalid parameters.");
+            return false;
+        }
+
+        return true;
+    }
+
+    public override string friendlyDescription =>
+        "This string is displayed as a tooltip in the diag popup of the ASM window.";
+}
+```
+	
+
+---
+
+### Supported Discoverables
+
+Below is a summary of the discoverable attributes currently supported by ASM:
+
+| Attribute                             | Description                                                                                                                                                                                                                                                                                                          |
+| ------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **[OnLoad]**                          | Invoked after ASM finishes initializing (following a domain reload), before the ASM startup process begins. It’s called regardless of whether the startup process runs in the current context. Callback is effectively mirroring `SceneManager.OnInitialized(Action)`. It works in *both* **editor** and **builds**. |
+| **[ASMWindowElement]**                | Invoked to display a custom element within the ASM window. Inserts the VisualElement return value. *(also supports application on a class inheriting from ViewModel, for more advances use cases)*                                                                                                                   |
+| **[AutoSceneHandler]**                | Used with the Auto Scene system. Invoked when a scene has an auto scene specified that uses the custom option the callback handles.                                                                                                                                                                                  |
+| **[DiscoverabilityCacheInvalidated]** | Triggered when ASM’s discoverability cache is rebuilt for an assembly. If multiple assemblies are invalidated together, this callback may only be invoked once.                                                                                                                                                      |
+
+The following discoverables are are not yet available, but will be in 3.1:
+
+| Attribute             | Description                                                                                                                                                                                                                                  |
+| --------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **[RegisterService]** | Used with the DI system. Registers a service and can be applied to either the implementation or interface. This allows ASM to automatically discover and initialize services at startup.                                                     |
+| **[Inject]**          | Used with the DI system to specify fields or properties that ASM should automatically populate. This attribute can be applied within `ViewModel`, `ServiceBase`, or `MonoBehaviour` classes, making dependency setup seamless and automated. |
+
+### Related pages
+[📄 Discoverables](discoverables.md)\
+[📄 Services](services.md)
+
+[← Back](readme.md) | [🏠 Home](../readme.md)
+
+---
+# readme
+<!--
+source: guides\services\readme.md
+-->
+
+<!---services/readme.md-->
+[← Back](readme.md) | [🏠 Home](../readme.md)
+## Callbacks
+
+[📄 Discoverables](discoverables.md)\
+[📄 Services](services.md)
+
+
+---
+# services
+<!--
+source: guides\services\services.md
+-->
+
+<!---services/services.md-->
+[← Back](readme.md) | [🏠 Home](../readme.md)
+## Services
+### Services
+
+
+
+
+### Related pages
+[📄 Discoverables](discoverables.md)\
+[📄 Services](services.md)
+
+[← Back](readme.md) | [🏠 Home](../readme.md)
+
+---
+# Updating
+<!--
+source: guides\Updating.md
+-->
+
+<!---./Updating.md-->
+[← Back](readme.md) | [🏠 Home](../readme.md)
+## Updating Advanced Scene Manager
+
+Advanced Scene Manager uses the following versioning format:
+
+```
+Major.Minor.Patch
+```
+
+This differs slightly from traditional semantic versioning, as each part reflects how and where the update is delivered, not just technical compatibility.
+
+
+---
+
+## Version Breakdown
+
+### **3.0 – Major Update**
+
+- Represents a **large-scale release**, often including major new features or overhauls.
+- May include breaking API changes, but not necessarily.
+- Released **once per year or two** at most.
+- Delivered through the **Unity Asset Store / Package Manager**.
+
+### **3.1 – Minor Update**
+
+- Represents a **significant new release**, but within the same major version.
+- Always published to the **Unity Asset Store**.
+- May include major features or API enhancements, but with backward compatibility where possible.
+- **ASM window updater cannot update to these versions**, you must manually download via the Unity Package Manager.
+- When a new minor update is released, **all previous GitHub patches are removed**, as they only apply to the currently published Asset Store version.
+
+### **3.0.1 – Patch**
+
+- A **small fix or improvement**, typically in response to bug reports or small feature requests.
+- Published to **GitHub Releases and Discord**, or installable via the ASM window.
+- Not guaranteed to be as thoroughly tested as Asset Store releases, but we make every effort to ensure stability.
+- Patches may be frequent, sometimes multiple per day if many bug reports come in, or none for weeks.
+
+
+---
+
+## How to Update
+
+### Updating to a Patch Release (e.g., 3.0.1 → 3.0.2)
+
+- ✅ **No uninstall required**.
+- Can be downloaded via:
+    - GitHub
+    - **ASM Settings > Update** (built-in updater)
+
+
+---
+
+### Updating to a Minor or Major Release (e.g., 3.0.5 → 3.1)
+
+> ⚠️ Unity’s `.unitypackage` system **does not remove deleted files**. This can leave behind obsolete code or assets.
+
+To prevent issues, you must **manually uninstall** the old version before installing the new one. **Do not** remove profiles, collections or imported scenes.
+
+#### Steps:
+
+1. Open **Unity Package Manager**.
+2. Locate ASM under:
+    - **Packages > Lazy Solutions**
+    - Or **Packages > Asset Store**
+3. Remove any old ASM entries before importing the new `.unitypackage`.
+
+
+![](/image/package-manager.png)
+
+
+---
+
+## Best Practices
+
+- **Always back up your project** (via Git or manual copy) before major updates.
+- **Keep an eye on Discord or GitHub** for patch notifications if you're waiting on a bug fix.
+- Only update when needed, especially for stable projects nearing release.
+
+### Related pages
+[📄 Quick start](quick-start.md)\
+[📄 Common questions](common-questions.md)\
+[📄 In-game toolbar](in-game-toolbar.md)\
+[📄 Updating](updating.md)\
+[📄 Videos](videos.md)
+
+[← Back](readme.md) | [🏠 Home](../readme.md)
+
+---
+# Videos
+<!--
+source: guides\Videos.md
+-->
+
+<!---./Videos.md-->
+[← Back](readme.md) | [🏠 Home](../readme.md)
+## Advanced Scene Manager - Video Tutorials
+
+Discover how **Advanced Scene Manager** can simplify your Unity projects. Watch these tutorials to see it in action and learn how to get started!
+
+### 📹 Getting Started with Advanced Scene Manager
+Learn the basics of setting up and using Advanced Scene Manager in your Unity projects.
+
+[![Getting Started with Advanced Scene Manager](https://img.youtube.com/vi/H-9FFJ7cLnc/0.jpg)](https://youtu.be/H-9FFJ7cLnc)
+
+##
+### 📹 Creating Loading Screens
+[![Creating Loading Screens](https://img.youtube.com/vi/MiXD2jrAqoo/0.jpg)](https://youtu.be/MiXD2jrAqoo)
+
+### Related pages
+[📄 Quick start](quick-start.md)\
+[📄 Common questions](common-questions.md)\
+[📄 In-game toolbar](in-game-toolbar.md)\
+[📄 Updating](updating.md)\
+[📄 Videos](videos.md)
+
+[← Back](readme.md) | [🏠 Home](../readme.md)
 
