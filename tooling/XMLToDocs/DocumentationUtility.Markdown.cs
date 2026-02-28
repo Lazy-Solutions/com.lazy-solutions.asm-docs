@@ -76,7 +76,7 @@ namespace AdvancedSceneManager.Documentation
                 foreach (var field in fields)
                 {
                     var doc = field.GetDocumentation();
-                    var summary = doc?.GetEffective(d => d.Summary) ?? "_No documentation available._";
+                    var summary = Escape(doc?.GetEffective(d => d.Summary) ?? "_No documentation available._");
 
                     sb.AppendLine($"| `{field.Name}` | {summary} |");
                 }
@@ -206,7 +206,12 @@ namespace AdvancedSceneManager.Documentation
                     .Replace("&", "&amp;")
                     .Replace("<", "&lt;")
                     .Replace(">", "&gt;")
-                    .Replace("|", "\\|");
+                    .Replace("|", "\\|")
+                    .Replace("_", "\\_")
+                    .Replace("*", "\\*")
+                    .Replace("[", "\\[")
+                    .Replace("]", "\\]")
+                    .Replace("#", "\\#");
             }
 
             private static string GetFriendlyContainerName(Type type)
@@ -234,9 +239,9 @@ namespace AdvancedSceneManager.Documentation
                 foreach (var member in list)
                 {
                     var doc = member.GetDocumentation();
-                    var signature = "`" + member.GetSignature(includeAccessModifiers: false, includeStaticIndicator: false) + "`"; // no `static` here
+                    var signature = "`" + Escape(member.GetSignature(includeAccessModifiers: false, includeStaticIndicator: false)) + "`"; // no `static` here
 
-                    var summary = doc?.GetEffective(d => d.Summary) ?? "_No documentation available._";
+                    var summary = Escape(doc?.GetEffective(d => d.Summary) ?? "_No documentation available._");
                     summary = summary?.Replace("|", "\\|");
 
                     sb.AppendLine($"| {signature} | {summary} |");
