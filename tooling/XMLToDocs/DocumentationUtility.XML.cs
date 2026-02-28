@@ -278,10 +278,11 @@ namespace AdvancedSceneManager.Documentation
                                     }
 
                                 case "code":
-                                    sb.AppendLine().AppendLine("```")
-                                      .AppendLine(child.InnerText.Trim())
-                                      .AppendLine("```").AppendLine();
-                                    break;
+                                    {
+                                        var content = ParseDocumentationNode(child, insideCode: true).Trim();
+                                        sb.AppendLine().Append('`').Append(content).AppendLine("`").AppendLine();
+                                        break;
+                                    }
 
                                 case "para":
                                     sb.AppendLine().AppendLine(ParseDocumentationNode(child));
