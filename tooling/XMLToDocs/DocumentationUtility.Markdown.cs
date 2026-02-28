@@ -95,12 +95,12 @@ namespace AdvancedSceneManager.Documentation
                     return;
                 }
 
-                var returnType = invoke.ReturnType.GetFriendlyTypeName();
+                var returnType = Escape(invoke.ReturnType.GetFriendlyTypeName());
                 var parameters = string.Join(", ",
                     invoke.GetParameters()
                           .Select(p => $"{p.ParameterType.GetFriendlyTypeName()} {p.Name}"));
 
-                sb.AppendLine($"`{returnType} {type.Name}({parameters})`");
+                sb.AppendLine($"`{returnType} {Escape(type.GetFriendlyTypeName())}({parameters})`");
                 sb.AppendLine();
             }
 
