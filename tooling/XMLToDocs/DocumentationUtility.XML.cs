@@ -341,22 +341,25 @@ namespace AdvancedSceneManager.Documentation
                 if (cref.Length > 2 && cref[1] == ':')
                     cref = cref.Substring(2);
 
-                // Remove parameter list for methods
+                // Remove parameter list
                 var paramIndex = cref.IndexOf('(');
                 if (paramIndex >= 0)
                     cref = cref.Substring(0, paramIndex);
 
-                // Remove namespace
-                var lastDot = cref.LastIndexOf('.');
-                if (lastDot >= 0)
-                    cref = cref.Substring(lastDot + 1);
-
-                // Remove generic arity suffix (`1)
+                // Remove generic arity (`1 etc.)
                 var backtick = cref.IndexOf('`');
                 if (backtick >= 0)
                     cref = cref.Substring(0, backtick);
 
-                return cref;
+                var parts = cref.Split('.');
+
+                if (parts.Length >= 2)
+                {
+                    // Keep Type.Member
+                    return $"{parts[^2]}.{parts[^1]}";
+                }
+
+                return parts.Last();
             }
 
             static MemberInfo FindBaseMember(MemberInfo member)
@@ -464,20 +467,52 @@ namespace AdvancedSceneManager.Documentation
                         case 'P': // property
                         case 'F': // field
                         case 'M': // method
-                        case 'E': // event
-                            var parts = name.Split('.');
-                            var typeName = string.Join(".", parts.Take(parts.Length - 1));
-                            var memberName = parts.Last();
-
-                            var declaringType = asm.GetType(typeName);
-                            if (declaringType != null)
                             {
-                                var member = declaringType.GetMember(memberName,
-                                    BindingFlags.Public | BindingFlags.NonPublic |
-                                    BindingFlags.Static | BindingFlags.Instance).FirstOrDefault();
-                                if (member != null) return member;
+                                // Strip parameter section first
+                                var paramIndex = name.IndexOf('(');
+                                var methodPart = paramIndex >= 0
+                                    ? name.Substring(0, paramIndex)
+                                    : name;
+
+                                // Now safely split
+                                var lastDot = methodPart.LastIndexOf('.');
+                                if (lastDot < 0)
+                                    break;
+
+                                var typeName = methodPart.Substring(0, lastDot);
+                                var methodName = methodPart.Substring(lastDot + 1);
+
+                                var declaringType = asm.GetType(typeName);
+                                if (declaringType != null)
+                                {
+                                    var methods = declaringType.GetMethods(
+                                        BindingFlags.Public | BindingFlags.NonPublic |
+                                        BindingFlags.Static | BindingFlags.Instance);
+
+                                    var match = methods.FirstOrDefault(m => m.Name == methodName);
+                                    if (match != null)
+                                        return match;
+                                }
+
+                                break;
                             }
-                            break;
+
+                        case 'E': // event
+                            {
+                                var parts = name.Split('.');
+                                var typeName = string.Join(".", parts.Take(parts.Length - 1));
+                                var memberName = parts.Last();
+
+                                var declaringType = asm.GetType(typeName);
+                                if (declaringType != null)
+                                {
+                                    var member = declaringType.GetMember(memberName,
+                                        BindingFlags.Public | BindingFlags.NonPublic |
+                                        BindingFlags.Static | BindingFlags.Instance).FirstOrDefault();
+                                    if (member != null) return member;
+                                }
+                                break;
+                            }
                     }
                 }
 
