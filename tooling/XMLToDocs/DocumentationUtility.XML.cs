@@ -91,13 +91,23 @@ namespace AdvancedSceneManager.Documentation
                 member switch
                 {
                     Type type => $"T:{type.FullName}",
-                    MethodInfo method => $"M:{method.DeclaringType.FullName}.{method.Name}{GetParameters(method.GetParameters())}",
+                    MethodInfo method => GetXmlDocIDMethod(method),
                     ConstructorInfo ctor => $"M:{ctor.DeclaringType.FullName}.#ctor{GetParameters(ctor.GetParameters())}",
                     PropertyInfo prop => $"P:{prop.DeclaringType.FullName}.{prop.Name}",
                     FieldInfo field => $"F:{field.DeclaringType.FullName}.{field.Name}",
                     EventInfo ev => $"E:{ev.DeclaringType.FullName}.{ev.Name}",
                     _ => throw new NotSupportedException($"Unsupported member: {member}"),
                 };
+
+            static string GetXmlDocIDMethod(MethodInfo method)
+            {
+                var name = method.Name;
+
+                if (method.IsGenericMethodDefinition)
+                    name += "``" + method.GetGenericArguments().Length;
+
+                return $"M:{method.DeclaringType.FullName}.{name}{GetParameters(method.GetParameters())}";
+            }
 
             private static string GetParameters(ParameterInfo[] parameters)
             {
@@ -111,21 +121,25 @@ namespace AdvancedSceneManager.Documentation
 
             static string FormatTypeName(Type type)
             {
+                // Handle ref/out
+                if (type.IsByRef)
+                    return FormatTypeName(type.GetElementType()) + "@";
 
+                // Handle generics
                 if (type.IsGenericType)
                 {
-                    // Handle generic type arguments
-                    var genericTypeDef = type.GetGenericTypeDefinition();
-                    var typeName = genericTypeDef.FullName;
-                    typeName = typeName.Substring(0, typeName.IndexOf('`'));
-                    return typeName + "{" + string.Join(",", type.GetGenericArguments().Select(FormatTypeName)) + "}";
+                    var genericDef = type.GetGenericTypeDefinition();
+                    var name = genericDef.FullName;
+                    name = name.Substring(0, name.IndexOf('`'));
+
+                    var args = string.Join(",", type.GetGenericArguments().Select(FormatTypeName));
+                    return name + "{" + args + "}";
                 }
 
                 if (type.IsArray)
                     return FormatTypeName(type.GetElementType()) + "[]";
 
                 return type.FullName;
-
             }
 
             static MemberDocumentation ParseNode(XmlNode node, MemberInfo member)
