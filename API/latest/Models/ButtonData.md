@@ -1,18 +1,21 @@
-## ButtonData
+## ASMUserSettings.ButtonData
 
-`class` in `AdvancedSceneManager.Models`### Description
+`class` in `AdvancedSceneManager.Models.ASMUserSettings`
+
+### Description
+Represents data for a button in the ASM window.
 
 ### Fields
 
 | Member | Description |
 |--------|-------------|
-| `int32 index` | _No documentation available._ |
-| `boolean isVisible` | _No documentation available._ |
-| `ElementLocation location` | _No documentation available._ |
-| `string name` | _No documentation available._ |
+| `int index` | Gets or sets the index of the button. |
+| `bool isVisible` | Gets or sets whether the button is visible. |
+| `ElementLocation location` | Gets or sets the location of the button. |
+| `string name` | Gets or sets the name of the button. |
 
 ### Methods
 
 | Member | Description |
 |--------|-------------|
-| `virtual string ToString()` | _No documentation available._ |
+| `virtual string ToString()` | \_No documentation available.\_ |

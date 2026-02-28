@@ -1,6 +1,8 @@
 ## AssetDatabaseUtility
 
-`static class` in `AdvancedSceneManager.Editor.Utility`### Description
+`static class` in `AdvancedSceneManager.Editor.Utility`
+
+### Description
 Contains utility functions for working with the asset database.
 
 <b> Remarks:</b>
@@ -11,11 +13,11 @@ Only available in the editor.
 | Member | Description |
 |--------|-------------|
 | `string ConvertToUnixPath(string path)` | Converts the path separators to use forward slash. |
-| `boolean CreateFolder(string folder)` | _No documentation available._ |
-| `boolean CreateFolder(string path, String& createdFolder)` | _No documentation available._ |
-| `IEnumerable<string> FindAssetPaths<T>(string[] searchInFolders)` | _No documentation available._ |
-| `IEnumerable<T> FindAssets<T>()` | _No documentation available._ |
-| `IEnumerable<T> FindAssets<T>(string[] searchInFolders)` | _No documentation available._ |
-| `string MakeRelative(string path, boolean includeAssetsFolder, boolean prefixWithAssetsIfNecessary)` | Makes the path absolute. Converts path to unix style. |
+| `bool CreateFolder(string folder)` | \_No documentation available.\_ |
+| `bool CreateFolder(string path, out string createdFolder)` | Creates the specified folder. |
+| `IEnumerable&lt;string&gt; FindAssetPaths&lt;T&gt;(string\[\] searchInFolders)` | Finds all assets of type `T`. |
+| `IEnumerable&lt;T&gt; FindAssets&lt;T&gt;()` | Finds all assets of type `T`. |
+| `IEnumerable&lt;T&gt; FindAssets&lt;T&gt;(string\[\] searchInFolders)` | Finds all assets of type `T`. |
+| `string MakeRelative(string path, bool includeAssetsFolder, bool prefixWithAssetsIfNecessary)` | Makes the path absolute. Converts path to unix style. |
 | `void ShowFolder(string folderPath)` | Shows the folder and selects the asset. |
-| `void ShowFolder(object obj)` | Shows the folder and selects the asset. |
+| `void ShowFolder(Object obj)` | Shows the folder and selects the asset. |

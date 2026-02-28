@@ -1,17 +1,19 @@
-## ISceneCollection`1
+## ISceneCollection&lt;T&gt;
 
-`interface` in `AdvancedSceneManager.Models.Interfaces`### Description
+`interface` in `AdvancedSceneManager.Models.Interfaces`
+
+### Description
 Defines some core properties for scene collections.
 
 ### Properties
 
 | Member | Description |
 |--------|-------------|
-| `T Item` | _No documentation available._ |
-| `IEnumerable<T> scenes` | Gets the scenes of this collection. |
+| `T Item` | \_No documentation available.\_ |
+| `IEnumerable&lt;T&gt; scenes` | Gets the scenes of this collection. |
 
 ### Methods
 
 | Member | Description |
 |--------|-------------|
-| `abstract virtual boolean Contains(T scene)` | _No documentation available._ |
+| `bool Contains(T scene)` | Gets if this collection contains `scene`. |

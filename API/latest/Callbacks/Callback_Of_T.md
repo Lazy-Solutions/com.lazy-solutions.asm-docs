@@ -1,11 +1,10 @@
-## Callback
+## CallbackUtility.FluentInvokeAPI&lt;T&gt;.Callback&lt;T&gt;
 
-`sealed class` in `AdvancedSceneManager.Callbacks`  /  Inherits from: `MulticastDelegate`### Description
+`sealed class` in `AdvancedSceneManager.Callbacks.CallbackUtility.CallbackUtility.FluentInvokeAPI&lt;T&gt;`
 
-### Methods
+### Description
+Represents a coroutine callback delegate.
 
-| Member | Description |
-|--------|-------------|
-| `virtual IAsyncResult BeginInvoke(T obj, boolean isEnabled, AsyncCallback callback, object object)` | _No documentation available._ |
-| `virtual IEnumerator EndInvoke(IAsyncResult result)` | _No documentation available._ |
-| `virtual IEnumerator Invoke(T obj, boolean isEnabled)` | _No documentation available._ |
+### Signature
+
+`IEnumerator CallbackUtility.FluentInvokeAPI<T>.Callback<T>(T obj, bool isEnabled)`

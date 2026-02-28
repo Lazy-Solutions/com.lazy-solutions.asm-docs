@@ -1,16 +1,18 @@
 ## DynamicCollection
 
-`class` in `AdvancedSceneManager.Models`  /  Inherits from: `DynamicCollectionBase<string>`### Description
+`class` in `AdvancedSceneManager.Models`  /  Inherits from: `DynamicCollectionBase&lt;string&gt;`
+
+### Description
 Represents a collection that can take a path and then gather all scenes within, guaranteeing that they are all added to build, including non-imported and blacklisted scenes.
 
 ### Properties
 
 | Member | Description |
 |--------|-------------|
-| `int32 count` | _No documentation available._ |
+| `int count` | \_No documentation available.\_ |
 | `string path` | Specifies the path that this dynamic collection will gather scenes from. |
-| `IEnumerable<string> scenePaths` | Gets the paths of the scenes tracked by this dynamic collection. |
-| `IEnumerable<string> scenes` | _No documentation available._ |
+| `IEnumerable&lt;string&gt; scenePaths` | Gets the paths of the scenes tracked by this dynamic collection. |
+| `IEnumerable&lt;string&gt; scenes` | \_No documentation available.\_ |
 
 ### Static Methods
 
@@ -23,6 +25,6 @@ Represents a collection that can take a path and then gather all scenes within, 
 | Member | Description |
 |--------|-------------|
 | `void ImportScenes()` | Imports all scenes that are currently tracked by the collection. |
-| `virtual boolean IsMatch(string q)` | Determines whether the specified query matches this model. |
-| `void ReloadPaths()` | Queries all `SceneAsset` in the project that is in the defined path, and is not blacklisted. |
-| `virtual string ToString()` | _No documentation available._ |
+| `virtual bool IsMatch(string q)` | Determines whether the specified query matches this model. |
+| `void ReloadPaths()` | Queries all `UnityEditor.SceneAsset` in the project that is in the defined path, and is not blacklisted. |
+| `virtual string ToString()` | \_No documentation available.\_ |

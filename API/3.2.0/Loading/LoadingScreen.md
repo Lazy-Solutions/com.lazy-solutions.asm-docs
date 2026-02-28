@@ -1,10 +1,12 @@
 ## LoadingScreen
 
-`abstract class` in `AdvancedSceneManager.Loading`  /  Inherits from: `LoadingScreenBase`### Description
+`abstract class` in `AdvancedSceneManager.Loading`  /  Inherits from: `LoadingScreenBase`
+
+### Description
 A class that contains callbacks for loading screens.
 
 <b> Remarks:</b>
-`SplashScreen` and `LoadingScreen` cannot co-exist within the same scene.
+`Loading.SplashScreen` and `Loading.LoadingScreen` cannot co-exist within the same scene.
 
 ### Properties
 
@@ -16,6 +18,6 @@ A class that contains callbacks for loading screens.
 
 | Member | Description |
 |--------|-------------|
-| `abstract virtual IEnumerator OnClose()` | Called when loading scene is closed. |
-| `abstract virtual IEnumerator OnOpen()` | Called when loading scene is opened. |
-| `virtual void OnValidate()` | _No documentation available._ |
+| `abstract IEnumerator OnClose()` | Called when loading scene is closed. |
+| `abstract IEnumerator OnOpen()` | Called when loading scene is opened. |
+| `virtual void OnValidate()` | \_No documentation available.\_ |

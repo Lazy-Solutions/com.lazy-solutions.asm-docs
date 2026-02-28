@@ -1,12 +1,10 @@
-## EventCallback`1
+## EventCallback&lt;TEventType&gt;
 
-`sealed class` in `AdvancedSceneManager.Callbacks.Events`  /  Inherits from: `MulticastDelegate`### Description
+`sealed class` in `AdvancedSceneManager.Callbacks.Events`
+
+### Description
 Callback for scene operations.
 
-### Methods
+### Signature
 
-| Member | Description |
-|--------|-------------|
-| `virtual IAsyncResult BeginInvoke(TEventType evt, AsyncCallback callback, object object)` | _No documentation available._ |
-| `virtual void EndInvoke(IAsyncResult result)` | _No documentation available._ |
-| `virtual void Invoke(TEventType evt)` | _No documentation available._ |
+`void EventCallback<TEventType>(TEventType evt)`

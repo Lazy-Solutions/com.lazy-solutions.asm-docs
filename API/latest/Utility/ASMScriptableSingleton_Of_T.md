@@ -1,26 +1,28 @@
-## ASMScriptableSingleton`1
+## ASMScriptableSingleton&lt;T&gt;
 
-`abstract class` in `AdvancedSceneManager.Utility`  /  Inherits from: `ScriptableSingleton<T>`### Description
-A `ScriptableSingleton`1` that supports build.
+`abstract class` in `AdvancedSceneManager.Utility`  /  Inherits from: `ScriptableSingleton&lt;T&gt;`
+
+### Description
+A `UnityEditor.ScriptableSingleton` that supports build.
 
 ### Properties
 
 | Member | Description |
 |--------|-------------|
-| `boolean editorOnly` | Specifies that build support will not be applied to this `ScriptableSingleton`1`. |
-| `SerializedObject serializedObject` | Gets a cached `SerializedObject` for this `ScriptableSingleton`1`. |
+| `bool editorOnly` | Specifies that build support will not be applied to this `UnityEditor.ScriptableSingleton`. |
+| `SerializedObject serializedObject` | Gets a cached `UnityEditor.SerializedObject` for this `UnityEditor.ScriptableSingleton`. |
 
 ### Events
 
 | Member | Description |
 |--------|-------------|
-| `event PropertyChangedEventHandler PropertyChanged` | _No documentation available._ |
+| `event PropertyChangedEventHandler PropertyChanged` | \_No documentation available.\_ |
 
 ### Methods
 
 | Member | Description |
 |--------|-------------|
-| `void OnPropertyChanged(string propertyName)` | _No documentation available._ |
-| `virtual void OnValidate()` | _No documentation available._ |
-| `virtual void Save()` | Saves the singleton to disk, with a debounce. See also `SaveNow`. |
+| `void OnPropertyChanged(string propertyName)` | \_No documentation available.\_ |
+| `virtual void OnValidate()` | \_No documentation available.\_ |
+| `virtual void Save()` | Saves the singleton to disk, with a debounce. See also `Utility.ASMScriptableSingleton`. |
 | `virtual void SaveNow()` | Saves the singleton to disk. |

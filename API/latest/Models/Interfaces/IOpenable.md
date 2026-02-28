@@ -1,24 +1,26 @@
 ## IOpenable
 
-`interface` in `AdvancedSceneManager.Models.Interfaces`### Description
+`interface` in `AdvancedSceneManager.Models.Interfaces`
+
+### Description
 Defines members for openable assets.
 
 ### Properties
 
 | Member | Description |
 |--------|-------------|
-| `boolean isOpen` | Gets whether this asset is currently open. |
-| `boolean isQueued` | Gets whether this asset is queued to be opened or closed. |
+| `bool isOpen` | Gets whether this asset is currently open. |
+| `bool isQueued` | Gets whether this asset is queued to be opened or closed. |
 
 ### Methods
 
 | Member | Description |
 |--------|-------------|
-| `abstract virtual void _Close()` | Closes this asset. |
-| `abstract virtual void _Open()` | Opens this asset. |
-| `abstract virtual void _Reopen()` | Reopens this asset. |
-| `abstract virtual void _ToggleOpen()` | Toggles this asset open or closed. |
-| `abstract virtual SceneOperation Close()` | Closes this asset. |
-| `abstract virtual SceneOperation Open()` | Opens this asset. |
-| `abstract virtual SceneOperation Reopen()` | Reopens this asset. |
-| `abstract virtual SceneOperation ToggleOpen()` | Toggles this asset open or closed. |
+| `void \_Close()` | Closes this asset. |
+| `void \_Open()` | Opens this asset. |
+| `void \_Reopen()` | Reopens this asset. |
+| `void \_ToggleOpen()` | Toggles this asset open or closed. |
+| `SceneOperation Close()` | Closes this asset. |
+| `SceneOperation Open()` | Opens this asset. |
+| `SceneOperation Reopen()` | Reopens this asset. |
+| `SceneOperation ToggleOpen()` | Toggles this asset open or closed. |

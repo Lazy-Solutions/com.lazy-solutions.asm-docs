@@ -1,18 +1,14 @@
 ## LoadingScreenUsage
 
-`enum` in `AdvancedSceneManager.Models.Enums`  /  Inherits from: `Enum`### Description
+`enum` in `AdvancedSceneManager.Models.Enums`  /  Inherits from: `Enum`
+
+### Description
 Specifies what loading screen to use, if any.
 
-### Static Fields
+### Values
 
-| Member | Description |
-|--------|-------------|
-| `LoadingScreenUsage DoNotUse` | Specifies no loading screen. |
-| `LoadingScreenUsage Override` | Specifies overriden loading screen, defined in `SceneCollection`. |
-| `LoadingScreenUsage UseDefault` | Specifies default loading screen, defined in profile settings. |
-
-### Fields
-
-| Member | Description |
-|--------|-------------|
-| `int32 value__` | _No documentation available._ |
+| Name | Description |
+|------|-------------|
+| `DoNotUse` | Specifies no loading screen. |
+| `UseDefault` | Specifies default loading screen, defined in profile settings. |
+| `Override` | Specifies overriden loading screen, defined in `Models.SceneCollection`. |

@@ -1,22 +1,18 @@
 ## AutoSceneOption
 
-`enum` in `AdvancedSceneManager.Models.Enums`  /  Inherits from: `Enum`### Description
+`enum` in `AdvancedSceneManager.Models.Enums`  /  Inherits from: `Enum`
+
+### Description
 Specifies when ASM should open or close an auto scene.
 
 <b> Remarks:</b>
-See also: ``
+See also: `Scene.SetAutoScene`
 
-### Static Fields
+### Values
 
-| Member | Description |
-|--------|-------------|
-| `AutoSceneOption Always` | Always open the auto scene automatically in either outside or in play mode. |
-| `AutoSceneOption EditModeOnly` | Only open the auto scene automatically outside of play mode. |
-| `AutoSceneOption Never` | Never open the auto scene automatically. |
-| `AutoSceneOption PlayModeOnly` | Only open the auto scene automatically in play mode. |
-
-### Fields
-
-| Member | Description |
-|--------|-------------|
-| `int32 value__` | _No documentation available._ |
+| Name | Description |
+|------|-------------|
+| `Never` | Never open the auto scene automatically. |
+| `EditModeOnly` | Only open the auto scene automatically outside of play mode. |
+| `PlayModeOnly` | Only open the auto scene automatically in play mode. |
+| `Always` | Always open the auto scene automatically in either outside or in play mode. |

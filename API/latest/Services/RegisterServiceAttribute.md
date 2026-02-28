@@ -1,6 +1,8 @@
 ## RegisterServiceAttribute
 
-`class` in `AdvancedSceneManager.Services`  /  Inherits from: `DiscoverableAttribute`### Description
+`class` in `AdvancedSceneManager.Services`  /  Inherits from: `DiscoverableAttribute`
+
+### Description
 Registers a service with the service container.
 
 ### Properties

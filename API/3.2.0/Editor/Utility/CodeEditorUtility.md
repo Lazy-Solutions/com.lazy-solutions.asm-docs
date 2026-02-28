@@ -1,6 +1,8 @@
 ## CodeEditorUtility
 
-`static class` in `AdvancedSceneManager.Editor.Utility`### Description
+`static class` in `AdvancedSceneManager.Editor.Utility`
+
+### Description
 Provides utility methods for opening the code editor on a method.
 
 ### Static Methods

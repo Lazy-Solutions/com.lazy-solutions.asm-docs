@@ -1,9 +1,12 @@
-## CalledForAttribute
+## EventCallbackUtility.CalledForAttribute
 
-`class` in `AdvancedSceneManager.Callbacks.Events`  /  Inherits from: `Attribute`### Description
+`class` in `AdvancedSceneManager.Callbacks.Events.EventCallbackUtility`  /  Inherits from: `Attribute`
+
+### Description
+Specifies when a callback type should be invoked.
 
 ### Properties
 
 | Member | Description |
 |--------|-------------|
-| `When[] when` | _No documentation available._ |
+| `When\[\] when` | The conditions that determine when the callback is invoked. |

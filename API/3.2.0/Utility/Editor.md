@@ -1,10 +1,12 @@
-## Editor
+## GuidReference.Editor
 
-`class` in `AdvancedSceneManager.Utility`  /  Inherits from: `Editor`### Description
+`class` in `AdvancedSceneManager.Utility.GuidReference`  /  Inherits from: `Editor`
+
+### Description
 
 ### Methods
 
 | Member | Description |
 |--------|-------------|
-| `virtual void OnInspectorGUI()` | _No documentation available._ |
-| `virtual boolean UseDefaultMargins()` | _No documentation available._ |
+| `virtual void OnInspectorGUI()` | Implement this function to make a custom inspector. |
+| `virtual bool UseDefaultMargins()` | Override this method in subclasses to return false if you don't want default margins. |

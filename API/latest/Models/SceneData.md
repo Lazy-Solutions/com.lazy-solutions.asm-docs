@@ -1,3 +1,6 @@
-## SceneData
+## ASMSettings.SceneData
 
-`class` in `AdvancedSceneManager.Models`  /  Inherits from: `CustomDataDictionary<string, CustomData>`### Description
+`class` in `AdvancedSceneManager.Models.ASMSettings`  /  Inherits from: `ASMSettings.CustomDataDictionary&lt;string, ASMSettings.CustomData&gt;`
+
+### Description
+Represents a collection of scene-specific custom data entries.

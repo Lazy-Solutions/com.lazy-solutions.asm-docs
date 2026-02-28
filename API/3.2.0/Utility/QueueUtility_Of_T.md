@@ -1,15 +1,17 @@
-## QueueUtility`1
+## QueueUtility&lt;T&gt;
 
-`static class` in `AdvancedSceneManager.Utility`### Description
+`static class` in `AdvancedSceneManager.Utility`
+
+### Description
 A utility that provides queuing.
 
 ### Static Properties
 
 | Member | Description |
 |--------|-------------|
-| `boolean isBusy` | Gets whatever any items in the queue are running. |
-| `IEnumerable<T> queue` | Gets the items currently in queue. |
-| `IEnumerable<T> running` | Gets the items that are currently running. |
+| `bool isBusy` | Gets whatever any items in the queue are running. |
+| `IEnumerable&lt;T&gt; queue` | Gets the items currently in queue. |
+| `IEnumerable&lt;T&gt; running` | Gets the items that are currently running. |
 
 ### Static Events
 
@@ -22,7 +24,7 @@ A utility that provides queuing.
 
 | Member | Description |
 |--------|-------------|
-| `boolean IsQueued(T queueable)` | _No documentation available._ |
-| `boolean IsRunning(T queueable)` | _No documentation available._ |
-| `void Stop(T queueable)` | _No documentation available._ |
+| `bool IsQueued(T queueable)` | Get if the item is queued. |
+| `bool IsRunning(T queueable)` | Gets if the item is running. |
+| `void Stop(T queueable)` | Cancels the queuable. |
 | `void StopAll()` | Cancels all queued and running items. |

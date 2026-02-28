@@ -1,19 +1,21 @@
 ## GlobalCoroutine
 
-`class` in `AdvancedSceneManager.Utility`  /  Inherits from: `CustomYieldInstruction`### Description
-Represents a `IEnumerator` coroutine started using `CoroutineUtility`.
+`class` in `AdvancedSceneManager.Utility`  /  Inherits from: `CustomYieldInstruction`
+
+### Description
+Represents a [Collections.IEnumerator](https://learn.microsoft.com/dotnet/api/system.collections.ienumerator) coroutine started using `Utility.CoroutineUtility`.
 
 ### Properties
 
 | Member | Description |
 |--------|-------------|
-| `ValueTuple<MethodBase, string, int32> caller { get; }` | Gets the caller info of this coroutine. |
+| `(MethodBase, string, int) caller { get; }` | Gets the caller info of this coroutine. |
 | `string description` | Gets the user defined message that was associated with this coroutine. |
-| `boolean isComplete { get; }` | Gets whatever this coroutine is completed. |
-| `boolean isPaused { get; }` | Gets whatever this coroutine is paused. |
-| `boolean isRunning { get; }` | Gets whatever this coroutine is currently running. This will still return `true` when paused. |
-| `boolean keepWaiting` | `keepWaiting`, this is how unity knows if this coroutine is done or not. |
-| `boolean wasCancelled { get; }` | Gets whatever this coroutine was cancelled. |
+| `bool isComplete { get; }` | Gets whatever this coroutine is completed. |
+| `bool isPaused { get; }` | Gets whatever this coroutine is paused. |
+| `bool isRunning { get; }` | Gets whatever this coroutine is currently running. This will still return `true` when paused. |
+| `bool keepWaiting` | `CustomYieldInstruction.keepWaiting`, this is how unity knows if this coroutine is done or not. |
+| `bool wasCancelled { get; }` | Gets whatever this coroutine was cancelled. |
 
 ### Methods
 

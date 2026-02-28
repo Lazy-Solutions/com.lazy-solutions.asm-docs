@@ -1,34 +1,36 @@
 ## TypeUtility
 
-`static class` in `AdvancedSceneManager.Utility`### Description
+`static class` in `AdvancedSceneManager.Utility`
+
+### Description
 Contains utility functions for working with types.
 
 ### Static Methods
 
 | Member | Description |
 |--------|-------------|
-| `Type Deserialize(string value)` | _No documentation available._ |
-| `boolean Deserialize(string value, Type& type)` | _No documentation available._ |
+| `Type Deserialize(string value)` | \_No documentation available.\_ |
+| `bool Deserialize(string value, out Type type)` | \_No documentation available.\_ |
 | `string GetFriendlyTypeName(Type type)` | Gets the friendly name of this type. |
-| `string GetSignature(MemberInfo member, boolean includeAccessModifiers)` | Gets the signature of this member. |
-| `boolean HasNoParameters(MemberInfo member)` | Gets if `member` is a `MethodInfo`, and has no parameters. |
-| `boolean HasParameters<T1>(MemberInfo member)` | _No documentation available._ |
-| `boolean HasParameters<T1, T2>(MemberInfo member)` | _No documentation available._ |
-| `boolean HasParameters<T1, T2, T3>(MemberInfo member)` | _No documentation available._ |
-| `boolean HasParameters<T1, T2, T3, T4>(MemberInfo member)` | _No documentation available._ |
-| `boolean HasParameters(MemberInfo member, Type[] types)` | _No documentation available._ |
-| `boolean IsConstructor(MemberInfo member)` | Determines whether the specified `MemberInfo` represents a constructor. |
-| `boolean IsField(MemberInfo member)` | Determines whether the specified `MemberInfo` represents a field. |
-| `boolean IsMethod(MemberInfo member)` | Determines whether the specified `MemberInfo` represents a method. |
-| `boolean IsMethodAndReturns<T>(MemberInfo member)` | _No documentation available._ |
-| `boolean IsProperty(MemberInfo member)` | Determines whether the specified `MemberInfo` represents a property. |
-| `boolean IsStatic(MemberInfo member)` | Determines whether the specified `MemberInfo` represents a static member. |
-| `boolean IsType(MemberInfo member)` | Determines whether the specified `MemberInfo` represents a type. |
-| `boolean IsType(MemberInfo member, Type type)` | Determines whether the specified `MemberInfo` represents a type. |
-| `boolean IsType<T>(MemberInfo member)` | Determines whether the specified `MemberInfo` represents a type. |
-| `boolean Returns<T>(MemberInfo member)` | _No documentation available._ |
-| `boolean Returns(MemberInfo member, Type type)` | Gets if `member` returns `type`. |
-| `boolean ReturnsCoroutine(MemberInfo member)` | Gets if `member` returns `IEnumerator`. |
-| `boolean ReturnsVoid(MemberInfo member)` | Gets if `member` returns `Void`. |
-| `Type ReturnType(MemberInfo member)` | Gets the return or value type of the specified `MemberInfo`. |
-| `string Serialize(Type type)` | _No documentation available._ |
+| `string GetSignature(MemberInfo member, bool includeAccessModifiers)` | Gets the signature of this member. |
+| `bool HasNoParameters(MemberInfo member)` | Gets if `member` is a \[Reflection.MethodInfo\](https://learn.microsoft.com/dotnet/api/system.reflection.methodinfo), and has no parameters. |
+| `bool HasParameters&lt;T1&gt;(MemberInfo member)` | Gets if `member` is a \[Reflection.MethodInfo\](https://learn.microsoft.com/dotnet/api/system.reflection.methodinfo), and has the specified parameters. |
+| `bool HasParameters&lt;T1, T2&gt;(MemberInfo member)` | \_No documentation available.\_ |
+| `bool HasParameters&lt;T1, T2, T3&gt;(MemberInfo member)` | \_No documentation available.\_ |
+| `bool HasParameters&lt;T1, T2, T3, T4&gt;(MemberInfo member)` | \_No documentation available.\_ |
+| `bool HasParameters(MemberInfo member, Type\[\] types)` | \_No documentation available.\_ |
+| `bool IsConstructor(MemberInfo member)` | Determines whether the specified \[Reflection.MemberInfo\](https://learn.microsoft.com/dotnet/api/system.reflection.memberinfo) represents a constructor. |
+| `bool IsField(MemberInfo member)` | Determines whether the specified \[Reflection.MemberInfo\](https://learn.microsoft.com/dotnet/api/system.reflection.memberinfo) represents a field. |
+| `bool IsMethod(MemberInfo member)` | Determines whether the specified \[Reflection.MemberInfo\](https://learn.microsoft.com/dotnet/api/system.reflection.memberinfo) represents a method. |
+| `bool IsMethodAndReturns&lt;T&gt;(MemberInfo member)` | Determines whether the specified \[Reflection.MemberInfo\](https://learn.microsoft.com/dotnet/api/system.reflection.memberinfo) represents a method returning `T`. |
+| `bool IsProperty(MemberInfo member)` | Determines whether the specified \[Reflection.MemberInfo\](https://learn.microsoft.com/dotnet/api/system.reflection.memberinfo) represents a property. |
+| `bool IsStatic(MemberInfo member)` | Determines whether the specified \[Reflection.MemberInfo\](https://learn.microsoft.com/dotnet/api/system.reflection.memberinfo) represents a static member. |
+| `bool IsType(MemberInfo member)` | Determines whether the specified \[Reflection.MemberInfo\](https://learn.microsoft.com/dotnet/api/system.reflection.memberinfo) represents a type. |
+| `bool IsType(MemberInfo member, Type type)` | Determines whether the specified \[Reflection.MemberInfo\](https://learn.microsoft.com/dotnet/api/system.reflection.memberinfo) represents a type. |
+| `bool IsType&lt;T&gt;(MemberInfo member)` | Determines whether the specified \[Reflection.MemberInfo\](https://learn.microsoft.com/dotnet/api/system.reflection.memberinfo) represents a type assignable to `T`. |
+| `bool Returns&lt;T&gt;(MemberInfo member)` | Gets if `member` returns `T`. |
+| `bool Returns(MemberInfo member, Type type)` | Gets if `member` returns `type`. |
+| `bool ReturnsCoroutine(MemberInfo member)` | Gets if `member` returns \[Collections.IEnumerator\](https://learn.microsoft.com/dotnet/api/system.collections.ienumerator). |
+| `bool ReturnsVoid(MemberInfo member)` | Gets if `member` returns \[System.Void\](https://learn.microsoft.com/dotnet/api/system.void). |
+| `Type ReturnType(MemberInfo member)` | Gets the return or value type of the specified \[Reflection.MemberInfo\](https://learn.microsoft.com/dotnet/api/system.reflection.memberinfo). |
+| `string Serialize(Type type)` | \_No documentation available.\_ |

@@ -1,15 +1,17 @@
 ## IQueueable
 
-`interface` in `AdvancedSceneManager.Utility`### Description
+`interface` in `AdvancedSceneManager.Utility`
+
+### Description
 Represents a queueable item.
 
 <b> Remarks:</b>
-See also `QueueUtility`1`.
+See also `Utility.QueueUtility`.
 
 ### Methods
 
 | Member | Description |
 |--------|-------------|
-| `abstract virtual boolean CanQueue()` | Called to make sure the item can actually be queued. |
-| `abstract virtual void OnCancel()` | Called when queueable is cancelled. |
-| `abstract virtual void OnTurn(Action onComplete)` | Called when it is this queueables turn. |
+| `bool CanQueue()` | Called to make sure the item can actually be queued. |
+| `void OnCancel()` | Called when queueable is cancelled. |
+| `void OnTurn(Action onComplete)` | Called when it is this queueables turn. |

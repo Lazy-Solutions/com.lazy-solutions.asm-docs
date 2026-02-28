@@ -1,11 +1,10 @@
-## HierarchyGameObjectGUI
+## HierarchyGUIUtility.HierarchyGameObjectGUI
 
-`sealed class` in `AdvancedSceneManager.Editor.Utility`  /  Inherits from: `MulticastDelegate`### Description
+`sealed class` in `AdvancedSceneManager.Editor.Utility.HierarchyGUIUtility`
 
-### Methods
+### Description
+Called after reserving a rect in hierarchy game object field. Return true to indicate that something was drawn, false means that the rect will be re-used for next OnGUI callback.
 
-| Member | Description |
-|--------|-------------|
-| `virtual IAsyncResult BeginInvoke(GameObject gameObject, AsyncCallback callback, object object)` | _No documentation available._ |
-| `virtual void EndInvoke(IAsyncResult result)` | _No documentation available._ |
-| `virtual void Invoke(GameObject gameObject)` | _No documentation available._ |
+### Signature
+
+`void HierarchyGUIUtility.HierarchyGameObjectGUI(GameObject gameObject)`

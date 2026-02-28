@@ -1,16 +1,18 @@
 ## CoroutineAwaiter
 
-`class` in `AdvancedSceneManager.Utility`### Description
+`class` in `AdvancedSceneManager.Utility`
+
+### Description
 Provides an awaiter for coroutines, allowing them to be awaited like tasks.
 
 <b> Remarks:</b>
-See also [IEnumerator)](https://learn.microsoft.com/dotnet/api/m:advancedscenemanager.utility.taskutility.getawaiter(system.collections.ienumerator)).
+See also `TaskUtility.GetAwaiter`.
 
 ### Properties
 
 | Member | Description |
 |--------|-------------|
-| `boolean IsCompleted` | Gets whether the coroutine has completed. |
+| `bool IsCompleted` | Gets whether the coroutine has completed. |
 
 ### Methods
 

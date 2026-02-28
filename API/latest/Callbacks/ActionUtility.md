@@ -1,7 +1,9 @@
 ## ActionUtility
 
-`static class` in `AdvancedSceneManager.Callbacks`### Description
-Contains utility functions for `Action`.
+`static class` in `AdvancedSceneManager.Callbacks`
+
+### Description
+Contains utility functions for [System.Action](https://learn.microsoft.com/dotnet/api/system.action).
 
 ### Static Methods
 
@@ -9,4 +11,4 @@ Contains utility functions for `Action`.
 |--------|-------------|
 | `void LogInvoke(Action action)` | Tries to invoke the action, then logs error to the console if an error occurred. |
 | `void TryInvoke(Action action)` | Tries to invoke the action, eats the exception. |
-| `boolean TryInvoke(Action action, Exception& exception)` | _No documentation available._ |
+| `bool TryInvoke(Action action, out Exception exception)` | Tries to invoke the action. |

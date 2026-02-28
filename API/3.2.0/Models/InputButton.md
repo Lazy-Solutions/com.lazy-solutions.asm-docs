@@ -1,13 +1,15 @@
 ## InputButton
 
-`class` in `AdvancedSceneManager.Models`### Description
+`class` in `AdvancedSceneManager.Models`
+
+### Description
 Specifies a input binding for use with InputSystem.
 
 ### Properties
 
 | Member | Description |
 |--------|-------------|
-| `boolean isValid` | Gets if this input binding is valid. |
+| `bool isValid` | Gets if this input binding is valid. |
 
 ### Fields
 

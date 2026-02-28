@@ -1,6 +1,8 @@
 ## BlocklistUtility
 
-`static class` in `AdvancedSceneManager.SceneImport`### Description
+`static class` in `AdvancedSceneManager.SceneImport`
+
+### Description
 Provides utility functions for managing blocklists.
 
 ### Static Properties
@@ -14,8 +16,8 @@ Provides utility functions for managing blocklists.
 
 | Member | Description |
 |--------|-------------|
-| `IEnumerable<string> EnumerateDiscoverableBlacklistPaths()` | Enumerates all discoverable blacklist paths. |
-| `void EnumerateDiscoverableBlocklist(IEnumerable`1& blacklist, IEnumerable`1& whitelist)` | _No documentation available._ |
-| `IEnumerable<string> EnumerateDiscoverableWhitelistPaths()` | Enumerates all discoverable whitelist paths. |
-| `boolean IsBlacklisted(string path)` | Gets whatever the path is blacklisted. |
-| `boolean IsWhitelisted(string path)` | Gets whatever the path is whitelisted. |
+| `IEnumerable&lt;string&gt; EnumerateDiscoverableBlacklistPaths()` | Enumerates all discoverable blacklist paths. |
+| `void EnumerateDiscoverableBlocklist(out IEnumerable&lt;string&gt; blacklist, out IEnumerable&lt;string&gt; whitelist)` | Enumerates all discoverable blocklist paths. |
+| `IEnumerable&lt;string&gt; EnumerateDiscoverableWhitelistPaths()` | Enumerates all discoverable whitelist paths. |
+| `bool IsBlacklisted(string path)` | Gets whatever the path is blacklisted. |
+| `bool IsWhitelisted(string path)` | Gets whatever the path is whitelisted. |

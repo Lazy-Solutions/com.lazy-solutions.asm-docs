@@ -1,6 +1,8 @@
 ## FadeLoadingScreen
 
-`class` in `AdvancedSceneManager.Loading.UI`  /  Inherits from: `LoadingScreenViewModel<ConfigBag>`### Description
+`class` in `AdvancedSceneManager.Loading.UI`  /  Inherits from: `LoadingScreenViewModel&lt;FadeLoadingScreen.ConfigBag&gt;`
+
+### Description
 A loading screen that fades the screen in and out.
 
 <b> Remarks:</b>

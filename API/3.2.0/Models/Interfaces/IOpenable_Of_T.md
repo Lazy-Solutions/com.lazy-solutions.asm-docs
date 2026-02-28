@@ -1,17 +1,19 @@
-## IOpenable`1
+## IOpenable&lt;T&gt;
 
-`interface` in `AdvancedSceneManager.Models.Interfaces`### Description
+`interface` in `AdvancedSceneManager.Models.Interfaces`
+
+### Description
 Defines members for openable assets.
 
 ### Methods
 
 | Member | Description |
 |--------|-------------|
-| `abstract virtual void _Close(T model)` | _No documentation available._ |
-| `abstract virtual void _Open(T model)` | _No documentation available._ |
-| `abstract virtual void _Reopen(T model)` | _No documentation available._ |
-| `abstract virtual void _ToggleOpen(T model)` | _No documentation available._ |
-| `abstract virtual SceneOperation Close(T model)` | _No documentation available._ |
-| `abstract virtual SceneOperation Open(T model)` | _No documentation available._ |
-| `abstract virtual SceneOperation Reopen(T model)` | _No documentation available._ |
-| `abstract virtual SceneOperation ToggleOpen(T model)` | _No documentation available._ |
+| `void \_Close(T model)` | Closes this asset. |
+| `void \_Open(T model)` | Opens this asset. |
+| `void \_Reopen(T model)` | Reopens this asset. |
+| `void \_ToggleOpen(T model)` | Toggles this asset open or closed. |
+| `SceneOperation Close(T model)` | Closes this asset. |
+| `SceneOperation Open(T model)` | Opens this asset. |
+| `SceneOperation Reopen(T model)` | Reopens this asset. |
+| `SceneOperation ToggleOpen(T model)` | Toggles this asset open or closed. |

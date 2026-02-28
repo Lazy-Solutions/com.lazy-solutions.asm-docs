@@ -1,6 +1,8 @@
 ## CrossSceneReference
 
-`class` in `AdvancedSceneManager.Utility.CrossSceneReferences`### Description
+`class` in `AdvancedSceneManager.Utility.CrossSceneReferences`
+
+### Description
 Represents a reference between two objects in different scenes.
 
 ### Fields
@@ -15,5 +17,5 @@ Represents a reference between two objects in different scenes.
 
 | Member | Description |
 |--------|-------------|
-| `virtual boolean Equals(object obj)` | _No documentation available._ |
-| `virtual int32 GetHashCode()` | _No documentation available._ |
+| `virtual bool Equals(object obj)` | \_No documentation available.\_ |
+| `virtual int GetHashCode()` | \_No documentation available.\_ |

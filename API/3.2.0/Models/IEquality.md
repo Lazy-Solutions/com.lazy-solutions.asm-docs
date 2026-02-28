@@ -1,3 +1,5 @@
-## IEquality
+## Scene.IEquality
 
-`interface` in `AdvancedSceneManager.Models`### Description
+`interface` in `AdvancedSceneManager.Models.Scene`
+
+### Description

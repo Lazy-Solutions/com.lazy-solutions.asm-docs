@@ -1,6 +1,8 @@
 ## HierarchyGUIUtility
 
-`static class` in `AdvancedSceneManager.Editor.Utility`### Description
+`static class` in `AdvancedSceneManager.Editor.Utility`
+
+### Description
 An utility for adding extra icons to scene fields in the hierarchy window.
 
 <b> Remarks:</b>
@@ -16,9 +18,9 @@ Only available in editor.
 
 | Member | Description |
 |--------|-------------|
-| `void AddGameObjectGUI(HierarchyGameObjectGUI onGUI, int32 index)` | _No documentation available._ |
-| `void AddSceneGUI(HierarchySceneGUI onGUI, int32 index)` | _No documentation available._ |
-| `boolean GetObj(int32 instanceID, Object& obj, String& name, String& scenePath)` | _No documentation available._ |
-| `void RemoveGameObjectGUI(HierarchyGameObjectGUI onGUI)` | _No documentation available._ |
-| `void RemoveSceneGUI(HierarchySceneGUI onGUI)` | _No documentation available._ |
+| `void AddGameObjectGUI(HierarchyGUIUtility.HierarchyGameObjectGUI onGUI, int index)` | Adds a onGUI call for `UnityEngine.GameObject` fields. |
+| `void AddSceneGUI(HierarchyGUIUtility.HierarchySceneGUI onGUI, int index)` | Adds a onGUI call for `Models.Scene` fields. |
+| `bool GetObj(int instanceID, out object obj, out string name, out string scenePath)` | Gets the obj by instance ID. |
+| `void RemoveGameObjectGUI(HierarchyGUIUtility.HierarchyGameObjectGUI onGUI)` | Remove a onGUI call for a `UnityEngine.GameObject`. |
+| `void RemoveSceneGUI(HierarchyGUIUtility.HierarchySceneGUI onGUI)` | Remove a onGUI call for a `Models.Scene`. |
 | `void Repaint()` | Can be used to ensure repaint of the HierarchyWindow. |

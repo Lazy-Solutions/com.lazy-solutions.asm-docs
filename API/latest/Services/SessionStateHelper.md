@@ -1,13 +1,15 @@
 ## SessionStateHelper
 
-`class` in `AdvancedSceneManager.Services`### Description
-A helper wrapper for `SessionState`, uses type name + property name for naming.
+`class` in `AdvancedSceneManager.Services`
+
+### Description
+A helper wrapper for `UnityEditor.SessionState`, uses type name + property name for naming.
 
 ### Methods
 
 | Member | Description |
 |--------|-------------|
-| `T GetProperty<T>(T defaultValue, string propertyName)` | _No documentation available._ |
-| `T GetValue<T>(T defaultValue, string propertyName)` | _No documentation available._ |
-| `void SetProperty<T>(T value, string propertyName)` | _No documentation available._ |
-| `void SetValue<T>(T value, string propertyName)` | _No documentation available._ |
+| `T GetProperty&lt;T&gt;(T defaultValue, string propertyName)` | Gets a session wide persisted value. |
+| `T GetValue&lt;T&gt;(T defaultValue, string propertyName)` | Gets a session wide persisted value. |
+| `void SetProperty&lt;T&gt;(T value, string propertyName)` | Sets a session wide persisted value. |
+| `void SetValue&lt;T&gt;(T value, string propertyName)` | Sets a session wide persisted value. |

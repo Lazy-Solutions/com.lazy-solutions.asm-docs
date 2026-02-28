@@ -1,6 +1,8 @@
 ## DiscoverableAttribute
 
-`abstract class` in `AdvancedSceneManager.Utility.Discoverability`  /  Inherits from: `Attribute`### Description
+`abstract class` in `AdvancedSceneManager.Utility.Discoverability`  /  Inherits from: `Attribute`
+
+### Description
 Represents the base attribute for discoverable attributes.
 
 ### Properties
@@ -8,18 +10,18 @@ Represents the base attribute for discoverable attributes.
 | Member | Description |
 |--------|-------------|
 | `string friendlyDescription` | Specifies the description to be shown in the diag UI tooltip. |
-| `TargetInfo target` | Specifies what the target should look like. |
+| `DiscoverableAttribute.TargetInfo target` | Specifies what the target should look like. |
 
 ### Static Methods
 
 | Member | Description |
 |--------|-------------|
-| `IEnumerable<DiscoveredMember> Enumerate<T>()` | _No documentation available._ |
-| `IEnumerable<ValueTuple<T, T2>> Enumerate<T, T2>()` | _No documentation available._ |
+| `IEnumerable&lt;DiscoveredMember&gt; Enumerate&lt;T&gt;()` | Enumerates all discoverables of type `T`. |
+| `IEnumerable&lt;ValueTuple&lt;T, T2&gt;&gt; Enumerate&lt;T, T2&gt;()` | Enumerates all discoverables of type `T`. |
 
 ### Methods
 
 | Member | Description |
 |--------|-------------|
-| `virtual boolean IsValidTarget(MemberInfo member)` | Gets if `member` is a valid target for this attribute callback. |
+| `virtual bool IsValidTarget(MemberInfo member)` | Gets if `member` is a valid target for this attribute callback. |
 | `virtual void LogError(MemberInfo member, string message)` | Logs an error to console. Uses a standard template. |

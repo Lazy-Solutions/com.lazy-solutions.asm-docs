@@ -1,11 +1,13 @@
-## Service_ViewModelBase
+## Service\_ViewModelBase
 
-`abstract class` in `AdvancedSceneManager.Services`### Description
+`abstract class` in `AdvancedSceneManager.Services`
+
+### Description
 Shared base class for services and view models.
 
 ### Methods
 
 | Member | Description |
 |--------|-------------|
-| `void RegisterEvent<T>(EventCallback<T> callback)` | _No documentation available._ |
-| `void UnregisterEvent<T>(EventCallback<T> callback)` | _No documentation available._ |
+| `void RegisterEvent&lt;T&gt;(EventCallback&lt;T&gt; callback)` | Registers an event callback that is automatically unregistered when view is removed. |
+| `void UnregisterEvent&lt;T&gt;(EventCallback&lt;T&gt; callback)` | Unregisters an event callback. |

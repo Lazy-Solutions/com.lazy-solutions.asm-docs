@@ -1,19 +1,16 @@
-## Reason
+## BuildUtility.Reason
 
-`enum` in `AdvancedSceneManager.Editor.Utility`  /  Inherits from: `Enum`### Description
+`enum` in `AdvancedSceneManager.Editor.Utility.BuildUtility`  /  Inherits from: `Enum`
 
-### Static Fields
+### Description
+Specifies why a scene is included or excluded from the build.
 
-| Member | Description |
-|--------|-------------|
-| `Reason Default` | _No documentation available._ |
-| `Reason IncludedInProfile` | _No documentation available._ |
-| `Reason InvalidScene` | _No documentation available._ |
-| `Reason NotIncludedInProfile` | _No documentation available._ |
-| `Reason SceneLoaderOverride` | _No documentation available._ |
+### Values
 
-### Fields
-
-| Member | Description |
-|--------|-------------|
-| `int32 value__` | _No documentation available._ |
+| Name | Description |
+|------|-------------|
+| `Default` | Scene is valid and included by default rules. |
+| `InvalidScene` | Scene reference is missing or path is invalid. |
+| `NotIncludedInProfile` | Scene is not part of the active ASM profile. |
+| `IncludedInProfile` | Scene is explicitly included in the active ASM profile. |
+| `SceneLoaderOverride` | Scene inclusion was overridden by a scene loader. |

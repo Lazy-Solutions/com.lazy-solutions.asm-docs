@@ -1,28 +1,30 @@
 ## IProfileManager
 
-`interface` in `AdvancedSceneManager.DependencyInjection`### Description
+`interface` in `AdvancedSceneManager.DependencyInjection`
+
+### Description
 Manages the current profile.
 
 ### Properties
 
 | Member | Description |
 |--------|-------------|
-| `Profile current` | Gets the currently active profile. |
-| `Profile defaultProfile` | The profile to force everyone in this project to use. |
-| `Profile forceProfile` | The profile to force everyone in this project to use. |
+| `Profile current` | \_No documentation available.\_ |
+| `Profile defaultProfile` | \_No documentation available.\_ |
+| `Profile forceProfile` | \_No documentation available.\_ |
 
 ### Events
 
 | Member | Description |
 |--------|-------------|
-| `event Action onProfileChanged` | Occurs when `profile` changes. |
+| `event Action onProfileChanged` | Occurs when `SceneManager.profile` changes. |
 
 ### Methods
 
 | Member | Description |
 |--------|-------------|
-| `abstract virtual Profile Create(string name)` | _No documentation available._ |
-| `abstract virtual Profile CreateEmpty(string name, boolean useDefaultSpecialScenes)` | _No documentation available._ |
-| `abstract virtual void Delete(Profile profile)` | _No documentation available._ |
-| `abstract virtual void Duplicate(Profile profile)` | _No documentation available._ |
-| `abstract virtual void SetProfile(Profile profile, boolean updateBuildSettings)` | _No documentation available._ |
+| `Profile Create(string name)` | Creates a new profile, with default scenes and collections. |
+| `Profile CreateEmpty(string name, bool useDefaultSpecialScenes)` | Creates a new empty profile. |
+| `void Delete(Profile profile)` | Deletes the specified profile. |
+| `void Duplicate(Profile profile)` | Duplicate the specified profile. |
+| `void SetProfile(Profile profile, bool updateBuildSettings)` | Sets the profile to be used by ASM. |

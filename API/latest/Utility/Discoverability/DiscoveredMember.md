@@ -1,14 +1,16 @@
 ## DiscoveredMember
 
-`struct` in `AdvancedSceneManager.Utility.Discoverability`  /  Inherits from: `ValueType`### Description
-A member that was found using `IDiscoverablesService`.
+`struct` in `AdvancedSceneManager.Utility.Discoverability`
+
+### Description
+A member that was found using `Services.IDiscoverablesService`.
 
 ### Properties
 
 | Member | Description |
 |--------|-------------|
 | `DiscoverableAttribute attribute { get; }` | Gets the attribute of this discoverable. |
-| `boolean isValid` | Gets if this discovered member is valid. |
+| `bool isValid` | Gets if this discovered member is valid. |
 | `MemberInfo member { get; }` | Gets the member of this discoverable. |
 
 ### Static Methods
@@ -21,8 +23,8 @@ A member that was found using `IDiscoverablesService`.
 
 | Member | Description |
 |--------|-------------|
-| `boolean Equals(DiscoveredMember other)` | _No documentation available._ |
-| `virtual boolean Equals(object obj)` | _No documentation available._ |
-| `virtual int32 GetHashCode()` | _No documentation available._ |
+| `bool Equals(DiscoveredMember other)` | \_No documentation available.\_ |
+| `virtual bool Equals(object obj)` | \_No documentation available.\_ |
+| `virtual int GetHashCode()` | \_No documentation available.\_ |
 | `string GetIdentifier()` | Gets an identifier that points to the found member. |
 | `virtual string ToString()` | Gets a formatted string of this discoverable. |

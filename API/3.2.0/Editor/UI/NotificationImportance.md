@@ -1,19 +1,15 @@
 ## NotificationImportance
 
-`enum` in `AdvancedSceneManager.Editor.UI`  /  Inherits from: `Enum`### Description
+`enum` in `AdvancedSceneManager.Editor.UI`  /  Inherits from: `Enum`
+
+### Description
 Specifies the importance of a notification.
 
-### Static Fields
+### Values
 
-| Member | Description |
-|--------|-------------|
-| `NotificationImportance Default` | Determines that the notification will be displayed in non-overflow view when space allows, otherwise overflow menu. |
-| `NotificationImportance High` | Determines that the notification will never overflow. |
-| `NotificationImportance Low` | Determines that the notification will never be displayed in non-overflow view. |
-| `NotificationImportance Priority` | Determines that the notification is to be prioritized. Prioritized notifications hide all others until dismissed or removed. |
-
-### Fields
-
-| Member | Description |
-|--------|-------------|
-| `int32 value__` | _No documentation available._ |
+| Name | Description |
+|------|-------------|
+| `Default` | Determines that the notification will be displayed in non-overflow view when space allows, otherwise overflow menu. |
+| `Low` | Determines that the notification will never be displayed in non-overflow view. |
+| `High` | Determines that the notification will never overflow. |
+| `Priority` | Determines that the notification is to be prioritized. Prioritized notifications hide all others until dismissed or removed. |

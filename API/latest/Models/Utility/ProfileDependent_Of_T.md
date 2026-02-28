@@ -1,25 +1,27 @@
-## ProfileDependent`1
+## ProfileDependent&lt;T&gt;
 
-`class` in `AdvancedSceneManager.Models.Utility`  /  Inherits from: `ScriptableObject`### Description
-Specifies a `T` that changes depending on active `Profile`.
+`class` in `AdvancedSceneManager.Models.Utility`  /  Inherits from: `ScriptableObject`
+
+### Description
+Specifies a `T` that changes depending on active `Models.Profile`.
 
 ### Properties
 
 | Member | Description |
 |--------|-------------|
-| `boolean isValid` | Gets if the current state of this `T` is valid. |
+| `bool isValid` | Gets if the current state of this `T` is valid. |
 
 ### Fields
 
 | Member | Description |
 |--------|-------------|
-| `Dict<T> list` | The list of proxies for this `T`. |
+| `ProfileDependent&lt;T&gt;.Dict&lt;T&gt; list` | The list of proxies for this `T`. |
 
 ### Methods
 
 | Member | Description |
 |--------|-------------|
-| `T2 DoAction<T2>(Func<T, T2> action)` | _No documentation available._ |
-| `void DoAction(Action<T> action)` | _No documentation available._ |
-| `boolean GetModel(T& scene)` | _No documentation available._ |
+| `T2 DoAction&lt;T2&gt;(Func&lt;T, T2&gt; action)` | Performs an action on the scene. |
+| `void DoAction(Action&lt;T&gt; action)` | Performs an action on the scene. |
+| `bool GetModel(out T scene)` | Gets the selected scene. |
 | `T GetModel()` | Gets the selected scene. |

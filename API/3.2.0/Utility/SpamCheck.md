@@ -1,6 +1,8 @@
 ## SpamCheck
 
-`class` in `AdvancedSceneManager.Utility`### Description
+`class` in `AdvancedSceneManager.Utility`
+
+### Description
 Provides an easy way to check for spamming.
 
 ### Static Properties
@@ -13,15 +15,15 @@ Provides an easy way to check for spamming.
 
 | Member | Description |
 |--------|-------------|
-| `single executeCooldown` | Gets or sets the cooldown. |
-| `boolean isEnabled` | Gets or sets if this `SpamCheck` is enabled. |
-| `single lastExecute { get; }` | Gets the time an action was executed last. |
-| `single timeSinceLastExecute` | Gets the time an action was executed last. |
+| `float executeCooldown` | Gets or sets the cooldown. |
+| `bool isEnabled` | Gets or sets if this `Utility.SpamCheck` is enabled. |
+| `float lastExecute { get; }` | Gets the time an action was executed last. |
+| `float timeSinceLastExecute` | Gets the time an action was executed last. |
 
 ### Methods
 
 | Member | Description |
 |--------|-------------|
 | `void Execute(Action action)` | Runs action if allowed. |
-| `boolean IsSpam()` | Gets if an action was executed not long enough ago. |
+| `bool IsSpam()` | Gets if an action was executed not long enough ago. |
 | `void MarkAsExecuted()` | Marks this spam check as executed, disallowing any actions until cooldown has run out. |

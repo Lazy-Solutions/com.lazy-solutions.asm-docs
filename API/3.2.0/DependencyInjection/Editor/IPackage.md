@@ -1,14 +1,12 @@
 ## IPackage
 
-`interface` in `AdvancedSceneManager.DependencyInjection.Editor`### Description
-Contains info about the ASM package.
+`interface` in `AdvancedSceneManager.DependencyInjection.Editor`
 
-<b> Remarks:</b>
-Only available in editor.
+### Description
 
 ### Properties
 
 | Member | Description |
 |--------|-------------|
-| `string folder` | The folder that ASM is contained within. |
-| `string version` | The version of ASM. |
+| `string folder` | \_No documentation available.\_ |
+| `string version` | \_No documentation available.\_ |

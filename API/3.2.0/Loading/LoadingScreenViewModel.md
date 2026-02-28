@@ -1,14 +1,16 @@
 ## LoadingScreenViewModel
 
-`abstract class` in `AdvancedSceneManager.Loading`  /  Inherits from: `ViewModel`### Description
+`abstract class` in `AdvancedSceneManager.Loading`  /  Inherits from: `ViewModel`
+
+### Description
 The base class for loading screen view models.
 
 ### Properties
 
 | Member | Description |
 |--------|-------------|
-| `boolean handleDisplayInEditorAutomatically` | Determines whether ASM should automatically handle editor-only display logic based on `displayInEditor`. |
-| `UIDocument uiDocument { get; }` | Gets the `UIDocument` that is rendering the view. |
+| `bool handleDisplayInEditorAutomatically` | Determines whether ASM should automatically handle editor-only display logic based on `LoadingScreenConfigBag.displayInEditor`. |
+| `UIDocument uiDocument { get; }` | Gets the `UIElements.UIDocument` that is rendering the view. |
 
 ### Methods
 

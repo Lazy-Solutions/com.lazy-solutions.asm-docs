@@ -1,20 +1,23 @@
-## CustomDataDictionary`2
+## ASMSettings.CustomDataDictionary&lt;TKey, TValue&gt;
 
-`class` in `AdvancedSceneManager.Models`### Description
+`class` in `AdvancedSceneManager.Models.ASMSettings`
+
+### Description
+Represents a serializable dictionary for storing custom data.
 
 ### Properties
 
 | Member | Description |
 |--------|-------------|
-| `TValue Item` | _No documentation available._ |
+| `TValue Item` | \_No documentation available.\_ |
 
 ### Methods
 
 | Member | Description |
 |--------|-------------|
-| `void Clear(TKey key)` | _No documentation available._ |
-| `boolean ContainsKey(TKey key)` | _No documentation available._ |
-| `boolean Get(TKey key, TValue& value)` | _No documentation available._ |
-| `TValue Get(TKey key)` | _No documentation available._ |
-| `IEnumerator<KeyValuePair<TKey, TValue>> GetEnumerator()` | _No documentation available._ |
-| `void Set(TKey key, TValue value)` | _No documentation available._ |
+| `void Clear(TKey key)` | Clears custom data for the specified key. |
+| `bool ContainsKey(TKey key)` | Determines whether the specified key exists. |
+| `bool Get(TKey key, out TValue value)` | Gets custom data. |
+| `TValue Get(TKey key)` | Gets custom data. |
+| `IEnumerator&lt;KeyValuePair&lt;TKey, TValue&gt;&gt; GetEnumerator()` | \_No documentation available.\_ |
+| `void Set(TKey key, TValue value)` | Sets custom data. |

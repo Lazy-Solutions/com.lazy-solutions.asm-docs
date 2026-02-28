@@ -1,13 +1,15 @@
 ## IFindable
 
-`interface` in `AdvancedSceneManager.Models.Interfaces`### Description
+`interface` in `AdvancedSceneManager.Models.Interfaces`
+
+### Description
 Defines methods for finding assets.
 
 <b> Remarks:</b>
-See also: `AssetSearchUtility`.
+See also: `Utility.AssetSearchUtility`.
 
 ### Methods
 
 | Member | Description |
 |--------|-------------|
-| `abstract virtual boolean IsMatch(string q)` | Matches this `IFindable` against the query string. |
+| `bool IsMatch(string q)` | Matches this `Interfaces.IFindable` against the query string. |

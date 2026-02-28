@@ -1,6 +1,8 @@
 ## FallbackSceneUtility
 
-`static class` in `AdvancedSceneManager.Utility`### Description
+`static class` in `AdvancedSceneManager.Utility`
+
+### Description
 An utility class that manages the default scene, called 'AdvancedSceneManager'.
 
 <b> Remarks:</b>

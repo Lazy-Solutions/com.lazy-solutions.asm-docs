@@ -1,10 +1,12 @@
 ## StopwatchUtility
 
-`static class` in `AdvancedSceneManager.Utility`### Description
+`static class` in `AdvancedSceneManager.Utility`
+
+### Description
 Provides utility functions for working with stopwatches.
 
 ### Static Methods
 
 | Member | Description |
 |--------|-------------|
-| `TimeSpan GetElapsedTime(int64 startingTimestamp)` | Gets the elapsed time. |
+| `TimeSpan GetElapsedTime(long startingTimestamp)` | Gets the elapsed time. |

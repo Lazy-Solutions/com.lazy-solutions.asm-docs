@@ -1,24 +1,26 @@
 ## IAssetsAPI
 
-`interface` in `AdvancedSceneManager.Models.Interfaces`### Description
+`interface` in `AdvancedSceneManager.Models.Interfaces`
+
+### Description
 Provides access to the scenes, collections and profiles managed by ASM.
 
 <b> Remarks:</b>
-May not be available in `[InitializeOnLoad]` and similar, use [Action)](https://learn.microsoft.com/dotnet/api/m:advancedscenemanager.scenemanager.oninitialized(system.action)) or `OnLoadAttribute` to ensure you're not calling too early.
+May not be available in `[InitializeOnLoad]` and similar, use `SceneManager.OnInitialized` or `Callbacks.OnLoadAttribute` to ensure you're not calling too early.
 
 ### Properties
 
 | Member | Description |
 |--------|-------------|
-| `IEnumerable<SceneCollectionTemplate> collectionTemplates` | Enumerates all collection templates tracked by ASM. |
+| `IEnumerable&lt;SceneCollectionTemplate&gt; collectionTemplates` | Enumerates all collection templates tracked by ASM. |
 | `IAssetsAPIDefaultScenes defaults` | Provides access to the default ASM scenes. |
-| `IEnumerable<Profile> profiles` | Enumerates all profiles tracked by ASM. |
+| `IEnumerable&lt;Profile&gt; profiles` | Enumerates all profiles tracked by ASM. |
 | `ASMSceneHelper sceneHelper` | Provides access to the scene helper. |
-| `IEnumerable<Scene> scenes` | Enumerates all imported scenes tracked by ASM. |
+| `IEnumerable&lt;Scene&gt; scenes` | Enumerates all imported scenes tracked by ASM. |
 
 ### Methods
 
 | Member | Description |
 |--------|-------------|
-| `abstract virtual IEnumerable<T> Enumerate<T>()` | Enumerates all assets. |
-| `abstract virtual IEnumerable<IASMModel> Enumerate()` | Enumerates all assets. |
+| `IEnumerable&lt;T&gt; Enumerate&lt;T&gt;()` | Enumerates all assets of type `T`. |
+| `IEnumerable&lt;IASMModel&gt; Enumerate()` | Enumerates all assets. |

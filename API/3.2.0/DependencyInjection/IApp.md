@@ -1,30 +1,32 @@
 ## IApp
 
-`interface` in `AdvancedSceneManager.DependencyInjection`### Description
+`interface` in `AdvancedSceneManager.DependencyInjection`
+
+### Description
 Manages startup and quit processes.
 
 <b> Remarks:</b>
-Usage: `app`.
+Usage: `SceneManager.app`.
 
 ### Properties
 
 | Member | Description |
 |--------|-------------|
-| `boolean isASMPlay` | Gets whatever we're currently in ASM play mode. |
-| `boolean isQuitting` | Gets whatever ASM is currently in the process of quitting the game. |
-| `boolean isRestart` | Gets if ASM has been restarted, or is currently restarting. |
-| `boolean isStartupFinished` | Gets if startup process is finished. |
-| `StartupProps startupProps` | Gets the props that should be used for startup process. |
+| `bool isASMPlay` | \_No documentation available.\_ |
+| `bool isQuitting` | \_No documentation available.\_ |
+| `bool isRestart` | \_No documentation available.\_ |
+| `bool isStartupFinished` | \_No documentation available.\_ |
+| `App.StartupProps startupProps` | \_No documentation available.\_ |
 
 ### Methods
 
 | Member | Description |
 |--------|-------------|
-| `abstract virtual void CancelQuit()` | Cancels the current quit process. |
-| `abstract virtual void CancelStartup()` | Cancels startup process. |
-| `abstract virtual void Exit()` | Exits the application immediately. |
-| `abstract virtual Awaitable Quit(boolean fade, Nullable<Color> fadeColor, single fadeDuration)` | _No documentation available._ |
-| `abstract virtual void RegisterQuitCallback(Func<IEnumerator> coroutine)` | _No documentation available._ |
-| `abstract virtual void Restart(StartupProps props)` | _No documentation available._ |
-| `abstract virtual Async<boolean> RestartAsync(StartupProps props)` | _No documentation available._ |
-| `abstract virtual void UnregisterQuitCallback(Func<IEnumerator> coroutine)` | _No documentation available._ |
+| `void CancelQuit()` | Cancels the current quit process. |
+| `void CancelStartup()` | Cancels startup process. |
+| `void Exit()` | Exits the application immediately. |
+| `Awaitable Quit(bool fade, Color? fadeColor, float fadeDuration)` | Quits the application with optional fade effect. |
+| `void RegisterQuitCallback(Func&lt;IEnumerator&gt; coroutine)` | Register a callback to be called before quit. |
+| `void Restart(App.StartupProps props)` | Restarts the ASM startup process. |
+| `Async&lt;bool&gt; RestartAsync(App.StartupProps props)` | Restarts the ASM startup process. |
+| `void UnregisterQuitCallback(Func&lt;IEnumerator&gt; coroutine)` | Unregister a callback that was to be called before quit. |

@@ -1,6 +1,8 @@
 ## CrossSceneDebugger
 
-`class` in `AdvancedSceneManager.Utility.CrossSceneReferences`  /  Inherits from: `EditorWindow`### Description
+`class` in `AdvancedSceneManager.Utility.CrossSceneReferences`  /  Inherits from: `EditorWindow`
+
+### Description
 A window for debugging cross-scene references.
 
 ### Static Methods

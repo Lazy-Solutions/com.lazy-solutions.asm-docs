@@ -1,18 +1,14 @@
 ## CollectionStartupOption
 
-`enum` in `AdvancedSceneManager.Models.Enums`  /  Inherits from: `Enum`### Description
-Specifies what to do with a `SceneCollection` during startup.
+`enum` in `AdvancedSceneManager.Models.Enums`  /  Inherits from: `Enum`
 
-### Static Fields
+### Description
+Specifies what to do with a `Models.SceneCollection` during startup.
 
-| Member | Description |
-|--------|-------------|
-| `CollectionStartupOption Auto` | Specifies that ASM should automatically decide if a `SceneCollection` should be opened during startup. |
-| `CollectionStartupOption DoNotOpen` | Specifies that a `SceneCollection` will not open during startup. |
-| `CollectionStartupOption Open` | Specifies that a `SceneCollection` will open during startup. |
+### Values
 
-### Fields
-
-| Member | Description |
-|--------|-------------|
-| `int32 value__` | _No documentation available._ |
+| Name | Description |
+|------|-------------|
+| `Auto` | Specifies that ASM should automatically decide if a `Models.SceneCollection` should be opened during startup. |
+| `Open` | Specifies that a `Models.SceneCollection` will open during startup. |
+| `DoNotOpen` | Specifies that a `Models.SceneCollection` will not open during startup. |

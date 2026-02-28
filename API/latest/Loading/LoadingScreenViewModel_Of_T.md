@@ -1,6 +1,8 @@
-## LoadingScreenViewModel`1
+## LoadingScreenViewModel&lt;T&gt;
 
-`abstract class` in `AdvancedSceneManager.Loading`  /  Inherits from: `LoadingScreenViewModel`### Description
+`abstract class` in `AdvancedSceneManager.Loading`  /  Inherits from: `LoadingScreenViewModel`
+
+### Description
 The base class for loading screen view models.
 
 ### Properties

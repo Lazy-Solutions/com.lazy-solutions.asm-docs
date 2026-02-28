@@ -1,16 +1,16 @@
 ## AutoSceneEventArgs
 
-`class` in `AdvancedSceneManager.Utility`### Description
-Represents event args for `AutoSceneHandlerAttribute`.
+`class` in `AdvancedSceneManager.Utility`
+
+### Description
+Represents event args for `Utility.AutoSceneHandlerAttribute`.
 
 <b> Remarks:</b>
 Usage:
-            
-```
-[AutoSceneHandler]
-            static void OnHandleAutoScene(AutoSceneEventArgs e)
-            { }
-```
+
+`[AutoSceneHandler]
+static void OnHandleAutoScene(AutoSceneEventArgs e)
+{ }`
 
 ### Properties
 

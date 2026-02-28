@@ -1,6 +1,8 @@
 ## Package
 
-`class` in `AdvancedSceneManager.Core`### Description
+`class` in `AdvancedSceneManager.Core`
+
+### Description
 Contains info about the ASM package.
 
 <b> Remarks:</b>

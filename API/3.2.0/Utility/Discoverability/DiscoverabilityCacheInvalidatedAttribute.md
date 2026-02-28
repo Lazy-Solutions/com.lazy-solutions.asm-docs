@@ -1,6 +1,8 @@
 ## DiscoverabilityCacheInvalidatedAttribute
 
-`class` in `AdvancedSceneManager.Utility.Discoverability`  /  Inherits from: `DiscoverableAttribute`### Description
+`class` in `AdvancedSceneManager.Utility.Discoverability`  /  Inherits from: `DiscoverableAttribute`
+
+### Description
 Occurs when the discoverables cache has been invalidated, and re-scanned.
 
 <b> Remarks:</b>
@@ -16,4 +18,4 @@ This is also called after discoverables has just been initialized for the first 
 
 | Member | Description |
 |--------|-------------|
-| `virtual boolean IsValidTarget(MemberInfo member)` | Specifies if the member is a valid target for this attribute callback. |
+| `virtual bool IsValidTarget(MemberInfo member)` | Specifies if the member is a valid target for this attribute callback. |

@@ -1,17 +1,13 @@
 ## SceneImportOption
 
-`enum` in `AdvancedSceneManager.Models.Enums`  /  Inherits from: `Enum`### Description
+`enum` in `AdvancedSceneManager.Models.Enums`  /  Inherits from: `Enum`
+
+### Description
 Specifies how to scenes are imported.
 
-### Static Fields
+### Values
 
-| Member | Description |
-|--------|-------------|
-| `SceneImportOption Manual` | User will manually import scenes. |
-| `SceneImportOption SceneCreated` | Scenes will be automatically imported when created, otherwise manual. |
-
-### Fields
-
-| Member | Description |
-|--------|-------------|
-| `int32 value__` | _No documentation available._ |
+| Name | Description |
+|------|-------------|
+| `Manual` | User will manually import scenes. |
+| `SceneCreated` | Scenes will be automatically imported when created, otherwise manual. |

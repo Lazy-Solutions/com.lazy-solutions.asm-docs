@@ -1,6 +1,8 @@
 ## TaskUtility
 
-`static class` in `AdvancedSceneManager.Utility`### Description
+`static class` in `AdvancedSceneManager.Utility`
+
+### Description
 Provides utility methods for working with tasks.
 
 ### Static Methods
@@ -8,6 +10,6 @@ Provides utility methods for working with tasks.
 | Member | Description |
 |--------|-------------|
 | `CoroutineAwaiter GetAwaiter(IEnumerator coroutine)` | Gets an awaiter that allows awaiting the coroutine. |
-| `Awaitable<boolean> StartCoroutineAsAwaitable(IEnumerator coroutine)` | Runs a coroutine as an `Awaitable`1`. |
-| `Task StartCoroutineAsTask(IEnumerator coroutine)` | Runs a coroutine as a `Task`. |
-| `Awaitable WhenAll(Awaitable[] items)` | Waits for all awaitable to finish. |
+| `Awaitable&lt;bool&gt; StartCoroutineAsAwaitable(IEnumerator coroutine)` | Runs a coroutine as an `UnityEngine.Awaitable`. |
+| `Task StartCoroutineAsTask(IEnumerator coroutine)` | Runs a coroutine as a \[Tasks.Task\](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task). |
+| `Awaitable WhenAll(Awaitable\[\] items)` | Waits for all awaitable to finish. |

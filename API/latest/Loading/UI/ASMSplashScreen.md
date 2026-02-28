@@ -1,6 +1,8 @@
 ## ASMSplashScreen
 
-`class` in `AdvancedSceneManager.Loading.UI`  /  Inherits from: `LoadingScreenViewModel<ConfigBag>`### Description
+`class` in `AdvancedSceneManager.Loading.UI`  /  Inherits from: `LoadingScreenViewModel&lt;ASMSplashScreen.ConfigBag&gt;`
+
+### Description
 A splash screen that displays the ASM logo.
 
 <b> Remarks:</b>

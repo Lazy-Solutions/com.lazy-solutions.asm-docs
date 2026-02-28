@@ -1,10 +1,12 @@
 ## UIElementUtility
 
-`static class` in `AdvancedSceneManager.Editor.UI`### Description
-Provides utility methods for working with `VisualElement`.
+`static class` in `AdvancedSceneManager.Editor.UI`
+
+### Description
+Provides utility methods for working with `UIElements.VisualElement`.
 
 ### Static Methods
 
 | Member | Description |
 |--------|-------------|
-| `T UseFontAwesome<T>(T element, Nullable<boolean> solid, Nullable<boolean> regular, Nullable<boolean> brands)` | _No documentation available._ |
+| `T UseFontAwesome&lt;T&gt;(T element, bool? solid, bool? regular, bool? brands)` | Applies font awesome free to the `UIElements.VisualElement`. |
