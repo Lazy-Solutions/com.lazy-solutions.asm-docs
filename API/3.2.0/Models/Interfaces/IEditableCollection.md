@@ -12,4 +12,4 @@ Provides extension methods, see `ASMModelExtensions.Add` for example.
 
 | Member | Description |
 |--------|-------------|
-| `List&lt;Scene&gt; sceneList` | The list of scenes that this collection manages. |
+| `List<Scene> sceneList` | The list of scenes that this collection manages. |

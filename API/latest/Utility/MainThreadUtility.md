@@ -19,9 +19,9 @@ Only usable in play mode.
 
 | Member | Description |
 |--------|-------------|
-| `T Invoke&lt;T&gt;(Func&lt;T&gt; func)` | Queues the function to be run on the main thread, during the next frame. |
+| `T Invoke<T>(Func<T> func)` | Queues the function to be run on the main thread, during the next frame. |
 | `void Invoke(Action action)` | Queues the action to be run on the main thread, during the next frame. |
-| `T Invoke&lt;T&gt;(Func&lt;T&gt; func, bool mainThread)` | Invokes the `func`. |
+| `T Invoke<T>(Func<T> func, bool mainThread)` | Invokes the `func`. |
 | `void Invoke(Action action, bool mainThread)` | Invokes the `action`. |
 | `void Start()` | Starts main thread utility coroutine. |
 | `void Stop()` | Stops main thread utility coroutine. |

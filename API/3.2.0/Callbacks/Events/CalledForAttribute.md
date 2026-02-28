@@ -9,4 +9,4 @@ Specifies when a callback type should be invoked.
 
 | Member | Description |
 |--------|-------------|
-| `When\[\] when` | The conditions that determine when the callback is invoked. |
+| `When[] when` | The conditions that determine when the callback is invoked. |

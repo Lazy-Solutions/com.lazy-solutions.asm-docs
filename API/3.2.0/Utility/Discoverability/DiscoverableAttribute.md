@@ -16,8 +16,8 @@ Represents the base attribute for discoverable attributes.
 
 | Member | Description |
 |--------|-------------|
-| `IEnumerable&lt;DiscoveredMember&gt; Enumerate&lt;T&gt;()` | Enumerates all discoverables of type `T`. |
-| `IEnumerable&lt;ValueTuple&lt;T, T2&gt;&gt; Enumerate&lt;T, T2&gt;()` | Enumerates all discoverables of type `T`. |
+| `IEnumerable<DiscoveredMember> Enumerate<T>()` | Enumerates all discoverables of type `T`. |
+| `IEnumerable<ValueTuple<T, T2>> Enumerate<T, T2>()` | Enumerates all discoverables of type `T`. |
 
 ### Methods
 

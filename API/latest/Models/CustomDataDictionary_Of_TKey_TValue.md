@@ -19,5 +19,5 @@ Represents a serializable dictionary for storing custom data.
 | `bool ContainsKey(TKey key)` | Determines whether the specified key exists. |
 | `bool Get(TKey key, out TValue value)` | Gets custom data. |
 | `TValue Get(TKey key)` | Gets custom data. |
-| `IEnumerator&lt;KeyValuePair&lt;TKey, TValue&gt;&gt; GetEnumerator()` | \_No documentation available.\_ |
+| `IEnumerator<KeyValuePair<TKey, TValue>> GetEnumerator()` | \_No documentation available.\_ |
 | `void Set(TKey key, TValue value)` | Sets custom data. |

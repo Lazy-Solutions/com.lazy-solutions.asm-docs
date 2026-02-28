@@ -29,7 +29,7 @@ Manages initialization, as this `UnityEngine.ScriptableObject` is core to ASM, a
 | `SceneAutoTrackOutsideASMOption sceneAutoTrackOutsideASMOption` | Specifies if ASM should auto track scenes that were loaded outside of ASM. |
 | `SceneImportOption sceneImportOption` | Gets or sets when to automatically import scenes. |
 | `float spamCheckCooldown` | Sets the default cooldown for `Utility.SpamCheck`. |
-| `InputBinding\[\] toolbarBindings` | Specifies the bindings to open the ASM toolbar, if enabled. |
+| `InputBinding[] toolbarBindings` | Specifies the bindings to open the ASM toolbar, if enabled. |
 | `bool toolbarButtonVisible` | Specifies whatever the ASM toolbar button should be visible. |
 | `bool toolbarEnabled` | Specifies whatever the ASM toolbar should be enabled. |
 

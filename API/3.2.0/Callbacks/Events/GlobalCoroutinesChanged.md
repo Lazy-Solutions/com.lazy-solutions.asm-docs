@@ -9,4 +9,4 @@ Occurs when `Utility.CoroutineUtility` starts or ends a coroutine.
 
 | Member | Description |
 |--------|-------------|
-| `IEnumerable&lt;GlobalCoroutine&gt; coroutines` | \_No documentation available.\_ |
+| `IEnumerable<GlobalCoroutine> coroutines` | \_No documentation available.\_ |

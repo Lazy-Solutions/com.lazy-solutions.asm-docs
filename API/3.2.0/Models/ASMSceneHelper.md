@@ -22,22 +22,22 @@ Intended for use from `Events.UnityEvent`.
 
 | Member | Description |
 |--------|-------------|
-| `void \_Activate(Scene scene)` | \_No documentation available.\_ |
-| `void \_CancelPreload()` | Cancels the preload. All preloaded scenes will be fully loaded (limitation by Unity), then closed. No ASM scene callbacks will be called. |
-| `void \_Close(SceneCollection collection)` | \_No documentation available.\_ |
-| `void \_Close(Scene scene)` | \_No documentation available.\_ |
-| `void \_FinishPreload()` | \_No documentation available.\_ |
-| `void \_Open(SceneCollection collection)` | \_No documentation available.\_ |
-| `void \_Open(Scene scene)` | \_No documentation available.\_ |
-| `void \_OpenAdditive(SceneCollection collection)` | Opens the collection as additive. |
-| `void \_OpenAndActivate(Scene scene)` | \_No documentation available.\_ |
-| `void \_Preload(SceneCollection collection)` | Preloads the specified collection. |
-| `void \_Preload(Scene scene)` | Preloads the specified collection. |
-| `void \_PreloadAdditive(SceneCollection collection)` | Preloads the collection as additive. |
-| `void \_Reopen(SceneCollection collection)` | \_No documentation available.\_ |
-| `void \_Reopen(Scene scene)` | \_No documentation available.\_ |
-| `void \_ToggleOpen(SceneCollection collection)` | Toggles the collection open or closed. |
-| `void \_ToggleOpen(Scene scene)` | Toggles the collection open or closed. |
+| `void _Activate(Scene scene)` | \_No documentation available.\_ |
+| `void _CancelPreload()` | Cancels the preload. All preloaded scenes will be fully loaded (limitation by Unity), then closed. No ASM scene callbacks will be called. |
+| `void _Close(SceneCollection collection)` | \_No documentation available.\_ |
+| `void _Close(Scene scene)` | \_No documentation available.\_ |
+| `void _FinishPreload()` | \_No documentation available.\_ |
+| `void _Open(SceneCollection collection)` | \_No documentation available.\_ |
+| `void _Open(Scene scene)` | \_No documentation available.\_ |
+| `void _OpenAdditive(SceneCollection collection)` | Opens the collection as additive. |
+| `void _OpenAndActivate(Scene scene)` | \_No documentation available.\_ |
+| `void _Preload(SceneCollection collection)` | Preloads the specified collection. |
+| `void _Preload(Scene scene)` | Preloads the specified collection. |
+| `void _PreloadAdditive(SceneCollection collection)` | Preloads the collection as additive. |
+| `void _Reopen(SceneCollection collection)` | \_No documentation available.\_ |
+| `void _Reopen(Scene scene)` | \_No documentation available.\_ |
+| `void _ToggleOpen(SceneCollection collection)` | Toggles the collection open or closed. |
+| `void _ToggleOpen(Scene scene)` | Toggles the collection open or closed. |
 | `void Activate(Scene scene)` | \_No documentation available.\_ |
 | `SceneOperation CancelPreload()` | Cancels the preload. All preloaded scenes will be fully loaded (limitation by Unity), then closed. No ASM scene callbacks will be called. |
 | `SceneOperation Close(SceneCollection collection)` | \_No documentation available.\_ |

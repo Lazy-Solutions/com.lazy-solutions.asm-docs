@@ -12,8 +12,8 @@ Only available in editor.
 
 | Member | Description |
 |--------|-------------|
-| `event Action&lt;BuildUtility.PostBuildEventArgs&gt; postBuild` | Occurs after build. |
-| `event Action&lt;BuildReport&gt; preBuild` | Occurs before build. |
+| `event Action<BuildUtility.PostBuildEventArgs> postBuild` | Occurs after build. |
+| `event Action<BuildReport> preBuild` | Occurs before build. |
 
 ### Methods
 
@@ -21,7 +21,7 @@ Only available in editor.
 |--------|-------------|
 | `BuildReport DoBuild(string path, bool attachProfiler, bool runGameWhenBuilt, bool dev, BuildOptions customOptions)` | Performs a build of the active build profile if one exists, otherwise falls back to Unity's legacy build pipeline. |
 | `BuildReport DoBuild(BuildPlayerOptions options)` | Performs a build of the active build profile if one exists, otherwise falls back to Unity's legacy build pipeline. |
-| `IEnumerable&lt;(EditorBuildSettingsScene, BuildUtility.Reason)&gt; GetOrderedList()` | Gets an ordered list of all scenes that ASM would set in the build settings. |
+| `IEnumerable<(EditorBuildSettingsScene, BuildUtility.Reason)> GetOrderedList()` | Gets an ordered list of all scenes that ASM would set in the build settings. |
 | `bool IsEnabled(string path, out BuildUtility.Reason reason)` | Checks if the scene at `path` is considered enabled for build. |
 | `bool IsIncluded(Scene scene, out BuildUtility.Reason reason)` | Checks if a scene is valid and included in the ASM profile. |
 | `void UpdateSceneList()` | Updates the scene build settings. |

@@ -12,7 +12,7 @@ See also `Utility.AutoSceneUtility`.
 
 | Member | Description |
 |--------|-------------|
-| `List&lt;AutoSceneEntry&gt; autoScenes` | Gets the auto scenes. |
+| `List<AutoSceneEntry> autoScenes` | Gets the auto scenes. |
 
 ### Methods
 

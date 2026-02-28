@@ -10,8 +10,8 @@ A utility that provides queuing.
 | Member | Description |
 |--------|-------------|
 | `bool isBusy` | Gets whatever any items in the queue are running. |
-| `IEnumerable&lt;T&gt; queue` | Gets the items currently in queue. |
-| `IEnumerable&lt;T&gt; running` | Gets the items that are currently running. |
+| `IEnumerable<T> queue` | Gets the items currently in queue. |
+| `IEnumerable<T> running` | Gets the items that are currently running. |
 
 ### Static Events
 

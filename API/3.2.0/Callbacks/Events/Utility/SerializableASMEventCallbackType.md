@@ -22,8 +22,8 @@ Also provides a property drawer.
 | Member | Description |
 |--------|-------------|
 | `bool IsValid()` | Gets if this event callback type is valid. |
-| `void RegisterCallback(string key, SceneOperation operation, EventCallback&lt;SceneOperationEventBase&gt; callback)` | Register callback on `operation`. |
-| `void RegisterGlobalCallback(string key, EventCallback&lt;EventCallbackBase&gt; callback)` | Register callback globally. |
+| `void RegisterCallback(string key, SceneOperation operation, EventCallback<SceneOperationEventBase> callback)` | Register callback on `operation`. |
+| `void RegisterGlobalCallback(string key, EventCallback<EventCallbackBase> callback)` | Register callback globally. |
 | `virtual string ToString()` | \_No documentation available.\_ |
 | `SceneOperation UnregisterCallback(string key, SceneOperation operation)` | Unregisters the callback on `operation`. |
 | `void UnregisterGlobalCallback(string key)` | Unregisters the callback globally. |

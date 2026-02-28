@@ -9,4 +9,4 @@ Provides utility methods for working with `UIElements.VisualElement`.
 
 | Member | Description |
 |--------|-------------|
-| `T UseFontAwesome&lt;T&gt;(T element, bool? solid, bool? regular, bool? brands)` | Applies font awesome free to the `UIElements.VisualElement`. |
+| `T UseFontAwesome<T>(T element, bool? solid, bool? regular, bool? brands)` | Applies font awesome free to the `UIElements.VisualElement`. |

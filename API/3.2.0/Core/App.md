@@ -29,7 +29,7 @@ Usage: `SceneManager.app`.
 | `void Exit()` | Exits the application immediately. |
 | `void Play(App.StartupProps props)` | Enters play mode, and runs ASM startup process. If already inside play mode, then startup process will be run again. |
 | `Awaitable Quit(bool fade, Color? fadeColor, float fadeDuration)` | Quits the application with optional fade effect. |
-| `void RegisterQuitCallback(Func&lt;IEnumerator&gt; coroutine)` | Register a callback to be called before quit. |
+| `void RegisterQuitCallback(Func<IEnumerator> coroutine)` | Register a callback to be called before quit. |
 | `void Restart(App.StartupProps props)` | Restarts the ASM startup process. |
-| `Async&lt;bool&gt; RestartAsync(App.StartupProps props)` | Restarts the ASM startup process. |
-| `void UnregisterQuitCallback(Func&lt;IEnumerator&gt; coroutine)` | Unregister a callback that was to be called before quit. |
+| `Async<bool> RestartAsync(App.StartupProps props)` | Restarts the ASM startup process. |
+| `void UnregisterQuitCallback(Func<IEnumerator> coroutine)` | Unregister a callback that was to be called before quit. |

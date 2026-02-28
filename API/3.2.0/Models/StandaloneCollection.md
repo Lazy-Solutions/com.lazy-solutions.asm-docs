@@ -12,6 +12,6 @@ Usage: `Profile.standaloneScenes`.
 
 | Member | Description |
 |--------|-------------|
-| `IEnumerable&lt;string&gt; scenePaths` | \_No documentation available.\_ |
-| `IEnumerable&lt;Scene&gt; scenes` | \_No documentation available.\_ |
-| `IEnumerable&lt;Scene&gt; startupScenes` | Gets all scenes that will be opened on startup. |
+| `IEnumerable<string> scenePaths` | \_No documentation available.\_ |
+| `IEnumerable<Scene> scenes` | \_No documentation available.\_ |
+| `IEnumerable<Scene> startupScenes` | Gets all scenes that will be opened on startup. |

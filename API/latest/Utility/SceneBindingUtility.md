@@ -12,7 +12,7 @@ Only available if input system is installed.
 
 | Member | Description |
 |--------|-------------|
-| `IEnumerable&lt;(SceneCollection, Scene, InputBinding)&gt; GetBindings()` | Gets all bindings in the project. |
+| `IEnumerable<(SceneCollection, Scene, InputBinding)> GetBindings()` | Gets all bindings in the project. |
 | `bool IsDuplicate(InputButton binding)` | Gets if the binding is assigned to multiple scenes / collections. |
 | `bool WasOpenedByBinding(SceneCollection collection)` | Gets if `collection` was opened by a binding. |
 | `bool WasOpenedByBinding(Scene scene)` | Gets if the scene was opened by a binding. |

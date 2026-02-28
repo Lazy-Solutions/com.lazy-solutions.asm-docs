@@ -20,7 +20,7 @@
 | `bool logStartup` | \_No documentation available.\_ |
 | `bool logTracking` | \_No documentation available.\_ |
 | `bool openCollectionOnSceneAssetOpen` | \_No documentation available.\_ |
-| `IEnumerable&lt;SceneCollection&gt; pinnedOverlayCollections` | \_No documentation available.\_ |
+| `IEnumerable<SceneCollection> pinnedOverlayCollections` | \_No documentation available.\_ |
 | `bool startupProcessOnCollectionPlay` | \_No documentation available.\_ |
 | `int toolbarButtonCount` | \_No documentation available.\_ |
 | `float toolbarPlayButtonOffset` | \_No documentation available.\_ |

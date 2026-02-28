@@ -18,5 +18,5 @@ Specifies arguments for `SceneLoader.LoadScene`.
 | `bool CheckIsIncluded(bool logError)` | Checks if the scene is actually included in build. |
 | `Scene GetOpenedScene()` | Gets the `SceneManagement.Scene` that was opened by this override. |
 | `void SetCompleted(Scene scene)` | Notifies ASM that the load is done. |
-| `void SetCompleted(Scene scene, Func&lt;IEnumerator&gt; preloadCallback)` | Notifies ASM that the load is done. |
+| `void SetCompleted(Scene scene, Func<IEnumerator> preloadCallback)` | Notifies ASM that the load is done. |
 | `void SetCompletedWithoutScene()` | Sets this loader as complete even though no scene was loaded. |

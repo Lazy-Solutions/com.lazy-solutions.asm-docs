@@ -23,8 +23,8 @@ Specifies a scene loader.
 
 | Member | Description |
 |--------|-------------|
-| `string GetKey&lt;T&gt;()` | Gets the key for the specified scene loader. |
-| `string GetKey&lt;T&gt;(T obj)` | Gets the key for the specified scene loader. |
+| `string GetKey<T>()` | Gets the key for the specified scene loader. |
+| `string GetKey<T>(T obj)` | Gets the key for the specified scene loader. |
 
 ### Methods
 

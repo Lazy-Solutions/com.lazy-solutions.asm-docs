@@ -30,4 +30,4 @@ May not be available in `[InitializeOnLoad]` and similar, use `SceneManager.OnIn
 
 | Member | Description |
 |--------|-------------|
-| `IEnumerable&lt;Scene&gt; Enumerate()` | Enumerates all imported default scenes. |
+| `IEnumerable<Scene> Enumerate()` | Enumerates all imported default scenes. |

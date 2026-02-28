@@ -9,5 +9,5 @@ Defines members for openable collections.
 
 | Member | Description |
 |--------|-------------|
-| `void \_OpenAdditive()` | Opens the collection as additive. |
+| `void _OpenAdditive()` | Opens the collection as additive. |
 | `SceneOperation OpenAdditive(bool openAll)` | Opens the collection as additive. |

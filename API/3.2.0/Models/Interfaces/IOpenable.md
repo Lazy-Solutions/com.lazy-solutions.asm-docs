@@ -16,10 +16,10 @@ Defines members for openable assets.
 
 | Member | Description |
 |--------|-------------|
-| `void \_Close()` | Closes this asset. |
-| `void \_Open()` | Opens this asset. |
-| `void \_Reopen()` | Reopens this asset. |
-| `void \_ToggleOpen()` | Toggles this asset open or closed. |
+| `void _Close()` | Closes this asset. |
+| `void _Open()` | Opens this asset. |
+| `void _Reopen()` | Reopens this asset. |
+| `void _ToggleOpen()` | Toggles this asset open or closed. |
 | `SceneOperation Close()` | Closes this asset. |
 | `SceneOperation Open()` | Opens this asset. |
 | `SceneOperation Reopen()` | Reopens this asset. |

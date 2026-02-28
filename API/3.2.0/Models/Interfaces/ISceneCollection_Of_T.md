@@ -10,7 +10,7 @@ Defines some core properties for scene collections.
 | Member | Description |
 |--------|-------------|
 | `T Item` | \_No documentation available.\_ |
-| `IEnumerable&lt;T&gt; scenes` | Gets the scenes of this collection. |
+| `IEnumerable<T> scenes` | Gets the scenes of this collection. |
 
 ### Methods
 

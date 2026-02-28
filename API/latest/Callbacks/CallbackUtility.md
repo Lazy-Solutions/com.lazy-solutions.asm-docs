@@ -14,4 +14,4 @@ Handles interfaces derived from `Callbacks.ISceneCallbacks` and their coroutine/
 | `IEnumerator DoCollectionOpenCallbacks(SceneCollection collection)` | Invokes all collection open callbacks on the specified `collection`. |
 | `IEnumerator DoSceneCloseCallbacks(Scene scene)` | Invokes all scene close callbacks on the specified `scene`. |
 | `IEnumerator DoSceneOpenCallbacks(Scene scene)` | Invokes all scene open callbacks on the specified `scene`. |
-| `CallbackUtility.FluentInvokeAPI&lt;T&gt; Invoke&lt;T&gt;()` | Creates a fluent callback invocation API for the specified callback type. |
+| `CallbackUtility.FluentInvokeAPI<T> Invoke<T>()` | Creates a fluent callback invocation API for the specified callback type. |

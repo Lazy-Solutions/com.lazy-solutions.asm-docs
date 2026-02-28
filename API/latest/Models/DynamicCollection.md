@@ -11,8 +11,8 @@ Represents a collection that can take a path and then gather all scenes within, 
 |--------|-------------|
 | `int count` | \_No documentation available.\_ |
 | `string path` | Specifies the path that this dynamic collection will gather scenes from. |
-| `IEnumerable&lt;string&gt; scenePaths` | Gets the paths of the scenes tracked by this dynamic collection. |
-| `IEnumerable&lt;string&gt; scenes` | \_No documentation available.\_ |
+| `IEnumerable<string> scenePaths` | Gets the paths of the scenes tracked by this dynamic collection. |
+| `IEnumerable<string> scenes` | \_No documentation available.\_ |
 
 ### Static Methods
 

@@ -13,13 +13,13 @@ The central Advanced Scene Manager API. Provides access to the most important th
 | `IAssetsAPI assets` | Provides access to the scenes, collections and profiles managed by ASM. |
 | `IDiscoverablesService discoverables` | Provides access to the ASM discoverables service. |
 | `Scene dontDestroyOnLoadScene` | Gets the dontDestroyOnLoad scene. |
-| `EventCallbackManager&lt;EventCallbackBase&gt; events` | Provides access to global ASM event callbacks. |
+| `EventCallbackManager<EventCallbackBase> events` | Provides access to global ASM event callbacks. |
 | `Scene fallbackScene` | Gets the fallback scene. |
 | `bool isInitialized` | Gets whatever ASM is initialized. Calling ASM methods may fail if `false`, this is due to `Models.ASMSettings` singleton not being loaded yet. |
 | `SceneCollection openCollection` | \_No documentation available.\_ |
-| `IEnumerable&lt;Scene&gt; openScenes` | \_No documentation available.\_ |
+| `IEnumerable<Scene> openScenes` | \_No documentation available.\_ |
 | `Package package` | Contains info about the ASM package. |
-| `IEnumerable&lt;Scene&gt; preloadedScenes` | \_No documentation available.\_ |
+| `IEnumerable<Scene> preloadedScenes` | \_No documentation available.\_ |
 | `Profile profile` | \_No documentation available.\_ |
 | `Runtime runtime` | Manages runtime functionality for Advanced Scene Manager such as open scenes and collection. |
 | `IServiceContainer services` | Provides access to the ASM service container. |

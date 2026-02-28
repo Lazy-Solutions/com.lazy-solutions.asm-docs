@@ -15,9 +15,9 @@ Defines members for assets that support preloading.
 
 | Member | Description |
 |--------|-------------|
-| `void \_CancelPreload()` | Cancels all active preloads. |
-| `void \_FinishPreload()` | Finishes all active preloads. |
-| `void \_Preload()` | Preloads this asset. |
+| `void _CancelPreload()` | Cancels all active preloads. |
+| `void _FinishPreload()` | Finishes all active preloads. |
+| `void _Preload()` | Preloads this asset. |
 | `SceneOperation CancelPreload()` | Cancels all active preloads. |
 | `SceneOperation FinishPreload()` | Finishes all active preloads. |
 | `SceneOperation Preload()` | Preloads this asset. |

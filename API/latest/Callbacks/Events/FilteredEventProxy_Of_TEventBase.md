@@ -12,5 +12,5 @@ You probably want to use either `Scene.RegisterCallback` or `SceneCollection.Reg
 
 | Member | Description |
 |--------|-------------|
-| `void RegisterCallback&lt;T&gt;(EventCallback&lt;T&gt; callback, When when, string key)` | \_No documentation available.\_ |
-| `void UnregisterCallback&lt;T&gt;(EventCallback&lt;T&gt; callback, When when, string key)` | \_No documentation available.\_ |
+| `void RegisterCallback<T>(EventCallback<T> callback, When when, string key)` | \_No documentation available.\_ |
+| `void UnregisterCallback<T>(EventCallback<T> callback, When when, string key)` | \_No documentation available.\_ |

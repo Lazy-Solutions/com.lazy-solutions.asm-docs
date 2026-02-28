@@ -9,28 +9,28 @@ A profile for ASM, contains settings and collections.
 
 | Member | Description |
 |--------|-------------|
-| `IEnumerable&lt;ISceneCollection&gt; allCollections` | Gets `Profile.collections`, `Profile.standaloneScenes`, `Profile.dynamicCollections`. |
-| `IEnumerable&lt;Scene&gt; allScenes` | Gets all scenes, including child profile scenes. |
+| `IEnumerable<ISceneCollection> allCollections` | Gets `Profile.collections`, `Profile.standaloneScenes`, `Profile.dynamicCollections`. |
+| `IEnumerable<Scene> allScenes` | Gets all scenes, including child profile scenes. |
 | `bool autoSwitchBuildProfileOnBuild` | Specifies whether ASM may write the build scene list to Unity’s active build profile when no build profile is explicitly associated. |
 | `bool autoUpdateBuildScenes` | Specifies whatever build scene list should be automatically updated. |
-| `IEnumerable&lt;Profile&gt; childProfiles` | Gets the child profiles for this profile. |
-| `IEnumerable&lt;Scene&gt; childProfileScenes` | Gets all scenes from child profiles. |
-| `IEnumerable&lt;SceneCollection&gt; childProfileStartupCollections` | Gets all startup collections from child profiles. |
-| `IEnumerable&lt;Scene&gt; childProfileStartupScenes` | Gets all startup scenes from child profiles. |
-| `IEnumerable&lt;SceneCollection&gt; collections` | Gets the collections contained within this profile. |
-| `IEnumerable&lt;DynamicCollection&gt; dynamicCollections` | Gets the dynamic collections contained within this profile. |
+| `IEnumerable<Profile> childProfiles` | Gets the child profiles for this profile. |
+| `IEnumerable<Scene> childProfileScenes` | Gets all scenes from child profiles. |
+| `IEnumerable<SceneCollection> childProfileStartupCollections` | Gets all startup collections from child profiles. |
+| `IEnumerable<Scene> childProfileStartupScenes` | Gets all startup scenes from child profiles. |
+| `IEnumerable<SceneCollection> collections` | Gets the collections contained within this profile. |
+| `IEnumerable<DynamicCollection> dynamicCollections` | Gets the dynamic collections contained within this profile. |
 | `bool isActive` | Gets if this profile is set as active. |
 | `LoadingScreenReference loadingScreen` | The default loading scene. |
 | `bool notify` | Specifies whatever this profile should trigger a notification when imported. |
 | `string notifyMessage` | Specifies the notification messasge, when `Profile.notify` is `true`. |
-| `IEnumerable&lt;ISceneCollection&gt; removedCollections` | Gets all removed collections in this profile. |
-| `IEnumerable&lt;Scene&gt; scenes` | Gets the scenes managed by this profile. |
-| `IEnumerable&lt;Scene&gt; specialScenes` | Gets default loading screen, splash screen and startup loading screen. |
+| `IEnumerable<ISceneCollection> removedCollections` | Gets all removed collections in this profile. |
+| `IEnumerable<Scene> scenes` | Gets the scenes managed by this profile. |
+| `IEnumerable<Scene> specialScenes` | Gets default loading screen, splash screen and startup loading screen. |
 | `LoadingScreenReference splashScreen` | The splash scene. |
 | `StandaloneCollection standaloneScenes` | Gets the standalone scenes contained within this profile. |
-| `IEnumerable&lt;SceneCollection&gt; startupCollections` | Gets the collections that will be opened on startup. |
+| `IEnumerable<SceneCollection> startupCollections` | Gets the collections that will be opened on startup. |
 | `Scene startupScene` | The startup scene. |
-| `IEnumerable&lt;Scene&gt; startupScenes` | Gets the scenes flagged to open on startup. |
+| `IEnumerable<Scene> startupScenes` | Gets the scenes flagged to open on startup. |
 | `BuildProfile unityBuildProfile` | Specifies the `Profile.BuildProfile` that ASM writes its build scene list to. |
 | `bool unloadUnusedAssetsForStandalone` | Enable or disable ASM calling `Resources.UnloadUnusedAssets` after standalone scenes has been opened or closed. |
 
@@ -67,8 +67,8 @@ A profile for ASM, contains settings and collections.
 | `void CreateDynamicCollection()` | Creates a dynamic collection with default values. |
 | `DynamicCollection CreateDynamicCollection(string path, string title)` | Creates a dynamic collection with the specified path and optional title. |
 | `void Delete(ISceneCollection collection)` | Deletes a collection. Does not prompt undo. |
-| `IEnumerable&lt;ISceneCollection&gt; FindCollections(Scene scene)` | Finds all collection that the scene is included in. Includes dynamic collections. |
-| `IEnumerable&lt;ISceneCollection&gt; FindUntrackedCollections()` | Gets all collections saved as sub assets of this profile, that are not referenced in it. |
+| `IEnumerable<ISceneCollection> FindCollections(Scene scene)` | Finds all collection that the scene is included in. Includes dynamic collections. |
+| `IEnumerable<ISceneCollection> FindUntrackedCollections()` | Gets all collections saved as sub assets of this profile, that are not referenced in it. |
 | `int IndexOf(SceneCollection collection)` | Gets the index of the specified collection. |
 | `int IndexOf(DynamicCollection collection)` | Gets the index of the specified collection. |
 | `bool IsStartupCollection(SceneCollection collection)` | Gets if the specified collection is a startup collection. |

@@ -15,13 +15,13 @@ Only available in the editor.
 | `void AddNotification(Notification notification)` | Adds a notification to the ASM window, optionally with click and dismiss callbacks, dismiss behavior, visual style, and icon information. |
 | `void ClosePopup()` | Closes the currently open popup, if one is open.. |
 | `bool IsPopupOpen()` | Determines whether any popup is currently open. |
-| `bool IsPopupOpen&lt;T&gt;()` | Determines whether a popup of type `T` is currently open. |
-| `void OpenPopup&lt;T&gt;()` | Opens `T` as a popup. |
-| `void OpenPopup&lt;T&gt;(ViewModelContext? context)` | Opens `T` as a popup. |
+| `bool IsPopupOpen<T>()` | Determines whether a popup of type `T` is currently open. |
+| `void OpenPopup<T>()` | Opens `T` as a popup. |
+| `void OpenPopup<T>(ViewModelContext? context)` | Opens `T` as a popup. |
 | `void OpenPopup(Type type, ViewModelContext? context)` | Opens `type` as a popup. |
 | `void OpenSettings()` | Opens the settings popup on the main page. |
-| `void OpenSettings&lt;T&gt;()` | Opens the settings popup on the `T` page. |
-| `void OpenSettings&lt;T&gt;(ViewModelContext context)` | Opens the settings popup on the `T` page. |
+| `void OpenSettings<T>()` | Opens the settings popup on the `T` page. |
+| `void OpenSettings<T>(ViewModelContext context)` | Opens the settings popup on the `T` page. |
 | `void OpenSettings(Type type)` | Opens the settings popup on the page that matches the view model specified by `type`. |
 | `void OpenSettings(Type type, ViewModelContext context)` | Opens the settings popup on the page that matches the view model specified by `type`. |
 | `void ReloadCollections()` | Reloads collection ui. |

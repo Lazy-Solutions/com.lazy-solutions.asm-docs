@@ -9,5 +9,5 @@ Defines members for openable collections.
 
 | Member | Description |
 |--------|-------------|
-| `void \_OpenAdditive(T model)` | Opens the collection as additive. |
+| `void _OpenAdditive(T model)` | Opens the collection as additive. |
 | `SceneOperation OpenAdditive(T model, bool openAll)` | Opens the collection as additive. |

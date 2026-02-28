@@ -12,4 +12,4 @@ See `Events.SceneClosePhaseEvent`, `Events.SceneOpenPhaseEvent`, `Events.ScenePr
 
 | Member | Description |
 |--------|-------------|
-| `IEnumerable&lt;Scene&gt; scenes` | \_No documentation available.\_ |
+| `IEnumerable<Scene> scenes` | \_No documentation available.\_ |

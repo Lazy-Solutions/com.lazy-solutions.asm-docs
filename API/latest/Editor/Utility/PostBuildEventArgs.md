@@ -9,6 +9,6 @@ Represents a post build summary.
 
 | Member | Description |
 |--------|-------------|
-| `BuildUtility.LogEntry\[\] error` | \_No documentation available.\_ |
+| `BuildUtility.LogEntry[] error` | \_No documentation available.\_ |
 | `BuildReport report` | \_No documentation available.\_ |
-| `BuildUtility.LogEntry\[\] warning` | \_No documentation available.\_ |
+| `BuildUtility.LogEntry[] warning` | \_No documentation available.\_ |

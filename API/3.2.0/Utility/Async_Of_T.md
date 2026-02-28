@@ -9,7 +9,7 @@ Represents a async operation that returns a value.
 
 | Member | Description |
 |--------|-------------|
-| `Async&lt;T&gt; complete` | Gets a `Utility.Async` that is already completed. |
+| `Async<T> complete` | Gets a `Utility.Async` that is already completed. |
 
 ### Properties
 
@@ -22,10 +22,10 @@ Represents a async operation that returns a value.
 
 | Member | Description |
 |--------|-------------|
-| `Async&lt;T&gt; FromResult(T result)` | Gets a completed `Utility.Async` with the specified value. |
+| `Async<T> FromResult(T result)` | Gets a completed `Utility.Async` with the specified value. |
 
 ### Methods
 
 | Member | Description |
 |--------|-------------|
-| `void OnComplete(Action&lt;T&gt; callback)` | Calls the callback when the async operation is complete. |
+| `void OnComplete(Action<T> callback)` | Calls the callback when the async operation is complete. |

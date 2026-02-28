@@ -12,15 +12,15 @@ May not be available in `[InitializeOnLoad]` and similar, use `SceneManager.OnIn
 
 | Member | Description |
 |--------|-------------|
-| `IEnumerable&lt;SceneCollectionTemplate&gt; collectionTemplates` | Enumerates all collection templates tracked by ASM. |
+| `IEnumerable<SceneCollectionTemplate> collectionTemplates` | Enumerates all collection templates tracked by ASM. |
 | `IAssetsAPIDefaultScenes defaults` | Provides access to the default ASM scenes. |
-| `IEnumerable&lt;Profile&gt; profiles` | Enumerates all profiles tracked by ASM. |
+| `IEnumerable<Profile> profiles` | Enumerates all profiles tracked by ASM. |
 | `ASMSceneHelper sceneHelper` | Provides access to the scene helper. |
-| `IEnumerable&lt;Scene&gt; scenes` | Enumerates all imported scenes tracked by ASM. |
+| `IEnumerable<Scene> scenes` | Enumerates all imported scenes tracked by ASM. |
 
 ### Methods
 
 | Member | Description |
 |--------|-------------|
-| `IEnumerable&lt;T&gt; Enumerate&lt;T&gt;()` | Enumerates all assets of type `T`. |
-| `IEnumerable&lt;IASMModel&gt; Enumerate()` | Enumerates all assets. |
+| `IEnumerable<T> Enumerate<T>()` | Enumerates all assets of type `T`. |
+| `IEnumerable<IASMModel> Enumerate()` | Enumerates all assets. |

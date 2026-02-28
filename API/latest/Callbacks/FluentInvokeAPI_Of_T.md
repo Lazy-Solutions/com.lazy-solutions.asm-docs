@@ -15,9 +15,9 @@ Provides a fluent API for invoking callbacks of type `T`.
 
 | Member | Description |
 |--------|-------------|
-| `IEnumerator On(SceneCollection collection, Scene\[\] additionalScenes)` | Invokes the callback on all scenes in the specified `collection`. |
-| `IEnumerator On(Scene\[\] scenes)` | Invokes the callback on the specified `scenes`. |
-| `IEnumerator On(ScriptableObject\[\] scriptableObjects)` | Invokes the callback on the specified `scriptableObjects`. |
+| `IEnumerator On(SceneCollection collection, Scene[] additionalScenes)` | Invokes the callback on all scenes in the specified `collection`. |
+| `IEnumerator On(Scene[] scenes)` | Invokes the callback on the specified `scenes`. |
+| `IEnumerator On(ScriptableObject[] scriptableObjects)` | Invokes the callback on the specified `scriptableObjects`. |
 | `IEnumerator OnAllOpenScenes()` | Invokes the callback on all currently open scenes. |
-| `CallbackUtility.FluentInvokeAPI&lt;T&gt; WithCallback(CallbackUtility.FluentInvokeAPI&lt;T&gt;.Callback&lt;T&gt; callback)` | \_No documentation available.\_ |
-| `CallbackUtility.FluentInvokeAPI&lt;T&gt; WithParam(object param)` | Specifies an optional parameter passed to the invoked callback. |
+| `CallbackUtility.FluentInvokeAPI<T> WithCallback(CallbackUtility.FluentInvokeAPI<T>.Callback<T> callback)` | \_No documentation available.\_ |
+| `CallbackUtility.FluentInvokeAPI<T> WithParam(object param)` | Specifies an optional parameter passed to the invoked callback. |

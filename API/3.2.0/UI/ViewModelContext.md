@@ -21,5 +21,5 @@ Provides info about where a view model is hosted at in the ASM window.
 
 | Member | Description |
 |--------|-------------|
-| `T OfType&lt;T&gt;()` | Gets `ViewModelContext.customParam` as `T`. |
+| `T OfType<T>()` | Gets `ViewModelContext.customParam` as `T`. |
 | `virtual string ToString()` | \_No documentation available.\_ |

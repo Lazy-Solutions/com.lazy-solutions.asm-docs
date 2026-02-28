@@ -9,4 +9,4 @@ Applies a filter to the types displayed in `Utility.ASMEventCallbackPropertyDraw
 
 | Member | Description |
 |--------|-------------|
-| `Type\[\] HiddenTypes` | Specifies the types to hide in the list. |
+| `Type[] HiddenTypes` | Specifies the types to hide in the list. |

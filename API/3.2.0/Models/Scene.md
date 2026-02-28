@@ -15,12 +15,12 @@ A scene can be imported in the ASM window (via notification / popup), or by usin
 | `string address` | Gets the addressable address for this scene. |
 | `string asmPath` | Gets the path of this `Models.Scene`. |
 | `EditorPersistentOption autoOpenInEditor` | Specifies whatever this scene should be opened automatically outside of play-mode. |
-| `List&lt;Scene&gt; autoOpenInEditorScenes` | Specifies the scenes that should trigger this scene to open when `Scene.autoOpenInEditor` is set to `EditorPersistentOption.WhenAnyOfTheFollowingScenesAreOpened`. |
-| `IEnumerable&lt;CrossSceneReference&gt; crossSceneReferences { get; }` | Enumerates the cross-scene references defined on this scene. |
+| `List<Scene> autoOpenInEditorScenes` | Specifies the scenes that should trigger this scene to open when `Scene.autoOpenInEditor` is set to `EditorPersistentOption.WhenAnyOfTheFollowingScenesAreOpened`. |
+| `IEnumerable<CrossSceneReference> crossSceneReferences { get; }` | Enumerates the cross-scene references defined on this scene. |
 | `Scene.Events events` | Gets the unity events for this scene. |
 | `bool hasSceneAsset` | Gets if `Scene.m\_sceneAsset` has a value. |
-| `Scene\[\] ignoreInputBindingsForScenes` | Specifies scenes where input bindings should be ignored while open (for this scene). |
-| `InputBinding\[\] inputBindings` | Gets or sets the input bindings for this scene. |
+| `Scene[] ignoreInputBindingsForScenes` | Specifies scenes where input bindings should be ignored while open (for this scene). |
+| `InputBinding[] inputBindings` | Gets or sets the input bindings for this scene. |
 | `Scene inputBindingsLoadingScene` | Specifies loading screen to use when opening or closing this scene using a input binding. |
 | `Scene? internalScene { get; }` | Gets the `SceneManagement.Scene` that this scene is associated with. |
 | `bool isActive` | Gets if this scene is currently active. |
@@ -71,11 +71,11 @@ Used in `AssetDatabase.FindAssets`. |
 
 | Member | Description |
 |--------|-------------|
-| `IEnumerable&lt;Scene&gt; Find(Func&lt;Scene, bool&gt; predicate)` | Find scenes by name or path. |
+| `IEnumerable<Scene> Find(Func<Scene, bool> predicate)` | Find scenes by name or path. |
 | `Scene Find(string q)` | Find scenes by name or path. |
-| `IEnumerable&lt;Scene&gt; Find&lt;TSceneLoader&gt;()` | Find scenes by enabled scene loader. |
-| `IEnumerable&lt;Scene&gt; FindOpen(string q)` | Find open scenes by name or path. |
-| `IEnumerable&lt;Scene&gt; FindOpen(Func&lt;Scene, bool&gt; predicate)` | Find open scenes by name or path. |
+| `IEnumerable<Scene> Find<TSceneLoader>()` | Find scenes by enabled scene loader. |
+| `IEnumerable<Scene> FindOpen(string q)` | Find open scenes by name or path. |
+| `IEnumerable<Scene> FindOpen(Func<Scene, bool> predicate)` | Find open scenes by name or path. |
 | `bool IsEqual(object left, object right)` | \_No documentation available.\_ |
 | `bool TryFind(string q, out Scene scene)` | Find scenes by name or path. |
 
@@ -83,16 +83,16 @@ Used in `AssetDatabase.FindAssets`. |
 
 | Member | Description |
 |--------|-------------|
-| `void \_Activate()` | Activates this scene. |
-| `void \_CloseWithLoadingScreen(Scene loadingScene)` | Closes this scene with the specified `loadingScene`. |
-| `void \_OpenAndActivate()` | Opens this scene and activates it. |
-| `void \_OpenWithLoadingScreen(Scene loadingScene)` | Opens this scene with the specified `loadingScene`. |
+| `void _Activate()` | Activates this scene. |
+| `void _CloseWithLoadingScreen(Scene loadingScene)` | Closes this scene with the specified `loadingScene`. |
+| `void _OpenAndActivate()` | Opens this scene and activates it. |
+| `void _OpenWithLoadingScreen(Scene loadingScene)` | Opens this scene with the specified `loadingScene`. |
 | `void Activate()` | Activates this scene. |
 | `void AddCrossSceneReference(CrossSceneReference reference)` | Adds a cross-scene reference for this scene. |
 | `void ClearSceneLoader()` | Clears custom scene loader for this scene. This means normal ASM functionality will be used. |
 | `virtual SceneOperation Close()` | Closes this scene. |
 | `SceneOperation CloseWithLoadingScreen(Scene loadingScene)` | Closes this scene with the specified `loadingScene`. |
-| `IEnumerable&lt;AutoSceneEntry&gt; EnumerateAutoScenes()` | Enumerates all auto scenes on this scene. |
+| `IEnumerable<AutoSceneEntry> EnumerateAutoScenes()` | Enumerates all auto scenes on this scene. |
 | `virtual bool Equals(object obj)` | \_No documentation available.\_ |
 | `bool Equals(Scene other)` | \_No documentation available.\_ |
 | `bool Equals(Scene? other)` | \_No documentation available.\_ |
@@ -105,12 +105,12 @@ Used in `AssetDatabase.FindAssets`. |
 | `AutoSceneEntry FindAutoScene(SceneAsset scene, AutoSceneOption option)` | \_No documentation available.\_ |
 | `AutoSceneEntry FindAutoScene(SceneAsset scene, string customOption)` | \_No documentation available.\_ |
 | `bool FindAutoSceneForOption(string customOption, out AutoSceneEntry entry)` | Finds the auto scene with the specified custom option on this scene. |
-| `T FindObject&lt;T&gt;()` | Finds the object in the hierarchy of this `Models.Scene`. |
-| `bool FindObject&lt;T&gt;(out T component)` | \_No documentation available.\_ |
-| `IEnumerable&lt;T&gt; FindObjects&lt;T&gt;()` | Finds the objects in the hierarchy of this `Models.Scene`. |
+| `T FindObject<T>()` | Finds the object in the hierarchy of this `Models.Scene`. |
+| `bool FindObject<T>(out T component)` | \_No documentation available.\_ |
+| `IEnumerable<T> FindObjects<T>()` | Finds the objects in the hierarchy of this `Models.Scene`. |
 | `SceneLoader GetEffectiveSceneLoader()` | Gets the effective, contextual, scene loader for this scene. `null` if none found (this means normal ASM loader will be used). |
 | `virtual int GetHashCode()` | \_No documentation available.\_ |
-| `IEnumerable&lt;GameObject&gt; GetRootGameObjects()` | Gets the root game objects in this `Models.Scene`. |
+| `IEnumerable<GameObject> GetRootGameObjects()` | Gets the root game objects in this `Models.Scene`. |
 | `SceneLoader GetSceneLoader()` | Gets the scene loader specified for this scene. `null` if none set. |
 | `string GetTooltip()` | Gets the SceneField tooltip. |
 | `virtual bool IsMatch(string q)` | Gets if `q` matches `ASMModelBase.name`, `ASMModelBase.id`, `Scene.path`. |
@@ -119,7 +119,7 @@ Used in `AssetDatabase.FindAssets`. |
 | `SceneOperation OpenWithLoadingScreen(Scene loadingScene)` | Opens this scene with the specified `loadingScene`. |
 | `virtual SceneOperation Preload()` | Preloads this scene. |
 | `SceneOperation Preload(Action onPreloaded)` | Preloads this scene. |
-| `void RegisterCallback&lt;T&gt;(EventCallback&lt;T&gt; callback, When when, string key)` | \_No documentation available.\_ |
+| `void RegisterCallback<T>(EventCallback<T> callback, When when, string key)` | \_No documentation available.\_ |
 | `void RemoveCrossSceneReference(CrossSceneReference reference)` | Removes a cross-scene reference for this scene. |
 | `virtual SceneOperation Reopen()` | Reopens this scene. |
 | `void SetAutoOpenIn(SceneCollection collection, bool openSceneWhenCollectionOpen)` | Toggles whatever this scene should be automatically opened when a collection is opened. No effect if scene is not already contained within collection. |
@@ -129,9 +129,9 @@ Used in `AssetDatabase.FindAssets`. |
 | `void SetAutoScene(string scenePath, string customOption)` | \_No documentation available.\_ |
 | `void SetAutoScene(SceneAsset scene, AutoSceneOption option)` | \_No documentation available.\_ |
 | `void SetAutoScene(SceneAsset scene, string customOption)` | \_No documentation available.\_ |
-| `void SetSceneLoader&lt;T&gt;()` | Specifies the scene loader to use for this scene. |
+| `void SetSceneLoader<T>()` | Specifies the scene loader to use for this scene. |
 | `bool ShouldAutoOpenIn(SceneCollection collection)` | Gets whatever the scene should automatically open, when this collection is opened. |
 | `virtual SceneOperation ToggleOpen()` | Toggles this scene open or closed. |
 | `virtual string ToString()` | \_No documentation available.\_ |
-| `void UnregisterCallback&lt;T&gt;(EventCallback&lt;T&gt; callback, When when, string key)` | \_No documentation available.\_ |
-| `bool UsesSceneLoader&lt;T&gt;()` | Gets whatever `T` is enabled for this scene. |
+| `void UnregisterCallback<T>(EventCallback<T> callback, When when, string key)` | \_No documentation available.\_ |
+| `bool UsesSceneLoader<T>()` | Gets whatever `T` is enabled for this scene. |

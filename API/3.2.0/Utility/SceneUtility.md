@@ -18,7 +18,7 @@ An utility class to perform actions on scenes.
 
 | Member | Description |
 |--------|-------------|
-| `void AddScript&lt;T&gt;(Scene scene, Action&lt;T&gt; configure)` | Adds a script to this scene. If scene is closed, it will be temporarily opened. |
+| `void AddScript<T>(Scene scene, Action<T> configure)` | Adds a script to this scene. If scene is closed, it will be temporarily opened. |
 | `bool ASMScene(Component component, out Scene scene)` | \_No documentation available.\_ |
 | `Scene ASMScene(GameObject gameObject, out Scene scene)` | \_No documentation available.\_ |
 | `Scene ASMScene(Component component)` | \_No documentation available.\_ |
@@ -27,57 +27,57 @@ An utility class to perform actions on scenes.
 | `Scene ASMScene(Scene scene)` | Gets the associated ASM `Models.Scene`. |
 | `bool ASMScene(SceneAsset thisScene, out Scene scene)` | \_No documentation available.\_ |
 | `Scene ASMScene(SceneAsset scene)` | Finds the asm representation of this `UnityEditor.SceneAsset`. |
-| `IEnumerable&lt;SceneAsset&gt; Create(string\[\] paths)` | \_No documentation available.\_ |
-| `IEnumerable&lt;SceneAsset&gt; Create(IEnumerable&lt;string&gt; paths)` | \_No documentation available.\_ |
+| `IEnumerable<SceneAsset> Create(string[] paths)` | \_No documentation available.\_ |
+| `IEnumerable<SceneAsset> Create(IEnumerable<string> paths)` | \_No documentation available.\_ |
 | `SceneAsset Create(string path)` | Creates a scene at the specified path. |
 | `Scene CreateAddressableScene(string name, AssetReference assetReference)` | Creates an addressable, runtime-only, scene. |
 | `Scene CreateAndImport(string path)` | Creates and imports a scene. |
-| `IEnumerable&lt;Scene&gt; CreateAndImport(string\[\] paths)` | Creates and imports a scene. |
-| `IEnumerable&lt;Scene&gt; CreateAndImport(IEnumerable&lt;string&gt; paths)` | Creates and imports a scene. |
+| `IEnumerable<Scene> CreateAndImport(string[] paths)` | Creates and imports a scene. |
+| `IEnumerable<Scene> CreateAndImport(IEnumerable<string> paths)` | Creates and imports a scene. |
 | `void CreateAsset(string folder, string baseClass, string namespaceName, string name)` | Creates a scene asset and script based on the specified base class. |
 | `Scene CreateDynamic(string name, LocalPhysicsMode localPhysicsMode)` | Creates a scene at runtime, that is not saved to disk. |
 | `GameObject CreateHere(MonoBehaviour mono)` | Creates a game object in this scene. |
 | `GameObject CreateHere(MonoBehaviour mono, string name)` | Creates a game object in this scene. |
-| `GameObject CreateHere(MonoBehaviour mono, string name, Type\[\] components)` | Creates a game object in this scene. |
-| `TComponent CreateHere&lt;TComponent&gt;(MonoBehaviour mono, string gameObjectName)` | Creates a game object in this scene. Adds and returns component `TComponent`. |
+| `GameObject CreateHere(MonoBehaviour mono, string name, Type[] components)` | Creates a game object in this scene. |
+| `TComponent CreateHere<TComponent>(MonoBehaviour mono, string gameObjectName)` | Creates a game object in this scene. Adds and returns component `TComponent`. |
 | `void CreateLoadingScreenAsset(string folder, string name, string namespaceName)` | Creates a loading screen scene and its corresponding script. |
 | `void CreateSplashScreenAsset(string folder, string name, string namespaceName)` | Creates a splash screen scene and its corresponding script. |
 | `void Disable(Scene scene)` | Sets all root objects as disabled. |
 | `void Enable(Scene scene)` | Sets all root objects as enabled. |
-| `IEnumerable&lt;Scene&gt; EvaluateFinalSceneList(Profile profile, App.StartupProps props)` | Evaluate the final scene list after startup. |
-| `IEnumerable&lt;Scene&gt; EvaluateFinalSceneList(IEnumerable&lt;SceneCollection&gt; collections)` | Evaluate the final scene list after opening a sequence of collections. |
+| `IEnumerable<Scene> EvaluateFinalSceneList(Profile profile, App.StartupProps props)` | Evaluate the final scene list after startup. |
+| `IEnumerable<Scene> EvaluateFinalSceneList(IEnumerable<SceneCollection> collections)` | Evaluate the final scene list after opening a sequence of collections. |
 | `Scene Find(string q)` | Find scenes by name or path. |
-| `IEnumerable&lt;Scene&gt; Find(Func&lt;Scene, bool&gt; predicate)` | Find scenes by predicate. |
+| `IEnumerable<Scene> Find(Func<Scene, bool> predicate)` | Find scenes by predicate. |
 | `Scene FindAddressableScene(AssetReference assetReference)` | Finds the scene with the associated `AddressableAssets.AssetReference`. |
 | `bool FindCollection(Scene scene, out SceneCollection collection)` | \_No documentation available.\_ |
 | `SceneCollection FindCollection(Scene scene)` | Attempts to find best match for collection. |
-| `IEnumerable&lt;SceneCollection&gt; FindCollections(Scene scene, bool allProfiles)` | Finds which collections that this scene is a part of. |
-| `IEnumerable&lt;SceneCollection&gt; FindCollections(Scene scene, Profile profile)` | Finds which collections that this scene is a part of. |
-| `IEnumerable&lt;Scene&gt; FindOpen(string q)` | Find open scenes by name or path. |
-| `IEnumerable&lt;Scene&gt; FindOpen(Func&lt;Scene, bool&gt; predicate)` | Find open scenes by predicate. |
-| `IEnumerable&lt;Scene&gt; GetAllOpenUnityScenes()` | Get all open unity scenes. |
+| `IEnumerable<SceneCollection> FindCollections(Scene scene, bool allProfiles)` | Finds which collections that this scene is a part of. |
+| `IEnumerable<SceneCollection> FindCollections(Scene scene, Profile profile)` | Finds which collections that this scene is a part of. |
+| `IEnumerable<Scene> FindOpen(string q)` | Find open scenes by name or path. |
+| `IEnumerable<Scene> FindOpen(Func<Scene, bool> predicate)` | Find open scenes by predicate. |
+| `IEnumerable<Scene> GetAllOpenUnityScenes()` | Get all open unity scenes. |
 | `Scene Import(SceneAsset scene)` | \_No documentation available.\_ |
-| `IEnumerable&lt;Scene&gt; Import(IEnumerable&lt;SceneAsset&gt; scene)` | \_No documentation available.\_ |
+| `IEnumerable<Scene> Import(IEnumerable<SceneAsset> scene)` | \_No documentation available.\_ |
 | `Scene Import(string scene)` | Imports the scene into ASM and returns it. Returns already imported scene if already imported. |
-| `IEnumerable&lt;Scene&gt; Import(string\[\] scene)` | Imports the scene into ASM and returns it. Returns already imported scene if already imported. |
+| `IEnumerable<Scene> Import(string[] scene)` | Imports the scene into ASM and returns it. Returns already imported scene if already imported. |
 | `bool IsIncluded(Scene scene)` | Gets if the scene is included in build. |
-| `void MergeScenes(Scene targetScene, Scene\[\] scenes)` | Merges the specified scenes into the target scene. |
-| `void MergeScenes(string targetScenePath, string\[\] scenePaths)` | Merges the specified scenes into the target scene. |
-| `void MergeScenesPreserveOriginal(Scene targetScene, Scene\[\] scenes)` | Merges the specified scenes into the target scene, preserving the originals. |
-| `void MergeScenesPreserveOriginal(string targetScenePath, string\[\] scenePaths)` | Merges the specified scenes into the target scene, preserving the originals. |
+| `void MergeScenes(Scene targetScene, Scene[] scenes)` | Merges the specified scenes into the target scene. |
+| `void MergeScenes(string targetScenePath, string[] scenePaths)` | Merges the specified scenes into the target scene. |
+| `void MergeScenesPreserveOriginal(Scene targetScene, Scene[] scenes)` | Merges the specified scenes into the target scene, preserving the originals. |
+| `void MergeScenesPreserveOriginal(string targetScenePath, string[] scenePaths)` | Merges the specified scenes into the target scene, preserving the originals. |
 | `void Move(GameObject obj, Scene scene)` | Move a GameObject from its current Scene to a new Scene. |
 | `void Move(GameObject obj, Scene scene)` | Move a GameObject from its current Scene to a new Scene. |
 | `void MoveAfter(Scene sceneToMove, Scene otherScene)` | Moves the scene after another scene. |
 | `void MoveBefore(Scene sceneToMove, Scene otherScene)` | Moves the scene before another scene in the heirarchy. |
 | `GameObject MoveHere(MonoBehaviour mono, GameObject obj)` | Moves `obj` to this scene. |
 | `void MoveToBottom(Scene sceneToMove)` | Moves the scene to the bottom in the hierarchy. |
-| `void MoveToNewScene(GameObject\[\] objects)` | Moves the object to a new scene. |
+| `void MoveToNewScene(GameObject[] objects)` | Moves the object to a new scene. |
 | `void MoveToTop(Scene sceneToMove)` | Moves the scene to the top in the hierarchy. |
-| `void RemoveScript&lt;T&gt;(Scene scene, bool removeGameObject)` | Removes a script from this scene. |
+| `void RemoveScript<T>(Scene scene, bool removeGameObject)` | Removes a script from this scene. |
 | `void SetEnabled(Scene scene, bool isEnabled)` | Sets all root objects as enabled / disabled. |
 | `void Unimport(SceneAsset scene)` | \_No documentation available.\_ |
-| `void Unimport(IEnumerable&lt;SceneAsset&gt; scene)` | \_No documentation available.\_ |
-| `void Unimport(string\[\] scene)` | Unimports the scene from ASM. No effect if scene not imported. |
+| `void Unimport(IEnumerable<SceneAsset> scene)` | \_No documentation available.\_ |
+| `void Unimport(string[] scene)` | Unimports the scene from ASM. No effect if scene not imported. |
 | `void Unimport(Scene scene)` | \_No documentation available.\_ |
-| `void Unimport(IEnumerable&lt;Scene&gt; scene)` | \_No documentation available.\_ |
-| `void Unimport(Scene\[\] scene)` | Unimports the scene from ASM. No effect if scene not imported. |
+| `void Unimport(IEnumerable<Scene> scene)` | \_No documentation available.\_ |
+| `void Unimport(Scene[] scene)` | Unimports the scene from ASM. No effect if scene not imported. |

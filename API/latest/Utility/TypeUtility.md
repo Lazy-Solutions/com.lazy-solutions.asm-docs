@@ -14,21 +14,21 @@ Contains utility functions for working with types.
 | `string GetFriendlyTypeName(Type type)` | Gets the friendly name of this type. |
 | `string GetSignature(MemberInfo member, bool includeAccessModifiers)` | Gets the signature of this member. |
 | `bool HasNoParameters(MemberInfo member)` | Gets if `member` is a \[Reflection.MethodInfo\](https://learn.microsoft.com/dotnet/api/system.reflection.methodinfo), and has no parameters. |
-| `bool HasParameters&lt;T1&gt;(MemberInfo member)` | Gets if `member` is a \[Reflection.MethodInfo\](https://learn.microsoft.com/dotnet/api/system.reflection.methodinfo), and has the specified parameters. |
-| `bool HasParameters&lt;T1, T2&gt;(MemberInfo member)` | \_No documentation available.\_ |
-| `bool HasParameters&lt;T1, T2, T3&gt;(MemberInfo member)` | \_No documentation available.\_ |
-| `bool HasParameters&lt;T1, T2, T3, T4&gt;(MemberInfo member)` | \_No documentation available.\_ |
-| `bool HasParameters(MemberInfo member, Type\[\] types)` | \_No documentation available.\_ |
+| `bool HasParameters<T1>(MemberInfo member)` | Gets if `member` is a \[Reflection.MethodInfo\](https://learn.microsoft.com/dotnet/api/system.reflection.methodinfo), and has the specified parameters. |
+| `bool HasParameters<T1, T2>(MemberInfo member)` | \_No documentation available.\_ |
+| `bool HasParameters<T1, T2, T3>(MemberInfo member)` | \_No documentation available.\_ |
+| `bool HasParameters<T1, T2, T3, T4>(MemberInfo member)` | \_No documentation available.\_ |
+| `bool HasParameters(MemberInfo member, Type[] types)` | \_No documentation available.\_ |
 | `bool IsConstructor(MemberInfo member)` | Determines whether the specified \[Reflection.MemberInfo\](https://learn.microsoft.com/dotnet/api/system.reflection.memberinfo) represents a constructor. |
 | `bool IsField(MemberInfo member)` | Determines whether the specified \[Reflection.MemberInfo\](https://learn.microsoft.com/dotnet/api/system.reflection.memberinfo) represents a field. |
 | `bool IsMethod(MemberInfo member)` | Determines whether the specified \[Reflection.MemberInfo\](https://learn.microsoft.com/dotnet/api/system.reflection.memberinfo) represents a method. |
-| `bool IsMethodAndReturns&lt;T&gt;(MemberInfo member)` | Determines whether the specified \[Reflection.MemberInfo\](https://learn.microsoft.com/dotnet/api/system.reflection.memberinfo) represents a method returning `T`. |
+| `bool IsMethodAndReturns<T>(MemberInfo member)` | Determines whether the specified \[Reflection.MemberInfo\](https://learn.microsoft.com/dotnet/api/system.reflection.memberinfo) represents a method returning `T`. |
 | `bool IsProperty(MemberInfo member)` | Determines whether the specified \[Reflection.MemberInfo\](https://learn.microsoft.com/dotnet/api/system.reflection.memberinfo) represents a property. |
 | `bool IsStatic(MemberInfo member)` | Determines whether the specified \[Reflection.MemberInfo\](https://learn.microsoft.com/dotnet/api/system.reflection.memberinfo) represents a static member. |
 | `bool IsType(MemberInfo member)` | Determines whether the specified \[Reflection.MemberInfo\](https://learn.microsoft.com/dotnet/api/system.reflection.memberinfo) represents a type. |
 | `bool IsType(MemberInfo member, Type type)` | Determines whether the specified \[Reflection.MemberInfo\](https://learn.microsoft.com/dotnet/api/system.reflection.memberinfo) represents a type. |
-| `bool IsType&lt;T&gt;(MemberInfo member)` | Determines whether the specified \[Reflection.MemberInfo\](https://learn.microsoft.com/dotnet/api/system.reflection.memberinfo) represents a type assignable to `T`. |
-| `bool Returns&lt;T&gt;(MemberInfo member)` | Gets if `member` returns `T`. |
+| `bool IsType<T>(MemberInfo member)` | Determines whether the specified \[Reflection.MemberInfo\](https://learn.microsoft.com/dotnet/api/system.reflection.memberinfo) represents a type assignable to `T`. |
+| `bool Returns<T>(MemberInfo member)` | Gets if `member` returns `T`. |
 | `bool Returns(MemberInfo member, Type type)` | Gets if `member` returns `type`. |
 | `bool ReturnsCoroutine(MemberInfo member)` | Gets if `member` returns \[Collections.IEnumerator\](https://learn.microsoft.com/dotnet/api/system.collections.ienumerator). |
 | `bool ReturnsVoid(MemberInfo member)` | Gets if `member` returns \[System.Void\](https://learn.microsoft.com/dotnet/api/system.void). |

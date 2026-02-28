@@ -31,7 +31,7 @@ Handles interfaces derived from `Callbacks.ISceneCallbacks` and their coroutine/
 | `IEnumerator DoCollectionOpenCallbacks(SceneCollection collection)` | Invokes all collection open callbacks on the specified `collection`. |
 | `IEnumerator DoSceneCloseCallbacks(Scene scene)` | Invokes all scene close callbacks on the specified `scene`. |
 | `IEnumerator DoSceneOpenCallbacks(Scene scene)` | Invokes all scene open callbacks on the specified `scene`. |
-| `CallbackUtility.FluentInvokeAPI&lt;T&gt; Invoke&lt;T&gt;()` | Creates a fluent callback invocation API for the specified callback type. |
+| `CallbackUtility.FluentInvokeAPI<T> Invoke<T>()` | Creates a fluent callback invocation API for the specified callback type. |
 
 <!-- source: api\latest\Callbacks\Callback_Of_T.md -->
 ## CallbackUtility.FluentInvokeAPI&lt;T&gt;.Callback&lt;T&gt;
@@ -68,7 +68,7 @@ Specifies when a callback type should be invoked.
 
 | Member | Description |
 |--------|-------------|
-| `When\[\] when` | The conditions that determine when the callback is invoked. |
+| `When[] when` | The conditions that determine when the callback is invoked. |
 
 <!-- source: api\latest\Callbacks\Events\CollectionCloseEvent.md -->
 ## CollectionCloseEvent
@@ -423,7 +423,7 @@ The base class for all event callbacks.
 
 | Member | Description |
 |--------|-------------|
-| `List&lt;Func&lt;IEnumerator&gt;&gt; waitFor { get; }` | A list of coroutines that `Core.SceneOperation` should wait for. It will not proceed until all coroutines are done. |
+| `List<Func<IEnumerator>> waitFor { get; }` | A list of coroutines that `Core.SceneOperation` should wait for. It will not proceed until all coroutines are done. |
 | `When when` | Specifies when this event callback was invoked, before or after the action it represents. If applicable. |
 
 ### Methods
@@ -432,11 +432,11 @@ The base class for all event callbacks.
 |--------|-------------|
 | `virtual string ToString()` | \_No documentation available.\_ |
 | `void WaitFor(IEnumerator coroutine)` | Specifies a coroutine that the operation should wait for. |
-| `void WaitFor(Func&lt;IEnumerator&gt; coroutine)` | Specifies a coroutine that the operation should wait for. |
+| `void WaitFor(Func<IEnumerator> coroutine)` | Specifies a coroutine that the operation should wait for. |
 | `void WaitFor(GlobalCoroutine coroutine)` | Specifies a coroutine that the operation should wait for. |
-| `void WaitFor(Func&lt;GlobalCoroutine&gt; coroutine)` | Specifies a coroutine that the operation should wait for. |
+| `void WaitFor(Func<GlobalCoroutine> coroutine)` | Specifies a coroutine that the operation should wait for. |
 | `void WaitFor(Awaitable awaitable)` | Specifies a coroutine that the operation should wait for. |
-| `void WaitFor(Func&lt;Awaitable&gt; awaitable)` | Specifies a coroutine that the operation should wait for. |
+| `void WaitFor(Func<Awaitable> awaitable)` | Specifies a coroutine that the operation should wait for. |
 
 <!-- source: api\latest\Callbacks\Events\EventCallbackManager_Of_TEventBase.md -->
 ## EventCallbackManager&lt;TEventBase&gt;
@@ -453,13 +453,13 @@ You probably want to use either `SceneManager.events` or `SceneOperation.events`
 
 | Member | Description |
 |--------|-------------|
-| `IEnumerator InvokeCallback&lt;TEventType&gt;(When when, string callerFile, int callerLine)` | Invokes the event. |
-| `IEnumerator InvokeCallback&lt;TEventType&gt;(TEventType e, When when, string callerFile, int callerLine)` | Invokes the event. |
-| `void InvokeCallbackSync&lt;TEventType&gt;(When when)` | Invokes the event. |
-| `void InvokeCallbackSync&lt;TEventType&gt;(TEventType e, When when)` | Invokes the event. |
-| `void RegisterCallback&lt;TEventType&gt;(EventCallback&lt;TEventType&gt; callback, When when, string key)` | Registers a callback to be invoked when the specified event type occurs. |
+| `IEnumerator InvokeCallback<TEventType>(When when, string callerFile, int callerLine)` | Invokes the event. |
+| `IEnumerator InvokeCallback<TEventType>(TEventType e, When when, string callerFile, int callerLine)` | Invokes the event. |
+| `void InvokeCallbackSync<TEventType>(When when)` | Invokes the event. |
+| `void InvokeCallbackSync<TEventType>(TEventType e, When when)` | Invokes the event. |
+| `void RegisterCallback<TEventType>(EventCallback<TEventType> callback, When when, string key)` | Registers a callback to be invoked when the specified event type occurs. |
 | `void UnregisterCallback(string key)` | Unregisters a previously registered event callback. |
-| `void UnregisterCallback&lt;TEventType&gt;(EventCallback&lt;TEventType&gt; callback, When when, string key)` | Unregisters a previously registered event callback. |
+| `void UnregisterCallback<TEventType>(EventCallback<TEventType> callback, When when, string key)` | Unregisters a previously registered event callback. |
 
 <!-- source: api\latest\Callbacks\Events\EventCallbackUtility.md -->
 ## EventCallbackUtility
@@ -473,13 +473,13 @@ Provides utility functions for working with event callbacks.
 
 | Member | Description |
 |--------|-------------|
-| `IEnumerable&lt;Type&gt; GetCallbackTypes()` | Enumerates all callback types. |
-| `int GetInvocationOrder&lt;TEventType&gt;()` | \_No documentation available.\_ |
+| `IEnumerable<Type> GetCallbackTypes()` | Enumerates all callback types. |
+| `int GetInvocationOrder<TEventType>()` | \_No documentation available.\_ |
 | `int GetInvocationOrder(Type type)` | Gets the invocation order of the event callback type. |
-| `bool IsWhenApplicable&lt;TEventType&gt;()` | \_No documentation available.\_ |
+| `bool IsWhenApplicable<TEventType>()` | \_No documentation available.\_ |
 | `bool IsWhenApplicable(Type type)` | Gets if the specified callback event uses `Events.When` enum. |
-| `SceneOperation RegisterAllCallbacks(string key, SceneOperation operation, EventCallback&lt;EventCallbackBase&gt; callback, When when)` | Registers callback for all events. |
-| `void RegisterAllCallbacksGlobal(string key, EventCallback&lt;EventCallbackBase&gt; callback, When when)` | Registers callback for all events. |
+| `SceneOperation RegisterAllCallbacks(string key, SceneOperation operation, EventCallback<EventCallbackBase> callback, When when)` | Registers callback for all events. |
+| `void RegisterAllCallbacksGlobal(string key, EventCallback<EventCallbackBase> callback, When when)` | Registers callback for all events. |
 | `SceneOperation UnregisterCallback(string key, SceneOperation operation)` | Unregisters callback using `key`. |
 | `void UnregisterCallbackGlobal(string key)` | Unregisters callback using `key`. |
 
@@ -510,8 +510,8 @@ You probably want to use either `Scene.RegisterCallback` or `SceneCollection.Reg
 
 | Member | Description |
 |--------|-------------|
-| `void RegisterCallback&lt;T&gt;(EventCallback&lt;T&gt; callback, When when, string key)` | \_No documentation available.\_ |
-| `void UnregisterCallback&lt;T&gt;(EventCallback&lt;T&gt; callback, When when, string key)` | \_No documentation available.\_ |
+| `void RegisterCallback<T>(EventCallback<T> callback, When when, string key)` | \_No documentation available.\_ |
+| `void UnregisterCallback<T>(EventCallback<T> callback, When when, string key)` | \_No documentation available.\_ |
 
 <!-- source: api\latest\Callbacks\Events\GlobalCoroutinesChanged.md -->
 ## GlobalCoroutinesChanged
@@ -525,7 +525,7 @@ Occurs when `Utility.CoroutineUtility` starts or ends a coroutine.
 
 | Member | Description |
 |--------|-------------|
-| `IEnumerable&lt;GlobalCoroutine&gt; coroutines` | \_No documentation available.\_ |
+| `IEnumerable<GlobalCoroutine> coroutines` | \_No documentation available.\_ |
 
 <!-- source: api\latest\Callbacks\Events\InvocationOrderAttribute.md -->
 ## EventCallbackUtility.InvocationOrderAttribute
@@ -700,7 +700,7 @@ See `Events.SceneClosePhaseEvent`, `Events.SceneOpenPhaseEvent`, `Events.ScenePr
 
 | Member | Description |
 |--------|-------------|
-| `IEnumerable&lt;Scene&gt; scenes` | \_No documentation available.\_ |
+| `IEnumerable<Scene> scenes` | \_No documentation available.\_ |
 
 <!-- source: api\latest\Callbacks\Events\ScenePreloadEvent.md -->
 ## ScenePreloadEvent
@@ -785,7 +785,7 @@ Applies a filter to the types displayed in `Utility.ASMEventCallbackPropertyDraw
 
 | Member | Description |
 |--------|-------------|
-| `Type\[\] HiddenTypes` | Specifies the types to hide in the list. |
+| `Type[] HiddenTypes` | Specifies the types to hide in the list. |
 
 <!-- source: api\latest\Callbacks\Events\Utility\SerializableASMEventCallbackType.md -->
 ## SerializableASMEventCallbackType
@@ -812,8 +812,8 @@ Also provides a property drawer.
 | Member | Description |
 |--------|-------------|
 | `bool IsValid()` | Gets if this event callback type is valid. |
-| `void RegisterCallback(string key, SceneOperation operation, EventCallback&lt;SceneOperationEventBase&gt; callback)` | Register callback on `operation`. |
-| `void RegisterGlobalCallback(string key, EventCallback&lt;EventCallbackBase&gt; callback)` | Register callback globally. |
+| `void RegisterCallback(string key, SceneOperation operation, EventCallback<SceneOperationEventBase> callback)` | Register callback on `operation`. |
+| `void RegisterGlobalCallback(string key, EventCallback<EventCallbackBase> callback)` | Register callback globally. |
 | `virtual string ToString()` | \_No documentation available.\_ |
 | `SceneOperation UnregisterCallback(string key, SceneOperation operation)` | Unregisters the callback on `operation`. |
 | `void UnregisterGlobalCallback(string key)` | Unregisters the callback globally. |
@@ -852,12 +852,12 @@ Provides a fluent API for invoking callbacks of type `T`.
 
 | Member | Description |
 |--------|-------------|
-| `IEnumerator On(SceneCollection collection, Scene\[\] additionalScenes)` | Invokes the callback on all scenes in the specified `collection`. |
-| `IEnumerator On(Scene\[\] scenes)` | Invokes the callback on the specified `scenes`. |
-| `IEnumerator On(ScriptableObject\[\] scriptableObjects)` | Invokes the callback on the specified `scriptableObjects`. |
+| `IEnumerator On(SceneCollection collection, Scene[] additionalScenes)` | Invokes the callback on all scenes in the specified `collection`. |
+| `IEnumerator On(Scene[] scenes)` | Invokes the callback on the specified `scenes`. |
+| `IEnumerator On(ScriptableObject[] scriptableObjects)` | Invokes the callback on the specified `scriptableObjects`. |
 | `IEnumerator OnAllOpenScenes()` | Invokes the callback on all currently open scenes. |
-| `CallbackUtility.FluentInvokeAPI&lt;T&gt; WithCallback(CallbackUtility.FluentInvokeAPI&lt;T&gt;.Callback&lt;T&gt; callback)` | \_No documentation available.\_ |
-| `CallbackUtility.FluentInvokeAPI&lt;T&gt; WithParam(object param)` | Specifies an optional parameter passed to the invoked callback. |
+| `CallbackUtility.FluentInvokeAPI<T> WithCallback(CallbackUtility.FluentInvokeAPI<T>.Callback<T> callback)` | \_No documentation available.\_ |
+| `CallbackUtility.FluentInvokeAPI<T> WithParam(object param)` | Specifies an optional parameter passed to the invoked callback. |
 
 <!-- source: api\latest\Callbacks\ICollectionClose.md -->
 ## ICollectionClose
@@ -1345,10 +1345,10 @@ Usage: `SceneManager.app`.
 | `void Exit()` | Exits the application immediately. |
 | `void Play(App.StartupProps props)` | Enters play mode, and runs ASM startup process. If already inside play mode, then startup process will be run again. |
 | `Awaitable Quit(bool fade, Color? fadeColor, float fadeDuration)` | Quits the application with optional fade effect. |
-| `void RegisterQuitCallback(Func&lt;IEnumerator&gt; coroutine)` | Register a callback to be called before quit. |
+| `void RegisterQuitCallback(Func<IEnumerator> coroutine)` | Register a callback to be called before quit. |
 | `void Restart(App.StartupProps props)` | Restarts the ASM startup process. |
-| `Async&lt;bool&gt; RestartAsync(App.StartupProps props)` | Restarts the ASM startup process. |
-| `void UnregisterQuitCallback(Func&lt;IEnumerator&gt; coroutine)` | Unregister a callback that was to be called before quit. |
+| `Async<bool> RestartAsync(App.StartupProps props)` | Restarts the ASM startup process. |
+| `void UnregisterQuitCallback(Func<IEnumerator> coroutine)` | Unregister a callback that was to be called before quit. |
 
 <!-- source: api\latest\Core\Indicator.md -->
 ## SceneLoader.Indicator
@@ -1363,8 +1363,8 @@ Represents an indicator to be displayed on a scene field when the associated `Co
 | Member | Description |
 |--------|-------------|
 | `Color? color` | Color to apply to the indicator icon or text. |
-| `Func&lt;Texture2D&gt; icon` | The icon to display on the indicator button. Overrides `Indicator.text`, when displayed on a scene field. |
-| `Action&lt;Scene&gt; onClick` | Specifies a handler for when the indicator is clicked. |
+| `Func<Texture2D> icon` | The icon to display on the indicator button. Overrides `Indicator.text`, when displayed on a scene field. |
+| `Action<Scene> onClick` | Specifies a handler for when the indicator is clicked. |
 | `string text` | The text to display on the indicator button. If `Indicator.useFontAwesome` is true, this should be a Font Awesome Unicode character. |
 | `string tooltip` | The tooltip shown when the user hovers over the indicator button. |
 | `bool useFontAwesome` | Indicates whether the `Indicator.text` should be interpreted as a Font Awesome Unicode character. |
@@ -1406,14 +1406,14 @@ Manages runtime functionality for Advanced Scene Manager such as open scenes and
 | `Scene dontDestroyOnLoad` | Gets the dontDestroyOnLoad scene. |
 | `bool isBusy` | Gets whatever ASM is busy with any scene operations. |
 | `bool isPreloadedCollectionAdditive { get; }` | Gets if `Runtime.preloadedCollection` is additive. |
-| `IEnumerable&lt;SceneCollection&gt; openAdditiveCollections` | Gets the collections that are opened as additive. |
+| `IEnumerable<SceneCollection> openAdditiveCollections` | Gets the collections that are opened as additive. |
 | `SceneCollection openCollection` | Gets the collection that is currently open. |
-| `IEnumerable&lt;Scene&gt; openScenes` | Gets the scenes that are currently open. |
+| `IEnumerable<Scene> openScenes` | Gets the scenes that are currently open. |
 | `SceneCollection preloadedCollection { get; }` | Gets the currently preloaded collection. |
-| `IEnumerable&lt;Scene&gt; preloadedScenes` | Gets the scenes that are preloaded. |
-| `IEnumerable&lt;SceneOperation&gt; queuedOperations` | Gets the current scene operation queue. |
-| `IEnumerable&lt;SceneOperation&gt; runningOperations` | The currently running scene operations. |
-| `IEnumerable&lt;Scene&gt; unimportedScenes` | Gets all open Unity scenes that are not imported into ASM. |
+| `IEnumerable<Scene> preloadedScenes` | Gets the scenes that are preloaded. |
+| `IEnumerable<SceneOperation> queuedOperations` | Gets the current scene operation queue. |
+| `IEnumerable<SceneOperation> runningOperations` | The currently running scene operations. |
+| `IEnumerable<Scene> unimportedScenes` | Gets all open Unity scenes that are not imported into ASM. |
 
 ### Fields
 
@@ -1425,15 +1425,15 @@ Manages runtime functionality for Advanced Scene Manager such as open scenes and
 
 | Member | Description |
 |--------|-------------|
-| `event Action&lt;SceneCollection&gt; collectionClosed` | Occurs when a collection is closed. |
-| `event Action&lt;SceneCollection&gt; collectionOpened` | Occurs when a collection is opened. |
-| `event Action&lt;Scene&gt; sceneClosed` | Occurs when a scene is closed. |
+| `event Action<SceneCollection> collectionClosed` | Occurs when a collection is closed. |
+| `event Action<SceneCollection> collectionOpened` | Occurs when a collection is opened. |
+| `event Action<Scene> sceneClosed` | Occurs when a scene is closed. |
 | `event Action sceneLoaderAdded` | Occurs when a `Core.SceneLoader` is added. |
 | `event Action sceneLoaderRemoved` | Occurs when a `Core.SceneLoader` is removed. |
-| `event Action&lt;(Scene, Type, Type)&gt; sceneLoaderToggled` | Occurs when a `Core.SceneLoader` is toggled for a scene. |
-| `event Action&lt;Scene&gt; sceneOpened` | Occurs when a scene is opened. |
-| `event Action&lt;Scene&gt; scenePreloaded` | Occurs when a scene is preloaded. |
-| `event Action&lt;Scene&gt; scenePreloadFinished` | Occurs when a previously preloaded scene is opened. |
+| `event Action<(Scene, Type, Type)> sceneLoaderToggled` | Occurs when a `Core.SceneLoader` is toggled for a scene. |
+| `event Action<Scene> sceneOpened` | Occurs when a scene is opened. |
+| `event Action<Scene> scenePreloaded` | Occurs when a scene is preloaded. |
+| `event Action<Scene> scenePreloadFinished` | Occurs when a previously preloaded scene is opened. |
 | `event Action startedWorking` | Occurs when ASM has started working and is running scene operations. |
 | `event Action stoppedWorking` | Occurs when ASM has finished working and no scene operations are running. |
 
@@ -1443,51 +1443,51 @@ Manages runtime functionality for Advanced Scene Manager such as open scenes and
 |--------|-------------|
 | `void Activate(Scene scene)` | Activates this scene. |
 | `void AddProgressListener(ILoadProgressListener listener)` | Registers a `Loading.ILoadProgressListener` that will receive callbacks when progress is reported from ASM. |
-| `void AddSceneLoader&lt;T&gt;()` | Adds a scene loader. |
+| `void AddSceneLoader<T>()` | Adds a scene loader. |
 | `SceneOperation CancelPreload()` | Cancels the preload. All preloaded scenes will be fully loaded (limitation by Unity), then closed. No ASM scene callbacks will be called. |
 | `SceneOperation Close(SceneCollection collection)` | Closes `collection`. |
 | `SceneOperation Close(SceneOperation operation, SceneCollection collection)` | Closes `collection`. |
 | `SceneOperation Close(Scene scene)` | Closes this scene. |
-| `SceneOperation Close(Scene\[\] scenes)` | Closes `collection`. |
-| `SceneOperation Close(IEnumerable&lt;Scene&gt; scenes)` | Closes this scene. |
-| `SceneOperation Close(IEnumerable&lt;Scene&gt; scenes, bool skipEmptySceneCheck)` | Closes `collection`. |
-| `SceneOperation CloseAll(bool exceptLoadingScreens, bool exceptUnimported, Scene\[\] except)` | Closes all scenes and collections. |
+| `SceneOperation Close(Scene[] scenes)` | Closes `collection`. |
+| `SceneOperation Close(IEnumerable<Scene> scenes)` | Closes this scene. |
+| `SceneOperation Close(IEnumerable<Scene> scenes, bool skipEmptySceneCheck)` | Closes `collection`. |
+| `SceneOperation CloseAll(bool exceptLoadingScreens, bool exceptUnimported, Scene[] except)` | Closes all scenes and collections. |
 | `IEnumerator CloseUnimportedScenes()` | Closes all open Unity scenes that are not imported into ASM. |
 | `SceneOperation CloseWithLoadingScreen(Scene scene, Scene loadingScreen)` | Closes this scene with the specified `loadingScene`. |
-| `SceneOperation CloseWithLoadingScreen(IEnumerable&lt;Scene&gt; scene, Scene loadingScreen)` | Closes this scene with the specified `loadingScene`. |
-| `IEnumerable&lt;Scene&gt; EvalScenesToClose(SceneCollection closeCollection, SceneCollection nextCollection, SceneCollection additiveCloseCollection)` | Evaluate the scenes that would close. |
-| `IEnumerable&lt;Scene&gt; EvalScenesToOpen(SceneCollection collection, bool openAll)` | Evaluate the scenes that would open. |
+| `SceneOperation CloseWithLoadingScreen(IEnumerable<Scene> scene, Scene loadingScreen)` | Closes this scene with the specified `loadingScene`. |
+| `IEnumerable<Scene> EvalScenesToClose(SceneCollection closeCollection, SceneCollection nextCollection, SceneCollection additiveCloseCollection)` | Evaluate the scenes that would close. |
+| `IEnumerable<Scene> EvalScenesToOpen(SceneCollection collection, bool openAll)` | Evaluate the scenes that would open. |
 | `SceneOperation FinishPreload()` | Finish loading preloaded scenes. |
 | `void ForceTrack(Scene scene)` | Tracks a scene that doesn't have a associated unity scene. |
 | `SceneLoader GetLoaderForScene(Scene scene, bool useOnlyGlobal)` | Gets the loader for `scene`. |
 | `SceneLoader GetSceneLoader(string sceneLoader)` | Returns the scene loader with the specified key. |
 | `Type GetSceneLoaderType(string sceneLoader)` | Returns the scene loader type with the specified key. |
 | `SceneState GetState(Scene scene)` | \_No documentation available.\_ |
-| `IEnumerable&lt;SceneLoader&gt; GetToggleableSceneLoaders()` | Gets a list of all added scene loaders that can be toggled scene by scene. |
+| `IEnumerable<SceneLoader> GetToggleableSceneLoaders()` | Gets a list of all added scene loaders that can be toggled scene by scene. |
 | `bool IsQueued(SceneCollection collection)` | Gets if this collection is currently queued to be opened. |
 | `bool IsQueued(Scene scene)` | Gets if this scene is queued to be opened. |
 | `bool IsTracked(Scene scene)` | Gets whatever this scene is tracked as open. |
 | `bool IsTracked(SceneCollection collection)` | Gets whatever this collection is tracked as open. |
 | `SceneOperation Open(SceneCollection collection, bool openAll)` | Opens the collection. |
 | `SceneOperation Open(Scene scene)` | Opens this scene. |
-| `SceneOperation Open(Scene\[\] scenes)` | Opens the collection. |
-| `SceneOperation Open(IEnumerable&lt;Scene&gt; scenes)` | Opens this scene. |
+| `SceneOperation Open(Scene[] scenes)` | Opens the collection. |
+| `SceneOperation Open(IEnumerable<Scene> scenes)` | Opens this scene. |
 | `SceneOperation OpenAdditive(SceneCollection collection, bool openAll)` | Opens the collection without closing existing scenes. |
-| `SceneOperation OpenAdditive(IEnumerable&lt;SceneCollection&gt; collections, SceneCollection activeCollection, LoadingScreenReference loadingScreen)` | Opens the collection without closing existing scenes. |
+| `SceneOperation OpenAdditive(IEnumerable<SceneCollection> collections, SceneCollection activeCollection, LoadingScreenReference loadingScreen)` | Opens the collection without closing existing scenes. |
 | `SceneOperation OpenAndActivate(Scene scene)` | Opens this scene and activates it. |
 | `SceneOperation OpenWithLoadingScreen(Scene scene, Scene loadingScreen)` | Opens this scene with the specified `loadingScene`. |
-| `SceneOperation OpenWithLoadingScreen(IEnumerable&lt;Scene&gt; scene, Scene loadingScreen)` | Opens this scene with the specified `loadingScene`. |
-| `SceneOperation Preload(IEnumerable&lt;Scene&gt; scenes, Action&lt;Scene&gt; onPreloaded)` | Preloads the scenes. |
+| `SceneOperation OpenWithLoadingScreen(IEnumerable<Scene> scene, Scene loadingScreen)` | Opens this scene with the specified `loadingScene`. |
+| `SceneOperation Preload(IEnumerable<Scene> scenes, Action<Scene> onPreloaded)` | Preloads the scenes. |
 | `SceneOperation Preload(SceneCollection collection, bool openAll)` | Preloads the collection. |
 | `SceneOperation Preload(Scene scene, Action onPreloaded)` | Preloads this scene. |
-| `SceneOperation Preload(Action&lt;Scene&gt; onPreloaded, Scene\[\] scenes)` | Preloads the specified scenes. |
-| `SceneOperation Preload(Scene\[\] scenes)` | Preloads the specified scenes. |
+| `SceneOperation Preload(Action<Scene> onPreloaded, Scene[] scenes)` | Preloads the specified scenes. |
+| `SceneOperation Preload(Scene[] scenes)` | Preloads the specified scenes. |
 | `SceneOperation PreloadAdditive(SceneCollection collection, bool openAll)` | Preloads the collection as additive. |
 | `void RemoveProgressListener(ILoadProgressListener listener)` | Unregisters a `Loading.ILoadProgressListener` that was registered using `ILoadingScreenService.RegisterLoadProgressListener`. |
-| `void RemoveSceneLoader&lt;T&gt;()` | Removes a scene loader. |
+| `void RemoveSceneLoader<T>()` | Removes a scene loader. |
 | `SceneOperation Reopen(SceneCollection collection, bool openAll)` | Reopens the collection. |
 | `SceneOperation Reopen(Scene scene)` | Reopens this scene. |
-| `SceneOperation Reopen(IEnumerable&lt;Scene&gt; scene)` | Reopens the collection. |
+| `SceneOperation Reopen(IEnumerable<Scene> scene)` | Reopens the collection. |
 | `SceneOperation ToggleOpen(SceneCollection collection, bool openAll)` | Toggles the collection open or closed. |
 | `SceneOperation ToggleOpen(Scene scene)` | Toggles this scene open or closed. |
 | `void Track(Scene scene, Scene unityScene)` | Tracks the specified scene as open. |
@@ -1545,7 +1545,7 @@ Specifies arguments for `SceneLoader.LoadScene`.
 | `bool CheckIsIncluded(bool logError)` | Checks if the scene is actually included in build. |
 | `Scene GetOpenedScene()` | Gets the `SceneManagement.Scene` that was opened by this override. |
 | `void SetCompleted(Scene scene)` | Notifies ASM that the load is done. |
-| `void SetCompleted(Scene scene, Func&lt;IEnumerator&gt; preloadCallback)` | Notifies ASM that the load is done. |
+| `void SetCompleted(Scene scene, Func<IEnumerator> preloadCallback)` | Notifies ASM that the load is done. |
 | `void SetCompletedWithoutScene()` | Sets this loader as complete even though no scene was loaded. |
 
 <!-- source: api\latest\Core\SceneLoader.md -->
@@ -1574,8 +1574,8 @@ Specifies a scene loader.
 
 | Member | Description |
 |--------|-------------|
-| `string GetKey&lt;T&gt;()` | Gets the key for the specified scene loader. |
-| `string GetKey&lt;T&gt;(T obj)` | Gets the key for the specified scene loader. |
+| `string GetKey<T>()` | Gets the key for the specified scene loader. |
+| `string GetKey<T>(T obj)` | Gets the key for the specified scene loader. |
 
 ### Methods
 
@@ -1630,9 +1630,9 @@ This provides access to direct scene loading / unloading, which bypasses many ch
 | Member | Description |
 |--------|-------------|
 | `IEnumerator Load(Scene scene, SceneLoadArgs e)` | \_No documentation available.\_ |
-| `IEnumerator Load(Scene scene, bool isPreload, SceneOperation operation, SceneCollection collection, bool reportsProgress, ThreadPriority? loadPriority, Action onLoaded, Action&lt;string&gt; onError, bool useOnlyGlobal)` | Loads the scene using a scene loader. |
+| `IEnumerator Load(Scene scene, bool isPreload, SceneOperation operation, SceneCollection collection, bool reportsProgress, ThreadPriority? loadPriority, Action onLoaded, Action<string> onError, bool useOnlyGlobal)` | Loads the scene using a scene loader. |
 | `IEnumerator Unload(Scene scene, SceneUnloadArgs e)` | \_No documentation available.\_ |
-| `IEnumerator Unload(Scene scene, SceneOperation operation, SceneCollection collection, bool reportsProgress, ThreadPriority? loadPriority, Action onUnloaded, Action&lt;string&gt; onError, bool useOnlyGlobal)` | Unloads the scene using a scene loader. |
+| `IEnumerator Unload(Scene scene, SceneOperation operation, SceneCollection collection, bool reportsProgress, ThreadPriority? loadPriority, Action onUnloaded, Action<string> onError, bool useOnlyGlobal)` | Unloads the scene using a scene loader. |
 
 <!-- source: api\latest\Core\SceneOperation.md -->
 ## SceneOperation
@@ -1653,28 +1653,28 @@ A scene operation is a queueable operation that can open or close scenes..
 | Member | Description |
 |--------|-------------|
 | `bool acceptsSubOperations { get; }` | Gets if this operation is currently executing open callbacks. If so, sub operations is temporarily accepted. |
-| `IEnumerable&lt;Scene&gt; close { get; }` | Gets the scenes specified to close. |
-| `IEnumerable&lt;Scene&gt; closedScenes` | Gets the scenes that was closed during this operation. |
+| `IEnumerable<Scene> close { get; }` | Gets the scenes specified to close. |
+| `IEnumerable<Scene> closedScenes` | Gets the scenes that was closed during this operation. |
 | `SceneCollection collection { get; }` | Specifies the collection that is being opened or closed. |
 | `string description { get; }` | Specifies description for coroutine. |
-| `EventCallbackManager&lt;SceneOperationEventBase&gt; events { get; }` | Gets the event manager for this operation. |
+| `EventCallbackManager<SceneOperationEventBase> events { get; }` | Gets the event manager for this operation. |
 | `SceneOperationFlags flags { get; }` | Gets the operation flags this operation will use. |
 | `Scene focus { get; }` | Sets focus to the specified scene. Overrides selected scene in collections. |
 | `bool focusSingleScene { get; }` | Sets the first opened scene as active. |
 | `bool hasStarted { get; }` | Gets whether this operation has started. |
-| `IEnumerable&lt;Scene&gt; ignoreForActivation { get; }` | Gets the scenes that should not be activated. |
+| `IEnumerable<Scene> ignoreForActivation { get; }` | Gets the scenes that should not be activated. |
 | `bool isCollectionCloseOperation { get; }` | Gets whatever this operation is about to close `SceneOperation.collection`. |
 | `bool isDefaultASMScene { get; }` | Gets if this scene was opened from the default ASM scene collection. |
 | `bool isFrozen { get; }` | Gets if this operation is frozen, as in, can its properties be changed? |
 | `bool isStandaloneScene { get; }` | Gets if this scene was opened from the standalone collection. |
 | `bool keepWaiting` | Inherited from `UnityEngine.CustomYieldInstruction`. Tells unity whatever the operation is done or not. |
 | `LoadingScreenReference loadingScreen { get; }` | Gets the specified loading screen. |
-| `Action&lt;LoadingScreenReference&gt; loadingScreenCallback { get; }` | Gets the specified loading screen callback. |
+| `Action<LoadingScreenReference> loadingScreenCallback { get; }` | Gets the specified loading screen callback. |
 | `LoadPriority loadPriority { get; }` | Gets the `Enums.LoadPriority` this operation will use. |
-| `IEnumerable&lt;Scene&gt; open { get; }` | Gets the scenes specified to open. |
+| `IEnumerable<Scene> open { get; }` | Gets the scenes specified to open. |
 | `LoadingScreenReference openedLoadingScreen { get; }` | Gets the loading screen that was opened by this operation. |
-| `IEnumerable&lt;Scene&gt; openedScenes` | Gets the scenes that was opened during this operation. |
-| `IEnumerable&lt;Scene&gt; preload { get; }` | Gets the scenes specified to preload. |
+| `IEnumerable<Scene> openedScenes` | Gets the scenes that was opened during this operation. |
+| `IEnumerable<Scene> preload { get; }` | Gets the scenes specified to preload. |
 | `float progress` | Gets the total progress of this operation. |
 | `ProgressScope progressScope { get; }` | Gets the progress scope associated with this operation. |
 | `bool reportsProgress { get; }` | Gets if this scene operation reports progress. |
@@ -1701,37 +1701,37 @@ A scene operation is a queueable operation that can open or close scenes..
 | `void Cancel()` | Cancel this operation. |
 | `SceneOperation Close(SceneCollection collection)` | Closes `collection`. |
 | `SceneOperation Close(Scene scene, bool removeFromOpen)` | Specifies the scenes to close. |
-| `SceneOperation Close(Scene\[\] scenes)` | Specifies the scenes to close. |
-| `SceneOperation Close(IEnumerable&lt;Scene&gt; scenes, bool removeFromOpen)` | Closes `collection`. |
-| `SceneOperation CloseAll(Scene\[\] except)` | \_No documentation available.\_ |
-| `SceneOperation CloseAll(IEnumerable&lt;Scene&gt; except, bool removeFromOpen)` | Closes all scenes, regardless if they are persistent or splash/loading screens. |
-| `SceneOperation CloseOtherScenes(Scene\[\] except)` | Closes all non-persistent scenes prior to opening any scenes. |
-| `SceneOperation CloseOtherScenes(bool persistent, IEnumerable&lt;Scene&gt; except, bool loadingScreen, bool splashScreen, bool removeFromOpen)` | Closes all open scenes prior to opening any scenes, with options. |
+| `SceneOperation Close(Scene[] scenes)` | Specifies the scenes to close. |
+| `SceneOperation Close(IEnumerable<Scene> scenes, bool removeFromOpen)` | Closes `collection`. |
+| `SceneOperation CloseAll(Scene[] except)` | \_No documentation available.\_ |
+| `SceneOperation CloseAll(IEnumerable<Scene> except, bool removeFromOpen)` | Closes all scenes, regardless if they are persistent or splash/loading screens. |
+| `SceneOperation CloseOtherScenes(Scene[] except)` | Closes all non-persistent scenes prior to opening any scenes. |
+| `SceneOperation CloseOtherScenes(bool persistent, IEnumerable<Scene> except, bool loadingScreen, bool splashScreen, bool removeFromOpen)` | Closes all open scenes prior to opening any scenes, with options. |
 | `SceneOperation DisableProgressReporting()` | Disables progress reporting for this operation. |
 | `SceneOperation Focus(Scene scene)` | Sets focus to the specified scene. Overrides selected scene in collections. |
 | `CoroutineAwaiter GetAwaiter()` | Allows this operation to be awaited. |
-| `SceneOperation IgnoreForActivation(IEnumerable&lt;Scene&gt; scenes)` | Specifies scenes that should not be activated. |
-| `SceneOperation OnProgressChanged(Action&lt;float&gt; callback)` | Adds a callback when progress changed. |
+| `SceneOperation IgnoreForActivation(IEnumerable<Scene> scenes)` | Specifies scenes that should not be activated. |
+| `SceneOperation OnProgressChanged(Action<float> callback)` | Adds a callback when progress changed. |
 | `SceneOperation Open(SceneCollection collection, bool openAll)` | Opens the collection. |
-| `SceneOperation Open(Scene\[\] scenes)` | Specifies the scenes to open. |
+| `SceneOperation Open(Scene[] scenes)` | Specifies the scenes to open. |
 | `SceneOperation Open(Scene scene, bool removeFromClose)` | Specifies the scenes to open. |
-| `SceneOperation Open(IEnumerable&lt;Scene&gt; scenes, bool removeFromClose)` | Opens the collection. |
+| `SceneOperation Open(IEnumerable<Scene> scenes, bool removeFromClose)` | Opens the collection. |
 | `SceneOperation OpenAndActivate(Scene scene)` | Opens the scene, and makes sure it is activated afterwards. |
-| `SceneOperation Preload(Scene\[\] scenes)` | Specifies scenes to preload. |
-| `SceneOperation Preload(IEnumerable&lt;Scene&gt; scenes)` | Specifies scenes to preload. |
-| `SceneOperation PrependOpen(Scene\[\] scenes)` | Specifies the scenes to prepend to the current open operation. |
-| `SceneOperation PrependOpen(IEnumerable&lt;Scene&gt; scenes, bool ignoreForActivation)` | Specifies the scenes to prepend to the current open operation. |
-| `SceneOperation RegisterCallback&lt;TEventType&gt;(EventCallback&lt;TEventType&gt; callback, When when, string key)` | Registers a callback for when an event occurs for this operation. |
-| `SceneOperation RemoveOnProgressChangedCallback(Action&lt;float&gt; callback)` | Removes a callback when progress changed. |
+| `SceneOperation Preload(Scene[] scenes)` | Specifies scenes to preload. |
+| `SceneOperation Preload(IEnumerable<Scene> scenes)` | Specifies scenes to preload. |
+| `SceneOperation PrependOpen(Scene[] scenes)` | Specifies the scenes to prepend to the current open operation. |
+| `SceneOperation PrependOpen(IEnumerable<Scene> scenes, bool ignoreForActivation)` | Specifies the scenes to prepend to the current open operation. |
+| `SceneOperation RegisterCallback<TEventType>(EventCallback<TEventType> callback, When when, string key)` | Registers a callback for when an event occurs for this operation. |
+| `SceneOperation RemoveOnProgressChangedCallback(Action<float> callback)` | Removes a callback when progress changed. |
 | `SceneOperation RunSceneCallbacksOutsidePlayMode(bool value)` | Specifies whatever scene callbacks should run outside of play mode. |
 | `SceneOperation UnloadUsedAssets()` | Specifies whatever `Resources.UnloadUnusedAssets` should be called at the end (before loading screen). |
-| `SceneOperation UnregisterCallback&lt;TEventType&gt;(EventCallback&lt;TEventType&gt; callback, When when, string key)` | Unregisters a callback for when an event occurs for this operation. |
-| `void UnregisterCallback&lt;TEventType&gt;(string key)` | Unregisters a previously registered event callback. |
+| `SceneOperation UnregisterCallback<TEventType>(EventCallback<TEventType> callback, When when, string key)` | Unregisters a callback for when an event occurs for this operation. |
+| `void UnregisterCallback<TEventType>(string key)` | Unregisters a previously registered event callback. |
 | `void WaitFor(SceneOperation operation)` | Waits for the specified scene operation to complete before continuing. |
 | `SceneOperation With(SceneCollection collection, bool setActiveScene, bool isCloseOperation)` | Specifies an associated collection. |
 | `SceneOperation With(LoadingScreenReference loadingScreen, bool useLoadingScene)` | Specifies loading screen to use. |
 | `SceneOperation With(bool useLoadingScene)` | Specifies loading screen to use. |
-| `SceneOperation With(Action&lt;LoadingScreenReference&gt; loadingScreenCallback)` | Specifies a callback when loading screen is opened, before `LoadingScreen.OnOpen` is called. |
+| `SceneOperation With(Action<LoadingScreenReference> loadingScreenCallback)` | Specifies a callback when loading screen is opened, before `LoadingScreen.OnOpen` is called. |
 | `SceneOperation With(LoadPriority loadPriority)` | Sets the `Enums.LoadPriority` this operation will use. |
 | `SceneOperation With(SceneOperationFlags flags)` | Sets the operation flags this operation will use. |
 | `SceneOperation WithFriendlyText(string text)` | Specifies description for operation coroutine. |
@@ -1824,11 +1824,11 @@ Provides utility methods and accessors for dependency injection within ASM.
 
 | Member | Description |
 |--------|-------------|
-| `IEnumerable&lt;(Type, DependencyInjectionUtility.IInjectable)&gt; EnumerateServices()` | Enumerates all currently registered injectable services. |
-| `T GetService&lt;T&gt;()` | Gets a service of the specified type. |
+| `IEnumerable<(Type, DependencyInjectionUtility.IInjectable)> EnumerateServices()` | Enumerates all currently registered injectable services. |
+| `T GetService<T>()` | Gets a service of the specified type. |
 | `DependencyInjectionUtility.IInjectable GetService(Type type)` | Gets a service matching the specified type. |
-| `IEnumerable&lt;T&gt; GetServices&lt;T&gt;()` | Gets all services assignable to the specified interface type. |
-| `void Remove&lt;T&gt;(Type type, T service)` | Removes the specified service instance from the dependency list. |
+| `IEnumerable<T> GetServices<T>()` | Gets all services assignable to the specified interface type. |
+| `void Remove<T>(Type type, T service)` | Removes the specified service instance from the dependency list. |
 
 <!-- source: api\latest\DependencyInjection\Editor\IBuildManager.md -->
 ## IBuildManager
@@ -1845,8 +1845,8 @@ Only available in editor.
 
 | Member | Description |
 |--------|-------------|
-| `event Action&lt;BuildUtility.PostBuildEventArgs&gt; postBuild` | Occurs after build. |
-| `event Action&lt;BuildReport&gt; preBuild` | Occurs before build. |
+| `event Action<BuildUtility.PostBuildEventArgs> postBuild` | Occurs after build. |
+| `event Action<BuildReport> preBuild` | Occurs before build. |
 
 ### Methods
 
@@ -1854,7 +1854,7 @@ Only available in editor.
 |--------|-------------|
 | `BuildReport DoBuild(string path, bool attachProfiler, bool runGameWhenBuilt, bool dev, BuildOptions customOptions)` | Performs a build of the active build profile if one exists, otherwise falls back to Unity's legacy build pipeline. |
 | `BuildReport DoBuild(BuildPlayerOptions options)` | Performs a build of the active build profile if one exists, otherwise falls back to Unity's legacy build pipeline. |
-| `IEnumerable&lt;(EditorBuildSettingsScene, BuildUtility.Reason)&gt; GetOrderedList()` | Gets an ordered list of all scenes that ASM would set in the build settings. |
+| `IEnumerable<(EditorBuildSettingsScene, BuildUtility.Reason)> GetOrderedList()` | Gets an ordered list of all scenes that ASM would set in the build settings. |
 | `bool IsEnabled(string path, out BuildUtility.Reason reason)` | Checks if the scene at `path` is considered enabled for build. |
 | `bool IsIncluded(Scene scene, out BuildUtility.Reason reason)` | Checks if a scene is valid and included in the ASM profile. |
 | `void UpdateSceneList()` | Updates the scene build settings. |
@@ -1939,7 +1939,7 @@ Provides methods for working with the scene manager window.
 | `bool logStartup` | \_No documentation available.\_ |
 | `bool logTracking` | \_No documentation available.\_ |
 | `bool openCollectionOnSceneAssetOpen` | \_No documentation available.\_ |
-| `IEnumerable&lt;SceneCollection&gt; pinnedOverlayCollections` | \_No documentation available.\_ |
+| `IEnumerable<SceneCollection> pinnedOverlayCollections` | \_No documentation available.\_ |
 | `bool startupProcessOnCollectionPlay` | \_No documentation available.\_ |
 | `int toolbarButtonCount` | \_No documentation available.\_ |
 | `float toolbarPlayButtonOffset` | \_No documentation available.\_ |
@@ -1984,10 +1984,10 @@ Usage: `SceneManager.app`.
 | `void CancelStartup()` | Cancels startup process. |
 | `void Exit()` | Exits the application immediately. |
 | `Awaitable Quit(bool fade, Color? fadeColor, float fadeDuration)` | Quits the application with optional fade effect. |
-| `void RegisterQuitCallback(Func&lt;IEnumerator&gt; coroutine)` | Register a callback to be called before quit. |
+| `void RegisterQuitCallback(Func<IEnumerator> coroutine)` | Register a callback to be called before quit. |
 | `void Restart(App.StartupProps props)` | Restarts the ASM startup process. |
-| `Async&lt;bool&gt; RestartAsync(App.StartupProps props)` | Restarts the ASM startup process. |
-| `void UnregisterQuitCallback(Func&lt;IEnumerator&gt; coroutine)` | Unregister a callback that was to be called before quit. |
+| `Async<bool> RestartAsync(App.StartupProps props)` | Restarts the ASM startup process. |
+| `void UnregisterQuitCallback(Func<IEnumerator> coroutine)` | Unregister a callback that was to be called before quit. |
 
 <!-- source: api\latest\DependencyInjection\IInjectable.md -->
 ## DependencyInjectionUtility.IInjectable
@@ -2092,23 +2092,23 @@ May not be available in `[InitializeOnLoad]` and similar, use `SceneManager.OnIn
 | `SceneOperation currentOperation` | \_No documentation available.\_ |
 | `Scene dontDestroyOnLoad` | \_No documentation available.\_ |
 | `bool isBusy` | \_No documentation available.\_ |
-| `IEnumerable&lt;SceneCollection&gt; openAdditiveCollections` | \_No documentation available.\_ |
+| `IEnumerable<SceneCollection> openAdditiveCollections` | \_No documentation available.\_ |
 | `SceneCollection openCollection` | \_No documentation available.\_ |
-| `IEnumerable&lt;Scene&gt; openScenes` | \_No documentation available.\_ |
-| `IEnumerable&lt;Scene&gt; preloadedScenes` | \_No documentation available.\_ |
-| `IEnumerable&lt;SceneOperation&gt; queuedOperations` | \_No documentation available.\_ |
-| `IEnumerable&lt;SceneOperation&gt; runningOperations` | \_No documentation available.\_ |
+| `IEnumerable<Scene> openScenes` | \_No documentation available.\_ |
+| `IEnumerable<Scene> preloadedScenes` | \_No documentation available.\_ |
+| `IEnumerable<SceneOperation> queuedOperations` | \_No documentation available.\_ |
+| `IEnumerable<SceneOperation> runningOperations` | \_No documentation available.\_ |
 
 ### Events
 
 | Member | Description |
 |--------|-------------|
-| `event Action&lt;SceneCollection&gt; collectionClosed` | Occurs when a collection is closed. |
-| `event Action&lt;SceneCollection&gt; collectionOpened` | Occurs when a collection is opened. |
-| `event Action&lt;Scene&gt; sceneClosed` | Occurs when a scene is closed. |
-| `event Action&lt;Scene&gt; sceneOpened` | Occurs when a scene is opened. |
-| `event Action&lt;Scene&gt; scenePreloaded` | Occurs when a scene is preloaded. |
-| `event Action&lt;Scene&gt; scenePreloadFinished` | Occurs when a previously preloaded scene is opened. |
+| `event Action<SceneCollection> collectionClosed` | Occurs when a collection is closed. |
+| `event Action<SceneCollection> collectionOpened` | Occurs when a collection is opened. |
+| `event Action<Scene> sceneClosed` | Occurs when a scene is closed. |
+| `event Action<Scene> sceneOpened` | Occurs when a scene is opened. |
+| `event Action<Scene> scenePreloaded` | Occurs when a scene is preloaded. |
+| `event Action<Scene> scenePreloadFinished` | Occurs when a previously preloaded scene is opened. |
 | `event Action startedWorking` | Occurs when ASM has started working and is running scene operations. |
 | `event Action stoppedWorking` | Occurs when ASM has finished working and no scene operations are running. |
 
@@ -2117,30 +2117,30 @@ May not be available in `[InitializeOnLoad]` and similar, use `SceneManager.OnIn
 | Member | Description |
 |--------|-------------|
 | `void Activate(Scene scene)` | Activates this scene. |
-| `void AddSceneLoader&lt;T&gt;()` | Adds a scene loader. |
+| `void AddSceneLoader<T>()` | Adds a scene loader. |
 | `SceneOperation CancelPreload()` | Cancels the preload. All preloaded scenes will be fully loaded (limitation by Unity), then closed. No ASM scene callbacks will be called. |
-| `SceneOperation Close(IEnumerable&lt;Scene&gt; scenes)` | Closes `collection`. |
-| `SceneOperation Close(Scene\[\] scenes)` | Closes `collection`. |
+| `SceneOperation Close(IEnumerable<Scene> scenes)` | Closes `collection`. |
+| `SceneOperation Close(Scene[] scenes)` | Closes `collection`. |
 | `SceneOperation Close(Scene scene)` | Closes `collection`. |
 | `SceneOperation Close(SceneCollection collection)` | Closes `collection`. |
-| `SceneOperation CloseAll(bool exceptLoadingScreens, bool exceptUnimported, Scene\[\] except)` | Closes all scenes and collections. |
+| `SceneOperation CloseAll(bool exceptLoadingScreens, bool exceptUnimported, Scene[] except)` | Closes all scenes and collections. |
 | `SceneOperation FinishPreload()` | \_No documentation available.\_ |
 | `SceneLoader GetLoaderForScene(Scene scene, bool useOnlyGlobal)` | Gets the loader for `scene`. |
 | `SceneState GetState(Scene scene)` | \_No documentation available.\_ |
-| `IEnumerable&lt;SceneLoader&gt; GetToggleableSceneLoaders()` | Gets a list of all added scene loaders that can be toggled scene by scene. |
+| `IEnumerable<SceneLoader> GetToggleableSceneLoaders()` | Gets a list of all added scene loaders that can be toggled scene by scene. |
 | `bool IsTracked(Scene scene)` | Gets whatever this scene is tracked as open. |
 | `bool IsTracked(SceneCollection collection)` | Gets whatever this scene is tracked as open. |
-| `SceneOperation Open(IEnumerable&lt;Scene&gt; scenes)` | Opens the collection. |
-| `SceneOperation Open(Scene\[\] scenes)` | Opens the collection. |
+| `SceneOperation Open(IEnumerable<Scene> scenes)` | Opens the collection. |
+| `SceneOperation Open(Scene[] scenes)` | Opens the collection. |
 | `SceneOperation Open(Scene scene)` | Opens the collection. |
 | `SceneOperation Open(SceneCollection collection, bool openAll)` | Opens the collection. |
-| `SceneOperation OpenAdditive(IEnumerable&lt;SceneCollection&gt; collections, SceneCollection activeCollection, LoadingScreenReference loadingScreen)` | Opens the collection without closing existing scenes. |
+| `SceneOperation OpenAdditive(IEnumerable<SceneCollection> collections, SceneCollection activeCollection, LoadingScreenReference loadingScreen)` | Opens the collection without closing existing scenes. |
 | `SceneOperation OpenAdditive(SceneCollection collection, bool openAll)` | Opens the collection without closing existing scenes. |
 | `SceneOperation OpenAndActivate(Scene scene)` | Opens this scene and activates it. |
-| `SceneOperation OpenWithLoadingScreen(IEnumerable&lt;Scene&gt; scene, Scene loadingScreen)` | Opens this scene with the specified `loadingScene`. |
+| `SceneOperation OpenWithLoadingScreen(IEnumerable<Scene> scene, Scene loadingScreen)` | Opens this scene with the specified `loadingScene`. |
 | `SceneOperation OpenWithLoadingScreen(Scene scene, Scene loadingScreen)` | Opens this scene with the specified `loadingScene`. |
 | `SceneOperation Preload(Scene scene, Action onPreloaded)` | Preloads the scenes. |
-| `void RemoveSceneLoader&lt;T&gt;()` | \_No documentation available.\_ |
+| `void RemoveSceneLoader<T>()` | \_No documentation available.\_ |
 | `SceneOperation ToggleOpen(Scene scene)` | Toggles the collection open or closed. |
 | `SceneOperation ToggleOpen(SceneCollection collection, bool openAll)` | Toggles the collection open or closed. |
 | `void Track(Scene scene)` | Tracks the specified scene as open. |
@@ -2195,13 +2195,13 @@ Only available in the editor.
 | `void AddNotification(Notification notification)` | Adds a notification to the ASM window, optionally with click and dismiss callbacks, dismiss behavior, visual style, and icon information. |
 | `void ClosePopup()` | Closes the currently open popup, if one is open.. |
 | `bool IsPopupOpen()` | Determines whether any popup is currently open. |
-| `bool IsPopupOpen&lt;T&gt;()` | Determines whether a popup of type `T` is currently open. |
-| `void OpenPopup&lt;T&gt;()` | Opens `T` as a popup. |
-| `void OpenPopup&lt;T&gt;(ViewModelContext? context)` | Opens `T` as a popup. |
+| `bool IsPopupOpen<T>()` | Determines whether a popup of type `T` is currently open. |
+| `void OpenPopup<T>()` | Opens `T` as a popup. |
+| `void OpenPopup<T>(ViewModelContext? context)` | Opens `T` as a popup. |
 | `void OpenPopup(Type type, ViewModelContext? context)` | Opens `type` as a popup. |
 | `void OpenSettings()` | Opens the settings popup on the main page. |
-| `void OpenSettings&lt;T&gt;()` | Opens the settings popup on the `T` page. |
-| `void OpenSettings&lt;T&gt;(ViewModelContext context)` | Opens the settings popup on the `T` page. |
+| `void OpenSettings<T>()` | Opens the settings popup on the `T` page. |
+| `void OpenSettings<T>(ViewModelContext context)` | Opens the settings popup on the `T` page. |
 | `void OpenSettings(Type type)` | Opens the settings popup on the page that matches the view model specified by `type`. |
 | `void OpenSettings(Type type, ViewModelContext context)` | Opens the settings popup on the page that matches the view model specified by `type`. |
 | `void ReloadCollections()` | Reloads collection ui. |
@@ -2354,7 +2354,7 @@ Provides utility methods for working with `UIElements.VisualElement`.
 
 | Member | Description |
 |--------|-------------|
-| `T UseFontAwesome&lt;T&gt;(T element, bool? solid, bool? regular, bool? brands)` | Applies font awesome free to the `UIElements.VisualElement`. |
+| `T UseFontAwesome<T>(T element, bool? solid, bool? regular, bool? brands)` | Applies font awesome free to the `UIElements.VisualElement`. |
 
 <!-- source: api\latest\Editor\Utility\AssetDatabaseUtility.md -->
 ## AssetDatabaseUtility
@@ -2374,9 +2374,9 @@ Only available in the editor.
 | `string ConvertToUnixPath(string path)` | Converts the path separators to use forward slash. |
 | `bool CreateFolder(string folder)` | \_No documentation available.\_ |
 | `bool CreateFolder(string path, out string createdFolder)` | Creates the specified folder. |
-| `IEnumerable&lt;string&gt; FindAssetPaths&lt;T&gt;(string\[\] searchInFolders)` | Finds all assets of type `T`. |
-| `IEnumerable&lt;T&gt; FindAssets&lt;T&gt;()` | Finds all assets of type `T`. |
-| `IEnumerable&lt;T&gt; FindAssets&lt;T&gt;(string\[\] searchInFolders)` | Finds all assets of type `T`. |
+| `IEnumerable<string> FindAssetPaths<T>(string[] searchInFolders)` | Finds all assets of type `T`. |
+| `IEnumerable<T> FindAssets<T>()` | Finds all assets of type `T`. |
+| `IEnumerable<T> FindAssets<T>(string[] searchInFolders)` | Finds all assets of type `T`. |
 | `string MakeRelative(string path, bool includeAssetsFolder, bool prefixWithAssetsIfNecessary)` | Makes the path absolute. Converts path to unix style. |
 | `void ShowFolder(string folderPath)` | Shows the folder and selects the asset. |
 | `void ShowFolder(Object obj)` | Shows the folder and selects the asset. |
@@ -2396,8 +2396,8 @@ Only available in editor.
 
 | Member | Description |
 |--------|-------------|
-| `event Action&lt;BuildUtility.PostBuildEventArgs&gt; postBuild` | Occurs after build. |
-| `event Action&lt;BuildReport&gt; preBuild` | Occurs before build. |
+| `event Action<BuildUtility.PostBuildEventArgs> postBuild` | Occurs after build. |
+| `event Action<BuildReport> preBuild` | Occurs before build. |
 
 ### Static Methods
 
@@ -2407,7 +2407,7 @@ Only available in editor.
 | `BuildReport DoBuild(string path, bool attachProfiler, bool runGameWhenBuilt, bool dev, BuildOptions customOptions)` | Performs a build of the active build profile if one exists, otherwise falls back to Unity's legacy build pipeline. |
 | `BuildReport DoBuild(BuildPlayerOptions opts)` | Performs a build using the legacy `UnityEditor.BuildPlayerOptions` API. |
 | `BuildReport DoBuild(BuildPlayerWithProfileOptions options)` | Builds a player from a specific build profile. |
-| `IEnumerable&lt;(EditorBuildSettingsScene, BuildUtility.Reason)&gt; GetOrderedList()` | Gets an ordered list of all scenes that ASM would set in the build settings. |
+| `IEnumerable<(EditorBuildSettingsScene, BuildUtility.Reason)> GetOrderedList()` | Gets an ordered list of all scenes that ASM would set in the build settings. |
 | `bool IsEnabled(string path, out BuildUtility.Reason reason)` | Checks if the scene at `path` is considered enabled for build. |
 | `bool IsIncluded(Scene scene, out BuildUtility.Reason reason)` | Checks if a scene is valid and included in the ASM profile. |
 | `void PrepareASMForBuild()` | \_No documentation available.\_ |
@@ -2527,9 +2527,9 @@ Represents a post build summary.
 
 | Member | Description |
 |--------|-------------|
-| `BuildUtility.LogEntry\[\] error` | \_No documentation available.\_ |
+| `BuildUtility.LogEntry[] error` | \_No documentation available.\_ |
 | `BuildReport report` | \_No documentation available.\_ |
-| `BuildUtility.LogEntry\[\] warning` | \_No documentation available.\_ |
+| `BuildUtility.LogEntry[] warning` | \_No documentation available.\_ |
 
 <!-- source: api\latest\Editor\Utility\Reason.md -->
 ## BuildUtility.Reason
@@ -2795,8 +2795,8 @@ Represents a listener for progress that can calculate the total progress of a sc
 |--------|-------------|
 | `bool isRegistered { get; }` | Gets if this progress scope is registered. |
 | `int operationCount` | Gets the amount of scenes that will be either unloaded or loaded. |
-| `IEnumerable&lt;Scene&gt; scenesExpectedToLoad` | Gets the scenes that are expected to be loaded. |
-| `IEnumerable&lt;Scene&gt; scenesExpectedToUnload` | Gets the scenes that are expected to be unloaded. |
+| `IEnumerable<Scene> scenesExpectedToLoad` | Gets the scenes that are expected to be loaded. |
+| `IEnumerable<Scene> scenesExpectedToUnload` | Gets the scenes that are expected to be unloaded. |
 | `bool stopListenerWhenDisposed` | Gets or sets whatever the listener should be unregistered in `ProgressScope.Dispose`. Default `true` |
 | `float totalProgress { get; }` | Gets the calculated total progress of this progress scope. |
 
@@ -2806,11 +2806,11 @@ Represents a listener for progress that can calculate the total progress of a sc
 |--------|-------------|
 | `void Dispose()` | Stops listening to progress reports. |
 | `ProgressScope Expect(SceneOperationKind kind, SceneCollection collection, bool openAll, bool isAdditive)` | Expect scenes in `collection`. |
-| `ProgressScope Expect(SceneOperationKind kind, Scene\[\] scene)` | Expect `scene`. |
-| `ProgressScope Expect(SceneOperationKind kind, IEnumerable&lt;Scene&gt; scenes)` | Expect `scenes`. |
+| `ProgressScope Expect(SceneOperationKind kind, Scene[] scene)` | Expect `scene`. |
+| `ProgressScope Expect(SceneOperationKind kind, IEnumerable<Scene> scenes)` | Expect `scenes`. |
 | `float GetSubProgress(SceneOperationKind kind, Scene scene)` | Gets the progress of a specific scene. |
-| `void OnProgressChanged(Action&lt;float&gt; callback)` | Adds a callback when progress changed. |
-| `void RemoveOnProgressChangedCallback(Action&lt;float&gt; callback)` | Removes a callback when progress changed. |
+| `void OnProgressChanged(Action<float> callback)` | Adds a callback when progress changed. |
+| `void RemoveOnProgressChangedCallback(Action<float> callback)` | Removes a callback when progress changed. |
 | `ProgressScope StartListener()` | Starts listening to progress reports. |
 | `ProgressScope StopListener()` | Stops listening to progress reports. |
 
@@ -2965,13 +2965,13 @@ Serves as the abstract base class for models that can be opened, closed, and pre
 
 | Member | Description |
 |--------|-------------|
-| `virtual void \_CancelPreload()` | Cancels all active preloads. |
-| `virtual void \_Close()` | Closes this asset. |
-| `virtual void \_FinishPreload()` | Finishes all active preloads. |
-| `virtual void \_Open()` | Opens this asset. |
-| `virtual void \_Preload()` | Preloads this asset. |
-| `virtual void \_Reopen()` | Reopens this asset. |
-| `virtual void \_ToggleOpen()` | Toggles this asset open or closed. |
+| `virtual void _CancelPreload()` | Cancels all active preloads. |
+| `virtual void _Close()` | Closes this asset. |
+| `virtual void _FinishPreload()` | Finishes all active preloads. |
+| `virtual void _Open()` | Opens this asset. |
+| `virtual void _Preload()` | Preloads this asset. |
+| `virtual void _Reopen()` | Reopens this asset. |
+| `virtual void _ToggleOpen()` | Toggles this asset open or closed. |
 | `virtual SceneOperation CancelPreload()` | Cancels all active preloads. |
 | `abstract SceneOperation Close()` | Closes this asset. |
 | `virtual SceneOperation FinishPreload()` | Finishes all active preloads. |
@@ -2992,22 +2992,22 @@ Provides utility methods for working with `Models.SceneCollection`.
 
 | Member | Description |
 |--------|-------------|
-| `void Add&lt;T&gt;(T collection, Scene\[\] scenes)` | Adds a scene to this `Models.SceneCollection`. |
-| `void AddEmptyScene&lt;T&gt;(T collection)` | Adds an empty scene field to this `Models.SceneCollection`. |
-| `SceneOperation CloseAll(IEnumerable&lt;Scene&gt; scenes)` | Closes the `scenes`. |
-| `SceneOperation CloseAll(IEnumerable&lt;Scene&gt; scenes, LoadingScreenReference loadingScreen)` | Closes the `scenes`. |
-| `int IndexOf&lt;T&gt;(T collection, Scene scene)` | Finds the index of `scene`. |
-| `void Insert&lt;T&gt;(T collection, int index, Scene scene)` | Inserts a scene at the specified index in this collection. |
-| `void Move&lt;T&gt;(T collection, int oldIndex, int newIndex)` | Moves a scene field to a new index. |
-| `SceneOperation OpenAdditive(IEnumerable&lt;SceneCollection&gt; collections)` | Opens the `collections` as additive. |
-| `SceneOperation OpenAdditive(IEnumerable&lt;SceneCollection&gt; collections, SceneCollection activeCollection)` | Opens the `collections` as additive. |
-| `SceneOperation OpenAdditive(IEnumerable&lt;SceneCollection&gt; collections, SceneCollection activeCollection, Scene loadingScene)` | Opens the `collections` as additive. |
-| `SceneOperation OpenAll(IEnumerable&lt;Scene&gt; scenes)` | Opens the `scenes`. |
-| `SceneOperation OpenAll(IEnumerable&lt;Scene&gt; scenes, LoadingScreenReference loadingScreen)` | Opens the `scenes`. |
-| `SceneOperation OpenWithAdditive(SceneCollection collection, SceneCollection\[\] extraAdditiveCollections)` | Opens this `collection` and then opens `extraAdditiveCollections` as additive. |
-| `void Remove&lt;T&gt;(T collection, Scene scene)` | Removes a scene from this `Models.SceneCollection`. |
-| `void RemoveAt&lt;T&gt;(T collection, int index)` | Removes a scene at the specified index from this `Models.SceneCollection`. |
-| `bool Replace&lt;T&gt;(T collection, int index, Scene scene)` | Replaces a scene at the specified index. |
+| `void Add<T>(T collection, Scene[] scenes)` | Adds a scene to this `Models.SceneCollection`. |
+| `void AddEmptyScene<T>(T collection)` | Adds an empty scene field to this `Models.SceneCollection`. |
+| `SceneOperation CloseAll(IEnumerable<Scene> scenes)` | Closes the `scenes`. |
+| `SceneOperation CloseAll(IEnumerable<Scene> scenes, LoadingScreenReference loadingScreen)` | Closes the `scenes`. |
+| `int IndexOf<T>(T collection, Scene scene)` | Finds the index of `scene`. |
+| `void Insert<T>(T collection, int index, Scene scene)` | Inserts a scene at the specified index in this collection. |
+| `void Move<T>(T collection, int oldIndex, int newIndex)` | Moves a scene field to a new index. |
+| `SceneOperation OpenAdditive(IEnumerable<SceneCollection> collections)` | Opens the `collections` as additive. |
+| `SceneOperation OpenAdditive(IEnumerable<SceneCollection> collections, SceneCollection activeCollection)` | Opens the `collections` as additive. |
+| `SceneOperation OpenAdditive(IEnumerable<SceneCollection> collections, SceneCollection activeCollection, Scene loadingScene)` | Opens the `collections` as additive. |
+| `SceneOperation OpenAll(IEnumerable<Scene> scenes)` | Opens the `scenes`. |
+| `SceneOperation OpenAll(IEnumerable<Scene> scenes, LoadingScreenReference loadingScreen)` | Opens the `scenes`. |
+| `SceneOperation OpenWithAdditive(SceneCollection collection, SceneCollection[] extraAdditiveCollections)` | Opens this `collection` and then opens `extraAdditiveCollections` as additive. |
+| `void Remove<T>(T collection, Scene scene)` | Removes a scene from this `Models.SceneCollection`. |
+| `void RemoveAt<T>(T collection, int index)` | Removes a scene at the specified index from this `Models.SceneCollection`. |
+| `bool Replace<T>(T collection, int index, Scene scene)` | Replaces a scene at the specified index. |
 
 <!-- source: api\latest\Models\ASMSceneHelper.md -->
 ## ASMSceneHelper
@@ -3034,22 +3034,22 @@ Intended for use from `Events.UnityEvent`.
 
 | Member | Description |
 |--------|-------------|
-| `void \_Activate(Scene scene)` | \_No documentation available.\_ |
-| `void \_CancelPreload()` | Cancels the preload. All preloaded scenes will be fully loaded (limitation by Unity), then closed. No ASM scene callbacks will be called. |
-| `void \_Close(SceneCollection collection)` | \_No documentation available.\_ |
-| `void \_Close(Scene scene)` | \_No documentation available.\_ |
-| `void \_FinishPreload()` | \_No documentation available.\_ |
-| `void \_Open(SceneCollection collection)` | \_No documentation available.\_ |
-| `void \_Open(Scene scene)` | \_No documentation available.\_ |
-| `void \_OpenAdditive(SceneCollection collection)` | Opens the collection as additive. |
-| `void \_OpenAndActivate(Scene scene)` | \_No documentation available.\_ |
-| `void \_Preload(SceneCollection collection)` | Preloads the specified collection. |
-| `void \_Preload(Scene scene)` | Preloads the specified collection. |
-| `void \_PreloadAdditive(SceneCollection collection)` | Preloads the collection as additive. |
-| `void \_Reopen(SceneCollection collection)` | \_No documentation available.\_ |
-| `void \_Reopen(Scene scene)` | \_No documentation available.\_ |
-| `void \_ToggleOpen(SceneCollection collection)` | Toggles the collection open or closed. |
-| `void \_ToggleOpen(Scene scene)` | Toggles the collection open or closed. |
+| `void _Activate(Scene scene)` | \_No documentation available.\_ |
+| `void _CancelPreload()` | Cancels the preload. All preloaded scenes will be fully loaded (limitation by Unity), then closed. No ASM scene callbacks will be called. |
+| `void _Close(SceneCollection collection)` | \_No documentation available.\_ |
+| `void _Close(Scene scene)` | \_No documentation available.\_ |
+| `void _FinishPreload()` | \_No documentation available.\_ |
+| `void _Open(SceneCollection collection)` | \_No documentation available.\_ |
+| `void _Open(Scene scene)` | \_No documentation available.\_ |
+| `void _OpenAdditive(SceneCollection collection)` | Opens the collection as additive. |
+| `void _OpenAndActivate(Scene scene)` | \_No documentation available.\_ |
+| `void _Preload(SceneCollection collection)` | Preloads the specified collection. |
+| `void _Preload(Scene scene)` | Preloads the specified collection. |
+| `void _PreloadAdditive(SceneCollection collection)` | Preloads the collection as additive. |
+| `void _Reopen(SceneCollection collection)` | \_No documentation available.\_ |
+| `void _Reopen(Scene scene)` | \_No documentation available.\_ |
+| `void _ToggleOpen(SceneCollection collection)` | Toggles the collection open or closed. |
+| `void _ToggleOpen(Scene scene)` | Toggles the collection open or closed. |
 | `void Activate(Scene scene)` | \_No documentation available.\_ |
 | `SceneOperation CancelPreload()` | Cancels the preload. All preloaded scenes will be fully loaded (limitation by Unity), then closed. No ASM scene callbacks will be called. |
 | `SceneOperation Close(SceneCollection collection)` | \_No documentation available.\_ |
@@ -3109,7 +3109,7 @@ Manages initialization, as this `UnityEngine.ScriptableObject` is core to ASM, a
 | `SceneAutoTrackOutsideASMOption sceneAutoTrackOutsideASMOption` | Specifies if ASM should auto track scenes that were loaded outside of ASM. |
 | `SceneImportOption sceneImportOption` | Gets or sets when to automatically import scenes. |
 | `float spamCheckCooldown` | Sets the default cooldown for `Utility.SpamCheck`. |
-| `InputBinding\[\] toolbarBindings` | Specifies the bindings to open the ASM toolbar, if enabled. |
+| `InputBinding[] toolbarBindings` | Specifies the bindings to open the ASM toolbar, if enabled. |
 | `bool toolbarButtonVisible` | Specifies whatever the ASM toolbar button should be visible. |
 | `bool toolbarEnabled` | Specifies whatever the ASM toolbar should be enabled. |
 
@@ -3163,7 +3163,7 @@ Only available in editor.
 | `bool logStartup` | Specifies whatever ASM should log during startup. |
 | `bool logTracking` | Specifies whatever ASM should log when a scene is tracked after loaded. |
 | `bool openCollectionOnSceneAssetOpen` | When `true`: opens the first found collection that a scene is contained in when opening an SceneAsset in editor. |
-| `IEnumerable&lt;SceneCollection&gt; pinnedOverlayCollections` | Enumerates the pinned collections in the collection overlay. |
+| `IEnumerable<SceneCollection> pinnedOverlayCollections` | Enumerates the pinned collections in the collection overlay. |
 | `bool startupProcessOnCollectionPlay` | Specifies whatever startup process should run when pressing collection play button. |
 | `int toolbarButtonCount` | Specifies how many buttons should be placed in toolbar. |
 | `float toolbarPlayButtonOffset` | Specifies offset for toolbar play buttons. |
@@ -3231,10 +3231,10 @@ Represents a blocklist.
 | `void Add(string path)` | Adds `path` to blocklist. |
 | `void Change(int i, string newPath)` | Changes the path at the specified index in this blocklist. |
 | `bool Contains(string path)` | Gets if this blocklist contains `path`. |
-| `IEnumerable&lt;string&gt; Enumerate()` | Enumerates the paths are added to this blocklist. |
+| `IEnumerable<string> Enumerate()` | Enumerates the paths are added to this blocklist. |
 | `bool Get(int index, out string path)` | Gets the index of `path` in this blocklist. |
 | `bool MatchesFilter(string path)` | Gets if `path` matches this blocklist. |
-| `bool MatchesFilter(string path, IEnumerable&lt;string&gt; list)` | Gets if `path` matches this blocklist. |
+| `bool MatchesFilter(string path, IEnumerable<string> list)` | Gets if `path` matches this blocklist. |
 | `void Remove(string path)` | Removes `path` from this blocklist. |
 | `void RemoveAt(int index)` | Removes the entry at `index` from this blocklist. |
 
@@ -3291,7 +3291,7 @@ Represents a serializable dictionary for storing custom data.
 | `bool ContainsKey(TKey key)` | Determines whether the specified key exists. |
 | `bool Get(TKey key, out TValue value)` | Gets custom data. |
 | `TValue Get(TKey key)` | Gets custom data. |
-| `IEnumerator&lt;KeyValuePair&lt;TKey, TValue&gt;&gt; GetEnumerator()` | \_No documentation available.\_ |
+| `IEnumerator<KeyValuePair<TKey, TValue>> GetEnumerator()` | \_No documentation available.\_ |
 | `void Set(TKey key, TValue value)` | Sets custom data. |
 
 <!-- source: api\latest\Models\DynamicCollection.md -->
@@ -3308,8 +3308,8 @@ Represents a collection that can take a path and then gather all scenes within, 
 |--------|-------------|
 | `int count` | \_No documentation available.\_ |
 | `string path` | Specifies the path that this dynamic collection will gather scenes from. |
-| `IEnumerable&lt;string&gt; scenePaths` | Gets the paths of the scenes tracked by this dynamic collection. |
-| `IEnumerable&lt;string&gt; scenes` | \_No documentation available.\_ |
+| `IEnumerable<string> scenePaths` | Gets the paths of the scenes tracked by this dynamic collection. |
+| `IEnumerable<string> scenes` | \_No documentation available.\_ |
 
 ### Static Methods
 
@@ -3343,8 +3343,8 @@ Base class for dynamic collections.
 | `bool hasScenes` | Gets if this collection has any scenes. |
 | `T Item` | \_No documentation available.\_ |
 | `Profile profile` | Gets the profile that contains this collection. Cached. |
-| `IEnumerable&lt;string&gt; scenePaths` | Gets the scene paths contained in this collection. |
-| `IEnumerable&lt;T&gt; scenes` | Gets the scenes or scene paths contained in this collection. |
+| `IEnumerable<string> scenePaths` | Gets the scene paths contained in this collection. |
+| `IEnumerable<T> scenes` | Gets the scenes or scene paths contained in this collection. |
 | `string title` | Gets the title of this collection. |
 
 ### Methods
@@ -3353,10 +3353,10 @@ Base class for dynamic collections.
 |--------|-------------|
 | `bool Contains(T scene)` | Gets whether this collection contains the specified scene or scene path. |
 | `virtual bool Equals(object obj)` | \_No documentation available.\_ |
-| `bool Equals(DynamicCollectionBase&lt;T&gt; other)` | Determines whether this collection is equal to another collection. |
+| `bool Equals(DynamicCollectionBase<T> other)` | Determines whether this collection is equal to another collection. |
 | `bool FindProfile(out Profile profile)` | Finds the profile that contains this collection. |
 | `Profile FindProfile()` | Finds the profile that contains this collection. |
-| `IEnumerator&lt;T&gt; GetEnumerator()` | Gets an enumerator for the scenes or scene paths contained in this collection. |
+| `IEnumerator<T> GetEnumerator()` | Gets an enumerator for the scenes or scene paths contained in this collection. |
 | `virtual int GetHashCode()` | \_No documentation available.\_ |
 | `virtual bool IsMatch(string q)` | Matches this collection against the query string. |
 | `virtual string ToString()` | Returns the title of this collection. |
@@ -3511,13 +3511,13 @@ A struct providing unity events.
 
 | Member | Description |
 |--------|-------------|
-| `UnityEvent&lt;Scene&gt; OnClose` | Occurs when this scene is closed. |
-| `UnityEvent&lt;Scene, SceneCollection&gt; OnCollectionClosed` | Occurs when a collection closed this scene. |
-| `UnityEvent&lt;Scene, SceneCollection&gt; OnCollectionOpened` | Occurs when a collection opened this scene. |
-| `UnityEvent&lt;Scene&gt; OnOpen` | Occurs when this scene is opened. |
-| `UnityEvent&lt;bool&gt; OnOpenChanged` | Occurs when this scene is opened or closed, provides the open status as a bool. |
-| `UnityEvent&lt;Scene&gt; OnPreload` | Occurs when this scene is preloaded. |
-| `UnityEvent&lt;Scene&gt; OnPreloadFinished` | Occurs when preload is finished for this scene. |
+| `UnityEvent<Scene> OnClose` | Occurs when this scene is closed. |
+| `UnityEvent<Scene, SceneCollection> OnCollectionClosed` | Occurs when a collection closed this scene. |
+| `UnityEvent<Scene, SceneCollection> OnCollectionOpened` | Occurs when a collection opened this scene. |
+| `UnityEvent<Scene> OnOpen` | Occurs when this scene is opened. |
+| `UnityEvent<bool> OnOpenChanged` | Occurs when this scene is opened or closed, provides the open status as a bool. |
+| `UnityEvent<Scene> OnPreload` | Occurs when this scene is preloaded. |
+| `UnityEvent<Scene> OnPreloadFinished` | Occurs when preload is finished for this scene. |
 
 <!-- source: api\latest\Models\IEquality.md -->
 ## Scene.IEquality
@@ -3538,7 +3538,7 @@ Represents a input binding for InputSystem. Available even when InputSystem is u
 
 | Member | Description |
 |--------|-------------|
-| `List&lt;InputButton&gt; buttons` | Specifies the buttons. |
+| `List<InputButton> buttons` | Specifies the buttons. |
 | `InputBindingInteractionType interactionType` | Specifies the interaction type. |
 | `bool isValid` | Gets if this input binding is valid, if it has any buttons. |
 | `bool openCollectionAsAdditive` | Specifies whatever collection should be opened as a collection. |
@@ -3547,8 +3547,8 @@ Represents a input binding for InputSystem. Available even when InputSystem is u
 
 | Member | Description |
 |--------|-------------|
-| `void SetButtons(InputBindingInteractionType interactionType, InputButton\[\] binding)` | Set the buttons for this input binding. |
-| `void SetButtons(InputButton\[\] binding)` | Set the buttons for this input binding. |
+| `void SetButtons(InputBindingInteractionType interactionType, InputButton[] binding)` | Set the buttons for this input binding. |
+| `void SetButtons(InputButton[] binding)` | Set the buttons for this input binding. |
 
 <!-- source: api\latest\Models\InputBindingInteractionType.md -->
 ## InputBindingInteractionType
@@ -3623,18 +3623,18 @@ May not be available in `[InitializeOnLoad]` and similar, use `SceneManager.OnIn
 
 | Member | Description |
 |--------|-------------|
-| `IEnumerable&lt;SceneCollectionTemplate&gt; collectionTemplates` | Enumerates all collection templates tracked by ASM. |
+| `IEnumerable<SceneCollectionTemplate> collectionTemplates` | Enumerates all collection templates tracked by ASM. |
 | `IAssetsAPIDefaultScenes defaults` | Provides access to the default ASM scenes. |
-| `IEnumerable&lt;Profile&gt; profiles` | Enumerates all profiles tracked by ASM. |
+| `IEnumerable<Profile> profiles` | Enumerates all profiles tracked by ASM. |
 | `ASMSceneHelper sceneHelper` | Provides access to the scene helper. |
-| `IEnumerable&lt;Scene&gt; scenes` | Enumerates all imported scenes tracked by ASM. |
+| `IEnumerable<Scene> scenes` | Enumerates all imported scenes tracked by ASM. |
 
 ### Methods
 
 | Member | Description |
 |--------|-------------|
-| `IEnumerable&lt;T&gt; Enumerate&lt;T&gt;()` | Enumerates all assets of type `T`. |
-| `IEnumerable&lt;IASMModel&gt; Enumerate()` | Enumerates all assets. |
+| `IEnumerable<T> Enumerate<T>()` | Enumerates all assets of type `T`. |
+| `IEnumerable<IASMModel> Enumerate()` | Enumerates all assets. |
 
 <!-- source: api\latest\Models\Interfaces\IAssetsAPIDefaultScenes.md -->
 ## IAssetsAPIDefaultScenes
@@ -3669,7 +3669,7 @@ May not be available in `[InitializeOnLoad]` and similar, use `SceneManager.OnIn
 
 | Member | Description |
 |--------|-------------|
-| `IEnumerable&lt;Scene&gt; Enumerate()` | Enumerates all imported default scenes. |
+| `IEnumerable<Scene> Enumerate()` | Enumerates all imported default scenes. |
 
 <!-- source: api\latest\Models\Interfaces\IAutoScenes.md -->
 ## IAutoScenes
@@ -3686,7 +3686,7 @@ See also `Utility.AutoSceneUtility`.
 
 | Member | Description |
 |--------|-------------|
-| `List&lt;AutoSceneEntry&gt; autoScenes` | Gets the auto scenes. |
+| `List<AutoSceneEntry> autoScenes` | Gets the auto scenes. |
 
 ### Methods
 
@@ -3720,7 +3720,7 @@ Provides extension methods, see `ASMModelExtensions.Add` for example.
 
 | Member | Description |
 |--------|-------------|
-| `List&lt;Scene&gt; sceneList` | The list of scenes that this collection manages. |
+| `List<Scene> sceneList` | The list of scenes that this collection manages. |
 
 <!-- source: api\latest\Models\Interfaces\IFindable.md -->
 ## IFindable
@@ -3782,10 +3782,10 @@ Defines members for openable assets.
 
 | Member | Description |
 |--------|-------------|
-| `void \_Close()` | Closes this asset. |
-| `void \_Open()` | Opens this asset. |
-| `void \_Reopen()` | Reopens this asset. |
-| `void \_ToggleOpen()` | Toggles this asset open or closed. |
+| `void _Close()` | Closes this asset. |
+| `void _Open()` | Opens this asset. |
+| `void _Reopen()` | Reopens this asset. |
+| `void _ToggleOpen()` | Toggles this asset open or closed. |
 | `SceneOperation Close()` | Closes this asset. |
 | `SceneOperation Open()` | Opens this asset. |
 | `SceneOperation Reopen()` | Reopens this asset. |
@@ -3803,7 +3803,7 @@ Defines members for openable collections.
 
 | Member | Description |
 |--------|-------------|
-| `void \_OpenAdditive()` | Opens the collection as additive. |
+| `void _OpenAdditive()` | Opens the collection as additive. |
 | `SceneOperation OpenAdditive(bool openAll)` | Opens the collection as additive. |
 
 <!-- source: api\latest\Models\Interfaces\IOpenableCollection_Of_T.md -->
@@ -3818,7 +3818,7 @@ Defines members for openable collections.
 
 | Member | Description |
 |--------|-------------|
-| `void \_OpenAdditive(T model)` | Opens the collection as additive. |
+| `void _OpenAdditive(T model)` | Opens the collection as additive. |
 | `SceneOperation OpenAdditive(T model, bool openAll)` | Opens the collection as additive. |
 
 <!-- source: api\latest\Models\Interfaces\IOpenableScene.md -->
@@ -3833,8 +3833,8 @@ Defines members for openable scenes.
 
 | Member | Description |
 |--------|-------------|
-| `void \_Activate()` | Activates the scene. |
-| `void \_OpenAndActivate()` | Opens and activates the scene. |
+| `void _Activate()` | Activates the scene. |
+| `void _OpenAndActivate()` | Opens and activates the scene. |
 | `void Activate()` | Activates the scene. |
 | `SceneOperation CloseWithLoadingScreen(Scene loadingScene)` | Closes the scene using the specified loading screen. |
 | `SceneOperation OpenAndActivate()` | Opens and activates the scene. |
@@ -3852,8 +3852,8 @@ Defines members for openable scenes.
 
 | Member | Description |
 |--------|-------------|
-| `void \_Activate(T scene)` | Activates the scene. |
-| `void \_OpenAndActivate(T scene)` | Opens and activates the scene. |
+| `void _Activate(T scene)` | Activates the scene. |
+| `void _OpenAndActivate(T scene)` | Opens and activates the scene. |
 | `void Activate(T scene)` | Activates the scene. |
 | `SceneOperation CloseWithLoadingScreen(T scene, Scene loadingScene)` | Closes the scene using the specified loading screen. |
 | `SceneOperation OpenAndActivate(T scene)` | Opens and activates the scene. |
@@ -3871,10 +3871,10 @@ Defines members for openable assets.
 
 | Member | Description |
 |--------|-------------|
-| `void \_Close(T model)` | Closes this asset. |
-| `void \_Open(T model)` | Opens this asset. |
-| `void \_Reopen(T model)` | Reopens this asset. |
-| `void \_ToggleOpen(T model)` | Toggles this asset open or closed. |
+| `void _Close(T model)` | Closes this asset. |
+| `void _Open(T model)` | Opens this asset. |
+| `void _Reopen(T model)` | Reopens this asset. |
+| `void _ToggleOpen(T model)` | Toggles this asset open or closed. |
 | `SceneOperation Close(T model)` | Closes this asset. |
 | `SceneOperation Open(T model)` | Opens this asset. |
 | `SceneOperation Reopen(T model)` | Reopens this asset. |
@@ -3898,9 +3898,9 @@ Defines members for assets that support preloading.
 
 | Member | Description |
 |--------|-------------|
-| `void \_CancelPreload()` | Cancels all active preloads. |
-| `void \_FinishPreload()` | Finishes all active preloads. |
-| `void \_Preload()` | Preloads this asset. |
+| `void _CancelPreload()` | Cancels all active preloads. |
+| `void _FinishPreload()` | Finishes all active preloads. |
+| `void _Preload()` | Preloads this asset. |
 | `SceneOperation CancelPreload()` | Cancels all active preloads. |
 | `SceneOperation FinishPreload()` | Finishes all active preloads. |
 | `SceneOperation Preload()` | Preloads this asset. |
@@ -3936,7 +3936,7 @@ Defines some core properties for scene collections.
 |--------|-------------|
 | `int count` | Gets the scene count of this collection. |
 | `string description` | Gets the description of this collection. |
-| `IEnumerable&lt;string&gt; scenePaths` | Gets the scenes of this collection. |
+| `IEnumerable<string> scenePaths` | Gets the scenes of this collection. |
 | `string title` | Gets the title of this collection. |
 
 ### Methods
@@ -3959,7 +3959,7 @@ Defines some core properties for scene collections.
 | Member | Description |
 |--------|-------------|
 | `T Item` | \_No documentation available.\_ |
-| `IEnumerable&lt;T&gt; scenes` | Gets the scenes of this collection. |
+| `IEnumerable<T> scenes` | Gets the scenes of this collection. |
 
 ### Methods
 
@@ -4039,28 +4039,28 @@ A profile for ASM, contains settings and collections.
 
 | Member | Description |
 |--------|-------------|
-| `IEnumerable&lt;ISceneCollection&gt; allCollections` | Gets `Profile.collections`, `Profile.standaloneScenes`, `Profile.dynamicCollections`. |
-| `IEnumerable&lt;Scene&gt; allScenes` | Gets all scenes, including child profile scenes. |
+| `IEnumerable<ISceneCollection> allCollections` | Gets `Profile.collections`, `Profile.standaloneScenes`, `Profile.dynamicCollections`. |
+| `IEnumerable<Scene> allScenes` | Gets all scenes, including child profile scenes. |
 | `bool autoSwitchBuildProfileOnBuild` | Specifies whether ASM may write the build scene list to Unity’s active build profile when no build profile is explicitly associated. |
 | `bool autoUpdateBuildScenes` | Specifies whatever build scene list should be automatically updated. |
-| `IEnumerable&lt;Profile&gt; childProfiles` | Gets the child profiles for this profile. |
-| `IEnumerable&lt;Scene&gt; childProfileScenes` | Gets all scenes from child profiles. |
-| `IEnumerable&lt;SceneCollection&gt; childProfileStartupCollections` | Gets all startup collections from child profiles. |
-| `IEnumerable&lt;Scene&gt; childProfileStartupScenes` | Gets all startup scenes from child profiles. |
-| `IEnumerable&lt;SceneCollection&gt; collections` | Gets the collections contained within this profile. |
-| `IEnumerable&lt;DynamicCollection&gt; dynamicCollections` | Gets the dynamic collections contained within this profile. |
+| `IEnumerable<Profile> childProfiles` | Gets the child profiles for this profile. |
+| `IEnumerable<Scene> childProfileScenes` | Gets all scenes from child profiles. |
+| `IEnumerable<SceneCollection> childProfileStartupCollections` | Gets all startup collections from child profiles. |
+| `IEnumerable<Scene> childProfileStartupScenes` | Gets all startup scenes from child profiles. |
+| `IEnumerable<SceneCollection> collections` | Gets the collections contained within this profile. |
+| `IEnumerable<DynamicCollection> dynamicCollections` | Gets the dynamic collections contained within this profile. |
 | `bool isActive` | Gets if this profile is set as active. |
 | `LoadingScreenReference loadingScreen` | The default loading scene. |
 | `bool notify` | Specifies whatever this profile should trigger a notification when imported. |
 | `string notifyMessage` | Specifies the notification messasge, when `Profile.notify` is `true`. |
-| `IEnumerable&lt;ISceneCollection&gt; removedCollections` | Gets all removed collections in this profile. |
-| `IEnumerable&lt;Scene&gt; scenes` | Gets the scenes managed by this profile. |
-| `IEnumerable&lt;Scene&gt; specialScenes` | Gets default loading screen, splash screen and startup loading screen. |
+| `IEnumerable<ISceneCollection> removedCollections` | Gets all removed collections in this profile. |
+| `IEnumerable<Scene> scenes` | Gets the scenes managed by this profile. |
+| `IEnumerable<Scene> specialScenes` | Gets default loading screen, splash screen and startup loading screen. |
 | `LoadingScreenReference splashScreen` | The splash scene. |
 | `StandaloneCollection standaloneScenes` | Gets the standalone scenes contained within this profile. |
-| `IEnumerable&lt;SceneCollection&gt; startupCollections` | Gets the collections that will be opened on startup. |
+| `IEnumerable<SceneCollection> startupCollections` | Gets the collections that will be opened on startup. |
 | `Scene startupScene` | The startup scene. |
-| `IEnumerable&lt;Scene&gt; startupScenes` | Gets the scenes flagged to open on startup. |
+| `IEnumerable<Scene> startupScenes` | Gets the scenes flagged to open on startup. |
 | `BuildProfile unityBuildProfile` | Specifies the `Profile.BuildProfile` that ASM writes its build scene list to. |
 | `bool unloadUnusedAssetsForStandalone` | Enable or disable ASM calling `Resources.UnloadUnusedAssets` after standalone scenes has been opened or closed. |
 
@@ -4097,8 +4097,8 @@ A profile for ASM, contains settings and collections.
 | `void CreateDynamicCollection()` | Creates a dynamic collection with default values. |
 | `DynamicCollection CreateDynamicCollection(string path, string title)` | Creates a dynamic collection with the specified path and optional title. |
 | `void Delete(ISceneCollection collection)` | Deletes a collection. Does not prompt undo. |
-| `IEnumerable&lt;ISceneCollection&gt; FindCollections(Scene scene)` | Finds all collection that the scene is included in. Includes dynamic collections. |
-| `IEnumerable&lt;ISceneCollection&gt; FindUntrackedCollections()` | Gets all collections saved as sub assets of this profile, that are not referenced in it. |
+| `IEnumerable<ISceneCollection> FindCollections(Scene scene)` | Finds all collection that the scene is included in. Includes dynamic collections. |
+| `IEnumerable<ISceneCollection> FindUntrackedCollections()` | Gets all collections saved as sub assets of this profile, that are not referenced in it. |
 | `int IndexOf(SceneCollection collection)` | Gets the index of the specified collection. |
 | `int IndexOf(DynamicCollection collection)` | Gets the index of the specified collection. |
 | `bool IsStartupCollection(SceneCollection collection)` | Gets if the specified collection is a startup collection. |
@@ -4127,12 +4127,12 @@ A scene can be imported in the ASM window (via notification / popup), or by usin
 | `string address` | Gets the addressable address for this scene. |
 | `string asmPath` | Gets the path of this `Models.Scene`. |
 | `EditorPersistentOption autoOpenInEditor` | Specifies whatever this scene should be opened automatically outside of play-mode. |
-| `List&lt;Scene&gt; autoOpenInEditorScenes` | Specifies the scenes that should trigger this scene to open when `Scene.autoOpenInEditor` is set to `EditorPersistentOption.WhenAnyOfTheFollowingScenesAreOpened`. |
-| `IEnumerable&lt;CrossSceneReference&gt; crossSceneReferences { get; }` | Enumerates the cross-scene references defined on this scene. |
+| `List<Scene> autoOpenInEditorScenes` | Specifies the scenes that should trigger this scene to open when `Scene.autoOpenInEditor` is set to `EditorPersistentOption.WhenAnyOfTheFollowingScenesAreOpened`. |
+| `IEnumerable<CrossSceneReference> crossSceneReferences { get; }` | Enumerates the cross-scene references defined on this scene. |
 | `Scene.Events events` | Gets the unity events for this scene. |
 | `bool hasSceneAsset` | Gets if `Scene.m\_sceneAsset` has a value. |
-| `Scene\[\] ignoreInputBindingsForScenes` | Specifies scenes where input bindings should be ignored while open (for this scene). |
-| `InputBinding\[\] inputBindings` | Gets or sets the input bindings for this scene. |
+| `Scene[] ignoreInputBindingsForScenes` | Specifies scenes where input bindings should be ignored while open (for this scene). |
+| `InputBinding[] inputBindings` | Gets or sets the input bindings for this scene. |
 | `Scene inputBindingsLoadingScene` | Specifies loading screen to use when opening or closing this scene using a input binding. |
 | `Scene? internalScene { get; }` | Gets the `SceneManagement.Scene` that this scene is associated with. |
 | `bool isActive` | Gets if this scene is currently active. |
@@ -4183,11 +4183,11 @@ Used in `AssetDatabase.FindAssets`. |
 
 | Member | Description |
 |--------|-------------|
-| `IEnumerable&lt;Scene&gt; Find(Func&lt;Scene, bool&gt; predicate)` | Find scenes by name or path. |
+| `IEnumerable<Scene> Find(Func<Scene, bool> predicate)` | Find scenes by name or path. |
 | `Scene Find(string q)` | Find scenes by name or path. |
-| `IEnumerable&lt;Scene&gt; Find&lt;TSceneLoader&gt;()` | Find scenes by enabled scene loader. |
-| `IEnumerable&lt;Scene&gt; FindOpen(string q)` | Find open scenes by name or path. |
-| `IEnumerable&lt;Scene&gt; FindOpen(Func&lt;Scene, bool&gt; predicate)` | Find open scenes by name or path. |
+| `IEnumerable<Scene> Find<TSceneLoader>()` | Find scenes by enabled scene loader. |
+| `IEnumerable<Scene> FindOpen(string q)` | Find open scenes by name or path. |
+| `IEnumerable<Scene> FindOpen(Func<Scene, bool> predicate)` | Find open scenes by name or path. |
 | `bool IsEqual(object left, object right)` | \_No documentation available.\_ |
 | `bool TryFind(string q, out Scene scene)` | Find scenes by name or path. |
 
@@ -4195,16 +4195,16 @@ Used in `AssetDatabase.FindAssets`. |
 
 | Member | Description |
 |--------|-------------|
-| `void \_Activate()` | Activates this scene. |
-| `void \_CloseWithLoadingScreen(Scene loadingScene)` | Closes this scene with the specified `loadingScene`. |
-| `void \_OpenAndActivate()` | Opens this scene and activates it. |
-| `void \_OpenWithLoadingScreen(Scene loadingScene)` | Opens this scene with the specified `loadingScene`. |
+| `void _Activate()` | Activates this scene. |
+| `void _CloseWithLoadingScreen(Scene loadingScene)` | Closes this scene with the specified `loadingScene`. |
+| `void _OpenAndActivate()` | Opens this scene and activates it. |
+| `void _OpenWithLoadingScreen(Scene loadingScene)` | Opens this scene with the specified `loadingScene`. |
 | `void Activate()` | Activates this scene. |
 | `void AddCrossSceneReference(CrossSceneReference reference)` | Adds a cross-scene reference for this scene. |
 | `void ClearSceneLoader()` | Clears custom scene loader for this scene. This means normal ASM functionality will be used. |
 | `virtual SceneOperation Close()` | Closes this scene. |
 | `SceneOperation CloseWithLoadingScreen(Scene loadingScene)` | Closes this scene with the specified `loadingScene`. |
-| `IEnumerable&lt;AutoSceneEntry&gt; EnumerateAutoScenes()` | Enumerates all auto scenes on this scene. |
+| `IEnumerable<AutoSceneEntry> EnumerateAutoScenes()` | Enumerates all auto scenes on this scene. |
 | `virtual bool Equals(object obj)` | \_No documentation available.\_ |
 | `bool Equals(Scene other)` | \_No documentation available.\_ |
 | `bool Equals(Scene? other)` | \_No documentation available.\_ |
@@ -4217,12 +4217,12 @@ Used in `AssetDatabase.FindAssets`. |
 | `AutoSceneEntry FindAutoScene(SceneAsset scene, AutoSceneOption option)` | \_No documentation available.\_ |
 | `AutoSceneEntry FindAutoScene(SceneAsset scene, string customOption)` | \_No documentation available.\_ |
 | `bool FindAutoSceneForOption(string customOption, out AutoSceneEntry entry)` | Finds the auto scene with the specified custom option on this scene. |
-| `T FindObject&lt;T&gt;()` | Finds the object in the hierarchy of this `Models.Scene`. |
-| `bool FindObject&lt;T&gt;(out T component)` | \_No documentation available.\_ |
-| `IEnumerable&lt;T&gt; FindObjects&lt;T&gt;()` | Finds the objects in the hierarchy of this `Models.Scene`. |
+| `T FindObject<T>()` | Finds the object in the hierarchy of this `Models.Scene`. |
+| `bool FindObject<T>(out T component)` | \_No documentation available.\_ |
+| `IEnumerable<T> FindObjects<T>()` | Finds the objects in the hierarchy of this `Models.Scene`. |
 | `SceneLoader GetEffectiveSceneLoader()` | Gets the effective, contextual, scene loader for this scene. `null` if none found (this means normal ASM loader will be used). |
 | `virtual int GetHashCode()` | \_No documentation available.\_ |
-| `IEnumerable&lt;GameObject&gt; GetRootGameObjects()` | Gets the root game objects in this `Models.Scene`. |
+| `IEnumerable<GameObject> GetRootGameObjects()` | Gets the root game objects in this `Models.Scene`. |
 | `SceneLoader GetSceneLoader()` | Gets the scene loader specified for this scene. `null` if none set. |
 | `string GetTooltip()` | Gets the SceneField tooltip. |
 | `virtual bool IsMatch(string q)` | Gets if `q` matches `ASMModelBase.name`, `ASMModelBase.id`, `Scene.path`. |
@@ -4231,7 +4231,7 @@ Used in `AssetDatabase.FindAssets`. |
 | `SceneOperation OpenWithLoadingScreen(Scene loadingScene)` | Opens this scene with the specified `loadingScene`. |
 | `virtual SceneOperation Preload()` | Preloads this scene. |
 | `SceneOperation Preload(Action onPreloaded)` | Preloads this scene. |
-| `void RegisterCallback&lt;T&gt;(EventCallback&lt;T&gt; callback, When when, string key)` | \_No documentation available.\_ |
+| `void RegisterCallback<T>(EventCallback<T> callback, When when, string key)` | \_No documentation available.\_ |
 | `void RemoveCrossSceneReference(CrossSceneReference reference)` | Removes a cross-scene reference for this scene. |
 | `virtual SceneOperation Reopen()` | Reopens this scene. |
 | `void SetAutoOpenIn(SceneCollection collection, bool openSceneWhenCollectionOpen)` | Toggles whatever this scene should be automatically opened when a collection is opened. No effect if scene is not already contained within collection. |
@@ -4241,12 +4241,12 @@ Used in `AssetDatabase.FindAssets`. |
 | `void SetAutoScene(string scenePath, string customOption)` | \_No documentation available.\_ |
 | `void SetAutoScene(SceneAsset scene, AutoSceneOption option)` | \_No documentation available.\_ |
 | `void SetAutoScene(SceneAsset scene, string customOption)` | \_No documentation available.\_ |
-| `void SetSceneLoader&lt;T&gt;()` | Specifies the scene loader to use for this scene. |
+| `void SetSceneLoader<T>()` | Specifies the scene loader to use for this scene. |
 | `bool ShouldAutoOpenIn(SceneCollection collection)` | Gets whatever the scene should automatically open, when this collection is opened. |
 | `virtual SceneOperation ToggleOpen()` | Toggles this scene open or closed. |
 | `virtual string ToString()` | \_No documentation available.\_ |
-| `void UnregisterCallback&lt;T&gt;(EventCallback&lt;T&gt; callback, When when, string key)` | \_No documentation available.\_ |
-| `bool UsesSceneLoader&lt;T&gt;()` | Gets whatever `T` is enabled for this scene. |
+| `void UnregisterCallback<T>(EventCallback<T> callback, When when, string key)` | \_No documentation available.\_ |
+| `bool UsesSceneLoader<T>()` | Gets whatever `T` is enabled for this scene. |
 
 <!-- source: api\latest\Models\SceneCollection.md -->
 ## SceneCollection
@@ -4264,13 +4264,13 @@ Only one collection can be fully open at a time; additive collections are suppor
 | Member | Description |
 |--------|-------------|
 | `Scene activeScene` | Specifies the scene that should be activated after collection is opened. |
-| `IEnumerable&lt;Scene&gt; allScenes` | Gets both `SceneCollection.scenes` and loading scenes. |
+| `IEnumerable<Scene> allScenes` | Gets both `SceneCollection.scenes` and loading scenes. |
 | `int count` | \_No documentation available.\_ |
 | `string description` | \_No documentation available.\_ |
 | `SceneCollection.Events events` | Gets the unity events for this scene. |
 | `bool hasScenes` | Gets if this collection has any scenes. |
-| `Scene\[\] ignoreInputBindingsForScenes` | Specifies scenes where input bindings should be ignored while open (for this collection). |
-| `InputBinding\[\] inputBindings` | Gets or sets the input bindings for this collection. |
+| `Scene[] ignoreInputBindingsForScenes` | Specifies scenes where input bindings should be ignored while open (for this collection). |
+| `InputBinding[] inputBindings` | Gets or sets the input bindings for this collection. |
 | `bool isIncluded` | Gets whatever this collection should be included in build. |
 | `bool isLocked` | Gets if this collection is locked. |
 | `bool isOpen` | Gets if this collection is open. |
@@ -4286,10 +4286,10 @@ Only one collection can be fully open at a time; additive collections are suppor
 | `string lockMessage` | Gets or sets the message to be displayed when unlocking this collection. |
 | `bool openAsPersistent` | Specifies whatever this collection should be opened as persistent. |
 | `Profile profile` | The profile that this collection is associated with. |
-| `IEnumerable&lt;string&gt; scenePaths` | \_No documentation available.\_ |
-| `IEnumerable&lt;Scene&gt; scenes` | \_No documentation available.\_ |
-| `List&lt;Scene&gt; scenesThatShouldNotAutomaticallyOpen` | Specifies scenes that should not open automatically. |
-| `IEnumerable&lt;Scene&gt; scenesToAutomaticallyOpen` | Gets the scenes that should open automatically when collection is opened (when in openAll param is `false`). |
+| `IEnumerable<string> scenePaths` | \_No documentation available.\_ |
+| `IEnumerable<Scene> scenes` | \_No documentation available.\_ |
+| `List<Scene> scenesThatShouldNotAutomaticallyOpen` | Specifies scenes that should not open automatically. |
+| `IEnumerable<Scene> scenesToAutomaticallyOpen` | Gets the scenes that should open automatically when collection is opened (when in openAll param is `false`). |
 | `bool setActiveSceneWhenOpenedAsAdditive` | Specifies whatever `SceneCollection.activeScene` should be set, when collection is opened as additive. |
 | `CollectionStartupOption startupOption` | Specifies startup option. |
 | `string title` | \_No documentation available.\_ |
@@ -4317,15 +4317,15 @@ Used in `AssetDatabase.FindAssets`. |
 
 | Member | Description |
 |--------|-------------|
-| `void \_OpenAdditive()` | Opens this collection as additive. |
-| `void \_PreloadAdditive()` | Preloads this collection as additive. |
+| `void _OpenAdditive()` | Opens this collection as additive. |
+| `void _PreloadAdditive()` | Preloads this collection as additive. |
 | `virtual SceneOperation Close()` | Closes this collection. |
 | `bool Contains(Scene scene)` | \_No documentation available.\_ |
 | `virtual bool Equals(object obj)` | \_No documentation available.\_ |
 | `bool Equals(SceneCollection other)` | \_No documentation available.\_ |
 | `bool FindProfile(out Profile profile)` | Find the `Models.Profile` that this collection is associated with. |
 | `Profile FindProfile()` | Find the `Models.Profile` that this collection is associated with. |
-| `IEnumerator&lt;Scene&gt; GetEnumerator()` | \_No documentation available.\_ |
+| `IEnumerator<Scene> GetEnumerator()` | \_No documentation available.\_ |
 | `virtual int GetHashCode()` | \_No documentation available.\_ |
 | `virtual bool IsMatch(string q)` | Matches this collection against the query string. |
 | `virtual void OnPropertyChanged(string propertyName)` | Invoke `ASMModelBase.PropertyChanged`. |
@@ -4336,7 +4336,7 @@ Used in `AssetDatabase.FindAssets`. |
 | `virtual SceneOperation Preload()` | Preloads this collection. |
 | `SceneOperation Preload(bool openAll)` | Preloads this collection. |
 | `SceneOperation PreloadAdditive(bool openAll)` | Preloads this collection as additive. |
-| `void RegisterCallback&lt;T&gt;(EventCallback&lt;T&gt; callback, When when, string key)` | \_No documentation available.\_ |
+| `void RegisterCallback<T>(EventCallback<T> callback, When when, string key)` | \_No documentation available.\_ |
 | `virtual SceneOperation Reopen()` | Reopens this collection. |
 | `SceneOperation Reopen(bool openAll)` | Reopens this collection. |
 | `void SetAutoOpen(Scene scene, bool openSceneWhenCollectionOpen)` | Sets whatever the scene should automatically open, when this collection is opened. |
@@ -4344,8 +4344,8 @@ Used in `AssetDatabase.FindAssets`. |
 | `virtual SceneOperation ToggleOpen()` | Toggles this collection open or closed. |
 | `SceneOperation ToggleOpen(bool openAll)` | Toggles this collection open and closed. |
 | `virtual string ToString()` | \_No documentation available.\_ |
-| `void UnregisterCallback&lt;T&gt;(EventCallback&lt;T&gt; callback, When when, string key)` | \_No documentation available.\_ |
-| `T UserData&lt;T&gt;()` | Casts and returns `SceneCollection.userData` as the specified type. Returns null if invalid type. |
+| `void UnregisterCallback<T>(EventCallback<T> callback, When when, string key)` | \_No documentation available.\_ |
+| `T UserData<T>()` | Casts and returns `SceneCollection.userData` as the specified type. Returns null if invalid type. |
 
 <!-- source: api\latest\Models\SceneCollectionTemplate.md -->
 ## SceneCollectionTemplate
@@ -4398,9 +4398,9 @@ Usage: `Profile.standaloneScenes`.
 
 | Member | Description |
 |--------|-------------|
-| `IEnumerable&lt;string&gt; scenePaths` | \_No documentation available.\_ |
-| `IEnumerable&lt;Scene&gt; scenes` | \_No documentation available.\_ |
-| `IEnumerable&lt;Scene&gt; startupScenes` | Gets all scenes that will be opened on startup. |
+| `IEnumerable<string> scenePaths` | \_No documentation available.\_ |
+| `IEnumerable<Scene> scenes` | \_No documentation available.\_ |
+| `IEnumerable<Scene> startupScenes` | Gets all scenes that will be opened on startup. |
 
 <!-- source: api\latest\Models\UpdateInterval.md -->
 ## UpdateInterval
@@ -4480,13 +4480,13 @@ Represents a `Models.SceneCollection` that changes depending on the active `Mode
 
 | Member | Description |
 |--------|-------------|
-| `void \_Close()` | Closes the collection. |
-| `void \_Open()` | Opens the collection. |
-| `void \_OpenAdditive()` | Opens the collection as additive. |
-| `void \_Preload()` | Preloads the collection. |
-| `void \_PreloadAdditive()` | Preloads the collection as additive. |
-| `void \_Reopen()` | Reopens the collection. |
-| `void \_ToggleOpen()` | Toggles the open state of the collection. |
+| `void _Close()` | Closes the collection. |
+| `void _Open()` | Opens the collection. |
+| `void _OpenAdditive()` | Opens the collection as additive. |
+| `void _Preload()` | Preloads the collection. |
+| `void _PreloadAdditive()` | Preloads the collection as additive. |
+| `void _Reopen()` | Reopens the collection. |
+| `void _ToggleOpen()` | Toggles the open state of the collection. |
 | `SceneOperation Close()` | Closes the collection. |
 | `SceneOperation Open()` | Opens the collection. |
 | `SceneOperation Open(bool openAll)` | Opens the collection. |
@@ -4521,18 +4521,18 @@ Represents a `Models.Scene` that changes depending on the active `Models.Profile
 
 | Member | Description |
 |--------|-------------|
-| `void \_Activate()` | Activates the scene. |
-| `void \_CancelPreload()` | Cancels a pending preload operation. |
-| `void \_Close()` | Closes the scene. |
-| `void \_CloseWithLoadingScreen(Scene loadingScene)` | Closes the scene using a specified loading screen. |
-| `void \_FinishPreload()` | Finishes preloading the scene. |
-| `void \_Open()` | Opens the scene. |
-| `void \_OpenAndActivate()` | Opens and activates the scene. |
-| `void \_OpenWithLoadingScreen(Scene loadingScene)` | Opens the scene using a specified loading screen. |
-| `void \_Preload()` | Preloads the scene. |
-| `void \_Reopen()` | Reopens the scene. |
-| `void \_ToggleOpen()` | Toggles the open state of the scene. |
-| `void \_ToggleOpenState()` | Toggles the open state of the scene. |
+| `void _Activate()` | Activates the scene. |
+| `void _CancelPreload()` | Cancels a pending preload operation. |
+| `void _Close()` | Closes the scene. |
+| `void _CloseWithLoadingScreen(Scene loadingScene)` | Closes the scene using a specified loading screen. |
+| `void _FinishPreload()` | Finishes preloading the scene. |
+| `void _Open()` | Opens the scene. |
+| `void _OpenAndActivate()` | Opens and activates the scene. |
+| `void _OpenWithLoadingScreen(Scene loadingScene)` | Opens the scene using a specified loading screen. |
+| `void _Preload()` | Preloads the scene. |
+| `void _Reopen()` | Reopens the scene. |
+| `void _ToggleOpen()` | Toggles the open state of the scene. |
+| `void _ToggleOpenState()` | Toggles the open state of the scene. |
 | `void Activate()` | Activates the scene. |
 | `SceneOperation CancelPreload()` | Cancels a pending preload operation. |
 | `SceneOperation Close()` | Closes the scene. |
@@ -4563,14 +4563,14 @@ Specifies a `T` that changes depending on active `Models.Profile`.
 
 | Member | Description |
 |--------|-------------|
-| `ProfileDependent&lt;T&gt;.Dict&lt;T&gt; list` | The list of proxies for this `T`. |
+| `ProfileDependent<T>.Dict<T> list` | The list of proxies for this `T`. |
 
 ### Methods
 
 | Member | Description |
 |--------|-------------|
-| `T2 DoAction&lt;T2&gt;(Func&lt;T, T2&gt; action)` | Performs an action on the scene. |
-| `void DoAction(Action&lt;T&gt; action)` | Performs an action on the scene. |
+| `T2 DoAction<T2>(Func<T, T2> action)` | Performs an action on the scene. |
+| `void DoAction(Action<T> action)` | Performs an action on the scene. |
 | `bool GetModel(out T scene)` | Gets the selected scene. |
 | `T GetModel()` | Gets the selected scene. |
 
@@ -4622,9 +4622,9 @@ Provides utility functions for managing blocklists.
 
 | Member | Description |
 |--------|-------------|
-| `IEnumerable&lt;string&gt; EnumerateDiscoverableBlacklistPaths()` | Enumerates all discoverable blacklist paths. |
-| `void EnumerateDiscoverableBlocklist(out IEnumerable&lt;string&gt; blacklist, out IEnumerable&lt;string&gt; whitelist)` | Enumerates all discoverable blocklist paths. |
-| `IEnumerable&lt;string&gt; EnumerateDiscoverableWhitelistPaths()` | Enumerates all discoverable whitelist paths. |
+| `IEnumerable<string> EnumerateDiscoverableBlacklistPaths()` | Enumerates all discoverable blacklist paths. |
+| `void EnumerateDiscoverableBlocklist(out IEnumerable<string> blacklist, out IEnumerable<string> whitelist)` | Enumerates all discoverable blocklist paths. |
+| `IEnumerable<string> EnumerateDiscoverableWhitelistPaths()` | Enumerates all discoverable whitelist paths. |
 | `bool IsBlacklisted(string path)` | Gets whatever the path is blacklisted. |
 | `bool IsWhitelisted(string path)` | Gets whatever the path is whitelisted. |
 
@@ -4643,14 +4643,14 @@ Only available in editor.
 
 | Member | Description |
 |--------|-------------|
-| `IEnumerable&lt;IGrouping&lt;string, Scene&gt;&gt; duplicateScenes` | Gets the duplicate imported scenes. |
-| `IEnumerable&lt;string&gt; dynamicScenes` | Gets the list of dynamic scenes in the current profile. |
-| `IEnumerable&lt;Scene&gt; importedBlacklistedScenes` | Gets the list of imported scenes that are blacklisted. |
-| `IEnumerable&lt;string&gt; importedScenes` | Gets the list of imported scenes in the project. |
-| `IEnumerable&lt;Scene&gt; invalidScenes` | Gets the list of imported scenes that do not have an associated scene asset. |
-| `IEnumerable&lt;Scene&gt; scenesWithBadPath` | Gets the list of imported scenes that do not match their asset path. |
-| `IEnumerable&lt;string&gt; unimportedScenes` | Gets the list of unimported scenes in the project, that are available for import. |
-| `IEnumerable&lt;Scene&gt; untrackedScenes` | Gets the list of scenes that are imported, but are, for whatever reason, not tracked by AssetRef. |
+| `IEnumerable<IGrouping<string, Scene>> duplicateScenes` | Gets the duplicate imported scenes. |
+| `IEnumerable<string> dynamicScenes` | Gets the list of dynamic scenes in the current profile. |
+| `IEnumerable<Scene> importedBlacklistedScenes` | Gets the list of imported scenes that are blacklisted. |
+| `IEnumerable<string> importedScenes` | Gets the list of imported scenes in the project. |
+| `IEnumerable<Scene> invalidScenes` | Gets the list of imported scenes that do not have an associated scene asset. |
+| `IEnumerable<Scene> scenesWithBadPath` | Gets the list of imported scenes that do not match their asset path. |
+| `IEnumerable<string> unimportedScenes` | Gets the list of unimported scenes in the project, that are available for import. |
+| `IEnumerable<Scene> untrackedScenes` | Gets the list of scenes that are imported, but are, for whatever reason, not tracked by AssetRef. |
 
 ### Static Methods
 
@@ -4658,13 +4658,13 @@ Only available in editor.
 |--------|-------------|
 | `bool GetImportedScene(string sceneAssetPath, out Scene scene)` | Attempts to get the imported scene matching the specified scene asset path. |
 | `Scene GetImportedSceneByItsOwnPath(string path)` | Gets the imported scene asset by its own asset path. |
-| `IEnumerable&lt;Scene&gt; GetImportedScenes(IEnumerable&lt;string&gt; sceneAssetPaths)` | Gets imported scenes matching the specified scene asset paths. |
-| `IEnumerable&lt;Scene&gt; Import(IEnumerable&lt;string&gt; sceneAssetPaths, bool notify)` | Imports the specified scenes. |
-| `IEnumerable&lt;Scene&gt; Import(IEnumerable&lt;string&gt; sceneAssetPaths, string importFolder, bool notify)` | Imports the specified scenes into the given folder. |
+| `IEnumerable<Scene> GetImportedScenes(IEnumerable<string> sceneAssetPaths)` | Gets imported scenes matching the specified scene asset paths. |
+| `IEnumerable<Scene> Import(IEnumerable<string> sceneAssetPaths, bool notify)` | Imports the specified scenes. |
+| `IEnumerable<Scene> Import(IEnumerable<string> sceneAssetPaths, string importFolder, bool notify)` | Imports the specified scenes into the given folder. |
 | `Scene Import(string sceneAssetPath, bool notify, bool track)` | Imports a single scene asset. |
 | `Scene Import(string sceneAssetPath, string importFolder, bool notify, bool track, bool skipImportedCheck, bool skipValidCheck)` | Imports a single scene asset into the given folder. |
-| `void Unimport(IEnumerable&lt;string&gt; scenes, bool notify)` | Unimports the specified scenes. |
-| `void Unimport(IEnumerable&lt;Scene&gt; scenes, bool notify)` | Unimports the specified scenes. |
+| `void Unimport(IEnumerable<string> scenes, bool notify)` | Unimports the specified scenes. |
+| `void Unimport(IEnumerable<Scene> scenes, bool notify)` | Unimports the specified scenes. |
 | `void Unimport(Scene scene, bool notify)` | Unimports the specified scene. |
 
 <!-- source: api\latest\SceneImport\StringExtensions.md -->
@@ -4719,13 +4719,13 @@ The central Advanced Scene Manager API. Provides access to the most important th
 | `IAssetsAPI assets` | Provides access to the scenes, collections and profiles managed by ASM. |
 | `IDiscoverablesService discoverables` | Provides access to the ASM discoverables service. |
 | `Scene dontDestroyOnLoadScene` | Gets the dontDestroyOnLoad scene. |
-| `EventCallbackManager&lt;EventCallbackBase&gt; events` | Provides access to global ASM event callbacks. |
+| `EventCallbackManager<EventCallbackBase> events` | Provides access to global ASM event callbacks. |
 | `Scene fallbackScene` | Gets the fallback scene. |
 | `bool isInitialized` | Gets whatever ASM is initialized. Calling ASM methods may fail if `false`, this is due to `Models.ASMSettings` singleton not being loaded yet. |
 | `SceneCollection openCollection` | \_No documentation available.\_ |
-| `IEnumerable&lt;Scene&gt; openScenes` | \_No documentation available.\_ |
+| `IEnumerable<Scene> openScenes` | \_No documentation available.\_ |
 | `Package package` | Contains info about the ASM package. |
-| `IEnumerable&lt;Scene&gt; preloadedScenes` | \_No documentation available.\_ |
+| `IEnumerable<Scene> preloadedScenes` | \_No documentation available.\_ |
 | `Profile profile` | \_No documentation available.\_ |
 | `Runtime runtime` | Manages runtime functionality for Advanced Scene Manager such as open scenes and collection. |
 | `IServiceContainer services` | Provides access to the ASM service container. |
@@ -4754,14 +4754,14 @@ Allows for centralized management, optimized discovery, and caching.
 | Member | Description |
 |--------|-------------|
 | `bool Find(string identifier, out DiscoveredMember? discoverable)` | Finds the discovered member with the specified `identifier`. |
-| `bool GetDiscoverable&lt;T&gt;(out DiscoveredMember? discoverable)` | Gets `T` as a discoverable, assuming its a valid discoverable. |
-| `bool GetDiscoverable&lt;T, TAttribute&gt;(out DiscoveredMember? discoverable)` | Gets `T` as a discoverable, assuming its a valid discoverable of type `TAttribute`. |
-| `bool GetDiscoverable(Expression&lt;Func&lt;object&gt;&gt; expression, out DiscoveredMember? discoverable)` | Gets expression as a discoverable. |
-| `bool GetDiscoverable&lt;TAttribute&gt;(Expression&lt;Func&lt;object&gt;&gt; expression, out DiscoveredMember? discoverable)` | Gets expression as a discoverable, assuming its a valid discoverable of type `TAttribute`. |
-| `IEnumerable&lt;DiscoveredMember&gt; GetInstanceMembersOn&lt;TDiscoverable&gt;(Type type)` | Gets all instance decorated with `TDiscoverable` on `type`. |
-| `IEnumerable&lt;DiscoveredMember&gt; GetMembers()` | Get members decorated with the specified attribute. |
-| `IEnumerable&lt;DiscoveredMember&gt; GetMembers&lt;T&gt;()` | Get members decorated with the specified attribute. |
-| `IEnumerable&lt;DiscoveredMember&gt; GetStaticMembersOn&lt;TDiscoverable&gt;(Type type)` | Gets all static members decorated with `TDiscoverable` on `type`. |
+| `bool GetDiscoverable<T>(out DiscoveredMember? discoverable)` | Gets `T` as a discoverable, assuming its a valid discoverable. |
+| `bool GetDiscoverable<T, TAttribute>(out DiscoveredMember? discoverable)` | Gets `T` as a discoverable, assuming its a valid discoverable of type `TAttribute`. |
+| `bool GetDiscoverable(Expression<Func<object>> expression, out DiscoveredMember? discoverable)` | Gets expression as a discoverable. |
+| `bool GetDiscoverable<TAttribute>(Expression<Func<object>> expression, out DiscoveredMember? discoverable)` | Gets expression as a discoverable, assuming its a valid discoverable of type `TAttribute`. |
+| `IEnumerable<DiscoveredMember> GetInstanceMembersOn<TDiscoverable>(Type type)` | Gets all instance decorated with `TDiscoverable` on `type`. |
+| `IEnumerable<DiscoveredMember> GetMembers()` | Get members decorated with the specified attribute. |
+| `IEnumerable<DiscoveredMember> GetMembers<T>()` | Get members decorated with the specified attribute. |
+| `IEnumerable<DiscoveredMember> GetStaticMembersOn<TDiscoverable>(Type type)` | Gets all static members decorated with `TDiscoverable` on `type`. |
 | `void InvalidateCache()` | Invalidates the discoverable cache. |
 
 <!-- source: api\latest\Services\IServiceContainer.md -->
@@ -4779,15 +4779,15 @@ Accessible via:
 
 | Member | Description |
 |--------|-------------|
-| `IEnumerable&lt;TService&gt; Find&lt;TService&gt;()` | Finds all services of the specified type. |
-| `TService Get&lt;TService&gt;()` | Gets the service of the specified type. |
-| `IReadOnlyDictionary&lt;Type, object&gt; GetAll()` | Gets all registered services. |
-| `void Register&lt;TService&gt;(TService service)` | Registers a service instance. |
-| `void Register&lt;TService&gt;()` | Registers a service type to be instantiated automatically. |
-| `void Register&lt;TService, TImplementation&gt;()` | Registers a service type with its implementation type. |
-| `void Register&lt;TService, TImplementation&gt;(TImplementation service)` | Registers a service type with its implementation instance. |
+| `IEnumerable<TService> Find<TService>()` | Finds all services of the specified type. |
+| `TService Get<TService>()` | Gets the service of the specified type. |
+| `IReadOnlyDictionary<Type, object> GetAll()` | Gets all registered services. |
+| `void Register<TService>(TService service)` | Registers a service instance. |
+| `void Register<TService>()` | Registers a service type to be instantiated automatically. |
+| `void Register<TService, TImplementation>()` | Registers a service type with its implementation type. |
+| `void Register<TService, TImplementation>(TImplementation service)` | Registers a service type with its implementation instance. |
 | `void Resolve(object obj)` | Resolves dependencies for the specified object. |
-| `void Unregister&lt;T&gt;()` | Unregisters a service type. |
+| `void Unregister<T>()` | Unregisters a service type. |
 | `void Unregister(Type type)` | Unregisters a service by type. |
 
 <!-- source: api\latest\Services\RegisterServiceAttribute.md -->
@@ -4831,8 +4831,8 @@ Shared base class for services and view models.
 
 | Member | Description |
 |--------|-------------|
-| `void RegisterEvent&lt;T&gt;(EventCallback&lt;T&gt; callback)` | Registers an event callback that is automatically unregistered when view is removed. |
-| `void UnregisterEvent&lt;T&gt;(EventCallback&lt;T&gt; callback)` | Unregisters an event callback. |
+| `void RegisterEvent<T>(EventCallback<T> callback)` | Registers an event callback that is automatically unregistered when view is removed. |
+| `void UnregisterEvent<T>(EventCallback<T> callback)` | Unregisters an event callback. |
 
 <!-- source: api\latest\Services\SessionStateHelper.md -->
 ## SessionStateHelper
@@ -4846,10 +4846,10 @@ A helper wrapper for `UnityEditor.SessionState`, uses type name + property name 
 
 | Member | Description |
 |--------|-------------|
-| `T GetProperty&lt;T&gt;(T defaultValue, string propertyName)` | Gets a session wide persisted value. |
-| `T GetValue&lt;T&gt;(T defaultValue, string propertyName)` | Gets a session wide persisted value. |
-| `void SetProperty&lt;T&gt;(T value, string propertyName)` | Sets a session wide persisted value. |
-| `void SetValue&lt;T&gt;(T value, string propertyName)` | Sets a session wide persisted value. |
+| `T GetProperty<T>(T defaultValue, string propertyName)` | Gets a session wide persisted value. |
+| `T GetValue<T>(T defaultValue, string propertyName)` | Gets a session wide persisted value. |
+| `void SetProperty<T>(T value, string propertyName)` | Sets a session wide persisted value. |
+| `void SetValue<T>(T value, string propertyName)` | Sets a session wide persisted value. |
 
 <!-- source: api\latest\UI\IPopup.md -->
 ## IPopup
@@ -4920,10 +4920,10 @@ Only available in the editor.
 | Member | Description |
 |--------|-------------|
 | `ViewModel Deserialize(SerializableViewModelData data)` | Deserializes a view model from data. |
-| `T Instantiate&lt;T&gt;()` | Instantiates a view model of the specified type. |
-| `T Instantiate&lt;T&gt;(bool useSingletonCache)` | Instantiates a view model of the specified type. |
-| `bool Instantiate&lt;T&gt;(out T viewModel, bool useSingletonCache)` | Attempts to instantiate a view model of the specified type. |
-| `bool Instantiate&lt;T&gt;(out T viewModel, out VisualElement view, bool useSingletonCache)` | Attempts to instantiate a view model and create its GUI. |
+| `T Instantiate<T>()` | Instantiates a view model of the specified type. |
+| `T Instantiate<T>(bool useSingletonCache)` | Instantiates a view model of the specified type. |
+| `bool Instantiate<T>(out T viewModel, bool useSingletonCache)` | Attempts to instantiate a view model of the specified type. |
+| `bool Instantiate<T>(out T viewModel, out VisualElement view, bool useSingletonCache)` | Attempts to instantiate a view model and create its GUI. |
 | `bool Instantiate(Type type, out ViewModel viewModel, out VisualElement view, bool useSingletonCache)` | Attempts to instantiate a view model by type and create its GUI. |
 | `bool Instantiate(Type type, out ViewModel viewModel, bool useSingletonCache)` | Attempts to instantiate a view model by type. |
 | `ViewModel Instantiate(Type type)` | Instantiates a view model by type. |
@@ -4964,7 +4964,7 @@ Provides info about where a view model is hosted at in the ASM window.
 
 | Member | Description |
 |--------|-------------|
-| `T OfType&lt;T&gt;()` | Gets `ViewModelContext.customParam` as `T`. |
+| `T OfType<T>()` | Gets `ViewModelContext.customParam` as `T`. |
 | `virtual string ToString()` | \_No documentation available.\_ |
 
 <!-- source: api\latest\Utility\ASMFilePathAttribute.md -->
@@ -5023,12 +5023,12 @@ Provides utility functions for searching ASM assets.
 
 | Member | Description |
 |--------|-------------|
-| `T Find&lt;T&gt;(string q)` | Finds the `T` with the specified name. |
-| `T Find&lt;T&gt;(T\[\] list, string q)` | \_No documentation available.\_ |
-| `T Find&lt;T&gt;(IEnumerable&lt;T&gt; list, string q)` | \_No documentation available.\_ |
-| `bool TryFind&lt;T&gt;(string q, out T result)` | Finds the `T` with the specified name. |
-| `bool TryFind&lt;T&gt;(T\[\] list, string q, out T result)` | \_No documentation available.\_ |
-| `bool TryFind&lt;T&gt;(IEnumerable&lt;T&gt; list, string q, out T result)` | \_No documentation available.\_ |
+| `T Find<T>(string q)` | Finds the `T` with the specified name. |
+| `T Find<T>(T[] list, string q)` | \_No documentation available.\_ |
+| `T Find<T>(IEnumerable<T> list, string q)` | \_No documentation available.\_ |
+| `bool TryFind<T>(string q, out T result)` | Finds the `T` with the specified name. |
+| `bool TryFind<T>(T[] list, string q, out T result)` | \_No documentation available.\_ |
+| `bool TryFind<T>(IEnumerable<T> list, string q, out T result)` | \_No documentation available.\_ |
 
 <!-- source: api\latest\Utility\Async_Of_T.md -->
 ## Async&lt;T&gt;
@@ -5042,7 +5042,7 @@ Represents a async operation that returns a value.
 
 | Member | Description |
 |--------|-------------|
-| `Async&lt;T&gt; complete` | Gets a `Utility.Async` that is already completed. |
+| `Async<T> complete` | Gets a `Utility.Async` that is already completed. |
 
 ### Properties
 
@@ -5055,13 +5055,13 @@ Represents a async operation that returns a value.
 
 | Member | Description |
 |--------|-------------|
-| `Async&lt;T&gt; FromResult(T result)` | Gets a completed `Utility.Async` with the specified value. |
+| `Async<T> FromResult(T result)` | Gets a completed `Utility.Async` with the specified value. |
 
 ### Methods
 
 | Member | Description |
 |--------|-------------|
-| `void OnComplete(Action&lt;T&gt; callback)` | Calls the callback when the async operation is complete. |
+| `void OnComplete(Action<T> callback)` | Calls the callback when the async operation is complete. |
 
 <!-- source: api\latest\Utility\AutoSceneEventArgs.md -->
 ## AutoSceneEventArgs
@@ -5128,9 +5128,9 @@ Contains utility methods related to auto scenes.
 
 | Member | Description |
 |--------|-------------|
-| `AutoSceneEntry FindAutoScene&lt;TKey, TOption&gt;(IAutoScenes&lt;TKey, TOption&gt; obj, TKey scene, TOption option)` | Finds the auto scene entry matching `scene` and `option`. |
-| `void RemoveAutoScene&lt;TKey, TOption&gt;(IAutoScenes&lt;TKey, TOption&gt; obj, TKey scene, TOption option)` | Removes an auto scene for this scene. |
-| `void SetAutoScene&lt;TKey, TOption&gt;(IAutoScenes&lt;TKey, TOption&gt; obj, TKey scene, TOption option)` | Sets an auto scene for this scene. |
+| `AutoSceneEntry FindAutoScene<TKey, TOption>(IAutoScenes<TKey, TOption> obj, TKey scene, TOption option)` | Finds the auto scene entry matching `scene` and `option`. |
+| `void RemoveAutoScene<TKey, TOption>(IAutoScenes<TKey, TOption> obj, TKey scene, TOption option)` | Removes an auto scene for this scene. |
+| `void SetAutoScene<TKey, TOption>(IAutoScenes<TKey, TOption> obj, TKey scene, TOption option)` | Sets an auto scene for this scene. |
 
 <!-- source: api\latest\Utility\CanvasSortOrderUtility.md -->
 ## CanvasSortOrderUtility
@@ -5193,28 +5193,28 @@ An utility class that helps with running coroutines detached from `UnityEngine.M
 
 | Member | Description |
 |--------|-------------|
-| `IEnumerable&lt;GlobalCoroutine&gt; coroutines` | Gets all currently active coroutines. |
+| `IEnumerable<GlobalCoroutine> coroutines` | Gets all currently active coroutines. |
 
 ### Static Methods
 
 | Member | Description |
 |--------|-------------|
-| `GlobalCoroutine Chain(Func&lt;IEnumerator&gt;\[\] coroutines)` | Runs the coroutines in sequence, wrapped in a single `Utility.GlobalCoroutine`. |
-| `GlobalCoroutine Chain(Func&lt;IEnumerator&gt;\[\] coroutines, string description)` | Runs the coroutines in sequence, wrapped in a single `Utility.GlobalCoroutine`. |
-| `GlobalCoroutine Chain(IEnumerable&lt;Func&lt;IEnumerator&gt;&gt; coroutines, string description)` | Runs the coroutines in sequence, wrapped in a single `Utility.GlobalCoroutine`. |
+| `GlobalCoroutine Chain(Func<IEnumerator>[] coroutines)` | Runs the coroutines in sequence, wrapped in a single `Utility.GlobalCoroutine`. |
+| `GlobalCoroutine Chain(Func<IEnumerator>[] coroutines, string description)` | Runs the coroutines in sequence, wrapped in a single `Utility.GlobalCoroutine`. |
+| `GlobalCoroutine Chain(IEnumerable<Func<IEnumerator>> coroutines, string description)` | Runs the coroutines in sequence, wrapped in a single `Utility.GlobalCoroutine`. |
 | `void Run(Action action, TimeSpan after, string description, string callerFile, int callerLine, string callerName)` | Runs the action after the specified time. |
-| `void Run(Action action, float? after, bool nextFrame, Func&lt;bool&gt; when, string description, string callerFile, int callerLine, string callerName)` | Runs the action after the specified time. |
+| `void Run(Action action, float? after, bool nextFrame, Func<bool> when, string description, string callerFile, int callerLine, string callerName)` | Runs the action after the specified time. |
 | `GlobalCoroutine StartCoroutine(IEnumerator coroutine, Action onComplete, string description, string callerFile, int callerLine)` | Runs the coroutine using `Utility.CoroutineUtility`, which means it won't be tied to a `UnityEngine.MonoBehaviour` and will persist through scene close. |
-| `GlobalCoroutine StartCoroutineGlobal(MonoBehaviour \_, IEnumerator coroutine, Action onComplete, string description, string callerFile, int callerLine)` | Runs the coroutine using `Utility.CoroutineUtility`, which means it won't be tied to a `UnityEngine.MonoBehaviour` and will persist through scene close. |
+| `GlobalCoroutine StartCoroutineGlobal(MonoBehaviour _, IEnumerator coroutine, Action onComplete, string description, string callerFile, int callerLine)` | Runs the coroutine using `Utility.CoroutineUtility`, which means it won't be tied to a `UnityEngine.MonoBehaviour` and will persist through scene close. |
 | `void StopAllCoroutines()` | Stops all global coroutines. |
 | `void StopCoroutine(GlobalCoroutine coroutine)` | Stops the coroutine. |
 | `GlobalCoroutine Timer(Action action, TimeSpan interval, string description, string callerFile, int callerLine, string callerName)` | Runs the action every interval. |
 | `GlobalCoroutine TimerRealtime(Action action, TimeSpan interval, string callerFile, int callerLine, string callerName)` | Runs the action every interval. Using unscaled time. |
-| `IEnumerator WaitAll(Func&lt;IEnumerator&gt;\[\] coroutines)` | Wait for all coroutines to complete. |
-| `IEnumerator WaitAll(string description, Func&lt;IEnumerator&gt;\[\] coroutines)` | Wait for all coroutines to complete. |
-| `IEnumerator WaitAll(IEnumerable&lt;Func&lt;IEnumerator&gt;&gt; coroutines, Func&lt;bool&gt; isCancelled, string description)` | Wait for all coroutines to complete. |
-| `IEnumerator WaitAll(GlobalCoroutine\[\] coroutines)` | Wait for all coroutines to complete. |
-| `IEnumerator WaitAll(GlobalCoroutine\[\] coroutines, Func&lt;bool&gt; isCancelled)` | Wait for all coroutines to complete. |
+| `IEnumerator WaitAll(Func<IEnumerator>[] coroutines)` | Wait for all coroutines to complete. |
+| `IEnumerator WaitAll(string description, Func<IEnumerator>[] coroutines)` | Wait for all coroutines to complete. |
+| `IEnumerator WaitAll(IEnumerable<Func<IEnumerator>> coroutines, Func<bool> isCancelled, string description)` | Wait for all coroutines to complete. |
+| `IEnumerator WaitAll(GlobalCoroutine[] coroutines)` | Wait for all coroutines to complete. |
+| `IEnumerator WaitAll(GlobalCoroutine[] coroutines, Func<bool> isCancelled)` | Wait for all coroutines to complete. |
 
 <!-- source: api\latest\Utility\CrossSceneReferences\CrossSceneDebugger.md -->
 ## CrossSceneDebugger
@@ -5266,20 +5266,20 @@ An utility for saving and restoring cross-scene references.
 | Member | Description |
 |--------|-------------|
 | `bool CanSceneBeSaved(Scene scene)` | Gets if the cross-scene references can be saved. |
-| `IEnumerable&lt;CrossSceneReference&gt; FindCrossSceneReferences(Scene\[\] scenes)` | Finds all cross-scene references in the scenes. |
+| `IEnumerable<CrossSceneReference> FindCrossSceneReferences(Scene[] scenes)` | Finds all cross-scene references in the scenes. |
 | `bool GetResolved(CrossSceneReference reference, out ResolvedCrossReference? resolved)` | Get the resolve result for a cross scene reference, if it has been resolved. |
 | `ResolvedCrossReference GetResolved(CrossSceneReference reference)` | Get the resolve result for a cross scene reference, if it has been resolved. |
-| `IEnumerable&lt;ResolvedCrossReference&gt; GetResolvedReferences()` | Gets all references for all scenes. |
-| `IEnumerable&lt;ResolvedCrossReference&gt; GetResolvedReferences(Scene scene)` | Gets all references for this scene. |
-| `IEnumerable&lt;ResolvedCrossReference&gt; GetResolvedReferences(GameObject obj)` | Gets all references for this game object. |
-| `IEnumerable&lt;ResolvedCrossReference&gt; GetResolvedReferencesValue(GameObject obj)` | Gets all references for this game object. |
+| `IEnumerable<ResolvedCrossReference> GetResolvedReferences()` | Gets all references for all scenes. |
+| `IEnumerable<ResolvedCrossReference> GetResolvedReferences(Scene scene)` | Gets all references for this scene. |
+| `IEnumerable<ResolvedCrossReference> GetResolvedReferences(GameObject obj)` | Gets all references for this game object. |
+| `IEnumerable<ResolvedCrossReference> GetResolvedReferencesValue(GameObject obj)` | Gets all references for this game object. |
 | `SceneStatus GetSceneStatus(Scene scene)` | Gets the resolve status of `scene`. |
 | `void Initialize()` | Initializes cross-scene references, if it is enabled in settings. |
 | `void Initialize(bool? enabled)` | Initializes cross-scene references, if it is enabled in settings. |
 | `void ResetAllScenes()` | Resets all cross-scene references in all scenes. |
 | `void ResetScene(Scene scene)` | Resets all cross-scene references in scene. |
 | `void ResolveAllScenes()` | Resolves all scenes. |
-| `IEnumerable&lt;ResolvedCrossReference&gt; ResolveScene(Scene scene)` | Resolves cross-scene references in the scene. |
+| `IEnumerable<ResolvedCrossReference> ResolveScene(Scene scene)` | Resolves cross-scene references in the scene. |
 
 <!-- source: api\latest\Utility\CrossSceneReferences\ObjectReference.md -->
 ## ObjectReference
@@ -5437,13 +5437,13 @@ Contains utility functions for working with dictionaries.
 
 | Member | Description |
 |--------|-------------|
-| `void Add&lt;TKey, TValue&gt;(IDictionary&lt;TKey, TValue&gt; d, TKey key, TValue value)` | Adds or sets the value of a key. |
-| `void Add&lt;TKey, TList, TItem&gt;(IDictionary&lt;TKey, TList&gt; d, TKey key, TItem item)` | Adds the value to the list with the specified key. Creates list automatically if null and adds key if necessary. |
-| `void AddRange&lt;TKey, TList, TItem&gt;(IDictionary&lt;TKey, TList&gt; d, TKey key, IEnumerable&lt;TItem&gt; items)` | Adds the values to the list with the specified key. Creates list automatically if null and adds key if necessary. |
-| `void AddRange&lt;TKey, TList, TItem&gt;(IDictionary&lt;TKey, TList&gt; d, TKey key, TItem\[\] items)` | Adds the values to the list with the specified key. Creates list automatically if null and adds key if necessary. |
-| `TValue GetValue&lt;TKey, TValue&gt;(IDictionary&lt;TKey, TValue&gt; d, TKey key, TValue defaultValue)` | Gets the value of the specified key, returns default if it does not exist. |
-| `void Remove&lt;TKey, TList, TItem&gt;(IDictionary&lt;TKey, TList&gt; d, TKey key, TItem value)` | Removes the value to the list with the specified key. |
-| `TValue Set&lt;TKey, TValue&gt;(IDictionary&lt;TKey, TValue&gt; d, TKey key, TValue value)` | Adds or replaces a value in the specified dictionary. |
+| `void Add<TKey, TValue>(IDictionary<TKey, TValue> d, TKey key, TValue value)` | Adds or sets the value of a key. |
+| `void Add<TKey, TList, TItem>(IDictionary<TKey, TList> d, TKey key, TItem item)` | Adds the value to the list with the specified key. Creates list automatically if null and adds key if necessary. |
+| `void AddRange<TKey, TList, TItem>(IDictionary<TKey, TList> d, TKey key, IEnumerable<TItem> items)` | Adds the values to the list with the specified key. Creates list automatically if null and adds key if necessary. |
+| `void AddRange<TKey, TList, TItem>(IDictionary<TKey, TList> d, TKey key, TItem[] items)` | Adds the values to the list with the specified key. Creates list automatically if null and adds key if necessary. |
+| `TValue GetValue<TKey, TValue>(IDictionary<TKey, TValue> d, TKey key, TValue defaultValue)` | Gets the value of the specified key, returns default if it does not exist. |
+| `void Remove<TKey, TList, TItem>(IDictionary<TKey, TList> d, TKey key, TItem value)` | Removes the value to the list with the specified key. |
+| `TValue Set<TKey, TValue>(IDictionary<TKey, TValue> d, TKey key, TValue value)` | Adds or replaces a value in the specified dictionary. |
 | `void Set(Hashtable d, object key, object value)` | Adds or replaces a value in the specified \[Collections.Hashtable\](https://learn.microsoft.com/dotnet/api/system.collections.hashtable). |
 
 <!-- source: api\latest\Utility\Discoverability\DiscoverabilityCacheInvalidatedAttribute.md -->
@@ -5488,8 +5488,8 @@ Represents the base attribute for discoverable attributes.
 
 | Member | Description |
 |--------|-------------|
-| `IEnumerable&lt;DiscoveredMember&gt; Enumerate&lt;T&gt;()` | Enumerates all discoverables of type `T`. |
-| `IEnumerable&lt;ValueTuple&lt;T, T2&gt;&gt; Enumerate&lt;T, T2&gt;()` | Enumerates all discoverables of type `T`. |
+| `IEnumerable<DiscoveredMember> Enumerate<T>()` | Enumerates all discoverables of type `T`. |
+| `IEnumerable<ValueTuple<T, T2>> Enumerate<T, T2>()` | Enumerates all discoverables of type `T`. |
 
 ### Methods
 
@@ -5542,8 +5542,8 @@ Provides extension methods for DiscoveredMember.
 
 | Member | Description |
 |--------|-------------|
-| `bool As&lt;TAttribute, TMember&gt;(DiscoveredMember discoveredMember, out TAttribute attribute, out TMember member)` | Gets the discoverable as `TAttribute` and `TMember`, if possible. |
-| `IEnumerable&lt;ValueTuple&lt;TAttribute, TMember&gt;&gt; OfType&lt;TAttribute, TMember&gt;(IEnumerable&lt;DiscoveredMember&gt; discoveredMember)` | Gets the discoverables of type `TAttribute` and `TMember`. |
+| `bool As<TAttribute, TMember>(DiscoveredMember discoveredMember, out TAttribute attribute, out TMember member)` | Gets the discoverable as `TAttribute` and `TMember`, if possible. |
+| `IEnumerable<ValueTuple<TAttribute, TMember>> OfType<TAttribute, TMember>(IEnumerable<DiscoveredMember> discoveredMember)` | Gets the discoverables of type `TAttribute` and `TMember`. |
 
 <!-- source: api\latest\Utility\Discoverability\TargetInfo.md -->
 ## DiscoverableAttribute.TargetInfo
@@ -5664,8 +5664,8 @@ An utility for referencing objects globally.
 
 | Member | Description |
 |--------|-------------|
-| `IEnumerable&lt;MonoBehaviour&gt; GetAll&lt;T&gt;()` | \_No documentation available.\_ |
-| `void Set&lt;T&gt;(IEnumerable&lt;MonoBehaviour&gt; list)` | \_No documentation available.\_ |
+| `IEnumerable<MonoBehaviour> GetAll<T>()` | \_No documentation available.\_ |
+| `void Set<T>(IEnumerable<MonoBehaviour> list)` | \_No documentation available.\_ |
 
 <!-- source: api\latest\Utility\IGeneralSceneObjectCache.md -->
 ## IGeneralSceneObjectCache
@@ -5678,11 +5678,11 @@ An utility for referencing objects globally.
 
 | Member | Description |
 |--------|-------------|
-| `T Get&lt;T&gt;(string key)` | \_No documentation available.\_ |
-| `bool Get&lt;T&gt;(string key, out T obj)` | \_No documentation available.\_ |
-| `IEnumerable&lt;ValueTuple&lt;string, T&gt;&gt; GetAll&lt;T&gt;()` | \_No documentation available.\_ |
+| `T Get<T>(string key)` | \_No documentation available.\_ |
+| `bool Get<T>(string key, out T obj)` | \_No documentation available.\_ |
+| `IEnumerable<ValueTuple<string, T>> GetAll<T>()` | \_No documentation available.\_ |
 | `void Remove(string key)` | \_No documentation available.\_ |
-| `void Set&lt;T&gt;(string key, T obj)` | \_No documentation available.\_ |
+| `void Set<T>(string key, T obj)` | \_No documentation available.\_ |
 
 <!-- source: api\latest\Utility\IQueueable.md -->
 ## IQueueable
@@ -5729,9 +5729,9 @@ Provides some convinience functions for lerping.
 
 | Member | Description |
 |--------|-------------|
-| `IEnumerator Lerp(float start, float end, float duration, Action&lt;float&gt; callback, Action onComplete)` | Lerp from `start` to `end` over `duration` seconds. |
-| `IEnumerator Lerp(Vector3 start, Vector3 end, float duration, Action&lt;Vector3&gt; callback, Action onComplete)` | Lerp from `start` to `end` over `duration` seconds. |
-| `IEnumerator Lerp(Vector2 start, Vector2 end, float duration, Action&lt;Vector2&gt; callback, Action onComplete)` | Lerp from `start` to `end` over `duration` seconds. |
+| `IEnumerator Lerp(float start, float end, float duration, Action<float> callback, Action onComplete)` | Lerp from `start` to `end` over `duration` seconds. |
+| `IEnumerator Lerp(Vector3 start, Vector3 end, float duration, Action<Vector3> callback, Action onComplete)` | Lerp from `start` to `end` over `duration` seconds. |
+| `IEnumerator Lerp(Vector2 start, Vector2 end, float duration, Action<Vector2> callback, Action onComplete)` | Lerp from `start` to `end` over `duration` seconds. |
 
 <!-- source: api\latest\Utility\LoadingScreenUtility.md -->
 ## LoadingScreenUtility
@@ -5746,23 +5746,23 @@ Manager for loading screens.
 | Member | Description |
 |--------|-------------|
 | `bool isAnyLoadingScreenOpen` | \_No documentation available.\_ |
-| `IEnumerable&lt;ILoadProgressListener&gt; loadProgressListeners` | \_No documentation available.\_ |
-| `IEnumerable&lt;LoadingScreenReference&gt; openLoadingScreens` | \_No documentation available.\_ |
+| `IEnumerable<ILoadProgressListener> loadProgressListeners` | \_No documentation available.\_ |
+| `IEnumerable<LoadingScreenReference> openLoadingScreens` | \_No documentation available.\_ |
 
 ### Static Methods
 
 | Member | Description |
 |--------|-------------|
 | `IEnumerator CloseAll()` | Hide all loading screens. |
-| `Awaitable&lt;bool&gt; CloseLoadingScreen(LoadingScreenReference loadingScreen)` | Close the loading screen. |
-| `SceneOperation DoAction(Scene scene, Action action, Action&lt;LoadingScreenReference&gt; loadingScreenCallback)` | \_No documentation available.\_ |
-| `SceneOperation DoAction(Scene scene, Func&lt;IEnumerator&gt; coroutine, Action&lt;LoadingScreenReference&gt; loadingScreenCallback)` | \_No documentation available.\_ |
+| `Awaitable<bool> CloseLoadingScreen(LoadingScreenReference loadingScreen)` | Close the loading screen. |
+| `SceneOperation DoAction(Scene scene, Action action, Action<LoadingScreenReference> loadingScreenCallback)` | \_No documentation available.\_ |
+| `SceneOperation DoAction(Scene scene, Func<IEnumerator> coroutine, Action<LoadingScreenReference> loadingScreenCallback)` | \_No documentation available.\_ |
 | `IEnumerator FadeIn(LoadingScreenReference loadingScreen, float duration, Color? color)` | Fades in the screen. |
-| `Awaitable&lt;LoadingScreenReference&gt; FadeOut(float duration, Color? color)` | Fades out the screen. |
+| `Awaitable<LoadingScreenReference> FadeOut(float duration, Color? color)` | Fades out the screen. |
 | `bool IsLoadingScreenOpen(LoadingScreenReference loadingScreen)` | Gets if this scene is a loading screen. |
-| `Awaitable&lt;LoadingScreenReference&gt; OpenLoadingScreen(SceneOperation operation, Action&lt;LoadingScreenReference&gt; callbackBeforeBegin)` | \_No documentation available.\_ |
-| `Awaitable&lt;LoadingScreenReference&gt; OpenLoadingScreen(LoadingScreenReference loadingScreen, SceneOperation operation, Action&lt;LoadingScreenReference&gt; callbackBeforeBegin)` | \_No documentation available.\_ |
-| `AsyncOperation Preload(AsyncOperation asyncOperation, out Func&lt;IEnumerator&gt; activateCallback)` | Sets `AsyncOperation.allowSceneActivation` to `false`. |
+| `Awaitable<LoadingScreenReference> OpenLoadingScreen(SceneOperation operation, Action<LoadingScreenReference> callbackBeforeBegin)` | \_No documentation available.\_ |
+| `Awaitable<LoadingScreenReference> OpenLoadingScreen(LoadingScreenReference loadingScreen, SceneOperation operation, Action<LoadingScreenReference> callbackBeforeBegin)` | \_No documentation available.\_ |
+| `AsyncOperation Preload(AsyncOperation asyncOperation, out Func<IEnumerator> activateCallback)` | Sets `AsyncOperation.allowSceneActivation` to `false`. |
 | `void RegisterLoadProgressListener(ILoadProgressListener listener)` | Registers a `Loading.ILoadProgressListener` that will receive callbacks when progress is reported from ASM. |
 | `void ReportProgress(ILoadProgressData progress)` | Report progress. |
 | `GlobalCoroutine ReportProgress(AsyncOperation asyncOperation, SceneOperationKind kind, SceneOperation operation, Scene scene)` | Returns a coroutine that returns when `AsyncOperation.isDone` becomes `true`. |
@@ -5790,9 +5790,9 @@ Only usable in play mode.
 
 | Member | Description |
 |--------|-------------|
-| `T Invoke&lt;T&gt;(Func&lt;T&gt; func)` | Queues the function to be run on the main thread, during the next frame. |
+| `T Invoke<T>(Func<T> func)` | Queues the function to be run on the main thread, during the next frame. |
 | `void Invoke(Action action)` | Queues the action to be run on the main thread, during the next frame. |
-| `T Invoke&lt;T&gt;(Func&lt;T&gt; func, bool mainThread)` | Invokes the `func`. |
+| `T Invoke<T>(Func<T> func, bool mainThread)` | Invokes the `func`. |
 | `void Invoke(Action action, bool mainThread)` | Invokes the `action`. |
 | `void Start()` | Starts main thread utility coroutine. |
 | `void Stop()` | Stops main thread utility coroutine. |
@@ -5839,8 +5839,8 @@ A utility that provides queuing.
 | Member | Description |
 |--------|-------------|
 | `bool isBusy` | Gets whatever any items in the queue are running. |
-| `IEnumerable&lt;T&gt; queue` | Gets the items currently in queue. |
-| `IEnumerable&lt;T&gt; running` | Gets the items that are currently running. |
+| `IEnumerable<T> queue` | Gets the items currently in queue. |
+| `IEnumerable<T> running` | Gets the items that are currently running. |
 
 ### Static Events
 
@@ -5873,7 +5873,7 @@ Only available if input system is installed.
 
 | Member | Description |
 |--------|-------------|
-| `IEnumerable&lt;(SceneCollection, Scene, InputBinding)&gt; GetBindings()` | Gets all bindings in the project. |
+| `IEnumerable<(SceneCollection, Scene, InputBinding)> GetBindings()` | Gets all bindings in the project. |
 | `bool IsDuplicate(InputButton binding)` | Gets if the binding is assigned to multiple scenes / collections. |
 | `bool WasOpenedByBinding(SceneCollection collection)` | Gets if `collection` was opened by a binding. |
 | `bool WasOpenedByBinding(Scene scene)` | Gets if the scene was opened by a binding. |
@@ -5899,7 +5899,7 @@ An utility class to perform actions on scenes.
 
 | Member | Description |
 |--------|-------------|
-| `void AddScript&lt;T&gt;(Scene scene, Action&lt;T&gt; configure)` | Adds a script to this scene. If scene is closed, it will be temporarily opened. |
+| `void AddScript<T>(Scene scene, Action<T> configure)` | Adds a script to this scene. If scene is closed, it will be temporarily opened. |
 | `bool ASMScene(Component component, out Scene scene)` | \_No documentation available.\_ |
 | `Scene ASMScene(GameObject gameObject, out Scene scene)` | \_No documentation available.\_ |
 | `Scene ASMScene(Component component)` | \_No documentation available.\_ |
@@ -5908,60 +5908,60 @@ An utility class to perform actions on scenes.
 | `Scene ASMScene(Scene scene)` | Gets the associated ASM `Models.Scene`. |
 | `bool ASMScene(SceneAsset thisScene, out Scene scene)` | \_No documentation available.\_ |
 | `Scene ASMScene(SceneAsset scene)` | Finds the asm representation of this `UnityEditor.SceneAsset`. |
-| `IEnumerable&lt;SceneAsset&gt; Create(string\[\] paths)` | \_No documentation available.\_ |
-| `IEnumerable&lt;SceneAsset&gt; Create(IEnumerable&lt;string&gt; paths)` | \_No documentation available.\_ |
+| `IEnumerable<SceneAsset> Create(string[] paths)` | \_No documentation available.\_ |
+| `IEnumerable<SceneAsset> Create(IEnumerable<string> paths)` | \_No documentation available.\_ |
 | `SceneAsset Create(string path)` | Creates a scene at the specified path. |
 | `Scene CreateAddressableScene(string name, AssetReference assetReference)` | Creates an addressable, runtime-only, scene. |
 | `Scene CreateAndImport(string path)` | Creates and imports a scene. |
-| `IEnumerable&lt;Scene&gt; CreateAndImport(string\[\] paths)` | Creates and imports a scene. |
-| `IEnumerable&lt;Scene&gt; CreateAndImport(IEnumerable&lt;string&gt; paths)` | Creates and imports a scene. |
+| `IEnumerable<Scene> CreateAndImport(string[] paths)` | Creates and imports a scene. |
+| `IEnumerable<Scene> CreateAndImport(IEnumerable<string> paths)` | Creates and imports a scene. |
 | `void CreateAsset(string folder, string baseClass, string namespaceName, string name)` | Creates a scene asset and script based on the specified base class. |
 | `Scene CreateDynamic(string name, LocalPhysicsMode localPhysicsMode)` | Creates a scene at runtime, that is not saved to disk. |
 | `GameObject CreateHere(MonoBehaviour mono)` | Creates a game object in this scene. |
 | `GameObject CreateHere(MonoBehaviour mono, string name)` | Creates a game object in this scene. |
-| `GameObject CreateHere(MonoBehaviour mono, string name, Type\[\] components)` | Creates a game object in this scene. |
-| `TComponent CreateHere&lt;TComponent&gt;(MonoBehaviour mono, string gameObjectName)` | Creates a game object in this scene. Adds and returns component `TComponent`. |
+| `GameObject CreateHere(MonoBehaviour mono, string name, Type[] components)` | Creates a game object in this scene. |
+| `TComponent CreateHere<TComponent>(MonoBehaviour mono, string gameObjectName)` | Creates a game object in this scene. Adds and returns component `TComponent`. |
 | `void CreateLoadingScreenAsset(string folder, string name, string namespaceName)` | Creates a loading screen scene and its corresponding script. |
 | `void CreateSplashScreenAsset(string folder, string name, string namespaceName)` | Creates a splash screen scene and its corresponding script. |
 | `void Disable(Scene scene)` | Sets all root objects as disabled. |
 | `void Enable(Scene scene)` | Sets all root objects as enabled. |
-| `IEnumerable&lt;Scene&gt; EvaluateFinalSceneList(Profile profile, App.StartupProps props)` | Evaluate the final scene list after startup. |
-| `IEnumerable&lt;Scene&gt; EvaluateFinalSceneList(IEnumerable&lt;SceneCollection&gt; collections)` | Evaluate the final scene list after opening a sequence of collections. |
+| `IEnumerable<Scene> EvaluateFinalSceneList(Profile profile, App.StartupProps props)` | Evaluate the final scene list after startup. |
+| `IEnumerable<Scene> EvaluateFinalSceneList(IEnumerable<SceneCollection> collections)` | Evaluate the final scene list after opening a sequence of collections. |
 | `Scene Find(string q)` | Find scenes by name or path. |
-| `IEnumerable&lt;Scene&gt; Find(Func&lt;Scene, bool&gt; predicate)` | Find scenes by predicate. |
+| `IEnumerable<Scene> Find(Func<Scene, bool> predicate)` | Find scenes by predicate. |
 | `Scene FindAddressableScene(AssetReference assetReference)` | Finds the scene with the associated `AddressableAssets.AssetReference`. |
 | `bool FindCollection(Scene scene, out SceneCollection collection)` | \_No documentation available.\_ |
 | `SceneCollection FindCollection(Scene scene)` | Attempts to find best match for collection. |
-| `IEnumerable&lt;SceneCollection&gt; FindCollections(Scene scene, bool allProfiles)` | Finds which collections that this scene is a part of. |
-| `IEnumerable&lt;SceneCollection&gt; FindCollections(Scene scene, Profile profile)` | Finds which collections that this scene is a part of. |
-| `IEnumerable&lt;Scene&gt; FindOpen(string q)` | Find open scenes by name or path. |
-| `IEnumerable&lt;Scene&gt; FindOpen(Func&lt;Scene, bool&gt; predicate)` | Find open scenes by predicate. |
-| `IEnumerable&lt;Scene&gt; GetAllOpenUnityScenes()` | Get all open unity scenes. |
+| `IEnumerable<SceneCollection> FindCollections(Scene scene, bool allProfiles)` | Finds which collections that this scene is a part of. |
+| `IEnumerable<SceneCollection> FindCollections(Scene scene, Profile profile)` | Finds which collections that this scene is a part of. |
+| `IEnumerable<Scene> FindOpen(string q)` | Find open scenes by name or path. |
+| `IEnumerable<Scene> FindOpen(Func<Scene, bool> predicate)` | Find open scenes by predicate. |
+| `IEnumerable<Scene> GetAllOpenUnityScenes()` | Get all open unity scenes. |
 | `Scene Import(SceneAsset scene)` | \_No documentation available.\_ |
-| `IEnumerable&lt;Scene&gt; Import(IEnumerable&lt;SceneAsset&gt; scene)` | \_No documentation available.\_ |
+| `IEnumerable<Scene> Import(IEnumerable<SceneAsset> scene)` | \_No documentation available.\_ |
 | `Scene Import(string scene)` | Imports the scene into ASM and returns it. Returns already imported scene if already imported. |
-| `IEnumerable&lt;Scene&gt; Import(string\[\] scene)` | Imports the scene into ASM and returns it. Returns already imported scene if already imported. |
+| `IEnumerable<Scene> Import(string[] scene)` | Imports the scene into ASM and returns it. Returns already imported scene if already imported. |
 | `bool IsIncluded(Scene scene)` | Gets if the scene is included in build. |
-| `void MergeScenes(Scene targetScene, Scene\[\] scenes)` | Merges the specified scenes into the target scene. |
-| `void MergeScenes(string targetScenePath, string\[\] scenePaths)` | Merges the specified scenes into the target scene. |
-| `void MergeScenesPreserveOriginal(Scene targetScene, Scene\[\] scenes)` | Merges the specified scenes into the target scene, preserving the originals. |
-| `void MergeScenesPreserveOriginal(string targetScenePath, string\[\] scenePaths)` | Merges the specified scenes into the target scene, preserving the originals. |
+| `void MergeScenes(Scene targetScene, Scene[] scenes)` | Merges the specified scenes into the target scene. |
+| `void MergeScenes(string targetScenePath, string[] scenePaths)` | Merges the specified scenes into the target scene. |
+| `void MergeScenesPreserveOriginal(Scene targetScene, Scene[] scenes)` | Merges the specified scenes into the target scene, preserving the originals. |
+| `void MergeScenesPreserveOriginal(string targetScenePath, string[] scenePaths)` | Merges the specified scenes into the target scene, preserving the originals. |
 | `void Move(GameObject obj, Scene scene)` | Move a GameObject from its current Scene to a new Scene. |
 | `void Move(GameObject obj, Scene scene)` | Move a GameObject from its current Scene to a new Scene. |
 | `void MoveAfter(Scene sceneToMove, Scene otherScene)` | Moves the scene after another scene. |
 | `void MoveBefore(Scene sceneToMove, Scene otherScene)` | Moves the scene before another scene in the heirarchy. |
 | `GameObject MoveHere(MonoBehaviour mono, GameObject obj)` | Moves `obj` to this scene. |
 | `void MoveToBottom(Scene sceneToMove)` | Moves the scene to the bottom in the hierarchy. |
-| `void MoveToNewScene(GameObject\[\] objects)` | Moves the object to a new scene. |
+| `void MoveToNewScene(GameObject[] objects)` | Moves the object to a new scene. |
 | `void MoveToTop(Scene sceneToMove)` | Moves the scene to the top in the hierarchy. |
-| `void RemoveScript&lt;T&gt;(Scene scene, bool removeGameObject)` | Removes a script from this scene. |
+| `void RemoveScript<T>(Scene scene, bool removeGameObject)` | Removes a script from this scene. |
 | `void SetEnabled(Scene scene, bool isEnabled)` | Sets all root objects as enabled / disabled. |
 | `void Unimport(SceneAsset scene)` | \_No documentation available.\_ |
-| `void Unimport(IEnumerable&lt;SceneAsset&gt; scene)` | \_No documentation available.\_ |
-| `void Unimport(string\[\] scene)` | Unimports the scene from ASM. No effect if scene not imported. |
+| `void Unimport(IEnumerable<SceneAsset> scene)` | \_No documentation available.\_ |
+| `void Unimport(string[] scene)` | Unimports the scene from ASM. No effect if scene not imported. |
 | `void Unimport(Scene scene)` | \_No documentation available.\_ |
-| `void Unimport(IEnumerable&lt;Scene&gt; scene)` | \_No documentation available.\_ |
-| `void Unimport(Scene\[\] scene)` | Unimports the scene from ASM. No effect if scene not imported. |
+| `void Unimport(IEnumerable<Scene> scene)` | \_No documentation available.\_ |
+| `void Unimport(Scene[] scene)` | Unimports the scene from ASM. No effect if scene not imported. |
 
 <!-- source: api\latest\Utility\ScriptableObjectUtility.md -->
 ## ScriptableObjectUtility
@@ -6050,9 +6050,9 @@ Provides utility methods for working with tasks.
 | Member | Description |
 |--------|-------------|
 | `CoroutineAwaiter GetAwaiter(IEnumerator coroutine)` | Gets an awaiter that allows awaiting the coroutine. |
-| `Awaitable&lt;bool&gt; StartCoroutineAsAwaitable(IEnumerator coroutine)` | Runs a coroutine as an `UnityEngine.Awaitable`. |
+| `Awaitable<bool> StartCoroutineAsAwaitable(IEnumerator coroutine)` | Runs a coroutine as an `UnityEngine.Awaitable`. |
 | `Task StartCoroutineAsTask(IEnumerator coroutine)` | Runs a coroutine as a \[Tasks.Task\](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task). |
-| `Awaitable WhenAll(Awaitable\[\] items)` | Waits for all awaitable to finish. |
+| `Awaitable WhenAll(Awaitable[] items)` | Waits for all awaitable to finish. |
 
 <!-- source: api\latest\Utility\TypeUtility.md -->
 ## TypeUtility
@@ -6071,21 +6071,21 @@ Contains utility functions for working with types.
 | `string GetFriendlyTypeName(Type type)` | Gets the friendly name of this type. |
 | `string GetSignature(MemberInfo member, bool includeAccessModifiers)` | Gets the signature of this member. |
 | `bool HasNoParameters(MemberInfo member)` | Gets if `member` is a \[Reflection.MethodInfo\](https://learn.microsoft.com/dotnet/api/system.reflection.methodinfo), and has no parameters. |
-| `bool HasParameters&lt;T1&gt;(MemberInfo member)` | Gets if `member` is a \[Reflection.MethodInfo\](https://learn.microsoft.com/dotnet/api/system.reflection.methodinfo), and has the specified parameters. |
-| `bool HasParameters&lt;T1, T2&gt;(MemberInfo member)` | \_No documentation available.\_ |
-| `bool HasParameters&lt;T1, T2, T3&gt;(MemberInfo member)` | \_No documentation available.\_ |
-| `bool HasParameters&lt;T1, T2, T3, T4&gt;(MemberInfo member)` | \_No documentation available.\_ |
-| `bool HasParameters(MemberInfo member, Type\[\] types)` | \_No documentation available.\_ |
+| `bool HasParameters<T1>(MemberInfo member)` | Gets if `member` is a \[Reflection.MethodInfo\](https://learn.microsoft.com/dotnet/api/system.reflection.methodinfo), and has the specified parameters. |
+| `bool HasParameters<T1, T2>(MemberInfo member)` | \_No documentation available.\_ |
+| `bool HasParameters<T1, T2, T3>(MemberInfo member)` | \_No documentation available.\_ |
+| `bool HasParameters<T1, T2, T3, T4>(MemberInfo member)` | \_No documentation available.\_ |
+| `bool HasParameters(MemberInfo member, Type[] types)` | \_No documentation available.\_ |
 | `bool IsConstructor(MemberInfo member)` | Determines whether the specified \[Reflection.MemberInfo\](https://learn.microsoft.com/dotnet/api/system.reflection.memberinfo) represents a constructor. |
 | `bool IsField(MemberInfo member)` | Determines whether the specified \[Reflection.MemberInfo\](https://learn.microsoft.com/dotnet/api/system.reflection.memberinfo) represents a field. |
 | `bool IsMethod(MemberInfo member)` | Determines whether the specified \[Reflection.MemberInfo\](https://learn.microsoft.com/dotnet/api/system.reflection.memberinfo) represents a method. |
-| `bool IsMethodAndReturns&lt;T&gt;(MemberInfo member)` | Determines whether the specified \[Reflection.MemberInfo\](https://learn.microsoft.com/dotnet/api/system.reflection.memberinfo) represents a method returning `T`. |
+| `bool IsMethodAndReturns<T>(MemberInfo member)` | Determines whether the specified \[Reflection.MemberInfo\](https://learn.microsoft.com/dotnet/api/system.reflection.memberinfo) represents a method returning `T`. |
 | `bool IsProperty(MemberInfo member)` | Determines whether the specified \[Reflection.MemberInfo\](https://learn.microsoft.com/dotnet/api/system.reflection.memberinfo) represents a property. |
 | `bool IsStatic(MemberInfo member)` | Determines whether the specified \[Reflection.MemberInfo\](https://learn.microsoft.com/dotnet/api/system.reflection.memberinfo) represents a static member. |
 | `bool IsType(MemberInfo member)` | Determines whether the specified \[Reflection.MemberInfo\](https://learn.microsoft.com/dotnet/api/system.reflection.memberinfo) represents a type. |
 | `bool IsType(MemberInfo member, Type type)` | Determines whether the specified \[Reflection.MemberInfo\](https://learn.microsoft.com/dotnet/api/system.reflection.memberinfo) represents a type. |
-| `bool IsType&lt;T&gt;(MemberInfo member)` | Determines whether the specified \[Reflection.MemberInfo\](https://learn.microsoft.com/dotnet/api/system.reflection.memberinfo) represents a type assignable to `T`. |
-| `bool Returns&lt;T&gt;(MemberInfo member)` | Gets if `member` returns `T`. |
+| `bool IsType<T>(MemberInfo member)` | Determines whether the specified \[Reflection.MemberInfo\](https://learn.microsoft.com/dotnet/api/system.reflection.memberinfo) represents a type assignable to `T`. |
+| `bool Returns<T>(MemberInfo member)` | Gets if `member` returns `T`. |
 | `bool Returns(MemberInfo member, Type type)` | Gets if `member` returns `type`. |
 | `bool ReturnsCoroutine(MemberInfo member)` | Gets if `member` returns \[Collections.IEnumerator\](https://learn.microsoft.com/dotnet/api/system.collections.ienumerator). |
 | `bool ReturnsVoid(MemberInfo member)` | Gets if `member` returns \[System.Void\](https://learn.microsoft.com/dotnet/api/system.void). |

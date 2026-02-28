@@ -11,7 +11,7 @@ Defines some core properties for scene collections.
 |--------|-------------|
 | `int count` | Gets the scene count of this collection. |
 | `string description` | Gets the description of this collection. |
-| `IEnumerable&lt;string&gt; scenePaths` | Gets the scenes of this collection. |
+| `IEnumerable<string> scenePaths` | Gets the scenes of this collection. |
 | `string title` | Gets the title of this collection. |
 
 ### Methods

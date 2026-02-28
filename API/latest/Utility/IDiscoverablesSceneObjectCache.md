@@ -8,5 +8,5 @@
 
 | Member | Description |
 |--------|-------------|
-| `IEnumerable&lt;MonoBehaviour&gt; GetAll&lt;T&gt;()` | \_No documentation available.\_ |
-| `void Set&lt;T&gt;(IEnumerable&lt;MonoBehaviour&gt; list)` | \_No documentation available.\_ |
+| `IEnumerable<MonoBehaviour> GetAll<T>()` | \_No documentation available.\_ |
+| `void Set<T>(IEnumerable<MonoBehaviour> list)` | \_No documentation available.\_ |

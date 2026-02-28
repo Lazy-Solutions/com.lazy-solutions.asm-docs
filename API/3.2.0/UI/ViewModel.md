@@ -32,10 +32,10 @@ Only available in the editor.
 | Member | Description |
 |--------|-------------|
 | `ViewModel Deserialize(SerializableViewModelData data)` | Deserializes a view model from data. |
-| `T Instantiate&lt;T&gt;()` | Instantiates a view model of the specified type. |
-| `T Instantiate&lt;T&gt;(bool useSingletonCache)` | Instantiates a view model of the specified type. |
-| `bool Instantiate&lt;T&gt;(out T viewModel, bool useSingletonCache)` | Attempts to instantiate a view model of the specified type. |
-| `bool Instantiate&lt;T&gt;(out T viewModel, out VisualElement view, bool useSingletonCache)` | Attempts to instantiate a view model and create its GUI. |
+| `T Instantiate<T>()` | Instantiates a view model of the specified type. |
+| `T Instantiate<T>(bool useSingletonCache)` | Instantiates a view model of the specified type. |
+| `bool Instantiate<T>(out T viewModel, bool useSingletonCache)` | Attempts to instantiate a view model of the specified type. |
+| `bool Instantiate<T>(out T viewModel, out VisualElement view, bool useSingletonCache)` | Attempts to instantiate a view model and create its GUI. |
 | `bool Instantiate(Type type, out ViewModel viewModel, out VisualElement view, bool useSingletonCache)` | Attempts to instantiate a view model by type and create its GUI. |
 | `bool Instantiate(Type type, out ViewModel viewModel, bool useSingletonCache)` | Attempts to instantiate a view model by type. |
 | `ViewModel Instantiate(Type type)` | Instantiates a view model by type. |

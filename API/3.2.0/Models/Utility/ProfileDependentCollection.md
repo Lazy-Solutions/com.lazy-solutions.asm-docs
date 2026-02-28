@@ -17,13 +17,13 @@ Represents a `Models.SceneCollection` that changes depending on the active `Mode
 
 | Member | Description |
 |--------|-------------|
-| `void \_Close()` | Closes the collection. |
-| `void \_Open()` | Opens the collection. |
-| `void \_OpenAdditive()` | Opens the collection as additive. |
-| `void \_Preload()` | Preloads the collection. |
-| `void \_PreloadAdditive()` | Preloads the collection as additive. |
-| `void \_Reopen()` | Reopens the collection. |
-| `void \_ToggleOpen()` | Toggles the open state of the collection. |
+| `void _Close()` | Closes the collection. |
+| `void _Open()` | Opens the collection. |
+| `void _OpenAdditive()` | Opens the collection as additive. |
+| `void _Preload()` | Preloads the collection. |
+| `void _PreloadAdditive()` | Preloads the collection as additive. |
+| `void _Reopen()` | Reopens the collection. |
+| `void _ToggleOpen()` | Toggles the open state of the collection. |
 | `SceneOperation Close()` | Closes the collection. |
 | `SceneOperation Open()` | Opens the collection. |
 | `SceneOperation Open(bool openAll)` | Opens the collection. |

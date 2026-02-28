@@ -9,8 +9,8 @@ Defines members for openable scenes.
 
 | Member | Description |
 |--------|-------------|
-| `void \_Activate()` | Activates the scene. |
-| `void \_OpenAndActivate()` | Opens and activates the scene. |
+| `void _Activate()` | Activates the scene. |
+| `void _OpenAndActivate()` | Opens and activates the scene. |
 | `void Activate()` | Activates the scene. |
 | `SceneOperation CloseWithLoadingScreen(Scene loadingScene)` | Closes the scene using the specified loading screen. |
 | `SceneOperation OpenAndActivate()` | Opens and activates the scene. |

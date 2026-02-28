@@ -15,9 +15,9 @@ Only available in the editor.
 | `string ConvertToUnixPath(string path)` | Converts the path separators to use forward slash. |
 | `bool CreateFolder(string folder)` | \_No documentation available.\_ |
 | `bool CreateFolder(string path, out string createdFolder)` | Creates the specified folder. |
-| `IEnumerable&lt;string&gt; FindAssetPaths&lt;T&gt;(string\[\] searchInFolders)` | Finds all assets of type `T`. |
-| `IEnumerable&lt;T&gt; FindAssets&lt;T&gt;()` | Finds all assets of type `T`. |
-| `IEnumerable&lt;T&gt; FindAssets&lt;T&gt;(string\[\] searchInFolders)` | Finds all assets of type `T`. |
+| `IEnumerable<string> FindAssetPaths<T>(string[] searchInFolders)` | Finds all assets of type `T`. |
+| `IEnumerable<T> FindAssets<T>()` | Finds all assets of type `T`. |
+| `IEnumerable<T> FindAssets<T>(string[] searchInFolders)` | Finds all assets of type `T`. |
 | `string MakeRelative(string path, bool includeAssetsFolder, bool prefixWithAssetsIfNecessary)` | Makes the path absolute. Converts path to unix style. |
 | `void ShowFolder(string folderPath)` | Shows the folder and selects the asset. |
 | `void ShowFolder(Object obj)` | Shows the folder and selects the asset. |

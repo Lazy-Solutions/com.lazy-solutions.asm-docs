@@ -14,8 +14,8 @@ Base class for dynamic collections.
 | `bool hasScenes` | Gets if this collection has any scenes. |
 | `T Item` | \_No documentation available.\_ |
 | `Profile profile` | Gets the profile that contains this collection. Cached. |
-| `IEnumerable&lt;string&gt; scenePaths` | Gets the scene paths contained in this collection. |
-| `IEnumerable&lt;T&gt; scenes` | Gets the scenes or scene paths contained in this collection. |
+| `IEnumerable<string> scenePaths` | Gets the scene paths contained in this collection. |
+| `IEnumerable<T> scenes` | Gets the scenes or scene paths contained in this collection. |
 | `string title` | Gets the title of this collection. |
 
 ### Methods
@@ -24,10 +24,10 @@ Base class for dynamic collections.
 |--------|-------------|
 | `bool Contains(T scene)` | Gets whether this collection contains the specified scene or scene path. |
 | `virtual bool Equals(object obj)` | \_No documentation available.\_ |
-| `bool Equals(DynamicCollectionBase&lt;T&gt; other)` | Determines whether this collection is equal to another collection. |
+| `bool Equals(DynamicCollectionBase<T> other)` | Determines whether this collection is equal to another collection. |
 | `bool FindProfile(out Profile profile)` | Finds the profile that contains this collection. |
 | `Profile FindProfile()` | Finds the profile that contains this collection. |
-| `IEnumerator&lt;T&gt; GetEnumerator()` | Gets an enumerator for the scenes or scene paths contained in this collection. |
+| `IEnumerator<T> GetEnumerator()` | Gets an enumerator for the scenes or scene paths contained in this collection. |
 | `virtual int GetHashCode()` | \_No documentation available.\_ |
 | `virtual bool IsMatch(string q)` | Matches this collection against the query string. |
 | `virtual string ToString()` | Returns the title of this collection. |

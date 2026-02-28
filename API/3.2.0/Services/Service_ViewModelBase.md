@@ -9,5 +9,5 @@ Shared base class for services and view models.
 
 | Member | Description |
 |--------|-------------|
-| `void RegisterEvent&lt;T&gt;(EventCallback&lt;T&gt; callback)` | Registers an event callback that is automatically unregistered when view is removed. |
-| `void UnregisterEvent&lt;T&gt;(EventCallback&lt;T&gt; callback)` | Unregisters an event callback. |
+| `void RegisterEvent<T>(EventCallback<T> callback)` | Registers an event callback that is automatically unregistered when view is removed. |
+| `void UnregisterEvent<T>(EventCallback<T> callback)` | Unregisters an event callback. |

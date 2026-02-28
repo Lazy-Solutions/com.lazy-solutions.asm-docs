@@ -34,7 +34,7 @@ Only available in editor.
 | `bool logStartup` | Specifies whatever ASM should log during startup. |
 | `bool logTracking` | Specifies whatever ASM should log when a scene is tracked after loaded. |
 | `bool openCollectionOnSceneAssetOpen` | When `true`: opens the first found collection that a scene is contained in when opening an SceneAsset in editor. |
-| `IEnumerable&lt;SceneCollection&gt; pinnedOverlayCollections` | Enumerates the pinned collections in the collection overlay. |
+| `IEnumerable<SceneCollection> pinnedOverlayCollections` | Enumerates the pinned collections in the collection overlay. |
 | `bool startupProcessOnCollectionPlay` | Specifies whatever startup process should run when pressing collection play button. |
 | `int toolbarButtonCount` | Specifies how many buttons should be placed in toolbar. |
 | `float toolbarPlayButtonOffset` | Specifies offset for toolbar play buttons. |
