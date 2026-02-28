@@ -245,6 +245,9 @@ namespace AdvancedSceneManager.Documentation
             _ => null
         };
 
+        public static bool IsDelegate(this Type type) =>
+            typeof(MulticastDelegate).IsAssignableFrom(type.BaseType);
+
     }
 
 }
