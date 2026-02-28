@@ -90,12 +90,12 @@ namespace AdvancedSceneManager.Documentation
             public static string GetXmlDocID(MemberInfo member) =>
                 member switch
                 {
-                    Type type => $"T:{type.FullName}",
+                    Type type => $"T:{type.FullName}".Replace("+", "."),
                     MethodInfo method => GetXmlDocIDMethod(method),
-                    ConstructorInfo ctor => $"M:{ctor.DeclaringType.FullName}.#ctor{GetParameters(ctor.GetParameters())}",
-                    PropertyInfo prop => $"P:{prop.DeclaringType.FullName}.{prop.Name}",
-                    FieldInfo field => $"F:{field.DeclaringType.FullName}.{field.Name}",
-                    EventInfo ev => $"E:{ev.DeclaringType.FullName}.{ev.Name}",
+                    ConstructorInfo ctor => $"M:{ctor.DeclaringType.FullName}.#ctor{GetParameters(ctor.GetParameters())}".Replace("+", "."),
+                    PropertyInfo prop => $"P:{prop.DeclaringType.FullName}.{prop.Name}".Replace("+", "."),
+                    FieldInfo field => $"F:{field.DeclaringType.FullName}.{field.Name}".Replace("+", "."),
+                    EventInfo ev => $"E:{ev.DeclaringType.FullName}.{ev.Name}".Replace("+", "."),
                     _ => throw new NotSupportedException($"Unsupported member: {member}"),
                 };
 
