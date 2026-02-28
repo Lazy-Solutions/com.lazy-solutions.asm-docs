@@ -183,13 +183,26 @@ namespace AdvancedSceneManager.Documentation
                     kind = "sealed " + kind;
 
                 // Namespace + Assembly
-                sb.Append($"`{kind}` in `{type.Namespace}`");
+                string container =
+                    type.DeclaringType != null
+                        ? GetFriendlyContainerName(type.DeclaringType)
+                        : type.Namespace;
+
+                sb.Append($"`{kind}` in `{container}`");
 
                 // Inheritance (only for classes/structs, not interfaces/enums)
-                if (type.BaseType is Type baseType && baseType != typeof(object))
+                if (type.BaseType is Type baseType && baseType != typeof(object) && baseType != typeof(ValueType))
                 {
                     sb.Append($"  /  Inherits from: `{baseType.GetFriendlyTypeName()}`");
                 }
+            }
+
+            private static string GetFriendlyContainerName(Type type)
+            {
+                if (type.DeclaringType != null)
+                    return GetFriendlyContainerName(type.DeclaringType) + "." + type.Name;
+
+                return type.Namespace + "." + type.Name;
             }
 
             private static void GenerateSection(StringBuilder sb, string header, IEnumerable<MemberInfo> members, int nestedLevel)
