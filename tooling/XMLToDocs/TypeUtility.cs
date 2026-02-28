@@ -186,43 +186,89 @@ namespace AdvancedSceneManager.Documentation
 
         public static string GetFriendlyTypeName(this Type type)
         {
+            if (type is null)
+                return "";
+
+            // ref / out
             if (type.IsByRef)
+                return GetFriendlyTypeName(type.GetElementType());
+
+            // array (multi-dim supported)
+            if (type.IsArray)
             {
-                var elementType = type.GetElementType();
-                return GetFriendlyTypeName(elementType);
+                var ranks = new string(',', type.GetArrayRank() - 1);
+                return $"{GetFriendlyTypeName(type.GetElementType())}[{ranks}]";
             }
 
+            // generic parameter (T, TKey, etc)
             if (type.IsGenericParameter)
                 return type.Name;
 
-            if (type.IsGenericType)
-            {
-                if (Nullable.GetUnderlyingType(type) is Type underlying)
-                    return GetFriendlyTypeName(underlying) + "?";
+            // nullable
+            if (Nullable.GetUnderlyingType(type) is Type underlying)
+                return GetFriendlyTypeName(underlying) + "?";
 
-                var backtick = type.Name.IndexOf('`');
-                var genericTypeName = backtick >= 0 ? type.Name.Substring(0, backtick) : type.Name;
-                var genericArgs = string.Join(", ", type.GetGenericArguments().Select(GetFriendlyTypeName));
-                return $"{genericTypeName}<{genericArgs}>";
+            // primitive aliases
+            if (TryGetCSharpAlias(type, out var alias))
+                return alias;
+
+            // value tuples
+            if (type.FullName?.StartsWith("System.ValueTuple") == true)
+            {
+                var args = type.GetGenericArguments()
+                               .Select(GetFriendlyTypeName);
+                return $"({string.Join(", ", args)})";
             }
 
-            if (type.IsArray)
-                return GetFriendlyTypeName(type.GetElementType()) + "[]";
-
-            // Map CLR names to C# keywords
-            return type.Name switch
+            // generics
+            if (type.IsGenericType)
             {
-                "Void" => "void",
-                "String" => "string",
-                "Object" => "object",
-                "Decimal" => "decimal",
-                "Boolean" => "bool",
-                "Int32" => "int",
-                "Int64" => "long",
-                "Single" => "float",
-                "Double" => "double",
-                _ => type.IsPrimitive ? type.Name.ToLower() : type.Name
+                var name = type.Name;
+                var backtick = name.IndexOf('`');
+                if (backtick >= 0)
+                    name = name.Substring(0, backtick);
+
+                var args = type.GetGenericArguments()
+                               .Select(GetFriendlyTypeName);
+
+                // nested types support
+                if (type.IsNested)
+                    return $"{GetFriendlyTypeName(type.DeclaringType)}.{name}<{string.Join(", ", args)}>";
+
+                return $"{name}<{string.Join(", ", args)}>";
+            }
+
+            // nested non-generic
+            if (type.IsNested)
+                return $"{GetFriendlyTypeName(type.DeclaringType)}.{type.Name}";
+
+            return type.Name;
+        }
+
+        static bool TryGetCSharpAlias(Type type, out string alias)
+        {
+            alias = type.FullName switch
+            {
+                "System.Void" => "void",
+                "System.String" => "string",
+                "System.Object" => "object",
+                "System.Decimal" => "decimal",
+                "System.Boolean" => "bool",
+                "System.Byte" => "byte",
+                "System.SByte" => "sbyte",
+                "System.Int16" => "short",
+                "System.UInt16" => "ushort",
+                "System.Int32" => "int",
+                "System.UInt32" => "uint",
+                "System.Int64" => "long",
+                "System.UInt64" => "ulong",
+                "System.Single" => "float",
+                "System.Double" => "double",
+                "System.Char" => "char",
+                _ => null
             };
+
+            return alias != null;
         }
 
         #endregion
