@@ -6,4 +6,4 @@ This repository contains the official documentation for
 - 📁 [Browse guides](guides/readme.md)
 - 📁 [Browse API Reference](api/readme.md)
 
-↪ [View this repository on GitHub]([https://github.com/Lazy-Solutions/advancedscenemanager/docs](https://github.com/Lazy-Solutions/AdvancedSceneManager/tree/main/docs))
+↪ [View this repository on GitHub](https://github.com/Lazy-Solutions/AdvancedSceneManager/tree/main/docs)
