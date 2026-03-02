@@ -20,7 +20,7 @@ jobs:
       # 2. Clone target repo (hardcoded)
       - name: Clone target repository
         run: |
-          git clone https://x-access-token:${{ secrets.TARGET_REPO_PAT }}@github.com/YourUsername/target-repo.git target-repo
+          git clone https://x-access-token:${{ secrets.TARGET_REPO_PAT }}@github.com/Lazy-Solutions/AdvancedSceneManager.git target-repo
 
       # 3. Switch to test branch (create if missing)
       - name: Checkout test branch
