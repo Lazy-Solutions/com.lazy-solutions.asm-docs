@@ -22,11 +22,11 @@ jobs:
         run: |
           git clone https://x-access-token:${{ secrets.TARGET_REPO_PAT }}@github.com/Lazy-Solutions/AdvancedSceneManager.git target-repo
 
-      # 3. Switch to test branch (create if missing)
-      - name: Checkout test branch
+      - name: Checkout main branch
         run: |
           cd target-repo
-          git checkout test || git checkout -b test
+          git fetch origin
+          git checkout -B main origin/main
 
       # 4. Delete docs folder and recreate clean
       - name: Clean docs folder
@@ -58,5 +58,5 @@ jobs:
             echo "No changes to commit"
           else
             git commit -m "Automated docs sync from source repo"
-            git push origin test
+            git push origin main
           fi
