@@ -38,7 +38,7 @@ jobs:
       # 5. Copy folders + file into docs/
       - name: Copy documentation content
         run: |
-          cp -r api target-repo/docs/api
+          cp -r API target-repo/docs/api
           cp -r combined target-repo/docs/combined
           cp -r guides target-repo/docs/guides
           cp readme.md target-repo/docs/readme.md
