@@ -1,9 +1,9 @@
-﻿# Welcome to Advanced Scene Manager documentation!
+# Advanced Scene Manager Documentation
 
-The Guides folder contains hand-written articles, while the API folder contains
-generated C# documentation.
+This repository contains the official documentation for
+**Advanced Scene Manager**.
 
-[↪ View on documentation on GitHub](https://github.com/Lazy-Solutions/com.lazy-solutions.asm-docs/blob/main/readme.md)
+- 📁 [Browse Guides](guides/readme.md)
+- 📁 [Browse API Reference](api/readme.md)
 
-[📁 View guides](guides/readme.md)\
-[📁 View API documentation](api/SceneManager.md)
+↪ [View this repository on GitHub](https://github.com/Lazy-Solutions/advancedscenemanager/docs)
