@@ -7,16 +7,21 @@ This repository contains the official documentation for
 - 📁 [Browse API Reference](api/readme.md)
 
 ↪ [View this repository on GitHub](https://github.com/Lazy-Solutions/AdvancedSceneManager/tree/main/docs)
-
-### Notes:
+  </br>  </br> 
 <details>
   <summary><b>Issues on first start</b></summary>
-  </br>
-  There is currently an issue with first startup. This is due to UI toolkit not binding properly for whatever reason, resulting in collections and dynamic collection lists being empty. Another issue can be missing icons for collection or scene buttons. This has hopefully been fixed in dev, and will be pushed when 3.2 is ready.
+</br>
+On first launch, the ASM window may appear empty, with collections or icons missing.
 
-  For now, a domain reload will fix it. Either:
-  - Restart unity
-  - Right click ASM window menu button (most upper right button), and choose Reload domain.
+This is caused by a Unity domain initialization issue that can affect
+UI Toolkit binding and settings loading.
+
+A domain reload resolves the problem:
+
+- Restart Unity, or
+- Open the ASM window menu (top-right corner) and choose **Reload Domain**.
+
+We are actively improving the initialization process to minimize this issue.
 
 </details>
 
@@ -32,3 +37,22 @@ While 3.0 carries a major version bump, most of the changes are under the hood. 
 Most of the 2.0 documentation still applies to 3.0. That said, there may be a few places where things have changed and aren’t fully documented yet, we’re working on updating those. The generated API docs also haven’t been refreshed yet, so the new APIs are currently missing. We’re building our own in-house tool for this to avoid relying on fragile toolchains, which should make the docs more reliable going forward.
 
 </details>
+
+<details>
+<summary>Patches</summary>
+  
+### Patches can be downloaded from:
+
+- **Github releases**\
+[Github releases](https://github.com/Lazy-Solutions/AdvancedSceneManager/releases/latest) hosts the latest .unitypackage for download.
+
+- **Discord**\
+Discord provides notifications for patches, you'll be taken to github releases when pressing link.
+
+- **From inside unity**\
+ASM has a built in update check. You'll be notified when a patch has been released via a notification in the ASM window, press it to view patch notes. You'll be prompted to import .unitypackage after pressing download button (you will need to wait a moment as the package is downloading).\
+\
+You can also check for updates manually, via update settings page.
+
+</details>
+
