@@ -1,0 +1,61 @@
+name: Sync docs To main repo
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Checkout current repo (source)
+      - name: Checkout source repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      # 2. Clone target repo (hardcoded)
+      - name: Clone target repository
+        run: |
+          git clone https://x-access-token:${{ secrets.TARGET_REPO_PAT }}@github.com/YourUsername/target-repo.git target-repo
+
+      # 3. Switch to test branch (create if missing)
+      - name: Checkout test branch
+        run: |
+          cd target-repo
+          git checkout test || git checkout -b test
+
+      # 4. Delete docs folder and recreate clean
+      - name: Clean docs folder
+        run: |
+          cd target-repo
+          rm -rf docs
+          mkdir docs
+
+      # 5. Copy folders + file into docs/
+      - name: Copy documentation content
+        run: |
+          cp -r api target-repo/docs/api
+          cp -r combined target-repo/docs/combined
+          cp -r guides target-repo/docs/guides
+          cp readme.md target-repo/docs/readme.md
+
+      # 6. Commit and push
+      - name: Commit and push changes
+        run: |
+          cd target-repo
+
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+
+          git add .
+
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Automated docs sync from source repo"
+            git push origin test
+          fi
