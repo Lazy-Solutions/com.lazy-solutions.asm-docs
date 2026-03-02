@@ -1,10 +1,14 @@
 # Advanced Scene Manager Documentation
 
+> ⚠ This documentation reflects the upcoming ASM 3.2 release.
+> Some features or API changes may not yet be available in 3.1 and earlier.
+
 This repository contains the official documentation for
 **Advanced Scene Manager**.
 
 - 📁 [Browse guides](guides/readme.md)
 - 📁 [Browse API Reference](api/readme.md)
+- 📁 [Browse legacy documentation (pre-3.2)](legacy/README.md)
 
 ↪ [View this repository on GitHub](https://github.com/Lazy-Solutions/AdvancedSceneManager/tree/main/docs)
   </br>  </br> 
