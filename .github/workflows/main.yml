@@ -41,6 +41,7 @@ jobs:
           cp -r API target-repo/docs/api
           cp -r combined target-repo/docs/combined
           cp -r guides target-repo/docs/guides
+          cp -r legacy target-repo/docs/legacy
           cp readme.md target-repo/docs/readme.md
 
       # 6. Commit and push
