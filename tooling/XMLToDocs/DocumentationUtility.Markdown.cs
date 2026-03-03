@@ -273,20 +273,31 @@ namespace AdvancedSceneManager.Documentation
 
                 sb.AppendLine("# " + Path.GetFileName(folder));
 
-                sb.AppendLine("## Types");
 
-                foreach (var file in files)
+                if (files.Any())
                 {
-                    var fileName = Path.GetFileName(file);
-                    sb.AppendLine($"- [📄 {Path.GetFileNameWithoutExtension(file)}]({fileName})");
+
+                    sb.AppendLine("## Types");
+
+                    foreach (var file in files)
+                    {
+                        var fileName = Path.GetFileName(file);
+                        sb.AppendLine($"- [📄 {Path.GetFileNameWithoutExtension(file)}]({fileName})");
+                    }
+
                 }
 
-                sb.AppendLine("## Namespaces");
-
-                foreach (var dir in folders)
+                if (folders.Any())
                 {
-                    var dirName = Path.GetFileName(dir);
-                    sb.AppendLine($"- [📁 {dirName}]({dirName}/readme.md)");
+
+                    sb.AppendLine("## Namespaces");
+
+                    foreach (var dir in folders)
+                    {
+                        var dirName = Path.GetFileName(dir);
+                        sb.AppendLine($"- [📁 {dirName}]({dirName}/readme.md)");
+                    }
+
                 }
 
                 return sb.ToString();
