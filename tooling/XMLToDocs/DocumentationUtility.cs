@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Linq.Expressions;
@@ -65,6 +66,15 @@ namespace AdvancedSceneManager.Documentation
                 var md = Markdown.GenerateMarkdown(type);
                 File.WriteAllText(file, md);
 
+            }
+
+            var allFolders = new List<string> { outputFolder };
+            allFolders.AddRange(Directory.GetDirectories(outputFolder, "*", SearchOption.AllDirectories));
+
+            foreach (var folder in allFolders)
+            {
+                var md = Markdown.GenerateIndex(folder, outputFolder);
+                File.WriteAllText(Path.Combine(folder, "readme.md"), md);
             }
 
             AssetDatabase.Refresh();

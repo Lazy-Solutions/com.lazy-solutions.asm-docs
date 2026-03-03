@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Runtime.CompilerServices;
@@ -255,6 +256,53 @@ namespace AdvancedSceneManager.Documentation
                 var effectiveLevel = Math.Min(6, 2 + nestedLevel);
                 return $"{new string('#', effectiveLevel)} {text}\n";
             }
+
+            public static string GenerateIndex(string folder, string outputFolder)
+            {
+
+                var files = Directory.GetFiles(folder, "*.md")
+                    .Where(f => !string.Equals(Path.GetFileName(f), "readme.md", StringComparison.OrdinalIgnoreCase))
+                    .ToList();
+
+                var folders = Directory.GetDirectories(folder);
+
+                var sb = new StringBuilder();
+
+                var prefix = GetRelativePrefix(folder, outputFolder);
+                sb.AppendLine($"[← Back](../readme.md) | [🏠 Home]({prefix}readme.md)");
+
+                sb.AppendLine("# " + Path.GetFileName(folder));
+
+                sb.AppendLine("## Types");
+
+                foreach (var file in files)
+                {
+                    var fileName = Path.GetFileName(file);
+                    sb.AppendLine($"- [📄 {Path.GetFileNameWithoutExtension(file)}]({fileName})");
+                }
+
+                sb.AppendLine("## Namespaces");
+
+                foreach (var dir in folders)
+                {
+                    var dirName = Path.GetFileName(dir);
+                    sb.AppendLine($"- [📁 {dirName}]({dirName}/readme.md)");
+                }
+
+                return sb.ToString();
+
+            }
+
+            static string GetRelativePrefix(string folder, string root)
+            {
+                var relative = Path.GetRelativePath(root, folder);
+                if (string.IsNullOrEmpty(relative) || relative == ".")
+                    return "";
+
+                var depth = relative.Split(Path.DirectorySeparatorChar).Length;
+                return string.Concat(Enumerable.Repeat("../", depth));
+            }
+
         }
 
     }
