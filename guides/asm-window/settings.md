@@ -7,7 +7,7 @@
 	- [Whitelist subpage](#whitelist)
 	- [Blacklist subpage](#blacklist)
 - [Editor page](#editor-page)
-	- [Logging subpage](#logging-subpage) <!-- TODO: Broken -->
+	- [Logging subpage](#logging-subpage)
 - [Appearance page](#appearance-page)
 	- [Extendable UI subpage](#extendable-ui)
 	- [Hierarchy subpage](#hierarchy)
