@@ -1,7 +1,3 @@
----
-title: My Page Title
----
-
 <!---asm-window/readme.md-->
 [← Back](../readme.md) | [🏠 Home](../readme.md)
 ## ASM Window _(Scene Manager Window)_
