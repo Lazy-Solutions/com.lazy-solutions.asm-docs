@@ -1,5 +1,5 @@
 ﻿<!---./Quick-start.md-->
-[← Back](readme.md) | [🏠 Home](../readme.md)
+[← Back](readme.md) | [🏠 Home](readme.md)
 
 ## Quick Start
 
@@ -197,4 +197,4 @@ You are ready to build your game without manual scene management.
 [📄 Updating](updating.md)  
 [📄 Videos](videos.md)
 
-[← Back](readme.md) | [🏠 Home](../readme.md)
+[← Back](readme.md) | [🏠 Home](readme.md)
