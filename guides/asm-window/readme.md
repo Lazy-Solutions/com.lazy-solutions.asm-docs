@@ -1,4 +1,6 @@
-<title>My Page Title</title>
+---
+title: My Page Title
+---
 
 <!---asm-window/readme.md-->
 [← Back](../readme.md) | [🏠 Home](../readme.md)
