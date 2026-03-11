@@ -64,4 +64,13 @@ void LoadCollection() => _collection.Open();
 void LoadScene() => _scene.Open();
 ```
 
+### Related pages
+[📄 Profiles](Profiles.md)\
+[📄 Scene helper](Scene-helper.md)\
+[📄 Scene collections](Scene-collections.md)\
+[📄 Scenes](Scenes.md)\
+[📄 Standalone scenes](Standalone-scenes.md)\
+[📄 Profile dependent collections and scenes](ProfileDependentModel.md)
+
 [← Back](readme.md) | [🏠 Home](../readme.md)
+
