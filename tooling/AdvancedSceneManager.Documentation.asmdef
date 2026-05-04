@@ -13,15 +13,8 @@
     "precompiledReferences": [],
     "autoReferenced": true,
     "defineConstraints": [
-        "UNITY_EDITOR",
-        "CSPROJ_ATTRIBUTES"
+        "UNITY_EDITOR"
     ],
-    "versionDefines": [
-        {
-            "name": "com.lazy-solutions.asm.csproj-attributes",
-            "expression": "1.0.0",
-            "define": "CSPROJ_ATTRIBUTES"
-        }
-    ],
+    "versionDefines": [],
     "noEngineReferences": false
 }
