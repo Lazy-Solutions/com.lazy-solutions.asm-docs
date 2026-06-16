@@ -1,9 +1,7 @@
 {
     "name": "AdvancedSceneManager.Documentation",
     "rootNamespace": "AdvancedSceneManager.Documentation",
-    "references": [
-        "GUID:826f48a6b8468c6439b72f42169f50fe"
-    ],
+    "references": [],
     "includePlatforms": [
         "Editor"
     ],
