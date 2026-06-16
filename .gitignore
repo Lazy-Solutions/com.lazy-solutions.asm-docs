@@ -74,14 +74,14 @@ crashlytics-build.properties
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
 
-# Ignore all .meta files everywhere
+# Ignore all meta files
 **/*.meta
 
-# Keep .meta files for readme.asset and its folder
-!readme.asset.meta
+# Keep asmdef metas everywhere
+!**/*.asmdef.meta
 
-# Keep all .meta files inside /UI/
-!/Editor/**/*.meta
-!/Editor/*.meta
+# Keep Tooling metas
+!/Tooling/*.meta
+!/Tooling/**/*.meta
 
 .obsidian
