@@ -4,18 +4,20 @@
 //Our min version is 6.0, so we need to define dummy ones in earlier versions, unless we want hundreds of version defines everywhere.
 
 #if !UNITY_6000_5_OR_NEWER
+
 namespace Unity.Scripting.LifecycleManagement
 {
 
-    [AttributeUsage(AttributeTargets.Class | AttributeTargets.Event | AttributeTargets.Field | AttributeTargets.Property | AttributeTargets.Struct, AllowMultiple = false)]
-    internal sealed class NoAutoStaticsCleanupAttribute : Attribute
+    [System.AttributeUsage(System.AttributeTargets.Class | System.AttributeTargets.Event | System.AttributeTargets.Field | System.AttributeTargets.Property | System.AttributeTargets.Struct, AllowMultiple = false)]
+    internal sealed class NoAutoStaticsCleanupAttribute : System.Attribute
     { }
 
-    [AttributeUsage(AttributeTargets.Class | AttributeTargets.Event | AttributeTargets.Field | AttributeTargets.Property | AttributeTargets.Struct, AllowMultiple = true)]
-    internal sealed class AutoStaticsCleanupAttribute : Attribute
+    [System.AttributeUsage(System.AttributeTargets.Class | System.AttributeTargets.Event | System.AttributeTargets.Field | System.AttributeTargets.Property | System.AttributeTargets.Struct, AllowMultiple = true)]
+    internal sealed class AutoStaticsCleanupAttribute : System.Attribute
     { }
 
 }
+
 #endif
 
 #endregion
