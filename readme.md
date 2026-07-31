@@ -1,8 +1,5 @@
 # Advanced Scene Manager Documentation
 
-> ⚠ This documentation reflects the upcoming ASM 3.2 release.
-> Some features or API changes may not yet be available in 3.1 and earlier.
-
 This repository contains the official documentation for
 **Advanced Scene Manager**.
 
